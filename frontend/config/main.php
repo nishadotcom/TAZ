@@ -43,7 +43,12 @@ return [
             'rules' => [
             ],
         ],
-        
+        'view' => [
+            'theme' => [
+                'pathMap' => ['@app/views' => '@app/../themes/taz'],
+                'baseUrl' => '@web/themes/taz'
+            ]
+        ],
     ],
     'params' => $params,
 ];
