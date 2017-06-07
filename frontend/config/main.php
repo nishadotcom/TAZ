@@ -49,6 +49,29 @@ return [
                 'baseUrl' => '@web/themes/taz'
             ]
         ],
+        'authClientCollection' => [
+            'class' => 'yii\authclient\Collection',
+            'clients' => [
+                'google' => [
+                    'class'        => 'yii\authclient\clients\Google',
+                    'clientId'     => '158115804302-lfdskqjecp0e12j2gih2i36p7audlndj.apps.googleusercontent.com',
+                    'clientSecret' => 'd4J27WQicqleyj_6Soq4kAuB',//$config['oauth_google_clientSecret'],
+                ],
+                'facebook' => [
+                        'class'        => 'yii\authclient\clients\Facebook',
+                        'clientId'     => '966320816798502',
+                        'clientSecret' => 'd2039e8ef01cbca8274e236bacaadfe3',
+                ],
+            ],
+        ],
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'js' => []
+                ],
+            ],
+        ],
     ],
+
     'params' => $params,
 ];
