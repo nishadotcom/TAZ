@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use frontend\widgets\FeatureSeller;
 use frontend\widgets\Menu;
 use frontend\widgets\Banner;
-use frontend\widgets\HomeProduct;
+
 
 ?>
 <?php $this->beginPage(); ?>
@@ -55,8 +55,8 @@ use frontend\widgets\HomeProduct;
       <section class="mainContent clearfix">
         <div class="container">
           
-          <!-- DEAL SECTION -->
-          <?= HomeProduct::widget(); ?>
+          	<?= $content; ?>
+          	
 
          
           <!-- FEATURE PRODUCT SECTION -->
@@ -625,5 +625,3 @@ use frontend\widgets\HomeProduct;
   </body>
 </html>
 <?php $this->endPage(); ?>
-
-<?php //echo $content; ?>
