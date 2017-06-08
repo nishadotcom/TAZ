@@ -61,7 +61,7 @@ use yii\widgets\Breadcrumbs;
 	          		<div class="row">
 	            		<div class="col-xs-6">
 	              			<div class="page-title">
-	                			<h2>log in</h2>
+	                			<h2><?= $this->title ?></h2>
 	              			</div>
 	            		</div>
 		            	<div class="col-xs-6">
