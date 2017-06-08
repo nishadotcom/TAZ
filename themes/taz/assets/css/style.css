@@ -8263,3 +8263,11 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
     margin: 0 15px 30px;
   }
 }
+
+/**Custom **/
+.dealSlider .imageBox{
+  border: 0px solid #d5d5d5;
+}
+.media-right{
+  float: right;
+}

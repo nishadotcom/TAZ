@@ -198,7 +198,7 @@ jQuery(document).ready(function() {
 		  autoplayHoverPause:true,
 		  smartSpeed:1000,
 		  nav:true,
-		  moveSlides: 1,
+		  //moveSlides: 1,
 		  dots: false,
 		  responsive:{
 			  320:{
@@ -235,13 +235,13 @@ jQuery(document).ready(function() {
 		  }
 	  });
 
-	var owl = $('.owl-carousel.bannerV3');
-	  owl.owlCarousel({
+	var sloder = $('.owl-carousel.bannerV3');
+	  sloder.owlCarousel({
 		  loop:true,
 		  autoplay:true,
-		  autoplayTimeout:4000,
+		  autoplayTimeout:2500000,
 		  autoplayHoverPause:true,
-		  nav:true,
+		  nav:false,
 		  moveSlides: 1,
 		  dots: false,
 		  margin: 15,
