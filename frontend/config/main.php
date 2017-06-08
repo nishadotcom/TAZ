@@ -8,10 +8,11 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+    'name' => 'TALOZO',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'defaultRoute' => 'home/index',
+    'defaultRoute' => 'home',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -42,6 +43,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+				'login' => 'site/login',
+				'signup' => 'site/signup',
             ],
         ],
         'view' => [
