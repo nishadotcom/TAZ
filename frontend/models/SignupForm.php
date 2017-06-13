@@ -9,9 +9,14 @@ use common\models\User;
  */
 class SignupForm extends Model
 {
-    public $username;
+    //public $username;
     public $email;
     public $password;
+    public $name;
+    //public $lastName;
+    //public $password;
+ 
+
 
 
     /**
@@ -20,17 +25,18 @@ class SignupForm extends Model
     public function rules()
     {
         return [
-            ['username', 'trim'],
-            ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
-            ['username', 'string', 'min' => 2, 'max' => 255],
+            [['name', 'email', 'password'], 'required'],
+            //['username', 'trim'],
+            //['username', 'required'],
+
+            //['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            //['username', 'string', 'min' => 2, 'max' => 255],
 
             ['email', 'trim'],
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
             ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
-
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
         ];
@@ -48,11 +54,15 @@ class SignupForm extends Model
         }
         
         $user = new User();
-        $user->username = $this->username;
+        $user->name = $this->name;
         $user->email = $this->email;
-        $user->setPassword($this->password);
-        $user->generateAuthKey();
+        $user->password = md5($this->password);
+        //$user->create 
+        //$user->password = md5($this->password);
+        //$user->setPassword($this->password);
+        //$user->generateAuthKey();
         
+        //print_r($user); exit;
         return $user->save() ? $user : null;
     }
 }

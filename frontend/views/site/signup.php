@@ -1,12 +1,10 @@
 <?php
-
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\SignupForm */
-
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-
+use yii\helpers\ArrayHelper;
 $this->title = 'Signup';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -16,26 +14,25 @@ $this->params['breadcrumbs'][] = $this->title;
 		  <div class="panel panel-default">
 			<div class="panel-heading"><h3>sing up</h3></div>
 			<div class="panel-body">
-			  <form action="" method="POST" role="form">
+				  <?= Yii::$app->session->getFlash('msg'); ?>
+
+			 <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
 				<div class="form-group">
-				  <label for="">First Name</label>
-				  <input type="text" class="form-control" id="">
+				  <label for="">Name</label>
+				<?= $form->field($model, 'name')->textInput(array('maxlength' => 30, 'placeholder' => 'Name','class'=>'form-control'))->label(false) ?>
 				</div>
+		
 				<div class="form-group">
-				  <label for="">Last Name</label>
-				  <input type="text" class="form-control" id="">
-				</div>
-				<div class="form-group">
-				  <label for="">Enter Email</label>
-				  <input type="email" class="form-control" id="">
+				  <label for="">Email</label>
+				 <?= $form->field($model, 'email')->textInput(array('maxlength' => 30, 'placeholder' => 'Email','class'=>'form-control'))->label(false) ?>
 				</div>
 				<div class="form-group">
 				  <label for="">Password</label>
-				  <input type="password" class="form-control" id="">
+				   <?= $form->field($model, 'password')->passwordInput(array('maxlength' => 30, 'placeholder' => 'Password','class'=>'form-control'))->label(false) ?>
 				</div>
 				<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				<button type="button" class="btn btn-link btn-block"><span>All have an account?</span> Log in</button>
-			  </form>
+			  <?php ActiveForm::end(); ?>
 			</div>
 		  </div>
 		</div>

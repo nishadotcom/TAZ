@@ -150,12 +150,28 @@ class SiteController extends Controller
     {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
-            if ($user = $model->signup()) {
-                if (Yii::$app->getUser()->login($user)) {
-                    return $this->goHome();
-                }
+            if ($model->signup()) {
+                    Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Registered Successfully") . '</div>');
+                  return $this->redirect(['site/signup']);   
+
+                /*if (Yii::$app->getUser()->login($user)) {
+                    //return $this->goHome();
+                }*/
             }
         }
+        /*if(Yii::$app->request->post()) {
+            $postData = Yii::$app->request->post()['SignupForm'];
+            $model->name = $postData['name'];
+            $model->email = $postData['email'];
+            $model->password = md5($postData['password']);
+            $model->save();
+            if($model->save()) {
+                 Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Registered Successfully") . '</div>');
+                  return $this->redirect(['site/signup']);   
+            }
+
+        }*/
+
 
         return $this->render('signup', [
             'model' => $model,
