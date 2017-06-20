@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
               <div class="panel panel-default">
                 <div class="panel-heading"><h3>log in</h3></div>
                 <div class="panel-body">
-                  <form action="" method="POST" role="form">
+                  <form action="<?php echo Yii::$app->homeUrl.'demo/profiledashboard'; ?>" method="GET" role="form">
                     <div class="form-group">
                       <label for="">Enter Email</label>
                       <input type="email" class="form-control" id="">

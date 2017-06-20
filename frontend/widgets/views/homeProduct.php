@@ -6,7 +6,7 @@ use yii\helpers\Html;
 <div class="row dealSection">
             <div class="col-xs-12">
               <div class="page-header">
-                <h4>PSA Products</h4>
+                <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/categoryproducts'; ?>" title="PSA Products">PSA Products</a></h4>
               </div>
             </div>
             <div class="col-xs-12">

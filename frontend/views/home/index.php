@@ -1,5 +1,5 @@
 <?php
-use frontend\widgets\Banner;
+
 use frontend\widgets\HomeProduct;
 use frontend\widgets\FeatureProduct;
 use frontend\widgets\FeatureSeller;
@@ -8,8 +8,6 @@ use frontend\widgets\Shipping;
 $this->title = 'Home';
 ?>
 
-<!-- BANNER -->
-<?= Banner::widget(); ?>
       
 <!-- DEAL SECTION -->
 <?= HomeProduct::widget(); ?>

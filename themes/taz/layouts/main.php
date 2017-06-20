@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 use frontend\widgets\Menu;
 use yii\widgets\Breadcrumbs;
+use frontend\widgets\Banner;
 
 ?>
 <?php $this->beginPage(); ?>
@@ -83,9 +84,16 @@ use yii\widgets\Breadcrumbs;
 	        	</div>
 	      	</section>
       	<?php } ?>
+       <?php if($isHome){ ?>
+        <!-- BANNER -->
+        <?= Banner::widget(); ?>
+       <?php } ?> 
 
       <!-- MAIN CONTENT SECTION -->
-      	<section class="mainContent clearfix logIn signUp">
+      <?php 
+      $sectionClass = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';
+      ?>
+      	<section class="mainContent clearfix <?= $sectionClass ?>">
         	<div class="container">
           	<?= $content; ?>
         	</div> <!-- .CONTAINER -->
