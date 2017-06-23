@@ -91,7 +91,17 @@ use frontend\widgets\Banner;
 
       <!-- MAIN CONTENT SECTION -->
       <?php 
-      $sectionClass = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';
+      
+      if($controller->action->id == 'profiledashboard'){
+        $sectionClass = 'userProfile';
+      }elseif($controller->action->id == 'checkout' || $controller->action->id == 'checkout-step2' || $controller->action->id == 'checkout-step3' || $controller->action->id == 'checkout-step4'){
+          $sectionClass = 'stepsWrapper';
+      }
+      else{
+          $sectionClass = 'logIn signUp productsContent';
+      }
+
+      //$sectionClass = ''; = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';
       ?>
       	<section class="mainContent clearfix <?= $sectionClass ?>">
         	<div class="container">
@@ -113,6 +123,8 @@ use frontend\widgets\Banner;
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/countdown/jquery.syotimer.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/custom.js"></script>
+
+
     <?php 
 	if (class_exists('yii\debug\Module')) {
 		$this->off(\yii\web\View::EVENT_END_BODY, [\yii\debug\Module::getInstance(), 'renderToolbar']);
