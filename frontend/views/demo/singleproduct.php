@@ -65,7 +65,7 @@ $this->title = 'Single Product';
                     </select>
                   </span>
                   <div class="btn-area">
-                    <a href="cart-page.html" class="btn btn-primary btn-block">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> 
+                    <a href="<?php echo Yii::$app->homeUrl.'demo/cart'; ?>" class="btn btn-primary btn-block">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> 
                   </div>
                   <div class="tabArea">
                     <ul class="nav nav-tabs">

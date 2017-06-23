@@ -89,7 +89,7 @@ $this->title = 'Category Products';
                       <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Dip Dyed Sweater</a></h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
@@ -106,7 +106,7 @@ $this->title = 'Category Products';
                       <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Dip Dyed Sweater</a></h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
@@ -123,7 +123,7 @@ $this->title = 'Category Products';
                       <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Dip Dyed Sweater</a></h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
@@ -140,7 +140,7 @@ $this->title = 'Category Products';
                       <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Dip Dyed Sweater</a></h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
@@ -157,7 +157,7 @@ $this->title = 'Category Products';
                       <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Dip Dyed Sweater</a></h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
@@ -174,7 +174,7 @@ $this->title = 'Category Products';
                       <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Dip Dyed Sweater</a></h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
@@ -191,7 +191,7 @@ $this->title = 'Category Products';
                       <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="single-product.html">Dip Dyed Sweater</a></h4>
+                      <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Dip Dyed Sweater</a></h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
