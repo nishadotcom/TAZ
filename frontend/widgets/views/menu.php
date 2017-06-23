@@ -35,7 +35,7 @@ $action 	= $controller->action->id;
 		  <a href="<?php echo Yii::$app->homeUrl.'login'; ?>" class="">Log In</a>
 		</li>
 		<li class="dropdown <?php echo ($action == 'signup') ? 'active' : ''; ?>">
-		  <a href="<?php echo Yii::$app->homeUrl.'signup'; ?>" class="">Sign Up</a>
+		  <a href="<?php echo Yii::$app->homeUrl.'demo/signup'; ?>" class="">Sign Up</a>
 		</li>
 	  </ul>
 	</div><!-- /.navbar-collapse -->
