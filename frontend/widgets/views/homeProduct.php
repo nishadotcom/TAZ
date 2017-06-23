@@ -20,10 +20,10 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
                       <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -39,13 +39,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -58,13 +58,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -89,13 +89,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -108,13 +108,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -127,13 +127,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -159,13 +159,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -178,13 +178,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -197,13 +197,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -229,13 +229,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-1.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
                       <h3><a href="single-product.html">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -248,13 +248,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-2.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -267,13 +267,13 @@ use yii\helpers\Html;
                       </span>
                     </div>
                     <div class="productImage clearfix">
-                      <a href="single-product.html"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
+                      <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/product-deal/product-3.jpg" alt="Product Image"></a>
                     </div>
                     <div class="productCaption clearfix text-center">
-                      <h3><a href="single-product.html">Mauris efficitur</a></h3>
+                      <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">Mauris efficitur</a></h3>
                       <span class="offer-price">$50.00</span>
                       <!--<span class="regular-price"><del>$80.00</del></span>-->
-                      <a href="single-product.html" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
