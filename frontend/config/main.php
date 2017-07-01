@@ -45,6 +45,9 @@ return [
             'rules' => [
 				'login' => 'site/login',
 				'signup' => 'site/signup',
+                'logout' => 'site/logout',
+                'profile-dashboard'=> 'site/profile-dashboard',
+                'profile-update'=> 'site/profile-update',
             ],
         ],
         'view' => [

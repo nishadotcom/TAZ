@@ -1,6 +1,6 @@
 <?php
 namespace frontend\models;
-
+use Yii;
 use yii\base\Model;
 use common\models\User;
 
@@ -13,7 +13,8 @@ class SignupForm extends Model
     public $email;
     public $password;
     public $name;
-    //public $lastName;
+    public $firstname;
+    public $lastname;
     //public $password;
  
 
@@ -25,23 +26,29 @@ class SignupForm extends Model
     public function rules()
     {
         return [
-            [['name', 'email', 'password'], 'required'],
-            //['username', 'trim'],
-            //['username', 'required'],
-
-            //['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
-            //['username', 'string', 'min' => 2, 'max' => 255],
-
+            [['email', 'password','firstname','lastname'], 'required'],
             ['email', 'trim'],
-            ['email', 'required'],
+            //['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been registered.'],
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
         ];
     }
-
+    /**
+     * Returns the attribute labels.
+     *
+     * @return array
+     */
+    public function attributeLabels()
+    {
+        return [
+           'firstname' => 'First Name',
+           'lastname' => 'Last Name',
+             
+        ];
+    }
     /**
      * Signs user up.
      *
@@ -54,13 +61,12 @@ class SignupForm extends Model
         }
         
         $user = new User();
-        $user->name = $this->name;
+        $user->firstname = $this->firstname;
+        $user->lastname = $this->lastname;
         $user->email = $this->email;
         $user->password = md5($this->password);
-        //$user->create 
-        //$user->password = md5($this->password);
-        //$user->setPassword($this->password);
-        //$user->generateAuthKey();
+        $user->created_at = Yii::$app->Common->mysqlDateTime();
+
         
         //print_r($user); exit;
         return $user->save() ? $user : null;

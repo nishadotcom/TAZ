@@ -23,7 +23,7 @@ use yii\web\IdentityInterface;
 class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
-    const STATUS_ACTIVE = 10;
+    const STATUS_ACTIVE = 'Active';
 
 
     /**
@@ -52,6 +52,13 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            [['created_at', 'updated_at'], 'safe'],
+            [['profile_image'], 'string'],
+            [['profile_image'], 'image', 'extensions' =>['jpg', 'png','jpeg','gif']],
+            [['profile_image'], 'file', 'maxSize' =>1024*1024*2,'tooBig'=> \Yii::t("app", "Maximum File Size {fileSize}",['fileSize' => '2MB'])],
+
+            [['email','firstname','lastname','mobile'], 'required'],
+            //['endYear','validateYear'],
         ];
     }
 
@@ -80,6 +87,16 @@ class User extends ActiveRecord implements IdentityInterface
     public static function findByUsername($username)
     {
         return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+    }
+/**
+     * Finds user by email
+     *
+     * @param string $email
+     * @return static|null
+     */
+    public static function findByEmail($email)
+    {
+        return static::findOne(['email' => $email, 'status' => self::STATUS_ACTIVE]);
     }
 
     /**
@@ -149,7 +166,8 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function validatePassword($password)
     {
-        return Yii::$app->security->validatePassword($password, $this->password_hash);
+        return Yii::$app->Common->getEncriptedPwd($password) === $this->password; 
+        //return Yii::$app->security->validatePassword($password, $this->password);
     }
 
     /**
