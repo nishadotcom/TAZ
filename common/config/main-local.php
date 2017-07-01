@@ -7,6 +7,10 @@ return [
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
+            'tablePrefix' => 'taz_',
+        ],
+        'Common' => [
+            'class' => 'common\components\Common',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
