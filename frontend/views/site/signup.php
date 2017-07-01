@@ -18,8 +18,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
 			 <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
 				<div class="form-group">
-				  <label for="">Name</label>
-				<?= $form->field($model, 'name')->textInput(array('maxlength' => 30, 'placeholder' => 'Name','class'=>'form-control'))->label(false) ?>
+				  <label for="">First Name</label>
+				<?= $form->field($model, 'firstname')->textInput(array('maxlength' => 30, 'placeholder' => 'First Name','class'=>'form-control'))->label(false) ?>
+				</div>
+
+				<div class="form-group">
+				  <label for="">Last Name</label>
+				<?= $form->field($model, 'lastname')->textInput(array('maxlength' => 30, 'placeholder' => 'Last Name','class'=>'form-control'))->label(false) ?>
 				</div>
 		
 				<div class="form-group">

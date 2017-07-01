@@ -16,25 +16,22 @@ $this->params['breadcrumbs'][] = $this->title;
               <div class="panel panel-default">
                 <div class="panel-heading"><h3>log in</h3></div>
                 <div class="panel-body">
-                  <form action="<?php echo Yii::$app->homeUrl.'demo/profiledashboard'; ?>" method="GET" role="form">
+                  <?= Yii::$app->session->getFlash('msg'); ?>
+                  <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
                     <div class="form-group">
                       <label for="">Enter Email</label>
-                      <input type="email" class="form-control" id="">
+                      <?= $form->field($model, 'email')->textInput(array('maxlength' => 30, 'placeholder' => 'Email','class'=>'form-control'))->label(false) ?>
                     </div>
                     <div class="form-group">
                       <label for="">Password</label>
-                      <input type="password" class="form-control" id="">
+                      <?= $form->field($model, 'password')->passwordInput(array('maxlength' => 30, 'placeholder' => 'Password','class'=>'form-control'))->label(false) ?>
                     </div>
-                    <!--<div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Remember Me
-                      </label>
-                    </div>-->
+     
                     <button type="submit" class="btn btn-primary btn-block">log in</button>
                     <button type="submit" class="btn btn-default pull-left"><i class="fa fa-facebook" aria-hidden="true"></i><span>log in with facebook</span></button>
                     <button type="submit" class="btn btn-default pull-right"><i class="fa fa-google-plus" aria-hidden="true"></i><span>log in with google plus</span></button>
                     <button type="button" class="btn btn-link btn-block">Forgot Password?</button>
-                  </form>
+                 <?php ActiveForm::end(); ?>
                 </div>
               </div>
             </div>

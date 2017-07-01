@@ -31,12 +31,20 @@ $action 	= $controller->action->id;
 		<li class="dropdown">
 		  <a href="javascript:void(0)" class="">Help</a>
 		</li>
+	 <?php if(!Yii::$app->user->isGuest){ ?>
 		<li class="dropdown <?php echo ($action == 'login') ? 'active' : ''; ?>">
-		  <a href="<?php echo Yii::$app->homeUrl.'login'; ?>" class="">Log In</a>
+		  <a href="<?php echo Yii::$app->homeUrl.'logout'; ?>" class="">Log Out</a>
+		</li>
+	  <?php }else{  ?>
+	  <li>
+	  	  <a href="<?php echo Yii::$app->homeUrl.'login'; ?>" class="">Log In</a>
 		</li>
 		<li class="dropdown <?php echo ($action == 'signup') ? 'active' : ''; ?>">
-		  <a href="<?php echo Yii::$app->homeUrl.'demo/signup'; ?>" class="">Sign Up</a>
+		  <a href="<?php echo Yii::$app->homeUrl.'signup'; ?>" class="">Sign Up</a>
 		</li>
+		<?php } ?>
+	
+		
 	  </ul>
 	</div><!-- /.navbar-collapse -->
   </div>

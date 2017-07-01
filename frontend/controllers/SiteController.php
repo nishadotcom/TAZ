@@ -5,14 +5,15 @@ use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
+use yii\helpers\Url;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
+use common\models\User;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
-
 /**
  * Site controller
  */
@@ -43,7 +44,7 @@ class SiteController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+                    //'logout' => ['post'],
                 ],
             ],
         ];
@@ -86,14 +87,15 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-        //$model = new LoginForm();
-        /*if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+             
+            Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
         } else {
             return $this->render('login', [
                 'model' => $model,
             ]);
-        }*/
+        }
         return $this->render('login');
     }
 
@@ -105,10 +107,49 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
-        return $this->goHome();
+        Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Logged out Successfully") . '</div>');
+        Yii::$app->Common->redirect(Url::toRoute(['login']));
     }
+    /*profile update.
+    *
+    */
+    public function actionProfileDashboard(){
+        $user = User::findOne(['id' => Yii::$app->user->getId()]);
 
+        $this->layout = 'profile_page';
+        return $this->render('profile/profile_dashboard',['user'=>$user]);
+
+    }
+    /*profile update.
+    *
+    */
+    public function actionProfileUpdate(){
+        $this->layout = 'profile_page';
+        $usermodel = User::findOne(['id' => Yii::$app->user->getId()]);
+
+        $oldImage = $usermodel->profile_image;
+         if($usermodel->load(Yii::$app->request->post())) {
+            $postData = Yii::$app->request->post();
+            $dateTime = Yii::$app->Common->mysqlDateTime();
+            $usermodel->updated_at = $dateTime;                 
+            $existingImage = $postData['User']['profile_image'];
+            if(Yii::$app->Common->commonUpload($usermodel,Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH'],'profile_image')){
+                Yii::$app->Common->unlinkExistedFile(Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH'], $oldImage);
+                $image = $usermodel->profile_image;
+               
+            }else{
+                $image = ($existingImage) ? $existingImage  : ''; // get file extension
+            }
+            $usermodel->profile_image = $image;
+
+          if($usermodel->save()){
+             Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Details updated Successfully") . '</div>');   
+             Yii::$app->Common->redirect(Url::toRoute(['profile-update']));
+           }
+        } 
+        return $this->render('profile/profile_update',['usermodel'=>$usermodel]);
+
+    }
     /**
      * Displays contact page.
      *
@@ -160,21 +201,7 @@ class SiteController extends Controller
                 }*/
             }
         }
-        /*if(Yii::$app->request->post()) {
-            $postData = Yii::$app->request->post()['SignupForm'];
-            $model->name = $postData['name'];
-            $model->email = $postData['email'];
-            $model->password = md5($postData['password']);
-            $model->save();
-            if($model->save()) {
-                 Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Registered Successfully") . '</div>');
-                  return $this->redirect(['site/signup']);   
-            }
-
-        }*/
-
-
-        return $this->render('signup', [
+         return $this->render('signup', [
             'model' => $model,
         ]);
     }
