@@ -53,6 +53,7 @@ CREATE TABLE IF NOT EXISTS taz_user_bank_account_detail(
 	pan VARCHAR(25) NULL DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
+
 CREATE TABLE IF NOT EXISTS taz_category(
 	id TINYINT(4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	category_name VARCHAR(150) NOT NULL UNIQUE,
@@ -62,3 +63,15 @@ CREATE TABLE IF NOT EXISTS taz_category(
 	created_on datetime NOT NULL,
   	updated_on datetime DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+ALTER TABLE taz_user_detail
+  ADD CONSTRAINT fk_taz_user_detail_user_id FOREIGN KEY (user_id) REFERENCES taz_user (id) ON DELETE CASCADE;
+  
+ALTER TABLE taz_user_payment_detail
+  ADD CONSTRAINT fk_taz_user_payment_detail_user_id FOREIGN KEY (user_id) REFERENCES taz_user (id) ON DELETE CASCADE;
+
+ALTER TABLE taz_user_contact_detail
+  ADD CONSTRAINT fk_taz_user_contact_detail_user_id FOREIGN KEY (user_id) REFERENCES taz_user (id) ON DELETE CASCADE;
+
+ALTER TABLE taz_user_bank_account_detail
+  ADD CONSTRAINT fk_taz_user_bank_account_detail_user_id FOREIGN KEY (user_id) REFERENCES taz_user (id) ON DELETE CASCADE;
