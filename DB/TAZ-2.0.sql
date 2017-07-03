@@ -19,14 +19,14 @@ CREATE TABLE IF NOT EXISTS taz_user(
 
 CREATE TABLE IF NOT EXISTS taz_user_detail(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	user_id NT(12) NOT NULL,
+	user_id INT(12) NOT NULL,
 	short_about_me MEDIUMTEXT NOT NULL,
-	long_about_me TEXT NULL DEFAULT NULL,
+	long_about_me TEXT NULL DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS taz_user_payment_detail(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	user_id NT(12) NOT NULL,
+	user_id INT(12) NOT NULL,
 	card_type ENUM('Credit/Debit Card', 'Paypal', 'Paytm') NULL DEFAULT NULL,
 	card_number VARCHAR(30) NULL DEFAULT NULL COMMENT 'Card Number / Account Number',
 	cvv_number CHAR(6) NULL DEFAULT NULL COMMENT 'Credit/Debit Card CVV number',
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS taz_user_payment_detail(
 
 CREATE TABLE IF NOT EXISTS taz_user_contact_detail(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	user_id NT(12) NOT NULL,
+	user_id INT(12) NOT NULL,
 	mobile VARCHAR(15) NULL DEFAULT NULL,
 	land_line_number VARCHAR(25) NULL DEFAULT NULL,
 	street VARCHAR(500) NULL DEFAULT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS taz_user_contact_detail(
 
 CREATE TABLE IF NOT EXISTS taz_user_bank_account_detail(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	user_id NT(12) NOT NULL,
+	user_id INT(12) NOT NULL,
 	account_number VARCHAR(20) NOT NULL,
 	ifsc VARCHAR(20) NOT NULL,
 	pan VARCHAR(25) NULL DEFAULT NULL
