@@ -1,0 +1,422 @@
+a:11:{s:6:"config";a:5:{s:10:"phpVersion";s:23:"7.0.18-0ubuntu0.16.04.1";s:10:"yiiVersion";s:8:"2.0.11.2";s:11:"application";a:8:{s:3:"yii";s:8:"2.0.11.2";s:4:"name";s:6:"TALOZO";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:23:"7.0.18-0ubuntu0.16.04.1";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:7:{s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:64:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-bootstrap";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.0.9.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:60:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:58:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:60:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-faker";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:66:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-swiftmailer";}}s:23:"yiisoft/yii2-httpclient";a:3:{s:4:"name";s:23:"yiisoft/yii2-httpclient";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:15:"@yii/httpclient";s:65:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-httpclient";}}s:23:"yiisoft/yii2-authclient";a:3:{s:4:"name";s:23:"yiisoft/yii2-authclient";s:7:"version";s:7:"2.1.2.0";s:5:"alias";a:1:{s:15:"@yii/authclient";s:65:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-authclient";}}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:13:{s:4:"host";s:16:"dev.talozo.local";s:10:"connection";s:10:"keep-alive";s:14:"content-length";s:3:"779";s:13:"cache-control";s:9:"max-age=0";s:6:"origin";s:23:"http://dev.talozo.local";s:25:"upgrade-insecure-requests";s:1:"1";s:10:"user-agent";s:133:"Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:6:"accept";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:7:"referer";s:33:"http://dev.talozo.local/gii/model";s:15:"accept-encoding";s:13:"gzip, deflate";s:15:"accept-language";s:26:"en-GB,en-US;q=0.8,en;q=0.6";s:6:"cookie";s:191:"_csrf-frontend=d0393c26ccc4df529ac3cd6956e3963dcd110a8d15981c4285a4044edefa72cda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22XO-TbFW60eoJNaSCt5OMsxRkc9qmEu7_%22%3B%7D";}s:15:"responseHeaders";a:1:{s:12:"Content-Type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:16:"gii/default/view";s:6:"action";s:51:"yii\gii\controllers\DefaultController::actionView()";s:12:"actionParams";a:1:{i:0;s:5:"model";}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:779:"_csrf-frontend=OG5WWEdwRk9gIXsMJTYReQgLORIJERUMTFsZFTQIFCRbVyc1AgVxEA%3D%3D&Generator%5BtableName%5D=taz_user_bank_account_detail&Generator%5BmodelClass%5D=UserBankAccountDetail&Generator%5Bns%5D=app%5Cmodels&Generator%5BbaseClass%5D=yii%5Cdb%5CActiveRecord&Generator%5Bdb%5D=db&Generator%5BuseTablePrefix%5D=0&Generator%5BgenerateRelations%5D=all&Generator%5BgenerateLabelsFromComments%5D=0&Generator%5BgenerateQuery%5D=0&Generator%5BqueryNs%5D=app%5Cmodels&Generator%5BqueryClass%5D=UserBankAccountDetailQuery&Generator%5BqueryBaseClass%5D=yii%5Cdb%5CActiveQuery&Generator%5BenableI18N%5D=0&Generator%5BmessageCategory%5D=app&Generator%5BuseSchemaName%5D=0&Generator%5BuseSchemaName%5D=1&Generator%5Btemplate%5D=default&answers%5B86fa3b114d05158fedcb1c06a9fa34d7%5D=1&generate=";s:17:"Decoded to Params";a:4:{s:14:"_csrf-frontend";s:56:"OG5WWEdwRk9gIXsMJTYReQgLORIJERUMTFsZFTQIFCRbVyc1AgVxEA==";s:9:"Generator";a:16:{s:9:"tableName";s:28:"taz_user_bank_account_detail";s:10:"modelClass";s:21:"UserBankAccountDetail";s:2:"ns";s:10:"app\models";s:9:"baseClass";s:19:"yii\db\ActiveRecord";s:2:"db";s:2:"db";s:14:"useTablePrefix";s:1:"0";s:17:"generateRelations";s:3:"all";s:26:"generateLabelsFromComments";s:1:"0";s:13:"generateQuery";s:1:"0";s:7:"queryNs";s:10:"app\models";s:10:"queryClass";s:26:"UserBankAccountDetailQuery";s:14:"queryBaseClass";s:18:"yii\db\ActiveQuery";s:10:"enableI18N";s:1:"0";s:15:"messageCategory";s:3:"app";s:13:"useSchemaName";s:1:"1";s:8:"template";s:7:"default";}s:7:"answers";a:1:{s:32:"86fa3b114d05158fedcb1c06a9fa34d7";s:1:"1";}s:8:"generate";s:0:"";}}s:6:"SERVER";a:38:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:16:"dev.talozo.local";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"779";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:23:"http://dev.talozo.local";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:15:"HTTP_USER_AGENT";s:133:"Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:12:"HTTP_REFERER";s:33:"http://dev.talozo.local/gii/model";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:20:"HTTP_ACCEPT_LANGUAGE";s:26:"en-GB,en-US;q=0.8,en;q=0.6";s:11:"HTTP_COOKIE";s:191:"_csrf-frontend=d0393c26ccc4df529ac3cd6956e3963dcd110a8d15981c4285a4044edefa72cda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22XO-TbFW60eoJNaSCt5OMsxRkc9qmEu7_%22%3B%7D";s:4:"PATH";s:60:"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";s:16:"SERVER_SIGNATURE";s:77:"<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:22:"Apache/2.4.18 (Ubuntu)";s:11:"SERVER_NAME";s:16:"dev.talozo.local";s:11:"SERVER_ADDR";s:9:"127.0.1.1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:13:"DOCUMENT_ROOT";s:34:"/var/www/ANTs/Freelance/Talozo/dev";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:34:"/var/www/ANTs/Freelance/Talozo/dev";s:12:"SERVER_ADMIN";s:19:"webmaster@localhost";s:15:"SCRIPT_FILENAME";s:44:"/var/www/ANTs/Freelance/Talozo/dev/index.php";s:11:"REMOTE_PORT";s:5:"51962";s:12:"REDIRECT_URL";s:10:"/gii/model";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"REQUEST_URI";s:10:"/gii/model";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1499063067.2030001;s:12:"REQUEST_TIME";i:1499063067;}s:3:"GET";a:1:{s:2:"id";s:5:"model";}s:4:"POST";a:4:{s:14:"_csrf-frontend";s:56:"OG5WWEdwRk9gIXsMJTYReQgLORIJERUMTFsZFTQIFCRbVyc1AgVxEA==";s:9:"Generator";a:16:{s:9:"tableName";s:28:"taz_user_bank_account_detail";s:10:"modelClass";s:21:"UserBankAccountDetail";s:2:"ns";s:10:"app\models";s:9:"baseClass";s:19:"yii\db\ActiveRecord";s:2:"db";s:2:"db";s:14:"useTablePrefix";s:1:"0";s:17:"generateRelations";s:3:"all";s:26:"generateLabelsFromComments";s:1:"0";s:13:"generateQuery";s:1:"0";s:7:"queryNs";s:10:"app\models";s:10:"queryClass";s:26:"UserBankAccountDetailQuery";s:14:"queryBaseClass";s:18:"yii\db\ActiveQuery";s:10:"enableI18N";s:1:"0";s:15:"messageCategory";s:3:"app";s:13:"useSchemaName";s:1:"1";s:8:"template";s:7:"default";}s:7:"answers";a:1:{s:32:"86fa3b114d05158fedcb1c06a9fa34d7";s:1:"1";}s:8:"generate";s:0:"";}s:6:"COOKIE";a:1:{s:14:"_csrf-frontend";s:140:"d0393c26ccc4df529ac3cd6956e3963dcd110a8d15981c4285a4044edefa72cda:2:{i:0;s:14:"_csrf-frontend";i:1;s:32:"XO-TbFW60eoJNaSCt5OMsxRkc9qmEu7_";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:0:{}}s:3:"log";a:1:{s:8:"messages";a:33:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1499063067.2073021;i:4;a:0:{}i:5;i:1141232;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1499063067.207341;i:4;a:0:{}i:5;i:1142240;}i:2;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1499063067.2082779;i:4;a:0:{}i:5;i:1253208;}i:3;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1499063067.209739;i:4;a:0:{}i:5;i:1283728;}i:4;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1499063067.209893;i:4;a:0:{}i:5;i:1287800;}i:8;a:6:{i:0;s:35:"Route requested: 'gii/default/view'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1499063067.2104361;i:4;a:0:{}i:5;i:1307888;}i:9;a:6:{i:0;s:30:"Route to run: gii/default/view";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1499063067.2107201;i:4;a:0:{}i:5;i:1321088;}i:10;a:6:{i:0;s:67:"Running action: yii\gii\controllers\DefaultController::actionView()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1499063067.2118211;i:4;a:0:{}i:5;i:1448440;}i:11;a:6:{i:0;s:53:"SHOW FULL COLUMNS FROM `taz_user_bank_account_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2143259;i:4;a:0:{}i:5;i:1623864;}i:12;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=TAZALO";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1499063067.214402;i:4;a:0:{}i:5;i:1625984;}i:17;a:6:{i:0;s:643:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_bank_account_detail' AND kcu.table_name = 'taz_user_bank_account_detail'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2176449;i:4;a:0:{}i:5;i:1645328;}i:20;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2213349;i:4;a:0:{}i:5;i:1643360;}i:23;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `taz_category`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2221041;i:4;a:0:{}i:5;i:1646032;}i:26;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_category' AND kcu.table_name = 'taz_category'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2234631;i:4;a:0:{}i:5;i:1655800;}i:29;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.224411;i:4;a:0:{}i:5;i:1656016;}i:32;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.22683;i:4;a:0:{}i:5;i:1671264;}i:35;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_contact_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2285981;i:4;a:0:{}i:5;i:1672128;}i:38;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_contact_detail' AND kcu.table_name = 'taz_user_contact_detail'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2300351;i:4;a:0:{}i:5;i:1682504;}i:41;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `taz_user_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.231457;i:4;a:0:{}i:5;i:1683136;}i:44;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_detail' AND kcu.table_name = 'taz_user_detail'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2326441;i:4;a:0:{}i:5;i:1691272;}i:47;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_payment_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2335141;i:4;a:0:{}i:5;i:1691912;}i:50;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_payment_detail' AND kcu.table_name = 'taz_user_payment_detail'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2346189;i:4;a:0:{}i:5;i:1701328;}i:53;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.235872;i:4;a:0:{}i:5;i:1705816;}i:56;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_contact_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2364471;i:4;a:0:{}i:5;i:1708608;}i:59;a:6:{i:0;s:35:"SHOW CREATE TABLE `taz_user_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2369511;i:4;a:0:{}i:5;i:1710568;}i:62;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_payment_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.237468;i:4;a:0:{}i:5;i:1712536;}i:65;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.238225;i:4;a:0:{}i:5;i:1717408;}i:68;a:6:{i:0;s:114:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii/generators/model/default/model.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1499063067.2388849;i:4;a:0:{}i:5;i:1719296;}i:69;a:6:{i:0;s:102:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii/views/default/view.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1499063067.239392;i:4;a:0:{}i:5;i:1715312;}i:70;a:6:{i:0;s:105:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii/generators/model/form.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1499063067.2397799;i:4;a:0:{}i:5;i:1840768;}i:71;a:6:{i:0;s:110:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii/views/default/view/results.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1499063067.246897;i:4;a:0:{}i:5;i:1869632;}i:72;a:6:{i:0;s:107:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii/views/layouts/generator.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1499063067.2475221;i:4;a:0:{}i:5;i:1844824;}i:73;a:6:{i:0;s:102:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii/views/layouts/main.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1499063067.248749;i:4;a:0:{}i:5;i:1882024;}}}s:9:"profiling";a:3:{s:6:"memory";i:2049920;s:4:"time";d:0.04822087287902832;s:8:"messages";a:38:{i:13;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=TAZALO";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1499063067.214443;i:4;a:0:{}i:5;i:1626256;}i:14;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=TAZALO";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1499063067.2156861;i:4;a:0:{}i:5;i:1635352;}i:15;a:6:{i:0;s:53:"SHOW FULL COLUMNS FROM `taz_user_bank_account_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2158749;i:4;a:0:{}i:5;i:1634464;}i:16;a:6:{i:0;s:53:"SHOW FULL COLUMNS FROM `taz_user_bank_account_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.217042;i:4;a:0:{}i:5;i:1639008;}i:18;a:6:{i:0;s:643:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_bank_account_detail' AND kcu.table_name = 'taz_user_bank_account_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.217726;i:4;a:0:{}i:5;i:1647248;}i:19;a:6:{i:0;s:643:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_bank_account_detail' AND kcu.table_name = 'taz_user_bank_account_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2204771;i:4;a:0:{}i:5;i:1648552;}i:21;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.22139;i:4;a:0:{}i:5;i:1644080;}i:22;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2219951;i:4;a:0:{}i:5;i:1644912;}i:24;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `taz_category`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.222151;i:4;a:0:{}i:5;i:1646800;}i:25;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `taz_category`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.22316;i:4;a:0:{}i:5;i:1652872;}i:27;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_category' AND kcu.table_name = 'taz_category'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2235119;i:4;a:0:{}i:5;i:1657688;}i:28;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_category' AND kcu.table_name = 'taz_category'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.224261;i:4;a:0:{}i:5;i:1658232;}i:30;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.224453;i:4;a:0:{}i:5;i:1656784;}i:31;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2263169;i:4;a:0:{}i:5;i:1669864;}i:33;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2268879;i:4;a:0:{}i:5;i:1674048;}i:34;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2284651;i:4;a:0:{}i:5;i:1674592;}i:36;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_contact_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.228652;i:4;a:0:{}i:5;i:1672936;}i:37;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_contact_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.229671;i:4;a:0:{}i:5;i:1680632;}i:39;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_contact_detail' AND kcu.table_name = 'taz_user_contact_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.230092;i:4;a:0:{}i:5;i:1684408;}i:40;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_contact_detail' AND kcu.table_name = 'taz_user_contact_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.231344;i:4;a:0:{}i:5;i:1685584;}i:42;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `taz_user_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2315011;i:4;a:0:{}i:5;i:1683920;}i:43;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `taz_user_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2322719;i:4;a:0:{}i:5;i:1687736;}i:45;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_detail' AND kcu.table_name = 'taz_user_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2327011;i:4;a:0:{}i:5;i:1693160;}i:46;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_detail' AND kcu.table_name = 'taz_user_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2334061;i:4;a:0:{}i:5;i:1694328;}i:48;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_payment_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.233556;i:4;a:0:{}i:5;i:1692720;}i:49;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_payment_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2343631;i:4;a:0:{}i:5;i:1698112;}i:51;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_payment_detail' AND kcu.table_name = 'taz_user_payment_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2346649;i:4;a:0:{}i:5;i:1703232;}i:52;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_payment_detail' AND kcu.table_name = 'taz_user_payment_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.235616;i:4;a:0:{}i:5;i:1704408;}i:54;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2359209;i:4;a:0:{}i:5;i:1706624;}i:55;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2362151;i:4;a:0:{}i:5;i:1708368;}i:57;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_contact_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.236491;i:4;a:0:{}i:5;i:1709392;}i:58;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_contact_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2367771;i:4;a:0:{}i:5;i:1710712;}i:60;a:6:{i:0;s:35:"SHOW CREATE TABLE `taz_user_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.236994;i:4;a:0:{}i:5;i:1711336;}i:61;a:6:{i:0;s:35:"SHOW CREATE TABLE `taz_user_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.237267;i:4;a:0:{}i:5;i:1712456;}i:63;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_payment_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2375219;i:4;a:0:{}i:5;i:1713320;}i:64;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_payment_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2379301;i:4;a:0:{}i:5;i:1714768;}i:66;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2382841;i:4;a:0:{}i:5;i:1718216;}i:67;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2386279;i:4;a:0:{}i:5;i:1719416;}}}s:2:"db";a:1:{s:8:"messages";a:36:{i:15;a:6:{i:0;s:53:"SHOW FULL COLUMNS FROM `taz_user_bank_account_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2158749;i:4;a:0:{}i:5;i:1634464;}i:16;a:6:{i:0;s:53:"SHOW FULL COLUMNS FROM `taz_user_bank_account_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.217042;i:4;a:0:{}i:5;i:1639008;}i:18;a:6:{i:0;s:643:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_bank_account_detail' AND kcu.table_name = 'taz_user_bank_account_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.217726;i:4;a:0:{}i:5;i:1647248;}i:19;a:6:{i:0;s:643:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_bank_account_detail' AND kcu.table_name = 'taz_user_bank_account_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2204771;i:4;a:0:{}i:5;i:1648552;}i:21;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.22139;i:4;a:0:{}i:5;i:1644080;}i:22;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2219951;i:4;a:0:{}i:5;i:1644912;}i:24;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `taz_category`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.222151;i:4;a:0:{}i:5;i:1646800;}i:25;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `taz_category`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.22316;i:4;a:0:{}i:5;i:1652872;}i:27;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_category' AND kcu.table_name = 'taz_category'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2235119;i:4;a:0:{}i:5;i:1657688;}i:28;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_category' AND kcu.table_name = 'taz_category'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.224261;i:4;a:0:{}i:5;i:1658232;}i:30;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.224453;i:4;a:0:{}i:5;i:1656784;}i:31;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2263169;i:4;a:0:{}i:5;i:1669864;}i:33;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2268879;i:4;a:0:{}i:5;i:1674048;}i:34;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2284651;i:4;a:0:{}i:5;i:1674592;}i:36;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_contact_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.228652;i:4;a:0:{}i:5;i:1672936;}i:37;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_contact_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.229671;i:4;a:0:{}i:5;i:1680632;}i:39;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_contact_detail' AND kcu.table_name = 'taz_user_contact_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.230092;i:4;a:0:{}i:5;i:1684408;}i:40;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_contact_detail' AND kcu.table_name = 'taz_user_contact_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.231344;i:4;a:0:{}i:5;i:1685584;}i:42;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `taz_user_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2315011;i:4;a:0:{}i:5;i:1683920;}i:43;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `taz_user_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2322719;i:4;a:0:{}i:5;i:1687736;}i:45;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_detail' AND kcu.table_name = 'taz_user_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2327011;i:4;a:0:{}i:5;i:1693160;}i:46;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_detail' AND kcu.table_name = 'taz_user_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2334061;i:4;a:0:{}i:5;i:1694328;}i:48;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_payment_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.233556;i:4;a:0:{}i:5;i:1692720;}i:49;a:6:{i:0;s:48:"SHOW FULL COLUMNS FROM `taz_user_payment_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2343631;i:4;a:0:{}i:5;i:1698112;}i:51;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_payment_detail' AND kcu.table_name = 'taz_user_payment_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2346649;i:4;a:0:{}i:5;i:1703232;}i:52;a:6:{i:0;s:633:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user_payment_detail' AND kcu.table_name = 'taz_user_payment_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.235616;i:4;a:0:{}i:5;i:1704408;}i:54;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2359209;i:4;a:0:{}i:5;i:1706624;}i:55;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2362151;i:4;a:0:{}i:5;i:1708368;}i:57;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_contact_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.236491;i:4;a:0:{}i:5;i:1709392;}i:58;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_contact_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2367771;i:4;a:0:{}i:5;i:1710712;}i:60;a:6:{i:0;s:35:"SHOW CREATE TABLE `taz_user_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.236994;i:4;a:0:{}i:5;i:1711336;}i:61;a:6:{i:0;s:35:"SHOW CREATE TABLE `taz_user_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.237267;i:4;a:0:{}i:5;i:1712456;}i:63;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_payment_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2375219;i:4;a:0:{}i:5;i:1713320;}i:64;a:6:{i:0;s:43:"SHOW CREATE TABLE `taz_user_payment_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2379301;i:4;a:0:{}i:5;i:1714768;}i:66;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2382841;i:4;a:0:{}i:5;i:1718216;}i:67;a:6:{i:0;s:48:"SHOW CREATE TABLE `taz_user_bank_account_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1499063067.2386279;i:4;a:0:{}i:5;i:1719416;}}}s:6:"assets";a:8:{s:19:"yii\web\JqueryAsset";a:9:{s:10:"sourcePath";s:59:"/var/www/ANTs/Freelance/Talozo/dev/vendor/bower/jquery/dist";s:2:"js";a:1:{i:0;s:9:"jquery.js";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/1ed1f09b";s:7:"baseUrl";s:16:"/assets/1ed1f09b";s:7:"depends";a:0:{}s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:30:"yii\validators\ValidationAsset";a:9:{s:10:"sourcePath";s:61:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.validation.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/5eb860fd";s:7:"baseUrl";s:16:"/assets/5eb860fd";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\web\YiiAsset";a:9:{s:10:"sourcePath";s:61:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/assets";s:2:"js";a:1:{i:0;s:6:"yii.js";}s:7:"depends";a:1:{i:0;s:19:"yii\web\JqueryAsset";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/5eb860fd";s:7:"baseUrl";s:16:"/assets/5eb860fd";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:27:"yii\widgets\ActiveFormAsset";a:9:{s:10:"sourcePath";s:61:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.activeForm.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/5eb860fd";s:7:"baseUrl";s:16:"/assets/5eb860fd";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\gii\GiiAsset";a:9:{s:10:"sourcePath";s:65:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii/assets";s:3:"css";a:1:{i:0;s:8:"main.css";}s:2:"js";a:1:{i:0;s:6:"gii.js";}s:7:"depends";a:4:{i:0;s:16:"yii\web\YiiAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";i:2;s:34:"yii\bootstrap\BootstrapPluginAsset";i:3;s:22:"yii\gii\TypeAheadAsset";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/fa6ee7b4";s:7:"baseUrl";s:16:"/assets/fa6ee7b4";s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:28:"yii\bootstrap\BootstrapAsset";a:9:{s:10:"sourcePath";s:62:"/var/www/ANTs/Freelance/Talozo/dev/vendor/bower/bootstrap/dist";s:3:"css";a:1:{i:0;s:17:"css/bootstrap.css";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/f7e7071d";s:7:"baseUrl";s:16:"/assets/f7e7071d";s:7:"depends";a:0:{}s:2:"js";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:34:"yii\bootstrap\BootstrapPluginAsset";a:9:{s:10:"sourcePath";s:62:"/var/www/ANTs/Freelance/Talozo/dev/vendor/bower/bootstrap/dist";s:2:"js";a:1:{i:0;s:15:"js/bootstrap.js";}s:7:"depends";a:2:{i:0;s:19:"yii\web\JqueryAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/f7e7071d";s:7:"baseUrl";s:16:"/assets/f7e7071d";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:22:"yii\gii\TypeAheadAsset";a:9:{s:10:"sourcePath";s:65:"/var/www/ANTs/Freelance/Talozo/dev/vendor/bower/typeahead.js/dist";s:2:"js";a:1:{i:0;s:19:"typeahead.bundle.js";}s:7:"depends";a:2:{i:0;s:28:"yii\bootstrap\BootstrapAsset";i:1;s:34:"yii\bootstrap\BootstrapPluginAsset";}s:8:"basePath";s:50:"/var/www/ANTs/Freelance/Talozo/dev/assets/366b83bc";s:7:"baseUrl";s:16:"/assets/366b83bc";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}s:4:"mail";a:0:{}s:8:"timeline";a:3:{s:5:"start";d:1499063067.2060981;s:3:"end";d:1499063067.254369;s:6:"memory";i:2049920;}s:4:"user";N;s:6:"router";a:1:{s:8:"messages";a:3:{i:5;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1499063067.21035;i:4;a:0:{}i:5;i:1307200;}i:6;a:6:{i:0;s:42:"Request parsed with URL rule: gii/<id:\w+>";i:1;i:8;i:2;s:29:"yii\web\UrlRule::parseRequest";i:3;d:1499063067.2103951;i:4;a:0:{}i:5;i:1308608;}i:7;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:1;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1499063067.2104161;i:4;a:0:{}i:5;i:1308680;}}}s:7:"summary";a:9:{s:3:"tag";s:13:"5959e31b32f63";s:3:"url";s:33:"http://dev.talozo.local/gii/model";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1499063067.2030001;s:10:"statusCode";i:200;s:8:"sqlCount";i:18;s:9:"mailCount";i:0;}}
