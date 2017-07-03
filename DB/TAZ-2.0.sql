@@ -61,4 +61,4 @@ CREATE TABLE IF NOT EXISTS taz_category(
 	category_status ENUM('Active','Suspended') NOT NULL DEFAULT 'Active',
 	created_on datetime NOT NULL,
   	updated_on datetime DEFAULT NULL
-);
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
