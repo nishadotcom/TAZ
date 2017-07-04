@@ -64,6 +64,17 @@ CREATE TABLE IF NOT EXISTS taz_category(
   	updated_on datetime DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS taz_product(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	product_category_id TINYINT(4) NOT NULL,
+	product_code TINYTEXT NOT NULL,
+	product_name MEDIUMTEXT NOT NULL,
+	product_owner_id INT(12) NOT NULL,
+	product_status ENUM('AFA', 'Active', 'Suspended', 'Deleted') NOT NULL DEFAULT 'AFA' COMMENT 'AFA = Awaiting for approval',
+	created_on datetime NOT NULL,
+  	updated_on datetime DEFAULT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
 ALTER TABLE taz_user_detail
   ADD CONSTRAINT fk_taz_user_detail_user_id FOREIGN KEY (user_id) REFERENCES taz_user (id) ON DELETE CASCADE;
   
