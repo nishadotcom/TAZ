@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=taz',
+            'dsn' => 'mysql:host=localhost;dbname=TAZALO',
             'username' => 'root',
-            'password' => '',
+            'password' => 'root',
             'charset' => 'utf8',
             'tablePrefix' => 'taz_',
         ],
