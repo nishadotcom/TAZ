@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS taz_user(
 	user_type ENUM('Buyer','Seller') NOT NULL DEFAULT 'Buyer',
 	status ENUM('Active', 'Suspended', 'Deleted', 'Awaiting to Activate') NOT NULL DEFAULT 'Active',
 	registration_ip VARCHAR(15) NOT NULL DEFAULT '0.0.0.0',
-	created_on datetime NOT NULL,
-  	updated_on datetime DEFAULT NULL
+	created_on DATETIME NOT NULL,
+  	updated_on DATETIME DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS taz_user_detail(
@@ -53,6 +53,27 @@ CREATE TABLE IF NOT EXISTS taz_user_bank_account_detail(
 	pan VARCHAR(25) NULL DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS taz_slideshow(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	title TINYTEXT NOT NULL,
+	description MEDIUMTEXT NULL DEFAULT NULL,
+	image_name VARCHAR(350) NOT NULL,
+	status ENUM('Active', 'Suspended') NOT NULL DEFAULT 'Active',
+	order_by TINYINT(2) NULL DEFAULT NULL,
+	created_on DATETIME NOT NULL,
+  	modified_on DATETIME DEFAULT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS taz_cms(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	title TINYTEXT NOT NULL,
+	seo TINYTEXT NOT NULL,
+	description MEDIUMTEXT NULL DEFAULT NULL,
+	status ENUM('Active', 'Suspended') NOT NULL DEFAULT 'Active',
+	created_on DATETIME NOT NULL,
+  	modified_on DATETIME DEFAULT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
 
 CREATE TABLE IF NOT EXISTS taz_category(
 	id TINYINT(4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -60,8 +81,8 @@ CREATE TABLE IF NOT EXISTS taz_category(
 	category_description MEDIUMTEXT NULL DEFAULT NULL,
 	category_image VARCHAR(500) NULL DEFAULT NULL,
 	category_status ENUM('Active','Suspended') NOT NULL DEFAULT 'Active',
-	created_on datetime NOT NULL,
-  	updated_on datetime DEFAULT NULL
+	created_on DATETIME NOT NULL,
+  	updated_on DATETIME DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS taz_product(
@@ -70,10 +91,49 @@ CREATE TABLE IF NOT EXISTS taz_product(
 	product_code TINYTEXT NOT NULL,
 	product_name MEDIUMTEXT NOT NULL,
 	product_owner_id INT(12) NOT NULL,
+	product_seller_price
+	product_retail_price 
+	product_material
+	product_color	
 	product_status ENUM('AFA', 'Active', 'Suspended', 'Deleted') NOT NULL DEFAULT 'AFA' COMMENT 'AFA = Awaiting for approval',
-	created_on datetime NOT NULL,
-  	updated_on datetime DEFAULT NULL
+	created_on DATETIME NOT NULL,
+  	updated_on DATETIME DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS taz_product_image(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	product_id INT(12) NOT NULL COMMENT 'Refers to Product table id',
+	type CHAR(6) NULL DEFAULT NULL,
+	file_name VARCHAR(500) NOT NULL,
+	order_by TINYINT(2) NULL DEFAULT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS taz_user_favorite(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	product_id INT(12) NOT NULL COMMENT 'Refers to Product table id',
+	user_id INT(12) NOT NULL COMMENT 'Refers to user table id',
+	favorited_on DATETIME NOT NULL 
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS taz_tag(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	tag_name VARCHAR(400) NOT NULL,
+	created_on DATETIME NOT NULL,
+  	updated_on DATETIME DEFAULT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS taz_product_tag(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	product_id INT(12) NOT NULL COMMENT 'Refers to Product table id'
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS taz_log(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	ip_address VARCHAR(16) NOT NULL,
+	log_time DATETIME NOT NULL,
+	detail MEDIUMTEXT NULL DEFAULT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
 
 ALTER TABLE taz_user_detail
   ADD CONSTRAINT fk_taz_user_detail_user_id FOREIGN KEY (user_id) REFERENCES taz_user (id) ON DELETE CASCADE;
