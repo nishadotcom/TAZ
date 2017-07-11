@@ -8,6 +8,7 @@ use backend\models\CategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\Url;
 
 /**
  * CategoryController implements the CRUD actions for Category model.
@@ -65,13 +66,18 @@ class CategoryController extends Controller
     {
         $model = new Category();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        if($model->load(Yii::$app->request->post())) {
+            $dateTime = Yii::$app->Common->mysqlDateTime();
+            $model->created_on = $dateTime;
+            $uploadImage = Yii::$app->Common->commonUpload($model,Yii::$app->params['CATEGORY_IMAGE_UPLOAD_PATH'],'category_image');
+             if($model->save()){
+                Yii::$app->getSession()->setFlash('msg',Yii::t("app","General Add Success"));
+                Yii::$app->Common->redirect(Url::toRoute('index'));
+            }
         }
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
 
     /**
@@ -84,13 +90,28 @@ class CategoryController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        $oldImage = $model->category_image;
+        if ($model->load(Yii::$app->request->post())) {
+            $postData = Yii::$app->request->post();
+            $dateTime = Yii::$app->Common->mysqlDateTime();
+            $model->updated_on = $dateTime;
+            $existingImage = $postData['Category']['existing_category_image'];
+            if(Yii::$app->Common->commonUpload($model,Yii::$app->params['CATEGORY_IMAGE_UPLOAD_PATH'], 'category_image')){
+                Yii::$app->Common->unlinkExistedFile(Yii::$app->params['CATEGORY_IMAGE_UPLOAD_PATH'], $oldImage);
+                $file = $model->image;
+
+            }else{
+                $file = ($existingImage) ? $existingImage  : ''; // get file extension
+            }
+            $model->category_image = $file;
+            if($model->save()){
+                Yii::$app->getSession()->setFlash('msg',Yii::t("app","General Update Success"));
+                Yii::$app->Common->redirect(Url::toRoute('index'));
+            }
         }
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**

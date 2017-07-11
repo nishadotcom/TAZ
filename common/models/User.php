@@ -57,7 +57,8 @@ class User extends ActiveRecord implements IdentityInterface
             [['profile_image'], 'image', 'extensions' =>['jpg', 'png','jpeg','gif']],
             [['profile_image'], 'file', 'maxSize' =>1024*1024*2,'tooBig'=> \Yii::t("app", "Maximum File Size {fileSize}",['fileSize' => '2MB'])],
 
-            [['email','firstname','lastname','mobile'], 'required'],
+            [['email','firstname','lastname'], 'required'],
+            [['email','firstname','lastname','mobile'], 'required','on'=>'update'],
             //['endYear','validateYear'],
         ];
     }
@@ -166,7 +167,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function validatePassword($password)
     {
-        return Yii::$app->Common->getEncriptedPwd($password) === $this->password; 
+        return Yii::$app->Common->getEncriptedPwd($password) === $this->password;
         //return Yii::$app->security->validatePassword($password, $this->password);
     }
 

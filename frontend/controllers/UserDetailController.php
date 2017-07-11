@@ -1,10 +1,8 @@
 <?php
-
-namespace app\controllers;
-
+namespace frontend\controllers;
 use Yii;
-use app\models\UserDetail;
-use app\models\UserDetailSearch;
+use frontend\models\UserDetail;
+use frontend\models\UserDetailSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

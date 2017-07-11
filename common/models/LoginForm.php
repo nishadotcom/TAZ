@@ -23,8 +23,9 @@ class LoginForm extends Model
     {
         return [
             // username and password are both required
-            [['email', 'password'], 'required'],
-             ['email', 'email','message'=>'Please enter a valid email'],
+            [['email', 'password'], 'required','on'=>'site_login'],
+            [['username', 'password'], 'required','on'=>'backend_login'],
+            ['email', 'email','message'=>'Please enter a valid email'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
@@ -44,7 +45,8 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if(!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $field = ($this->scenario === 'backend_login') ? 'Username' : 'Email' ;
+                $this->addError($attribute, 'Incorrect '.$field.' or Password.');
             }
         }
     }
@@ -64,17 +66,22 @@ class LoginForm extends Model
     }
 
     /**
-     * Finds user by [[username]]
+     * Finds user by [[email]]
      *
      * @return User|null
      */
     protected function getUser()
     {
         if ($this->_user === null) {
-            //$this->_user = User::findByUsername($this->username);
+          if($this->scenario === 'backend_login'){
+              $this->_user = User::findByUsername($this->username);
+          }else{
             $this->_user = User::findByEmail($this->email);
-        }
+          }
 
+
+        }
         return $this->_user;
     }
+
 }

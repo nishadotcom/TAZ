@@ -22,7 +22,7 @@ class Category extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'taz_category';
+        return '{{%category}}';
     }
 
     /**
@@ -31,11 +31,14 @@ class Category extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['category_name', 'created_on'], 'required'],
+            [['category_name'], 'required'],
+            [['category_image'],'required','on'=>'create'],
             [['category_description', 'category_status'], 'string'],
             [['created_on', 'updated_on'], 'safe'],
             [['category_name'], 'string', 'max' => 150],
             [['category_image'], 'string', 'max' => 500],
+            [['category_image'], 'image', 'extensions' =>['jpg', 'png','jpeg']],
+            [['category_image'], 'file', 'maxSize' =>1024*1024*2,'tooBig'=> \Yii::t("app", "Maximum File Size {fileSize}",['fileSize' => '2MB'])],
             [['category_name'], 'unique'],
         ];
     }

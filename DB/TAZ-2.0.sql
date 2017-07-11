@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS taz_user(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	username VARCHAR(500) NOT NULL,
 	email VARCHAR(500) NOT NULL,
-	mobile VARCHAR(15) NOT NULL,
+	mobile VARCHAR(15) NULL,
 	password VARCHAR(32) NOT NULL,
 	auth_key VARCHAR(32) NULL DEFAULT NULL,
 	registered_mode ENUM('Web','FB','Google') NOT NULL DEFAULT 'Web',
@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS taz_user(
 	user_type ENUM('Buyer','Seller') NOT NULL DEFAULT 'Buyer',
 	status ENUM('Active', 'Suspended', 'Deleted', 'Awaiting to Activate') NOT NULL DEFAULT 'Active',
 	registration_ip VARCHAR(15) NOT NULL DEFAULT '0.0.0.0',
-	created_on DATETIME NOT NULL,
-  	updated_on DATETIME DEFAULT NULL
+	created_at DATETIME NOT NULL,
+  	updated_at DATETIME DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS taz_user_detail(
@@ -91,10 +91,10 @@ CREATE TABLE IF NOT EXISTS taz_product(
 	product_code TINYTEXT NOT NULL,
 	product_name MEDIUMTEXT NOT NULL,
 	product_owner_id INT(12) NOT NULL,
-	product_seller_price
-	product_retail_price 
-	product_material
-	product_color	
+	product_seller_price Decimal(7,2) NOT NULL,
+	product_retail_price Decimal(7,2) NOT NULL,
+	product_material Decimal(7,2)NOT NULL,
+	product_color varchar(30),	
 	product_status ENUM('AFA', 'Active', 'Suspended', 'Deleted') NOT NULL DEFAULT 'AFA' COMMENT 'AFA = Awaiting for approval',
 	created_on DATETIME NOT NULL,
   	updated_on DATETIME DEFAULT NULL

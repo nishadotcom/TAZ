@@ -1,9 +1,6 @@
 <?php
-
 namespace app\models;
-
 use Yii;
-
 /**
  * This is the model class for table "taz_user".
  *
@@ -31,6 +28,9 @@ use Yii;
  */
 class User extends \yii\db\ActiveRecord
 {
+
+
+
     /**
      * @inheritdoc
      */
@@ -38,7 +38,6 @@ class User extends \yii\db\ActiveRecord
     {
         return 'taz_user';
     }
-
     /**
      * @inheritdoc
      */

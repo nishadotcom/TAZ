@@ -1,6 +1,5 @@
 <?php
 namespace frontend\controllers;
-
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -14,6 +13,8 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\UserDetail;
+
 /**
  * Site controller
  */
@@ -88,8 +89,9 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
+        $model->scenario = 'site_login';
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-             
+
             Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
         } else {
             return $this->render('login', [
@@ -125,29 +127,41 @@ class SiteController extends Controller
     */
     public function actionProfileUpdate(){
         $this->layout = 'profile_page';
-        $usermodel = User::findOne(['id' => Yii::$app->user->getId()]);
-
+        $usermodel  = User::findOne(['id' => Yii::$app->user->getId()]);
+        $UserDetail = UserDetail::findOne(['user_id' => Yii::$app->user->getId()]);
+        if(!empty($UserDetail)){
+          $UserDetailModel =  UserDetail::findOne(['user_id' => Yii::$app->user->getId()]);
+        }else{
+          $UserDetailModel =  new UserDetail();
+        }
         $oldImage = $usermodel->profile_image;
-         if($usermodel->load(Yii::$app->request->post())) {
+        $usermodel->scenario = 'update';
+         if($usermodel->load(Yii::$app->request->post()) || $UserDetailModel->load(Yii::$app->request->post())) {
+
             $postData = Yii::$app->request->post();
             $dateTime = Yii::$app->Common->mysqlDateTime();
-            $usermodel->updated_at = $dateTime;                 
-            $existingImage = $postData['User']['profile_image'];
+            $usermodel->updated_at = $dateTime;
+            $existingImage = $postData['User']['existing_profile_image'];
             if(Yii::$app->Common->commonUpload($usermodel,Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH'],'profile_image')){
                 Yii::$app->Common->unlinkExistedFile(Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH'], $oldImage);
                 $image = $usermodel->profile_image;
-               
+
             }else{
                 $image = ($existingImage) ? $existingImage  : ''; // get file extension
             }
             $usermodel->profile_image = $image;
 
-          if($usermodel->save()){
-             Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Details updated Successfully") . '</div>');   
-             Yii::$app->Common->redirect(Url::toRoute(['profile-update']));
+            $UserDetailModel->short_about_me = $postData['short_about_me'];
+            $UserDetailModel->long_about_me = $postData['long_about_me'];
+            $UserDetailModel->user_id = Yii::$app->user->getId();
+          if($usermodel->save() && $UserDetailModel->save()){
+               Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Details updated Successfully") . '</div>');
+               Yii::$app->Common->redirect(Url::toRoute(['profile-update']));
+           }else {
+            return $this->render('profile/profile_update',['usermodel'=>$usermodel,'UserDetailModel'=>$UserDetailModel]);
            }
-        } 
-        return $this->render('profile/profile_update',['usermodel'=>$usermodel]);
+        }
+        return $this->render('profile/profile_update',['usermodel'=>$usermodel,'UserDetailModel'=>$UserDetailModel]);
 
     }
     /**
@@ -194,11 +208,13 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             if ($model->signup()) {
                     Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Registered Successfully") . '</div>');
-                  return $this->redirect(['site/signup']);   
+                  return $this->redirect(['site/signup']);
 
                 /*if (Yii::$app->getUser()->login($user)) {
                     //return $this->goHome();
                 }*/
+            }else{
+              $model->get_errors();
             }
         }
          return $this->render('signup', [
