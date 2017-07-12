@@ -1,10 +1,16 @@
 <?php
 $linux_user = exec('who');
 if(strpos($linux_user, 'nisha') || strpos($linux_user, 'nisha') == 0){
+	/*$host 		= 'sql12.freemysqlhosting.net';
+	$dbName 	= 'sql12184890';
+	$dbUser		= 'sql12184890	';
+	$dbPassword	= '4rxQPFQ2lV';	*/
+	$host 		= 'localhost';
 	$dbName 	= 'TAZALO';
 	$dbUser		= 'root';
 	$dbPassword	= 'root';
 }else{
+	$host 		= 'localhost';
 	$dbName 	= 'taz_old';
 	$dbUser		= 'root';
 	$dbPassword	= '';	
@@ -13,7 +19,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname='.$dbName,
+            'dsn' => 'mysql:host='.$host.';dbname='.$dbName,
             'username' => $dbUser,
             'password' => $dbPassword,
             'charset' => 'utf8',
