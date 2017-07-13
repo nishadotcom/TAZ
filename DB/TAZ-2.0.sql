@@ -88,13 +88,24 @@ CREATE TABLE IF NOT EXISTS taz_category(
 CREATE TABLE IF NOT EXISTS taz_product(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	product_category_id TINYINT(4) NOT NULL,
+	product_subcategory_id TINYINT(4) NOT NULL DEFAULT 0 COMMENT 'Subcategory is not required now. It is future enhancement',
 	product_code TINYTEXT NOT NULL,
 	product_name MEDIUMTEXT NOT NULL,
 	product_owner_id INT(12) NOT NULL,
-	product_seller_price Decimal(7,2) NOT NULL,
-	product_retail_price Decimal(7,2) NOT NULL,
-	product_material Decimal(7,2)NOT NULL,
-	product_color varchar(30),	
+	product_price Decimal(7,2) NOT NULL DEFAULT 0.00,
+	product_sale_price Decimal(7,2) NOT NULL DEFAULT 0.00,
+	product_retail_price Decimal(7,2) NOT NULL DEFAULT 0.00 COMMENT 'Caluclated automatically with the percentage of company selling percentage',
+	product_material VARCHAR(600) NOT NULL,
+	product_color varchar(30) NOT NULL,	
+	product_dimension_type ENUM('Centimeter', 'Millimeter', 'Meter') NOT NULL DEFAULT 'Centimeter',
+	product_height Decimal(2,2) NOT NULL DEFAULT 00.00, 
+	product_length Decimal(2,2) NOT NULL DEFAULT 00.00, 
+	product_breadth Decimal(2,2) NOT NULL DEFAULT 00.00, 
+	product_weight Decimal(2,2) NOT NULL DEFAULT 00.00 COMMENT 'Weight is in KG',
+	product_short_description MEDIUMTEXT NULL DEFAULT NULL,
+	product_long_description TEXT NULL DEFAULT NULL,
+	product_discount_status ENUM('Yes', 'No') NOT NULL DEFAULT 'No' COMMENT 'Refers to discount table. If product dicount status is Yes',
+	product_guarantee_status ENUM('Yes', 'No') NOT NULL DEFAULT 'No' COMMENT 'Refers to guarantee table. If product guarantee status is Yes',
 	product_status ENUM('AFA', 'Active', 'Suspended', 'Deleted') NOT NULL DEFAULT 'AFA' COMMENT 'AFA = Awaiting for approval',
 	created_on DATETIME NOT NULL,
   	updated_on DATETIME DEFAULT NULL
@@ -106,6 +117,16 @@ CREATE TABLE IF NOT EXISTS taz_product_image(
 	type CHAR(6) NULL DEFAULT NULL,
 	file_name VARCHAR(500) NOT NULL,
 	order_by TINYINT(2) NULL DEFAULT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS taz_product_address(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	product_id INT(12) NOT NULL COMMENT 'Refers to Product table id',
+	street VARCHAR(500) NULL DEFAULT NULL,
+	city VARCHAR(150) NULL DEFAULT NULL,
+	state VARCHAR(200) NULL DEFAULT NULL,
+	country VARCHAR(200) NULL DEFAULT NULL,
+	pin_code VARCHAR(10) NULL DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS taz_user_favorite(
