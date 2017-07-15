@@ -38,7 +38,7 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
@@ -48,6 +48,10 @@ return [
                 'logout' => 'site/logout',
                 'profile-dashboard'=> 'site/profile-dashboard',
                 'profile-update'=> 'site/profile-update',
+                'contact-details'=> 'user-contact-detail/',
+                'contact-details/add'=> 'user-contact-detail/create',
+                 'contact-details/update/<id>'=> 'user-contact-detail/update',
+                  'contact-details/delete/<id>'=> 'user-contact-detail/delete',
             ],
         ],
         'view' => [

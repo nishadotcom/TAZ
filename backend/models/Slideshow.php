@@ -1,7 +1,5 @@
 <?php
-
 namespace backend\models;
-
 use Yii;
 
 /**
@@ -23,7 +21,7 @@ class Slideshow extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'taz_slideshow';
+        return '{{%slideshow}}';
     }
 
     /**
@@ -32,11 +30,15 @@ class Slideshow extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'image_name', 'created_on'], 'required'],
+            [['title','description','image_name'], 'required','on'=>'create'],
+            [['title','description'], 'required','on'=>'update'],
+            //[['image_name'],'required','on'=>'create'],
             [['title', 'description', 'status'], 'string'],
             [['order_by'], 'integer'],
             [['created_on', 'modified_on'], 'safe'],
             [['image_name'], 'string', 'max' => 350],
+            [['image_name'], 'image', 'extensions' =>['jpg', 'png','jpeg']],
+            [['image_name'], 'file', 'maxSize' =>1024*1024*2,'tooBig'=> \Yii::t("app", "Maximum File Size {fileSize}",['fileSize' => '2MB'])],
         ];
     }
 
