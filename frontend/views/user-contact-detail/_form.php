@@ -12,9 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
-
-    <?= $form->field($model, 'mobile')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'mobile')->textInput(['maxlength' => 10]) ?>
 
     <?= $form->field($model, 'land_line_number')->textInput(['maxlength' => true]) ?>
 
@@ -29,7 +27,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'pin_code')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Add' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+          <?= Html::a(' &laquo; Back', ['/contact-details/'],['class' => 'btn btn-default', 'title' => 'Back'])?>
     </div>
 
     <?php ActiveForm::end(); ?>

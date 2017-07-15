@@ -5,15 +5,12 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\UserContactDetail */
 
-$this->title = 'Update User Contact Detail: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'User Contact Details', 'url' => ['index']];
+$this->title = 'Update Contact Details';
+$this->params['breadcrumbs'][] = ['label' => 'Contact Details', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="user-contact-detail-update">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>

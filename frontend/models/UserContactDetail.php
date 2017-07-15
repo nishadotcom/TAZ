@@ -1,7 +1,5 @@
 <?php
-
-namespace app\models;
-
+namespace frontend\models;
 use Yii;
 
 /**
@@ -26,7 +24,7 @@ class UserContactDetail extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'taz_user_contact_detail';
+        return '{{%user_contact_detail}}';
     }
 
     /**
@@ -35,7 +33,7 @@ class UserContactDetail extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id'], 'required'],
+            [['mobile','street','city','state','country','pin_code'], 'required'],
             [['user_id'], 'integer'],
             [['mobile'], 'string', 'max' => 15],
             [['land_line_number'], 'string', 'max' => 25],
@@ -43,7 +41,7 @@ class UserContactDetail extends \yii\db\ActiveRecord
             [['city'], 'string', 'max' => 150],
             [['state', 'country'], 'string', 'max' => 200],
             [['pin_code'], 'string', 'max' => 10],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+            //[['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
 

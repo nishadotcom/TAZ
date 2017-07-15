@@ -1,11 +1,10 @@
 <?php
-
-namespace app\models;
+namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\UserContactDetail;
+use frontend\models\UserContactDetail;
 
 /**
  * UserContactDetailSearch represents the model behind the search form about `app\models\UserContactDetail`.
