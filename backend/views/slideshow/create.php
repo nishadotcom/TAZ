@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Slideshow */
 
-$this->title = 'Create Slideshow';
+$this->title = 'Add Slideshow';
 $this->params['breadcrumbs'][] = ['label' => 'Slideshows', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

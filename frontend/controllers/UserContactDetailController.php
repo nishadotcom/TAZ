@@ -1,10 +1,8 @@
 <?php
-
-namespace app\controllers;
-
+namespace frontend\controllers;
 use Yii;
-use app\models\UserContactDetail;
-use app\models\UserContactDetailSearch;
+use frontend\models\UserContactDetail;
+use frontend\models\UserContactDetailSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,6 +33,7 @@ class UserContactDetailController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = 'profile_page';
         $searchModel = new UserContactDetailSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -63,6 +62,7 @@ class UserContactDetailController extends Controller
      */
     public function actionCreate()
     {
+        $this->layout = 'profile_page';
         $model = new UserContactDetail();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
