@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS taz_product(
 	product_retail_price Decimal(7,2) NOT NULL DEFAULT 0.00,
 	product_material VARCHAR(600) NOT NULL,
 	product_color varchar(30) NOT NULL,	
-	product_dimension_type ENUM('Centimeter', 'Millimeter', 'Meter') NOT NULL DEFAULT 'Centimeter',
+	product_dimension_type ENUM('cm', 'mm', 'm') NOT NULL DEFAULT 'cm',
 	product_height Decimal(2,2) NOT NULL DEFAULT 00.00, 
 	product_length Decimal(2,2) NOT NULL DEFAULT 00.00, 
 	product_breadth Decimal(2,2) NOT NULL DEFAULT 00.00, 
@@ -111,6 +111,11 @@ CREATE TABLE IF NOT EXISTS taz_product(
 	created_on DATETIME NOT NULL,
   	updated_on DATETIME DEFAULT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+ALTER TABLE taz_product
+  ADD CONSTRAINT fk_taz_product_product_owner_id FOREIGN KEY (product_owner_id) REFERENCES taz_user (id) ON DELETE CASCADE;
+ALTER TABLE taz_product
+  ADD CONSTRAINT fk_taz_product_product_category_id FOREIGN KEY (product_category_id) REFERENCES taz_category (id) ON DELETE CASCADE;
 
 CREATE TABLE IF NOT EXISTS taz_product_image(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
