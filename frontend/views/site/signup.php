@@ -26,10 +26,14 @@ $this->params['breadcrumbs'][] = $this->title;
 				  <label for="">Last Name</label>
 				<?= $form->field($model, 'lastname')->textInput(array('maxlength' => 30, 'placeholder' => 'Last Name','class'=>'form-control'))->label(false) ?>
 				</div>
-		
+
 				<div class="form-group">
 				  <label for="">Email</label>
 				 <?= $form->field($model, 'email')->textInput(array('maxlength' => 30, 'placeholder' => 'Email','class'=>'form-control'))->label(false) ?>
+				</div>
+				<div class="form-group">
+				  <label for="">Mobile</label>
+				 <?= $form->field($model, 'mobile')->textInput(array('maxlength' => 15, 'placeholder' => 'Mobile','class'=>'form-control'))->label(false) ?>
 				</div>
 				<div class="form-group">
 				  <label for="">Password</label>
@@ -43,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 	  </div>
 
-<!-- OLD CODE --> 
+<!-- OLD CODE -->
 <?php /* ?>
 <div class="site-signup">
     <h1><?= Html::encode($this->title) ?></h1>

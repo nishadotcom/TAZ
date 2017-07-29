@@ -24,9 +24,9 @@ $this->title = 'Profile';
                       }
                         ?>
                       <img src="<?php echo Yii::$app->homeUrl.Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH_FRONTEND'] . $image_name; ?>">
-                    <!--  <div class="caption">
-                        <a href="#" class="btn btn-primary btn-block" role="button">Change Avatar</a>
-                      </div>-->
+                    <div class="caption">
+                        <a href="#" class="btn btn-primary btn-block" role="button">Change Image</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-10 col-sm-9 col-xs-12">
@@ -47,7 +47,7 @@ $this->title = 'Profile';
                         <div class="form-group">
                           <label for="" class="col-md-2 col-sm-3 control-label">Mobile</label>
                           <div class="col-md-10 col-sm-9">
-                            <?= $form->field($usermodel, 'mobile')->textInput(array('maxlength' => 10, 'placeholder' => 'Mobile','class'=>'form-control'))->label(false) ?>
+                            <?= $form->field($usermodel, 'mobile')->textInput(array('maxlength' => 15, 'placeholder' => 'Mobile','class'=>'form-control'))->label(false) ?>
                           </div>
                         </div>
                         <div class="form-group">
@@ -60,7 +60,7 @@ $this->title = 'Profile';
                           <label for="" class="col-md-2 col-sm-3 control-label">Profile Image</label>
                              <div class="col-md-10 col-sm-9">
                            <?= $form->field($usermodel, 'profile_image')->fileInput()->label(false); ?>
-                           <?= $form->field($usermodel, 'profile_image')->hiddenInput(['name' => 'User[existing_profile_image]','value' => $usermodel->profile_image])->label(false); ?>
+                           <?= Html::activeHiddenInput($usermodel, 'profile_image',['type' => 'hidden', 'name' => 'User[existing_profile_image]','value' => $usermodel->profile_image]); ?>
                           <span>Upload Formats:&nbsp;jpg,png,jpeg</span>
                            </div>
                         </div>
