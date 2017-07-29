@@ -18,7 +18,7 @@ class UserContactDetailSearch extends UserContactDetail
     {
         return [
             [['id', 'user_id'], 'integer'],
-            [['mobile', 'land_line_number', 'street', 'city', 'state', 'country', 'pin_code'], 'safe'],
+            [['mobile', 'land_line_number', 'street', 'city', 'state', 'country', 'pin_code','updated_at'], 'safe'],
         ];
     }
 

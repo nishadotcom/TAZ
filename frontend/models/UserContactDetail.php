@@ -41,6 +41,7 @@ class UserContactDetail extends \yii\db\ActiveRecord
             [['city'], 'string', 'max' => 150],
             [['state', 'country'], 'string', 'max' => 200],
             [['pin_code'], 'string', 'max' => 10],
+            ['updated_at','safe'],
             //[['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }

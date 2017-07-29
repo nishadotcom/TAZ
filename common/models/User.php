@@ -55,7 +55,7 @@ class User extends ActiveRecord implements IdentityInterface
             [['created_at', 'updated_at'], 'safe'],
             [['profile_image'], 'string'],
             [['profile_image'], 'image', 'extensions' =>['jpg', 'png','jpeg','gif']],
-            [['profile_image'], 'file', 'maxSize' =>1024*1024*2,'tooBig'=> \Yii::t("app", "Maximum File Size {fileSize}",['fileSize' => '2MB'])],
+            [['profile_image'], 'file', 'maxSize' =>1024*1024*2,'tooBig'=> \Yii::t("app", "Maximum File Size should be {fileSize}",['fileSize' => '2MB'])],
 
             [['email','firstname','lastname'], 'required'],
             [['email','firstname','lastname','mobile'], 'required','on'=>'update'],
@@ -203,5 +203,17 @@ class User extends ActiveRecord implements IdentityInterface
     public function removePasswordResetToken()
     {
         $this->password_reset_token = null;
+    }
+    /**
+     * Return user fullname
+     *
+     * @param string $username
+     * @return static|null
+     */
+    public static function getFullname($userid)
+    {
+        $user_data =  static::findOne(['id' => $userid]);
+
+        return $user_data->firstname.'&nbsp;'.$user_data->lastname;
     }
 }

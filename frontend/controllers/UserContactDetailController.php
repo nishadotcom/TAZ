@@ -6,6 +6,7 @@ use frontend\models\UserContactDetailSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\Url;
 
 /**
  * UserContactDetailController implements the CRUD actions for UserContactDetail model.
@@ -83,14 +84,17 @@ class UserContactDetailController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        if ($model->load(Yii::$app->request->post())) {
+            $dateTime = Yii::$app->Common->mysqlDateTime();
+            $model->updated_at  = $dateTime;
+            if($model->save()){
+              Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Details updated Successfully") . '</div>');
+                Yii::$app->Common->redirect(Url::toRoute('index'));
+            }
         }
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**
