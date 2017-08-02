@@ -4,6 +4,7 @@ use yii\helpers\Html;
 // GET CONTROLLER
 $controller = Yii::$app->controller;
 $action 	= $controller->action->id;
+//echo $action;
 ?>
 
 <!-- HEADER -->
@@ -24,27 +25,25 @@ $action 	= $controller->action->id;
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">            
-	  <ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-		  <a href="<?php echo Yii::$app->homeUrl.'become-seller'; ?>" class="">Become a Seller</a>
-		</li>
-		<li class="dropdown">
-		  <a href="javascript:void(0)" class="">Help</a>
-		</li>
-	 <?php if(!Yii::$app->user->isGuest){ ?>
-		<li class="dropdown <?php echo ($action == 'login') ? 'active' : ''; ?>">
-		  <a href="<?php echo Yii::$app->homeUrl.'logout'; ?>" class="">Log Out</a>
-		</li>
-	  <?php }else{  ?>
-	  <li>
-	  	  <a href="<?php echo Yii::$app->homeUrl.'login'; ?>" class="">Log In</a>
-		</li>
-		<li class="dropdown <?php echo ($action == 'signup') ? 'active' : ''; ?>">
-		  <a href="<?php echo Yii::$app->homeUrl.'signup'; ?>" class="">Sign Up</a>
-		</li>
-		<?php } ?>
-	
-		
+		<ul class="nav navbar-nav navbar-right">
+			<?php if(!Yii::$app->user->isGuest){ ?>
+				<li>
+					<a href="<?php echo Yii::$app->homeUrl.'logout'; ?>" class="">Log Out</a>
+				</li>
+			<?php }else{  ?>
+				<li class="<?php echo ($action == 'become-seller') ? 'active' : ''; ?>">
+					<a href="<?php echo Yii::$app->homeUrl.'become-seller'; ?>" title="Become a Seller">Become a Seller</a>
+				</li>
+				<li class="<?php echo ($action == 'login') ? 'active' : ''; ?>">
+					<a href="<?php echo Yii::$app->homeUrl.'login'; ?>" class="">Log In</a>
+				</li>
+				<li class="<?php echo ($action == 'signup') ? 'active' : ''; ?>">
+					<a href="<?php echo Yii::$app->homeUrl.'signup'; ?>" class="">Sign Up</a>
+				</li>
+			<?php } ?>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="">Help</a>
+			</li>
 	  </ul>
 	</div><!-- /.navbar-collapse -->
   </div>

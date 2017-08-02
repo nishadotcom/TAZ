@@ -2650,8 +2650,11 @@ body.bodyColor.container {
   }
 }
 @media (min-width: 768px) {
-  .whiteSection, .mainContent {
+  .whiteSection {
     padding: 90px 0 60px 0;
+  }
+  .mainContent  {
+	padding: 50px 0 60px 0;
   }
 }
 .whiteSection .featuredCollection .thumbnail, .mainContent .featuredCollection .thumbnail {
@@ -3895,9 +3898,9 @@ body.bodyColor.container {
   }
 }
 @media (min-width: 768px) {
-  .logIn {
+  /*.logIn {
     padding: 90px 0 70px 0;
-  }
+  }*/
 }
 .logIn .checkbox input[type=checkbox],
 .logIn .checkbox-inline input[type=checkbox],
