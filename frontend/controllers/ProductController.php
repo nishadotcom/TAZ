@@ -64,10 +64,27 @@ class ProductController extends Controller
      */
     public function actionCreate()
     {
+		$this->layout = 'profile_page';
         $model = new Product();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        //if ($model->load(Yii::$app->request->post()) && $model->save()) {
+		if ($model->load(Yii::$app->request->post())) {
+			/*echo '<pre>';
+			print_r(Yii::$app->request->post());
+			echo Yii::$app->user->id;
+			exit;*/
+			$postData 	= Yii::$app->request->post();
+			$model->product_code 		= 'PRD002';
+			$model->product_owner_id	= Yii::$app->user->id;
+			$model->product_sale_price	= ($postData['Product']['product_price']*20)/100+$postData['Product']['product_price'];
+			$model->created_on 			= date('Y-m-d H:i:s');
+			if($model->save()){
+				return $this->redirect(['view', 'id' => $model->id]);
+			}else{
+				return $this->render('create', [
+					'model' => $model,
+				]);
+			}
         } else {
             return $this->render('create', [
                 'model' => $model,

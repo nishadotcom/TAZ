@@ -1,21 +1,29 @@
 <?php
-
-use yii\helpers\Html;
-
-
-/* @var $this yii\web\View */
-/* @var $model app\models\Product */
-
-$this->title = 'Create Product';
-$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+use frontend\widgets\ProfileMenu;
+$this->title = 'My Products';
 ?>
-<div class="product-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
-
+<div class="row">
+         <?= ProfileMenu::widget(); ?>
 </div>
+
+<div class="row">
+            <div class="col-xs-12">
+              <div class="innerWrapper">
+                <!--<div class="alert alert-warning alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <strong>Warning!</strong> You have one unpaid order. 
+                </div>-->
+
+                <div class="orderBox profile">
+					<div class="row">
+						<div class="col-md-10 col-sm-9 col-xs-12">
+						<?= $this->render('_form', [
+							'model' => $model,
+						]) ?>
+						</div>
+					</div>
+                </div>
+              </div>
+            </div>
+          </div>

@@ -112,6 +112,11 @@ class SiteController extends Controller
         Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Logged out Successfully") . '</div>');
         Yii::$app->Common->redirect(Url::toRoute(['login']));
     }
+	
+	public function actionBecomeSeller(){
+        return $this->render('becomeSeller');
+    }
+	
     /*profile update.
     *
     */

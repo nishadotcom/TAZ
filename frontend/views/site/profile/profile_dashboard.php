@@ -11,18 +11,22 @@ $this->title = 'Account Profile';
 <div class="row">
             <div class="col-xs-12">
               <div class="innerWrapper">
-                <div class="alert alert-warning alert-dismissible" role="alert">
+                <!--<div class="alert alert-warning alert-dismissible" role="alert">
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   <strong>Warning!</strong> You have one unpaid order. 
-                </div>
+                </div>-->
                 <h3>Wellcome <span><?php echo $user['firstname'].'&nbsp;'.$user['lastname'];?></span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
                 <ul class="list-inline">
                   <li><a href="<?php echo Yii::$app->homeUrl.'demo/profiledashboard'; ?>" class="btn btn-default btn-lg"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
                   <li><a href="<?php echo Yii::$app->homeUrl.'demo/accountprofile'; ?>" class="btn btn-default btn-lg"><i class="fa fa-map-marker" aria-hidden="true"></i>My Address</a></li>
                   <li><a href="<?php echo Yii::$app->homeUrl.'demo/my-address'; ?>" class="btn btn-default btn-lg"><i class="fa fa-list" aria-hidden="true"></i>All Orders</a></li>
                   <li><a href="<?php echo Yii::$app->homeUrl.'demo/wish-list'; ?>" class="btn btn-default btn-lg"><i class="fa fa-gift" aria-hidden="true"></i>Wishlist</a></li>
-                  <!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Address</a></li>-->
+					<?php 
+					echo ($user['user_type'] == 'Seller') ? '<li><a href="'.Yii::$app->homeUrl.'seller/my-products'.'" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>Products</a></li>' : '';
+					?>
+					<!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Address</a></li>-->
                 </ul>
                 <div class="orderBox">
                   <h4>Unpaid Orders</h4>

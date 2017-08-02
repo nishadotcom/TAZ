@@ -49,7 +49,7 @@ class Product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_category_id', 'product_code', 'product_name', 'product_owner_id', 'product_material', 'product_color', 'created_on'], 'required'],
+            [['product_category_id', 'product_code', 'product_name', 'product_price', 'product_owner_id', 'product_dimension_type', 'product_material', 'product_color'], 'required'],
             [['product_category_id', 'product_subcategory_id', 'product_owner_id'], 'integer'],
             [['product_code', 'product_name', 'product_dimension_type', 'product_short_description', 'product_long_description', 'product_discount_status', 'product_guarantee_status', 'product_status'], 'string'],
             [['product_price', 'product_sale_price', 'product_retail_price', 'product_height', 'product_length', 'product_breadth', 'product_weight'], 'number'],
@@ -68,11 +68,11 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'product_category_id' => 'Product Category ID',
-            'product_subcategory_id' => 'Product Subcategory ID',
+            'product_category_id' => 'Product Category',
+            'product_subcategory_id' => 'Product Subcategory',
             'product_code' => 'Product Code',
             'product_name' => 'Product Name',
-            'product_owner_id' => 'Product Owner ID',
+            'product_owner_id' => 'Product Owner',
             'product_price' => 'Product Price',
             'product_sale_price' => 'Product Sale Price',
             'product_retail_price' => 'Product Retail Price',
