@@ -1,0 +1,8 @@
+.grid .box {
+    border-radius: 7px;
+    border: 1px solid #e0e2e3;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}

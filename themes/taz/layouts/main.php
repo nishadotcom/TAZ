@@ -30,6 +30,7 @@ use frontend\widgets\Banner;
     
     <!-- CUSTOM CSS -->
     <link href="<?php echo $this->theme->baseUrl; ?>/assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo $this->theme->baseUrl; ?>/assets/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $this->theme->baseUrl; ?>/assets/css/colors/default.css" id="option_color">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

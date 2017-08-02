@@ -26,7 +26,7 @@ $action 	= $controller->action->id;
 	<div class="collapse navbar-collapse navbar-ex1-collapse">            
 	  <ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
-		  <a href="javascript:void(0)" class="">Become a Seller</a>
+		  <a href="<?php echo Yii::$app->homeUrl.'become-seller'; ?>" class="">Become a Seller</a>
 		</li>
 		<li class="dropdown">
 		  <a href="javascript:void(0)" class="">Help</a>
