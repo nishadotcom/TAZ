@@ -31,10 +31,12 @@ class ProductImage extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_id'], 'required'],
+            [['product_id', 'cover_photo'], 'required'],
             [['product_id'], 'integer'],
             [['type'], 'string', 'max' => 6],
-            [['file_name', 'cover_photo'], 'string', 'max' => 500],
+            //[['file_name', 'cover_photo'], 'string', 'max' => 500],
+			[['file_name', 'cover_photo'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'], 
+			[['file_name'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg', 'maxFiles' => 4],
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::className(), 'targetAttribute' => ['product_id' => 'id']],
         ];
     }
@@ -48,8 +50,8 @@ class ProductImage extends \yii\db\ActiveRecord
             'id' => 'ID',
             'product_id' => 'Product ID',
             'type' => 'Type',
-            'file_name' => 'File Name',
-            'cover_photo' => 'Cover Photo',
+            'file_name' => 'Product Other Images',
+            'cover_photo' => 'Product Cover Image',
         ];
     }
 

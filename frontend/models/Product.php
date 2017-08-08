@@ -1,7 +1,10 @@
 <?php
+
 namespace frontend\models;
+
 use Yii;
 use backend\models\Category;
+use frontend\models\User;
 
 /**
  * This is the model class for table "taz_product".
@@ -11,6 +14,7 @@ use backend\models\Category;
  * @property integer $product_subcategory_id
  * @property string $product_code
  * @property string $product_name
+ * @property string $product_seo
  * @property integer $product_owner_id
  * @property string $product_price
  * @property string $product_sale_price
@@ -32,6 +36,9 @@ use backend\models\Category;
  *
  * @property Category $productCategory
  * @property User $productOwner
+ * @property ProductAddress[] $productAddresses
+ * @property ProductImage[] $productImages
+ * @property ProductTag[] $productTags
  */
 class Product extends \yii\db\ActiveRecord
 {
@@ -49,9 +56,9 @@ class Product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_category_id', 'product_code', 'product_name', 'product_price', 'product_owner_id', 'product_dimension_type', 'product_material', 'product_color'], 'required'],
+            [['product_category_id', 'product_code', 'product_name', 'product_seo', 'product_owner_id', 'product_material', 'product_color', 'created_on'], 'required'],
             [['product_category_id', 'product_subcategory_id', 'product_owner_id'], 'integer'],
-            [['product_code', 'product_name', 'product_dimension_type', 'product_short_description', 'product_long_description', 'product_discount_status', 'product_guarantee_status', 'product_status'], 'string'],
+            [['product_code', 'product_name', 'product_seo', 'product_dimension_type', 'product_short_description', 'product_long_description', 'product_discount_status', 'product_guarantee_status', 'product_status'], 'string'],
             [['product_price', 'product_sale_price', 'product_retail_price', 'product_height', 'product_length', 'product_breadth', 'product_weight'], 'number'],
             [['created_on', 'updated_on'], 'safe'],
             [['product_material'], 'string', 'max' => 600],
@@ -68,11 +75,12 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'product_category_id' => 'Product Category',
-            'product_subcategory_id' => 'Product Subcategory',
+            'product_category_id' => 'Product Category ID',
+            'product_subcategory_id' => 'Product Subcategory ID',
             'product_code' => 'Product Code',
             'product_name' => 'Product Name',
-            'product_owner_id' => 'Product Owner',
+            'product_seo' => 'Product Seo',
+            'product_owner_id' => 'Product Owner ID',
             'product_price' => 'Product Price',
             'product_sale_price' => 'Product Sale Price',
             'product_retail_price' => 'Product Retail Price',
@@ -107,5 +115,29 @@ class Product extends \yii\db\ActiveRecord
     public function getProductOwner()
     {
         return $this->hasOne(User::className(), ['id' => 'product_owner_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductAddresses()
+    {
+        return $this->hasMany(ProductAddress::className(), ['product_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductImages()
+    {
+        return $this->hasMany(ProductImage::className(), ['product_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductTags()
+    {
+        return $this->hasMany(ProductTag::className(), ['product_id' => 'id']);
     }
 }

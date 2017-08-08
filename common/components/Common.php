@@ -245,8 +245,14 @@ class Common extends Component {
         }
     }
 
-   
-
-}
+	/**
+	* This methbod handles to generate unique random code with given string
+	**/
+	public static function generateRandomStr($uniqueStr='', $length=4){
+		$randomString 	= Yii::$app->getSecurity()->generateRandomString($length);
+		$constructStr 	= $uniqueStr.date('dmyHis').$randomString;
+		return $randomString;
+	}
+} // End of class
 ?>
 
