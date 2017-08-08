@@ -22,7 +22,8 @@ $categoryListData	= ArrayHelper::map($categories,'id','category_name');
 			'template' => '<div class="form-group"><label for="" class="col-md-3 col-sm-4 control-label">{label}</label><div class="col-md-9 col-sm-6">{input}</div></div>',
 		],
 		'options' => [
-			'class' => 'form-horizontal'
+			'class' => 'form-horizontal',
+			'enctype' => 'multipart/form-data'
 		]
 	]); ?>
 						
@@ -65,7 +66,13 @@ $categoryListData	= ArrayHelper::map($categories,'id','category_name');
 
     <?= $form->field($model, 'product_guarantee_status')->dropDownList([ 'Yes' => 'Yes', 'No' => 'No', ], ['prompt' => 'Select Guarantee Status', 'options'=>['No'=>['selected'=>'selected']]]) ?>
 
-    <?php //echo $form->field($model, 'product_status')->dropDownList([ 'AFA' => 'AFA', 'Active' => 'Active', 'Suspended' => 'Suspended', 'Deleted' => 'Deleted', 'Needs Improvement' => 'Needs Improvement', 'Denied' => 'Denied', ], ['prompt' => '']) ?>
+	<?= $form->field($imageModel, 'cover_photo')->fileInput(['maxlength' => true]) ?>
+	
+	<?= $form->field($imageModel, 'file_name[]')->fileInput(['multiple'=>true, 'accept' => 'image/*']) ?>
+
+    
+
+	<?php //echo $form->field($model, 'product_status')->dropDownList([ 'AFA' => 'AFA', 'Active' => 'Active', 'Suspended' => 'Suspended', 'Deleted' => 'Deleted', 'Needs Improvement' => 'Needs Improvement', 'Denied' => 'Denied', ], ['prompt' => '']) ?>
 
     <?php //echo $form->field($model, 'created_on')->textInput() ?>
 

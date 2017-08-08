@@ -20,6 +20,7 @@ $this->title = 'My Products';
 						<div class="col-md-10 col-sm-9 col-xs-12">
 						<?= $this->render('_form', [
 							'model' => $model,
+							'imageModel' => $imageModel,
 						]) ?>
 						</div>
 					</div>
