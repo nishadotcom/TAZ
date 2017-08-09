@@ -16,10 +16,6 @@ class SignupForm extends Model
     public $firstname;
     public $lastname;
     public $mobile;
-    //public $password;
-
-
-
 
     /**
      * @inheritdoc
@@ -71,7 +67,7 @@ class SignupForm extends Model
         $user->created_at = Yii::$app->Common->mysqlDateTime();
 
 
-        //print_r($user); exit;
+        //echo '<pre>'; print_r($user); exit;
         return $user->save() ? $user : null;
     }
 }
