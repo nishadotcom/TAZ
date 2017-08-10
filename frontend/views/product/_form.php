@@ -14,9 +14,6 @@ $categories			= Category::find()->where(['category_status'=>'Active'])->all();
 $categoryListData	= ArrayHelper::map($categories,'id','category_name');
 
 ?>
-
-<div class="product-form">
-
     <?php $form = ActiveForm::begin([
 		'fieldConfig' => [
 			'template' => '<div class="form-group"><label for="" class="col-md-3 col-sm-4 control-label">{label}</label><div class="col-md-9 col-sm-6">{input}</div></div>',
@@ -26,6 +23,10 @@ $categoryListData	= ArrayHelper::map($categories,'id','category_name');
 			'enctype' => 'multipart/form-data'
 		]
 	]); ?>
+<div class="col-sm-6">
+<div class="product-form">
+
+
 						
 
     <?php //echo $form->field($model, 'product_subcategory_id')->textInput() ?>
@@ -81,12 +82,18 @@ $categoryListData	= ArrayHelper::map($categories,'id','category_name');
     <?php /* ?><div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div> <?php */ ?>
-	<div class="form-group">
+	
+
+    
+
+</div>
+</div>
+<div class="col-sm-6">
+</div>
+
+<div class="form-group">
 		<div class="col-md-offset-10 col-md-2 col-sm-offset-9 col-sm-3">
 			<?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success btn-block' : 'btn btn-primary btn-block']) ?>
 		</div>
 	</div>
-
-    <?php ActiveForm::end(); ?>
-
-</div>
+<?php ActiveForm::end(); ?>

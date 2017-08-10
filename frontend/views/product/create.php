@@ -17,12 +17,13 @@ $this->title = 'My Products';
 
                 <div class="orderBox profile">
 					<div class="row">
-						<div class="col-md-10 col-sm-9 col-xs-12">
+						<!--<div class="col-md-10 col-sm-9 col-xs-12">-->
+						<!--<div class="col-sm-6">-->
 						<?= $this->render('_form', [
 							'model' => $model,
 							'imageModel' => $imageModel,
 						]) ?>
-						</div>
+						<!--</div>-->
 					</div>
                 </div>
               </div>
