@@ -6,6 +6,7 @@ use Yii;
 use frontend\models\Product;
 use frontend\models\ProductImage;
 use frontend\models\ProductSearch; 
+use frontend\models\ProductAddress; 
 use backend\models\Category;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

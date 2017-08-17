@@ -107,6 +107,7 @@ CREATE TABLE IF NOT EXISTS taz_product(
 	product_weight Decimal(2,2) NOT NULL DEFAULT 00.00 COMMENT 'Weight is in KG',
 	product_short_description MEDIUMTEXT NULL DEFAULT NULL,
 	product_long_description TEXT NULL DEFAULT NULL,
+	admin_note MEDIUMTEXT NULL DEFAULT NULL COMMENT 'Admin Note',
 	product_discount_status ENUM('Yes', 'No') NOT NULL DEFAULT 'No' COMMENT 'Refers to discount table. If product dicount status is Yes',
 	product_guarantee_status ENUM('Yes', 'No') NOT NULL DEFAULT 'No' COMMENT 'Refers to guarantee table. If product guarantee status is Yes',
 	product_status ENUM('AFA', 'Active', 'Suspended', 'Deleted', 'Needs Improvement', 'Denied') NOT NULL DEFAULT 'AFA' COMMENT 'AFA = Awaiting for approval',
