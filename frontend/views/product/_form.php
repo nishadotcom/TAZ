@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use backend\models\Category;
+use backend\models\Country;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Product */
@@ -12,6 +13,8 @@ use backend\models\Category;
 
 $categories			= Category::find()->where(['category_status'=>'Active'])->all();
 $categoryListData	= ArrayHelper::map($categories,'id','category_name');
+$countries          = Country::find()->where(['status'=>1])->all();
+$countryListData    = ArrayHelper::map($countries,'name','name');
 
 ?>
     <?php $form = ActiveForm::begin([
@@ -25,9 +28,6 @@ $categoryListData	= ArrayHelper::map($categories,'id','category_name');
 	]); ?>
 <div class="col-sm-6">
 <div class="product-form">
-
-
-						
 
     <?php //echo $form->field($model, 'product_subcategory_id')->textInput() ?>
 
@@ -89,6 +89,15 @@ $categoryListData	= ArrayHelper::map($categories,'id','category_name');
 </div>
 </div>
 <div class="col-sm-6">
+    <?= $form->field($addressModel, 'street')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($addressModel, 'city')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($addressModel, 'state')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($addressModel, 'country')->dropDownList($countryListData, ['prompt' => 'Select Country']) ?>
+
+    <?= $form->field($addressModel, 'pin_code')->textInput(['maxlength' => true]) ?>
 </div>
 
 <div class="form-group">

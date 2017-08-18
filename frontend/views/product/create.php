@@ -17,11 +17,20 @@ $this->title = 'My Products';
 
                 <div class="orderBox profile">
 					<div class="row">
+            <?php 
+            /*echo 'Model Errors<br>';
+            print_r($errors);
+            echo '<br>Addrss<br>';
+            print_r($aerrors);
+            echo '<br>Imaf<br>';
+            print_r($ierrors);*/
+            ?>
 						<!--<div class="col-md-10 col-sm-9 col-xs-12">-->
 						<!--<div class="col-sm-6">-->
 						<?= $this->render('_form', [
 							'model' => $model,
 							'imageModel' => $imageModel,
+              'addressModel' => $addressModel
 						]) ?>
 						<!--</div>-->
 					</div>

@@ -74,7 +74,31 @@ class Product extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
+			'id' => 'ID',
+            'product_category_id' => 'Category',
+            'product_subcategory_id' => 'Subcategory',
+            'product_code' => 'Code',
+            'product_name' => 'Name',
+            'product_seo' => 'SEO',
+            'product_owner_id' => 'Owner',
+            'product_price' => 'Price',
+            'product_sale_price' => 'Sale Price',
+            'product_retail_price' => 'Retail Price',
+            'product_material' => 'Material',
+            'product_color' => 'Color',
+            'product_dimension_type' => 'Dimension Type',
+            'product_height' => 'Height',
+            'product_length' => 'Length',
+            'product_breadth' => 'Breadth',
+            'product_weight' => 'Weight',
+            'product_short_description' => 'Short Description',
+            'product_long_description' => 'Long Description',
+            'product_discount_status' => 'Discount Status',
+            'product_guarantee_status' => 'Guarantee Status',
+            'product_status' => 'Status',
+            'created_on' => 'Created On',
+            'updated_on' => 'Updated On',
+            /*'id' => 'ID',
             'product_category_id' => 'Product Category ID',
             'product_subcategory_id' => 'Product Subcategory ID',
             'product_code' => 'Product Code',
@@ -97,7 +121,7 @@ class Product extends \yii\db\ActiveRecord
             'product_guarantee_status' => 'Product Guarantee Status',
             'product_status' => 'Product Status',
             'created_on' => 'Created On',
-            'updated_on' => 'Updated On',
+            'updated_on' => 'Updated On',*/
         ];
     }
 

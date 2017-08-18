@@ -31,7 +31,7 @@ class ProductImage extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_id', 'cover_photo'], 'required'],
+            [['cover_photo'], 'required'],
             [['product_id'], 'integer'],
             [['type'], 'string', 'max' => 6],
             //[['file_name', 'cover_photo'], 'string', 'max' => 500],
@@ -50,8 +50,8 @@ class ProductImage extends \yii\db\ActiveRecord
             'id' => 'ID',
             'product_id' => 'Product ID',
             'type' => 'Type',
-            'file_name' => 'Product Other Images',
-            'cover_photo' => 'Product Cover Image',
+            'file_name' => 'Other Images',
+            'cover_photo' => 'Cover Image',
         ];
     }
 

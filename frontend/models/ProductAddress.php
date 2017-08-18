@@ -33,7 +33,7 @@ class ProductAddress extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_id'], 'required'],
+            [['state', 'city', 'country', 'pin_code'], 'required'],
             [['product_id'], 'integer'],
             [['street'], 'string', 'max' => 500],
             [['city'], 'string', 'max' => 150],

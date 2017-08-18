@@ -33,12 +33,19 @@ class ProductController extends Controller
         ];
     }
 
+    
+    public function beforeAction($action){
+        $this->layout = 'profile_page';
+        return parent::beforeAction($action);
+    }
+
     /**
      * Lists all Product models.
      * @return mixed
      */
     public function actionIndex()
     {
+        //$this->layout = 'profile_page';
         $searchModel = new ProductSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -67,33 +74,50 @@ class ProductController extends Controller
      */
     public function actionCreate()
     {
-		$this->layout = 'profile_page';
         $model 		= new Product();
 		$imageModel = new ProductImage();
+        $addressModel = new ProductAddress();
 
         //if ($model->load(Yii::$app->request->post()) && $model->save()) {
-		if ($model->load(Yii::$app->request->post())) { //  && $imageModel->load(Yii::$app->request->post())
+		if ($model->load(Yii::$app->request->post()) && $addressModel->load(Yii::$app->request->post()) && $imageModel->load(Yii::$app->request->post())) { 
+        //  && $imageModel->load(Yii::$app->request->post())
 			/*echo '<pre>';
 			print_r(Yii::$app->request->post());
 			echo Yii::$app->user->id;
 			exit;*/
 			$postData 	= Yii::$app->request->post();
-			$model->product_code 		= Common::generateRandomStr();
+			$model->product_code 		= Common::generateRandomStr('PRD');
+            $model->product_seo         = 'test-seo';
 			$model->product_owner_id	= Yii::$app->user->id;
 			$model->product_sale_price	= ($postData['Product']['product_price']*20)/100+$postData['Product']['product_price'];
 			$model->created_on 			= Common::mysqlDateTime();
 			if($model->save()){
-				return $this->redirect(['view', 'id' => $model->id]);
+                // add product address
+                $addressModel->product_id = $model->id;
+                $addressSave            = $addressModel->save();
+                // add image
+                $imageModel->product_id = $model->id;
+                $imageSave              = $imageModel->save();
+				//return $this->redirect(['view', 'id' => $model->id]);
+                return $this->redirect(['index']);
 			}else{
 				return $this->render('create', [
 					'model' => $model,
 					'imageModel' => $imageModel,
+                    'addressModel' => $addressModel,
+                    'errors' => $model->getErrors(),
+                    'aerrors' => $addressModel->getErrors(),
+                    'ierrors' => $imageModel->getErrors(),
 				]);
 			}
         } else {
             return $this->render('create', [
                 'model' => $model,
 				'imageModel' => $imageModel,
+                'addressModel' => $addressModel,
+                'errors' => $model->getErrors(),
+                'aerrors' => $addressModel->getErrors(),
+                'ierrors' => $imageModel->getErrors(),
             ]);
         }
     }

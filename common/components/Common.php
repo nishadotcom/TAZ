@@ -251,7 +251,7 @@ class Common extends Component {
 	public static function generateRandomStr($uniqueStr='', $length=4){
 		$randomString 	= Yii::$app->getSecurity()->generateRandomString($length);
 		$constructStr 	= $uniqueStr.date('dmyHis').$randomString;
-		return $randomString;
+		return $constructStr;
 	}
 } // End of class
 ?>
