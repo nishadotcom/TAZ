@@ -429,3 +429,559 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1494394882.593
     'REQUEST_TIME' => 1494394882
 ]
+2017-07-15 14:57:31 [127.0.0.1][-][g117i0qglr3rqqm521fcl2gs27][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 14:57:31 [127.0.0.1][-][g117i0qglr3rqqm521fcl2gs27][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    'TALOZO-backend' => 'g117i0qglr3rqqm521fcl2gs27'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; TALOZO-backend=g117i0qglr3rqqm521fcl2gs27; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37128'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130651.195
+    'REQUEST_TIME' => 1500130651
+]
+2017-07-15 14:58:21 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 14:58:21 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37148'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130701.097
+    'REQUEST_TIME' => 1500130701
+]
+2017-07-15 14:58:29 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 14:58:29 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/category/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37158'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130709.96
+    'REQUEST_TIME' => 1500130709
+]
+2017-07-15 14:58:33 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 14:58:33 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/slideshow/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37160'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130713.1
+    'REQUEST_TIME' => 1500130713
+]
+2017-07-15 14:58:36 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 14:58:36 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/slideshow/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37168'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130716.188
+    'REQUEST_TIME' => 1500130716
+]
+2017-07-15 14:59:24 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 14:59:24 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/slideshow'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37180'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130764.585
+    'REQUEST_TIME' => 1500130764
+]
+2017-07-15 15:01:51 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 15:01:51 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/category/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37202'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130911.833
+    'REQUEST_TIME' => 1500130911
+]
+2017-07-15 15:01:54 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 15:01:54 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/category/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37206'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130914.062
+    'REQUEST_TIME' => 1500130914
+]
+2017-07-15 15:02:20 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-15 15:02:20 [127.0.0.1][1][arqita48b64e12hhh2osok65b3][info][application] $_COOKIE = [
+    '_csrf-frontend' => '6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"26GXyW3yNoMkqfrXshG0wW38B0wFdl_S\";}'
+    'advanced-frontend' => '8c8oq3vvc6c9lbatadp5h7sk33'
+    '_csrf-backend' => '038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO\";}'
+    'TALOZO-backend' => 'arqita48b64e12hhh2osok65b3'
+    '_identity-backend' => '1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/category'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=6a4b617063cce462956dc0364cfe9b6de0d4c5e93a3bcc5fb6f1fe2b1855423ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2226GXyW3yNoMkqfrXshG0wW38B0wFdl_S%22%3B%7D; advanced-frontend=8c8oq3vvc6c9lbatadp5h7sk33; _csrf-backend=038660824da994c7613f4c0477759eefd754ec53d1e769d38a0f7382de953bc5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221JSmAKkNrhAL_Y-8D_M3n2DYYuqoPWWO%22%3B%7D; TALOZO-backend=arqita48b64e12hhh2osok65b3; _identity-backend=1c3672fdbaeed516184b15e1eb02faf9ba1adc39cbef99bfc8954b212e2e1ad6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37216'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1500130940.233
+    'REQUEST_TIME' => 1500130940
+]
