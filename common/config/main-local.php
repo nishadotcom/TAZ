@@ -6,7 +6,7 @@ if(strpos($linux_user, 'pradeep') || strpos($linux_user, 'nisha') == 0){
 	$dbUser		= 'sql12184890	';
 	$dbPassword	= '4rxQPFQ2lV';	*/
 	$host 		= 'localhost';
-	$dbName 	= 'TAZALO';
+	$dbName 	= 'ecom';
 	$dbUser		= 'root';
 	$dbPassword	= 'root';
 }else{

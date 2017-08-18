@@ -42,10 +42,11 @@ AppAsset::register($this);
     } else {
         $menuItems[] = ['label' => 'Category', 'url' => ['/category/index']];
           $menuItems[] = ['label' => 'Slideshow', 'url' => ['/slideshow/index']];
+		  $menuItems[] = ['label' => 'Product Management', 'url' => ['/product']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
+                'Logout',
                 ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
@@ -53,6 +54,7 @@ AppAsset::register($this);
 
 
     }
+	// 'Logout (' . Yii::$app->user->identity->username . ')',
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,

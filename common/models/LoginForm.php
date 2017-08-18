@@ -3,6 +3,7 @@ namespace common\models;
 
 use Yii;
 use yii\base\Model;
+use backend\models\Administrator;
 
 /**
  * Login form
@@ -64,6 +65,15 @@ class LoginForm extends Model
             return false;
         }
     }
+	
+	public function adminLogin()
+    {
+        if ($this->validate()) { 
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+        } else {
+            return false;
+        }
+    }
 
     /**
      * Finds user by [[email]]
@@ -74,7 +84,7 @@ class LoginForm extends Model
     {
         if ($this->_user === null) {
           if($this->scenario === 'backend_login'){
-              $this->_user = User::findByUsername($this->username);
+              $this->_user = Administrator::findByUsername($this->username);
           }else{
             $this->_user = User::findByEmail($this->email);
           }

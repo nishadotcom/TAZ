@@ -1,48 +1,33 @@
 <?php
-namespace common\models;
+
+namespace backend\models;
+
 use Yii;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
-use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
-use backend\models\Administrator;
 
 /**
- * User model
+ * This is the model class for table "taz_administrator".
  *
  * @property integer $id
  * @property string $username
- * @property string $password_hash
- * @property string $password_reset_token
- * @property string $email
- * @property string $auth_key
- * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
- * @property string $password write-only password
+ * @property string $password
+ * @property string $status
+ * @property string $created_on
+ * @property string $modified_on
  */
-class User extends ActiveRecord implements IdentityInterface
+class Administrator extends \yii\db\ActiveRecord implements IdentityInterface
 {
-    const STATUS_DELETED = 0;
+	const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 'Active';
-
-
+	
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return '{{%user}}';
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            //TimestampBehavior::className(),
-        ];
+        return 'taz_administrator';
     }
 
     /**
@@ -51,20 +36,30 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
-            [['created_at', 'updated_at'], 'safe'],
-            [['profile_image'], 'string'],
-            [['profile_image'], 'image', 'extensions' =>['jpg', 'png','jpeg','gif']],
-            [['profile_image'], 'file', 'maxSize' =>1024*1024*2,'tooBig'=> \Yii::t("app", "Maximum File Size should be {fileSize}",['fileSize' => '2MB'])],
-
-            [['email','firstname','lastname'], 'required'],
-            [['email','firstname','lastname','mobile'], 'required','on'=>'update'],
-            //['endYear','validateYear'],
+            [['username', 'password', 'created_on'], 'required'],
+            [['status'], 'string'],
+            [['created_on', 'modified_on'], 'safe'],
+            [['username'], 'string', 'max' => 50],
+            [['password'], 'string', 'max' => 32],
         ];
     }
 
     /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'username' => 'Username',
+            'password' => 'Password',
+            'status' => 'Status',
+            'created_on' => 'Created On',
+            'modified_on' => 'Modified On',
+        ];
+    }
+	
+	/**
      * @inheritdoc
      */
     public static function findIdentity($id)
@@ -154,7 +149,8 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getAuthKey()
     {
-        return $this->auth_key;
+        //return $this->auth_key;
+		return '';
     }
 
     /**

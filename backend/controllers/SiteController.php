@@ -78,7 +78,7 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         $model->scenario = 'backend_login';
-       if($model->load(Yii::$app->request->post()) && $model->login()) {
+       if($model->load(Yii::$app->request->post()) && $model->adminLogin()) {
             return $this->goBack();
         } else {
             return $this->render('login', [
