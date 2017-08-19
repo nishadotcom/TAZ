@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use backend\models\Category;
 use backend\models\Country;
+use kartik\file\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Product */
@@ -67,7 +68,12 @@ $countryListData    = ArrayHelper::map($countries,'name','name');
 
     <?= $form->field($model, 'product_guarantee_status')->dropDownList([ 'Yes' => 'Yes', 'No' => 'No', ], ['prompt' => 'Select Guarantee Status', 'options'=>['No'=>['selected'=>'selected']]]) ?>
 
-	<?= $form->field($imageModel, 'cover_photo')->fileInput(['maxlength' => true]) ?>
+	<?php //echo $form->field($imageModel, 'cover_photo')->fileInput(['maxlength' => true]) ?>
+	<?php 
+	echo $form->field($imageModel, 'cover_photo')->widget(FileInput::classname(), [
+		'options' => ['accept' => 'image/*'],
+	]);
+	?>
 	
 	<?= $form->field($imageModel, 'file_name[]')->fileInput(['multiple'=>true, 'accept' => 'image/*']) ?>
 

@@ -985,3 +985,2066 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500130940.233
     'REQUEST_TIME' => 1500130940
 ]
+2017-08-18 07:02:45 [127.0.0.1][-][g92j0s7vl5hjnf0ds8v24otao2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('css/site.css', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-18 07:02:45 [127.0.0.1][-][g92j0s7vl5hjnf0ds8v24otao2][info][application] $_COOKIE = [
+    '_csrf-frontend' => '83c3693986ff88745f3986b5bb0b37ea08aa3a061b3628103688c97e8b2bf943a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"OcD3cFZyySbcMrU5_CouW3T8j3LApovC\";}'
+    'advanced-frontend' => 'q5p68s6tdprg30pri7va5ru7c0'
+    'TALOZO-backend' => 'g92j0s7vl5hjnf0ds8v24otao2'
+    '_csrf-backend' => '226f1d55b43ef8ebce6f7604593626f3ac1f26e97f2d6cc5970d54aa7f3fdf5da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CElQ6siz7L-r-nS00e-Qxk62kpzD1e0-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=83c3693986ff88745f3986b5bb0b37ea08aa3a061b3628103688c97e8b2bf943a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22OcD3cFZyySbcMrU5_CouW3T8j3LApovC%22%3B%7D; advanced-frontend=q5p68s6tdprg30pri7va5ru7c0; TALOZO-backend=g92j0s7vl5hjnf0ds8v24otao2; _csrf-backend=226f1d55b43ef8ebce6f7604593626f3ac1f26e97f2d6cc5970d54aa7f3fdf5da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CElQ6siz7L-r-nS00e-Qxk62kpzD1e0-%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '44210'
+    'REDIRECT_URL' => '/backend/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/css/site.css'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503039765.341
+    'REQUEST_TIME' => 1503039765
+]
+2017-08-18 07:02:55 [127.0.0.1][-][g92j0s7vl5hjnf0ds8v24otao2][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause' in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 /var/www/ANTs/Freelance/Talozo/dev/common/models/User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(77): common\models\User::findByUsername('admin')
+#7 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(46): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(61): yii\base\Model->validate()
+#13 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/SiteController.php(81): common\models\LoginForm->login()
+#14 [internal function]: backend\controllers\SiteController->actionLogin()
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+The SQL being executed was: SELECT * FROM `taz_user` WHERE (`username`='admin') AND (`status`='Active') in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 /var/www/ANTs/Freelance/Talozo/dev/common/models/User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(77): common\models\User::findByUsername('admin')
+#7 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(46): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(61): yii\base\Model->validate()
+#13 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/SiteController.php(81): common\models\LoginForm->login()
+#14 [internal function]: backend\controllers\SiteController->actionLogin()
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'username' in 'where clause'
+)
+
+2017-08-18 07:02:55 [127.0.0.1][-][g92j0s7vl5hjnf0ds8v24otao2][info][application] $_POST = [
+    '_csrf-backend' => 'RFVIQld0bVMHECQTYQcEKXMZZTB6Gj5jdDBlEy8fW2EvJTIGZhFdfg=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '83c3693986ff88745f3986b5bb0b37ea08aa3a061b3628103688c97e8b2bf943a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"OcD3cFZyySbcMrU5_CouW3T8j3LApovC\";}'
+    'advanced-frontend' => 'q5p68s6tdprg30pri7va5ru7c0'
+    'TALOZO-backend' => 'g92j0s7vl5hjnf0ds8v24otao2'
+    '_csrf-backend' => '226f1d55b43ef8ebce6f7604593626f3ac1f26e97f2d6cc5970d54aa7f3fdf5da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CElQ6siz7L-r-nS00e-Qxk62kpzD1e0-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '204'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=83c3693986ff88745f3986b5bb0b37ea08aa3a061b3628103688c97e8b2bf943a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22OcD3cFZyySbcMrU5_CouW3T8j3LApovC%22%3B%7D; advanced-frontend=q5p68s6tdprg30pri7va5ru7c0; TALOZO-backend=g92j0s7vl5hjnf0ds8v24otao2; _csrf-backend=226f1d55b43ef8ebce6f7604593626f3ac1f26e97f2d6cc5970d54aa7f3fdf5da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CElQ6siz7L-r-nS00e-Qxk62kpzD1e0-%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '44224'
+    'REDIRECT_URL' => '/backend/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/site/login'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503039775.282
+    'REQUEST_TIME' => 1503039775
+]
+2017-08-19 04:42:08 [127.0.0.1][-][83vm79b72ctbu1i3o0fh6kan47][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'ecom' in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('admin')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('admin')
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one(NULL)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#12 /var/www/ANTs/Freelance/Talozo/dev/backend/models/Administrator.php(86): yii\db\BaseActiveRecord::findOne(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(87): backend\models\Administrator::findByUsername('admin')
+#14 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(47): common\models\LoginForm->getUser()
+#15 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(71): yii\base\Model->validate()
+#20 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/SiteController.php(81): common\models\LoginForm->adminLogin()
+#21 [internal function]: backend\controllers\SiteController->actionLogin()
+#22 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#25 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#26 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#28 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'ecom' in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('admin')
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('admin')
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one(NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/models/Administrator.php(86): yii\db\BaseActiveRecord::findOne(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(87): backend\models\Administrator::findByUsername('admin')
+#12 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(47): common\models\LoginForm->getUser()
+#13 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(71): yii\base\Model->validate()
+#18 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/SiteController.php(81): common\models\LoginForm->adminLogin()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#22 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#23 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#24 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2017-08-19 04:42:08 [127.0.0.1][-][83vm79b72ctbu1i3o0fh6kan47][info][application] $_POST = [
+    '_csrf-backend' => 'NTJsZ0FrLm9wURsDFiMbMGFXLwsmGn0tQ1wKVQknaQNHRBkzGVoDGw=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'TALOZO-backend' => '83vm79b72ctbu1i3o0fh6kan47'
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '204'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'TALOZO-backend=83vm79b72ctbu1i3o0fh6kan47; _csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '59400'
+    'REDIRECT_URL' => '/backend/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/site/login'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503117728.871
+    'REQUEST_TIME' => 1503117728
+]
+2017-08-19 04:43:26 [127.0.0.1][-][83vm79b72ctbu1i3o0fh6kan47][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'TAZALO.taz_administrator' doesn't exist in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/models/Administrator.php(86): yii\db\BaseActiveRecord::findOne(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(87): backend\models\Administrator::findByUsername('admin')
+#7 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(47): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(71): yii\base\Model->validate()
+#13 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/SiteController.php(81): common\models\LoginForm->adminLogin()
+#14 [internal function]: backend\controllers\SiteController->actionLogin()
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'TAZALO.taz_administrator' doesn't exist
+The SQL being executed was: SELECT * FROM `taz_administrator` WHERE (`username`='admin') AND (`status`='Active') in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/models/Administrator.php(86): yii\db\BaseActiveRecord::findOne(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(87): backend\models\Administrator::findByUsername('admin')
+#7 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(47): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(71): yii\base\Model->validate()
+#13 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/SiteController.php(81): common\models\LoginForm->adminLogin()
+#14 [internal function]: backend\controllers\SiteController->actionLogin()
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'TAZALO.taz_administrator' doesn't exist
+)
+
+2017-08-19 04:43:25 [127.0.0.1][-][83vm79b72ctbu1i3o0fh6kan47][info][application] $_POST = [
+    '_csrf-backend' => 'NTJsZ0FrLm9wURsDFiMbMGFXLwsmGn0tQ1wKVQknaQNHRBkzGVoDGw=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'TALOZO-backend' => '83vm79b72ctbu1i3o0fh6kan47'
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '204'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'TALOZO-backend=83vm79b72ctbu1i3o0fh6kan47; _csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '59424'
+    'REDIRECT_URL' => '/backend/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/site/login'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503117805.951
+    'REQUEST_TIME' => 1503117805
+]
+2017-08-19 05:28:18 [127.0.0.1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': 
+    in /var/www/ANTs/Freelance/Talozo/dev/backend/views/layouts/main.php:40
+    in /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php:53
+2017-08-19 05:28:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    'TALOZO-backend' => 'um4rp4riq1029p851vkdhpm141'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; TALOZO-backend=um4rp4riq1029p851vkdhpm141; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '50096'
+    'REDIRECT_URL' => '/backend/product'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/product'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503120498.184
+    'REQUEST_TIME' => 1503120498
+]
+2017-08-19 05:54:04 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseHtml.php(2081): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseHtml.php(1264): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseHtml.php(1313): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Product), 'category_name', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/ActiveField.php(395): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Product), 'category_name', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/_form.php(14): yii\widgets\ActiveField->textInput(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/update.php(18): yii\base\View->render('_form', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(135): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\ProductController->actionUpdate('2')
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#22 {main}
+2017-08-19 05:54:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    'TALOZO-backend' => 'um4rp4riq1029p851vkdhpm141'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; TALOZO-backend=um4rp4riq1029p851vkdhpm141; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '34766'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/backend/product/update?id=2'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503122044.117
+    'REQUEST_TIME' => 1503122044
+]
+2017-08-19 05:58:22 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseHtml.php(2081): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseHtml.php(1264): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseHtml.php(1313): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Product), 'category_name', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/ActiveField.php(395): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Product), 'category_name', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/_form.php(14): yii\widgets\ActiveField->textInput(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/update.php(18): yii\base\View->render('_form', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(135): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\ProductController->actionUpdate('1')
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#22 {main}
+2017-08-19 05:58:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '36844'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/update?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503122302.086
+    'REQUEST_TIME' => 1503122302
+]
+2017-08-19 06:04:23 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_image in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_image')
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/_form.php(17): yii\db\BaseActiveRecord->__get('category_image')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/update.php(18): yii\base\View->render('_form', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(135): yii\base\Controller->render('update', Array)
+#11 [internal function]: backend\controllers\ProductController->actionUpdate('2')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#18 {main}
+2017-08-19 06:04:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '40108'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/backend/product/update?id=2'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503122663.561
+    'REQUEST_TIME' => 1503122663
+]
+2017-08-19 06:32:38 [127.0.0.1][-][-][error][Error] Error: Undefined class constant 'HTML' in /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/_form.php:43
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#3 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/update.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#8 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(134): yii\base\Controller->render('update', Array)
+#9 [internal function]: backend\controllers\ProductController->actionUpdate('1')
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-08-19 06:32:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '54124'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/update?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503124358.651
+    'REQUEST_TIME' => 1503124358
+]
+2017-08-19 06:38:34 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category')
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/_form.php(25): yii\db\BaseActiveRecord->__get('category')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/update.php(18): yii\base\View->render('_form', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(134): yii\base\Controller->render('update', Array)
+#11 [internal function]: backend\controllers\ProductController->actionUpdate('1')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#18 {main}
+2017-08-19 06:38:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '57142'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/update?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503124714.815
+    'REQUEST_TIME' => 1503124714
+]
+2017-08-19 07:21:53 [127.0.0.1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': 
+    in /var/www/ANTs/Freelance/Talozo/dev/backend/views/layouts/main.php:40
+    in /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php:134
+2017-08-19 07:21:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '49678'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/update?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503127312.343
+    'REQUEST_TIME' => 1503127312
+]
+2017-08-19 07:28:07 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php:134
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(633): class_exists('backend\\control...')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(591): yii\base\Module->createControllerByID('product')
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('update')
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-08-19 07:28:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '52694'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/update?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503127687.657
+    'REQUEST_TIME' => 1503127687
+]
+2017-08-19 07:32:06 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(236): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/view.php(15): yii\base\Widget::widget(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#15 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(64): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ProductController->actionView('1')
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/view', Array)
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#23 {main}
+2017-08-19 07:32:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '54748'
+    'REDIRECT_URL' => '/backend/product/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/view?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503127926.467
+    'REQUEST_TIME' => 1503127926
+]
+2017-08-19 07:34:44 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(236): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/view.php(15): yii\base\Widget::widget(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#15 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(64): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ProductController->actionView('1')
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/view', Array)
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#23 {main}
+2017-08-19 07:34:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '56028'
+    'REDIRECT_URL' => '/backend/product/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/view?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503128084.432
+    'REQUEST_TIME' => 1503128084
+]
+2017-08-19 07:34:59 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(236): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/view.php(15): yii\base\Widget::widget(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#15 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(64): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ProductController->actionView('1')
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/view', Array)
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#23 {main}
+2017-08-19 07:34:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '56118'
+    'REDIRECT_URL' => '/backend/product/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/view?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503128099.251
+    'REQUEST_TIME' => 1503128099
+]
+2017-08-19 07:35:11 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(236): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/view.php(15): yii\base\Widget::widget(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#15 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(64): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ProductController->actionView('1')
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/view', Array)
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#23 {main}
+2017-08-19 07:35:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '56220'
+    'REDIRECT_URL' => '/backend/product/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/view?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503128111.083
+    'REQUEST_TIME' => 1503128111
+]
+2017-08-19 07:37:23 [127.0.0.1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: Relation names are case sensitive. frontend\models\Product has a relation named "productCategory" instead of "ProductCategory". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRelationTrait.php:154
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\db\ActiveQuery->findFor('ProductCategory', Object(frontend\models\Product))
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/_form.php(25): yii\db\BaseActiveRecord->__get('ProductCategory')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/update.php(18): yii\base\View->render('_form', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(145): yii\base\Controller->render('update', Array)
+#11 [internal function]: backend\controllers\ProductController->actionUpdate('1')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#18 {main}
+2017-08-19 07:37:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '57334'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/update?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503128243.208
+    'REQUEST_TIME' => 1503128243
+]
+2017-08-19 07:38:18 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\User::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/_form.php(33): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/update.php(18): yii\base\View->render('_form', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(145): yii\base\Controller->render('update', Array)
+#11 [internal function]: backend\controllers\ProductController->actionUpdate('1')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#18 {main}
+2017-08-19 07:38:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'os1lv1p6r00i951ouccoou2i77'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=os1lv1p6r00i951ouccoou2i77'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '57786'
+    'REDIRECT_URL' => '/backend/product/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/update?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503128298.606
+    'REQUEST_TIME' => 1503128298
+]
+2017-08-19 07:46:29 [127.0.0.1][-][-][error][Error] Error: Class 'backend\controllers\AccessControl' not found in /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php:34
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php(650): backend\controllers\ProductController->behaviors()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(48): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(154): backend\controllers\ProductController->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-08-19 07:46:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => '71h8qs68fiieb5fgnh8mqap2h7'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=71h8qs68fiieb5fgnh8mqap2h7; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '33688'
+    'REDIRECT_URL' => '/backend/product'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/product'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503128789.416
+    'REQUEST_TIME' => 1503128789
+]
+2017-08-19 08:39:49 [127.0.0.1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': 
+    in /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php:49
+2017-08-19 08:39:46 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => '71h8qs68fiieb5fgnh8mqap2h7'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=71h8qs68fiieb5fgnh8mqap2h7; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '59432'
+    'REDIRECT_URL' => '/backend/product'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/product'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503131986.274
+    'REQUEST_TIME' => 1503131986
+]
+2017-08-19 08:44:18 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\DataColumn::0 in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(525): yii\base\Object->__set('0', 'AFA')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/grid/GridView.php(533): yii\BaseYii::createObject(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/grid/GridView.php(278): yii\grid\GridView->initColumns()
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/index.php(22): yii\base\Widget::widget(Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#19 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(63): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\ProductController->actionIndex()
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#23 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#24 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#25 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#27 {main}
+2017-08-19 08:44:18 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][info][application] $_GET = [
+    'ProductSearch' => [
+        'product_name' => ''
+        'product_status' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'ejgh19uhbcaju32p33ecd103v3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=Suspended'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=ejgh19uhbcaju32p33ecd103v3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '33386'
+    'REDIRECT_URL' => '/backend/product'
+    'REDIRECT_QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Suspended&ProductSearch%5Bproduct_status%5D='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Suspended&ProductSearch%5Bproduct_status%5D='
+    'REQUEST_URI' => '/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Suspended&ProductSearch%5Bproduct_status%5D='
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503132258.141
+    'REQUEST_TIME' => 1503132258
+]
+2017-08-19 08:45:59 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][error][ParseError] ParseError: syntax error, unexpected ';', expecting ']' in /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/index.php:35
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#3 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(63): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ProductController->actionIndex()
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-08-19 08:45:59 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][info][application] $_GET = [
+    'ProductSearch' => [
+        'product_name' => ''
+        'product_status' => 'AFA'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'ejgh19uhbcaju32p33ecd103v3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Denied&ProductSearch%5Bproduct_status%5D=Active'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=ejgh19uhbcaju32p33ecd103v3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '34202'
+    'REDIRECT_URL' => '/backend/product'
+    'REDIRECT_QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'REQUEST_URI' => '/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503132359.238
+    'REQUEST_TIME' => 1503132359
+]
+2017-08-19 08:46:05 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/index.php:35
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/index.php(35): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/ANTs/F...', 35, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(63): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\ProductController->actionIndex()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-08-19 08:46:05 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][info][application] $_GET = [
+    'ProductSearch' => [
+        'product_name' => ''
+        'product_status' => 'AFA'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'ejgh19uhbcaju32p33ecd103v3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Denied&ProductSearch%5Bproduct_status%5D=Active'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=ejgh19uhbcaju32p33ecd103v3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '34254'
+    'REDIRECT_URL' => '/backend/product'
+    'REDIRECT_QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'REQUEST_URI' => '/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503132365.501
+    'REQUEST_TIME' => 1503132365
+]
+2017-08-19 08:46:29 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\data\ActiveDataProvider::product_status in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/index.php(35): yii\base\Component->__get('product_status')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#5 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(63): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\ProductController->actionIndex()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-08-19 08:46:29 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][info][application] $_GET = [
+    'ProductSearch' => [
+        'product_name' => ''
+        'product_status' => 'AFA'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'ejgh19uhbcaju32p33ecd103v3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Denied&ProductSearch%5Bproduct_status%5D=Active'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=ejgh19uhbcaju32p33ecd103v3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '34448'
+    'REDIRECT_URL' => '/backend/product'
+    'REDIRECT_QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'REQUEST_URI' => '/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503132389.658
+    'REQUEST_TIME' => 1503132389
+]
+2017-08-19 08:49:28 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][error][ParseError] ParseError: syntax error, unexpected '}', expecting ';' in /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/index.php:37
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#3 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(63): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ProductController->actionIndex()
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-08-19 08:49:28 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][info][application] $_GET = [
+    'ProductSearch' => [
+        'product_name' => ''
+        'product_status' => 'AFA'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'ejgh19uhbcaju32p33ecd103v3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Denied&ProductSearch%5Bproduct_status%5D=Active'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=ejgh19uhbcaju32p33ecd103v3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '35960'
+    'REDIRECT_URL' => '/backend/product'
+    'REDIRECT_QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'REQUEST_URI' => '/backend/product?ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=Active&ProductSearch%5Bproduct_status%5D=AFA'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503132568.237
+    'REQUEST_TIME' => 1503132568
+]
+2017-08-19 08:53:15 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][error][Error] Error: Class 'ArrayHelper' not found in /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/index.php:31
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(63): yii\base\Controller->render('index', Array)
+#5 [internal function]: backend\controllers\ProductController->actionIndex()
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#12 {main}
+2017-08-19 08:53:15 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][info][application] $_GET = [
+    'ProductSearch' => [
+        'product_category_id' => ''
+        'product_name' => ''
+        'product_status' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'ejgh19uhbcaju32p33ecd103v3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product?ProductSearch%5Bproduct_category_id%5D=&ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D=AFA'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=ejgh19uhbcaju32p33ecd103v3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37800'
+    'REDIRECT_URL' => '/backend/product'
+    'REDIRECT_QUERY_STRING' => 'ProductSearch%5Bproduct_category_id%5D=&ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'ProductSearch%5Bproduct_category_id%5D=&ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D='
+    'REQUEST_URI' => '/backend/product?ProductSearch%5Bproduct_category_id%5D=&ProductSearch%5Bproduct_name%5D=&ProductSearch%5Bproduct_status%5D='
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503132795.46
+    'REQUEST_TIME' => 1503132795
+]
+2017-08-19 09:06:12 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(236): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/view.php(15): yii\base\Widget::widget(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#15 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(75): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ProductController->actionView('2')
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/view', Array)
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#23 {main}
+2017-08-19 09:06:12 [127.0.0.1][1][ejgh19uhbcaju32p33ecd103v3][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t\";}'
+    '_csrf-frontend' => '1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn\";}'
+    'advanced-frontend' => 'e8e3vtk7rvlq9l4imikbul07o3'
+    'TALOZO-backend' => 'ejgh19uhbcaju32p33ecd103v3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9af596cd8d758761d7630ac1686280c9476e7bd50421a07472d03bfbd4c66bbda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22EcwdWH5_TeClgqSBvnf2HLGlrvuTX1-t%22%3B%7D; _csrf-frontend=1a04618b71156a6544647307d88fe1ac55d3a437df70ee15134e9bac20564600a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cGpJtP8MPvlc3NcAFFjEDjhGsQOEKsFn%22%3B%7D; advanced-frontend=e8e3vtk7rvlq9l4imikbul07o3; TALOZO-backend=ejgh19uhbcaju32p33ecd103v3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '44198'
+    'REDIRECT_URL' => '/backend/product/view'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/backend/product/view?id=2'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503133572.534
+    'REQUEST_TIME' => 1503133572
+]

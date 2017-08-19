@@ -2,30 +2,98 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Category */
 /* @var $form yii\widgets\ActiveForm */
 ?>
+<?php $form = ActiveForm::begin([
+  'fieldConfig' => [
+    'template' => '{input}',
+  ]
+]); ?>
 
-<div class="category-form">
+<div class="product-view">
+  <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            //'id',
+            //'product_category_id',
+            [
+              'label' => 'Category',
+              'value' => $model->productCategory->category_name
+            ],
+            //'product_subcategory_id',
+            'product_code:ntext',
+            'product_name:ntext',
+            //'product_owner_id',
+            [
+              'label' => 'Seller Name',
+              'value' => $model->productOwner->firstname.' ' .$model->productOwner->lastname
+            ],
+            'product_price',
+            'product_sale_price',
+            //'product_retail_price',
+            'product_material',
+            'product_color',
+            //'product_dimension_type',
+            //'product_height',
+            //'product_length',
+            //'product_breadth',
+            [
+              'attribute' => 'product_height',
+              'value' => $model->product_height.' '.strtoupper($model->product_dimension_type)
+            ],
+            [
+              'attribute' => 'product_length',
+              'value' => $model->product_length.' '.strtoupper($model->product_dimension_type)
+            ],
+            [
+              'attribute' => 'product_breadth',
+              'value' => $model->product_breadth.' '.strtoupper($model->product_dimension_type)
+            ],
+            //'product_weight',
+            [
+              'attribute' => 'product_weight',
+              'value' => $model->product_weight.' KG'
+            ],
+            'product_short_description:ntext',
+            'product_long_description:ntext',
+            'product_discount_status',
+            'product_guarantee_status',
+            //'product_status',
+            [
+				'attribute' => 'product_status',
+				'value' => ($model->product_status == 'AFA') ? 'Awaiting for Approval' : $model->product_status
+            ],
+            'created_on',
+            //'updated_on',
+            [                      // the owner name of the model
+              'label' => 'Admin Note',
+              'value' => $form->field($model, 'admin_note')->textArea(['maxlength' => true]),
+              'format' => 'raw',
+            ],
+        ],
+    ]) ?>
+</div>
 
-    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
-    <?= $form->field($model, 'category_name')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'category_description')->textarea(['rows' => 6]) ?>
-    <?= $form->field($model, 'category_image')->fileInput(['maxlength' => true]) ?>
-     <span>Upload Formats:&nbsp;jpg,png,jpeg</span>
-   <?= Html::activeHiddenInput($model, 'category_image',['type' => 'hidden', 'name' => 'Category[existing_category_image]','value' => $model->category_image]); ?>
-    <?php if(!$model->isNewRecord && $model->category_image) { ?>
-          <?php echo Yii::$app->Common->getImageWithLink(Yii::$app->params['CATEGORY_IMAGE_DISPLAY_PATH_BACKEND'], $model->category_image); ?>
-   <?php } ?>
-    <?= $form->field($model, 'category_status')->dropDownList([ 'Active' => 'Active', 'Suspended' => 'Suspended', ], ['prompt' => '']) ?>
-
+<div class="product-form">
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Add' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-        <?= Html::a(' &laquo; Back', ['/category/'],['class' => 'btn btn-default', 'title' => 'Back'])?>
+        <?= Html::submitButton('Approve', ['class' => 'btn btn-success', 'value'=>'Active', 'name'=>'btn']) ?>
+        <?= Html::submitButton('Needs Improvement', ['class' => 'btn btn-warning', 'value'=>'Needs Improvement', 'name'=>'btn']) ?>
+        <?= Html::submitButton('Deny', ['class' => 'btn btn-danger', 'value'=>'Denied', 'name'=>'btn']) ?>
+        <?php //Html::submitButton($model->isNewRecord ? 'Add' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::a(' &laquo; Back', ['/product/'],['class' => 'btn btn-default', 'title' => 'Back'])?>
     </div>
 
-    <?php ActiveForm::end(); ?>
-
 </div>
+<?php ActiveForm::end(); ?>
+
+
+        <!--'fieldConfig' => [
+          'template' => '<div class="form-group"><label for="" class="control-label col-sm-2">{label}</label><div class="col-sm-10">{input}</div></div>',
+        ],
+        'options' => [
+            'enctype' => 'multipart/form-data', 
+            'class'=>'form-horizontal']-->
