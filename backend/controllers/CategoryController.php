@@ -67,8 +67,9 @@ class CategoryController extends Controller
         $model = new Category();
 
         if($model->load(Yii::$app->request->post())) {
-            $dateTime = Yii::$app->Common->mysqlDateTime();
-            $model->created_on = $dateTime;
+            $postData   = Yii::$app->request->post();
+            $model->category_seo = Yii::$app->Common->getSeo($postData['Category']['category_name']);
+            $model->created_on = Yii::$app->Common->mysqlDateTime();
             $uploadImage = Yii::$app->Common->commonUpload($model,Yii::$app->params['CATEGORY_IMAGE_UPLOAD_PATH'],'category_image');
              if($model->save()){
                 Yii::$app->getSession()->setFlash('msg',Yii::t("app","General Add Success"));
@@ -93,6 +94,7 @@ class CategoryController extends Controller
         $oldImage = $model->category_image;
         if ($model->load(Yii::$app->request->post())) {
             $postData = Yii::$app->request->post();
+            $model->category_seo = Yii::$app->Common->getSeo($postData['Category']['category_name']);
             $dateTime = Yii::$app->Common->mysqlDateTime();
             $model->updated_on = $dateTime;
             $existingImage = $postData['Category']['existing_category_image'];

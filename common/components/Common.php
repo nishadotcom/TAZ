@@ -253,6 +253,14 @@ class Common extends Component {
 		$constructStr 	= $uniqueStr.date('dmyHis').$randomString;
 		return $constructStr;
 	}
+
+    /**
+    * Generate SEO
+    **/
+    public static function getSeo($str){
+        return strtolower(preg_replace("![^a-z0-9]+!i", "-", $str));
+    }
+
 } // End of class
 ?>
 
