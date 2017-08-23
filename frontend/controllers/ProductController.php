@@ -14,6 +14,8 @@ use yii\filters\VerbFilter;
 use common\components\Common;
 use yii\helpers\FileHelper;
 use yii\web\UploadedFile;
+use yii\db\Query;
+use yii\db\QueryBuilder;
 
 /**
  * ProductController implements the CRUD actions for Product model.
@@ -100,13 +102,18 @@ class ProductController extends Controller
                 $addressSave            = $addressModel->save();
                 // add image
                 $imageModel->product_id = $model->id;
-                // Upload process
-                $prd_img_path           = Yii::$app->params['PATH_PRODUCT_IMAGE'].$model->product_code.'/';
+                $imageModel->cover_photo= UploadedFile::getInstance($imageModel, 'cover_photo');
+				$prd_img_path           = Yii::$app->params['PATH_PRODUCT_IMAGE'].$model->product_code.'/';
                 FileHelper::createDirectory($prd_img_path, $mode = 0777, $recursive = true);
-                $imageModel->cover_photo     = UploadedFile::getInstance($imageModel, 'cover_photo');
-                $imageModel->cover_photo->saveAs($prd_img_path.$imageModel->cover_photo->baseName.'.'.$imageModel->cover_photo->extension);
-                //$imageModel->cover_photo = 'adasd.jppg';
-                $imageSave              = $imageModel->save();
+				$imageName 	= date('YmdHis').'.'.$imageModel->cover_photo->extension;
+				$imageModel->cover_photo->saveAs($prd_img_path.$imageName);
+				$imageModel->cover_photo = 'dfsdfd';
+                //$imageSave              = $imageModel->save(false);
+				$connection = Yii::$app->getDb();
+				$insert_query 	= 'INSERT INTO taz_product_image(product_id, type, file_name, cover_photo) VALUES('.$model->id.', "", "", "'.$imageName.'")';
+				$command = $connection->createCommand($insert_query)->execute();
+				// Upload process
+                
 
                 if($imageModel->getErrors()){
                     print_r($imageModel->getErrors());
