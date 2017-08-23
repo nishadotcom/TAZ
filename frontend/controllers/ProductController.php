@@ -12,6 +12,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\components\Common;
+use yii\helpers\FileHelper;
+use yii\web\UploadedFile;
 
 /**
  * ProductController implements the CRUD actions for Product model.
@@ -85,6 +87,7 @@ class ProductController extends Controller
 			print_r(Yii::$app->request->post());
 			echo Yii::$app->user->id;
 			exit;*/
+
 			$postData 	= Yii::$app->request->post();
 			$model->product_code 		= Common::generateRandomStr('PRD');
             $model->product_seo         = 'test-seo';
@@ -97,7 +100,19 @@ class ProductController extends Controller
                 $addressSave            = $addressModel->save();
                 // add image
                 $imageModel->product_id = $model->id;
+                // Upload process
+                $prd_img_path           = Yii::$app->params['PATH_PRODUCT_IMAGE'].$model->product_code.'/';
+                FileHelper::createDirectory($prd_img_path, $mode = 0777, $recursive = true);
+                $imageModel->cover_photo     = UploadedFile::getInstance($imageModel, 'cover_photo');
+                $imageModel->cover_photo->saveAs($prd_img_path.$imageModel->cover_photo->baseName.'.'.$imageModel->cover_photo->extension);
+                //$imageModel->cover_photo = 'adasd.jppg';
                 $imageSave              = $imageModel->save();
+
+                if($imageModel->getErrors()){
+                    print_r($imageModel->getErrors());
+                    exit;
+                }
+
 				//return $this->redirect(['view', 'id' => $model->id]);
                 return $this->redirect(['index']);
 			}else{
@@ -168,5 +183,11 @@ class ProductController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionTest(){
+        $prd_img_path           = Yii::$app->params['PATH_PRODUCT_IMAGE'].'PRD2232';
+            FileHelper::createDirectory($prd_img_path);
+            exit;
     }
 }

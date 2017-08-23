@@ -26370,3 +26370,3303 @@ Stack trace:
     'REQUEST_TIME_FLOAT' => 1503133260.522
     'REQUEST_TIME' => 1503133260
 ]
+2017-08-19 13:50:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-19 13:50:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35230'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503150655.98
+    'REQUEST_TIME' => 1503150655
+]
+2017-08-19 14:35:09 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-19 14:35:09 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35888'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503153309.014
+    'REQUEST_TIME' => 1503153309
+]
+2017-08-19 14:53:07 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-19 14:53:07 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '45140'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503154387.46
+    'REQUEST_TIME' => 1503154387
+]
+2017-08-22 18:20:42 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 18:20:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '46148'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503426042.27
+    'REQUEST_TIME' => 1503426042
+]
+2017-08-22 18:47:15 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 18:47:15 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '58906'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503427635.033
+    'REQUEST_TIME' => 1503427635
+]
+2017-08-22 18:47:47 [127.0.0.1][1][nusfca40tsal1ke0ibi7hbg7i0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 18:47:47 [127.0.0.1][1][nusfca40tsal1ke0ibi7hbg7i0][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => 'f7691e287f45698221eb504f1eea966c0c155175d0f85fb1979bf85dab1523bfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cpalF6tx5VbmqDh0N6vJfU-uLlFOQhC1\";}'
+    'advanced-frontend' => 'nusfca40tsal1ke0ibi7hbg7i0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f7691e287f45698221eb504f1eea966c0c155175d0f85fb1979bf85dab1523bfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cpalF6tx5VbmqDh0N6vJfU-uLlFOQhC1%22%3B%7D; advanced-frontend=nusfca40tsal1ke0ibi7hbg7i0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '59194'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503427667.657
+    'REQUEST_TIME' => 1503427667
+]
+2017-08-22 18:52:12 [127.0.0.1][1][nusfca40tsal1ke0ibi7hbg7i0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "frontend/web/css/site.css". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('frontend/web/cs...', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 18:52:12 [127.0.0.1][1][nusfca40tsal1ke0ibi7hbg7i0][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => 'f7691e287f45698221eb504f1eea966c0c155175d0f85fb1979bf85dab1523bfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cpalF6tx5VbmqDh0N6vJfU-uLlFOQhC1\";}'
+    'advanced-frontend' => 'nusfca40tsal1ke0ibi7hbg7i0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=f7691e287f45698221eb504f1eea966c0c155175d0f85fb1979bf85dab1523bfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cpalF6tx5VbmqDh0N6vJfU-uLlFOQhC1%22%3B%7D; advanced-frontend=nusfca40tsal1ke0ibi7hbg7i0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '33114'
+    'REDIRECT_URL' => '/frontend/web/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/css/site.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503427932.316
+    'REQUEST_TIME' => 1503427932
+]
+2017-08-22 19:02:30 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:02:30 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35298'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503428550.667
+    'REQUEST_TIME' => 1503428550
+]
+2017-08-22 19:02:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:02:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35306'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503428571.087
+    'REQUEST_TIME' => 1503428571
+]
+2017-08-22 19:06:33 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:06:33 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35684'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503428793.595
+    'REQUEST_TIME' => 1503428793
+]
+2017-08-22 19:11:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:11:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35732'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503429111.962
+    'REQUEST_TIME' => 1503429111
+]
+2017-08-22 19:12:45 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:12:45 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35798'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503429165.417
+    'REQUEST_TIME' => 1503429165
+]
+2017-08-22 19:13:35 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:13:35 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '35824'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503429215.189
+    'REQUEST_TIME' => 1503429215
+]
+2017-08-22 19:30:39 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][Error] Error: Class 'frontend\controllers\UploadedFile' not found in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php:105
+Stack trace:
+#0 [internal function]: frontend\controllers\ProductController->actionCreate()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-22 19:30:38 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'a2RGMXRJcVBZMzRhATwBBTMQCFgkLBU/Uhd3HER6CThdNC8CTBoSNQ=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'SLAPRD'
+        'product_price' => '5.5'
+        'product_material' => 'MS'
+        'product_color' => 'COLOR'
+        'product_dimension_type' => 'cm'
+        'product_height' => '5.5'
+        'product_length' => '5.5'
+        'product_breadth' => '2.5'
+        'product_weight' => '5.5'
+        'product_short_description' => 'SDDSDS'
+        'product_long_description' => 'DFD'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'Street'
+        'city' => 'CITY'
+        'state' => 'Tamil Nadu'
+        'country' => 'Barbados'
+        'pin_code' => '635853'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-3.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpPbg6zs'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 887027
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '889991'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryCNLBbsVZtbBSuGB5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36200'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430238.368
+    'REQUEST_TIME' => 1503430238
+]
+2017-08-22 19:31:10 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\base\ErrorException:2] yii\base\ErrorException: finfo_file(/tmp/phpma0lmC): failed to open stream: No such file or directory in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:148
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'finfo_file(/tmp...', '/var/www/ANTs/F...', 148, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(148): finfo_file(Resource id #9, '/tmp/phpma0lmC')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(357): yii\helpers\BaseFileHelper::getMimeType('/tmp/phpma0lmC', NULL, false)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(251): yii\validators\FileValidator->validateExtension(Object(yii\web\UploadedFile))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(215): yii\validators\FileValidator->validateValue(Object(yii\web\UploadedFile))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\FileValidator->validateAttribute(Object(frontend\models\ProductImage), 'cover_photo')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(frontend\models\ProductImage), Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(455): yii\base\Model->validate(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(109): yii\db\BaseActiveRecord->save()
+#10 [internal function]: frontend\controllers\ProductController->actionCreate()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-08-22 19:31:09 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'a2RGMXRJcVBZMzRhATwBBTMQCFgkLBU/Uhd3HER6CThdNC8CTBoSNQ=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'SLAPRD'
+        'product_price' => '5.5'
+        'product_material' => 'MS'
+        'product_color' => 'COLOR'
+        'product_dimension_type' => 'cm'
+        'product_height' => '5.5'
+        'product_length' => '5.5'
+        'product_breadth' => '2.5'
+        'product_weight' => '5.5'
+        'product_short_description' => 'SDDSDS'
+        'product_long_description' => 'DFD'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'Street'
+        'city' => 'CITY'
+        'state' => 'Tamil Nadu'
+        'country' => 'Barbados'
+        'pin_code' => '635853'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-3.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpma0lmC'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 887027
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '889991'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryCNLBbsVZtbBSuGB5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36204'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430269.788
+    'REQUEST_TIME' => 1503430269
+]
+2017-08-22 19:35:43 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\base\ErrorException:2] yii\base\ErrorException: finfo_file(/tmp/phpzRHhnG): failed to open stream: No such file or directory in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:148
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'finfo_file(/tmp...', '/var/www/ANTs/F...', 148, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(148): finfo_file(Resource id #8, '/tmp/phpzRHhnG')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(357): yii\helpers\BaseFileHelper::getMimeType('/tmp/phpzRHhnG', NULL, false)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(251): yii\validators\FileValidator->validateExtension(Object(yii\web\UploadedFile))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(215): yii\validators\FileValidator->validateValue(Object(yii\web\UploadedFile))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\FileValidator->validateAttribute(Object(frontend\models\ProductImage), 'cover_photo')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(frontend\models\ProductImage), Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(455): yii\base\Model->validate(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(109): yii\db\BaseActiveRecord->save()
+#10 [internal function]: frontend\controllers\ProductController->actionCreate()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-08-22 19:35:42 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'VFdQekgzcGZmACIqPUYAMwwjHhMYVhQJbSRhV3gACA5iBzlJcGATAw=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'sdfd'
+        'product_price' => '1'
+        'product_material' => 'sdf'
+        'product_color' => 'sdf'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2.5'
+        'product_length' => '1'
+        'product_breadth' => '1'
+        'product_weight' => '1'
+        'product_short_description' => 'sdf'
+        'product_long_description' => 'fdf'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'dsf'
+        'city' => 'dsf'
+        'state' => 'fd'
+        'country' => 'Bahrain'
+        'pin_code' => '343434'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-2.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpzRHhnG'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1443724
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1446661'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary9oAxKLdeqAvSZCYj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36340'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430542.646
+    'REQUEST_TIME' => 1503430542
+]
+2017-08-22 19:37:09 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:37:08 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36418'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430628.95
+    'REQUEST_TIME' => 1503430628
+]
+2017-08-22 19:37:54 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_height' cannot be null in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php:846
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(846): PDOStatement->execute()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('taz_product', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(97): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ProductController->actionCreate()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_height' cannot be null
+The SQL being executed was: INSERT INTO `taz_product` (`product_category_id`, `product_name`, `product_price`, `product_material`, `product_color`, `product_dimension_type`, `product_height`, `product_length`, `product_breadth`, `product_weight`, `product_short_description`, `product_long_description`, `product_discount_status`, `product_guarantee_status`, `product_code`, `product_seo`, `product_owner_id`, `product_sale_price`, `created_on`) VALUES (2, 'sdfsdf', '1', 'sdfsdf', 'fdsfs', 'cm', NULL, NULL, NULL, NULL, 'wqeqwe', 'ewwqe', 'No', 'No', 'PRD220817193754yjzO', 'test-seo', 1, '1.2', '2017-08-22 19:37:54') in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ta...')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('taz_product', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(97): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ProductController->actionCreate()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'product_height' cannot be null
+)
+
+2017-08-22 19:37:53 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'eEFxT3M0aFdKFgMfBkEYAiA1PyYjUQw4QTJAYkMHED9OERh8S2cLMg=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'sdfsdf'
+        'product_price' => '1'
+        'product_material' => 'sdfsdf'
+        'product_color' => 'fdsfs'
+        'product_dimension_type' => 'cm'
+        'product_height' => ''
+        'product_length' => ''
+        'product_breadth' => ''
+        'product_weight' => ''
+        'product_short_description' => 'wqeqwe'
+        'product_long_description' => 'ewwqe'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'wqewqe'
+        'city' => 'wqeqwe'
+        'state' => 'wewqe'
+        'country' => 'Albania'
+        'pin_code' => '343243'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-2.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpbCoQBw'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1443724
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1446676'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryArt6XvpwGBZAAzxj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36430'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430673.926
+    'REQUEST_TIME' => 1503430673
+]
+2017-08-22 19:38:21 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_height' cannot be null in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php:846
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(846): PDOStatement->execute()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('taz_product', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(97): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ProductController->actionCreate()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_height' cannot be null
+The SQL being executed was: INSERT INTO `taz_product` (`product_category_id`, `product_name`, `product_price`, `product_material`, `product_color`, `product_dimension_type`, `product_height`, `product_length`, `product_breadth`, `product_weight`, `product_short_description`, `product_long_description`, `product_discount_status`, `product_guarantee_status`, `product_code`, `product_seo`, `product_owner_id`, `product_sale_price`, `created_on`) VALUES (2, 'sdfsdf', '1', 'sdfsdf', 'fdsfs', 'cm', NULL, NULL, NULL, NULL, 'wqeqwe', 'ewwqe', 'No', 'No', 'PRD220817193821w7MB', 'test-seo', 1, '1.2', '2017-08-22 19:38:21') in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ta...')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('taz_product', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(97): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ProductController->actionCreate()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'product_height' cannot be null
+)
+
+2017-08-22 19:38:21 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'eEFxT3M0aFdKFgMfBkEYAiA1PyYjUQw4QTJAYkMHED9OERh8S2cLMg=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'sdfsdf'
+        'product_price' => '1'
+        'product_material' => 'sdfsdf'
+        'product_color' => 'fdsfs'
+        'product_dimension_type' => 'cm'
+        'product_height' => ''
+        'product_length' => ''
+        'product_breadth' => ''
+        'product_weight' => ''
+        'product_short_description' => 'wqeqwe'
+        'product_long_description' => 'ewwqe'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'wqewqe'
+        'city' => 'wqeqwe'
+        'state' => 'wewqe'
+        'country' => 'Albania'
+        'pin_code' => '343243'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-2.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpkDIMg9'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1443724
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1446676'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryArt6XvpwGBZAAzxj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36434'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430701.395
+    'REQUEST_TIME' => 1503430701
+]
+2017-08-22 19:39:05 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\web\UploadedFile::save() in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php:220
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(107): yii\base\Object->__call('save', Array)
+#1 [internal function]: frontend\controllers\ProductController->actionCreate()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-08-22 19:39:04 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'eG1XVS5oRlJKOiUFWx02ByAZGTx.DSI9QR5meB5bPjpOPT5mFjslNw=='
+    'Product' => [
+        'product_category_id' => '1'
+        'product_name' => 'dgsfsd'
+        'product_price' => '1'
+        'product_material' => 'fdsf'
+        'product_color' => 'dsfsds'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2.5'
+        'product_length' => '1'
+        'product_breadth' => '1'
+        'product_weight' => '1'
+        'product_short_description' => 'sdfsdf'
+        'product_long_description' => 'fsdfsdfsd'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'fddsf'
+        'city' => 'sdfsdf'
+        'state' => 'dfsdf'
+        'country' => 'Australia'
+        'pin_code' => '3q4324324'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-2.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/php6VS6E8'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1443724
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1446689'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryyfuYt8p0fJDBFDCQ'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36450'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430744.785
+    'REQUEST_TIME' => 1503430744
+]
+2017-08-22 19:40:27 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\base\ErrorException:2] yii\base\ErrorException: finfo_file(/tmp/phpQrcqUQ): failed to open stream: No such file or directory in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:148
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'finfo_file(/tmp...', '/var/www/ANTs/F...', 148, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(148): finfo_file(Resource id #8, '/tmp/phpQrcqUQ')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(357): yii\helpers\BaseFileHelper::getMimeType('/tmp/phpQrcqUQ', NULL, false)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(251): yii\validators\FileValidator->validateExtension(Object(yii\web\UploadedFile))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(215): yii\validators\FileValidator->validateValue(Object(yii\web\UploadedFile))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\FileValidator->validateAttribute(Object(frontend\models\ProductImage), 'cover_photo')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(frontend\models\ProductImage), Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(455): yii\base\Model->validate(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(109): yii\db\BaseActiveRecord->save()
+#10 [internal function]: frontend\controllers\ProductController->actionCreate()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-08-22 19:40:27 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'eG1XVS5oRlJKOiUFWx02ByAZGTx.DSI9QR5meB5bPjpOPT5mFjslNw=='
+    'Product' => [
+        'product_category_id' => '1'
+        'product_name' => 'dgsfsd'
+        'product_price' => '1'
+        'product_material' => 'fdsf'
+        'product_color' => 'dsfsds'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2.5'
+        'product_length' => '1'
+        'product_breadth' => '1'
+        'product_weight' => '1'
+        'product_short_description' => 'sdfsdf'
+        'product_long_description' => 'fsdfsdfsd'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'fddsf'
+        'city' => 'sdfsdf'
+        'state' => 'dfsdf'
+        'country' => 'Australia'
+        'pin_code' => '3q4324324'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-2.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpQrcqUQ'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1443724
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1446689'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryyfuYt8p0fJDBFDCQ'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36466'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503430827.16
+    'REQUEST_TIME' => 1503430827
+]
+2017-08-22 19:48:30 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][Error] Error: Call to a member function saveAs() on string in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php:110
+Stack trace:
+#0 [internal function]: frontend\controllers\ProductController->actionCreate()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-22 19:48:30 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'eG1XVS5oRlJKOiUFWx02ByAZGTx.DSI9QR5meB5bPjpOPT5mFjslNw=='
+    'Product' => [
+        'product_category_id' => '1'
+        'product_name' => 'dgsfsd'
+        'product_price' => '1'
+        'product_material' => 'fdsf'
+        'product_color' => 'dsfsds'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2.5'
+        'product_length' => '1'
+        'product_breadth' => '1'
+        'product_weight' => '1'
+        'product_short_description' => 'sdfsdf'
+        'product_long_description' => 'fsdfsdfsd'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'fddsf'
+        'city' => 'sdfsdf'
+        'state' => 'dfsdf'
+        'country' => 'Australia'
+        'pin_code' => '3q4324324'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-2.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpB4fRw0'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1443724
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1446689'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryyfuYt8p0fJDBFDCQ'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36566'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431310.541
+    'REQUEST_TIME' => 1503431310
+]
+2017-08-22 19:49:37 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][Error] Error: Call to a member function saveAs() on string in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php:110
+Stack trace:
+#0 [internal function]: frontend\controllers\ProductController->actionCreate()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-22 19:49:37 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'YjVfYzZEODlQYi0zQzFIbDpBEQpmIVxWW0ZuTgZ3QFFUZTZQDhdbXA=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'dfsdfsdf'
+        'product_price' => '1'
+        'product_material' => 'dfgdfg'
+        'product_color' => 'dfgdfg'
+        'product_dimension_type' => 'cm'
+        'product_height' => '4'
+        'product_length' => '2.5'
+        'product_breadth' => '2.5'
+        'product_weight' => '2.5'
+        'product_short_description' => 'zdgfdsfs'
+        'product_long_description' => 'sdfgsgs'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'dfgdfgdfg'
+        'city' => 'dfgdfg'
+        'state' => 'fdgdfg'
+        'country' => 'Azerbaijan'
+        'pin_code' => '3454545'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'Become-a-Seller.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpLsRrnB'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 632367
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '635354'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryzAus6xuSosmM4Air'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36596'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431377.313
+    'REQUEST_TIME' => 1503431377
+]
+2017-08-22 19:51:21 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][Error] Error: Call to a member function saveAs() on string in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php:109
+Stack trace:
+#0 [internal function]: frontend\controllers\ProductController->actionCreate()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-22 19:51:21 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'YjVfYzZEODlQYi0zQzFIbDpBEQpmIVxWW0ZuTgZ3QFFUZTZQDhdbXA=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'dfsdfsdf'
+        'product_price' => '1'
+        'product_material' => 'dfgdfg'
+        'product_color' => 'dfgdfg'
+        'product_dimension_type' => 'cm'
+        'product_height' => '4'
+        'product_length' => '2.5'
+        'product_breadth' => '2.5'
+        'product_weight' => '2.5'
+        'product_short_description' => 'zdgfdsfs'
+        'product_long_description' => 'sdfgsgs'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'dfgdfgdfg'
+        'city' => 'dfgdfg'
+        'state' => 'fdgdfg'
+        'country' => 'Azerbaijan'
+        'pin_code' => '3454545'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'Become-a-Seller.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpQ1vaxi'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 632367
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '635354'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryzAus6xuSosmM4Air'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36600'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431481.074
+    'REQUEST_TIME' => 1503431481
+]
+2017-08-22 19:51:52 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][Error] Error: Call to a member function saveAs() on string in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php:109
+Stack trace:
+#0 [internal function]: frontend\controllers\ProductController->actionCreate()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-22 19:51:52 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'YjVfYzZEODlQYi0zQzFIbDpBEQpmIVxWW0ZuTgZ3QFFUZTZQDhdbXA=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'dfsdfsdf'
+        'product_price' => '1'
+        'product_material' => 'dfgdfg'
+        'product_color' => 'dfgdfg'
+        'product_dimension_type' => 'cm'
+        'product_height' => '4'
+        'product_length' => '2.5'
+        'product_breadth' => '2.5'
+        'product_weight' => '2.5'
+        'product_short_description' => 'zdgfdsfs'
+        'product_long_description' => 'sdfgsgs'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'dfgdfgdfg'
+        'city' => 'dfgdfg'
+        'state' => 'fdgdfg'
+        'country' => 'Azerbaijan'
+        'pin_code' => '3454545'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'Become-a-Seller.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpV1aJxr'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 632367
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '635354'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryzAus6xuSosmM4Air'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36612'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431512.123
+    'REQUEST_TIME' => 1503431512
+]
+2017-08-22 19:52:51 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_price' cannot be null in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php:846
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(846): PDOStatement->execute()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('taz_product', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(97): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ProductController->actionCreate()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_price' cannot be null
+The SQL being executed was: INSERT INTO `taz_product` (`product_category_id`, `product_name`, `product_price`, `product_material`, `product_color`, `product_dimension_type`, `product_height`, `product_length`, `product_breadth`, `product_weight`, `product_short_description`, `product_long_description`, `product_discount_status`, `product_guarantee_status`, `product_code`, `product_seo`, `product_owner_id`, `product_sale_price`, `created_on`) VALUES (2, '', NULL, '', '', 'cm', NULL, NULL, NULL, NULL, '', '', 'No', 'No', 'PRD220817195251KnYm', 'test-seo', 1, '0', '2017-08-22 19:52:51') in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ta...')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('taz_product', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal(NULL)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(97): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ProductController->actionCreate()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'product_price' cannot be null
+)
+
+2017-08-22 19:52:51 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'VHp3UVFMRTlmLQUBJDk1bAwOOTgBKSFWbQlGfGF/PVFiKh5iaR8mXA=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => ''
+        'product_price' => ''
+        'product_material' => ''
+        'product_color' => ''
+        'product_dimension_type' => 'cm'
+        'product_height' => ''
+        'product_length' => ''
+        'product_breadth' => ''
+        'product_weight' => ''
+        'product_short_description' => ''
+        'product_long_description' => ''
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'rtret'
+        'city' => 'ertert'
+        'state' => 'ertret'
+        'country' => 'Bahrain'
+        'pin_code' => '5345345'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-2.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpc8pMHe'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1443724
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1446648'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryQ2hUzOERZNZWRjJP'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36640'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431571.724
+    'REQUEST_TIME' => 1503431571
+]
+2017-08-22 19:55:13 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-22 19:55:13 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36732'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431713.139
+    'REQUEST_TIME' => 1503431713
+]
+2017-08-22 19:55:13 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\validators\NumberValidator::value in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:201
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(525): yii\base\Component->__set('value', 0)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\validators\NumberValidator), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\validators\\...', Array, Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\validators\\...', Array, Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(224): yii\BaseYii::createObject(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(447): yii\validators\Validator::createValidator('yii\\validators\\...', Object(frontend\models\Product), Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(751): yii\base\Model->scenarios()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(695): yii\base\Model->safeAttributes()
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(827): yii\base\Model->setAttributes(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(84): yii\base\Model->load(Array)
+#14 [internal function]: frontend\controllers\ProductController->actionCreate()
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#21 {main}
+2017-08-22 19:55:13 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf-frontend' => 'T0dwXzNONEV9EAIPRjtEEBczPjZjK1AqdjRBcgN9TC15FxlsCx1XIA=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => ''
+        'product_price' => ''
+        'product_material' => ''
+        'product_color' => ''
+        'product_dimension_type' => 'cm'
+        'product_height' => ''
+        'product_length' => ''
+        'product_breadth' => ''
+        'product_weight' => ''
+        'product_short_description' => ''
+        'product_long_description' => ''
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'sdfds'
+        'city' => 'dsfds'
+        'state' => 'sdfsd'
+        'country' => 'Austria'
+        'pin_code' => 'w324324'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-3.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpCcTSdi'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 887027
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '889949'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryMd48DLDnKvrWBSd7'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36730'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431713.111
+    'REQUEST_TIME' => 1503431713
+]
+2017-08-22 19:55:29 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\validators\NumberValidator::value in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:201
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(525): yii\base\Component->__set('value', '0.00')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\validators\NumberValidator), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\validators\\...', Array, Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\validators\\...', Array, Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(224): yii\BaseYii::createObject(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(447): yii\validators\Validator::createValidator('yii\\validators\\...', Object(frontend\models\Product), Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(751): yii\base\Model->scenarios()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(695): yii\base\Model->safeAttributes()
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(827): yii\base\Model->setAttributes(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(84): yii\base\Model->load(Array)
+#14 [internal function]: frontend\controllers\ProductController->actionCreate()
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#21 {main}
+2017-08-22 19:55:29 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf-frontend' => 'T0dwXzNONEV9EAIPRjtEEBczPjZjK1AqdjRBcgN9TC15FxlsCx1XIA=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => ''
+        'product_price' => ''
+        'product_material' => ''
+        'product_color' => ''
+        'product_dimension_type' => 'cm'
+        'product_height' => ''
+        'product_length' => ''
+        'product_breadth' => ''
+        'product_weight' => ''
+        'product_short_description' => ''
+        'product_long_description' => ''
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'sdfds'
+        'city' => 'dsfds'
+        'state' => 'sdfsd'
+        'country' => 'Austria'
+        'pin_code' => 'w324324'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-3.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phptQ6NBY'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 887027
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '889949'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryMd48DLDnKvrWBSd7'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36736'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431729.426
+    'REQUEST_TIME' => 1503431729
+]
+2017-08-22 19:58:05 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][Error] Error: Call to a member function saveAs() on string in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php:109
+Stack trace:
+#0 [internal function]: frontend\controllers\ProductController->actionCreate()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-22 19:58:04 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'QlVqRkoyTGRwAhgWP0c8MRohJC8aVygLeyZba3oBNAx0BQN1cmEvAQ=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'sdfs'
+        'product_price' => '2.5'
+        'product_material' => 'sdfsddf'
+        'product_color' => 'fsdf'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2345'
+        'product_length' => '24234'
+        'product_breadth' => '32432'
+        'product_weight' => '234'
+        'product_short_description' => 'sdfsdf'
+        'product_long_description' => 'sdfsdf'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'sdfsdf'
+        'city' => 'sdfdsf'
+        'state' => 'sdfsdf'
+        'country' => 'Bangladesh'
+        'pin_code' => '23423432'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-1.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpUNgkOt'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1728106
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1731082'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxsjdf4DEUHabJ0N6'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36808'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431884.702
+    'REQUEST_TIME' => 1503431884
+]
+2017-08-22 19:59:02 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\base\ErrorException:2] yii\base\ErrorException: finfo_file(/tmp/phpDxSr38): failed to open stream: No such file or directory in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:148
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'finfo_file(/tmp...', '/var/www/ANTs/F...', 148, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(148): finfo_file(Resource id #8, '/tmp/phpDxSr38')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(357): yii\helpers\BaseFileHelper::getMimeType('/tmp/phpDxSr38', NULL, false)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(251): yii\validators\FileValidator->validateExtension(Object(yii\web\UploadedFile))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(215): yii\validators\FileValidator->validateValue(Object(yii\web\UploadedFile))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\FileValidator->validateAttribute(Object(frontend\models\ProductImage), 'cover_photo')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(frontend\models\ProductImage), Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(455): yii\base\Model->validate(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(109): yii\db\BaseActiveRecord->save()
+#10 [internal function]: frontend\controllers\ProductController->actionCreate()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-08-22 19:59:01 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'QlVqRkoyTGRwAhgWP0c8MRohJC8aVygLeyZba3oBNAx0BQN1cmEvAQ=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'sdfs'
+        'product_price' => '2.5'
+        'product_material' => 'sdfsddf'
+        'product_color' => 'fsdf'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2345'
+        'product_length' => '24234'
+        'product_breadth' => '32432'
+        'product_weight' => '234'
+        'product_short_description' => 'sdfsdf'
+        'product_long_description' => 'sdfsdf'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'sdfsdf'
+        'city' => 'sdfdsf'
+        'state' => 'sdfsdf'
+        'country' => 'Bangladesh'
+        'pin_code' => '23423432'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-1.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpDxSr38'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1728106
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1731082'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxsjdf4DEUHabJ0N6'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36812'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431941.956
+    'REQUEST_TIME' => 1503431941
+]
+2017-08-22 19:59:27 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\base\ErrorException:2] yii\base\ErrorException: finfo_file(/tmp/phpPtFI6v): failed to open stream: No such file or directory in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:148
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'finfo_file(/tmp...', '/var/www/ANTs/F...', 148, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(148): finfo_file(Resource id #8, '/tmp/phpPtFI6v')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(357): yii\helpers\BaseFileHelper::getMimeType('/tmp/phpPtFI6v', NULL, false)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(251): yii\validators\FileValidator->validateExtension(Object(yii\web\UploadedFile))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(215): yii\validators\FileValidator->validateValue(Object(yii\web\UploadedFile))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\FileValidator->validateAttribute(Object(frontend\models\ProductImage), 'cover_photo')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(frontend\models\ProductImage), Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(455): yii\base\Model->validate(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(109): yii\db\BaseActiveRecord->save()
+#10 [internal function]: frontend\controllers\ProductController->actionCreate()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-08-22 19:59:27 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'QlVqRkoyTGRwAhgWP0c8MRohJC8aVygLeyZba3oBNAx0BQN1cmEvAQ=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'sdfs'
+        'product_price' => '2.5'
+        'product_material' => 'sdfsddf'
+        'product_color' => 'fsdf'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2345'
+        'product_length' => '24234'
+        'product_breadth' => '32432'
+        'product_weight' => '234'
+        'product_short_description' => 'sdfsdf'
+        'product_long_description' => 'sdfsdf'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'sdfsdf'
+        'city' => 'sdfdsf'
+        'state' => 'sdfsdf'
+        'country' => 'Bangladesh'
+        'pin_code' => '23423432'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-1.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpPtFI6v'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1728106
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1731082'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxsjdf4DEUHabJ0N6'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36824'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503431967.198
+    'REQUEST_TIME' => 1503431967
+]
+2017-08-22 20:02:37 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][error][yii\base\ErrorException:2] yii\base\ErrorException: finfo_file(/tmp/phpk8jgXf): failed to open stream: No such file or directory in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:148
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'finfo_file(/tmp...', '/var/www/ANTs/F...', 148, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(148): finfo_file(Resource id #8, '/tmp/phpk8jgXf')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(357): yii\helpers\BaseFileHelper::getMimeType('/tmp/phpk8jgXf', NULL, false)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(251): yii\validators\FileValidator->validateExtension(Object(yii\web\UploadedFile))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/FileValidator.php(215): yii\validators\FileValidator->validateValue(Object(yii\web\UploadedFile))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\FileValidator->validateAttribute(Object(frontend\models\ProductImage), 'cover_photo')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(frontend\models\ProductImage), Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/ActiveRecord.php(455): yii\base\Model->validate(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#9 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ProductController.php(109): yii\db\BaseActiveRecord->save()
+#10 [internal function]: frontend\controllers\ProductController->actionCreate()
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#15 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-08-22 20:02:37 [127.0.0.1][1][epdbd9vb7dii0gjkc175pp8hf4][info][application] $_POST = [
+    '_csrf-frontend' => 'QlVqRkoyTGRwAhgWP0c8MRohJC8aVygLeyZba3oBNAx0BQN1cmEvAQ=='
+    'Product' => [
+        'product_category_id' => '2'
+        'product_name' => 'sdfs'
+        'product_price' => '2.5'
+        'product_material' => 'sdfsddf'
+        'product_color' => 'fsdf'
+        'product_dimension_type' => 'cm'
+        'product_height' => '2345'
+        'product_length' => '24234'
+        'product_breadth' => '32432'
+        'product_weight' => '234'
+        'product_short_description' => 'sdfsdf'
+        'product_long_description' => 'sdfsdf'
+        'product_discount_status' => 'No'
+        'product_guarantee_status' => 'No'
+    ]
+    'ProductImage' => [
+        'cover_photo' => ''
+        'file_name' => [
+            0 => ''
+        ]
+    ]
+    'ProductAddress' => [
+        'street' => 'sdfsdf'
+        'city' => 'sdfdsf'
+        'state' => 'sdfsdf'
+        'country' => 'Bangladesh'
+        'pin_code' => '23423432'
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'cover_photo' => 'TAZ-1.png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'type' => [
+            'cover_photo' => 'image/png'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'tmp_name' => [
+            'cover_photo' => '/tmp/phpk8jgXf'
+            'file_name' => [
+                0 => ''
+            ]
+        ]
+        'error' => [
+            'cover_photo' => 0
+            'file_name' => [
+                0 => 4
+            ]
+        ]
+        'size' => [
+            'cover_photo' => 1728106
+            'file_name' => [
+                0 => 0
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2WrPuupUXtNiPedo9s1-03xh6Pi38Sce\";}'
+    'advanced-frontend' => 'epdbd9vb7dii0gjkc175pp8hf4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1731082'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryxsjdf4DEUHabJ0N6'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/product/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=8e345abed5c0c796f612bcd9a91c7ae998f4bed1c96c50af9ca9ae4af775f698a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222WrPuupUXtNiPedo9s1-03xh6Pi38Sce%22%3B%7D; advanced-frontend=epdbd9vb7dii0gjkc175pp8hf4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '37000'
+    'REDIRECT_URL' => '/product/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/product/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1503432157.621
+    'REQUEST_TIME' => 1503432157
+]

@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use backend\models\Category;
 use backend\models\Country;
-use kartik\file\FileInput;
+
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Product */
@@ -40,7 +40,7 @@ $countryListData    = ArrayHelper::map($countries,'name','name');
 
     <?php //echo $form->field($model, 'product_owner_id')->textInput() ?>
 
-    <?= $form->field($model, 'product_price')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1, 'step'=>1.50]) ?>
+    <?= $form->field($model, 'product_price')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1]) ?>
 
     <?php //echo $form->field($model, 'product_sale_price')->textInput(['maxlength' => true]) ?>
 
@@ -52,13 +52,13 @@ $countryListData    = ArrayHelper::map($countries,'name','name');
 
     <?= $form->field($model, 'product_dimension_type')->dropDownList([ 'cm' => 'cm', 'mm' => 'mm', 'm' => 'm', ], ['prompt' => 'Select Dimension Type', 'options'=>['cm'=>['selected'=>'selected']]]) ?>
 
-    <?= $form->field($model, 'product_height')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1, 'step'=>1.50]) ?>
+    <?= $form->field($model, 'product_height')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1]) ?>
 
-    <?= $form->field($model, 'product_length')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1, 'step'=>1.50]) ?>
+    <?= $form->field($model, 'product_length')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1]) ?>
 
-    <?= $form->field($model, 'product_breadth')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1, 'step'=>1.50]) ?>
+    <?= $form->field($model, 'product_breadth')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1]) ?>
 
-    <?= $form->field($model, 'product_weight')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1, 'step'=>1.50]) ?>
+    <?= $form->field($model, 'product_weight')->textInput(['maxlength' => true, 'type'=>'number', 'min'=>1]) ?>
 
     <?= $form->field($model, 'product_short_description')->textarea(['rows' => 6]) ?>
 
@@ -68,14 +68,10 @@ $countryListData    = ArrayHelper::map($countries,'name','name');
 
     <?= $form->field($model, 'product_guarantee_status')->dropDownList([ 'Yes' => 'Yes', 'No' => 'No', ], ['prompt' => 'Select Guarantee Status', 'options'=>['No'=>['selected'=>'selected']]]) ?>
 
-	<?php //echo $form->field($imageModel, 'cover_photo')->fileInput(['maxlength' => true]) ?>
-	<?php 
-	echo $form->field($imageModel, 'cover_photo')->widget(FileInput::classname(), [
-		'options' => ['accept' => 'image/*'],
-	]);
-	?>
+	<?php echo $form->field($imageModel, 'cover_photo')->fileInput(['maxlength' => true]) ?>
 	
 	<?= $form->field($imageModel, 'file_name[]')->fileInput(['multiple'=>true, 'accept' => 'image/*']) ?>
+
 
     
 
