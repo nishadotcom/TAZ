@@ -15,7 +15,16 @@ class HomeProduct extends Widget {
     }
 
     public function run() {
-        return $this->render('homeProduct');
+    	$psaProducts 	= Yii::$app->ShopComponent->getProductsByCategoryId(1);
+    	$slpProducts 	= Yii::$app->ShopComponent->getProductsByCategoryId(2);
+    	$otlProducts 	= Yii::$app->ShopComponent->getProductsByCategoryId(3);
+    	$frcProducts 	= Yii::$app->ShopComponent->getProductsByCategoryId(4);
+        return $this->render('homeProduct', [
+        	'psaProducts'=>$psaProducts,
+        	'slpProducts'=>$slpProducts,
+        	'otlProducts'=>$otlProducts,
+        	'frcProducts'=>$frcProducts,
+        ]);
     }
 
 }
