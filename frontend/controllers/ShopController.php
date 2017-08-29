@@ -33,6 +33,17 @@ class ShopController extends Controller
 	public function actionProductsbycategoryid($id){ 
 		$products 	= Shop::getProductsByCategoryId($id);
 		echo '<pre>'; print_r($products);
+		return $this->render('view', [
+            'model' => $this->findModel($id),
+        ]);
+	}
+
+	public function actionProducts($id){ 
+		$products 	= Shop::getProductsByCategoryId($id);
+		echo '<pre>'; print_r($products);
+		return $this->render('view', [
+            'model' => $this->findModel($id),
+        ]);
 	}
 
 }

@@ -11,5 +11,6 @@ return [
 	'CATEGORY_IMAGE_DISPLAY_PATH_BACKEND' => '../common/uploads/category_images/',
   'CATEGORY_IMAGE_DISPLAY_PATH_FRONTEND' => 'common/uploads/category_images/',
 	
-	'PATH_PRODUCT_IMAGE' => \Yii::getAlias('@common').'/uploads/product_images/',
+	'PATH_UPLOAD_PRODUCT_IMAGE' => \Yii::getAlias('@common').'/uploads/product_images/',
+	'PATH_PRODUCT_IMAGE' => 'common/uploads/product_images/',
 ];

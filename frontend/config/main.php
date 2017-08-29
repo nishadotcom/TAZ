@@ -53,6 +53,17 @@ return [
                 'contact-details/add'=> 'user-contact-detail/create',
                 'contact-details/update/<id>'=> 'user-contact-detail/update',
                 'contact-details/delete/<id>'=> 'user-contact-detail/delete',
+
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<controller>/<action>',
+                
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
+
+                /*'<module:news>/<action:\w+>' => '<module>/default/<action>',
+                '<module:news>/<action:\w+>/<id:\d+>' => '<module>/default/<action>',
+                '<module:posts>/<controller:\w+>' => '<module>/<controller>/index',
+                '<module:posts>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>'*/
             ],
         ],
         'view' => [

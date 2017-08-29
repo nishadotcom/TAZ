@@ -103,7 +103,7 @@ class ProductController extends Controller
                 // add image
                 $imageModel->product_id = $model->id;
                 $imageModel->cover_photo= UploadedFile::getInstance($imageModel, 'cover_photo');
-				$prd_img_path           = Yii::$app->params['PATH_PRODUCT_IMAGE'].$model->product_code.'/';
+				$prd_img_path           = Yii::$app->params['PATH_UPLOAD_PRODUCT_IMAGE'].$model->product_code.'/';
                 FileHelper::createDirectory($prd_img_path, $mode = 0777, $recursive = true);
 				$imageName 	= date('YmdHis').'.'.$imageModel->cover_photo->extension;
 				$imageModel->cover_photo->saveAs($prd_img_path.$imageName);
