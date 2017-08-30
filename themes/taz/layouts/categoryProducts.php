@@ -91,20 +91,7 @@ use frontend\widgets\Banner;
        <?php } ?> 
 
       <!-- MAIN CONTENT SECTION -->
-      <?php 
-      
-      if($controller->action->id == 'profiledashboard'){
-        $sectionClass = 'userProfile';
-      }elseif($controller->action->id == 'checkout' || $controller->action->id == 'checkout-step2' || $controller->action->id == 'checkout-step3' || $controller->action->id == 'checkout-step4'){
-          $sectionClass = 'stepsWrapper';
-      }
-      else{
-          $sectionClass = 'logIn signUp productsContent';
-      }
-
-      //$sectionClass = ''; = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';
-      ?>
-      	<section class="mainContent clearfix <?= $sectionClass ?> productsContent">
+      	<section class="mainContent clearfix productsContent">
         	<div class="container">
           	<?= $content; ?>
         	</div> <!-- .CONTAINER -->

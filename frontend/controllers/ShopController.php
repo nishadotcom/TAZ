@@ -39,10 +39,12 @@ class ShopController extends Controller
 	}
 
 	public function actionProducts($id){ 
+		$this->layout = 'categoryProducts';
 		$products 	= Shop::getProductsByCategoryId($id);
-		echo '<pre>'; print_r($products);
-		return $this->render('view', [
-            'model' => $this->findModel($id),
+		//echo '<pre>'; print_r($products);
+		return $this->render('categoryproducts', [
+			'categoryData'=>Category::findOne($id),
+            'categoryProducts' => $products,
         ]);
 	}
 
