@@ -32,7 +32,7 @@ $prdNoImg     = 'noImage.jpg';
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><?= $psaProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>"><?= $psaProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $psaProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -53,7 +53,7 @@ $prdNoImg     = 'noImage.jpg';
 <div class="row dealSection">
             <div class="col-xs-12">
               <div class="page-header">
-                <h4>SLP Products</h4>
+                <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'shop/products/2'; ?>" title="SLP Products">SLP Products</a></h4>
               </div>
             </div>
             <div class="col-xs-12">
@@ -77,7 +77,7 @@ $prdNoImg     = 'noImage.jpg';
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><?= $slpProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>"><?= $slpProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $slpProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -99,7 +99,7 @@ $prdNoImg     = 'noImage.jpg';
 <div class="row dealSection">
             <div class="col-xs-12">
               <div class="page-header">
-                <h4>OTL Products</h4>
+                <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'shop/products/3'; ?>" title="OTL Products">OTL Products</a></h4>
               </div>
             </div>
             <div class="col-xs-12">
@@ -122,7 +122,7 @@ $prdNoImg     = 'noImage.jpg';
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><?= $otlProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>"><?= $otlProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $otlProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -144,7 +144,7 @@ $prdNoImg     = 'noImage.jpg';
 <div class="row dealSection">
             <div class="col-xs-12">
               <div class="page-header">
-                <h4>FRC Products</h4>
+                <h4 class="media-heading"><a href="<?php echo Yii::$app->homeUrl.'shop/products/4'; ?>" title="FRC Products">FRC Products</a></h4>
               </div>
             </div>
             <div class="col-xs-12">
@@ -167,7 +167,7 @@ $prdNoImg     = 'noImage.jpg';
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>"><?= $frcProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>"><?= $frcProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $frcProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>

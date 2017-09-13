@@ -59,7 +59,12 @@ use yii\widgets\DetailView;
               'value' => $model->product_weight.' KG'
             ],
             'product_short_description:ntext',
-            'product_long_description:ntext',
+            //'product_long_description:ntext',
+            [                      // the owner name of the model
+              'label' => 'Long Description',
+              'value' => $form->field($model, 'product_long_description')->textArea(['maxlength' => true]),
+              'format' => 'raw',
+            ],
             'product_discount_status',
             'product_guarantee_status',
             //'product_status',

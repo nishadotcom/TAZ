@@ -80,7 +80,7 @@ $prdNoImg     = 'noImage.jpg';
                         </div>
                         <div class="media-body">
                           <h4 class="media-heading">
-                            <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>" title="<?= $categoryProduct->product_name; ?>"><?= $categoryProduct->product_name; ?></a>
+                            <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$categoryProduct->id; ?>" title="<?= $categoryProduct->product_name; ?>"><?= $categoryProduct->product_name; ?></a>
                           </h4>
                           <p><?= $categoryProduct->product_short_description; ?></p>
                           <h3>$<?= $categoryProduct->product_sale_price; ?></h3>

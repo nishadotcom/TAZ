@@ -38,6 +38,9 @@ class ShopController extends Controller
         ]);
 	}
 
+	/**
+	* Category Products
+	**/
 	public function actionProducts($id){ 
 		$this->layout = 'categoryProducts';
 		$products 	= Shop::getProductsByCategoryId($id);
@@ -45,6 +48,18 @@ class ShopController extends Controller
 		return $this->render('categoryproducts', [
 			'categoryData'=>Category::findOne($id),
             'categoryProducts' => $products,
+        ]);
+	}
+
+	/**
+	* Single Product
+	**/
+	public function actionProduct($id){ 
+		$this->layout 	= 'categoryProducts';
+		$product 		= Shop::getProductById($id);
+		
+		return $this->render('singleProduct', [
+            'product' => $product,
         ]);
 	}
 

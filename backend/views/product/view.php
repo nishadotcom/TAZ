@@ -15,16 +15,20 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             //'id',
-            'category_name',
-            'category_description:ntext',
-            'category_image',
-            'category_status',
+            'product_name',
+            'product_code',
+            [
+              'label' => 'Seller Name',
+              'value' => $model->productOwner->firstname.' ' .$model->productOwner->lastname
+            ],
+            //'category_image',
+            'product_long_description',
             'created_on',
             'updated_on',
         ],
     ]) ?>
     <p>
 
-      <?= Html::a('&laquo; Back', ['category/index'], ['class' => 'btn btn-default']) ?>
+      <?= Html::a('&laquo; Back', ['product/index'], ['class' => 'btn btn-default']) ?>
     </p>
 </div>
