@@ -201,6 +201,31 @@ CREATE TABLE `taz_country` (
   `status` tinyint(1) NOT NULL COMMENT '1-Active , 2-Inactive'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS taz_cart(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	cart_user_id INT(12) NOT NULL,
+	cart_product_category_name VARCHAR(100) NOT NULL,
+	cart_product_subcategory_NAME VARCHAR(100) NULL COMMENT 'Subcategory is not required now. It is future enhancement',
+	cart_product_id INT(12) NOT NULL COMMENT 'Refers to Product table id',
+	cart_product_code TINYTEXT NOT NULL,
+	cart_product_name MEDIUMTEXT NOT NULL,
+	cart_product_seo MEDIUMTEXT NOT NULL,
+	cart_product_owner_id INT(12) NOT NULL,
+	cart_product_price Decimal(7,2) NOT NULL DEFAULT 0.00,
+	cart_product_material VARCHAR(600) NOT NULL,
+	cart_product_color varchar(30) NOT NULL,	
+	cart_product_dimension_type ENUM('cm', 'mm', 'm') NOT NULL DEFAULT 'cm',
+	cart_product_height Decimal(2,2) NOT NULL DEFAULT 00.00, 
+	cart_product_length Decimal(2,2) NOT NULL DEFAULT 00.00, 
+	cart_product_breadth Decimal(2,2) NOT NULL DEFAULT 00.00, 
+	cart_product_weight Decimal(2,2) NOT NULL DEFAULT 00.00 COMMENT 'Weight is in KG',
+	cart_product_short_description MEDIUMTEXT NULL DEFAULT NULL,
+	cart_product_long_description TEXT NULL DEFAULT NULL,
+	cart_product_discount VARCHAR(6) NULL,
+	cart_product_quantity TINYINT(3) NULL, 
+	cart_added_on DATETIME NOT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
 INSERT INTO `taz_country` (`id`, `name`, `status`) VALUES
 (1, 'Afghanistan', 1),
 (2, 'Albania', 1),

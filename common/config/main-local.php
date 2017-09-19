@@ -1,6 +1,6 @@
 <?php
-$linux_user = exec('who');
-if(strpos($linux_user, 'pradeep') || strpos($linux_user, 'nisha') == 0){
+$linux_user = exec('who'); 
+if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha') == 0))){ 
 	/*$host 		= 'sql12.freemysqlhosting.net';
 	$dbName 	= 'sql12184890';
 	$dbUser		= 'sql12184890	';
@@ -9,13 +9,14 @@ if(strpos($linux_user, 'pradeep') || strpos($linux_user, 'nisha') == 0){
 	$dbName 	= 'TAZALO';
 	$dbUser		= 'root';
 	$dbPassword	= 'root';
-}else{
+}else{ 
 	$host 		= 'localhost';
-	$dbName 	= 'taz_old';
+	$dbName 	= 'ecom';
 	$dbUser		= 'root';
-	$dbPassword	= '';
+	$dbPassword	= 'root';
 
 }
+
 return [
     'components' => [
         'db' => [
