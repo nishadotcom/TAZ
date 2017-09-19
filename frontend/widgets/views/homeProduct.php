@@ -28,7 +28,7 @@ $prdNoImg     = 'noImage.jpg';
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">
@@ -73,7 +73,7 @@ $prdNoImg     = 'noImage.jpg';
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">
@@ -118,7 +118,7 @@ $prdNoImg     = 'noImage.jpg';
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">
@@ -163,7 +163,7 @@ $prdNoImg     = 'noImage.jpg';
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'demo/singleproduct'; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
                         <div class="productCaption clearfix text-center">

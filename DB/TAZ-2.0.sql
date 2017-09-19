@@ -119,6 +119,9 @@ CREATE TABLE IF NOT EXISTS taz_product(
 	admin_note MEDIUMTEXT NULL DEFAULT NULL COMMENT 'Admin Note',
 	product_discount_status ENUM('Yes', 'No') NOT NULL DEFAULT 'No' COMMENT 'Refers to discount table. If product dicount status is Yes',
 	product_guarantee_status ENUM('Yes', 'No') NOT NULL DEFAULT 'No' COMMENT 'Refers to guarantee table. If product guarantee status is Yes',
+	product_available_status ENUM('In-Stock', 'Out of Stock') NOT NULL DEFAULT 'In-Stock' COMMENT 'product is In-Stock or out of stock',
+	product_seller_quantity TINYINT(3) NOT NULL DEFAULT 1 COMMENT 'Product quantity available with the seller',
+	product_available_quantity TINYINT(3) NULL DEFAULT 0 COMMENT 'Product 	quantity available in site. Substract from product_seller_quantity when order is placed', 
 	product_status ENUM('AFA', 'Active', 'Suspended', 'Deleted', 'Needs Improvement', 'Denied') NOT NULL DEFAULT 'AFA' COMMENT 'AFA = Awaiting for approval',
 	created_on DATETIME NOT NULL,
   	updated_on DATETIME DEFAULT NULL

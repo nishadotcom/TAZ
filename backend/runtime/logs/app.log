@@ -3216,3 +3216,272 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1503153670.643
     'REQUEST_TIME' => 1503153670
 ]
+2017-08-24 07:05:40 [127.0.0.1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': 
+2017-08-24 07:05:39 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_csrf-frontend' => '9af2a87c88dd6cee993d662c70ff3a56c3bcce2f099747cfcd339c7b0bc3057ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"p6uJ_CAhy-1kpIFgCg91e1e1DlrY3bPa\";}'
+    'advanced-frontend' => 'heciivm31n8c04a456vgfoeha7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-frontend=9af2a87c88dd6cee993d662c70ff3a56c3bcce2f099747cfcd339c7b0bc3057ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22p6uJ_CAhy-1kpIFgCg91e1e1DlrY3bPa%22%3B%7D; advanced-frontend=heciivm31n8c04a456vgfoeha7'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '39386'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503558339.335
+    'REQUEST_TIME' => 1503558339
+]
+2017-08-28 06:29:54 [127.0.0.1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': 
+2017-08-28 06:29:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf-frontend' => '9af2a87c88dd6cee993d662c70ff3a56c3bcce2f099747cfcd339c7b0bc3057ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"p6uJ_CAhy-1kpIFgCg91e1e1DlrY3bPa\";}'
+    '_csrf-backend' => '5fdc6ad1a35f60428b33a47ba8e8ce81ece05622a9fe04905ff4699cc641ce48a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vYnY8wEIMk1q238gRmBE0GYvAHgmKZ9S\";}'
+    'TALOZO-backend' => '2i7ku2dkilum1b89vop7rav584'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    'advanced-frontend' => 'tqhp3lgu108rig0god4io2dc92'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=9af2a87c88dd6cee993d662c70ff3a56c3bcce2f099747cfcd339c7b0bc3057ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22p6uJ_CAhy-1kpIFgCg91e1e1DlrY3bPa%22%3B%7D; _csrf-backend=5fdc6ad1a35f60428b33a47ba8e8ce81ece05622a9fe04905ff4699cc641ce48a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vYnY8wEIMk1q238gRmBE0GYvAHgmKZ9S%22%3B%7D; TALOZO-backend=2i7ku2dkilum1b89vop7rav584; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; advanced-frontend=tqhp3lgu108rig0god4io2dc92'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '37774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1503901793.891
+    'REQUEST_TIME' => 1503901793
+]
+2017-09-01 18:43:12 [127.0.0.1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': 
+2017-09-01 18:43:12 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '42240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1504291392.03
+    'REQUEST_TIME' => 1504291392
+]
+2017-09-01 18:43:49 [127.0.0.1][1][63jhi4322d5nlmgr6alsdg98m3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\Product::category_name in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('category_name')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('category_name')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(236): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Product), 'category_name')
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/backend/views/product/view.php(15): yii\base\Widget::widget(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(backend\controllers\ProductController))
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#15 /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php(75): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ProductController->actionView('1')
+#17 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/view', Array)
+#21 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/ANTs/Freelance/Talozo/dev/backend/index.php(17): yii\base\Application->run()
+#23 {main}
+2017-09-01 18:43:48 [127.0.0.1][1][63jhi4322d5nlmgr6alsdg98m3][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '9be4015f914ad70d63b81c8cd5ace557d5c51b94aee4940336438bf2d71bc694a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fHxNoUspHQzP57OsMNxE5WxhmjflW5kl\";}'
+    'TALOZO-backend' => '63jhi4322d5nlmgr6alsdg98m3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9be4015f914ad70d63b81c8cd5ace557d5c51b94aee4940336438bf2d71bc694a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fHxNoUspHQzP57OsMNxE5WxhmjflW5kl%22%3B%7D; TALOZO-backend=63jhi4322d5nlmgr6alsdg98m3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '42260'
+    'REDIRECT_URL' => '/backend/product/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/backend/product/view?id=1'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1504291428.972
+    'REQUEST_TIME' => 1504291428
+]
+2017-09-02 09:36:31 [127.0.0.1][-][-][warning][yii\web\User::getIdentityAndDurationFromCookie] Invalid auth key attempted for user '1': 
+    in /var/www/ANTs/Freelance/Talozo/dev/backend/controllers/ProductController.php:49
+2017-09-02 09:36:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '9be4015f914ad70d63b81c8cd5ace557d5c51b94aee4940336438bf2d71bc694a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fHxNoUspHQzP57OsMNxE5WxhmjflW5kl\";}'
+    'TALOZO-backend' => '63jhi4322d5nlmgr6alsdg98m3'
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/product/index'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/60.0.3112.78 Chrome/60.0.3112.78 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/backend/product/view?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=9be4015f914ad70d63b81c8cd5ace557d5c51b94aee4940336438bf2d71bc694a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fHxNoUspHQzP57OsMNxE5WxhmjflW5kl%22%3B%7D; TALOZO-backend=63jhi4322d5nlmgr6alsdg98m3; _identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/backend/index.php'
+    'REMOTE_PORT' => '56916'
+    'REDIRECT_URL' => '/backend/product/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/product/index'
+    'SCRIPT_NAME' => '/backend/index.php'
+    'PHP_SELF' => '/backend/index.php'
+    'REQUEST_TIME_FLOAT' => 1504344988.559
+    'REQUEST_TIME' => 1504344988
+]
