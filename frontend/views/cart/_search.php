@@ -57,6 +57,8 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'cart_product_quantity') ?>
 
+    <?php // echo $form->field($model, 'product_available_status') ?>
+
     <?php // echo $form->field($model, 'cart_added_on') ?>
 
     <div class="form-group">

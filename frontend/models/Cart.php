@@ -28,6 +28,7 @@ use Yii;
  * @property string $cart_product_long_description
  * @property string $cart_product_discount
  * @property integer $cart_product_quantity
+ * @property string $product_available_status
  * @property string $cart_added_on
  */
 class Cart extends \yii\db\ActiveRecord
@@ -46,9 +47,9 @@ class Cart extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cart_user_id', 'cart_product_category_name', 'cart_product_id', 'cart_product_code', 'cart_product_name', 'cart_product_seo', 'cart_product_owner_id', 'cart_product_material', 'cart_product_color', 'cart_added_on'], 'required'],
+            //[['cart_user_id', 'cart_product_category_name', 'cart_product_id', 'cart_product_code', 'cart_product_name', 'cart_product_seo', 'cart_product_owner_id', 'cart_product_material', 'cart_product_color', 'cart_added_on'], 'required'],
             [['cart_user_id', 'cart_product_id', 'cart_product_owner_id', 'cart_product_quantity'], 'integer'],
-            [['cart_product_code', 'cart_product_name', 'cart_product_seo', 'cart_product_dimension_type', 'cart_product_short_description', 'cart_product_long_description'], 'string'],
+            [['cart_product_code', 'cart_product_name', 'cart_product_seo', 'cart_product_dimension_type', 'cart_product_short_description', 'cart_product_long_description', 'product_available_status'], 'string'],
             [['cart_product_price', 'cart_product_height', 'cart_product_length', 'cart_product_breadth', 'cart_product_weight'], 'number'],
             [['cart_added_on'], 'safe'],
             [['cart_product_category_name', 'cart_product_subcategory_NAME'], 'string', 'max' => 100],
@@ -85,6 +86,7 @@ class Cart extends \yii\db\ActiveRecord
             'cart_product_long_description' => 'Cart Product Long Description',
             'cart_product_discount' => 'Cart Product Discount',
             'cart_product_quantity' => 'Cart Product Quantity',
+            'product_available_status' => 'Product Available Status',
             'cart_added_on' => 'Cart Added On',
         ];
     }

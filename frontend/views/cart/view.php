@@ -49,6 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'cart_product_long_description:ntext',
             'cart_product_discount',
             'cart_product_quantity',
+            'product_available_status',
             'cart_added_on',
         ],
     ]) ?>

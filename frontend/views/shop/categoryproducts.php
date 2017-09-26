@@ -76,7 +76,7 @@ $prdNoImg     = 'noImage.jpg';
                       <div class="media">
                         <div class="media-left">
                           <img class="media-object" src="<?php echo $prdImage; ?>" alt="Image">
-                          <span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>
+                          <!--<span class="maskingImage"><a data-toggle="modal" href=".quick-view" class="btn viewBtn">Quick View</a></span>-->
                         </div>
                         <div class="media-body">
                           <h4 class="media-heading">
@@ -85,8 +85,9 @@ $prdNoImg     = 'noImage.jpg';
                           <p><?= $categoryProduct->product_short_description; ?></p>
                           <h3>$<?= $categoryProduct->product_sale_price; ?></h3>
                           <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                            <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-default add_to_cart" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
+                              <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                           </div>
                         </div>
                       </div>

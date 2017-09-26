@@ -13,9 +13,17 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'defaultRoute' => 'home',
+    'modules' => [
+        'ws' => [
+            'class' => 'frontend\modules\ws\Module',
+        ],
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
+            /*'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ],*/
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -42,7 +50,9 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            //'enableStrictParsing' => true,
             'rules' => [
+                //['class' => 'yii\rest\UrlRule', 'controller' => 'apprest'],
 				'login' => 'site/login',
 				'signup' => 'site/signup',
                 'logout' => 'site/logout',
@@ -60,10 +70,10 @@ return [
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
 
-                /*'<module:news>/<action:\w+>' => '<module>/default/<action>',
-                '<module:news>/<action:\w+>/<id:\d+>' => '<module>/default/<action>',
-                '<module:posts>/<controller:\w+>' => '<module>/<controller>/index',
-                '<module:posts>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>'*/
+                //'<module:news>/<action:\w+>' => '<module>/default/<action>',
+                //'<module:news>/<action:\w+>/<id:\d+>' => '<module>/default/<action>',
+                '<module:ws>/<controller:\w+>' => '<module>/<controller>/index',
+                '<module:ws>/<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<module>/<controller>/<action>'
             ],
         ],
         'view' => [

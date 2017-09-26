@@ -52,6 +52,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'cart_product_quantity')->textInput() ?>
 
+    <?= $form->field($model, 'product_available_status')->dropDownList([ 'In-Stock' => 'In-Stock', 'Out of Stock' => 'Out of Stock', ], ['prompt' => '']) ?>
+
     <?= $form->field($model, 'cart_added_on')->textInput() ?>
 
     <div class="form-group">

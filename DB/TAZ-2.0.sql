@@ -201,6 +201,18 @@ CREATE TABLE `taz_country` (
   `status` tinyint(1) NOT NULL COMMENT '1-Active , 2-Inactive'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE if NOT EXISTS taz_user_favorite(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    user_id INT(12) NOT NULL, 
+    product_id INT(12) NOT NULL COMMENT 'Refers to Product table id',
+    created_on DATETIME NOT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
+ALTER TABLE taz_user_favorite
+  ADD CONSTRAINT fk_taz_user_favorite_user_id FOREIGN KEY (user_id) REFERENCES taz_user (id) ON DELETE CASCADE;
+ALTER TABLE taz_user_favorite
+  ADD CONSTRAINT fk_taz_user_favorite_product_id FOREIGN KEY (product_id) REFERENCES taz_product (id) ON DELETE CASCADE;
+
 CREATE TABLE IF NOT EXISTS taz_cart(
 	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	cart_user_id INT(12) NOT NULL,
@@ -223,6 +235,7 @@ CREATE TABLE IF NOT EXISTS taz_cart(
 	cart_product_long_description TEXT NULL DEFAULT NULL,
 	cart_product_discount VARCHAR(6) NULL,
 	cart_product_quantity TINYINT(3) NULL, 
+	product_available_status ENUM('In-Stock', 'Out of Stock') NOT NULL DEFAULT 'In-Stock' COMMENT 'product is In-Stock or out of stock',
 	cart_added_on DATETIME NOT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 

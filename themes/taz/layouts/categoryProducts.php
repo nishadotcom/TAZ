@@ -101,7 +101,7 @@ use frontend\widgets\Banner;
       <?= $this->render('footer') ?>
       
     </div>
-    
+    <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/config.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/jquery.min.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/jquery-ui/jquery-ui.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -111,7 +111,7 @@ use frontend\widgets\Banner;
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/countdown/jquery.syotimer.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/custom.js"></script>
-
+    <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app/cart.js"></script>
 
     <?php 
 	if (class_exists('yii\debug\Module')) {

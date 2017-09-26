@@ -1,5 +1,5 @@
 <?php
-$this->title  = 'Single Product';
+$this->title  = 'Product View';
 $productData  = ($product) ? $product[0] : [];
 // echo '<pre>'; print_r($productData->productImages[0]->cover_photo); echo '</pre>';
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
@@ -76,7 +76,8 @@ $prdNoImg     = 'noImage.jpg';
                     </select>
                   </span>-->
                   <div class="btn-area">
-                    <a href="<?php echo Yii::$app->homeUrl.'demo/cart'; ?>" class="btn btn-primary btn-block">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> 
+                    <?php /*?><a class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> <?php */?>
+                    <button class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></button>
                   </div>
                   <div class="tabArea">
                     <ul class="nav nav-tabs">

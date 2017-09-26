@@ -114,7 +114,7 @@ use frontend\widgets\Banner;
       <?= $this->render('footer') ?>
       
     </div>
-    
+    <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/config.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/jquery.min.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/jquery-ui/jquery-ui.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
