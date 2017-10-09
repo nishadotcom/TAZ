@@ -239,6 +239,15 @@ CREATE TABLE IF NOT EXISTS taz_cart(
 	cart_added_on DATETIME NOT NULL
 )ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS taz_feature_seller(
+	id INT(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	seller_id INT(12) NOT NULL,
+	date_from DATE NOT NULL,
+	date_to DATE NOT NULL,
+	status ENUM('Active', 'Suspended') NOT NULL DEFAULT 'Active',
+	created_on DATETIME NOT NULL
+)ENGINE='InnoDB' DEFAULT CHARSET=utf8;
+
 INSERT INTO `taz_country` (`id`, `name`, `status`) VALUES
 (1, 'Afghanistan', 1),
 (2, 'Albania', 1),

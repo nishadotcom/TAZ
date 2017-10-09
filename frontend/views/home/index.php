@@ -2,7 +2,7 @@
 
 use frontend\widgets\HomeProduct;
 use frontend\widgets\FeatureProduct;
-use frontend\widgets\FeatureSeller;
+use frontend\widgets\WidgetFeatureSeller;
 use frontend\widgets\Shipping;
 
 $this->title = 'Home';
@@ -16,7 +16,7 @@ $this->title = 'Home';
 <?= FeatureProduct::widget(); ?>
 
 <!-- FEATURE SELLER -->
-<?= FeatureSeller::widget(); ?>
+<?= WidgetFeatureSeller::widget(); ?>
 
 <!-- SHIPPING / 24 X 7 SUPPOORT SECTION -->
 <?= Shipping::widget(); ?>

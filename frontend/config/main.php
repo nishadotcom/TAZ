@@ -19,6 +19,9 @@ return [
         ],
     ],
     'components' => [
+        'shop' => [
+            'class' => 'frontend\components\ShopComponent',
+        ],
         'request' => [
             'csrfParam' => '_csrf-frontend',
             /*'parsers' => [
@@ -72,8 +75,10 @@ return [
 
                 //'<module:news>/<action:\w+>' => '<module>/default/<action>',
                 //'<module:news>/<action:\w+>/<id:\d+>' => '<module>/default/<action>',
-                '<module:ws>/<controller:\w+>' => '<module>/<controller>/index',
-                '<module:ws>/<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<module>/<controller>/<action>'
+                '<module:ws>/<controller:\w+>' => '<module>/<controller>/<action>',
+                //'<module:ws>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
+                '<module:ws>/<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<module>/<controller>/<action>',
+                //'ws/cartrest/upload'   => 'ws/cartrest/upload',
             ],
         ],
         'view' => [

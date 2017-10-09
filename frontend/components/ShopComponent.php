@@ -27,6 +27,14 @@ class ShopComponent extends Component {
         return $products;
     }
 
+    /**
+	* This method handles to get category products count
+    **/
+    public static function getProductsCountByCategory($categoryId){
+        $products   = Shop::getProductsByCategoryId($categoryId);
+        return ($products) ? count($products) : 0;
+    }
+
 } // End of class
 ?>
 

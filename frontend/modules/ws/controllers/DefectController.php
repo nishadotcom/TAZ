@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\ws\controllers;
+namespace frontend\modules\ws\controllers;
 
 use Yii;
 use yii\rest\ActiveController;
@@ -29,7 +29,7 @@ use common\models\User;
  */
 class DefectController extends ActiveController {
 
-    public $modelClass = 'app\models\Defect';
+    public $modelClass = 'frontend\models\Shop';
     public $serializer = [
         'class' => 'yii\rest\Serializer',
         'collectionEnvelope' => 'items',

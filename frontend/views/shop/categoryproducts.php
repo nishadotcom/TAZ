@@ -12,10 +12,12 @@ $prdNoImg     = 'noImage.jpg';
                 <div class="panel-heading">Product Categories</div>
                 <div class="panel-body">
                   <ul class="list-unstyled">
-                    <li><a href="#">PSA<span>(15)</span></a></li>
-                    <li><a href="#">SLP<span>(10)</span></a></li>
-                    <li><a href="#">OTL<span>(7)</span></a></li>
-                    <li><a href="#">FRC<span>(12)</span></a></li>
+                    <li>
+                      <a href="<?php echo Yii::$app->homeUrl.'shop/products/1'; ?>">PSA<span>(<?= Yii::$app->shop->getProductsCountByCategory(1); ?>)</span></a>
+                    </li>
+                    <li><a href="<?php echo Yii::$app->homeUrl.'shop/products/2'; ?>">SLP<span>(<?= Yii::$app->shop->getProductsCountByCategory(2); ?>)</span></a></li>
+                    <li><a href="<?php echo Yii::$app->homeUrl.'shop/products/3'; ?>">OTL<span>(<?= Yii::$app->shop->getProductsCountByCategory(3); ?>)</span></a></li>
+                    <li><a href="<?php echo Yii::$app->homeUrl.'shop/products/4'; ?>">FRC<span>(<?= Yii::$app->shop->getProductsCountByCategory(4); ?>)</span></a></li>
                   </ul>
                 </div>
               </div>

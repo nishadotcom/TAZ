@@ -13,7 +13,6 @@ use yii\helpers\Json;
 class CartrestController extends ActiveController
 {
 	public $modelClass = 'frontend\models\Cartrest';
-	//public $modelClass = 'common\models\LoginForm';
     public $serializer = [
         'class' => 'yii\rest\Serializer',
         'collectionEnvelope' => 'items',
@@ -46,11 +45,12 @@ class CartrestController extends ActiveController
     /**
      * This method handles login process
      * */
-    public function actionRaise() { echo 'in'; exit;
-    	//if(!$userDetail){
-			return $this->_returnResult('dashboard_data',['hello'],506,0,-1);
-		//}
-    	//echo 'IN'; exit;
+    public function actionRaise($id) { 
+		return $this->_returnResult('dashboard_data',['hello'],506,1,1);
+	}
+
+	public function actionUpload() { 
+		return $this->_returnResult('TEST_DATA',['hello', 'world'],200,1,1);
 	}
     
     /*
@@ -71,7 +71,6 @@ class CartrestController extends ActiveController
 	private function _getStatusCodeMessage($status) {
         $codes = [
             200 => 'User found',
-            201 => 'Username and Password cannot be blank',
             400 => 'Invalid Request',
             401 => 'Unauthorized',
             403 => 'Forbidden',
@@ -79,8 +78,6 @@ class CartrestController extends ActiveController
             
             101 => 'Username cannot be empty',
             102 => 'Invalid Username',
-            103 => 'Password cannot be empty',
-            104 => 'Invalid Username or Password',
             105 => 'Invalid Access-token',
             106 => 'Access-token is required',
             
@@ -96,8 +93,6 @@ class CartrestController extends ActiveController
             508 => 'No User dashboard data',
             509 => 'Nominate verifier data.',
             510 => 'No nominated verifiers found.',
-            511 => 'Deleted defect attachments have been deleted.',
-            512 => 'Deleted defect attachments could not be deleted.',
         ];
         
         return (isset($codes[$status])) ? $codes[$status] : '';
