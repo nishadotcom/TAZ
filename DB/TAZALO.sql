@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 19, 2017 at 01:20 PM
+-- Generation Time: Oct 09, 2017 at 11:06 AM
 -- Server version: 5.7.19-0ubuntu0.16.04.1
 -- PHP Version: 7.0.22-0ubuntu0.16.04.1
 
@@ -41,6 +41,45 @@ CREATE TABLE `taz_administrator` (
 
 INSERT INTO `taz_administrator` (`id`, `username`, `password`, `status`, `created_on`, `modified_on`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Active', '2017-08-19 17:21:18', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `taz_cart`
+--
+
+CREATE TABLE `taz_cart` (
+  `id` int(12) NOT NULL,
+  `cart_user_id` int(12) NOT NULL,
+  `cart_product_category_name` varchar(100) NOT NULL,
+  `cart_product_subcategory_NAME` varchar(100) DEFAULT NULL COMMENT 'Subcategory is not required now. It is future enhancement',
+  `cart_product_id` int(12) NOT NULL COMMENT 'Refers to Product table id',
+  `cart_product_code` tinytext NOT NULL,
+  `cart_product_name` mediumtext NOT NULL,
+  `cart_product_seo` mediumtext NOT NULL,
+  `cart_product_owner_id` int(12) NOT NULL,
+  `cart_product_price` decimal(7,2) NOT NULL DEFAULT '0.00',
+  `cart_product_material` varchar(600) NOT NULL,
+  `cart_product_color` varchar(30) NOT NULL,
+  `cart_product_dimension_type` enum('cm','mm','m') NOT NULL DEFAULT 'cm',
+  `cart_product_height` decimal(7,2) NOT NULL DEFAULT '0.00',
+  `cart_product_length` decimal(7,2) NOT NULL DEFAULT '0.00',
+  `cart_product_breadth` decimal(7,2) NOT NULL DEFAULT '0.00',
+  `cart_product_weight` decimal(7,2) NOT NULL DEFAULT '0.00' COMMENT 'Weight is in KG',
+  `cart_product_short_description` mediumtext,
+  `cart_product_long_description` text,
+  `cart_product_discount` varchar(6) DEFAULT NULL,
+  `cart_product_quantity` tinyint(3) DEFAULT NULL,
+  `product_available_status` enum('In-Stock','Out of Stock') NOT NULL DEFAULT 'In-Stock' COMMENT 'product is In-Stock or out of stock',
+  `cart_added_on` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `taz_cart`
+--
+
+INSERT INTO `taz_cart` (`id`, `cart_user_id`, `cart_product_category_name`, `cart_product_subcategory_NAME`, `cart_product_id`, `cart_product_code`, `cart_product_name`, `cart_product_seo`, `cart_product_owner_id`, `cart_product_price`, `cart_product_material`, `cart_product_color`, `cart_product_dimension_type`, `cart_product_height`, `cart_product_length`, `cart_product_breadth`, `cart_product_weight`, `cart_product_short_description`, `cart_product_long_description`, `cart_product_discount`, `cart_product_quantity`, `product_available_status`, `cart_added_on`) VALUES
+(1, 1, 'TCATE', NULL, 1, 'TPCODE', 'TPNAME', 'TPSEO', 1, '123.00', 'TPMET', 'TPC', 'cm', '23.12', '45.34', '54.32', '12.45', NULL, NULL, NULL, NULL, 'In-Stock', '2017-09-23 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -352,6 +391,28 @@ INSERT INTO `taz_country` (`id`, `name`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `taz_feature_seller`
+--
+
+CREATE TABLE `taz_feature_seller` (
+  `id` int(12) NOT NULL,
+  `seller_id` int(12) NOT NULL,
+  `date_from` date NOT NULL,
+  `date_to` date NOT NULL,
+  `status` enum('Active','Suspended') NOT NULL DEFAULT 'Active',
+  `created_on` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `taz_feature_seller`
+--
+
+INSERT INTO `taz_feature_seller` (`id`, `seller_id`, `date_from`, `date_to`, `status`, `created_on`) VALUES
+(1, 1, '2017-10-01', '2017-10-02', 'Active', '2017-10-01 00:00:00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `taz_log`
 --
 
@@ -609,6 +670,12 @@ ALTER TABLE `taz_administrator`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `taz_cart`
+--
+ALTER TABLE `taz_cart`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `taz_category`
 --
 ALTER TABLE `taz_category`
@@ -619,6 +686,12 @@ ALTER TABLE `taz_category`
 -- Indexes for table `taz_cms`
 --
 ALTER TABLE `taz_cms`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `taz_feature_seller`
+--
+ALTER TABLE `taz_feature_seller`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -706,7 +779,9 @@ ALTER TABLE `taz_user_detail`
 -- Indexes for table `taz_user_favorite`
 --
 ALTER TABLE `taz_user_favorite`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_taz_user_favorite_user_id` (`user_id`),
+  ADD KEY `fk_taz_user_favorite_product_id` (`product_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -718,6 +793,11 @@ ALTER TABLE `taz_user_favorite`
 ALTER TABLE `taz_administrator`
   MODIFY `id` tinyint(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `taz_cart`
+--
+ALTER TABLE `taz_cart`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `taz_category`
 --
 ALTER TABLE `taz_category`
@@ -727,6 +807,11 @@ ALTER TABLE `taz_category`
 --
 ALTER TABLE `taz_cms`
   MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `taz_feature_seller`
+--
+ALTER TABLE `taz_feature_seller`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `taz_log`
 --
@@ -844,6 +929,13 @@ ALTER TABLE `taz_user_contact_detail`
 --
 ALTER TABLE `taz_user_detail`
   ADD CONSTRAINT `fk_taz_user_detail_user_id` FOREIGN KEY (`user_id`) REFERENCES `taz_user` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `taz_user_favorite`
+--
+ALTER TABLE `taz_user_favorite`
+  ADD CONSTRAINT `fk_taz_user_favorite_product_id` FOREIGN KEY (`product_id`) REFERENCES `taz_product` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk_taz_user_favorite_user_id` FOREIGN KEY (`user_id`) REFERENCES `taz_user` (`id`) ON DELETE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
