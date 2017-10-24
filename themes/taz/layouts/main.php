@@ -26,7 +26,7 @@ use frontend\widgets\Banner;
     <link rel="stylesheet" type="text/css" href="<?php echo $this->theme->baseUrl; ?>/assets/plugins/owl-carousel/owl.carousel.css" media="screen">
 
     <!-- GOOGLE FONT -->
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>-->
     
     <!-- CUSTOM CSS -->
     <link href="<?php echo $this->theme->baseUrl; ?>/assets/css/style.css" rel="stylesheet">

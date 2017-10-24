@@ -48403,3 +48403,2546 @@ Stack trace:
     'REQUEST_TIME_FLOAT' => 1507525247.037
     'REQUEST_TIME' => 1507525247
 ]
+2017-10-10 05:04:50 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-10 05:04:47 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '56882'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507611886.765
+    'REQUEST_TIME' => 1507611886
+]
+2017-10-10 05:04:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-10 05:04:51 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '56884'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507611891.128
+    'REQUEST_TIME' => 1507611891
+]
+2017-10-10 05:04:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-10 05:04:51 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '56884'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507611891.21
+    'REQUEST_TIME' => 1507611891
+]
+2017-10-10 19:15:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-10 19:15:48 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '46968'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507662948.089
+    'REQUEST_TIME' => 1507662948
+]
+2017-10-10 19:15:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-10 19:15:48 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '46988'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507662948.451
+    'REQUEST_TIME' => 1507662948
+]
+2017-10-16 17:13:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-16 17:13:03 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '38502'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508173983.083
+    'REQUEST_TIME' => 1508173983
+]
+2017-10-16 17:13:04 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-16 17:13:04 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '38510'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508173984.645
+    'REQUEST_TIME' => 1508173984
+]
+2017-10-16 17:13:04 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-16 17:13:04 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '38510'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508173984.675
+    'REQUEST_TIME' => 1508173984
+]
+2017-10-16 17:18:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-16 17:18:04 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '38602'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508174284.304
+    'REQUEST_TIME' => 1508174284
+]
+2017-10-16 17:35:14 [127.0.0.1][1][kumh2kmb7nimec5d7e6drsesa2][error][Error] Error: Call to undefined method common\models\User::model() in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php:95
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionLogin()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-10-16 17:35:12 [127.0.0.1][1][kumh2kmb7nimec5d7e6drsesa2][info][application] $_POST = [
+    '_csrf-frontend' => 'eFNXUDVxM1VVYjADcBVaFk5mDQdRSEtnKBs/O1QlezRNITkmYxJLMg=='
+    'LoginForm' => [
+        'email' => 'nisha.com126@gmail.com'
+        'password' => 'a'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'okrq4b6ubu80t6sleu09utrt64'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_REFERER' => 'http://dev.talozo.local/login'
+    'HTTP_COOKIE' => 'advanced-frontend=okrq4b6ubu80t6sleu09utrt64; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39432'
+    'REDIRECT_URL' => '/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508175312.093
+    'REQUEST_TIME' => 1508175312
+]
+2017-10-16 17:38:35 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][error][Error] Error: Call to undefined method common\models\User::model() in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php:95
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionLogin()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-10-16 17:38:34 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][info][application] $_POST = [
+    '_csrf-frontend' => 'MkxvLUZrdVYffQh.Aw8cFQR5NXoiUg1kYgQHRic/PTcHPgFbEAgNMQ=='
+    'LoginForm' => [
+        'email' => 'nisha.com126@gmail.com'
+        'password' => 'a'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1jn2d20kuh13d5sineadu99r94'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_REFERER' => 'http://dev.talozo.local/site/login'
+    'HTTP_COOKIE' => 'advanced-frontend=1jn2d20kuh13d5sineadu99r94; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39482'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508175514.996
+    'REQUEST_TIME' => 1508175514
+]
+2017-10-16 17:38:48 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][error][Error] Error: Call to undefined method common\models\User::model() in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php:95
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionLogin()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-10-16 17:38:48 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][info][application] $_POST = [
+    '_csrf-frontend' => 'MkxvLUZrdVYffQh.Aw8cFQR5NXoiUg1kYgQHRic/PTcHPgFbEAgNMQ=='
+    'LoginForm' => [
+        'email' => 'nisha.com126@gmail.com'
+        'password' => 'a'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1jn2d20kuh13d5sineadu99r94'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_REFERER' => 'http://dev.talozo.local/site/login'
+    'HTTP_COOKIE' => 'advanced-frontend=1jn2d20kuh13d5sineadu99r94; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39486'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508175528.276
+    'REQUEST_TIME' => 1508175528
+]
+2017-10-16 17:38:50 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][error][Error] Error: Call to undefined method common\models\User::model() in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php:95
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionLogin()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-10-16 17:38:50 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][info][application] $_POST = [
+    '_csrf-frontend' => 'MkxvLUZrdVYffQh.Aw8cFQR5NXoiUg1kYgQHRic/PTcHPgFbEAgNMQ=='
+    'LoginForm' => [
+        'email' => 'nisha.com126@gmail.com'
+        'password' => 'a'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1jn2d20kuh13d5sineadu99r94'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_REFERER' => 'http://dev.talozo.local/site/login'
+    'HTTP_COOKIE' => 'advanced-frontend=1jn2d20kuh13d5sineadu99r94; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39488'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508175530.935
+    'REQUEST_TIME' => 1508175530
+]
+2017-10-16 17:42:56 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected 'TRUE' (T_STRING), expecting ';' in /var/www/ANTs/Freelance/Talozo/dev/common/models/User.php:229
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('common\\models\\U...')
+#1 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(89): spl_autoload_call('common\\models\\U...')
+#2 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(47): common\models\LoginForm->getUser()
+#3 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/common/models/LoginForm.php(62): yii\base\Model->validate()
+#8 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(93): common\models\LoginForm->login()
+#9 [internal function]: frontend\controllers\SiteController->actionLogin()
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#14 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-10-16 17:42:56 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf-frontend' => 'MkxvLUZrdVYffQh.Aw8cFQR5NXoiUg1kYgQHRic/PTcHPgFbEAgNMQ=='
+    'LoginForm' => [
+        'email' => 'nisha.com126@gmail.com'
+        'password' => 'a'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1jn2d20kuh13d5sineadu99r94'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_REFERER' => 'http://dev.talozo.local/site/login'
+    'HTTP_COOKIE' => 'advanced-frontend=1jn2d20kuh13d5sineadu99r94; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39502'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508175776.463
+    'REQUEST_TIME' => 1508175776
+]
+2017-10-16 17:43:10 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][error][Error] Error: Call to undefined method common\models\User::model() in /var/www/ANTs/Freelance/Talozo/dev/common/models/User.php:227
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(95): common\models\User::updateLastLogin(1)
+#1 [internal function]: frontend\controllers\SiteController->actionLogin()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 17:43:10 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][info][application] $_POST = [
+    '_csrf-frontend' => 'MkxvLUZrdVYffQh.Aw8cFQR5NXoiUg1kYgQHRic/PTcHPgFbEAgNMQ=='
+    'LoginForm' => [
+        'email' => 'nisha.com126@gmail.com'
+        'password' => 'a'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1jn2d20kuh13d5sineadu99r94'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_REFERER' => 'http://dev.talozo.local/site/login'
+    'HTTP_COOKIE' => 'advanced-frontend=1jn2d20kuh13d5sineadu99r94; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39506'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508175790.013
+    'REQUEST_TIME' => 1508175790
+]
+2017-10-16 17:43:49 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][error][Error] Error: Call to undefined method common\models\User::findByPk() in /var/www/ANTs/Freelance/Talozo/dev/common/models/User.php:227
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(95): common\models\User::updateLastLogin(1)
+#1 [internal function]: frontend\controllers\SiteController->actionLogin()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 17:43:49 [127.0.0.1][1][1jn2d20kuh13d5sineadu99r94][info][application] $_POST = [
+    '_csrf-frontend' => 'MkxvLUZrdVYffQh.Aw8cFQR5NXoiUg1kYgQHRic/PTcHPgFbEAgNMQ=='
+    'LoginForm' => [
+        'email' => 'nisha.com126@gmail.com'
+        'password' => 'a'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1jn2d20kuh13d5sineadu99r94'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_REFERER' => 'http://dev.talozo.local/site/login'
+    'HTTP_COOKIE' => 'advanced-frontend=1jn2d20kuh13d5sineadu99r94; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39514'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508175829.348
+    'REQUEST_TIME' => 1508175829
+]
+2017-10-16 17:51:48 [127.0.0.1][1][kddnk5a6j1e08smb2g5qi9usc7][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "common/uploads/profile_images/no_image_thumb.gif". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('common/uploads/...', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-16 17:51:48 [127.0.0.1][1][kddnk5a6j1e08smb2g5qi9usc7][info][application] $_COOKIE = [
+    'advanced-frontend' => 'kddnk5a6j1e08smb2g5qi9usc7'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dev.talozo.local/profile-update'
+    'HTTP_COOKIE' => 'advanced-frontend=kddnk5a6j1e08smb2g5qi9usc7; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '39656'
+    'REDIRECT_URL' => '/common/uploads/profile_images/no_image_thumb.gif'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/common/uploads/profile_images/no_image_thumb.gif'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508176308.527
+    'REQUEST_TIME' => 1508176308
+]
+2017-10-16 18:32:32 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Missing argument 1 for yii\db\BaseActiveRecord::findOne(), called in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php on line 39 and defined in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php:105
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(105): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', '/var/www/ANTs/F...', 105, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(39): yii\db\BaseActiveRecord::findOne()
+#2 [internal function]: frontend\controllers\UserAddressController->actionIndex()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address', Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-10-16 18:32:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40208'
+    'REDIRECT_URL' => '/user-address'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508178752.744
+    'REQUEST_TIME' => 1508178752
+]
+2017-10-16 18:33:15 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\base\ErrorException:2] yii\base\ErrorException: Missing argument 1 for yii\db\BaseActiveRecord::findOne(), called in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php on line 40 and defined in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php:105
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/db/BaseActiveRecord.php(105): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', '/var/www/ANTs/F...', 105, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(40): yii\db\BaseActiveRecord::findOne()
+#2 [internal function]: frontend\controllers\UserAddressController->actionIndex()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address', Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-10-16 18:33:15 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40214'
+    'REDIRECT_URL' => '/user-address'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508178795.061
+    'REQUEST_TIME' => 1508178795
+]
+2017-10-16 18:35:52 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][Error] Error: Class 'ProfileMenu' not found in /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/index.php:14
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(frontend\controllers\UserAddressController))
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\UserAddressController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(46): yii\base\Controller->render('index', Array)
+#5 [internal function]: frontend\controllers\UserAddressController->actionIndex()
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#12 {main}
+2017-10-16 18:35:51 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40236'
+    'REDIRECT_URL' => '/user-address'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508178951.941
+    'REQUEST_TIME' => 1508178951
+]
+2017-10-16 18:37:07 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: value in /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/index.php:46
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/index.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/ANTs/F...', 46, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(frontend\controllers\UserAddressController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\UserAddressController))
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(46): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\UserAddressController->actionIndex()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-10-16 18:37:07 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40256'
+    'REDIRECT_URL' => '/user-address'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508179027.454
+    'REQUEST_TIME' => 1508179027
+]
+2017-10-16 18:39:09 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: value in /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/index.php:56
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/index.php(56): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/ANTs/F...', 56, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(frontend\controllers\UserAddressController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\UserAddressController))
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(48): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\UserAddressController->actionIndex()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-10-16 18:39:09 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40258'
+    'REDIRECT_URL' => '/user-address'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508179149.82
+    'REQUEST_TIME' => 1508179149
+]
+2017-10-16 18:40:13 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: value in /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/index.php:54
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/index.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/ANTs/F...', 54, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(frontend\controllers\UserAddressController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\UserAddressController))
+#5 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(48): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\UserAddressController->actionIndex()
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address', Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-10-16 18:40:13 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40268'
+    'REDIRECT_URL' => '/user-address'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508179213.426
+    'REQUEST_TIME' => 1508179213
+]
+2017-10-16 19:06:18 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user-address/update/1/Shipping". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address/up...', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-16 19:06:18 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dev.talozo.local/user-address'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40874'
+    'REDIRECT_URL' => '/user-address/update/1/Shipping'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address/update/1/Shipping'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508180778.339
+    'REQUEST_TIME' => 1508180778
+]
+2017-10-16 19:09:22 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: userid in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address/up...', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#6 {main}
+2017-10-16 19:09:22 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_GET = [
+    'id' => '1'
+    'type' => 'Shipping'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dev.talozo.local/user-address'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40896'
+    'REDIRECT_URL' => '/user-address/update/1/Shipping'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address/update/1/Shipping'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508180962.234
+    'REQUEST_TIME' => 1508180962
+]
+2017-10-16 19:09:30 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: id in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php:63
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(63): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/ANTs/F...', 63, Array)
+#1 [internal function]: frontend\controllers\UserAddressController->actionUpdate('1', 'Shipping')
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address/up...', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 19:09:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'userid' => '1'
+    'type' => 'Shipping'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dev.talozo.local/user-address'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '40914'
+    'REDIRECT_URL' => '/user-address/update/1/Shipping'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address/update/1/Shipping'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508180970.564
+    'REQUEST_TIME' => 1508180970
+]
+2017-10-16 19:21:35 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/_form.php:13
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, NULL)
+#2 /var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-address/update.php(28): yii\base\View->render('_form', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/ANTs/F...')
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(frontend\controllers\UserAddressController))
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(frontend\controllers\UserAddressController))
+#7 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php(69): yii\base\Controller->render('update', Array)
+#8 [internal function]: frontend\controllers\UserAddressController->actionUpdate('1', 'Shipping')
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#12 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address/up...', Array)
+#13 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#15 {main}
+2017-10-16 19:21:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'userid' => '1'
+    'type' => 'Shipping'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dev.talozo.local/user-address'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41134'
+    'REDIRECT_URL' => '/user-address/update/1/Shipping'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address/update/1/Shipping'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508181694.815
+    'REQUEST_TIME' => 1508181694
+]
+2017-10-16 19:35:15 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: user-address/user-address in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('user-address', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address/us...', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-16 19:35:15 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dev.talozo.local/user-address/update/1/Shipping'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41310'
+    'REDIRECT_URL' => '/user-address/user-address'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address/user-address'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508182515.917
+    'REQUEST_TIME' => 1508182515
+]
+2017-10-16 19:37:33 [127.0.0.1][-][-][error][Error] Error: Call to a member function load() on null in /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserAddressController.php:65
+Stack trace:
+#0 [internal function]: frontend\controllers\UserAddressController->actionUpdate('1', 'Billing')
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user-address/up...', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-10-16 19:37:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'userid' => '1'
+    'type' => 'Billing'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://dev.talozo.local/user-address/index'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41334'
+    'REDIRECT_URL' => '/user-address/update/1/Billing'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user-address/update/1/Billing'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508182653.375
+    'REQUEST_TIME' => 1508182653
+]
+2017-10-16 19:48:48 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: tableName in /var/www/ANTs/Freelance/Talozo/dev/frontend/models/UserAddress.php:82
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/models/UserAddress.php(82): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/ANTs/F...', 82, Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(89): frontend\models\UserAddress::insertAddressOnSignup()
+#2 [internal function]: frontend\controllers\SiteController->actionLogin()
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-10-16 19:48:47 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41420'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508183327.982
+    'REQUEST_TIME' => 1508183327
+]
+2017-10-16 19:49:24 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][error][Error] Error: Using $this when not in object context in /var/www/ANTs/Freelance/Talozo/dev/frontend/models/UserAddress.php:77
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(89): frontend\models\UserAddress::insertAddressOnSignup()
+#1 [internal function]: frontend\controllers\SiteController->actionLogin()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 19:49:24 [127.0.0.1][1][c56msvl755v5j63qj5h3n4j8s1][info][application] $_COOKIE = [
+    'advanced-frontend' => 'c56msvl755v5j63qj5h3n4j8s1'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=c56msvl755v5j63qj5h3n4j8s1; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41422'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508183364.468
+    'REQUEST_TIME' => 1508183364
+]
+2017-10-16 19:52:56 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\SignupForm::id in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(221): yii\base\Component->__get('id')
+#1 [internal function]: frontend\controllers\SiteController->actionSignup()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 19:52:55 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][info][application] $_POST = [
+    '_csrf-frontend' => 'bmRiQUU0RUJDVQUSAFAsAVhROBYhDT1wPiwKKiRgDSNbFgw3E1c9JQ=='
+    'SignupForm' => [
+        'firstname' => 'aaaa'
+        'lastname' => 'aa'
+        'email' => 'sdf@sfs.cksdf'
+        'mobile' => '34324324324'
+        'password' => 'sdfsfsdfsdfsd'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '33nmjat738808uaonut4ddrtg3'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '246'
+    'HTTP_REFERER' => 'http://dev.talozo.local/signup'
+    'HTTP_COOKIE' => 'advanced-frontend=33nmjat738808uaonut4ddrtg3; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41480'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508183575.977
+    'REQUEST_TIME' => 1508183575
+]
+2017-10-16 19:53:56 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: frontend\models\SignupForm::get_errors() in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(230): yii\base\Component->__call('get_errors', Array)
+#1 [internal function]: frontend\controllers\SiteController->actionSignup()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 19:53:56 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][info][application] $_POST = [
+    '_csrf-frontend' => 'bmRiQUU0RUJDVQUSAFAsAVhROBYhDT1wPiwKKiRgDSNbFgw3E1c9JQ=='
+    'SignupForm' => [
+        'firstname' => 'aaaa'
+        'lastname' => 'aa'
+        'email' => 'sdf@sfs.cksdf'
+        'mobile' => '34324324324'
+        'password' => 'sdfsfsdfsdfsd'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '33nmjat738808uaonut4ddrtg3'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '246'
+    'HTTP_REFERER' => 'http://dev.talozo.local/signup'
+    'HTTP_COOKIE' => 'advanced-frontend=33nmjat738808uaonut4ddrtg3; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41492'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508183636.172
+    'REQUEST_TIME' => 1508183636
+]
+2017-10-16 19:55:50 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: frontend\models\SignupForm::get_errors() in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(230): yii\base\Component->__call('get_errors', Array)
+#1 [internal function]: frontend\controllers\SiteController->actionSignup()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 19:55:50 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][info][application] $_POST = [
+    '_csrf-frontend' => 'aDUwVC5FTUpFBFcHayEkCV4AagNKfDV4OH1YP08RBStdR14ieCY1LQ=='
+    'SignupForm' => [
+        'firstname' => 'tgth'
+        'lastname' => 'ewrgtrg'
+        'email' => 'jdkejf@jkj.delf'
+        'mobile' => '3455454545'
+        'password' => 'jkkadsmnm'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '33nmjat738808uaonut4ddrtg3'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '248'
+    'HTTP_REFERER' => 'http://dev.talozo.local/signup'
+    'HTTP_COOKIE' => 'advanced-frontend=33nmjat738808uaonut4ddrtg3; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41510'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508183750.48
+    'REQUEST_TIME' => 1508183750
+]
+2017-10-16 20:04:29 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\SignupForm::eamil in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php(221): yii\base\Component->__get('eamil')
+#1 [internal function]: frontend\controllers\SiteController->actionSignup()
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('signup', Array)
+#5 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/signup', Array)
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-10-16 20:04:29 [127.0.0.1][-][33nmjat738808uaonut4ddrtg3][info][application] $_POST = [
+    '_csrf-frontend' => 'b2NOLVFfZWhCUil.FDsMK1lWFHo1Zh1aPysmRjALLQlaESBbBzwdDw=='
+    'SignupForm' => [
+        'firstname' => 'dsgdsgsd'
+        'lastname' => 'sdfds'
+        'email' => 'asfas@dsfds.sfs'
+        'mobile' => '352353252352'
+        'password' => 'sdfsdfdsf'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '33nmjat738808uaonut4ddrtg3'
+    '_csrf-frontend' => 'f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-ZA,en-GB;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '252'
+    'HTTP_REFERER' => 'http://dev.talozo.local/signup'
+    'HTTP_COOKIE' => 'advanced-frontend=33nmjat738808uaonut4ddrtg3; _csrf-frontend=f3168afb5d7404a88579ba2c42bfbc9555f6d66b170ac33098d0aee2901257d0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-1gSEdiC65ZWd9x2PHhkaTHa5rnvVcxg%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '41584'
+    'REDIRECT_URL' => '/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508184269.496
+    'REQUEST_TIME' => 1508184269
+]
+2017-10-17 16:47:09 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-17 16:47:08 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '33554'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508258827.867
+    'REQUEST_TIME' => 1508258827
+]
+2017-10-17 16:47:13 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-17 16:47:12 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '33544'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508258832.968
+    'REQUEST_TIME' => 1508258832
+]
+2017-10-17 16:54:05 [127.0.0.1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('become-seller', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/become-sel...', Array)
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#5 {main}
+2017-10-17 16:54:05 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://dev.talozo.local'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/become-seller'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '33570'
+    'REDIRECT_URL' => '/become-seller'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/become-seller'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508259245.732
+    'REQUEST_TIME' => 1508259245
+]
+2017-10-17 17:20:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-17 17:20:02 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '34164'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508260801.959
+    'REQUEST_TIME' => 1508260801
+]
+2017-10-17 17:20:02 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: ws/cartrest/ in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('ws/cartrest', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-17 17:20:02 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][info][application] $_GET = [
+    'id' => 'login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w\";}'
+    'advanced-frontend' => '4ji6pncefhqd1pttvmfg96m7d6'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w%22%3B%7D; advanced-frontend=4ji6pncefhqd1pttvmfg96m7d6; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '34152'
+    'REDIRECT_URL' => '/ws/cartrest/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ws/cartrest/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508260801.902
+    'REQUEST_TIME' => 1508260801
+]
+2017-10-17 17:20:21 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: ws/cartrest/ in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('ws/cartrest', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-17 17:20:21 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][info][application] $_GET = [
+    'id' => 'raise'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w\";}'
+    'advanced-frontend' => '4ji6pncefhqd1pttvmfg96m7d6'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w%22%3B%7D; advanced-frontend=4ji6pncefhqd1pttvmfg96m7d6; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '34166'
+    'REDIRECT_URL' => '/ws/cartrest/raise'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ws/cartrest/raise'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508260821.894
+    'REQUEST_TIME' => 1508260821
+]
+2017-10-17 17:20:41 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: ws/cartrest/ in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('ws/cartrest', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-17 17:20:41 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][info][application] $_GET = [
+    'id' => 'upload'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w\";}'
+    'advanced-frontend' => '4ji6pncefhqd1pttvmfg96m7d6'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w%22%3B%7D; advanced-frontend=4ji6pncefhqd1pttvmfg96m7d6; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '34180'
+    'REDIRECT_URL' => '/ws/cartrest/upload'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ws/cartrest/upload'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508260841.809
+    'REQUEST_TIME' => 1508260841
+]
+2017-10-17 17:22:29 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: ws/cartrest/ in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('ws/cartrest', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-17 17:22:29 [127.0.0.1][1][4ji6pncefhqd1pttvmfg96m7d6][info][application] $_GET = [
+    'id' => 'upload'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w\";}'
+    'advanced-frontend' => '4ji6pncefhqd1pttvmfg96m7d6'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=82b73c832b56792765824ca730c885452937dbbf9a9021a840ae85583762b19fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22M0Zf6Y9CiEVyOLVfz0XSd-hlekcVRO3w%22%3B%7D; advanced-frontend=4ji6pncefhqd1pttvmfg96m7d6; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '34194'
+    'REDIRECT_URL' => '/ws/cartrest/upload'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ws/cartrest/upload'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508260949.446
+    'REQUEST_TIME' => 1508260949
+]

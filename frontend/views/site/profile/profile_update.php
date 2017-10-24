@@ -24,9 +24,9 @@ $this->title = 'Profile';
                       }
                         ?>
                       <img src="<?php echo Yii::$app->homeUrl.Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH_FRONTEND'] . $image_name; ?>">
-                    <div class="caption">
+                    <!--<div class="caption">
                         <a href="#" class="btn btn-primary btn-block" role="button">Change Image</a>
-                      </div>
+                      </div>-->
                     </div>
                   </div>
                   <div class="col-md-10 col-sm-9 col-xs-12">
@@ -61,10 +61,10 @@ $this->title = 'Profile';
                              <div class="col-md-10 col-sm-9">
                            <?= $form->field($usermodel, 'profile_image')->fileInput()->label(false); ?>
                            <?= Html::activeHiddenInput($usermodel, 'profile_image',['type' => 'hidden', 'name' => 'User[existing_profile_image]','value' => $usermodel->profile_image]); ?>
-                          <span>Upload Formats:&nbsp;jpg,png,jpeg</span>
+                            <!--<span>Upload Formats:&nbsp;jpg,png,jpeg</span>-->
                            </div>
                         </div>
-                           <?php if(!$usermodel->isNewRecord && $usermodel->profile_image) { ?>
+                           <?php /*if(!$usermodel->isNewRecord && $usermodel->profile_image) { ?>
                         <div class="form-group">
                           <label for="" class="col-md-2 col-sm-3 control-label">Existing Profile Image</label>
                           <div class="col-sm-2 col-sm-1">
@@ -74,7 +74,7 @@ $this->title = 'Profile';
                           </div>
                         </div>
                         <div class="clearfix"></div>
-                        <?php } ?>
+                        <?php } */ ?>
                         <div class="form-group">
                           <label for="" class="col-md-2 col-sm-3 control-label">About Me(Short Description)</label>
                              <div class="col-md-10 col-sm-9">
@@ -84,7 +84,7 @@ $this->title = 'Profile';
                      <div class="form-group">
                        <label for="" class="col-md-2 col-sm-3 control-label">About Me(Long Description)</label>
                           <div class="col-md-10 col-sm-9">
-                    <?= $form->field($UserDetailModel, 'long_about_me')->textarea(['rows' => 8,'name'=>'long_about_me','id'=>'long_about_me']) ?>
+                    <?= $form->field($UserDetailModel, 'long_about_me')->textarea(['rows' => 8,'name'=>'long_about_me','id'=>'long_about_me'])->label(false) ?>
                    </div>
                   </div>
 

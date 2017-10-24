@@ -9,7 +9,7 @@ use common\models\User;
  */
 class SignupForm extends Model
 {
-    //public $username;
+    //public $id;
     public $email;
     public $password;
     public $name;
@@ -62,7 +62,7 @@ class SignupForm extends Model
         $user->firstname = $this->firstname;
         $user->lastname = $this->lastname;
         $user->email = $this->email;
-          $user->mobile = $this->mobile;
+        $user->mobile = $this->mobile;
         $user->password = md5($this->password);
         $user->created_at = Yii::$app->Common->mysqlDateTime();
 

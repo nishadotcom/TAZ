@@ -4,7 +4,6 @@ use yii\helpers\Html;
 // GET CONTROLLER
 $controller = Yii::$app->controller;
 $action 	= $controller->action->id;
-//echo $action;
 ?>
 
 <!-- HEADER -->

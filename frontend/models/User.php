@@ -47,7 +47,7 @@ class User extends \yii\db\ActiveRecord
             [['username', 'email', 'mobile', 'password', 'created_on'], 'required'],
             [['registered_mode', 'profile_image', 'profile_status', 'user_loyalty', 'user_type', 'status'], 'string'],
             [['product_count'], 'integer'],
-            [['created_on', 'updated_on'], 'safe'],
+            [['created_on', 'updated_on', 'login_date'], 'safe'],
             [['username', 'email'], 'string', 'max' => 500],
             [['mobile', 'registration_ip'], 'string', 'max' => 15],
             [['password', 'auth_key'], 'string', 'max' => 32],
@@ -110,4 +110,6 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->hasMany(UserPaymentDetail::className(), ['user_id' => 'id']);
     }
+
+    
 }

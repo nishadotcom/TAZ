@@ -222,4 +222,10 @@ class User extends ActiveRecord implements IdentityInterface
 
         return $user_data->firstname.'&nbsp;'.$user_data->lastname;
     }
+
+    public static function updateLastLogin($userid=1){
+        $userModel = static::findOne(['id' => $userid]);
+        $userModel->login_date = Yii::$app->Common->mysqlDateTime();
+        return ($userModel->save()) ? TRUE : FALSE;
+    }
 }

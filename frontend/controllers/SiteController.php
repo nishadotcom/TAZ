@@ -14,6 +14,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use frontend\models\UserDetail;
+use frontend\models\UserAddress;
 
 /**
  * Site controller
@@ -91,8 +92,11 @@ class SiteController extends Controller
         $model = new LoginForm();
         $model->scenario = 'site_login';
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+          // Update Last Login Date
+          $userModel = User::updateLastLogin(Yii::$app->user->id);
 
-            Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
+          return $this->redirect(['profile-dashboard']);
+            //Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -110,7 +114,8 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
         Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Logged out Successfully") . '</div>');
-        Yii::$app->Common->redirect(Url::toRoute(['login']));
+        return $this->redirect(['/']);
+        //Yii::$app->Common->redirect(Url::toRoute(['login']));
     }
 	
 	public function actionBecomeSeller(){
@@ -212,6 +217,9 @@ class SiteController extends Controller
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($model->signup()) {
+              // INSERT User address
+              $userData = User::findByEmail($model->email);
+              UserAddress::insertAddressOnSignup($userData->id);
                     Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Registered Successfully") . '</div>');
                   return $this->redirect(['site/signup']);
 

@@ -261,6 +261,10 @@ class Common extends Component {
         return strtolower(preg_replace("![^a-z0-9]+!i", "-", $str));
     }
 
+    public static function updateLastLogin($userid){
+
+    }
+
 } // End of class
 ?>
 

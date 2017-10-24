@@ -66,6 +66,8 @@ return [
                 'contact-details/add'=> 'user-contact-detail/create',
                 'contact-details/update/<id>'=> 'user-contact-detail/update',
                 'contact-details/delete/<id>'=> 'user-contact-detail/delete',
+                // User Address
+                'user-address/update/<userid>/<type>' => 'user-address/update',
 
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<controller>/<action>',
@@ -78,7 +80,7 @@ return [
                 '<module:ws>/<controller:\w+>' => '<module>/<controller>/<action>',
                 //'<module:ws>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
                 '<module:ws>/<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<module>/<controller>/<action>',
-                //'ws/cartrest/upload'   => 'ws/cartrest/upload',
+                'ws/cartrest/upload'   => 'ws/cartrest/upload',
             ],
         ],
         'view' => [
