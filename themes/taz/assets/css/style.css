@@ -2034,7 +2034,7 @@ body.bodyColor.container {
 }
 @media (min-width: 1200px) {
   .bannerV3 {
-    padding: 80px 0;
+    /*padding: 80px 0;*/
   }
 }
 .bannerV3 .slide {

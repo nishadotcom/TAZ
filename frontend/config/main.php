@@ -17,6 +17,18 @@ return [
         'ws' => [
             'class' => 'frontend\modules\ws\Module',
         ],
+        'social'=>[
+            'class' => 'kartik\social\Module',
+            'facebook' => [
+                'appId' => '301760760320359',
+                'secret' => 'e18eb142d7ca2f552030f4b36ea0ca4f',
+            ],
+            /*'google' => [
+                'clientId' => 'GOOGLE_API_CLIENT_ID',
+                'pageId' => 'GOOGLE_PLUS_PAGE_ID',
+                'profileId' => 'GOOGLE_PLUS_PROFILE_ID',
+            ],*/
+        ]
     ],
     'components' => [
         'shop' => [

@@ -27,12 +27,12 @@ class Shop extends \yii\db\ActiveRecord
         return [];
     }
 
-    public function getProductsByCategoryId($categoryId){
+    public static function getProductsByCategoryId($categoryId){
 		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->all();
 		return $products;
 	}
 
-    public function getProductById($productId){
+    public static function getProductById($productId){
         $products   = Product::find()->where(['id'=>$productId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->all();
         return $products;
     }

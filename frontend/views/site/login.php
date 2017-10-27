@@ -6,9 +6,14 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use kartik\social\Module;
+use yii\helpers\Url;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
+$social = Yii::$app->getModule('social');
+$callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url you want to redirect
+
 ?>
 
 <div class="row">
@@ -28,7 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
      
                     <button type="submit" class="btn btn-primary btn-block">log in</button>
-                    <button type="submit" class="btn btn-default pull-left"><i class="fa fa-facebook" aria-hidden="true"></i><span>log in with facebook</span></button>
+                    <?php echo $social->getFbLoginLink($callback, ['class'=>'btn btn-default pull-left']); ?>
+                    <!--<button type="submit" class="btn btn-default pull-left"><i class="fa fa-facebook" aria-hidden="true"></i><span>log in with facebook</span></button>-->
                     <button type="submit" class="btn btn-default pull-right"><i class="fa fa-google-plus" aria-hidden="true"></i><span>log in with google plus</span></button>
                     <button type="button" class="btn btn-link btn-block">Forgot Password?</button>
                  <?php ActiveForm::end(); ?>

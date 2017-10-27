@@ -191,7 +191,7 @@ jQuery(document).ready(function() {
 
 	  var owl = $('.owl-carousel.testimonialSlider');
 	  owl.owlCarousel({
-		  loop:true,
+		  //loop:true,
 		  margin:28,
 		  autoplay:true,
 		  autoplayTimeout:4000,
