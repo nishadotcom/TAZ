@@ -45,8 +45,8 @@ class CartrestController extends ActiveController
     /**
      * This method handles login process
      * */
-    public function actionRaise($id) { 
-		return $this->_returnResult('dashboard_data',['hello'],506,1,1);
+    public function actionRaise($id,$param) { //echo 'ID='.$id.'/PARAM='.$param;exit;
+		return $this->_returnResult('data',['id'=>$id,'param'=>$param],506,1,1);
 	}
 
 	public function actionUpload() { 

@@ -81,18 +81,10 @@ return [
                 // User Address
                 'user-address/update/<userid>/<type>' => 'user-address/update',
 
-                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                /*'<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<controller>/<action>',
-                
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
-
-                //'<module:news>/<action:\w+>' => '<module>/default/<action>',
-                //'<module:news>/<action:\w+>/<id:\d+>' => '<module>/default/<action>',
-                '<module:ws>/<controller:\w+>' => '<module>/<controller>/<action>',
-                //'<module:ws>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
-                '<module:ws>/<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<module>/<controller>/<action>',
-                'ws/cartrest/upload'   => 'ws/cartrest/upload',
+                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',*/
             ],
         ],
         'view' => [

@@ -86,15 +86,18 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
+        if (!Yii::$app->user->isGuest) { //echo '<pre>'; echo Yii::$app->session->get('user.firstname'); print_r(Yii::$app->user->identity->user_type); exit;
             return $this->goHome();
         }
 
         $model = new LoginForm();
         $model->scenario = 'site_login';
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+          //print_r($model->);
+            Yii::$app->session->set('user.profileImage','dddd.jpg');
           // Update Last Login Date
           $userModel = User::updateLastLogin(Yii::$app->user->id);
+          //echo '<pre>'; print_r(Yii::$app->user->identity->user_type); exit;
 
           return $this->redirect(['profile-dashboard']);
             //Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
@@ -216,6 +219,7 @@ class SiteController extends Controller
     public function actionSignup()
     {
         $model = new SignupForm();
+        $model->scenario = 'WebSignup';
         if ($model->load(Yii::$app->request->post())) {
             if ($model->signup()) {
               // INSERT User address
@@ -287,38 +291,101 @@ class SiteController extends Controller
     
 
  
-public function actionValidateFb()
-{
-    $social = Yii::$app->getModule('social');
-    $fb = $social->getFb(); // gets facebook object based on module settings
-    try {
-        $helper = $fb->getRedirectLoginHelper();
-        $accessToken = $helper->getAccessToken();
-    } catch(\Facebook\Exceptions\FacebookSDKException $e) {
-        // There was an error communicating with Graph
-        return $this->render('validate-fb', [
-            'out' => '<div class="alert alert-danger">' . $e->getMessage() . '</div>'
-        ]);
+  public function actionValidateFb(){
+      $social = Yii::$app->getModule('social');
+      $fb = $social->getFb(); // gets facebook object based on module settings
+      try {
+          $helper = $fb->getRedirectLoginHelper();
+          $accessToken = $helper->getAccessToken();
+      } catch(\Facebook\Exceptions\FacebookSDKException $e) {
+          // There was an error communicating with Graph
+          return $this->render('validate-fb', [
+              'out' => '<div class="alert alert-danger">' . $e->getMessage() . '</div>'
+          ]);
+      }
+      if (isset($accessToken)) { // you got a valid facebook authorization token
+          $response = $fb->get('/me?fields=id,name,email,first_name,last_name,picture', $accessToken);
+          $FBUserData = $response->getGraphUser(); 
+          // User Exists 
+          $userData = User::findByEmail($FBUserData['email']);
+          if($userData){
+            // Login Process
+            $this->fblogin($FBUserData['email']);
+            return $this->redirect(['profile-dashboard']);
+          }else{
+            // SIGNUP
+            $model = new SignupForm();
+            $model->scenario = 'FBSignup';
+            $model->email = $FBUserData['email'];
+            $model->firstname = $FBUserData['first_name'];
+            $model->lastname = $FBUserData['last_name'];
+            $profile_image  = $FBUserData['picture']['url'];
+            if ($model->FBsignup()) {
+              // INSERT User address
+              $userData = User::findByEmail($FBUserData['email']);
+              UserAddress::insertAddressOnSignup($userData->id);
+              $this->fblogin($FBUserData['email']);
+            }else{ print_r($model->getErrors()); exit;
+              return $this->redirect(['login']);
+            }
+          }
+          /*echo '<pre>'; print_r($FBUserData); echo $FBUserData['email']; exit;
+          $model = new LoginForm();
+          $model->scenario = 'FBLogin';
+          $model->email = $FBUserData['email'];
+          if($model->login()){
+
+          }*/
+
+          /*return $this->render('validate-fb', [
+              'out' => '<legend>Facebook User Details</legend>' . '<pre>' . print_r($response->getGraphUser(), true) . '</pre>'
+          ]);*/
+      } elseif ($helper->getError()) {
+          // the user denied the request
+          // You could log this data . . .
+          return $this->render('validate-fb', [
+              'out' => '<legend>Validation Log</legend><pre>' .
+              '<b>Error:</b>' . print_r($helper->getError(), true) .
+              '<b>Error Code:</b>' . print_r($helper->getErrorCode(), true) .
+              '<b>Error Reason:</b>' . print_r($helper->getErrorReason(), true) .
+              '<b>Error Description:</b>' . print_r($helper->getErrorDescription(), true) .
+              '</pre>'
+          ]);
+      }
+      return $this->render('validate-fb', [
+          'out' => '<div class="alert alert-warning"><h4>Oops! Nothing much to process here.</h4></div>'
+      ]);
+      /**
+      $model = new LoginForm();
+        $model->scenario = 'site_login';
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+          //print_r($model->);
+            Yii::$app->session->set('user.profileImage','dddd.jpg');
+          // Update Last Login Date
+          $userModel = User::updateLastLogin(Yii::$app->user->id);
+          echo '<pre>'; print_r(Yii::$app->user->identity->user_type); exit;
+
+          return $this->redirect(['profile-dashboard']);
+            //Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
+        } else {
+            return $this->render('login', [
+                'model' => $model,
+            ]);
+        }
+        return $this->render('login');
+      **/
+  }
+
+  private function Fblogin($email){
+    $model = new LoginForm();
+    $model->scenario = 'FBLogin';
+    $model->email = $email;
+    if($model->login()){
+      // Update Last Login Date
+      User::updateLastLogin(Yii::$app->user->id);
+      return $this->redirect(['profile-dashboard']);
+    }else{ echo 'IN'; exit;
+      return $this->redirect(['login']);
     }
-    if (isset($accessToken)) { // you got a valid facebook authorization token
-        $response = $fb->get('/me?fields=id,name,email,first_name,last_name,picture', $accessToken);
-        return $this->render('validate-fb', [
-            'out' => '<legend>Facebook User Details</legend>' . '<pre>' . print_r($response->getGraphUser(), true) . '</pre>'
-        ]);
-    } elseif ($helper->getError()) {
-        // the user denied the request
-        // You could log this data . . .
-        return $this->render('validate-fb', [
-            'out' => '<legend>Validation Log</legend><pre>' .
-            '<b>Error:</b>' . print_r($helper->getError(), true) .
-            '<b>Error Code:</b>' . print_r($helper->getErrorCode(), true) .
-            '<b>Error Reason:</b>' . print_r($helper->getErrorReason(), true) .
-            '<b>Error Description:</b>' . print_r($helper->getErrorDescription(), true) .
-            '</pre>'
-        ]);
-    }
-    return $this->render('validate-fb', [
-        'out' => '<div class="alert alert-warning"><h4>Oops! Nothing much to process here.</h4></div>'
-    ]);
-}
+  }
 }

@@ -16,6 +16,8 @@ class SignupForm extends Model
     public $firstname;
     public $lastname;
     public $mobile;
+    public $profile_image;
+    public $registered_mode;
 
     /**
      * @inheritdoc
@@ -23,14 +25,15 @@ class SignupForm extends Model
     public function rules()
     {
         return [
-            [['email', 'password','firstname','lastname','mobile'], 'required'],
+            [['email', 'password','firstname','lastname','mobile'], 'required', 'on'=>'WebSignup'],
+            [['email','firstname','lastname'], 'required','on'=>'FBSignup'],
             ['email', 'trim'],
             //['email', 'required'],
             ['email', 'email'],
-            ['email', 'string', 'max' => 255],
+            [['email', 'profile_image'], 'string', 'max' => 255],
             ['mobile', 'string', 'max' => 15],
             ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been registered.'],
-            ['password', 'required'],
+            //['password', 'required'],
             ['password', 'string', 'min' => 6],
         ];
     }
@@ -64,6 +67,24 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->mobile = $this->mobile;
         $user->password = md5($this->password);
+        $user->created_at = Yii::$app->Common->mysqlDateTime();
+
+
+        //echo '<pre>'; print_r($user); exit;
+        return $user->save() ? $user : null;
+    }
+
+    public function FBsignup(){
+        if (!$this->validate()) {
+            return null;
+        }
+
+        $user = new User();
+        $user->firstname = $this->firstname;
+        $user->lastname = $this->lastname;
+        $user->email = $this->email;
+        $user->profile_image = $this->profile_image;
+        $user->registered_mode = 'FB';
         $user->created_at = Yii::$app->Common->mysqlDateTime();
 
 

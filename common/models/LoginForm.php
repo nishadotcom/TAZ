@@ -26,6 +26,7 @@ class LoginForm extends Model
             // username and password are both required
             [['email', 'password'], 'required','on'=>'site_login'],
             [['username', 'password'], 'required','on'=>'backend_login'],
+            [['email'], 'required','on'=>'FBLogin'],
             ['email', 'email','message'=>'Please enter a valid email'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
