@@ -52058,3 +52058,1956 @@ Stack trace:
     'REQUEST_TIME_FLOAT' => 1509129528.535
     'REQUEST_TIME' => 1509129528
 ]
+2017-10-27 19:11:08 [42.111.160.8][-][-][error][yii\db\Exception] PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(824): yii\db\Schema->quoteValue('Active')
+#6 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Active')
+#7 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(866): yii\db\Command->getRawSql()
+#8 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#11 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(135): yii\db\Query->all(NULL)
+#12 /home/talozo/public_html/dev/frontend/models/Shop.php(31): yii\db\ActiveQuery->all()
+#13 /home/talozo/public_html/dev/frontend/components/ShopComponent.php(26): frontend\models\Shop::getProductsByCategoryId(1)
+#14 /home/talozo/public_html/dev/frontend/widgets/HomeProduct.php(18): frontend\components\ShopComponent::getProductsByCategoryId(1)
+#15 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\HomeProduct->run()
+#16 /home/talozo/public_html/dev/frontend/views/home/index.php(13): yii\base\Widget::widget()
+#17 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(330): require('/home/talozo/pu...')
+#18 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/talozo/pu...', '[]')
+#19 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/talozo/pu...', Array, Object(frontend\controllers\HomeController))
+#20 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\HomeController))
+#21 /home/talozo/public_html/dev/frontend/controllers/HomeController.php(36): yii\base\Controller->render('index')
+#22 [internal function]: frontend\controllers\HomeController->actionIndex()
+#23 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#26 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#27 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#29 {main}
+
+Next yii\db\Exception: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(824): yii\db\Schema->quoteValue('Active')
+#4 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Active')
+#5 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(866): yii\db\Command->getRawSql()
+#6 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#9 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(135): yii\db\Query->all(NULL)
+#10 /home/talozo/public_html/dev/frontend/models/Shop.php(31): yii\db\ActiveQuery->all()
+#11 /home/talozo/public_html/dev/frontend/components/ShopComponent.php(26): frontend\models\Shop::getProductsByCategoryId(1)
+#12 /home/talozo/public_html/dev/frontend/widgets/HomeProduct.php(18): frontend\components\ShopComponent::getProductsByCategoryId(1)
+#13 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\HomeProduct->run()
+#14 /home/talozo/public_html/dev/frontend/views/home/index.php(13): yii\base\Widget::widget()
+#15 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(330): require('/home/talozo/pu...')
+#16 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/talozo/pu...', '[]')
+#17 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/talozo/pu...', Array, Object(frontend\controllers\HomeController))
+#18 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\HomeController))
+#19 /home/talozo/public_html/dev/frontend/controllers/HomeController.php(36): yii\base\Controller->render('index')
+#20 [internal function]: frontend\controllers\HomeController->actionIndex()
+#21 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#23 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#24 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#25 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2017-10-27 19:11:08 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:11:08 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:11:08 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '39673'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOEyzI@sVMAAHOtgycAAAGE'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509131468.0698
+    'REQUEST_TIME' => 1509131468
+]
+2017-10-27 19:12:56 [42.111.160.8][-][-][error][yii\db\Exception] PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(824): yii\db\Schema->quoteValue('Active')
+#6 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Active')
+#7 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(866): yii\db\Command->getRawSql()
+#8 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#11 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(135): yii\db\Query->all(NULL)
+#12 /home/talozo/public_html/dev/frontend/models/Shop.php(31): yii\db\ActiveQuery->all()
+#13 /home/talozo/public_html/dev/frontend/components/ShopComponent.php(26): frontend\models\Shop::getProductsByCategoryId(1)
+#14 /home/talozo/public_html/dev/frontend/widgets/HomeProduct.php(18): frontend\components\ShopComponent::getProductsByCategoryId(1)
+#15 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\HomeProduct->run()
+#16 /home/talozo/public_html/dev/frontend/views/home/index.php(13): yii\base\Widget::widget()
+#17 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(330): require('/home/talozo/pu...')
+#18 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/talozo/pu...', '[]')
+#19 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/talozo/pu...', Array, Object(frontend\controllers\HomeController))
+#20 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\HomeController))
+#21 /home/talozo/public_html/dev/frontend/controllers/HomeController.php(36): yii\base\Controller->render('index')
+#22 [internal function]: frontend\controllers\HomeController->actionIndex()
+#23 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#26 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#27 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#29 {main}
+
+Next yii\db\Exception: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(824): yii\db\Schema->quoteValue('Active')
+#4 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Active')
+#5 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(866): yii\db\Command->getRawSql()
+#6 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#9 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(135): yii\db\Query->all(NULL)
+#10 /home/talozo/public_html/dev/frontend/models/Shop.php(31): yii\db\ActiveQuery->all()
+#11 /home/talozo/public_html/dev/frontend/components/ShopComponent.php(26): frontend\models\Shop::getProductsByCategoryId(1)
+#12 /home/talozo/public_html/dev/frontend/widgets/HomeProduct.php(18): frontend\components\ShopComponent::getProductsByCategoryId(1)
+#13 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\HomeProduct->run()
+#14 /home/talozo/public_html/dev/frontend/views/home/index.php(13): yii\base\Widget::widget()
+#15 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(330): require('/home/talozo/pu...')
+#16 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/talozo/pu...', '[]')
+#17 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/talozo/pu...', Array, Object(frontend\controllers\HomeController))
+#18 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\HomeController))
+#19 /home/talozo/public_html/dev/frontend/controllers/HomeController.php(36): yii\base\Controller->render('index')
+#20 [internal function]: frontend\controllers\HomeController->actionIndex()
+#21 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#23 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#24 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#25 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2017-10-27 19:12:56 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:12:56 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:12:56 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '13898'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOFODI@sVMAAET1vvUAAAEM'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509131576.4158
+    'REQUEST_TIME' => 1509131576
+]
+2017-10-27 19:12:59 [42.111.160.8][-][-][error][yii\db\Exception] PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(824): yii\db\Schema->quoteValue('Active')
+#6 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Active')
+#7 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(866): yii\db\Command->getRawSql()
+#8 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#11 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(135): yii\db\Query->all(NULL)
+#12 /home/talozo/public_html/dev/frontend/models/Shop.php(31): yii\db\ActiveQuery->all()
+#13 /home/talozo/public_html/dev/frontend/components/ShopComponent.php(26): frontend\models\Shop::getProductsByCategoryId(1)
+#14 /home/talozo/public_html/dev/frontend/widgets/HomeProduct.php(18): frontend\components\ShopComponent::getProductsByCategoryId(1)
+#15 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\HomeProduct->run()
+#16 /home/talozo/public_html/dev/frontend/views/home/index.php(13): yii\base\Widget::widget()
+#17 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(330): require('/home/talozo/pu...')
+#18 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/talozo/pu...', '[]')
+#19 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/talozo/pu...', Array, Object(frontend\controllers\HomeController))
+#20 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\HomeController))
+#21 /home/talozo/public_html/dev/frontend/controllers/HomeController.php(36): yii\base\Controller->render('index')
+#22 [internal function]: frontend\controllers\HomeController->actionIndex()
+#23 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#26 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#27 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#29 {main}
+
+Next yii\db\Exception: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Connection.php(824): yii\db\Schema->quoteValue('Active')
+#4 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Active')
+#5 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(866): yii\db\Command->getRawSql()
+#6 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#9 /home/talozo/public_html/dev/vendor/yiisoft/yii2/db/ActiveQuery.php(135): yii\db\Query->all(NULL)
+#10 /home/talozo/public_html/dev/frontend/models/Shop.php(31): yii\db\ActiveQuery->all()
+#11 /home/talozo/public_html/dev/frontend/components/ShopComponent.php(26): frontend\models\Shop::getProductsByCategoryId(1)
+#12 /home/talozo/public_html/dev/frontend/widgets/HomeProduct.php(18): frontend\components\ShopComponent::getProductsByCategoryId(1)
+#13 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Widget.php(139): frontend\widgets\HomeProduct->run()
+#14 /home/talozo/public_html/dev/frontend/views/home/index.php(13): yii\base\Widget::widget()
+#15 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(330): require('/home/talozo/pu...')
+#16 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/talozo/pu...', '[]')
+#17 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/talozo/pu...', Array, Object(frontend\controllers\HomeController))
+#18 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(frontend\controllers\HomeController))
+#19 /home/talozo/public_html/dev/frontend/controllers/HomeController.php(36): yii\base\Controller->render('index')
+#20 [internal function]: frontend\controllers\HomeController->actionIndex()
+#21 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#23 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#24 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#25 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2017-10-27 19:12:59 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:12:59 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:12:59 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62167'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOFOzI@sVMAAHPJwd4AAAHL'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509131579.8528
+    'REQUEST_TIME' => 1509131579
+]
+2017-10-27 19:13:23 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:13:23 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '13810'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOFUzI@sVMAAHQ5PJYAAAAH'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509131603.0876
+    'REQUEST_TIME' => 1509131603
+]
+2017-10-27 19:13:26 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:13:26 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '3c308a05ff790b030c8609f22eea15a5'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '25280'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOFVjI@sVMAAHOthHIAAAGV'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOFVjI@sVMAAHOthHIAAAGV'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509131606.7416
+    'REQUEST_TIME' => 1509131606
+]
+2017-10-27 19:18:31 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:18:31 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+    'advanced-frontend' => 'ff7b935ea57033b504e48fa3c5f62f27'
+    '_csrf-frontend' => 'bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ôÖvéezcš8+öÄQc.dS90àÕ[£cšÏ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '3c308a05ff790b030c8609f22eea15a5'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '12886'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING; advanced-frontend=ff7b935ea57033b504e48fa3c5f62f27; _csrf-frontend=bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F4%D6v%E9ezc%0F%9A8%2B%F6%C4Qc.%1BdS9%180%E0%16%D5%5B%A3c%9A%1F%7F%CF%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOGhzI@sVMAAET1wXsAAAEL'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOGhzI@sVMAAET1wXsAAAEL'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509131911.867
+    'REQUEST_TIME' => 1509131911
+]
+2017-10-27 19:19:41 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:19:41 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+    'advanced-frontend' => 'ff7b935ea57033b504e48fa3c5f62f27'
+    '_csrf-frontend' => 'bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ôÖvéezcš8+öÄQc.dS90àÕ[£cšÏ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '3c308a05ff790b030c8609f22eea15a5'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '57355'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING; advanced-frontend=ff7b935ea57033b504e48fa3c5f62f27; _csrf-frontend=bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F4%D6v%E9ezc%0F%9A8%2B%F6%C4Qc.%1BdS9%180%E0%16%D5%5B%A3c%9A%1F%7F%CF%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOGzTI@sVMAAHQ5PyEAAAAP'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOGzTI@sVMAAHQ5PyEAAAAP'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509131981.0064
+    'REQUEST_TIME' => 1509131981
+]
+2017-10-27 19:22:16 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:22:16 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+    'advanced-frontend' => 'ff7b935ea57033b504e48fa3c5f62f27'
+    '_csrf-frontend' => 'bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ôÖvéezcš8+öÄQc.dS90àÕ[£cšÏ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '3c308a05ff790b030c8609f22eea15a5'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '27375'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING; advanced-frontend=ff7b935ea57033b504e48fa3c5f62f27; _csrf-frontend=bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F4%D6v%E9ezc%0F%9A8%2B%F6%C4Qc.%1BdS9%180%E0%16%D5%5B%A3c%9A%1F%7F%CF%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOHaDI@sVMAAET1w1EAAAEW'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOHaDI@sVMAAET1w1EAAAEW'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132136.1038
+    'REQUEST_TIME' => 1509132136
+]
+2017-10-27 19:23:51 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:23:51 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+    'advanced-frontend' => 'ff7b935ea57033b504e48fa3c5f62f27'
+    '_csrf-frontend' => 'bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ôÖvéezcš8+öÄQc.dS90àÕ[£cšÏ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '3c308a05ff790b030c8609f22eea15a5'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '25171'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING; advanced-frontend=ff7b935ea57033b504e48fa3c5f62f27; _csrf-frontend=bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F4%D6v%E9ezc%0F%9A8%2B%F6%C4Qc.%1BdS9%180%E0%16%D5%5B%A3c%9A%1F%7F%CF%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOHxzI@sVMAAHRibbYAAABP'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOHxzI@sVMAAHRibbYAAABP'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132231.7712
+    'REQUEST_TIME' => 1509132231
+]
+2017-10-27 19:24:00 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:24:00 [42.111.160.8][-][-][info][application] $_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '12587'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOH0DI@sVMAAHN1sjkAAACX'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOH0DI@sVMAAHN1sjkAAACX'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132240.4586
+    'REQUEST_TIME' => 1509132240
+]
+2017-10-27 19:25:03 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/validate-fb in /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('validate-fb', Array)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/validate-f...', Array)
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-27 19:25:03 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:25:02 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][info][application] $_GET = [
+    'error_code' => '1349048'
+    'error_message' => 'Can\'t Load URL: The domain of this URL isn\'t included in the app\'s domains. To be able to load this URL, add all domains and subdomains of your app to the App Domains field in your app settings.'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '15248'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOIDjI@sVMAADgzqFEAAAFJ'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOIDjI@sVMAADgzqFEAAAFJ'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132302.941
+    'REQUEST_TIME' => 1509132302
+]
+2017-10-27 19:25:41 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:25:41 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '17781'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOINTI@sVMAADgzqIoAAAFC'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOINTI@sVMAADgzqIoAAAFC'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132341.5636
+    'REQUEST_TIME' => 1509132341
+]
+2017-10-27 19:25:47 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/validate-fb in /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('validate-fb', Array)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/validate-f...', Array)
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-27 19:25:47 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:25:47 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][info][application] $_GET = [
+    'error_code' => '1349048'
+    'error_message' => 'Can\'t Load URL: The domain of this URL isn\'t included in the app\'s domains. To be able to load this URL, add all domains and subdomains of your app to the App Domains field in your app settings.'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '19293'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOIOzI@sVMAAD-7h1MAAAIB'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOIOzI@sVMAAD-7h1MAAAIB'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132347.8083
+    'REQUEST_TIME' => 1509132347
+]
+2017-10-27 19:27:05 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/validate-fb in /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('validate-fb', Array)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/validate-f...', Array)
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-27 19:27:05 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:27:05 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][info][application] $_GET = [
+    'error_code' => '1349048'
+    'error_message' => 'Can\'t Load URL: The domain of this URL isn\'t included in the app\'s domains. To be able to load this URL, add all domains and subdomains of your app to the App Domains field in your app settings.'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '15196'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOIiTI@sVMAAHOticIAAAGG'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOIiTI@sVMAAHOticIAAAGG'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132425.4452
+    'REQUEST_TIME' => 1509132425
+]
+2017-10-27 19:27:10 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:27:10 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '64546'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOIjjI@sVMAAHPJxxkAAAHI'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOIjjI@sVMAAHPJxxkAAAHI'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132430.4175
+    'REQUEST_TIME' => 1509132430
+]
+2017-10-27 19:27:26 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/validate-fb in /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('validate-fb', Array)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/validate-f...', Array)
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-27 19:27:26 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:27:26 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][info][application] $_GET = [
+    'error_code' => '1349048'
+    'error_message' => 'Can\'t Load URL: The domain of this URL isn\'t included in the app\'s domains. To be able to load this URL, add all domains and subdomains of your app to the App Domains field in your app settings.'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '14329'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOInjI@sVMAAHN1s2oAAACE'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOInjI@sVMAAHN1s2oAAACE'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132446.8256
+    'REQUEST_TIME' => 1509132446
+]
+2017-10-27 19:29:00 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:29:00 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '4059'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?error_code=1349048&error_message=Can%27t+Load+URL%3A+The+domain+of+this+URL+isn%27t+included+in+the+app%27s+domains.+To+be+able+to+load+this+URL%2C+add+all+domains+and+subdomains+of+your+app+to+the+App+Domains+field+in+your+app+settings.&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOI-DI@sVMAAHOtilUAAAGN'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOI-DI@sVMAAHOtilUAAAGN'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132540.1684
+    'REQUEST_TIME' => 1509132540
+]
+2017-10-27 19:29:16 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/validate-fb in /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('validate-fb', Array)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/validate-f...', Array)
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-27 19:29:16 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:29:16 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][info][application] $_GET = [
+    'code' => 'AQAHlCpipd5knjR0DFM2Ic-HYIdcv_47NmAdZ2FYl3uMqg6DsKhFausjq_kG_qB8HBB50Nm6ZEQ1J2x-amemCEZgava5CWidbWlogPHwtuKXi5ONRamQizaX3YtdOVv4lwCv-D2IO0xwCDUEqAG0p_nfEVFHUTK6Ld_g0jRi3i5guYVJ6Ndszvoj1tcfHf8YCfsVFm1YvZ9-vVKAVEvRpLY0nFIoJOOfae2WM4Enq3QBmxEC0LWCWv0dyPpFYMdJqmaok4jvO8F82afBsiB-x7JMDgiZhI---CdWltLA8YGGqYLGQ1gEWFzaRa6QUaYFSGCafh_0lgbbNbFHrIcwu1B5'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQAHlCpipd5knjR0DFM2Ic-HYIdcv_47NmAdZ2FYl3uMqg6DsKhFausjq_kG_qB8HBB50Nm6ZEQ1J2x-amemCEZgava5CWidbWlogPHwtuKXi5ONRamQizaX3YtdOVv4lwCv-D2IO0xwCDUEqAG0p_nfEVFHUTK6Ld_g0jRi3i5guYVJ6Ndszvoj1tcfHf8YCfsVFm1YvZ9-vVKAVEvRpLY0nFIoJOOfae2WM4Enq3QBmxEC0LWCWv0dyPpFYMdJqmaok4jvO8F82afBsiB-x7JMDgiZhI---CdWltLA8YGGqYLGQ1gEWFzaRa6QUaYFSGCafh_0lgbbNbFHrIcwu1B5&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'code=AQAHlCpipd5knjR0DFM2Ic-HYIdcv_47NmAdZ2FYl3uMqg6DsKhFausjq_kG_qB8HBB50Nm6ZEQ1J2x-amemCEZgava5CWidbWlogPHwtuKXi5ONRamQizaX3YtdOVv4lwCv-D2IO0xwCDUEqAG0p_nfEVFHUTK6Ld_g0jRi3i5guYVJ6Ndszvoj1tcfHf8YCfsVFm1YvZ9-vVKAVEvRpLY0nFIoJOOfae2WM4Enq3QBmxEC0LWCWv0dyPpFYMdJqmaok4jvO8F82afBsiB-x7JMDgiZhI---CdWltLA8YGGqYLGQ1gEWFzaRa6QUaYFSGCafh_0lgbbNbFHrIcwu1B5&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQAHlCpipd5knjR0DFM2Ic-HYIdcv_47NmAdZ2FYl3uMqg6DsKhFausjq_kG_qB8HBB50Nm6ZEQ1J2x-amemCEZgava5CWidbWlogPHwtuKXi5ONRamQizaX3YtdOVv4lwCv-D2IO0xwCDUEqAG0p_nfEVFHUTK6Ld_g0jRi3i5guYVJ6Ndszvoj1tcfHf8YCfsVFm1YvZ9-vVKAVEvRpLY0nFIoJOOfae2WM4Enq3QBmxEC0LWCWv0dyPpFYMdJqmaok4jvO8F82afBsiB-x7JMDgiZhI---CdWltLA8YGGqYLGQ1gEWFzaRa6QUaYFSGCafh_0lgbbNbFHrIcwu1B5&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '13271'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'https://www.facebook.com/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOJDDI@sVMAAHQ5QoQAAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOJDDI@sVMAAHQ5QoQAAAAJ'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132556.3453
+    'REQUEST_TIME' => 1509132556
+]
+2017-10-27 19:29:41 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/validate-fb in /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('validate-fb', Array)
+#1 /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/validate-f...', Array)
+#2 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/talozo/public_html/dev/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/talozo/public_html/dev/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/talozo/public_html/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-10-27 19:29:41 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:29:41 [42.111.160.8][-][34ef4d90ded09946dc2b304a64f708a4][info][application] $_GET = [
+    'code' => 'AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '10800'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOJJTI@sVMAAHQ5QpoAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOJJTI@sVMAAHQ5QpoAAAAE'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132581.5935
+    'REQUEST_TIME' => 1509132581
+]
+2017-10-27 19:30:02 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:30:02 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'bm_last_load_status' => 'NOT_BLOCKING'
+    'advanced-frontend' => 'ff7b935ea57033b504e48fa3c5f62f27'
+    '_csrf-frontend' => 'bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ôÖvéezcš8+öÄQc.dS90àÕ[£cšÏ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '3c308a05ff790b030c8609f22eea15a5'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '8356'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'bm_last_load_status=NOT_BLOCKING; advanced-frontend=ff7b935ea57033b504e48fa3c5f62f27; _csrf-frontend=bfa36e299644c42d9a20dc9d7ff872745a20da17507066951131ca3c0ef42663a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F4%D6v%E9ezc%0F%9A8%2B%F6%C4Qc.%1BdS9%180%E0%16%D5%5B%A3c%9A%1F%7F%CF%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOJOjI@sVMAAD-7iVoAAAIP'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOJOjI@sVMAAD-7iVoAAAIP'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132602.0227
+    'REQUEST_TIME' => 1509132602
+]
+2017-10-27 19:34:36 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:34:35 [42.111.160.8][-][-][info][application] $_GET = [
+    'code' => 'AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => null
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '39985'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOKSzI@sVMAAHORM0AAAADH'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOKSzI@sVMAAHORM0AAAADH'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132875.855
+    'REQUEST_TIME' => 1509132875
+]
+2017-10-27 19:36:18 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:36:18 [42.111.160.8][-][-][info][application] $_GET = [
+    'code' => 'AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE'
+    'state' => '87cf4c27b05261cedef00ebf49d1d44f'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => null
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'QUERY_STRING' => 'code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '48204'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOKsjI@sVMAAHN1tqMAAACL'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOKsjI@sVMAAHN1tqMAAACL'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132978.23
+    'REQUEST_TIME' => 1509132978
+]
+2017-10-27 19:36:26 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:36:26 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '917f54f2cb51464b822b298c7688f455'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '57997'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?code=AQCA3NqfRGVsIPvCo9utlBeuQR39-qBl5zuqLOFfhnNzh-HJF4oyO0QuOyMNKPf2lTF7IbQKNWXWwklG0rpGsX4SAohn2dfKpQnpmSj9gIVXiYIB1yLxoM1vghHuVNUixgdtvqz_FO8VLLp-mQPyYRBuPbjHEnAxLKMjJqbrvUCpsNfc9xw_xGAl1mqYO02fST3H79ixwHJM7VThQTplD5c-htSHzEk48VV9BjowCTETvG76_Sd4sxm_QHGr4taG7TJTrcJ3mNCzKRajSGCJfko6rKZy69bov-aS1IBavaF6413BAsy1N2bzWtRwshyHbWNqcguE-OMttPkbAWz1dxCE&state=87cf4c27b05261cedef00ebf49d1d44f'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOKujI@sVMAAHN1tq4AAACW'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOKujI@sVMAAHN1tq4AAACW'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509132986.943
+    'REQUEST_TIME' => 1509132986
+]
+2017-10-27 19:37:17 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:37:17 [42.111.160.8][-][-][info][application] $_GET = [
+    'code' => 'AQD1n5kBWcZAngybtwMRRjnVjlzcYeELOucioTVik6WX0UjhJmAIHXEv3RkN70vzV31vKDCB3BIZ6ug1ZRcuQeTWieT5tnbzd98LQB0zM7oVP93Wkt9pXWitb_qY5wPASaOPo_wMNI7uQcA5oktrpfj7L0hwTlrSSQqVDhjFjn83swjsDk3NhFy6gBh-uK8R4d6q0GDeKXN95oPX1rtZjkqQEXo-Y_EdQyuUuraWAZMXClCaPCQpq6tN34CP4cotRTiSsXlTdkkshnXEkVro81nXoqKtIp3fPPN_tUNTlL7CQeUw4MStVDFlq5HhgA33IjPtCbiP65CaSfx3R7rBySGK'
+    'state' => '917f54f2cb51464b822b298c7688f455'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => null
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQD1n5kBWcZAngybtwMRRjnVjlzcYeELOucioTVik6WX0UjhJmAIHXEv3RkN70vzV31vKDCB3BIZ6ug1ZRcuQeTWieT5tnbzd98LQB0zM7oVP93Wkt9pXWitb_qY5wPASaOPo_wMNI7uQcA5oktrpfj7L0hwTlrSSQqVDhjFjn83swjsDk3NhFy6gBh-uK8R4d6q0GDeKXN95oPX1rtZjkqQEXo-Y_EdQyuUuraWAZMXClCaPCQpq6tN34CP4cotRTiSsXlTdkkshnXEkVro81nXoqKtIp3fPPN_tUNTlL7CQeUw4MStVDFlq5HhgA33IjPtCbiP65CaSfx3R7rBySGK&state=917f54f2cb51464b822b298c7688f455'
+    'QUERY_STRING' => 'code=AQD1n5kBWcZAngybtwMRRjnVjlzcYeELOucioTVik6WX0UjhJmAIHXEv3RkN70vzV31vKDCB3BIZ6ug1ZRcuQeTWieT5tnbzd98LQB0zM7oVP93Wkt9pXWitb_qY5wPASaOPo_wMNI7uQcA5oktrpfj7L0hwTlrSSQqVDhjFjn83swjsDk3NhFy6gBh-uK8R4d6q0GDeKXN95oPX1rtZjkqQEXo-Y_EdQyuUuraWAZMXClCaPCQpq6tN34CP4cotRTiSsXlTdkkshnXEkVro81nXoqKtIp3fPPN_tUNTlL7CQeUw4MStVDFlq5HhgA33IjPtCbiP65CaSfx3R7rBySGK&state=917f54f2cb51464b822b298c7688f455'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQD1n5kBWcZAngybtwMRRjnVjlzcYeELOucioTVik6WX0UjhJmAIHXEv3RkN70vzV31vKDCB3BIZ6ug1ZRcuQeTWieT5tnbzd98LQB0zM7oVP93Wkt9pXWitb_qY5wPASaOPo_wMNI7uQcA5oktrpfj7L0hwTlrSSQqVDhjFjn83swjsDk3NhFy6gBh-uK8R4d6q0GDeKXN95oPX1rtZjkqQEXo-Y_EdQyuUuraWAZMXClCaPCQpq6tN34CP4cotRTiSsXlTdkkshnXEkVro81nXoqKtIp3fPPN_tUNTlL7CQeUw4MStVDFlq5HhgA33IjPtCbiP65CaSfx3R7rBySGK&state=917f54f2cb51464b822b298c7688f455'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '56459'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOK7TI@sVMAADgzrG0AAAFF'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOK7TI@sVMAADgzrG0AAAFF'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133037.1187
+    'REQUEST_TIME' => 1509133037
+]
+2017-10-27 19:37:20 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:37:20 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '443669fae8da4f93acbaa53fd1a11d7c'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '56459'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?code=AQD1n5kBWcZAngybtwMRRjnVjlzcYeELOucioTVik6WX0UjhJmAIHXEv3RkN70vzV31vKDCB3BIZ6ug1ZRcuQeTWieT5tnbzd98LQB0zM7oVP93Wkt9pXWitb_qY5wPASaOPo_wMNI7uQcA5oktrpfj7L0hwTlrSSQqVDhjFjn83swjsDk3NhFy6gBh-uK8R4d6q0GDeKXN95oPX1rtZjkqQEXo-Y_EdQyuUuraWAZMXClCaPCQpq6tN34CP4cotRTiSsXlTdkkshnXEkVro81nXoqKtIp3fPPN_tUNTlL7CQeUw4MStVDFlq5HhgA33IjPtCbiP65CaSfx3R7rBySGK&state=917f54f2cb51464b822b298c7688f455'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOK8DI@sVMAADgzrHEAAAFF'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOK8DI@sVMAADgzrHEAAAFF'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133040.6149
+    'REQUEST_TIME' => 1509133040
+]
+2017-10-27 19:37:24 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:37:24 [42.111.160.8][-][-][info][application] $_GET = [
+    'code' => 'AQAJBFQh7ryOoxPFxGGfVfalUJOZJPqCPmCbgeywTU1B8wVnlt0_8OZKW69ogXClA6eTSFJ2MwcTyS7zif8uBb-Q9kjfxFx0yDKgIu6ELwZS8zNYXGQMutgn0SFSoFqbxO6qTP7ASEjRlKVnwda-epTam4LJsbLDghFbAd6QwsKYRC8VvohtIyjgemfv0EKDwqG3wgDYRG4VNroGP3u30CMAhBI4gzB1NK8sXVR1LGG6Y-nta-tdf0QXeCMn67J8E0NnT9eWq8T9fN0SWrXymFegL3d3tEo4DWRTOf5jtlzcSzKWhU04s0ntKJfk1saMIwdv_xyqrp4fNc_jWt73n4fZ'
+    'state' => '443669fae8da4f93acbaa53fd1a11d7c'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => null
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQAJBFQh7ryOoxPFxGGfVfalUJOZJPqCPmCbgeywTU1B8wVnlt0_8OZKW69ogXClA6eTSFJ2MwcTyS7zif8uBb-Q9kjfxFx0yDKgIu6ELwZS8zNYXGQMutgn0SFSoFqbxO6qTP7ASEjRlKVnwda-epTam4LJsbLDghFbAd6QwsKYRC8VvohtIyjgemfv0EKDwqG3wgDYRG4VNroGP3u30CMAhBI4gzB1NK8sXVR1LGG6Y-nta-tdf0QXeCMn67J8E0NnT9eWq8T9fN0SWrXymFegL3d3tEo4DWRTOf5jtlzcSzKWhU04s0ntKJfk1saMIwdv_xyqrp4fNc_jWt73n4fZ&state=443669fae8da4f93acbaa53fd1a11d7c'
+    'QUERY_STRING' => 'code=AQAJBFQh7ryOoxPFxGGfVfalUJOZJPqCPmCbgeywTU1B8wVnlt0_8OZKW69ogXClA6eTSFJ2MwcTyS7zif8uBb-Q9kjfxFx0yDKgIu6ELwZS8zNYXGQMutgn0SFSoFqbxO6qTP7ASEjRlKVnwda-epTam4LJsbLDghFbAd6QwsKYRC8VvohtIyjgemfv0EKDwqG3wgDYRG4VNroGP3u30CMAhBI4gzB1NK8sXVR1LGG6Y-nta-tdf0QXeCMn67J8E0NnT9eWq8T9fN0SWrXymFegL3d3tEo4DWRTOf5jtlzcSzKWhU04s0ntKJfk1saMIwdv_xyqrp4fNc_jWt73n4fZ&state=443669fae8da4f93acbaa53fd1a11d7c'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQAJBFQh7ryOoxPFxGGfVfalUJOZJPqCPmCbgeywTU1B8wVnlt0_8OZKW69ogXClA6eTSFJ2MwcTyS7zif8uBb-Q9kjfxFx0yDKgIu6ELwZS8zNYXGQMutgn0SFSoFqbxO6qTP7ASEjRlKVnwda-epTam4LJsbLDghFbAd6QwsKYRC8VvohtIyjgemfv0EKDwqG3wgDYRG4VNroGP3u30CMAhBI4gzB1NK8sXVR1LGG6Y-nta-tdf0QXeCMn67J8E0NnT9eWq8T9fN0SWrXymFegL3d3tEo4DWRTOf5jtlzcSzKWhU04s0ntKJfk1saMIwdv_xyqrp4fNc_jWt73n4fZ&state=443669fae8da4f93acbaa53fd1a11d7c'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '56459'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOK9DI@sVMAADgzrHwAAAFF'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOK9DI@sVMAADgzrHwAAAFF'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133044.5334
+    'REQUEST_TIME' => 1509133044
+]
+2017-10-27 19:38:19 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:38:19 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '0b7417f9b119698300bcb9a0ea7f2466'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '19272'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?code=AQAJBFQh7ryOoxPFxGGfVfalUJOZJPqCPmCbgeywTU1B8wVnlt0_8OZKW69ogXClA6eTSFJ2MwcTyS7zif8uBb-Q9kjfxFx0yDKgIu6ELwZS8zNYXGQMutgn0SFSoFqbxO6qTP7ASEjRlKVnwda-epTam4LJsbLDghFbAd6QwsKYRC8VvohtIyjgemfv0EKDwqG3wgDYRG4VNroGP3u30CMAhBI4gzB1NK8sXVR1LGG6Y-nta-tdf0QXeCMn67J8E0NnT9eWq8T9fN0SWrXymFegL3d3tEo4DWRTOf5jtlzcSzKWhU04s0ntKJfk1saMIwdv_xyqrp4fNc_jWt73n4fZ&state=443669fae8da4f93acbaa53fd1a11d7c'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOLKzI@sVMAAHORNHsAAADG'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOLKzI@sVMAAHORNHsAAADG'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133099.2518
+    'REQUEST_TIME' => 1509133099
+]
+2017-10-27 19:38:22 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:38:22 [42.111.160.8][-][-][info][application] $_GET = [
+    'code' => 'AQDLMuLWYe4GohfwSH4pvwsiaQKhd2ftGDvm3q3EqMeKVaUPV_Ja40rxOo8fDT17cBr2YbPUFJUauM06Pv5NfCPFNBYzw1kTRgTtCd5AX_K_VNuqVf8EadiNQv2PnlMIqj-3_nszJTErkBpWCZsl58CbCYB1p4cjK7L9uHKqbgVkZj9We76Q4kt4BteYMN8ab-ZwhFy1S7auM8aBaQyQ0G2ieMIjkQ77Qux5hJoA4RvdsWNuou-4rKgJTmXpyGIRFn6FU9M40H5AG8InaTKy5N05xswZK1m5K99exhbXHQ09r6a7OG8sce1BDk6pqrRiN7Bibe_sdPLTJUweVv5FEd8Z'
+    'state' => '0b7417f9b119698300bcb9a0ea7f2466'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => null
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQDLMuLWYe4GohfwSH4pvwsiaQKhd2ftGDvm3q3EqMeKVaUPV_Ja40rxOo8fDT17cBr2YbPUFJUauM06Pv5NfCPFNBYzw1kTRgTtCd5AX_K_VNuqVf8EadiNQv2PnlMIqj-3_nszJTErkBpWCZsl58CbCYB1p4cjK7L9uHKqbgVkZj9We76Q4kt4BteYMN8ab-ZwhFy1S7auM8aBaQyQ0G2ieMIjkQ77Qux5hJoA4RvdsWNuou-4rKgJTmXpyGIRFn6FU9M40H5AG8InaTKy5N05xswZK1m5K99exhbXHQ09r6a7OG8sce1BDk6pqrRiN7Bibe_sdPLTJUweVv5FEd8Z&state=0b7417f9b119698300bcb9a0ea7f2466'
+    'QUERY_STRING' => 'code=AQDLMuLWYe4GohfwSH4pvwsiaQKhd2ftGDvm3q3EqMeKVaUPV_Ja40rxOo8fDT17cBr2YbPUFJUauM06Pv5NfCPFNBYzw1kTRgTtCd5AX_K_VNuqVf8EadiNQv2PnlMIqj-3_nszJTErkBpWCZsl58CbCYB1p4cjK7L9uHKqbgVkZj9We76Q4kt4BteYMN8ab-ZwhFy1S7auM8aBaQyQ0G2ieMIjkQ77Qux5hJoA4RvdsWNuou-4rKgJTmXpyGIRFn6FU9M40H5AG8InaTKy5N05xswZK1m5K99exhbXHQ09r6a7OG8sce1BDk6pqrRiN7Bibe_sdPLTJUweVv5FEd8Z&state=0b7417f9b119698300bcb9a0ea7f2466'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQDLMuLWYe4GohfwSH4pvwsiaQKhd2ftGDvm3q3EqMeKVaUPV_Ja40rxOo8fDT17cBr2YbPUFJUauM06Pv5NfCPFNBYzw1kTRgTtCd5AX_K_VNuqVf8EadiNQv2PnlMIqj-3_nszJTErkBpWCZsl58CbCYB1p4cjK7L9uHKqbgVkZj9We76Q4kt4BteYMN8ab-ZwhFy1S7auM8aBaQyQ0G2ieMIjkQ77Qux5hJoA4RvdsWNuou-4rKgJTmXpyGIRFn6FU9M40H5AG8InaTKy5N05xswZK1m5K99exhbXHQ09r6a7OG8sce1BDk6pqrRiN7Bibe_sdPLTJUweVv5FEd8Z&state=0b7417f9b119698300bcb9a0ea7f2466'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '61591'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfOLLjI@sVMAAD-7jUcAAAIO'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfOLLjI@sVMAAD-7jUcAAAIO'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133102.2517
+    'REQUEST_TIME' => 1509133102
+]
+2017-10-27 19:46:37 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:46:37 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => 'a7f286981622c7914cceebc215fb2bb5'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '24085'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?code=AQDLMuLWYe4GohfwSH4pvwsiaQKhd2ftGDvm3q3EqMeKVaUPV_Ja40rxOo8fDT17cBr2YbPUFJUauM06Pv5NfCPFNBYzw1kTRgTtCd5AX_K_VNuqVf8EadiNQv2PnlMIqj-3_nszJTErkBpWCZsl58CbCYB1p4cjK7L9uHKqbgVkZj9We76Q4kt4BteYMN8ab-ZwhFy1S7auM8aBaQyQ0G2ieMIjkQ77Qux5hJoA4RvdsWNuou-4rKgJTmXpyGIRFn6FU9M40H5AG8InaTKy5N05xswZK1m5K99exhbXHQ09r6a7OG8sce1BDk6pqrRiN7Bibe_sdPLTJUweVv5FEd8Z&state=0b7417f9b119698300bcb9a0ea7f2466'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfONHDI@sVMAAHRidhMAAABR'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfONHDI@sVMAAHRidhMAAABR'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133597.0291
+    'REQUEST_TIME' => 1509133597
+]
+2017-10-27 19:46:40 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:46:40 [42.111.160.8][-][-][info][application] $_GET = [
+    'code' => 'AQDVxUVWnGjkeSq2rCc1n4lnPtLzRral4I_vDYJlna6L2Fgrkch2I_WYnvQC1flmgnN4BShUst4hHck7ByQCJIOZIMqkq-x-hpxrs_oaUkD1GAdA4gnjpZsSb9nJljG7q6k9peYQNSLN7IkRkKq9wairTPoTshqgQQQjPRO5KLtu6A0mPJjpaGp1BLJlaSGt1d6FP9NNBxdWWDV4Kv4aGhNV0sG7onzIiiBvHsWNV8dmmj5zju5E-oIID9cZ6-JE53wbuBm_2gd824XXh6gVeQUmwMUWqveVFLnyfiPhBMvxEsMGvgnIQs_jhQ0fgtPQgXNCTMQP7oVJGbepaA5tGNTc'
+    'state' => 'a7f286981622c7914cceebc215fb2bb5'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => null
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQDVxUVWnGjkeSq2rCc1n4lnPtLzRral4I_vDYJlna6L2Fgrkch2I_WYnvQC1flmgnN4BShUst4hHck7ByQCJIOZIMqkq-x-hpxrs_oaUkD1GAdA4gnjpZsSb9nJljG7q6k9peYQNSLN7IkRkKq9wairTPoTshqgQQQjPRO5KLtu6A0mPJjpaGp1BLJlaSGt1d6FP9NNBxdWWDV4Kv4aGhNV0sG7onzIiiBvHsWNV8dmmj5zju5E-oIID9cZ6-JE53wbuBm_2gd824XXh6gVeQUmwMUWqveVFLnyfiPhBMvxEsMGvgnIQs_jhQ0fgtPQgXNCTMQP7oVJGbepaA5tGNTc&state=a7f286981622c7914cceebc215fb2bb5'
+    'QUERY_STRING' => 'code=AQDVxUVWnGjkeSq2rCc1n4lnPtLzRral4I_vDYJlna6L2Fgrkch2I_WYnvQC1flmgnN4BShUst4hHck7ByQCJIOZIMqkq-x-hpxrs_oaUkD1GAdA4gnjpZsSb9nJljG7q6k9peYQNSLN7IkRkKq9wairTPoTshqgQQQjPRO5KLtu6A0mPJjpaGp1BLJlaSGt1d6FP9NNBxdWWDV4Kv4aGhNV0sG7onzIiiBvHsWNV8dmmj5zju5E-oIID9cZ6-JE53wbuBm_2gd824XXh6gVeQUmwMUWqveVFLnyfiPhBMvxEsMGvgnIQs_jhQ0fgtPQgXNCTMQP7oVJGbepaA5tGNTc&state=a7f286981622c7914cceebc215fb2bb5'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQDVxUVWnGjkeSq2rCc1n4lnPtLzRral4I_vDYJlna6L2Fgrkch2I_WYnvQC1flmgnN4BShUst4hHck7ByQCJIOZIMqkq-x-hpxrs_oaUkD1GAdA4gnjpZsSb9nJljG7q6k9peYQNSLN7IkRkKq9wairTPoTshqgQQQjPRO5KLtu6A0mPJjpaGp1BLJlaSGt1d6FP9NNBxdWWDV4Kv4aGhNV0sG7onzIiiBvHsWNV8dmmj5zju5E-oIID9cZ6-JE53wbuBm_2gd824XXh6gVeQUmwMUWqveVFLnyfiPhBMvxEsMGvgnIQs_jhQ0fgtPQgXNCTMQP7oVJGbepaA5tGNTc&state=a7f286981622c7914cceebc215fb2bb5'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '42910'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfONIDI@sVMAAHNZvMwAAAJO'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfONIDI@sVMAAHNZvMwAAAJO'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133600.5387
+    'REQUEST_TIME' => 1509133600
+]
+2017-10-27 19:48:09 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:48:09 [42.111.160.8][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => '88d3f18c9fff5f8ccf8d53a728ce8987'
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/login'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/dev/login'
+    'REMOTE_PORT' => '2046'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/site/validate-fb?code=AQDVxUVWnGjkeSq2rCc1n4lnPtLzRral4I_vDYJlna6L2Fgrkch2I_WYnvQC1flmgnN4BShUst4hHck7ByQCJIOZIMqkq-x-hpxrs_oaUkD1GAdA4gnjpZsSb9nJljG7q6k9peYQNSLN7IkRkKq9wairTPoTshqgQQQjPRO5KLtu6A0mPJjpaGp1BLJlaSGt1d6FP9NNBxdWWDV4Kv4aGhNV0sG7onzIiiBvHsWNV8dmmj5zju5E-oIID9cZ6-JE53wbuBm_2gd824XXh6gVeQUmwMUWqveVFLnyfiPhBMvxEsMGvgnIQs_jhQ0fgtPQgXNCTMQP7oVJGbepaA5tGNTc&state=a7f286981622c7914cceebc215fb2bb5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfONeTI@sVMAAHN1u-4AAACX'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfONeTI@sVMAAHN1u-4AAACX'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133689.0118
+    'REQUEST_TIME' => 1509133689
+]
+2017-10-27 19:48:11 [42.111.160.8][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 42.111.160.8
+2017-10-27 19:48:11 [42.111.160.8][-][-][info][application] $_GET = [
+    'code' => 'AQDTd9wZD4eRaG79FKV-j5FOdjHVAO7ZpcPvHL-T_6r3bu7meGrzrGkRo_bwhnl92gFc_TLLZOv38T6t66uh-SAxu-tkgwC-rfdq1ti5VlnZBEfr6KxP1dUon-3Uf61CjnPxc3WMkratYbx4GKORUbXjlksSNuE0NGgM6VilwjG3a8qAaPkuvA5fxGtKrygUtHaEGEioWKUAddykJdDPbUL6JvnkuJ3tilfuK9bNLKt29XL9ufbzC-qec0sH_adj7dIqT5shE3i7xOLpp6Vjlx-Kq7jItPjfiHWSyOmXsvJzOTCqbMe9kmBsZxtwf__MehfMRkBcuELU1c2HEmTWcUmi'
+    'state' => '88d3f18c9fff5f8ccf8d53a728ce8987'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '34ef4d90ded09946dc2b304a64f708a4'
+    '_csrf-frontend' => '1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ñŸ&z -Ö©¦}]BñÁUÅ\0õ\"ù)ëf¤@š+ õ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'FBPH_state' => null
+]
+
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'SCRIPT_NAME' => '/dev/index.php'
+    'REQUEST_URI' => '/dev/site/validate-fb?code=AQDTd9wZD4eRaG79FKV-j5FOdjHVAO7ZpcPvHL-T_6r3bu7meGrzrGkRo_bwhnl92gFc_TLLZOv38T6t66uh-SAxu-tkgwC-rfdq1ti5VlnZBEfr6KxP1dUon-3Uf61CjnPxc3WMkratYbx4GKORUbXjlksSNuE0NGgM6VilwjG3a8qAaPkuvA5fxGtKrygUtHaEGEioWKUAddykJdDPbUL6JvnkuJ3tilfuK9bNLKt29XL9ufbzC-qec0sH_adj7dIqT5shE3i7xOLpp6Vjlx-Kq7jItPjfiHWSyOmXsvJzOTCqbMe9kmBsZxtwf__MehfMRkBcuELU1c2HEmTWcUmi&state=88d3f18c9fff5f8ccf8d53a728ce8987'
+    'QUERY_STRING' => 'code=AQDTd9wZD4eRaG79FKV-j5FOdjHVAO7ZpcPvHL-T_6r3bu7meGrzrGkRo_bwhnl92gFc_TLLZOv38T6t66uh-SAxu-tkgwC-rfdq1ti5VlnZBEfr6KxP1dUon-3Uf61CjnPxc3WMkratYbx4GKORUbXjlksSNuE0NGgM6VilwjG3a8qAaPkuvA5fxGtKrygUtHaEGEioWKUAddykJdDPbUL6JvnkuJ3tilfuK9bNLKt29XL9ufbzC-qec0sH_adj7dIqT5shE3i7xOLpp6Vjlx-Kq7jItPjfiHWSyOmXsvJzOTCqbMe9kmBsZxtwf__MehfMRkBcuELU1c2HEmTWcUmi&state=88d3f18c9fff5f8ccf8d53a728ce8987'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'code=AQDTd9wZD4eRaG79FKV-j5FOdjHVAO7ZpcPvHL-T_6r3bu7meGrzrGkRo_bwhnl92gFc_TLLZOv38T6t66uh-SAxu-tkgwC-rfdq1ti5VlnZBEfr6KxP1dUon-3Uf61CjnPxc3WMkratYbx4GKORUbXjlksSNuE0NGgM6VilwjG3a8qAaPkuvA5fxGtKrygUtHaEGEioWKUAddykJdDPbUL6JvnkuJ3tilfuK9bNLKt29XL9ufbzC-qec0sH_adj7dIqT5shE3i7xOLpp6Vjlx-Kq7jItPjfiHWSyOmXsvJzOTCqbMe9kmBsZxtwf__MehfMRkBcuELU1c2HEmTWcUmi&state=88d3f18c9fff5f8ccf8d53a728ce8987'
+    'REDIRECT_URL' => '/dev/site/validate-fb'
+    'REMOTE_PORT' => '2046'
+    'SCRIPT_FILENAME' => '/home/talozo/public_html/dev/index.php'
+    'SERVER_ADMIN' => 'webmaster@talozo.com'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => '/home/talozo/public_html'
+    'REMOTE_ADDR' => '42.111.160.8'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '160.153.46.131'
+    'SERVER_NAME' => 'talozo.com'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_SIGNATURE' => ''
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'HTTP_COOKIE' => 'advanced-frontend=34ef4d90ded09946dc2b304a64f708a4; _csrf-frontend=1c285d40aeb57b13d9c8091c6e0d8f44c007ad4d1c10e9874157cb7db2021b03a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%F1%9F%26z+-%1B%D6%A9%A6%7D%5D%8FB%F1%C1%16U%C5%00%F5%22%F9%29%EBf%A4%40%9A%2B+%F5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://talozo.com/dev/login'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/61.0.3163.79 Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'talozo.com'
+    'UNIQUE_ID' => 'WfONezI@sVMAAHN1vAYAAACX'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'WfONezI@sVMAAHN1vAYAAACX'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/dev/index.php'
+    'REQUEST_TIME_FLOAT' => 1509133691.604
+    'REQUEST_TIME' => 1509133691
+]

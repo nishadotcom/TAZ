@@ -15,6 +15,7 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use frontend\models\UserDetail;
 use frontend\models\UserAddress;
+use kartik\social\Module;
 
 /**
  * Site controller
@@ -283,4 +284,41 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+    
+
+ 
+public function actionValidateFb()
+{
+    $social = Yii::$app->getModule('social');
+    $fb = $social->getFb(); // gets facebook object based on module settings
+    try {
+        $helper = $fb->getRedirectLoginHelper();
+        $accessToken = $helper->getAccessToken();
+    } catch(\Facebook\Exceptions\FacebookSDKException $e) {
+        // There was an error communicating with Graph
+        return $this->render('validate-fb', [
+            'out' => '<div class="alert alert-danger">' . $e->getMessage() . '</div>'
+        ]);
+    }
+    if (isset($accessToken)) { // you got a valid facebook authorization token
+        $response = $fb->get('/me?fields=id,name,email,first_name,last_name,picture', $accessToken);
+        return $this->render('validate-fb', [
+            'out' => '<legend>Facebook User Details</legend>' . '<pre>' . print_r($response->getGraphUser(), true) . '</pre>'
+        ]);
+    } elseif ($helper->getError()) {
+        // the user denied the request
+        // You could log this data . . .
+        return $this->render('validate-fb', [
+            'out' => '<legend>Validation Log</legend><pre>' .
+            '<b>Error:</b>' . print_r($helper->getError(), true) .
+            '<b>Error Code:</b>' . print_r($helper->getErrorCode(), true) .
+            '<b>Error Reason:</b>' . print_r($helper->getErrorReason(), true) .
+            '<b>Error Description:</b>' . print_r($helper->getErrorDescription(), true) .
+            '</pre>'
+        ]);
+    }
+    return $this->render('validate-fb', [
+        'out' => '<div class="alert alert-warning"><h4>Oops! Nothing much to process here.</h4></div>'
+    ]);
+}
 }

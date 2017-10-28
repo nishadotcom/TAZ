@@ -6,14 +6,14 @@ if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha')
 	$dbUser		= 'sql12184890	';
 	$dbPassword	= '4rxQPFQ2lV';	*/
 	$host 		= 'localhost';
-	$dbName 	= 'TAZALO';
-	$dbUser		= 'root';
-	$dbPassword	= 'root';
+	$dbName 	= 'dev_talozo';
+	$dbUser		= 'dev_talozo';
+	$dbPassword	= 'dev@talozo17';
 }else{ 
 	$host 		= 'localhost';
-	$dbName 	= 'ecom';
-	$dbUser		= 'root';
-	$dbPassword	= 'root';
+	$dbName 	= 'dev_talozo';
+	$dbUser		= 'dev_talozo';
+	$dbPassword	= 'dev@talozo17';
 
 }
 
