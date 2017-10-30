@@ -80,6 +80,9 @@ return [
                 'contact-details/delete/<id>'=> 'user-contact-detail/delete',
                 // User Address
                 'user-address/update/<userid>/<type>' => 'user-address/update',
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
 
                 /*'<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<controller>/<action>',
