@@ -2029,7 +2029,7 @@ body.bodyColor.container {
 
 /*===  BANNER V3 ===*/
 .bannerV3 {
-  padding: 50px 0;
+  padding: 50px 0 12px 0;
   background: #f0f0f0;
 }
 @media (min-width: 1200px) {
@@ -2038,7 +2038,8 @@ body.bodyColor.container {
   }
 }
 .bannerV3 .slide {
-  height: 500px;
+  /*height: 500px;*/
+  height: 0;
   background: #ffffff;
   -webkit-box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
@@ -2053,8 +2054,10 @@ body.bodyColor.container {
 }
 @media (min-width: 1200px) {
   .bannerV3 .slide {
-    height: 550px;
-    padding: 55px 50px;
+    /*height: 550px;*/
+    height: 446px;
+    /*padding: 55px 50px;*/
+    padding: 10px 12px;
   }
 }
 .bannerV3 .slide .slider-title {
@@ -2654,7 +2657,8 @@ body.bodyColor.container {
     padding: 90px 0 60px 0;
   }
   .mainContent  {
-	padding: 50px 0 60px 0;
+	/*padding: 50px 0 60px 0;*/
+	padding: 22px 0 60px 0;
   }
 }
 .whiteSection .featuredCollection .thumbnail, .mainContent .featuredCollection .thumbnail {
@@ -2969,7 +2973,8 @@ body.bodyColor.container {
   margin: 1px;
 }
 .dealSlider .productDeal {
-  padding: 20px 15px;
+  /*padding: 20px 15px;*/
+  padding: -1px 15px;
 }
 .dealSlider .productDeal h3 {
   font-size: 20px;

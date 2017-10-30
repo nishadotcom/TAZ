@@ -50,7 +50,8 @@ class CartrestController extends ActiveController
 	}
 
 	public function actionUpload() { 
-		return $this->_returnResult('TEST_DATA',['hello', 'world'],200,1,1);
+    $data = (isset($_POST['name'])) ? $_POST['name'] : 'NODATA';
+		return $this->_returnResult('TEST_DATA',['name'=>$data],200,1,1);
 	}
     
     /*
