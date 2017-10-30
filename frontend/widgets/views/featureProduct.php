@@ -31,7 +31,8 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Nike Sportswear</a></h5>
+                            <h5><a href="single-product.html">Nike Sportswear</a> 
+                              <span class="featureProductRating">6<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -51,7 +52,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Scarf Ring Corner</a></h5>
+                            <h5><a href="single-product.html">Scarf Ring Corner</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -71,7 +72,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Sun Buddies</a></h5>
+                            <h5><a href="single-product.html">Sun Buddies</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -91,7 +92,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h5><a href="single-product.html">Mauris efficitur</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -111,7 +112,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Nike Sportswear</a></h5>
+                            <h5><a href="single-product.html">Nike Sportswear</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -131,7 +132,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">porro quisquam</a></h5>
+                            <h5><a href="single-product.html">porro quisquam</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -151,7 +152,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">enim ad minim</a></h5>
+                            <h5><a href="single-product.html">enim ad minim</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -171,7 +172,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">sunt in culpa</a></h5>
+                            <h5><a href="single-product.html">sunt in culpa</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -195,7 +196,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h5><a href="single-product.html">Mauris efficitur</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>
@@ -215,7 +216,7 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h5><a href="single-product.html">Mauris efficitur</a><span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
                             <h3>$199</h3>
                           </div>
                         </div>

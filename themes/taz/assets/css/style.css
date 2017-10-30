@@ -2966,7 +2966,7 @@ body.bodyColor.container {
 /*================= 3.3 HOME V3 ==================*/
 /*=== 3.3.1 DEAL SECTION ===*/
 .dealSlider {
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
 }
 .dealSlider .imageBox, .dealSlider .whiteSection .featuredProducts .slide, .whiteSection .featuredProducts .dealSlider .slide, .dealSlider .mainContent .featuredProducts .slide, .mainContent .featuredProducts .dealSlider .slide, .dealSlider .productsContent .productBox, .productsContent .dealSlider .productBox {
   border: 1px solid #d5d5d5;
@@ -3042,6 +3042,13 @@ body.bodyColor.container {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.featureProductRating{
+	float: right; font-weight: 400; color: #d5d5d5;
+}
+.featureProductRating:hover{
+	color: #47bac1;
 }
 
 /*=== 3.3.2 FEATURE PRODUCT SECTION  ===*/
