@@ -2261,6 +2261,7 @@ body.bodyColor.container {
 .bannerV3 .owl-item {
   opacity: 0.3;
   padding-bottom: 7px;
+  margin-bottom: -15px;
 }
 .bannerV3 .owl-item.active {
   opacity: 1;
