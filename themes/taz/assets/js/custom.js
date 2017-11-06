@@ -179,12 +179,12 @@ jQuery(document).ready(function() {
 				  items:1
 			  },
 			  768:{
-			  	slideBy: 3,
-				  items:3
+			  	slideBy: 4,
+				  items:4
 			  },
 			  992:{
-			  	slideBy: 3,
-			  	items:3
+			  	slideBy: 4,
+			  	items:4
 			  }
 		  }
 	  });

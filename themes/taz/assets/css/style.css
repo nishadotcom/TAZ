@@ -2029,7 +2029,8 @@ body.bodyColor.container {
 
 /*===  BANNER V3 ===*/
 .bannerV3 {
-  padding: 50px 0 12px 0;
+  /*padding: 50px 0 12px 0;*/
+  padding: 0 0 0 0;
   background: #f0f0f0;
 }
 @media (min-width: 1200px) {
@@ -3011,7 +3012,7 @@ body.bodyColor.container {
 .dealSlider .productCaption h3 {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: capitalize;
 }
 .dealSlider .productCaption h3 a {
@@ -3046,7 +3047,9 @@ body.bodyColor.container {
 }
 
 .featureProductRating{
-	float: right; font-weight: 400; color: #d5d5d5;
+	/*float: right; */
+  font-weight: 400; 
+  color: #d5d5d5;
 }
 .featureProductRating:hover{
 	color: #47bac1;

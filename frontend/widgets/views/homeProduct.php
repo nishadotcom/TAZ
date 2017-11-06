@@ -31,7 +31,7 @@ $prdNoImg     = 'noImage.jpg';
                           <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
-                        <div class="productCaption clearfix text-center">
+                        <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>"><?= $psaProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $psaProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
