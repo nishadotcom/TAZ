@@ -80,7 +80,9 @@ html, * {
 }
 
 body {
-  font-family: 'Oxygen', sans-serif;
+  /*font-family: 'Oxygen', sans-serif; */
+  font-family: 'calibri';
+  /*font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;*/
   font-size: 12px;
   line-height: 18px;
   color: #252525;
@@ -103,7 +105,9 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Oxygen', sans-serif;
+  /*font-family: 'Oxygen', sans-serif;*/
+  font-family: 'calibri';
+  /*font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;*/
   text-transform: uppercase;
   color: #252525;
   margin-top: 0;
@@ -2605,7 +2609,8 @@ body.bodyColor.container {
   margin-bottom: 0;
 }
 .imageBox .productCaption .offer-price, .whiteSection .featuredProducts .slide .productCaption .offer-price, .mainContent .featuredProducts .slide .productCaption .offer-price, .productsContent .productBox .productCaption .offer-price {
-  font-size: 24px;
+  /*font-size: 24px;*/
+  font-size: 18px;
   font-weight: 700;
   color: #47bac1;
   display: block;
@@ -3010,7 +3015,7 @@ body.bodyColor.container {
   transition: all 0.3s ease;
 }
 .dealSlider .productCaption h3 {
-  font-size: 20px;
+  font-size: 16px;/**20px*/
   font-weight: 400;
   margin-bottom: 10px;
   text-transform: capitalize;
@@ -3022,7 +3027,8 @@ body.bodyColor.container {
   padding-left: 25px;
   padding-right: 25px;
   border-color: #47bac1;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
+  margin-bottom: 30px;
 }
 .dealSlider .productCaption .btn-border i {
   color: #47bac1;
@@ -3047,7 +3053,7 @@ body.bodyColor.container {
 }
 
 .featureProductRating{
-	/*float: right; */
+	float: right;
   font-weight: 400; 
   color: #d5d5d5;
 }
@@ -3082,7 +3088,8 @@ body.bodyColor.container {
 /*=== 3.3.3 FEATURES ===*/
 .version2 .box {
   background-color: transparent;
-  border: 5px solid #e4e4e4;
+  /*border: 5px solid #e4e4e4;*/
+  border: 1px #dbdbdb solid;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -3090,7 +3097,7 @@ body.bodyColor.container {
   transition: all 0.3s ease;
 }
 .version2 .box:hover {
-  border: 5px solid #47bac1;
+  border: 1px solid #47bac1;
 }
 
 /*=== 3.3.4 TESTIMONIAL SECTION ===*/
@@ -3104,14 +3111,16 @@ body.bodyColor.container {
 }
 
 .testimonial-inner {
-  background-color: #f5f5f5;
-  padding: 15px;
+  /*background-color: #f5f5f5;
+  padding: 15px;*/
+  padding: 0;
   width: 100%;
   float: left;
 }
 @media (min-width: 768px) {
   .testimonial-inner {
-    padding: 50px;
+    /*padding: 50px;*/
+    padding: 0 0 50px 0;
   }
 }
 .testimonial-inner .testimonialImage {
@@ -3119,9 +3128,10 @@ body.bodyColor.container {
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-  width: 30%;
+  /*width: 30%;*/
+  width: 16%;
   float: left;
-  padding: 30px 0;
+  padding: 0 0;/*padding: 30px 0;*/
   margin-right: 15px;
 }
 @media (min-width: 768px) {
@@ -3138,7 +3148,8 @@ body.bodyColor.container {
 }
 @media (min-width: 992px) {
   .testimonial-inner .testimonialText {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
+    padding-top: 0;
   }
 }
 .testimonial-inner .testimonialText .product-rating {
@@ -3152,14 +3163,14 @@ body.bodyColor.container {
   }
 }
 .testimonial-inner .testimonial-content {
-  border-top: 5px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
   padding-top: 10px;
   display: table-cell;
   vertical-align: top;
 }
 @media (min-width: 768px) {
   .testimonial-inner .testimonial-content {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
 .testimonial-inner .testimonial-content p {
@@ -3169,7 +3180,7 @@ body.bodyColor.container {
 }
 @media (min-width: 768px) {
   .testimonial-inner .testimonial-content p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     margin-bottom: 20px;
   }
@@ -8295,4 +8306,12 @@ h4 a{
 }
 h4 a:hover{
   color: #47bac1;
+}
+
+.text-normal{
+  font-weight: normal;
+}
+
+.testimonial-inner .testimonialText .sub-title{
+  margin-bottom: 15px;
 }

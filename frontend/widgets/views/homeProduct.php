@@ -64,6 +64,8 @@ $prdNoImg     = 'noImage.jpg';
                   foreach ($slpProducts as $key => $slpProduct) { 
                     $prdImage   = (isset($slpProduct->productImages[0])) ? $pathPrdImg.$slpProduct->product_code.'/'.$slpProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
                     ?>
+                    
+
                     <div class="slide">
                       <div class="imageBox">
                         <div class="productDeal clearfix">
@@ -76,7 +78,7 @@ $prdNoImg     = 'noImage.jpg';
                           <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
-                        <div class="productCaption clearfix text-center">
+                        <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>"><?= $slpProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $slpProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
@@ -121,7 +123,7 @@ $prdNoImg     = 'noImage.jpg';
                           <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
-                        <div class="productCaption clearfix text-center">
+                        <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>"><?= $otlProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $otlProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
@@ -166,7 +168,7 @@ $prdNoImg     = 'noImage.jpg';
                           <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
                         </div>
-                        <div class="productCaption clearfix text-center">
+                        <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>"><?= $frcProduct->product_name; ?></a></h3>
                           <span class="offer-price"><?= $frcProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->

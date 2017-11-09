@@ -31,9 +31,8 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Nike Sportswear</a></h5>
-                              <h5 class="featureProductRating">6<i class="fa fa-heart fa-1"></i></h5>
-                            <h3>$199</h3>
+                            <h5><a href="single-product.html">Nike Sportswear</a> <span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
+                            <h5 class="text-normal">$199</h5>
                           </div>
                         </div>
                       </div>
@@ -52,9 +51,8 @@ use yii\helpers\Html;
                             </div>
                           </div>
                           <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Scarf Ring Corner</a></h5>
-                            <h5 class="featureProductRating">6<i class="fa fa-heart fa-1"></i></h5>
-                            <h3>$199</h3>
+                            <h5><a href="single-product.html">Scarf Ring Corner</a> <span class="featureProductRating">5<i class="fa fa-heart fa-1"></i></span></h5>
+                            <h5 class="text-normal">$199</h5>
                           </div>
                         </div>
                       </div>
@@ -74,7 +72,7 @@ use yii\helpers\Html;
                           </div>
                           <div class="productCaption clearfix">
                             <h5><a href="single-product.html">Sun Buddies</a></h5>
-                            <h3>$199</h3>
+                            <h5 class="text-normal">$199</h5>
                           </div>
                         </div>
                       </div>
@@ -94,7 +92,7 @@ use yii\helpers\Html;
                           </div>
                           <div class="productCaption clearfix">
                             <h5><a href="single-product.html">Mauris efficitur</a></h5>
-                            <h3>$199</h3>
+                            <h5 class="text-normal">$199</h5>
                           </div>
                         </div>
                       </div>
