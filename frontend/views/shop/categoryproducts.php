@@ -85,7 +85,7 @@ $prdNoImg     = 'noImage.jpg';
                             <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$categoryProduct->id; ?>" title="<?= $categoryProduct->product_name; ?>"><?= $categoryProduct->product_name; ?></a>
                           </h4>
                           <p><?= $categoryProduct->product_short_description; ?></p>
-                          <h3>$<?= $categoryProduct->product_sale_price; ?></h3>
+                          <h4>$<?= $categoryProduct->product_sale_price; ?></h4>
                           <div class="btn-group" role="group">
                             <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>"><i class="fa fa-heart" aria-hidden="true"></i></button>
                             <button type="button" class="btn btn-default add_to_cart" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">

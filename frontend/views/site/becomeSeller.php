@@ -27,7 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
 			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
 					since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		<p class="pull-right">
-			<button type="button" class="btn btn-lg btn-success-filled btn-rounded" data-toggle="modal" data-target='#signup'>Become a Seller</button>
+			<!--<button type="button" class="btn btn-lg btn-success-filled btn-rounded" data-toggle="modal" data-target='#signup'>Become a Seller</button>-->
+			<button type="button" class="btn btn-lg btn-success-filled btn-rounded">Become a Seller</button>
 		</p>
 	</div>
 </div>
@@ -188,3 +189,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <!-- end of signup modal -->
 
 
+<aside id="sticky-social">
+    <ul>
+        <li><a href="#" class="entypo-facebook" target="_blank"><i class="fa fa-shopping-cart"> </i><span>Facebook</span></a></li>
+        <li><a href="#" class="entypo-twitter" target="_blank"><i class="fa fa-shopping-cart"></i><span>Twitter</span></a></li>
+        <li><a href="#" class="entypo-gplus" target="_blank"><i class="fa fa-shopping-cart"></i><span>Google+</span></a></li>
+    </ul>
+</aside>
