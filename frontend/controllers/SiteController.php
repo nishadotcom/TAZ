@@ -231,9 +231,9 @@ class SiteController extends Controller
                 /*if (Yii::$app->getUser()->login($user)) {
                     //return $this->goHome();
                 }*/
-            }else{
+            }/*else{
               $model->get_errors();
-            }
+            }*/
         }
          return $this->render('signup', [
             'model' => $model,
