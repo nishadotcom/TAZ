@@ -99,7 +99,7 @@ use frontend\widgets\Banner;
           $sectionClass = 'stepsWrapper';
       }
       else{
-          $sectionClass = '';//'logIn signUp productsContent';
+          $sectionClass = 'logIn signUp productsContent';
       }
 
       //$sectionClass = ''; = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';

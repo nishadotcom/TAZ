@@ -73,7 +73,7 @@ class UserAddress extends \yii\db\ActiveRecord
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
-    public function insertAddressOnSignup($userid){
+    public static function insertAddressOnSignup($userid){
         $tableName  = static::tableName();
         //$columnNameArray=['user_id','street','city','state','country','pin_code','address_type'];
         $columnNameArray = ['user_id','address_type'];
