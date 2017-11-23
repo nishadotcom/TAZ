@@ -39,12 +39,21 @@ use frontend\widgets\Banner;
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style type="text/css">
+	
 
+</style>
   </head>
 	<body class="body-wrapper version3">
 		<?php $this->beginBody() ?>
-    <div class="main-wrapper">
 
+		<div class="alert-top alert alert-success">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<span class="text">Welcome to <strong>Talozo!</strong> <!--Indicates a successful or positive action.--> </span>
+		</div>
+		
+    <div class="main-wrapper">
+    	
       <!-- NAVBAR -->
       	<?= Menu::widget(); ?>
 
@@ -131,6 +140,20 @@ use frontend\widgets\Banner;
 		$this->off(\yii\web\View::EVENT_END_BODY, [\yii\debug\Module::getInstance(), 'renderToolbar']);
 	}
 	?>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		//alert('In');
+		$(".alert-top").show();
+		setTimeout(function(){
+				$(".alert-top").slideUp(600); 
+		}, 5000);
+	});
+		function myAlertTop(){
+			/*setTimeout(function(){
+				$(".myAlert-top").hide(200); 
+			}, 4000);*/
+		}
+	</script>
     <?php $this->endBody(); ?>
   </body>
 </html>
