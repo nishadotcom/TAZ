@@ -27,7 +27,7 @@ class Common extends Component {
     /**
      * To get Mysql Date Time format
      */
-    public function displayDateTime1($dateTime) {
+    public static function displayDateTime1($dateTime) {
         if ($dateTime) {
             return date('d-m-Y H:i:s', strtotime($dateTime));
         }
@@ -36,7 +36,7 @@ class Common extends Component {
     /**
      * To get Mysql Date Time format
      */
-    public function customDate($date) {
+    public static function customDate($date) {
         if ($date) {
             return date('d-m-Y', strtotime($date));
         } else {
@@ -47,7 +47,7 @@ class Common extends Component {
     /**
      * To get default Date
      */
-    public function displayDate2($date) {
+    public static function displayDate2($date) {
         if ($date == '0000-00-00') {
             return '';
         }
@@ -55,43 +55,14 @@ class Common extends Component {
         return date('d-m-Y', strtotime($date));
     }
 
-    /**
-     * To get default Date
-     */
-    public function displayDate4($date) {
-        if ($date == '0000-00-00 00:00:00') {
-            return '';
-        }
-
-        //return date('d-m-Y H:i:s', strtotime($date));
-
-        return date('d-m-Y', strtotime($date));
-    }
-
-    /**
-     * To get default Date
-     */
-    public function displayDate3($date = False) {
-        if ($date) {
-            return date('d M Y', strtotime($date));
-        }
-        return FALSE;
-    }
 
     /**
      * To get Mysql Date Time format
      */
-    public function mysqlDateTime($date = FALSE) {
+    public static function mysqlDateTime($date = FALSE) {
         if ($date) {
             return date('Y-m-d H:i:s', strtotime($date));
         }
-        return date('Y-m-d H:i:s');
-    }
-
-    /**
-     * To get Mysql Date Time format
-     */
-    public function mysqlDateTimeUpdate() {
         return date('Y-m-d H:i:s');
     }
 
@@ -109,7 +80,6 @@ class Common extends Component {
     /*
      * To unlink the file if exists 
      */
-
     public static function unlinkExistedFile($path, $fileName = FALSE) {
         if (file_exists($path . $fileName)) {
             if (is_file($path . $fileName)) {
@@ -118,7 +88,7 @@ class Common extends Component {
         }
     }
 
-    public function printR($str) {
+    public static function printR($str) {
         print '<pre>';
         print_r($str);
         print '</pre>';
