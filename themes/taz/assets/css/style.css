@@ -3762,7 +3762,7 @@ body.bodyColor.container {
   padding: 15px 30px;
 }
 .form-field .form-group, .form-body .panel .panel-body .form-group, .signUp .panel .panel-body .form-group, .lostPassword .panel .panel-body .form-group, .logIn .panel .panel-body .form-group, .commentsForm .form-group, #login .modal-dialog .modal-content .modal-body .form-group, #signup .modal-dialog .modal-content .modal-body .form-group {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 .form-field .form-group label, .form-body .panel .panel-body .form-group label, .signUp .panel .panel-body .form-group label, .lostPassword .panel .panel-body .form-group label, .logIn .panel .panel-body .form-group label, .commentsForm .form-group label, #login .modal-dialog .modal-content .modal-body .form-group label, #signup .modal-dialog .modal-content .modal-body .form-group label {
   font-size: 13px;
@@ -3825,9 +3825,13 @@ body.bodyColor.container {
   color: #ffffff;
   line-height: 60px;
 }
-.form-body .panel .panel-body, .signUp .panel .panel-body, .lostPassword .panel .panel-body, .logIn .panel .panel-body {
+.form-body .panel .panel-body, .lostPassword .panel .panel-body {
   border: 5px solid #f0f0f0;
   border-top: none;
+}
+.signUp .panel .panel-body, .logIn .panel .panel-body{
+  /*border: 5px solid #f0f0f0;
+  border-top: none;*/
 }
 .form-body .panel .panel-body .btn-link span, .signUp .panel .panel-body .btn-link span, .lostPassword .panel .panel-body .btn-link span, .logIn .panel .panel-body .btn-link span {
   color: #797979;
@@ -3924,7 +3928,7 @@ body.bodyColor.container {
 }
 @media (min-width: 480px) {
   .logIn {
-    padding: 45px 0 25px 0;
+    padding: 26px 0 25px 0;
   }
 }
 @media (min-width: 768px) {

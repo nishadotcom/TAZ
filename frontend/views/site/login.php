@@ -19,12 +19,12 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
 <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
               <div class="panel panel-default">
-                <div class="panel-heading"><h3>log in</h3></div>
+                <!--<div class="panel-heading"><h3>log in</h3></div>-->
                 <div class="panel-body">
-                  <?= Yii::$app->session->getFlash('msg'); ?>
+                  <?php // Yii::$app->session->getFlash('msg'); ?>
                   <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
                     <div class="form-group">
-                      <label for="">Enter Email</label>
+                      <label for="">Email</label>
                       <?= $form->field($model, 'email')->textInput(array('maxlength' => 30, 'placeholder' => 'Email','class'=>'form-control'))->label(false) ?>
                     </div>
                     <div class="form-group">
@@ -35,8 +35,12 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
                     <button type="submit" class="btn btn-primary btn-block">log in</button>
                     <?php echo $social->getFbLoginLink($callback, ['class'=>'btn btn-default pull-left']); ?>
                     <!--<button type="submit" class="btn btn-default pull-left"><i class="fa fa-facebook" aria-hidden="true"></i><span>log in with facebook</span></button>-->
-                    <button type="submit" class="btn btn-default pull-right"><i class="fa fa-google-plus" aria-hidden="true"></i><span>log in with google plus</span></button>
-                    <button type="button" class="btn btn-link btn-block">Forgot Password?</button>
+                    <button type="submit" class="btn btn-default pull-right">
+                    	<i class="fa fa-google-plus" aria-hidden="true"></i>
+                    	<span style="margin-left: 0;margin-right: 0;">log in with google plus</span>
+                    </button>
+                    <!--<button type="button" class="btn btn-link btn-block">Don't You Have an Account?</button>-->
+	                <button type="button" class="btn btn-link btn-block">Forgot Password?</button>
                  <?php ActiveForm::end(); ?>
                 </div>
               </div>

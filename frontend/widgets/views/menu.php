@@ -40,9 +40,14 @@ $action 	= $controller->action->id;
 					<a href="<?php echo Yii::$app->homeUrl.'signup'; ?>" class="">Sign Up</a>
 				</li>
 			<?php } ?>
-			<li class="dropdown">
+			<li>
 				<a href="javascript:void(0)" class="">Help</a>
 			</li>
+			<!--<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="http://placehold.it/32x32" class="profile-image img-circle">
+                </a>
+            </li>-->
 	  </ul>
 	</div><!-- /.navbar-collapse -->
   </div>

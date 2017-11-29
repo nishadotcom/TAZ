@@ -5,16 +5,16 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\ArrayHelper;
-$this->title = 'Signup';
+$this->title = 'Sign up';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="row">
 		<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
 		  <div class="panel panel-default">
-			<div class="panel-heading"><h3>sing up</h3></div>
+			<!--<div class="panel-heading"><h3>sing up</h3></div>-->
 			<div class="panel-body">
-				  <?= Yii::$app->session->getFlash('msg'); ?>
+				  <?php //Yii::$app->session->getFlash('msg'); ?>
 
 			 <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
 				<div class="form-group">
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				  <label for="">Password</label>
 				   <?= $form->field($model, 'password')->passwordInput(array('maxlength' => 30, 'placeholder' => 'Password','class'=>'form-control'))->label(false) ?>
 				</div>
-				<button type="submit" class="btn btn-primary btn-block">Submit</button>
+				<button type="submit" class="btn btn-primary btn-block">Sign Up</button>
 				<button type="button" class="btn btn-link btn-block"><span>All have an account?</span> Log in</button>
 			  <?php ActiveForm::end(); ?>
 			</div>

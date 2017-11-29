@@ -99,7 +99,10 @@ class SiteController extends Controller
           $userModel = User::updateLastLogin(Yii::$app->user->id);
           //echo '<pre>'; print_r(Yii::$app->user->identity->user_type); exit;
 
-          return $this->redirect(['profile-dashboard']);
+          Yii::$app->session->setFlash('success', "Welcome to TALOZO");
+
+          //return $this->redirect(['profile-dashboard']);
+          return $this->goHome();
             //Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
         } else {
             return $this->render('login', [

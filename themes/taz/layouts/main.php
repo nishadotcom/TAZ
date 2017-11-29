@@ -47,10 +47,17 @@ use frontend\widgets\Banner;
 	<body class="body-wrapper version3">
 		<?php $this->beginBody() ?>
 
-		<div class="alert-top alert alert-success">
-			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-			<span class="text">Welcome to <strong>Talozo!</strong> <!--Indicates a successful or positive action.--> </span>
-		</div>
+    <?php 
+    if (Yii::$app->session->hasFlash('success')){
+      ?>
+      <div class="alert-top alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <span class="text"><?= Yii::$app->session->getFlash('success') ?> <!--Welcome to <strong>Talozo!</strong>--> <!--Indicates a successful or positive action.--> </span>
+      </div>
+      <?php
+    } 
+    ?>
+		
 		
     <div class="main-wrapper">
     	
@@ -75,6 +82,7 @@ use frontend\widgets\Banner;
 	                			<h2><?= $this->title ?></h2>
 	              			</div>
 	            		</div>
+                  <?php /* ?>
 		            	<div class="col-xs-6">
 		            		<?php 
 		            		echo Breadcrumbs::widget([
@@ -89,7 +97,7 @@ use frontend\widgets\Banner;
 		                		</li>
 		                		<li class="active">log in</li>
 		              		</ol>-->
-		            	</div>
+		            	</div> <?php */ ?>
 	          		</div>
 	        	</div>
 	      	</section>
