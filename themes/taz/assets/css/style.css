@@ -780,7 +780,8 @@ a:hover, a:focus {
 }
 @media (min-width: 992px) {
   .navbar-default .navbar-collapse li a {
-    padding: 20px  15px 33px;
+    /*padding: 20px  15px 33px;*/
+    padding: 20px  15px 20px;
     font-size: 14px;
   }
 }
@@ -6484,8 +6485,8 @@ body.bodyColor.container {
 @media (min-width: 1200px) {
   .userProfile .innerWrapper .list-inline li .btn-lg {
     width: 196px;
-    padding: 67px 0;
-    font-size: 18px;
+    padding: 50px 0;
+    font-size: 14px;
   }
 }
 .userProfile .innerWrapper .list-inline li .btn-lg i {
@@ -6719,12 +6720,12 @@ body.bodyColor.container {
 }
 @media (min-width: 480px) {
   .profile .form-horizontal .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 12px;/*30*/
   }
 }
 @media (min-width: 768px) {
   .profile .form-horizontal .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 12px;/*30px*/
   }
 }
 .profile .form-horizontal .form-group .control-label {
@@ -7342,9 +7343,9 @@ body.bodyColor.container {
 
 /* Success Button */
 .btn-success, .btn-success:active, .btn-success:focus {
-  color: #87c056;
+  /*color: #87c056;
+  background: transparent;*/
   border: 2px solid #87c056;
-  background: transparent;
 }
 
 .btn-success:hover {
@@ -8417,6 +8418,8 @@ h4 a:hover{
   /*border-radius: 4px;*/
   border-radius: 0;
   text-align: center;
+  background: rgba(0,0,0,.75);
+  color: #fff;
 }
 
 .alert-top{

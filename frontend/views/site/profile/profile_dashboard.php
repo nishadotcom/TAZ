@@ -1,6 +1,6 @@
 <?php
 use frontend\widgets\ProfileMenu;
-$this->title = 'Account Profile';
+$this->title = 'My Account';
 
 ?>
 
@@ -18,7 +18,7 @@ $this->title = 'Account Profile';
                 <h3>Wellcome <span><?php echo $user['firstname'].'&nbsp;'.$user['lastname'];?></span></h3>
                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
-                <ul class="list-inline">
+                <ul class="list-inline text-center">
                   <li><a href="<?php echo Yii::$app->homeUrl.'profile-update'; ?>" class="btn btn-default btn-lg"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
                   <li><a href="<?php echo Yii::$app->homeUrl.'user-address'; ?>" class="btn btn-default btn-lg"><i class="fa fa-map-marker" aria-hidden="true"></i>My Address</a></li>
                   <li><a href="<?php echo Yii::$app->homeUrl.'demo/my-address'; ?>" class="btn btn-default btn-lg"><i class="fa fa-list" aria-hidden="true"></i>All Orders</a></li>

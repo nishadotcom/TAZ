@@ -93,7 +93,7 @@ class Product extends \yii\db\ActiveRecord
             'product_breadth' => 'Breadth',
             'product_weight' => 'Weight',
             'product_short_description' => 'Short Description',
-            'product_long_description' => 'Long Description',
+            'product_long_description' => 'Description',
             'product_discount_status' => 'Discount Status',
             'product_guarantee_status' => 'Guarantee Status',
             'product_status' => 'Status',
