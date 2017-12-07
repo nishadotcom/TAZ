@@ -6568,8 +6568,8 @@ body.bodyColor.container {
   margin-bottom: 0;
 }
 .orderBox .table-responsive .table thead tr {
-  border-left: 3px solid #47bac1;
-  border-right: 3px solid #47bac1;
+  /*border-left: 3px solid #47bac1;
+  border-right: 3px solid #47bac1;*/
 }
 @media (max-width: 479px) {
   .orderBox .table-responsive .table thead tr th {
@@ -8429,3 +8429,7 @@ h4 a:hover{
       width: 100%;
       z-index: 9999;
   }
+  
+.table a{
+    color: #fff;
+}

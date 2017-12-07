@@ -7,7 +7,7 @@ use yii\base\Model;
 
 /**
  */
-class Cartrest extends \yii\db\ActiveRecord
+class Shoprest extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc

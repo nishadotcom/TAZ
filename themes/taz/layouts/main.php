@@ -37,25 +37,38 @@ use frontend\widgets\Banner;
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <style type="text/css">
-
-
-        </style>
+        <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/config.js"></script>
+        <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/jquery.min.js"></script>
+        <?php 
+        if(!Yii::$app->user->isGuest){
+            ?>
+            <script>
+            userLoggedin= true;
+            userId      = 1234;
+            userName    = 'Seller';
+            userType    = '';
+            </script>
+            <?Php
+        }
+        ?>
     </head>
     <body class="body-wrapper version3">
         <?php $this->beginBody() ?>
+        <div class="alert-top alert" style="display: none;">
+            <!--<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>-->
+        </div>
         <?php
         if (Yii::$app->session->hasFlash('success')){
         ?>
             <div class="alert-top alert">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <!--<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>-->
                 <?= Yii::$app->session->getFlash('success') ?> 
             </div>
         <?php
         }elseif(Yii::$app->session->hasFlash('error')){
         ?>
             <div class="alert-top alert">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <!--<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>-->
                 <?= Yii::$app->session->getFlash('error') ?> 
             </div>
         <?php
@@ -132,8 +145,7 @@ use frontend\widgets\Banner;
 <?= $this->render('footer') ?>
 
         </div>
-        <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/config.js"></script>
-        <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/jquery.min.js"></script>
+        
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/jquery-ui/jquery-ui.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
@@ -142,6 +154,7 @@ use frontend\widgets\Banner;
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/countdown/jquery.syotimer.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/custom.js"></script>
+        <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app.js"></script>
 
 
 <?php
@@ -149,21 +162,7 @@ if (class_exists('yii\debug\Module')) {
     $this->off(\yii\web\View::EVENT_END_BODY, [\yii\debug\Module::getInstance(), 'renderToolbar']);
 }
 ?>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                //alert('In');
-                //$(".alert-top").show();
-                setTimeout(function () {
-                    $(".alert-top").slideUp(600);
-                }, 5000);
-            });
-            function myAlertTop() {
-                /*setTimeout(function(){
-                 $(".myAlert-top").hide(200); 
-                 }, 4000);*/
-            }
-        </script>
 <?php $this->endBody(); ?>
     </body>
 </html>
-        <?php $this->endPage(); ?>
+<?php $this->endPage(); ?>
