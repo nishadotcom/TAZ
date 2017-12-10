@@ -98,9 +98,13 @@ class SiteController extends Controller {
             //echo '<pre>'; print_r(Yii::$app->user->identity->user_type); exit;
 
             Yii::$app->session->setFlash('success', "Logged in successfully");
-
+            // Dashboard Redirection
+            if(Yii::$app->user->identity->user_type == 'Seller'){
+                return $this->redirect(['profile-dashboard']);
+            }else{
+                return $this->goHome();
+            }
             //return $this->redirect(['profile-dashboard']);
-            return $this->goHome();
             //Yii::$app->Common->redirect(Url::toRoute(['profile-dashboard']));
         } else {
             return $this->render('login', [
@@ -123,10 +127,6 @@ class SiteController extends Controller {
         return $this->goHome();
         //return $this->redirect(['/']);
         //Yii::$app->Common->redirect(Url::toRoute(['login']));
-    }
-
-    public function actionBecomeSeller() {
-        return $this->render('becomeSeller');
     }
 
     /* profile update.
@@ -244,6 +244,47 @@ class SiteController extends Controller {
             }
         }
         return $this->render('signup', [
+                    'model' => $model,
+        ]);
+    }
+    
+    /**
+     * Load Become a Seller Page
+     * **/
+    public function actionBecomeSeller() {
+        return $this->render('becomeSeller');
+    }
+    
+    /**
+     * Become a Seller
+     * **/
+    public function actionBecomeSellerSignup() {
+        $model = new SignupForm();
+        $model->scenario = 'WebSignup';
+        if ($model->load(Yii::$app->request->post())) {
+            $model->user_type = 'Seller';
+            if ($model->signup()) {
+                // INSERT User address
+                $userData = User::findByEmail($model->email);
+                UserAddress::insertAddressOnSignup($userData->id);
+                //Yii::$app->getSession()->setFlash('msg', Yii::t("app", "Registered Successfully"));
+                //return $this->redirect(['site/signup']);
+                
+                $loginModel = new LoginForm();
+                $loginModel->scenario = 'site_login';
+                $loginModel->email = $model->email;
+                $loginModel->password = $model->password;
+                if ($loginModel->login()) {
+                    $userModel = User::updateLastLogin(Yii::$app->user->id);
+                    Yii::$app->session->setFlash('success', "Welcome to TALOZO");
+                    return $this->redirect(['profile-dashboard']);
+                }else{
+                    Yii::$app->session->setFlash('error', "Please login to continue shopping");
+                    return $this->redirect(['login']);
+                }
+            }
+        }
+        return $this->render('becomeSellerSignup', [
                     'model' => $model,
         ]);
     }

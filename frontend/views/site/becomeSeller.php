@@ -28,7 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
 					since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		<p class="pull-right">
 			<!--<button type="button" class="btn btn-lg btn-success-filled btn-rounded" data-toggle="modal" data-target='#signup'>Become a Seller</button>-->
-			<button type="button" class="btn btn-lg btn-success-filled btn-rounded">Become a Seller</button>
+			<!--<button type="button" class="btn btn-lg btn-success-filled btn-rounded">Become a Seller</button>-->
+                        <a href="<?php echo Yii::$app->homeUrl . 'site/become-seller-signup'; ?>" class="btn btn-lg btn-success-filled btn-rounded">Become a Seller</a>
 		</p>
 	</div>
 </div>

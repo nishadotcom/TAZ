@@ -21,11 +21,11 @@ $this->title = 'My Account';
                 <ul class="list-inline text-center">
                   <li><a href="<?php echo Yii::$app->homeUrl.'profile-update'; ?>" class="btn btn-default btn-lg"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
                   <li><a href="<?php echo Yii::$app->homeUrl.'user-address'; ?>" class="btn btn-default btn-lg"><i class="fa fa-map-marker" aria-hidden="true"></i>My Address</a></li>
-                  <li><a href="<?php echo Yii::$app->homeUrl.'demo/my-address'; ?>" class="btn btn-default btn-lg"><i class="fa fa-list" aria-hidden="true"></i>All Orders</a></li>
-                  <li><a href="<?php echo Yii::$app->homeUrl.'demo/wish-list'; ?>" class="btn btn-default btn-lg"><i class="fa fa-gift" aria-hidden="true"></i>Wishlist</a></li>
-					<?php 
-					echo ($user['user_type'] == 'Seller') ? '<li><a href="'.Yii::$app->homeUrl.'seller/my-products'.'" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>Products</a></li>' : '';
-					?>
+                  <li><a href="<?php echo Yii::$app->homeUrl.'demo/my-address'; ?>" class="btn btn-default btn-lg"><i class="fa fa-list" aria-hidden="true"></i>My Orders</a></li>
+                  <!--<li><a href="<?php echo Yii::$app->homeUrl.'demo/wish-list'; ?>" class="btn btn-default btn-lg"><i class="fa fa-gift" aria-hidden="true"></i>Wishlist</a></li>-->
+                  <?php
+                  echo (Yii::$app->user->identity->user_type == 'Seller') ? '<li><a href="' . Yii::$app->homeUrl . 'seller/my-products' . '" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>Products</a></li>' : '';
+                  ?>
 					<!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Address</a></li>-->
                 </ul>
                 <div class="orderBox">

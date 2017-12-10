@@ -18,6 +18,7 @@ class SignupForm extends Model
     public $mobile;
     public $profile_image;
     public $registered_mode;
+    public $user_type;
 
     /**
      * @inheritdoc
@@ -67,6 +68,7 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->mobile = $this->mobile;
         $user->password = md5($this->password);
+        $user->user_type = ($this->user_type) ? $this->user_type : 'Buyer';
         $user->created_at = Yii::$app->Common->mysqlDateTime();
 
 
