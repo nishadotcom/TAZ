@@ -9,3 +9,11 @@
 .margin-top-30{
 	margin-top: 30px;
 }
+
+.userFavoriteYes{
+    background-color: #47bac1;
+}
+
+userFavoriteNo{
+    background-color: inherit;
+}

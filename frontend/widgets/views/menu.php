@@ -3,6 +3,7 @@ use yii\helpers\Html;
 // GET CONTROLLER
 $controller = Yii::$app->controller;
 $action = $controller->action->id;
+
 ?>
 <!-- HEADER -->
 <div class="header clearfix headerV2">
@@ -46,8 +47,9 @@ $action = $controller->action->id;
                                 <img src="http://placehold.it/32x32" class="profile-image img-circle">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>">My Account</a></li>
-                                <li><a href="#">Orders</a></li>
+                                <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>">MY ACCOUNT</a></li>
+                                <li><a href="<?= Yii::$app->homeUrl.'cart'; ?>">CART (<?= $cartCount; ?>)</a></li>
+                                <li><a href="#">ORDERS</a></li>
                             </ul>
                         </li>
                     <?php } ?>

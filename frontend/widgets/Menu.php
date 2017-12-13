@@ -4,6 +4,7 @@ namespace frontend\widgets;
 
 use Yii;
 use yii\base\Widget;
+use frontend\components\ShopComponent;
 
 
 class Menu extends Widget {
@@ -15,7 +16,8 @@ class Menu extends Widget {
     }
 
     public function run() {
-        return $this->render('menu');
+        $cartCount = (!Yii::$app->user->isGuest) ? ShopComponent::getCartCount(Yii::$app->user->id) : FALSE;
+        return $this->render('menu',['cartCount'=>$cartCount]);
     }
 
 }

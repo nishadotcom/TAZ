@@ -7,7 +7,7 @@ use yii\rest\ActiveController;
 use yii\helpers\Url;
 use yii\web\Response;
 use common\models\LoginForm;
-use app\components\Common;
+use common\components\Common;
 use yii\helpers\Json;
 use frontend\models\Cart;
 use frontend\models\Shop;
@@ -55,37 +55,39 @@ class ShoprestController extends ActiveController {
             // Get Product Details
             $product            = Shop::getProductById($productId);
             
-            /*if($productData){
+            if($product){
                 $productData    = $product[0];
                 $cartModel      = new Cart();
                 $cartModel->cart_product_name           = $productData->product_name;
-                $cartModel->cart_user_id                = $productData->product_name;
-                $cartModel->cart_product_category_name  = $productData->product_name;
-                $cartModel->cart_product_id             = $productData->product_name;
-                $cartModel->cart_product_code           = $productData->product_name;
-                $cartModel->cart_product_seo            = $productData->product_name;
-                $cartModel->cart_product_owner_id       = $productData->product_name;
-                $cartModel->cart_product_price          = $productData->product_name;
-                $cartModel->cart_product_material       = $productData->product_name;
-                $cartModel->cart_product_dimension_type = $productData->product_name;
-                $cartModel->cart_product_height         = $productData->product_name;
-                $cartModel->cart_product_length         = $productData->product_name;
-                $cartModel->cart_product_breadth        = $productData->product_name;
-                $cartModel->cart_product_weight         = $productData->cart_product_weight;
-                $cartModel->cart_product_short_description = $productData->cart_product_short_description;
-                $cartModel->cart_product_long_description  = $productData->cart_product_long_description;
-                $cartModel->cart_product_breadth        = $productData->product_name;
-                $cartModel->cart_product_quantity       = 1;
-                $cartModel->product_available_status    = $productData->product_name;
-                $cartModel->cart_added_on               = $productData->product_name;
+                $cartModel->cart_user_id                = Yii::$app->user->id;
+                $cartModel->cart_product_category_name  = $productData->productCategory->category_name;;
+                $cartModel->cart_product_id             = $productData->id;
+                $cartModel->cart_product_code           = $productData->product_code;
+                $cartModel->cart_product_seo            = $productData->product_seo;
+                $cartModel->cart_product_owner_id       = $productData->product_owner_id;
+                $cartModel->cart_product_price          = $productData->product_sale_price;
+                $cartModel->cart_product_material       = $productData->product_material;
+                $cartModel->cart_product_color = $productData->product_color;
+                $cartModel->cart_product_height         = $productData->product_height;
+                $cartModel->cart_product_length         = $productData->product_length;
+                $cartModel->cart_product_breadth        = $productData->product_breadth;
+                $cartModel->cart_product_weight         = $productData->product_weight;
+                $cartModel->cart_product_short_description = $productData->product_short_description;
+                $cartModel->cart_product_long_description  = $productData->product_long_description;
                 
-                print_r($productData);
-                exit;
-            }*/
+                $cartModel->cart_product_quantity       = 1;
+                //$cartModel->product_available_status    = $productData->product_name;
+                $cartModel->cart_added_on               = Common::mysqlDateTime();
+                
+                if($cartModel->save()){
+                    return $this->_returnResult($data, 601, 1, 0);
+                }else{
+                    return $this->_returnResult($data, 602, 0, 1);
+                }
+            }else{
+                return $this->_returnResult($data, 602, 0, 1);
+            }
             
-            $data['productId']  = $productId;
-            $data['userId']     = $userId;
-            return $this->_returnResult($data, 601, 1, 0);
         }else{
             return $this->_returnResult($data, 600, 0, 1);
         }

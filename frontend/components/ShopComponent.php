@@ -16,6 +16,7 @@ use frontend\models\ProductImage;
 use frontend\models\ProductAddress; 
 use backend\models\Category;
 use frontend\models\Shop; 
+use frontend\models\Cart; 
 
 class ShopComponent extends Component {
 
@@ -33,6 +34,15 @@ class ShopComponent extends Component {
     public static function getProductsCountByCategory($categoryId){
         $products   = Shop::getProductsByCategoryId($categoryId);
         return ($products) ? count($products) : 0;
+    }
+    
+    /**
+     * This method handles to get CART products count by userid
+     * **/
+    public static function getCartCount($userId){
+        $cartCount 	= Cart::find()->where(['cart_user_id'=>$userId])->count();
+        //return ($cartCount) ? $cartCount : FALSE;
+        return $cartCount;
     }
 
 } // End of class

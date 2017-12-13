@@ -55,7 +55,7 @@ use frontend\widgets\Banner;
         ?>
 
     </head>
-    <body class="body-wrapper version3">
+    <body class="body-wrapper">
         <?php $this->beginBody() ?>
         <div class="alert-top alert" style="display: none;">
             <!--<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>-->
@@ -103,22 +103,16 @@ use frontend\widgets\Banner;
                             </div>
                             <div class="col-xs-6">
                                 <?php
-                                echo Breadcrumbs::widget([
+                                /*echo Breadcrumbs::widget([
                                     'options' => ['class' => 'breadcrumb pull-right'],
                                     'tag' => 'ol',
                                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-                                ]);
+                                ]);*/
                                 ?>
-                                <!--<ol class="breadcrumb pull-right">
-                                        <li>
-                                                <a href="index.html">Home</a>
-                                        </li>
-                                        <li class="active">log in</li>
-                                </ol>-->
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> 
             <?php } ?>
             <?php if ($isHome) { ?>
                 <!-- BANNER -->

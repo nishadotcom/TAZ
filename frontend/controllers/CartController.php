@@ -33,8 +33,8 @@ class CartController extends Controller
      * Lists all Cart models.
      * @return mixed
      */
-    public function actionIndex()
-    {
+    public function actionIndex() {
+        $this->layout = 'cart';
         $searchModel = new CartSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
