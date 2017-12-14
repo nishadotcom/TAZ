@@ -48,7 +48,7 @@ $action = $controller->action->id;
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>">MY ACCOUNT</a></li>
-                                <li><a href="<?= Yii::$app->homeUrl.'cart'; ?>">CART (<?= $cartCount; ?>)</a></li>
+                                <li><a href="<?= Yii::$app->homeUrl.'cart'; ?>">CART (<span id="cartCount"><?= $cartCount; ?></span>)</a></li>
                                 <li><a href="#">ORDERS</a></li>
                             </ul>
                         </li>

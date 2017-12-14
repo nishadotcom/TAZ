@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use frontend\models\Cart;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\CartSearch */
@@ -9,6 +10,8 @@ use yii\grid\GridView;
 
 $this->title = 'Cart';
 $this->params['breadcrumbs'][] = $this->title;
+$pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
+$prdNoImg     = 'noImage.jpg';
 ?>
 
 <section class="mainContent clearfix cartListWrapper">
@@ -18,39 +21,54 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="cartListInner">
                     <form action="#">
                         <div class="table-responsive">
-                              <?= GridView::widget([
-  'dataProvider' => $dataProvider,
-  'filterModel' => $searchModel,
-  'columns' => [
-  ['class' => 'yii\grid\SerialColumn'],
-
-  //'id',
-  //'cart_user_id',
-  //'cart_product_category_name',
-  //'cart_product_subcategory_NAME',
-  //'cart_product_id',
-  // 'cart_product_code:ntext',
-   'cart_product_name:ntext',
-  // 'cart_product_seo:ntext',
-  // 'cart_product_owner_id',
-   'cart_product_price',
-  // 'cart_product_material',
-  // 'cart_product_color',
-  // 'cart_product_dimension_type',
-  // 'cart_product_height',
-  // 'cart_product_length',
-  // 'cart_product_breadth',
-  // 'cart_product_weight',
-  // 'cart_product_short_description:ntext',
-  // 'cart_product_long_description:ntext',
-  // 'cart_product_discount',
-   'cart_product_quantity',
-  // 'product_available_status',
-  // 'cart_added_on',
-
-  ['class' => 'yii\grid\ActionColumn'],
-  ],
-  ]); ?>
+                            <?=
+                            GridView::widget([
+                                'dataProvider' => $dataProvider,
+                                //'filterModel' => $searchModel,
+                                'columns' => [
+                                    //['class' => 'yii\grid\DataColumn'],
+                                    [
+                                        'attribute' => 'cartDelete',
+                                        'label' => ''
+                                    ],
+                                    [
+                                        'attribute' => 'cart_product_image',
+                                        'label' => '',
+                                        'format' => 'image',
+                                        'contentOptions' => ['class'=>'col-xs-2'],
+                                        'content' => function($data) use ($pathPrdImg){
+                                            //return $pathPrdImg.$data->cart_product_code.'/'.$data->cart_product_image;
+                                            
+                                            return Html::img($pathPrdImg.$data->cart_product_code.'/'.$data->cart_product_image, ['width' => '70px']);
+                                        }
+                                    ],
+                                    //'id',
+                                    //'cart_user_id',
+                                    //'cart_product_category_name',
+                                    //'cart_product_subcategory_NAME',
+                                    //'cart_product_id',
+                                    // 'cart_product_code:ntext',
+                                    'cart_product_name:ntext',
+                                    // 'cart_product_seo:ntext',
+                                    // 'cart_product_owner_id',
+                                    'cart_product_price',
+                                    // 'cart_product_material',
+                                    // 'cart_product_color',
+                                    // 'cart_product_dimension_type',
+                                    // 'cart_product_height',
+                                    // 'cart_product_length',
+                                    // 'cart_product_breadth',
+                                    // 'cart_product_weight',
+                                    // 'cart_product_short_description:ntext',
+                                    // 'cart_product_long_description:ntext',
+                                    // 'cart_product_discount',
+                                    'cart_product_quantity',
+                                // 'product_available_status',
+                                // 'cart_added_on',
+                                //['class' => 'yii\grid\ActionColumn'],
+                                ],
+                            ]);
+                            ?>
                             <!--<table class="table">
                                 <thead>
                                     <tr>
@@ -95,19 +113,19 @@ $this->params['breadcrumbs'][] = $this->title;
                                 </tbody>
                             </table>-->
                         </div>
-                        <div class="updateArea">
+                        <!--<div class="updateArea">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="I have a discount coupon" aria-describedby="basic-addon2">
                                 <a href="#" class="btn input-group-addon" id="basic-addon2">apply coupon</a>
                             </div>
                             <a href="#" class="btn">update cart</a>
-                        </div>
+                        </div>-->
                         <div class="row totalAmountArea">
                             <div class="col-sm-4 col-sm-offset-8 col-xs-12">
                                 <ul class="list-unstyled">
-                                    <li>Sub Total <span>$ 792.00</span></li>
-                                    <li>UK Vat <span>$ 18.00</span></li>
-                                    <li>Grand Total <span class="grandTotal">$ 810.00</span></li>
+                                    <!--<li>Sub Total <span>$ 792.00</span></li>
+                                    <li>UK Vat <span>$ 18.00</span></li>-->
+                                    <li>Grand Total <span class="grandTotal">$ <?php echo Cart::getCartTotal($dataProvider->models, 'cart_product_price') ?></span></li>
                                 </ul>
                             </div>
                         </div>

@@ -74,12 +74,13 @@ class ShoprestController extends ActiveController {
                 $cartModel->cart_product_weight         = $productData->product_weight;
                 $cartModel->cart_product_short_description = $productData->product_short_description;
                 $cartModel->cart_product_long_description  = $productData->product_long_description;
-                
+                $cartModel->cart_product_image = (isset($productData->productImages[0])) ? $productData->productImages[0]->cover_photo : '';
                 $cartModel->cart_product_quantity       = 1;
                 //$cartModel->product_available_status    = $productData->product_name;
                 $cartModel->cart_added_on               = Common::mysqlDateTime();
                 
                 if($cartModel->save()){
+                    $data['cartCount'] = Cart::getCount(); 
                     return $this->_returnResult($data, 601, 1, 0);
                 }else{
                     return $this->_returnResult($data, 602, 0, 1);

@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
             ajaxCall('POST', url, ajaxData, this); // AJAX Call
         } else {
             console.log(userLoggedin);
-            alert('Not Allowed');
+            alert('Not Allowed. Please login');
             return false;
         }
     });
@@ -28,10 +28,11 @@ function ajaxCall(method, url, ajaxData, ref) {
         url: url,
         data: ajaxData,
         //dataType: 'json',
-        success: function (response) {
+        success: function (response) { 
+            $('#cartCount').html(response.data.cartCount);
             showAlert(response.msg); // Show alert message
             $(ref).prop('disabled', true); // Disable the CART button for the current
-            return response;
+            //return response;
         },
         error: function (xhr) {
             alert('error')

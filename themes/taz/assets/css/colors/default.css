@@ -124,6 +124,7 @@
 .dropGeneral.colorBg .sbHolder,
 .bannerV2 .fullscreenbanner-container .fullscreenbanner-bg {
   background-color: #47bac1;
+  color: #fff;
 }
 
 .navbar-default .navbar-collapse li a:hover,

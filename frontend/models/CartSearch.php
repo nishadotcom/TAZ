@@ -42,7 +42,7 @@ class CartSearch extends Cart
      */
     public function search($params)
     {
-        $query = Cart::find();
+        $query = Cart::find()->where(['cart_user_id'=>Yii::$app->user->id]);
 
         // add conditions that should always apply here
 
