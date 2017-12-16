@@ -59,7 +59,7 @@ class ShoprestController extends ActiveController {
                 $productData    = $product[0];
                 $cartModel      = new Cart();
                 $cartModel->cart_product_name           = $productData->product_name;
-                $cartModel->cart_user_id                = Yii::$app->user->id;
+                $cartModel->cart_user_id                = $userId;
                 $cartModel->cart_product_category_name  = $productData->productCategory->category_name;;
                 $cartModel->cart_product_id             = $productData->id;
                 $cartModel->cart_product_code           = $productData->product_code;
