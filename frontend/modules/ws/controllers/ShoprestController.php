@@ -50,7 +50,7 @@ class ShoprestController extends ActiveController {
     public function actionAddtoCart(){
         $productId  = (isset($_POST['productId'])) ? $_POST['productId'] : '';
         $userId     = (isset($_POST['userId'])) ? $_POST['userId'] : '';
-        $data       = '';
+        $data       = [];
         if($productId && $userId){
             // Get Product Details
             $product            = Shop::getProductById($productId);
