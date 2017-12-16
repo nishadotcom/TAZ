@@ -11,7 +11,27 @@ jQuery(document).ready(function () {
                 'productId': productId,
                 'userId' : userId
             };
-            ajaxCall('POST', url, ajaxData, this); // AJAX Call
+            //ajaxCall('POST', url, ajaxData, this); // AJAX Call
+            var ref = this;
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: ajaxData,
+                //dataType: 'json',
+                success: function (response) { 
+                    $('#cartCount').html(response.data.cartCount);
+                    showAlert(response.msg); // Show alert message
+                    $(ref).prop('disabled', true); // Disable the CART button for the current
+                    //return response;
+                },
+                error: function (xhr) {
+                    alert('Could not add to cart. Please try again');
+                    console.log(xhr.statusText);
+                    //return xhr.statusText;
+                    //xhr.status = 404
+                    //xhr.statusText = error
+                }
+            });
         } else {
             console.log(userLoggedin);
             alert('Not Allowed. Please login');
@@ -22,7 +42,7 @@ jQuery(document).ready(function () {
 
 
 // AJAX Call Method
-function ajaxCall(method, url, ajaxData, ref) {
+/*function ajaxCall(method, url, ajaxData, ref) {
     $.ajax({
         type: method,
         url: url,
@@ -41,4 +61,4 @@ function ajaxCall(method, url, ajaxData, ref) {
             //xhr.statusText = error
         }
     });
-}
+}*/

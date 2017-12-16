@@ -103,5 +103,13 @@ class Cart extends \yii\db\ActiveRecord {
         $data = Cart::find()->where(['cart_user_id'=>Yii::$app->user->id])->count();
         return $data;
     }
-
-}
+    
+    public static function getUserCart(){
+        $data = [];
+        if(!Yii::$app->user->isGuest){
+            $data = Cart::find()->select(['cart_product_id'])->where(['cart_user_id'=>Yii::$app->user->id])->asArray()->all();
+        }
+        return $data;
+    }
+    
+}// End of class

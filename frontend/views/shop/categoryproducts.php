@@ -1,8 +1,8 @@
 <?php
-
 $this->title = ($categoryData) ? $categoryData->category_name.' Products' :  'Category Products'; 
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg     = 'noImage.jpg';
+$cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
 ?>
 
 <div class="row">
@@ -90,8 +90,18 @@ $prdNoImg     = 'noImage.jpg';
                             <button type="button" class="btn btn-default userFavorite" data-favorite="1" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                                 <i class="fa fa-heart" aria-hidden="true"></i>
                             </button>
-                            <button type="button" class="btn btn-default add_to_cart" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
-                              <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                            <?php 
+                            if(in_array($categoryProduct->id, $cartProducts)){
+                                $cartDisabled = 'disabled';
+                                $cartClass = 'cartYes';
+                            }else{
+                                $cartDisabled = '';
+                                $cartClass = '';
+                            } 
+                            ?>
+                            <button type="button" class="btn btn-default add_to_cart <?= $cartClass; ?>" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" <?= $cartDisabled; ?>>
+                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </button>
                           </div>
                         </div>
                       </div>

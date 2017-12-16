@@ -28,6 +28,10 @@ $this->title = 'My Account';
                   ?>
 					<!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Address</a></li>-->
                 </ul>
+                
+                <?php 
+                if(Yii::$app->user->identity->user_type == 'Buyer'){
+                ?>
                 <div class="orderBox">
                   <h4>Unpaid Orders</h4>
                   <div class="table-responsive">
@@ -53,6 +57,7 @@ $this->title = 'My Account';
                     </table>
                   </div>
                 </div>
+                <?php } ?>
                 <!--<div class="orderBox">
                   <h4>Pending Warranty Claims</h4>
                   <div class="table-responsive">

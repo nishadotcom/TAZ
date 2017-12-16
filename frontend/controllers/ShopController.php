@@ -13,6 +13,7 @@ use frontend\models\ProductImage;
 use frontend\models\ProductAddress;
 use backend\models\Category;
 use frontend\models\Shop;
+use frontend\models\Cart;
 
 /**
  * Shop controller
@@ -49,6 +50,7 @@ class ShopController extends Controller {
         return $this->render('categoryproducts', [
                     'categoryData' => Category::findOne($id),
                     'categoryProducts' => $products,
+                    'cartData' => Cart::getUserCart(),
         ]);
     }
 
