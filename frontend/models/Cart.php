@@ -99,7 +99,7 @@ class Cart extends \yii\db\ActiveRecord {
         return $total;
     }
 
-    public function getCount(){
+    public static function getCount(){
         $data = Cart::find()->where(['cart_user_id'=>Yii::$app->user->id])->count();
         return $data;
     }
