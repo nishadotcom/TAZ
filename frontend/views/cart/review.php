@@ -191,7 +191,7 @@ $prdNoImg     = 'noImage.jpg';
                     <div class="well well-lg clearfix">
                       <ul class="pager">
                       <li class="previous"><a href="" onclick="window.history.go(-1); return false;">Back</a></li>
-                        <li class="next"><a href="<?= Yii::$app->homeUrl . 'cart/review'; ?>">Confirm</a></li>
+                        <li class="next"><a href="<?= Yii::$app->homeUrl . 'cart/payment-success'; ?>">Confirm</a></li>
                       </ul>
                     </div>
                   </div>

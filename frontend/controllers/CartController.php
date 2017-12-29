@@ -53,6 +53,11 @@ class CartController extends Controller
         $this->layout = 'cart';
         return $this->render('review');
     }
+    
+    public function actionPaymentSuccess(){
+        $this->layout = 'cart';
+        return $this->render('paymentSuccess');
+    }
 
     /**
      * Displays a single Cart model.
