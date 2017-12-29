@@ -38,7 +38,37 @@ jQuery(document).ready(function () {
             return false;
         }
     });
-});
+    
+    // REMOVE FROM CART / CART PAGE
+    $(document).on('click', '.remove-cart-item', function(){
+    //$('.remove-cart-item').click(function(){
+        var cartId = $(this).attr('data-cartid');
+        var url = baseURL + 'ws/shoprest/remove-cart-item';
+        var ajaxData = {
+            'cartId': cartId
+        };
+        $.ajax({
+                type: 'POST',
+                url: url,
+                data: ajaxData,
+                //dataType: 'json',
+                success: function (response) { 
+                    console.log(response);
+                    $('.cart-content').html(response.data.cartItems);
+                    $('.grandTotal').html(response.data.cartTotal);
+                    showAlert(response.msg); // Show alert message
+                },
+                error: function (xhr) {
+                    alert('Could not remove from cart. Please try again');
+                    console.log(xhr.statusText);
+                    //return xhr.statusText;
+                    //xhr.status = 404
+                    //xhr.statusText = error
+                }
+            });
+    });
+    
+}); // END OF READY FUNCTION
 
 
 // AJAX Call Method

@@ -48,8 +48,14 @@ $action = $controller->action->id;
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>">MY ACCOUNT</a></li>
-                                <li><a href="<?= Yii::$app->homeUrl.'cart'; ?>">CART (<span id="cartCount"><?= $cartCount; ?></span>)</a></li>
-                                <li><a href="#">ORDERS</a></li>
+                                <?php if(Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_SELLER']){ ?>
+                                    <li><a href="#">MY SALES</a></li>
+                                <?php }else{
+                                    ?>
+                                    <li><a href="<?= Yii::$app->homeUrl.'cart'; ?>">CART (<span id="cartCount"><?= $cartCount; ?></span>)</a></li>
+                                    <li><a href="#">MY ORDERS</a></li>
+                                    <?php
+                                } ?>
                             </ul>
                         </li>
                     <?php } ?>

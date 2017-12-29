@@ -18,6 +18,7 @@ $this->title = 'My Account';
                 <h3>Wellcome <span><?php echo $user['firstname'].'&nbsp;'.$user['lastname'];?></span></h3>
                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                <?php /* ?>
                 <ul class="list-inline text-center">
                   <li><a href="<?php echo Yii::$app->homeUrl.'profile-update'; ?>" class="btn btn-default btn-lg"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
                   <li><a href="<?php echo Yii::$app->homeUrl.'user-address'; ?>" class="btn btn-default btn-lg"><i class="fa fa-map-marker" aria-hidden="true"></i>My Address</a></li>
@@ -27,7 +28,7 @@ $this->title = 'My Account';
                   echo (Yii::$app->user->identity->user_type == 'Seller') ? '<li><a href="' . Yii::$app->homeUrl . 'seller/my-products' . '" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>Products</a></li>' : '';
                   ?>
 					<!--<li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Address</a></li>-->
-                </ul>
+                </ul> <?php */ ?>
                 
                 <?php 
                 if(Yii::$app->user->identity->user_type == 'Buyer'){
@@ -57,7 +58,9 @@ $this->title = 'My Account';
                     </table>
                   </div>
                 </div>
-                <?php } ?>
+                <?php }elseif(Yii::$app->user->identity->user_type == 'Seller'){
+                    echo '<ul class="list-inline text-center"><li>Your dashboard is under construction</li></ul>';
+                } ?>
                 <!--<div class="orderBox">
                   <h4>Pending Warranty Claims</h4>
                   <div class="table-responsive">

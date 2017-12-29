@@ -8,7 +8,7 @@ use frontend\widgets\ProfileMenu;
 /* @var $searchModel app\models\ProductSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Products';
+$this->title = 'My Products';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'product_name:ntext',
                             // 'product_owner_id',
                             'product_price',
-                            'product_sale_price',
+                            //'product_sale_price',
                             // 'product_retail_price',
                             // 'product_material',
                             // 'product_color',

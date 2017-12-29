@@ -7,4 +7,7 @@ return [
     // STATUS
     'STATUS_ACTIVE' => 'Active',
     'STATUS_SUSPENDED' => 'Suspended',
+    // USER ROLE
+    'ROLE_SELLER' => 'Seller',
+    'ROLE_BUYER' => 'Buyer',
 ];

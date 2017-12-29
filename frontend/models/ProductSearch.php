@@ -42,7 +42,7 @@ class ProductSearch extends Product
      */
     public function search($params)
     {
-        $query = Product::find();
+        $query = Product::find()->where(['product_owner_id'=>Yii::$app->user->id]);
 
         // add conditions that should always apply here
 

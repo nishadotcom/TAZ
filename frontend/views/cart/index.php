@@ -20,26 +20,32 @@ $prdNoImg     = 'noImage.jpg';
             <div class="col-xs-12">
                 <div class="cartListInner">
                     <form action="#">
-                        <div class="table-responsive">
+                        <div class="table-responsive cart-content">
                             <?=
                             GridView::widget([
                                 'dataProvider' => $dataProvider,
                                 //'filterModel' => $searchModel,
                                 'columns' => [
                                     //['class' => 'yii\grid\DataColumn'],
-                                    [
+                                    /*[
                                         'attribute' => 'cartDelete',
                                         'label' => ''
-                                    ],
+                                    ],*/
                                     [
                                         'attribute' => 'cart_product_image',
                                         'label' => '',
                                         'format' => 'image',
                                         'contentOptions' => ['class'=>'col-xs-2'],
-                                        'content' => function($data) use ($pathPrdImg){
+                                        'content' => function($data) use ($pathPrdImg, $prdNoImg){
+                                            $image = ($data->cart_product_image) ? $pathPrdImg.$data->cart_product_code.'/'.$data->cart_product_image : $pathPrdImg.$prdNoImg;
                                             //return $pathPrdImg.$data->cart_product_code.'/'.$data->cart_product_image;
-                                            
-                                            return Html::img($pathPrdImg.$data->cart_product_code.'/'.$data->cart_product_image, ['width' => '70px']);
+                                            $im = '<button type="button" class="close remove-cart-item" data-dismiss="alert" aria-label="Close" title="" data-cartid="'.$data->id.'">
+                                                    <span aria-hidden="true">×</span></button>
+                                                    <span class="cartImage">'.
+                                                        Html::img($image, ['width' => '70px'])
+                                                    .'</span>';
+                                            return $im;
+                                            //return Html::img($pathPrdImg.$data->cart_product_code.'/'.$data->cart_product_image, ['width' => '70px']);
                                         }
                                     ],
                                     //'id',
@@ -125,7 +131,7 @@ $prdNoImg     = 'noImage.jpg';
                                 <ul class="list-unstyled">
                                     <!--<li>Sub Total <span>$ 792.00</span></li>
                                     <li>UK Vat <span>$ 18.00</span></li>-->
-                                    <li>Grand Total <span class="grandTotal">$ <?php echo Cart::getCartTotal($dataProvider->models, 'cart_product_price') ?></span></li>
+                                    <li>Grand Total <span class="grandTotal"><?php echo Cart::getCartTotal($dataProvider->models, 'cart_product_price') ?></span></li>
                                 </ul>
                             </div>
                         </div>

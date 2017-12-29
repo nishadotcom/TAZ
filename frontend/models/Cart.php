@@ -96,7 +96,7 @@ class Cart extends \yii\db\ActiveRecord {
         foreach ($provider as $item) {
             $total += $item[$columnName];
         }
-        return $total;
+        return '$ '.$total;
     }
 
     public static function getCount(){
@@ -110,6 +110,20 @@ class Cart extends \yii\db\ActiveRecord {
             $data = Cart::find()->select(['cart_product_id'])->where(['cart_user_id'=>Yii::$app->user->id])->asArray()->all();
         }
         return $data;
+    }
+    
+    public static function removeCartItem($id){
+        $cart   = Cart::findOne($id);
+        $result = $cart->delete();
+        $data   = Cart::getUserCart();
+        $return['cartItems'] = ($data) ? $data : [];
+        if($result){
+            $return['result'] = TRUE;
+        }else{
+            $return['result'] = FALSE;
+        }
+        
+        return $return;
     }
     
 }// End of class

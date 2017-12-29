@@ -10,6 +10,7 @@ use common\models\LoginForm;
 use common\components\Common;
 use yii\helpers\Json;
 use frontend\models\Cart;
+use frontend\models\CartSearch;
 use frontend\models\Shop;
 
 class ShoprestController extends ActiveController {
@@ -93,6 +94,31 @@ class ShoprestController extends ActiveController {
             return $this->_returnResult($data, 600, 0, 1);
         }
     }
+    
+    public function actionRemoveCartItem(){
+        $data = [];
+        $cartId  = (isset($_POST['cartId'])) ? $_POST['cartId'] : '';
+        if($cartId){
+            $response = Cart::removeCartItem($cartId);
+            if($response['result']){
+                //$data['cartItems'] = $response['cartItems'];
+                $searchModel = new CartSearch();
+                $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+                $data['cartItems'] = $this->renderPartial('cart', [
+                    'searchModel' => $searchModel,
+                    'dataProvider' => $dataProvider,
+                ]);
+                $data['cartTotal'] = Cart::getCartTotal($dataProvider->models, 'cart_product_price');
+                
+                return $this->_returnResult($data, 604, 1, 0);
+            }else{
+                return $this->_returnResult($data, 602, 0, 1);
+            }
+        }else{
+            return $this->_returnResult($data, 602, 0, 1);
+        }
+    }
 
     /**
      * This method handles login process
@@ -148,7 +174,9 @@ class ShoprestController extends ActiveController {
             510 => 'No nominated verifiers found.',
             600 => 'Product ID & User ID cannot be blank',
             601 => 'Added to cart successfully',
-            602 => 'Could not add to cart. Please try again'
+            602 => 'Could not add to cart. Please try again',
+            603 => 'Could not remove from cart. Please try again',
+            604 => 'Item has been removed from cart successfully',
         ];
 
         return (isset($codes[$status])) ? $codes[$status] : '';
