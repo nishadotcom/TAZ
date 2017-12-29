@@ -94,7 +94,7 @@ class ProductController extends Controller
 			$model->product_code 		= Common::generateRandomStr('PRD');
             $model->product_seo         = 'test-seo';
 			$model->product_owner_id	= Yii::$app->user->id;
-			$model->product_sale_price	= ($postData['Product']['product_price']*20)/100+$postData['Product']['product_price'];
+			$model->product_sale_price	= ($postData['Product']['product_price']*22)/100+$postData['Product']['product_price'];
 			$model->created_on 			= Common::mysqlDateTime();
 			if($model->save()){
                 // add product address

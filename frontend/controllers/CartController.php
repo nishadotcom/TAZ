@@ -43,6 +43,16 @@ class CartController extends Controller
             'dataProvider' => $dataProvider,
         ]);
     }
+    
+    public function actionStep1(){
+        $this->layout = 'cart';
+        return $this->render('step1');
+    }
+    
+    public function actionReview(){
+        $this->layout = 'cart';
+        return $this->render('review');
+    }
 
     /**
      * Displays a single Cart model.
