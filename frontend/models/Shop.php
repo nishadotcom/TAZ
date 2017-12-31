@@ -28,7 +28,7 @@ class Shop extends \yii\db\ActiveRecord
     }
 
     public static function getProductsByCategoryId($categoryId){
-		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->all();
+		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
 		return $products;
 	}
 

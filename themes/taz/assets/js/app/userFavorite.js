@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
         var productId = $(this).attr('data-product-id');
         var userId = $(this).attr('data-user-id');
         if (userLoggedin) {
-            $("p").toggleClass("main");
+            $(this).toggleClass("userFavorited");
             /*var url = baseURL + 'ws/shoprest/user-favorite';
             var ajaxData = {
                 'productId': productId,

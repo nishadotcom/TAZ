@@ -17,6 +17,7 @@ use frontend\models\ProductAddress;
 use backend\models\Category;
 use frontend\models\Shop; 
 use frontend\models\Cart; 
+use frontend\models\UserFavorite; 
 
 class ShopComponent extends Component {
 
@@ -43,6 +44,11 @@ class ShopComponent extends Component {
         $cartCount 	= Cart::find()->where(['cart_user_id'=>$userId])->count();
         //return ($cartCount) ? $cartCount : FALSE;
         return $cartCount;
+    }
+    
+    public static function getProductFavoriteCount($productId){
+        $favoriteCount 	= UserFavorite::find()->where(['product_id'=>$productId])->count();
+        return ($favoriteCount) ? $favoriteCount : '';
     }
 
 } // End of class

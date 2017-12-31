@@ -165,4 +165,9 @@ class Product extends \yii\db\ActiveRecord
     {
         return $this->hasMany(ProductTag::className(), ['product_id' => 'id']);
     }
+    
+    public function getUserFavorite()
+    {
+        return $this->hasMany(UserFavorite::className(), ['product_id' => 'id']);
+    }
 }

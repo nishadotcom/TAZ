@@ -10,16 +10,20 @@
 	margin-top: 30px;
 }
 
-.userFavoriteYes{
+.userFavorited{
     background-color: #47bac1;
 }
 
-userFavoriteNo{
-    background-color: inherit;
+.userFavorited i {
+    color: #fff !important;
 }
 
 .cartYes{
     background-color: #47bac1;
+}
+
+.cartYes i {
+    color: #fff !important;
 }
 
 .imageBox .productImage img{
