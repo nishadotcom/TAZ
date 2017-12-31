@@ -21,3 +21,7 @@ userFavoriteNo{
 .cartYes{
     background-color: #47bac1;
 }
+
+.imageBox .productImage img{
+    min-height: 283px;
+}
