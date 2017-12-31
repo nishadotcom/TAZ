@@ -4101,16 +4101,16 @@ body.bodyColor.container {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.singleProduct .media .media-body .btn-area .btn-primary{
+.singleProduct .media .media-body .btn-area .btn-primary, .singleProduct .media .media-body .btn-area .btn-success{
   width: 155px;
   height: 45px;
   border-radius: 0;
   border: none;
-  background-color: #47bac1;
+  /*background-color: #47bac1;*/
   padding: 0 20px;
   /*line-height: 55px;*/
   position: relative;
-  text-align: left;
+  text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -4118,7 +4118,7 @@ body.bodyColor.container {
   transition: all 0.3s ease-in-out;
 }
 
-.singleProduct .media .media-body .btn-area .buy{
+/*.singleProduct .media .media-body .btn-area .buy{
   color: #fff;
   text-align: center;
   width: auto;
@@ -4128,16 +4128,16 @@ body.bodyColor.container {
   background-color: #47c167;
   padding: 0 20px;
   /*line-height: 55px;*/
-  position: relative;
+  /*position: relative;
   text-align: left;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;  
-}
+}*/
 
-.singleProduct .media .media-body .btn-area .btn-primary i{
+.singleProduct .media .media-body .btn-area .btn-primary i, .singleProduct .media .media-body .btn-area .btn-success i{
   position: absolute;
   right: 20px;
   top: 12px;
@@ -5073,7 +5073,7 @@ body.bodyColor.container {
   border-bottom: 1px solid #888888;
 }
 .singleProduct .media .media-body .tabArea .tab-content {
-  padding: 25px 0;
+  padding: 8px 0;
   color: #b4b4b4;
 }
 .singleProduct .media .media-body .tabArea .tab-content p {

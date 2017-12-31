@@ -96,7 +96,7 @@ class Cart extends \yii\db\ActiveRecord {
         foreach ($provider as $item) {
             $total += $item[$columnName];
         }
-        return '$ '.$total;
+        return '&#x20B9; '.$total;
     }
 
     public static function getCount(){

@@ -25,3 +25,7 @@ userFavoriteNo{
 .imageBox .productImage img{
     min-height: 283px;
 }
+
+.rating{
+    cursor: pointer;
+}

@@ -33,7 +33,7 @@ $prdNoImg     = 'noImage.jpg';
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>"><?= $psaProduct->product_name; ?></a></h3>
-                          <span class="offer-price"><?= $psaProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= $psaProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
@@ -80,7 +80,7 @@ $prdNoImg     = 'noImage.jpg';
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>"><?= $slpProduct->product_name; ?></a></h3>
-                          <span class="offer-price"><?= $slpProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= $slpProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
@@ -125,7 +125,7 @@ $prdNoImg     = 'noImage.jpg';
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>"><?= $otlProduct->product_name; ?></a></h3>
-                          <span class="offer-price"><?= $otlProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= $otlProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
@@ -170,7 +170,7 @@ $prdNoImg     = 'noImage.jpg';
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>"><?= $frcProduct->product_name; ?></a></h3>
-                          <span class="offer-price"><?= $frcProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= $frcProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <a href="#" class="btn btn-border">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>

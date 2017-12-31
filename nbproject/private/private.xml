@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/models/Cart.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/CartController.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/step1.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/js/app/cart.js</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/modules/ws/views/shoprest/cart.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/review.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/modules/ws/controllers/ShoprestController.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/widgets/views/profileMenu.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/paymentSuccess.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/common/config/params.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/index.php</file>
+        </group>
+    </open-files>
+</project-private>

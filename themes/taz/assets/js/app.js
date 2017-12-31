@@ -12,4 +12,19 @@ jQuery(document).ready(function(){
     setTimeout(function () {
         $(".alert-top").slideUp(600);
     }, 1000);
+    
+    // Product ZOOM Plugin
+    $('#product-image').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+        /*constrainType:"height", 
+        constrainSize:274, 
+        zoomType: "lens", 
+        containLensZoom: true, 
+        //gallery:'gallery_01', 
+        cursor: 'pointer', 
+        galleryActiveClass: "active"*/
+    });
 });

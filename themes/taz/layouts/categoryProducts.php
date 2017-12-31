@@ -148,6 +148,7 @@ use frontend\widgets\Banner;
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app/cart.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app/userFavorite.js"></script>
+        <script src='<?php echo $this->theme->baseUrl; ?>/assets/plugins/elevatezoom/jquery.elevatezoom.js'></script>
 
         <?php
         if (class_exists('yii\debug\Module')) {
