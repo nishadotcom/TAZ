@@ -14,18 +14,18 @@ jQuery(document).ready(function(){
     }, 1000);
     
     // Product ZOOM Plugin
-    $('#product-image').elevateZoom({
+    /*$('#product-image').elevateZoom({
         zoomType: "inner",
         cursor: "crosshair",
         zoomWindowFadeIn: 500,
         zoomWindowFadeOut: 750
-        /*constrainType:"height", 
+        constrainType:"height", 
         constrainSize:274, 
         zoomType: "lens", 
         containLensZoom: true, 
         //gallery:'gallery_01', 
         cursor: 'pointer', 
-        galleryActiveClass: "active"*/
-    });
+        galleryActiveClass: "active"
+    });*/
    
 });
