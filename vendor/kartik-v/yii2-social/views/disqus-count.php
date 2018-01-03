@@ -2,7 +2,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2017
  * @package yii2-social
- * @version 1.3.3
+ * @version 1.3.4
  */
 use yii\helpers\Html;
 
@@ -22,7 +22,7 @@ use yii\helpers\Html;
             var s = document.createElement('script');
             s.async = true;
             s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+			s.src = 'https://<?= $shortname ?>.disqus.com/count.js';
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
     </script>

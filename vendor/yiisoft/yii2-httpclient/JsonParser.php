@@ -7,7 +7,7 @@
 
 namespace yii\httpclient;
 
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\helpers\Json;
 
 /**
@@ -16,10 +16,10 @@ use yii\helpers\Json;
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @since 2.0
  */
-class JsonParser extends Object implements ParserInterface
+class JsonParser extends BaseObject implements ParserInterface
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function parse(Response $response)
     {

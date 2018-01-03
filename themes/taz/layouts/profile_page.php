@@ -37,6 +37,7 @@ use frontend\widgets\Banner;
     <!-- CUSTOM CSS -->
     <link href="<?php echo $this->theme->baseUrl; ?>/assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $this->theme->baseUrl; ?>/assets/css/colors/default.css" id="option_color">
+    <link rel="stylesheet" href="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap-tour/css/bootstrap-tour-standalone.css" id="option_color">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -123,7 +124,35 @@ use frontend\widgets\Banner;
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/countdown/jquery.syotimer.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/custom.js"></script>
+    <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap-tour/js/bootstrap-tour.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
 
+        // Instance the tour
+        var tour = new Tour({
+          //template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default' data-role='prev'>« Prev</button><span data-role='separator'>|</span><button class='btn btn-default' data-role='next'>Next »</button></div><button class='btn btn-default' data-role='end'>End</button></div>",
+          steps: [
+          {
+            element: "#testTour",
+            title: "Welcome Header",
+            content: "Content of my step",
+            placement: 'left'
+          },
+          {
+            element: "#orderBox",
+            title: "Order Box",
+            content: "Content of my step",
+            placement: 'left'
+          }
+        ]});
+
+        // Initialize the tour
+        tour.init();
+
+        // Start the tour
+        tour.start();
+      });
+    </script>
 
     <?php 
 	if (class_exists('yii\debug\Module')) {

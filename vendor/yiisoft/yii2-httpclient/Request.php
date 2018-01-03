@@ -7,7 +7,6 @@
 
 namespace yii\httpclient;
 
-use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\FileHelper;
 
@@ -173,7 +172,7 @@ class Request extends Message
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function setData($data)
     {
@@ -186,7 +185,7 @@ class Request extends Message
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function addData($data)
     {
@@ -402,7 +401,7 @@ class Request extends Message
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function composeHeaderLines()
     {
@@ -453,7 +452,7 @@ class Request extends Message
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function toString()
     {
@@ -473,33 +472,14 @@ class Request extends Message
 
     /**
      * @return string cookie header value.
-     * @throws InvalidConfigException on invalid cookies.
      */
     private function composeCookieHeader()
     {
         $parts = [];
         foreach ($this->getCookies() as $cookie) {
-            if (!$this->validateCookieValue($cookie->name)) {
-                throw new InvalidConfigException("Cookie name '{$cookie->name}' is invalid");
-            }
-            if (!$this->validateCookieValue($cookie->value)) {
-                throw new InvalidConfigException("Cookie '{$cookie->name}' value '{$cookie->value}' is invalid");
-            }
             $parts[] = $cookie->name . '=' . $cookie->value;
         }
         return 'Cookie: ' . implode(';', $parts);
-    }
-
-    /**
-     * Validates cookie name or value.
-     * @param string $value cookie value.
-     * @return bool whether value is valid
-     * @since 2.0.4
-     */
-    private function validateCookieValue($value)
-    {
-        // Invalid are: control characters (0-31;127), space, tab and the following: ()<>@,;:\"/?={}'
-        return !preg_match('/[\x00-\x20\x22\x28-\x29\x2c\x2f\x3a-\x40\x5c\x7b\x7d\x7f]/', $value);
     }
 
     /**

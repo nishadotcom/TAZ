@@ -22,7 +22,7 @@ use Yii;
 class CurlTransport extends Transport
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function send($request)
     {
@@ -65,7 +65,7 @@ class CurlTransport extends Transport
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function batchSend(array $requests)
     {
@@ -190,6 +190,9 @@ class CurlTransport extends Transport
             'maxRedirects' => CURLOPT_MAXREDIRS,
             'sslCapath' => CURLOPT_CAPATH,
             'sslCafile' => CURLOPT_CAINFO,
+            'sslLocalCert' => CURLOPT_SSLCERT,
+            'sslLocalPk' => CURLOPT_SSLKEY,
+            'sslPassphrase' => CURLOPT_SSLCERTPASSWD,
         ];
 
         $curlOptions = [];

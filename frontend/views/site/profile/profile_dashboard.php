@@ -1,5 +1,6 @@
 <?php
 use frontend\widgets\ProfileMenu;
+
 $this->title = 'My Account';
 
 ?>
@@ -15,7 +16,7 @@ $this->title = 'My Account';
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   <strong>Warning!</strong> You have one unpaid order. 
                 </div>-->
-                <h3>Wellcome <span><?php echo $user['firstname'].'&nbsp;'.$user['lastname'];?></span></h3>
+                <h3 id="testTour">Wellcome <span><?php echo $user['firstname'].'&nbsp;'.$user['lastname'];?></span></h3>
                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
                 <?php /* ?>
@@ -33,7 +34,7 @@ $this->title = 'My Account';
                 <?php 
                 if(Yii::$app->user->identity->user_type == 'Buyer'){
                 ?>
-                <div class="orderBox">
+                <div class="orderBox" id="orderBox">
                   <h4>Unpaid Orders</h4>
                   <div class="table-responsive">
                     <table class="table">

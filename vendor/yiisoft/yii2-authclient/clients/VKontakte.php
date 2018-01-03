@@ -7,7 +7,9 @@
 
 namespace yii\authclient\clients;
 
+use yii\authclient\InvalidResponseException;
 use yii\authclient\OAuth2;
+use yii\helpers\Json;
 
 /**
  * VKontakte allows authentication via VKontakte OAuth.
@@ -28,7 +30,7 @@ use yii\authclient\OAuth2;
  *             ],
  *         ],
  *     ]
- *     ...
+ *     // ...
  * ]
  * ```
  *
@@ -41,15 +43,15 @@ use yii\authclient\OAuth2;
 class VKontakte extends OAuth2
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $authUrl = 'https://oauth.vk.com/authorize';
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $tokenUrl = 'https://oauth.vk.com/access_token';
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $apiBaseUrl = 'https://api.vk.com/method';
     /**
@@ -69,16 +71,27 @@ class VKontakte extends OAuth2
         'timezone',
         'photo'
     ];
+    /**
+     * @var string the API version to send in the API request.
+     * @see https://vk.com/dev/versions
+     * @since 2.1.4
+     */
+    public $apiVersion = '3.0';
 
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected function initUserAttributes()
     {
         $response = $this->api('users.get.json', 'GET', [
             'fields' => implode(',', $this->attributeNames),
         ]);
+
+        if (empty($response['response'])) {
+            throw new \RuntimeException('Unable to init user attributes due to unexpected response: ' . Json::encode($response));
+        }
+
         $attributes = array_shift($response['response']);
 
         $accessToken = $this->getAccessToken();
@@ -93,18 +106,19 @@ class VKontakte extends OAuth2
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function applyAccessTokenToRequest($request, $accessToken)
     {
         $data = $request->getData();
+        $data['v'] = $this->apiVersion;
         $data['uids'] = $accessToken->getParam('user_id');
         $data['access_token'] = $accessToken->getToken();
         $request->setData($data);
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected function defaultName()
     {
@@ -112,7 +126,7 @@ class VKontakte extends OAuth2
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected function defaultTitle()
     {
@@ -120,7 +134,7 @@ class VKontakte extends OAuth2
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected function defaultNormalizeUserAttributeMap()
     {

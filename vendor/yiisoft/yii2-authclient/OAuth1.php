@@ -19,13 +19,16 @@ use yii\web\HttpException;
  *
  * ```php
  * use yii\authclient\OAuth1;
+ * use Yii;
  *
- * $oauthClient = new OAuth1();
+ * // assuming class MyAuthClient extends OAuth1
+ * $oauthClient = new MyAuthClient();
  * $requestToken = $oauthClient->fetchRequestToken(); // Get request token
  * $url = $oauthClient->buildAuthUrl($requestToken); // Get authorization URL
  * return Yii::$app->getResponse()->redirect($url); // Redirect to authorization URL
+ *
  * // After user returns at our site:
- * $accessToken = $oauthClient->fetchAccessToken($requestToken); // Upgrade to access token
+ * $accessToken = $oauthClient->fetchAccessToken(Yii::$app->request->get('oauth_token'), $requestToken); // Upgrade to access token
  * ```
  *
  * @see https://oauth.net/1/
@@ -189,7 +192,7 @@ abstract class OAuth1 extends BaseOAuth
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function createRequest()
     {
@@ -199,7 +202,7 @@ abstract class OAuth1 extends BaseOAuth
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function createApiRequest()
     {
@@ -224,7 +227,7 @@ abstract class OAuth1 extends BaseOAuth
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function applyAccessTokenToRequest($request, $accessToken)
     {
