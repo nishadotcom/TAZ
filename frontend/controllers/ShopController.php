@@ -46,7 +46,12 @@ class ShopController extends Controller {
     public function actionProducts($id) {
         $this->layout = 'categoryProducts';
         $products = Shop::getProductsByCategoryId($id);
-        $getUserFavoriteProducts = Yii::$app->ShopComponent->getUserFavoriteProducts(1);
+        if(!Yii::$app->user->isGuest){
+            $userid = Yii::$app->user->id;
+            $getUserFavoriteProducts = Yii::$app->ShopComponent->getUserFavoriteProducts($userid);
+        }else{
+            $getUserFavoriteProducts = [];
+        }
         $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavoriteProducts, 'product_id') : [];
 
         return $this->render('categoryproducts', [
