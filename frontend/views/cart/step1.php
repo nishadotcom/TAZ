@@ -8,7 +8,7 @@ use frontend\models\Cart;
 /* @var $searchModel frontend\models\CartSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Cart - BILLING / SHIPPING INFORMATION';
+$this->title = 'Cart - SHIPPING / BILLING INFORMATION';
 $this->params['breadcrumbs'][] = $this->title;
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg = 'noImage.jpg';
@@ -49,35 +49,31 @@ $prdNoImg = 'noImage.jpg';
                     <form action="" class="row" method="POST" role="form">
                         <div class="col-xs-12">
                             <div class="page-header">
-                                <h4>Billing information</h4>
+                                <h4>Shipping information</h4>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">First Name</label>
+                            <label for="">Name</label>
                             <input type="text" class="form-control" id="">
                         </div>
                         <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Last Name</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Email</label>
-                            <input type="email" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Company</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Address</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Phone</label>
+                            <label for="">Street</label>
                             <input type="text" class="form-control" id="">
                         </div>
                         <div class="form-group col-sm-6 col-xs-12">
                             <label for="">City</label>
+                            <input type="email" class="form-control" id="">
+                        </div>
+                        <div class="form-group col-sm-6 col-xs-12">
+                            <label for="">State</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group col-sm-6 col-xs-12">
+                            <label for="">Country</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group col-sm-6 col-xs-12">
+                            <label for="">Phone</label>
                             <input type="text" class="form-control" id="">
                         </div>
                         <div class="form-group col-sm-6 col-xs-12">
@@ -98,12 +94,12 @@ $prdNoImg = 'noImage.jpg';
                         </div>
                         <div class="col-xs-12">
                             <div class="page-header">
-                                <h4>Shipping information</h4>
+                                <h4>Billing information</h4>
                             </div>
                         </div>
                         <div class="col-xs-12 checkboxArea">
                             <input id="checkbox1" type="checkbox" name="checkbox" value="1" checked="checked">
-                            <label for="checkbox1"><span></span>Same as billing Information </label>
+                            <label for="checkbox1"><span></span>Same as shipping Information </label>
                         </div>
                         <div class="col-xs-12">
                             <div class="well well-lg clearfix">

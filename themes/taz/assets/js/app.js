@@ -13,19 +13,26 @@ jQuery(document).ready(function(){
         $(".alert-top").slideUp(600);
     }, 1000);
     
-    // Product ZOOM Plugin
-    /*$('#product-image').elevateZoom({
-        zoomType: "inner",
-        cursor: "crosshair",
-        zoomWindowFadeIn: 500,
-        zoomWindowFadeOut: 750
-        constrainType:"height", 
-        constrainSize:274, 
-        zoomType: "lens", 
-        containLensZoom: true, 
-        //gallery:'gallery_01', 
-        cursor: 'pointer', 
-        galleryActiveClass: "active"
-    });*/
+    // Enbale the ZOOM functionality only in PRODUCT VIEW page
+    // Get URL
+    var url = $(location).attr('href');
+    var urlParam = url.split('/').reverse()[1]; // get the URL param for product view page "product"
+    if(urlParam == 'product'){
+        // Product ZOOM Plugin
+        $('#product-image').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+            /*constrainType:"height", 
+            constrainSize:274, 
+            zoomType: "lens", 
+            containLensZoom: true, 
+            //gallery:'gallery_01', 
+            cursor: 'pointer', 
+            galleryActiveClass: "active"*/
+        });
+    }
+    
    
 });

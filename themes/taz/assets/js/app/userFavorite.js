@@ -7,12 +7,20 @@ jQuery(document).ready(function () {
         var userId = $(this).attr('data-user-id');
         if (userLoggedin) {
             $(this).toggleClass("userFavorited");
-            /*var url = baseURL + 'ws/shoprest/user-favorite';
+            var userFavoriteClassValue = $(this).hasClass( "userFavorited" );
+            var action = '';
+            if(userFavoriteClassValue == true){
+                action = 'add-user-favorite';
+            }else{
+                action = 'remove-user-favorite';
+            }
+            console.log(action);
+            var url = baseURL + 'ws/shoprest/'+action;
             var ajaxData = {
                 'productId': productId,
                 'userId' : userId
             };
-            ajaxCall('POST', url, ajaxData, this); // AJAX Call */
+            ajaxCall('POST', url, ajaxData, this); // AJAX Call 
         } else {
             console.log(userLoggedin);
             alert('Not Allowed');

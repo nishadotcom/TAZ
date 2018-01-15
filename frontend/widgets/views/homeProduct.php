@@ -23,7 +23,7 @@ $prdNoImg     = 'noImage.jpg';
                       <div class="imageBox">
                         <div class="productDeal clearfix">
                           <!--<h3>End In <span>20 Oct</span></h3>-->
-                          <span class="rating userFavorite" data-productid="<?= $psaProduct->id; ?>" data-userid="">
+                          <span class="rating" data-productid="<?= $psaProduct->id; ?>" data-userid="">
                               <span class="favoriteCount"><?= Yii::$app->ShopComponent->getProductFavoriteCount($psaProduct->id); ?></span><i class="fa fa-heart fa-1" aria-hidden="true"></i>
                           </span>
                         </div>

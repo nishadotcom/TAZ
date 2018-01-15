@@ -46,11 +46,14 @@ class ShopController extends Controller {
     public function actionProducts($id) {
         $this->layout = 'categoryProducts';
         $products = Shop::getProductsByCategoryId($id);
-        //echo '<pre>'; print_r($products);
+        $getUserFavoriteProducts = Yii::$app->ShopComponent->getUserFavoriteProducts(1);
+        $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavoriteProducts, 'product_id') : [];
+
         return $this->render('categoryproducts', [
                     'categoryData' => Category::findOne($id),
                     'categoryProducts' => $products,
                     'cartData' => Cart::getUserCart(),
+                    'userFavoriteProducts' => $userFavoriteProducts,
         ]);
     }
 

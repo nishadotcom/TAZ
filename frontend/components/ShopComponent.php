@@ -50,6 +50,10 @@ class ShopComponent extends Component {
         $favoriteCount 	= UserFavorite::find()->where(['product_id'=>$productId])->count();
         return ($favoriteCount) ? $favoriteCount : '';
     }
+    
+    public static function getUserFavoriteProducts($userId){
+        return UserFavorite::find()->where(['user_id' => $userId])->asArray()->all();
+    }
 
 } // End of class
 ?>

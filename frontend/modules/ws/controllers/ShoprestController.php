@@ -12,6 +12,7 @@ use yii\helpers\Json;
 use frontend\models\Cart;
 use frontend\models\CartSearch;
 use frontend\models\Shop;
+use frontend\models\UserFavorite;
 
 class ShoprestController extends ActiveController {
 
@@ -121,15 +122,48 @@ class ShoprestController extends ActiveController {
     }
 
     /**
-     * This method handles login process
+     * This method handles to add a product as user favorite
      * */
-    public function actionRaise($id, $param) { //echo 'ID='.$id.'/PARAM='.$param;exit;
-        return $this->_returnResult('data', ['id' => $id, 'param' => $param], 506, 1, 1);
+    public function actionAddUserFavorite(){
+        $productId  = (isset($_POST['productId'])) ? $_POST['productId'] : '';
+        $userId     = (isset($_POST['userId'])) ? $_POST['userId'] : '';
+        $data       = [];
+        if($productId && $userId){
+            $userFavoriteModel      = new UserFavorite();
+            // ASSIGN VALUES TO MODEL OBJECT
+            $userFavoriteModel->product_id  = $productId;
+            $userFavoriteModel->user_id     = $userId;
+            $userFavoriteModel->favorited_on= date('Y-m-d H:i:s');
+            if($userFavoriteModel->save()){
+                $data['favoriteCount'] = Yii::$app->ShopComponent->getProductFavoriteCount($productId);
+                return $this->_returnResult($data, 605, 1, 0);
+            }else{
+                return $this->_returnResult($data, 607, 0, 1);
+            }
+        }else{
+            return $this->_returnResult($data, 400, 0, 1);
+        }
     }
-
-    public function actionUpload() {
-        $data = (isset($_POST['name'])) ? $_POST['name'] : 'NODATA';
-        return $this->_returnResult('TEST_DATA', ['name' => $data], 200, 1, 0);
+    
+    /**
+     * This method handles to add a product as user favorite
+     * */
+    public function actionRemoveUserFavorite(){
+        $productId  = (isset($_POST['productId'])) ? $_POST['productId'] : '';
+        $userId     = (isset($_POST['userId'])) ? $_POST['userId'] : '';
+        $data       = [];
+        if($productId && $userId){
+            $userFavoriteModel = UserFavorite::findOne(['user_id' => $userId, 'product_id' => $productId]);
+            $result = $userFavoriteModel->delete();
+            if($result){
+                $data['favoriteCount'] = Yii::$app->ShopComponent->getProductFavoriteCount($productId);
+                return $this->_returnResult($data, 606, 1, 0);
+            }else{
+                return $this->_returnResult($data, 608, 0, 1);
+            }
+        }else{
+            return $this->_returnResult($data, 400, 0, 1);
+        }
     }
 
     /*
@@ -177,6 +211,10 @@ class ShoprestController extends ActiveController {
             602 => 'Could not add to cart. Please try again',
             603 => 'Could not remove from cart. Please try again',
             604 => 'Item has been removed from cart successfully',
+            605 => 'Product has been added to your favorite',
+            606 => 'Product has been removed from your favorites',
+            607 => 'Product could not be added to your favorites. Please try again',
+            608 => 'Product could not be removed from your favorites. Please try again',
         ];
 
         return (isset($codes[$status])) ? $codes[$status] : '';
