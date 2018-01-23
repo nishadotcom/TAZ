@@ -6029,6 +6029,10 @@ body.bodyColor.container {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.stepsWrapper .innerWrapper .well .pager li .continue{
+  float: right;
+  font-weight: 700;
+}
 .stepsWrapper .innerWrapper .well .pager li a:hover {
   background-color: #47bac1;
   color: #ffffff;

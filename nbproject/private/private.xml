@@ -3,31 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/css/colors/default.css</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/js/custom.js</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/step1.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/models/Shop.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/js/app/cart.js</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/review.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/shop/categoryproducts.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/widgets/views/profileMenu.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/models/Cart.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/widgets/views/homeProduct.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/modules/ws/controllers/ShoprestController.php</file>
             <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/ShopController.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/models/Product.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/common/config/params.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/CartController.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/shop/categoryproducts.php</file>
             <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/components/ShopComponent.php</file>
             <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/layouts/categoryProducts.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/paymentSuccess.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/css/app.css</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/js/app/userFavorite.js</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/cart/index.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/models/UserFavorite.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/js/app.js</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/modules/ws/controllers/ShoprestController.php</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/assets/css/style.css</file>
-            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/widgets/HomeProduct.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/layouts/main.php</file>
         </group>
     </open-files>
 </project-private>

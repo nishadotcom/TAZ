@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use yii\widgets\ActiveForm;
 use frontend\models\Cart;
 
 /* @var $this yii\web\View */
@@ -45,19 +45,33 @@ $prdNoImg = 'noImage.jpg';
                             <a href="checkout-step-4.html" class="progress-wizard-dot"></a>
                         </div>
                     </div>-->
-
-                    <form action="" class="row" method="POST" role="form">
+                    <?php $form = ActiveForm::begin([
+                        'fieldConfig' => [
+                            'template' => '<div class="form-group col-sm-6 col-xs-12">{label}{input}</div>'
+                        ]
+                    ]); ?>
+                    <!--<form action="" class="row" method="POST" role="form">-->
                         <div class="col-xs-12">
                             <div class="page-header">
                                 <h4>Shipping information</h4>
                             </div>
                         </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Name</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Street</label>
+                        <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+
+                        <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
+
+                        <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
+
+                        <?= $form->field($model, 'state')->textInput(['maxlength' => true]) ?>
+
+                        <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
+
+                        <?= $form->field($model, 'pin_code')->textInput(['maxlength' => true]) ?>
+
+                        <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
+                        
+                        <!--<div class="form-group col-sm-6 col-xs-12">
+                            <label for="">Address</label>
                             <input type="text" class="form-control" id="">
                         </div>
                         <div class="form-group col-sm-6 col-xs-12">
@@ -72,16 +86,13 @@ $prdNoImg = 'noImage.jpg';
                             <label for="">Country</label>
                             <input type="text" class="form-control" id="">
                         </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Phone</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
+                        
                         <div class="form-group col-sm-6 col-xs-12">
                             <label for="">Zip Code</label>
                             <input type="text" class="form-control" id="">
                         </div>
                         <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Country</label>
+                            <label for="">Phone</label>
                             <input type="text" class="form-control" id="">
                         </div>
                         <div class="form-group col-sm-6 col-xs-12">
@@ -91,7 +102,7 @@ $prdNoImg = 'noImage.jpg';
                         <div class="form-group col-sm-6 col-xs-12">
                             <label for="">First Name</label>
                             <textarea class="form-control"></textarea>
-                        </div>
+                        </div>-->
                         <div class="col-xs-12">
                             <div class="page-header">
                                 <h4>Billing information</h4>
@@ -105,13 +116,46 @@ $prdNoImg = 'noImage.jpg';
                             <div class="well well-lg clearfix">
                                 <ul class="pager">
                                     <li class="previous"><a href="#" class="hideContent">back</a></li>
-                                    <li class="next"><a href="<?= Yii::$app->homeUrl . 'cart/review'; ?>">Continue</a></li>
+                                    <li class="next"><?= Html::submitButton('Continue', ['class' => 'btn btn-info continue']) ?></li>
                                 </ul>
                             </div>
                         </div>
-                    </form>
+                    <!--</form>-->
+                    <?php ActiveForm::end(); ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<?php /* ?>
+
+<?php $form = ActiveForm::begin(); ?>
+
+    <?= $form->field($model, 'order_id')->textInput() ?>
+
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'state')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'pin_code')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'address_type')->dropDownList([ 'Shipping' => 'Shipping', 'Billing' => 'Billing', ], ['prompt' => '']) ?>
+
+    <?= $form->field($model, 'created_on')->textInput() ?>
+
+    <div class="form-group">
+        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+    </div>
+
+    <?php ActiveForm::end(); ?>
+
+<?php */ ?>
