@@ -166,6 +166,43 @@ class ShoprestController extends ActiveController {
         }
     }
 
+    public function actionAjaxMakePayment(){
+        $getPayuDetail['key'] = 'gtKFFx';
+        $getPayuDetail['txnid'] = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+        $getPayuDetail['hash'] = '';
+        $getPayuDetail['amount'] = $_POST['amount'];
+        $getPayuDetail['productinfo'] = $_POST['productinfo'];
+        $getPayuDetail['firstname'] = $_POST['firstname'];
+        $getPayuDetail['email'] = $_POST['email'];
+        $getPayuDetail['lastname'] = 'Lastname';
+        $getPayuDetail['address'] = 'Address';
+        $getPayuDetail['city'] = 'City';
+        $getPayuDetail['state'] = 'STATE';
+        $getPayuDetail['country'] = 'INDIA';
+        $getPayuDetail['zipcode'] = '678909';
+        $getPayuDetail['phone'] = '9876543210';
+
+        $getPayuDetail['surl'] = 'http://dev.talozo.local/order/payment-success';
+        $getPayuDetail['furl'] = 'http://dev.talozo.local/order/payment-success'; //Yii::app()->request->urlReferrer;
+        $getPayuDetail['curl'] = 'http://dev.talozo.local/order/payment-success';
+        // $getPayuDetail['udf1']               = 'test';
+
+
+        $hash = '';
+        $hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
+        $hashVarsSeq = explode('|', $hashSequence);
+        $hashString = '';
+        foreach ($hashVarsSeq as $hashVar) {
+            $hashString .= isset($getPayuDetail[$hashVar]) ? $getPayuDetail[$hashVar] : '';
+            $hashString .= '|';
+        }
+        $hashString .= 'eCwWELxi';
+        $getPayuDetail['hash'] = strtolower(hash('sha512', $hashString));
+        $getPayuDetail['action'] = 'https://test.payu.in/_payment';
+        $hash = $getPayuDetail['hash'];
+        echo json_encode($getPayuDetail);
+    }
+
     /*
      * Return Display format
      */

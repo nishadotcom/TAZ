@@ -137,7 +137,7 @@ $prdNoImg     = 'noImage.jpg';
                             </div>
                         </div>
                         <div class="checkBtnArea">
-                            <a href="<?= Yii::$app->homeUrl . 'cart/step1'; ?>" class="btn btn-primary btn-block">checkout<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=cart'; ?>" class="btn btn-primary btn-block">checkout<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                         </div>
                     </form>
                 </div>

@@ -46,7 +46,19 @@ $prdNoImg     = 'noImage.jpg';
                   </div>
                 </div>-->
                 
-                <form action="" class="row" method="POST" role="form">
+                <form action="https://test.payu.in/_payment" class="row" method="post" role="form" id="orderForm" name="payuForm">
+                  <input type="hidden" name="key" value="gtKFFx" />
+      <input type="hidden" name="hash" value="" id="hash"/>
+      <input type="hidden" name="txnid" value="" id="txnid" />
+      <input name="amount" value="500" />
+      <input name="firstname" id="firstname" value="FirstNAME" />
+      <input name="email" id="email" value="nisha.com126@gmail.com" />
+      <input name="phone" value="9876543210" /><
+      <textarea name="productinfo">ProductInfo</textarea>
+      <input name="surl" value="http://dev.talozo.local/order/payment-success" size="64" />
+      <input name="furl" value="http://dev.talozo.local/order/payment-success" size="64" />
+      <input type="hidden" name="service_provider" value="" size="64" />
+      <input name="curl" value="http://dev.talozo.local/" />
                   <!--<div class="col-xs-12">
                     <div class="page-header">
                       <h4>order review</h4>
@@ -153,7 +165,7 @@ $prdNoImg     = 'noImage.jpg';
                               <td class="col-xs-2">1</td>
                               <td class="col-xs-2">$ 99.00</td>
                             </tr>
-                            <tr>
+                            <!--<tr>
                               <td class="col-xs-2">
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <span class="cartImage"><img src="img/products/cart-image.jpg" alt="image"></span>
@@ -172,15 +184,15 @@ $prdNoImg     = 'noImage.jpg';
                               <td class="col-xs-2">$ 99.00</td>
                               <td class="col-xs-2">1</td>
                               <td class="col-xs-2">$ 99.00</td>
-                            </tr>
+                            </tr>-->
                           </tbody>
                         </table>
                       </div>
                       <div class="row totalAmountArea">
                         <div class="col-sm-4 col-sm-offset-8 col-xs-12">
                           <ul class="list-unstyled">
-                            <li>Sub Total <span>$ 792.00</span></li>
-                            <li>UK Vat <span>$ 18.00</span></li>
+                            <!--<li>Sub Total <span>$ 792.00</span></li>
+                            <li>UK Vat <span>$ 18.00</span></li>-->
                             <li>Grand Total <span class="grandTotal">$ 810.00</span></li>
                           </ul>
                         </div>
@@ -191,7 +203,8 @@ $prdNoImg     = 'noImage.jpg';
                     <div class="well well-lg clearfix">
                       <ul class="pager">
                       <li class="previous"><a href="" onclick="window.history.go(-1); return false;">Back</a></li>
-                        <li class="next"><a href="<?= Yii::$app->homeUrl . 'cart/payment-success'; ?>">Confirm</a></li>
+                        <!--<li class="next"><a href="<?= Yii::$app->homeUrl . 'cart/payment-success'; ?>">Confirm</a></li>-->
+                        <li><input type="submit" name="btnSubmit" value="CONFIRM" id="btnOrderConfirm"></li>
                       </ul>
                     </div>
                   </div>

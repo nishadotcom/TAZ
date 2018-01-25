@@ -10,4 +10,6 @@ return [
     // USER ROLE
     'ROLE_SELLER' => 'Seller',
     'ROLE_BUYER' => 'Buyer',
+    // PAYUMONEY
+    'payumoneyMerchentKey' => ''
 ];
