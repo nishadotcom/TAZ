@@ -80,7 +80,8 @@ $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavori
                       <div class="imageBox">
                         <div class="productDeal clearfix">
                           <!--<h3>End In <span>20 Oct</span></h3>-->
-                          <span class="rating">
+                          <?php $favoriteClass = (in_array($slpProduct->id, $userFavoriteProducts)) ? 'homeUserFavorited' : ''; ?>
+                          <span class="rating homeUserFavorite <?= $favoriteClass; ?>" data-product-id="<?= $slpProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                               <span class="favoriteCount"><?= Yii::$app->ShopComponent->getProductFavoriteCount($slpProduct->id); ?></span><i class="fa fa-heart fa-1" aria-hidden="true"></i>
                           </span>
                         </div>
@@ -125,7 +126,8 @@ $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavori
                       <div class="imageBox">
                         <div class="productDeal clearfix">
                           <!--<h3>End In <span>20 Oct</span></h3>-->
-                          <span class="rating">
+                          <?php $favoriteClass = (in_array($otlProduct->id, $userFavoriteProducts)) ? 'homeUserFavorited' : ''; ?>
+                          <span class="rating homeUserFavorite <?= $favoriteClass; ?>" data-product-id="<?= $otlProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                               <span class="favoriteCount"><?= Yii::$app->ShopComponent->getProductFavoriteCount($otlProduct->id); ?></span><i class="fa fa-heart fa-1" aria-hidden="true"></i>
                           </span>
                         </div>
@@ -170,7 +172,8 @@ $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavori
                       <div class="imageBox">
                         <div class="productDeal clearfix">
                           <!--<h3>End In <span>20 Oct</span></h3>-->
-                          <span class="rating">
+                          <?php $favoriteClass = (in_array($frcProduct->id, $userFavoriteProducts)) ? 'homeUserFavorited' : ''; ?>
+                          <span class="rating homeUserFavorite <?= $favoriteClass; ?>" data-product-id="<?= $frcProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                               <span class="favoriteCount"><?= Yii::$app->ShopComponent->getProductFavoriteCount($frcProduct->id); ?></span><i class="fa fa-heart fa-1" aria-hidden="true"></i>
                           </span>
                         </div>
