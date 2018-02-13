@@ -4,6 +4,13 @@ use yii\helpers\Html;
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg     = 'noImage.jpg';
 
+if(!Yii::$app->user->isGuest){
+    $userid = Yii::$app->user->id;
+    $getUserFavoriteProducts = Yii::$app->ShopComponent->getUserFavoriteProducts($userid);
+}else{
+    $getUserFavoriteProducts = [];
+}
+$userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavoriteProducts, 'product_id') : [];
 ?>
 
 <div class="row dealSection">
@@ -23,7 +30,8 @@ $prdNoImg     = 'noImage.jpg';
                       <div class="imageBox">
                         <div class="productDeal clearfix">
                           <!--<h3>End In <span>20 Oct</span></h3>-->
-                          <span class="rating" data-productid="<?= $psaProduct->id; ?>" data-userid="">
+                          <?php $favoriteClass = (in_array($psaProduct->id, $userFavoriteProducts)) ? 'homeUserFavorited' : ''; ?>
+                          <span class="rating homeUserFavorite <?= $favoriteClass; ?>" data-product-id="<?= $psaProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                               <span class="favoriteCount"><?= Yii::$app->ShopComponent->getProductFavoriteCount($psaProduct->id); ?></span><i class="fa fa-heart fa-1" aria-hidden="true"></i>
                           </span>
                         </div>
@@ -41,6 +49,8 @@ $prdNoImg     = 'noImage.jpg';
                     </div>
                     <?php
                   }
+                  ?>
+                  <?php
                 }else{
                   // No Results Found
                   echo '<p classs="text-muted">No results found</p>';

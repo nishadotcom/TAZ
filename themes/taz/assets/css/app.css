@@ -33,3 +33,7 @@
 .rating{
     cursor: pointer;
 }
+
+.homeUserFavorited{
+    color: #47bac1 !important;
+}

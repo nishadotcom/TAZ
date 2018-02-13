@@ -12,6 +12,7 @@ $this->title = 'Cart';
 $this->params['breadcrumbs'][] = $this->title;
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg     = 'noImage.jpg';
+$transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 ?>
 
 <section class="mainContent clearfix cartListWrapper">
@@ -137,7 +138,7 @@ $prdNoImg     = 'noImage.jpg';
                             </div>
                         </div>
                         <div class="checkBtnArea">
-                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=cart'; ?>" class="btn btn-primary btn-block">checkout<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=cart-'.Yii::$app->user->identity->id.'&transactionId='.$transactionId; ?>" class="btn btn-primary btn-block">checkout<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                         </div>
                     </form>
                 </div>

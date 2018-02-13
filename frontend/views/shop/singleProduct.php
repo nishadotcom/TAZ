@@ -2,9 +2,11 @@
 $productData = ($product) ? $product[0] : [];
 $this->title = $productData->product_name;//'Product View';
 
-// echo '<pre>'; print_r($productData->productImages[0]->cover_photo); echo '</pre>';
+//echo '<pre>'; print_r($productData); echo '</pre>';
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg = 'noImage.jpg';
+
+$transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 ?>
 
 <div class="row singleProduct">
@@ -78,8 +80,8 @@ $prdNoImg = 'noImage.jpg';
                 </span>-->
                 <div class="btn-area">
                     <?php /* ?><a class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> <?php */ ?>
-                                                                                                                                                                                                        <button class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Add to cart">Add to cart <!--<i class="fa fa-angle-right" aria-hidden="true"></i>--></button>
-                                                                                                                                                                                                        <button style="margin-top: 0;" class="btn btn-success btn-block" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Buy Now">Buy Now <!--<i class="fa fa-angle-right" aria-hidden="true"></i>--></button>
+                    <button class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Add to cart">Add to cart <!--<i class="fa fa-angle-right" aria-hidden="true"></i>--></button>
+                    <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$productData->id.'&transactionId='.$transactionId; ?>" style="margin-top: 0;" class="btn btn-success btn-block" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Buy Now">Buy Now <!--<i class="fa fa-angle-right" aria-hidden="true"></i>--></a>
                 </div>
                 <div class="tabArea">
                     <ul class="nav nav-tabs">

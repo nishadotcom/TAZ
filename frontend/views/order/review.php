@@ -47,18 +47,31 @@ $prdNoImg     = 'noImage.jpg';
                 </div>-->
                 
                 <form action="https://test.payu.in/_payment" class="row" method="post" role="form" id="orderForm" name="payuForm">
-                  <input type="hidden" name="key" value="gtKFFx" />
-      <input type="hidden" name="hash" value="" id="hash"/>
-      <input type="hidden" name="txnid" value="" id="txnid" />
-      <input name="amount" value="500" />
-      <input name="firstname" id="firstname" value="FirstNAME" />
-      <input name="email" id="email" value="nisha.com126@gmail.com" />
-      <input name="phone" value="9876543210" /><
-      <textarea name="productinfo">ProductInfo</textarea>
-      <input name="surl" value="http://dev.talozo.local/order/payment-success" size="64" />
-      <input name="furl" value="http://dev.talozo.local/order/payment-success" size="64" />
+
+                <input type="hidden" name="hash" value="" id="hash"/>
+                <input type="hidden" name="key" value="<?= Yii::$app->params['payumoneyMerchantKey']; ?>" />
+      
+      <input type="hidden" name="txnid" id="txnid" value="<?= $payuDetail['txnid']; ?>" />
+      <input type="hidden" name="amount" value="500" />
+      <input type="hidden" name="productinfo" value="<?= Yii::$app->params['payumoneyProductInfo']; ?>">
+      <input type="hidden" name="firstname" id="firstname" value="<?= $addressData->name; ?>" />
+      <input type="hidden" name="address1" id="address1" value="<?= $addressData->address; ?>" />
+      <input type="hidden" name="city" id="city" value="<?= $addressData->city; ?>" />
+      <input type="hidden" name="state" id="state" value="<?= $addressData->state; ?>" />
+      <input type="hidden" name="country" id="country" value="<?= $addressData->country; ?>" />
+      <input type="hidden" name="zipcode" id="zipcode" value="<?= $addressData->pin_code; ?>" />
+      <input type="hidden" name="email" id="email" value="<?= Yii::$app->user->identity->email; ?>" />
+      <input type="hidden" name="phone" value="<?= $addressData->phone; ?>" />
+
+      <input type="hidden" name="udf1" value="<?= strtoupper(Yii::$app->getRequest()->getQueryParam('from')); ?>"> <!-- FROM  VALUE -->
+      
+      
+      <input type="hidden" name="surl" value="http://dev.talozo.local/order/payment-success" size="64" />
+      <input type="hidden" name="furl" value="http://dev.talozo.local/order/payment-error" size="64" />
+      <input type="hidden" name="curl" value="http://dev.talozo.local/order/payment-cancel" />
       <input type="hidden" name="service_provider" value="" size="64" />
-      <input name="curl" value="http://dev.talozo.local/" />
+      
+      
                   <!--<div class="col-xs-12">
                     <div class="page-header">
                       <h4>order review</h4>

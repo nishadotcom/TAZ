@@ -56,6 +56,7 @@ $prdNoImg = 'noImage.jpg';
                                 <h4>Shipping information</h4>
                             </div>
                         </div>
+                        <input type="hidden" name="transactionId" value="<?= $transactionId; ?>">
                         <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
                         <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>

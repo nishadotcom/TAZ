@@ -111,6 +111,14 @@ class Cart extends \yii\db\ActiveRecord {
         }
         return $data;
     }
+
+    public static function getUserCartItems(){
+        $data = [];
+        if(!Yii::$app->user->isGuest){
+            $data = Cart::find()->select('*')->where(['cart_user_id'=>Yii::$app->user->id])->all();
+        }
+        return $data;
+    }
     
     public static function removeCartItem($id){
         $cart   = Cart::findOne($id);

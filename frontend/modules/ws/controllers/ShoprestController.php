@@ -168,24 +168,26 @@ class ShoprestController extends ActiveController {
 
     public function actionAjaxMakePayment(){
         $getPayuDetail['key'] = 'gtKFFx';
-        $getPayuDetail['txnid'] = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+        $getPayuDetail['txnid'] = $_POST['txnid'];//substr(hash('sha256', mt_rand() . microtime()), 0, 20);
         $getPayuDetail['hash'] = '';
         $getPayuDetail['amount'] = $_POST['amount'];
         $getPayuDetail['productinfo'] = $_POST['productinfo'];
         $getPayuDetail['firstname'] = $_POST['firstname'];
         $getPayuDetail['email'] = $_POST['email'];
-        $getPayuDetail['lastname'] = 'Lastname';
-        $getPayuDetail['address'] = 'Address';
-        $getPayuDetail['city'] = 'City';
-        $getPayuDetail['state'] = 'STATE';
-        $getPayuDetail['country'] = 'INDIA';
-        $getPayuDetail['zipcode'] = '678909';
-        $getPayuDetail['phone'] = '9876543210';
+        //$getPayuDetail['lastname'] = 'Lastname';
+        $getPayuDetail['address1'] = $_POST['address1'];
+        $getPayuDetail['city'] = $_POST['email'];
+        $getPayuDetail['state'] = $_POST['state'];
+        $getPayuDetail['country'] = $_POST['country'];
+        $getPayuDetail['zipcode'] = $_POST['zipcode'];
+        $getPayuDetail['phone'] = $_POST['phone'];
+        //$getPayuDetail['from'] = $_POST['from'];
+        $getPayuDetail['udf1']               = $_POST['udf1'];
 
         $getPayuDetail['surl'] = 'http://dev.talozo.local/order/payment-success';
         $getPayuDetail['furl'] = 'http://dev.talozo.local/order/payment-success'; //Yii::app()->request->urlReferrer;
         $getPayuDetail['curl'] = 'http://dev.talozo.local/order/payment-success';
-        // $getPayuDetail['udf1']               = 'test';
+        
 
 
         $hash = '';
@@ -196,7 +198,7 @@ class ShoprestController extends ActiveController {
             $hashString .= isset($getPayuDetail[$hashVar]) ? $getPayuDetail[$hashVar] : '';
             $hashString .= '|';
         }
-        $hashString .= 'eCwWELxi';
+        $hashString .= 'eCwWELxi'; //echo $hashString; exit;
         $getPayuDetail['hash'] = strtolower(hash('sha512', $hashString));
         $getPayuDetail['action'] = 'https://test.payu.in/_payment';
         $hash = $getPayuDetail['hash'];

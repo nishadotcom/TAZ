@@ -41,7 +41,8 @@ jQuery(document).ready(function () {
             success: function (response) { 
                 console.log(response);
                 $('#hash').val(response.hash);
-                $('#txnid').val(response.txnid);
+                //return false;
+                //$('#txnid').val(response.txnid);
                 //$("#orderForm").submit();
                 //document.getElementById("orderForm").submit();
                 document.payuForm.submit();
