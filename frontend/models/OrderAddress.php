@@ -37,7 +37,7 @@ class OrderAddress extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['order_id', 'name'], 'required'],
+            [['order_id', 'name', 'address', 'city', 'state', 'country', 'pin_code', 'phone'], 'required'],
             [['order_id'], 'integer'],
             [['address_type'], 'string'],
             [['created_on'], 'safe'],

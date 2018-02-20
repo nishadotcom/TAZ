@@ -35,7 +35,7 @@ class OrderAddressTemp extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['txn_id', 'name'], 'required'],
+            [['txn_id', 'name', 'address', 'city', 'state', 'pin_code', 'phone'], 'required'],
             //[['txn_id'], 'integer'],
             [['address_type'], 'string'],
             [['created_on'], 'safe'],

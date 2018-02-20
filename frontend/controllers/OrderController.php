@@ -71,6 +71,11 @@ class OrderController extends Controller
             $payuDetail['action'] = 'https://test.payu.in/_payment';
             //$payuDetail['action'] = 'https://secure.payu.in/_payment';
 
+            $from = (strpos($_POST['udf1'], 'CART') !== false) ? 'CART' : 'PRODUCT';
+            if($from == 'PRODUCT'){
+                // GET PRODUCT DETAILS FOR REVIEW PAGE
+            }
+
 
             return $this->render('review', [
                 'addressData' => $model,
@@ -193,7 +198,11 @@ class OrderController extends Controller
                             } // END OF CART DATA LOOP
                             $orderDetailAttributes = ['order_id', 'category_name', 'subcategory_name', 'product_id', 'product_code', 'product_name', 'product_seo', 'product_owner_id', 'seller_name', 'product_price', 'product_material', 'product_color', 'product_height', 'product_length', 'product_breadth', 'product_weight', 'product_description', 'created_on'];
                             $OrderDetailModel = new OrderDetail();
-                            Yii::$app->db->createCommand()->batchInsert(OrderDetail::tableName(), $orderDetailAttributes, $orderDetail)->execute();
+                            $result = Yii::$app->db->createCommand()->batchInsert(OrderDetail::tableName(), $orderDetailAttributes, $orderDetail)->execute();
+                            if($result){
+                                CART::deleteAll('cart_user_id = :userid', [':userid' => Yii::$app->user->id]);
+                                //OrderAddressTemp::deleteAll('txn_id = :txnid', [':txnid' => $_POST['txnid']]);
+                            }
                         } // IF CARTDATA
                     }
                     // STORE ADDRESS
@@ -231,7 +240,11 @@ class OrderController extends Controller
                         Yii::$app->db->createCommand()->batchInsert(OrderAddress::tableName(), $addressAttributes, $orderAddressInsertValues)->execute();
                     } // IF ADDRESS TEMP
                     // END OF ADDRESS
-                    echo 'NISHADONE';
+                    //echo 'NISHADONE';
+                    return $this->render('paymentSuccess', [
+                        //'searchModel' => $searchModel,
+                        //'dataProvider' => $dataProvider,
+                    ]);
                 }else{
                     echo 'ORDER COULD NOT BE STORED';
                     echo '<br><pre>'; print_r($_POST); echo '</pre><br>';
