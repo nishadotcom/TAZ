@@ -6011,7 +6011,7 @@ body.bodyColor.container {
 .stepsWrapper .innerWrapper .well .pager {
   margin: 0;
 }
-.stepsWrapper .innerWrapper .well .pager li a {
+.stepsWrapper .innerWrapper .well .pager li a, .stepsWrapper .innerWrapper .well .pager li input {
   border-radius: 0;
   border: none;
   box-shadow: none;
@@ -6047,7 +6047,7 @@ body.bodyColor.container {
   }
 }
 @media (min-width: 480px) {
-  .stepsWrapper .innerWrapper .well .pager li a {
+  .stepsWrapper .innerWrapper .well .pager li a, .stepsWrapper .innerWrapper .well .pager li input {
     width: 136px;
     margin: 0;
   }
@@ -8436,4 +8436,8 @@ h4 a:hover{
   
 .table a{
     color: #fff;
+}
+
+.pager .next>input, .pager .next>span {
+    float: right;
 }

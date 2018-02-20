@@ -87,6 +87,14 @@ class Cart extends \yii\db\ActiveRecord {
             'cart_added_on' => 'Cart Added On',
         ];
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductImages()
+    {
+        return $this->hasMany(ProductImage::className(), ['product_id' => 'id']);
+    }
     
     /**
      * This method handles to get total cart amount

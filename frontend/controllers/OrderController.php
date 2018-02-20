@@ -71,15 +71,24 @@ class OrderController extends Controller
             $payuDetail['action'] = 'https://test.payu.in/_payment';
             //$payuDetail['action'] = 'https://secure.payu.in/_payment';
 
-            $from = (strpos($_POST['udf1'], 'CART') !== false) ? 'CART' : 'PRODUCT';
+            $from = (strpos($_GET['from'], 'cart') !== false) ? 'CART' : 'PRODUCT';
             if($from == 'PRODUCT'){
                 // GET PRODUCT DETAILS FOR REVIEW PAGE
+                $expFrom = explode('-', $_GET['from']);
+                $orderProductId = $expFrom[1];
+                $orderProducts = Product::find()->where(['id'=>$orderProductId])->with('productImages')->all();
+            }else{
+                $expFrom = explode('-', $_GET['from']);
+                $orderCartId = $expFrom[1];
+                $orderProducts = Cart::find()->where(['cart_user_id'=>$orderCartId])->with('productImages')->all();
             }
 
 
             return $this->render('review', [
                 'addressData' => $model,
                 'payuDetail' => $payuDetail,
+                'orderProducts' => $orderProducts,
+                'from' => $from
             ]);
             //return $this->redirect(['review', ['addressData' => $addressData]]);
         }
