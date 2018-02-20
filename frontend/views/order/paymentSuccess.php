@@ -8,7 +8,7 @@ use frontend\models\Cart;
 /* @var $searchModel frontend\models\CartSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Cart';
+$this->title = 'Order Summary';
 $this->params['breadcrumbs'][] = $this->title;
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg     = 'noImage.jpg';
@@ -25,14 +25,21 @@ $prdNoImg     = 'noImage.jpg';
             <div class="row">
               <div class="col-sm-6 col-xs-12 tableBlcok">
                 <address>
-                  <span>Shipping address:</span> <a href="mailto:adamsmith@bigbag.com">adamsmith@bigbag.com</a> <br>
-                  <span>Email:</span> <a href="mailto:adamsmith@bigbag.com">adamsmith@bigbag.com</a> <br>
-                  <span>Phone:</span> +884 5452 6432
+                  <span>Shipping address:</span> 
+                    <address>
+                          <strong><?= $addressData->name; ?></strong><br>
+                          <?php echo $addressData->address.','; ?> <br>
+                          <?php echo $addressData->city.','.$addressData->state.','; ?> <br>
+                          <?php echo $addressData->country.'-'.$addressData->pin_code; ?>
+                        </address>
+                  <br>
+                  <span>Email:</span> <a href="mailto:<?= $email; ?>"><?= $email; ?></a> <br>
+                  <span>Phone:</span> <?= $phone; ?>
                 </address>
               </div>
               <div class="col-sm-6 col-xs-12">
                 <div class="well">
-                  <h2><small>Order ID</small>9547</h2>
+                  <h2><small>Order ID</small><?= $orderId; ?></h2>
                 </div>
               </div>
             </div>

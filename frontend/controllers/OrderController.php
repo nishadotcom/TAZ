@@ -119,14 +119,14 @@ class OrderController extends Controller
                     $from = (strpos($_POST['udf1'], 'CART') !== false) ? 'CART' : 'PRODUCT';
                     if($from == 'PRODUCT'){
                         // GET THE PRODUCT DETAILS AND INSERT INTO ORDERDETAIL TABLE
-                        echo 'PRODUCTINSIDE';
-                        echo '<br><pre>'; print_r($_POST); echo '</pre><br>';
+                        //echo 'PRODUCTINSIDE';
+                        //echo '<br><pre>'; print_r($_POST); echo '</pre><br>';
                         $expFrom = explode('-', $_POST['udf1']);
                         $orderProductId = (isset($expFrom[1])) ? $expFrom[1] : '';
                         $orderProductData = ($orderProductId) ? Shop::getProductById($orderProductId) : [];
                         $productData = ($orderProductData) ? $orderProductData[0] : [];
                         if($productData){
-                            echo '<br><pre>'; print_r($productData); echo '</pre><br>';
+                            //echo '<br><pre>'; print_r($productData); echo '</pre><br>';
                             $orderDetailModel = new OrderDetail();
                             
                                 $orderDetailModel->order_id = $orderModel->id;
@@ -149,18 +149,18 @@ class OrderController extends Controller
                                 $orderDetailModel->product_description = $productData->product_long_description;
                                 $orderDetailModel->created_on = Yii::$app->Common->mysqlDateTime();
                             if($orderDetailModel->save()){
-                                echo 'SAVED';
+                                //echo 'SAVED';
                             }else{
-                                echo '<pre>'; print_r($orderDetailModel->getErrors()); echo '</pre>';
-                                echo 'NOTSAVED';
+                                //echo '<pre>'; print_r($orderDetailModel->getErrors()); echo '</pre>';
+                                //echo 'NOTSAVED';
                             }
                         }
                     }else{
-                        echo 'CARTINSIDE';
-                        echo '<br><pre>'; print_r($_POST); echo '</pre><br>';
+                        //echo 'CARTINSIDE';
+                        //echo '<br><pre>'; print_r($_POST); echo '</pre><br>';
                         // GET THE USER'S CART DETAILS 
                         $cartData = Cart::getUserCartItems();
-                        echo '<br><pre>'; print_r($cartData); echo '</pre><br>';
+                        //echo '<br><pre>'; print_r($cartData); echo '</pre><br>';
                         if($cartData){
                             foreach ($cartData as $key => $valueCartData) {
                                 $orderDetail[] = [
@@ -251,6 +251,10 @@ class OrderController extends Controller
                     // END OF ADDRESS
                     //echo 'NISHADONE';
                     return $this->render('paymentSuccess', [
+                        'orderId' => $orderModel->order_code,
+                        'email' => $_POST['email'],
+                        'phone' => $_POST['phone'],
+                        'addressData' => OrderAddress::find()->where(['order_id'=>$orderModel->id])->one(),
                         //'searchModel' => $searchModel,
                         //'dataProvider' => $dataProvider,
                     ]);

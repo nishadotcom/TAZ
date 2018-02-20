@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg     = 'noImage.jpg';
 /*echo '<pre>';
-print_r($orderProducts);
+print_r($addressData);
 echo '</pre>';*/
 $total = 0;
 ?>
@@ -70,10 +70,10 @@ $total = 0;
                       </div>
                       <div class="panel-body">
                         <address>
-                          <strong>Adam Smith</strong><br>
-                          9/4 C Babor Road, Mohammad pur, <br>
-                          Shyamoli, Dhaka <br>
-                          Bangladesh
+                          <strong><?= $addressData->name; ?></strong><br>
+                          <?php echo $addressData->address.','; ?> <br>
+                          <?php echo $addressData->city.','.$addressData->state.','; ?> <br>
+                          <?php echo $addressData->country.'-'.$addressData->pin_code; ?>
                         </address>
                       </div>
                     </div>
@@ -85,10 +85,10 @@ $total = 0;
                       </div>
                       <div class="panel-body">
                         <address>
-                          <strong>Adam Smith</strong><br>
-                          9/4 C Babor Road, Mohammad pur, <br>
-                          Shyamoli, Dhaka <br>
-                          Bangladesh
+                          <strong><?= $addressData->name; ?></strong><br>
+                          <?php echo $addressData->address.','; ?> <br>
+                          <?php echo $addressData->city.','.$addressData->state.','; ?> <br>
+                          <?php echo $addressData->country.'-'.$addressData->pin_code; ?>
                         </address>
                       </div>
                     </div>
