@@ -263,9 +263,9 @@ $total = 0;
                   <input type="hidden" name="udf1" value="<?= strtoupper(Yii::$app->getRequest()->getQueryParam('from')); ?>"> <!-- FROM  VALUE -->
                   
                   
-                  <input type="hidden" name="surl" value="http://dev.talozo.local/order/payment-success" size="64" />
-                  <input type="hidden" name="furl" value="http://dev.talozo.local/order/payment-error" size="64" />
-                  <input type="hidden" name="curl" value="http://dev.talozo.local/order/payment-cancel" />
+                  <input type="hidden" name="surl" value="http://talozo.com/dev/order/payment-success" size="64" />
+                  <input type="hidden" name="furl" value="http://talozo.com/dev/order/payment-error" size="64" />
+                  <input type="hidden" name="curl" value="http://talozo.com/dev/dev/order/payment-cancel" />
                   <input type="hidden" name="service_provider" value="" size="64" />
                 </form>
               </div>
