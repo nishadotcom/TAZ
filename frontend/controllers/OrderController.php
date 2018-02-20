@@ -149,11 +149,12 @@ class OrderController extends Controller
                                 $orderDetailModel->product_description = $productData->product_long_description;
                                 $orderDetailModel->created_on = Yii::$app->Common->mysqlDateTime();
                             if($orderDetailModel->save()){
-                                //echo 'SAVED';
+                                echo 'SAVED';
                             }else{
-                                //echo '<pre>'; print_r($orderDetailModel->getErrors()); echo '</pre>';
-                                //echo 'NOTSAVED';
+                                echo '<pre>'; print_r($orderDetailModel->getErrors()); echo '</pre>';
+                                echo 'NOTSAVED';
                             }
+                            exit;
                         }
                     }else{
                         //echo 'CARTINSIDE';
