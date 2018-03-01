@@ -146,6 +146,8 @@ class ProductController extends Controller
             if($model->save()){
                 return $this->redirect(['view', 'id' => $model->id]);
             }else{
+                print_r($model->getErrors());
+                exit;
                 return $this->render('update', [
                     'model' => $model,
                 ]);

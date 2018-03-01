@@ -107,10 +107,19 @@ class ProductController extends Controller
                 FileHelper::createDirectory($prd_img_path, $mode = 0777, $recursive = true);
 				$imageName 	= date('YmdHis').'.'.$imageModel->cover_photo->extension;
 				$imageModel->cover_photo->saveAs($prd_img_path.$imageName);
-				$imageModel->cover_photo = 'dfsdfd';
+				//$imageModel->cover_photo = 'dfsdfd';
                 //$imageSave              = $imageModel->save(false);
+                if($imageModel->crop_image){
+                    $cropImageString = $imageModel->crop_image;
+                    $cropImageData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $cropImageString));
+                    $result = file_put_contents($prd_img_path.'CROP_'.$imageModel->cover_photo.'.png', $cropImageData);
+                    $cropImage = 'CROP_'.$imageModel->cover_photo.'.png';
+                }else{
+                    $cropImage = '';
+                }
+
 				$connection = Yii::$app->getDb();
-				$insert_query 	= 'INSERT INTO taz_product_image(product_id, type, file_name, cover_photo) VALUES('.$model->id.', "", "", "'.$imageName.'")';
+				$insert_query 	= 'INSERT INTO taz_product_image(product_id, type, file_name, cover_photo, crop_image) VALUES('.$model->id.', "", "", "'.$imageName.'", "'.$cropImage.'")';
 				$command = $connection->createCommand($insert_query)->execute();
 				// Upload process
                 

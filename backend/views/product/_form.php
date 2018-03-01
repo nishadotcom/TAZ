@@ -58,10 +58,10 @@ use yii\widgets\DetailView;
               'attribute' => 'product_weight',
               'value' => $model->product_weight.' KG'
             ],
-            'product_short_description:ntext',
+            //'product_short_description:ntext',
             //'product_long_description:ntext',
             [                      // the owner name of the model
-              'label' => 'Long Description',
+              'label' => 'Description',
               'value' => $form->field($model, 'product_long_description')->textArea(['maxlength' => true]),
               'format' => 'raw',
             ],
@@ -69,8 +69,8 @@ use yii\widgets\DetailView;
             'product_guarantee_status',
             //'product_status',
             [
-				'attribute' => 'product_status',
-				'value' => ($model->product_status == 'AFA') ? 'Awaiting for Approval' : $model->product_status
+				      'attribute' => 'product_status',
+				      'value' => ($model->product_status == 'AFA') ? 'Awaiting for Approval' : $model->product_status
             ],
             'created_on',
             //'updated_on',

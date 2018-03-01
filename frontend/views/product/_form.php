@@ -70,6 +70,17 @@ $form = ActiveForm::begin([
         <?= $form->field($model, 'product_guarantee_status')->dropDownList(['Yes' => 'Yes', 'No' => 'No',], ['prompt' => 'Select Guarantee Status', 'options' => ['No' => ['selected' => 'selected']]]) ?>
 
         <?php echo $form->field($imageModel, 'cover_photo')->fileInput(['maxlength' => true]) ?>
+        <?php //echo $form->field($imageModel, 'crop_image')->hiddenInput(['maxlength' => true])->label(false) ?>
+        <input type="hidden" id="productimage-crop_image" class="form-control" name="ProductImage[crop_image]" maxlength="">
+        <div class="col-1-2">
+                            <div class="upload-msg">
+                                Upload a file to start cropping
+                            </div>
+                            <div class="upload-demo-wrap">
+                                <div id="upload-demo"></div>
+                            </div>
+                            <button type="button" class="upload-result">CROP</button>
+                        </div>
 
         <?= $form->field($imageModel, 'file_name[]')->fileInput(['multiple' => true, 'accept' => 'image/*']) ?>
 

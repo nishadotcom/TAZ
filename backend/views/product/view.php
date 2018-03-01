@@ -3,8 +3,8 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Category */
-$this->title = 'View Category';
-$this->params['breadcrumbs'][] = ['label' => 'Categories', 'url' => ['index']];
+$this->title = 'View Product';
+$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="category-view">
@@ -23,6 +23,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             //'category_image',
             'product_long_description',
+            [
+                'label' => 'Status',
+                'value' => ($model->product_status == 'AFA') ? 'Awaiting for Approval' : $model->product_status,
+            ],
             'created_on',
             'updated_on',
         ],

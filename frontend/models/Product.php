@@ -57,7 +57,7 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             [['product_category_id', 'product_code', 'product_name', 'product_seo', 'product_owner_id', 'product_material', 'product_color', 'created_on'], 'required'],
-            [['product_short_description', 'product_long_description'], 'required','on'=>'admin_validate'],
+            [['product_long_description'], 'required','on'=>'admin_validate'],
             [['product_category_id', 'product_subcategory_id', 'product_owner_id'], 'integer'],
             [['product_code', 'product_name', 'product_seo', 'product_dimension_type', 'product_short_description', 'product_long_description', 'product_discount_status', 'product_guarantee_status', 'product_status'], 'string'],
             [['product_price', 'product_sale_price', 'product_retail_price', 'product_height', 'product_length', 'product_breadth', 'product_weight'], 'number'],

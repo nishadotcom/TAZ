@@ -26,7 +26,13 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                 <?php 
                 if($psaProducts){
                   foreach ($psaProducts as $key => $psaProduct) { 
-                    $prdImage   = (isset($psaProduct->productImages[0])) ? $pathPrdImg.$psaProduct->product_code.'/'.$psaProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
+                    if(isset($psaProduct->productImages[0])){
+                      $coverImage = ($psaProduct->productImages[0]->crop_image) ? $psaProduct->productImages[0]->crop_image : $psaProduct->productImages[0]->cover_photo;
+                    }else{
+                      $coverImage = '';
+                    }
+                    //$coverImage = (isset($psaProduct->productImages[0]) && $psaProduct->productImages[0]->crop_image) ? $psaProduct->productImages[0]->crop_image : $psaProduct->productImages[0]->cover_photo;
+                    $prdImage   = (isset($psaProduct->productImages[0])) ? $pathPrdImg.$psaProduct->product_code.'/'.$coverImage : $pathPrdImg.$prdNoImg;
                     ?>
                     <div class="slide">
                       <div class="imageBox">

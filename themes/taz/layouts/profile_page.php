@@ -39,6 +39,8 @@ use frontend\widgets\Banner;
     <link rel="stylesheet" href="<?php echo $this->theme->baseUrl; ?>/assets/css/colors/default.css" id="option_color">
     <link rel="stylesheet" href="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap-tour/css/bootstrap-tour-standalone.css" id="option_color">
 
+    <link rel="stylesheet" href="<?php echo $this->theme->baseUrl; ?>/assets/plugins/croppie/css/croppie.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -125,6 +127,84 @@ use frontend\widgets\Banner;
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/countdown/jquery.syotimer.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/custom.js"></script>
     <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap-tour/js/bootstrap-tour.js"></script>
+
+    <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/croppie/js/croppie.js"></script>
+    <script type="text/javascript">
+
+    function readFile(input) {
+      if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              
+              reader.onload = function (e) {
+          $('.upload-demo').addClass('ready');
+                $uploadCrop.croppie('bind', {
+                  url: e.target.result
+                }).then(function(){
+                  console.log('jQuery bind complete');
+                });
+                
+              }
+              
+              reader.readAsDataURL(input.files[0]);
+          }
+          else {
+            swal("Sorry - you're browser doesn't support the FileReader API");
+        }
+    }
+
+    function popupResult(result) {
+        var html;
+        if (result.html) {
+          html = result.html;
+        }
+        if (result.src) {
+          //html = '<img src="' + result.src + '" />';
+          $('#productimage-crop_image').val(result.src);
+        }
+        console.log(result.src);
+        /*swal({
+          title: '',
+          html: true,
+          text: html,
+          allowOutsideClick: true
+        });*/
+        /*setTimeout(function(){
+          $('.sweet-alert').css('margin', function() {
+            var top = -1 * ($(this).height() / 2),
+              left = -1 * ($(this).width() / 2);
+
+            return top + 'px 0 0 ' + left + 'px';
+          });
+        }, 1);*/
+      }
+      $(document).ready(function(){
+        $uploadCrop = $('#upload-demo').croppie({
+          viewport: {
+              width: 270,
+              height: 290,
+              //type: 'circle'
+          },
+          boundary: {
+              width: 300,
+              height: 300
+          },
+          enableExif: true
+        });
+        $('#productimage-cover_photo').on('change', function () { readFile(this); });
+        $('.upload-result').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: 'viewport'
+          }).then(function (resp) {
+            popupResult({
+              src: resp
+            });
+          });
+        });
+      });
+      
+    </script>
+
     <script type="text/javascript">
       $(document).ready(function(){
 
