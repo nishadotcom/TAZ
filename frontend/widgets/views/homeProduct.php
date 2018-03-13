@@ -31,8 +31,9 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                     }else{
                       $coverImage = '';
                     }
-                    //$coverImage = (isset($psaProduct->productImages[0]) && $psaProduct->productImages[0]->crop_image) ? $psaProduct->productImages[0]->crop_image : $psaProduct->productImages[0]->cover_photo;
                     $prdImage   = (isset($psaProduct->productImages[0])) ? $pathPrdImg.$psaProduct->product_code.'/'.$coverImage : $pathPrdImg.$prdNoImg;
+                    //$coverImage = (isset($psaProduct->productImages[0]) && $psaProduct->productImages[0]->crop_image) ? $psaProduct->productImages[0]->crop_image : $psaProduct->productImages[0]->cover_photo;
+                    
                     ?>
                     <div class="slide">
                       <div class="imageBox">
@@ -80,7 +81,13 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
               <?php 
                 if($slpProducts){
                   foreach ($slpProducts as $key => $slpProduct) { 
-                    $prdImage   = (isset($slpProduct->productImages[0])) ? $pathPrdImg.$slpProduct->product_code.'/'.$slpProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
+                    //$prdImage   = (isset($slpProduct->productImages[0])) ? $pathPrdImg.$slpProduct->product_code.'/'.$slpProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
+                    if(isset($slpProduct->productImages[0])){
+                      $coverImage = ($slpProduct->productImages[0]->crop_image) ? $slpProduct->productImages[0]->crop_image : $slpProduct->productImages[0]->cover_photo;
+                    }else{
+                      $coverImage = '';
+                    }
+                    $prdImage   = (isset($slpProduct->productImages[0])) ? $pathPrdImg.$slpProduct->product_code.'/'.$coverImage : $pathPrdImg.$prdNoImg;
                     ?>
                     
 
@@ -128,7 +135,13 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
               <?php 
                 if($otlProducts){
                   foreach ($otlProducts as $key => $otlProduct) { 
-                    $prdImage   = (isset($otlProduct->productImages[0])) ? $pathPrdImg.$otlProduct->product_code.'/'.$otlProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
+                    //$prdImage   = (isset($otlProduct->productImages[0])) ? $pathPrdImg.$otlProduct->product_code.'/'.$otlProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
+                    if(isset($otlProduct->productImages[0])){
+                      $coverImage = ($otlProduct->productImages[0]->crop_image) ? $otlProduct->productImages[0]->crop_image : $otlProduct->productImages[0]->cover_photo;
+                    }else{
+                      $coverImage = '';
+                    }
+                    $prdImage   = (isset($otlProduct->productImages[0])) ? $pathPrdImg.$otlProduct->product_code.'/'.$coverImage : $pathPrdImg.$prdNoImg;
                     ?>
                     <div class="slide">
                       <div class="imageBox">
@@ -174,7 +187,13 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                 <?php 
                 if($frcProducts){
                   foreach ($frcProducts as $key => $frcProduct) { 
-                    $prdImage   = (isset($frcProduct->productImages[0])) ? $pathPrdImg.$frcProduct->product_code.'/'.$frcProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
+                    //$prdImage   = (isset($frcProduct->productImages[0])) ? $pathPrdImg.$frcProduct->product_code.'/'.$frcProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
+                    if(isset($frcProduct->productImages[0])){
+                      $coverImage = ($frcProduct->productImages[0]->crop_image) ? $frcProduct->productImages[0]->crop_image : $frcProduct->productImages[0]->cover_photo;
+                    }else{
+                      $coverImage = '';
+                    }
+                    $prdImage   = (isset($frcProduct->productImages[0])) ? $pathPrdImg.$frcProduct->product_code.'/'.$coverImage : $pathPrdImg.$prdNoImg;
                     ?>
                     <div class="slide">
                       <div class="imageBox">

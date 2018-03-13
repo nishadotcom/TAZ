@@ -40,7 +40,8 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
                     	<span style="margin-left: 0;margin-right: 0;">log in with google plus</span>
                     </button>
                     <!--<button type="button" class="btn btn-link btn-block">Don't You Have an Account?</button>-->
-	                <button type="button" class="btn btn-link btn-block">Forgot Password?</button>
+	                <!--<button type="button" class="btn btn-link btn-block">Forgot Password?</button>-->
+                    <a class="btn btn-link btn-block" href="<?= Yii::$app->homeUrl . 'user-forgot-password'; ?>">Forgot Password?</a>
                  <?php ActiveForm::end(); ?>
                 </div>
               </div>

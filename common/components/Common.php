@@ -227,7 +227,7 @@ class Common extends Component {
     /**
     * Generate SEO
     **/
-    public static function getSeo($str){
+    public static function generateSeo($str){
         return strtolower(preg_replace("![^a-z0-9]+!i", "-", $str));
     }
 

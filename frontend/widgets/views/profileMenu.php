@@ -15,7 +15,7 @@ $controllerName = $controller->id;
 
 <!--<a href="<?php echo Yii::$app->homeUrl . 'demo/wish-list'; ?>" class="btn btn-default"><i class="fa fa-gift" aria-hidden="true"></i>Wishlist</a>-->
         <?php
-        if (Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_SELLER']) {
+        if (isset(Yii::$app->user->identity) && Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_SELLER']) {
             ?>
             <a href="<?php echo Yii::$app->homeUrl . '#'; ?>" class="btn btn-default"><i class="fa fa-list" aria-hidden="true"></i>My Sales</a>
             <a href="<?php echo Yii::$app->homeUrl . 'product'; ?>" class="btn btn-default <?php echo ($controllerName == 'product') ? 'active' : ''; ?>" title="My Products"><i class="fa fa-product-hunt " aria-hidden="true"></i>My Products</a>

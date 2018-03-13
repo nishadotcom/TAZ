@@ -16,6 +16,9 @@ use yii\helpers\FileHelper;
 use yii\web\UploadedFile;
 use yii\db\Query;
 use yii\db\QueryBuilder;
+use yii\filters\AccessControl;
+use common\components\AccessRule;
+use common\models\User;
 
 /**
  * ProductController implements the CRUD actions for Product model.
@@ -32,6 +35,32 @@ class ProductController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
+                ],
+            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                // We will override the default rule config with the new AccessRule class
+                'ruleConfig' => [
+                    'class' => AccessRule::className(),
+                ],
+                'only' => ['index', 'create', 'view', 'update', 'delete'],
+                'rules' => [
+                    [
+                        'actions' => ['index', 'create', 'view', 'update', 'delete'],
+                        'allow' => true,
+                        // Allow users, moderators and admins to create
+                        'roles' => [
+                            User::ROLE_SELLER
+                        ],
+                    ],
+                    /*[
+                        'actions' => ['delete'],
+                        'allow' => true,
+                        // Allow admins to delete
+                        'roles' => [
+                            User::ROLE_ADMIN
+                        ],
+                    ],*/
                 ],
             ],
         ];
@@ -92,7 +121,7 @@ class ProductController extends Controller
 
 			$postData 	= Yii::$app->request->post();
 			$model->product_code 		= Common::generateRandomStr('PRD');
-            $model->product_seo         = 'test-seo';
+            $model->product_seo         = Yii::$app->Common->generateSeo($postData['Product']['product_name']);
 			$model->product_owner_id	= Yii::$app->user->id;
 			$model->product_sale_price	= ($postData['Product']['product_price']*22)/100+$postData['Product']['product_price'];
 			$model->created_on 			= Common::mysqlDateTime();
@@ -105,15 +134,16 @@ class ProductController extends Controller
                 $imageModel->cover_photo= UploadedFile::getInstance($imageModel, 'cover_photo');
 				$prd_img_path           = Yii::$app->params['PATH_UPLOAD_PRODUCT_IMAGE'].$model->product_code.'/';
                 FileHelper::createDirectory($prd_img_path, $mode = 0777, $recursive = true);
-				$imageName 	= date('YmdHis').'.'.$imageModel->cover_photo->extension;
+                $randomName = date('YmdHis');
+				$imageName 	= $randomName.'.'.$imageModel->cover_photo->extension;
 				$imageModel->cover_photo->saveAs($prd_img_path.$imageName);
 				//$imageModel->cover_photo = 'dfsdfd';
                 //$imageSave              = $imageModel->save(false);
                 if($imageModel->crop_image){
                     $cropImageString = $imageModel->crop_image;
                     $cropImageData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $cropImageString));
-                    $result = file_put_contents($prd_img_path.'CROP_'.$imageModel->cover_photo.'.png', $cropImageData);
-                    $cropImage = 'CROP_'.$imageModel->cover_photo.'.png';
+                    $result = file_put_contents($prd_img_path.'CROP_'.$randomName.'.png', $cropImageData);
+                    $cropImage = 'CROP_'.$randomName.'.png';
                 }else{
                     $cropImage = '';
                 }
