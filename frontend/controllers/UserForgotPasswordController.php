@@ -29,35 +29,42 @@ class UserForgotPasswordController extends Controller
             ],
         ];
     }
-
+    
     /**
-     * Lists all UserForgotPassword models.
+     * Creates a new UserForgotPassword model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new UserForgotPasswordSearch();
+        $model = new UserForgotPassword();
+
+        if ($model->load(Yii::$app->request->post())) { 
+            $userModel = User::findByEmail($model->userEmail);
+            $model->user_id = $userModel->id;
+            $model->password_key = Yii::$app->getSecurity()->generateRandomString(6);
+            $model->expire_at = Yii::$app->Common->mysqlDateTime();
+            $model->created_on = Yii::$app->Common->mysqlDateTime();
+            //echo '<pre>'; print_r(Yii::$app->Common->mysqlDateTime()); exit;
+            if($model->save()){
+                // SEND MAIL
+                return $this->render('view');
+                //return $this->redirect(['view']);
+            }
+        }
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
+        /*$searchModel = new UserForgotPasswordSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-        ]);
+        ]);*/
     }
-
-    /**
-     * Displays a single UserForgotPassword model.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionView($id)
-    {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
-    }
-
+    
     /**
      * Creates a new UserForgotPassword model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -87,6 +94,17 @@ class UserForgotPasswordController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
+    }
+    
+     /**
+     * Displays a single UserForgotPassword model.
+     * @param integer $id
+     * @return mixed
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    public function actionView()
+    {
+        return $this->render('view');
     }
 
     /**

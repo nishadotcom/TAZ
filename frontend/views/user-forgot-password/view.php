@@ -6,10 +6,13 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\UserForgotPassword */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'User Forgot Passwords', 'url' => ['index']];
+$this->title = 'Forgot Password';
+$this->params['breadcrumbs'][] = ['label' => 'Forgot Password', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<p>Password reset link has been sent to your email.</p>
+<?php /* ?>
 <div class="user-forgot-password-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -38,3 +41,4 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
 </div>
+<?php */ ?>
