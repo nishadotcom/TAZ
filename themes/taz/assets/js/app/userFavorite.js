@@ -22,8 +22,7 @@ jQuery(document).ready(function () {
             };
             ajaxCall('POST', url, ajaxData, this); // AJAX Call 
         } else {
-            console.log(userLoggedin);
-            alert('Not Allowed');
+            $('#appAuthorizationModal').modal('show');
             return false;
         }
     });
@@ -70,9 +69,7 @@ jQuery(document).ready(function () {
                 }
             });
         } else {
-            console.log(userLoggedin);
-            alert('Not Allowed');
-            //return false;
+            $('#appAuthorizationModal').modal('show');
         }
     });
 });

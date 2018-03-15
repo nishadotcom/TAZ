@@ -33,8 +33,7 @@ jQuery(document).ready(function () {
                 }
             });
         } else {
-            console.log(userLoggedin);
-            alert('Not Allowed. Please login');
+            $('#appAuthorizationModal').modal('show');
             return false;
         }
     });

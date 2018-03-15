@@ -146,6 +146,25 @@ use frontend\widgets\Banner;
 
         </div>
         
+        <!-- Modal -->
+        <div id="appAuthorizationModal" class="modal fade bd-example-modal-sm" role="dialog">
+            <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Message</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please <a href="<?= Yii::$app->homeUrl . 'login'; ?>" title="Login" style="color: #337ab7;">login</a> to perform this action.</p>
+                    </div>
+                    <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/jquery-ui/jquery-ui.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
