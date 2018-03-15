@@ -39,7 +39,7 @@ class UserForgotPasswordController extends Controller
     {
         $model = new UserForgotPassword();
 
-        if ($model->load(Yii::$app->request->post())) { 
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) { 
             $userModel = User::findByEmail($model->userEmail);
             $model->user_id = $userModel->id;
             $model->password_key = Yii::$app->getSecurity()->generateRandomString(6);
