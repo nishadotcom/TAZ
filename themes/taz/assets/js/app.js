@@ -33,6 +33,12 @@ jQuery(document).ready(function(){
             galleryActiveClass: "active"*/
         });
     }
+
+    // SHARE SINGLE PRODUCT
+    $('.share-single-product').click(function(event){
+        event.preventDefault();
+        $('#modalShareSingleProduct').modal('show');
+    });
     
    
 });

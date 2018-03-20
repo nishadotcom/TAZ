@@ -1,4 +1,7 @@
 <?php
+use bigpaulie\social\share\Share;
+use yii\helpers\Url;
+
 $productData = ($product) ? $product[0] : [];
 $this->title = $productData->product_name;//'Product View';
 
@@ -7,6 +10,7 @@ $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg = 'noImage.jpg';
 
 $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+$url = Url::toRoute($_SERVER['REQUEST_URI'], true); 
 ?>
 
 <div class="row singleProduct">
@@ -57,7 +61,7 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
             <div class="media-body">
                 <ul class="list-inline">
                     <li><a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-reply" aria-hidden="true"></i>Continue Shopping</a></li>
-                    <li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Share This</a></li>
+                    <li><a class="share-single-product" style="cursor: pointer;"><i class="fa fa-plus" aria-hidden="true"></i>Share This</a></li>
                 </ul>
                 <h4><?= $productData->product_name; ?></h4>
                 <h4>&#x20B9; <?= $productData->product_sale_price; ?></h4>
@@ -222,3 +226,28 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 
 
 </div>
+
+
+<div id="modalShareSingleProduct" class="modal fade bd-example-modal-sm" role="dialog">
+            <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">Share</h5>
+                    </div>
+                    <div class="modal-body">
+                        <?=
+                        	Share::widget([
+                        		'url'=>$url,
+                        		'type' => Share::TYPE_LARGE
+        					//'exclude' => ['network1', 'network2']
+    						]);
+                        ?>
+                    </div>
+                    <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
