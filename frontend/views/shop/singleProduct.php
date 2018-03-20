@@ -10,7 +10,7 @@ $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg = 'noImage.jpg';
 
 $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
-$url = Url::toRoute($_SERVER['REQUEST_URI'], true); 
+$url = Url::toRoute('shop/product/'.$productData->id, true); 
 ?>
 
 <div class="row singleProduct">
