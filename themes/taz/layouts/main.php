@@ -153,7 +153,7 @@ use frontend\widgets\Banner;
                 <div class="modal-content">
                     <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Message</h4>
+                    <h5 class="modal-title">Message</h5>
                     </div>
                     <div class="modal-body">
                         <p>Please <a href="<?= Yii::$app->homeUrl . 'login'; ?>" title="Login" style="color: #337ab7;">login</a> to perform this action.</p>
@@ -175,6 +175,7 @@ use frontend\widgets\Banner;
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/custom.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app.js"></script>
         <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app/userFavorite.js"></script>
+        <script src="<?php echo $this->theme->baseUrl; ?>/assets/js/app/cart.js"></script>
 
 <?php
 if (class_exists('yii\debug\Module')) {

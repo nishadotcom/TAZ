@@ -47,6 +47,25 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                         <div class="productImage clearfix">
                           <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
+                        	<div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li>
+                                    <a data-product-id="<?= $psaProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                        <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$psaProduct->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $psaProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                        <i class="fa fa-inr" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>" class="btn btn-default" title="View <?= $psaProduct->product_name; ?>">
+                                        <i class="fa fa-eye" style="margin-right:0"></i>
+                                    </a>  
+                                </li>
+                              </ul>
+                            </div>
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>"><?= $psaProduct->product_name; ?></a></h3>
