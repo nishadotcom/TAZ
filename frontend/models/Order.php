@@ -35,14 +35,15 @@ class Order extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'order_code', 'payment_status', 'order_status', 'order_date'], 'required'],
-            [['user_id'], 'integer'],
+            [['order_code', 'payment_status', 'order_status', 'order_date'], 'required'],
+            //[['user_id'], 'integer'],
             [['total_amount'], 'number'],
             [['payment_status', 'order_status'], 'string'],
             [['order_date'], 'safe'],
             [['order_code'], 'string', 'max' => 24],
             [['order_code'], 'unique'],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+            [['name', 'email', 'order_data'], 'safe'],
+            //[['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
 

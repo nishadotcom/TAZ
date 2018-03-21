@@ -21,6 +21,13 @@ use Yii;
  */
 class OrderAddressTemp extends \yii\db\ActiveRecord
 {
+    public $billingName;
+    public $billingAddress;
+    public $billingCity;
+    public $billingState;
+    public $billingCountry;
+    public $billingPincode;
+    public $billingPhone;
     /**
      * @inheritdoc
      */

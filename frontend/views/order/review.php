@@ -63,10 +63,10 @@ $total = 0;
                       <h4>order review</h4>
                     </div>
                   </div>-->
-                  <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-6 col-xs-12" style="padding-top: 8px;">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="panel-title">Billing Address</h4>
+                        <h4 class="panel-title">Shipping Address</h4>
                       </div>
                       <div class="panel-body">
                         <address>
@@ -78,17 +78,17 @@ $total = 0;
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-6 col-xs-12" style="padding-top: 8px;">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="panel-title">Shipping Address</h4>
+                        <h4 class="panel-title">Billing Address</h4>
                       </div>
                       <div class="panel-body">
                         <address>
-                          <strong><?= $addressData->name; ?></strong><br>
-                          <?php echo $addressData->address.','; ?> <br>
-                          <?php echo $addressData->city.','.$addressData->state.','; ?> <br>
-                          <?php echo $addressData->country.'-'.$addressData->pin_code; ?>
+                          <strong><?= $addressData->billingName; ?></strong><br>
+                          <?php echo $addressData->billingAddress.','; ?> <br>
+                          <?php echo $addressData->billingCity.','.$addressData->billingState.','; ?> <br>
+                          <?php echo $addressData->billingCountry.'-'.$addressData->billingPincode; ?>
                         </address>
                       </div>
                     </div>
@@ -257,7 +257,7 @@ $total = 0;
                   <input type="hidden" name="state" id="state" value="<?= $addressData->state; ?>" />
                   <input type="hidden" name="country" id="country" value="<?= $addressData->country; ?>" />
                   <input type="hidden" name="zipcode" id="zipcode" value="<?= $addressData->pin_code; ?>" />
-                  <input type="hidden" name="email" id="email" value="<?= Yii::$app->user->identity->email; ?>" />
+                  <input type="hidden" name="email" id="email" value="<?= $payuDetail['email']; ?>" />
                   <input type="hidden" name="phone" value="<?= $addressData->phone; ?>" />
 
                   <input type="hidden" name="udf1" value="<?= strtoupper(Yii::$app->getRequest()->getQueryParam('from')); ?>"> <!-- FROM  VALUE -->
@@ -265,7 +265,7 @@ $total = 0;
                   
                   <input type="hidden" name="surl" value="http://talozo.com/dev/order/payment-success" size="64" />
                   <input type="hidden" name="furl" value="http://talozo.com/dev/order/payment-error" size="64" />
-                  <input type="hidden" name="curl" value="http://talozo.com/dev/dev/order/payment-cancel" />
+                  <input type="hidden" name="curl" value="http://talozo.com/dev/order/payment-cancel" />
                   <input type="hidden" name="service_provider" value="" size="64" />
                 </form>
               </div>

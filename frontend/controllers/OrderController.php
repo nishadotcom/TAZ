@@ -47,6 +47,10 @@ class OrderController extends Controller
         $this->layout = 'cart';
         //$transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
         $model = new OrderAddress();
+        if(Yii::$app->user->isGuest){
+            $model->scenario = 'guestOrder';
+        }
+        
 
         if ($model->load(Yii::$app->request->post())) {
             // STORE ADDRESS IN TEMP TABLE 
@@ -63,11 +67,15 @@ class OrderController extends Controller
             $OrderAddressTempModel->address_type = 'Shipping';
             $OrderAddressTempModel->created_on = Yii::$app->Common->mysqlDateTime();
             $OrderAddressTempModel->save();
+            // BILLING ADDRESS
+            $connection = Yii::$app->getDb();
+            $insert_query 	= 'INSERT INTO taz_order_address_temp(txn_id, name, address, city, state, country, pin_code, phone, address_type, created_on) VALUES("'.$OrderAddressTempModel->txn_id.'", "'.$model->billingName.'", "'.$model->billingAddress.'", "'.$model->billingCity.'", "'.$model->billingState.'", "'.$model->billingCountry.'", "'.$model->billingPincode.'", "'.$model->billingPhone.'", "Billing", "'.Yii::$app->Common->mysqlDateTime().'")';
+            $command = $connection->createCommand($insert_query)->execute();
 
             // payumoney details
             $payuDetail['key'] = 'gtKFFx';//Yii::$app->params['payumoneyMerchentKey'];
             $payuDetail['txnid'] = Yii::$app->request->post('transactionId');//Common::txnId();
-            //$payuDetail['hash'] = '';
+            $payuDetail['email'] = (Yii::$app->user->isGuest) ? $model->guestEmail : Yii::$app->user->identity->email;
             $payuDetail['action'] = 'https://test.payu.in/_payment';
             //$payuDetail['action'] = 'https://secure.payu.in/_payment';
 
@@ -106,12 +114,22 @@ class OrderController extends Controller
             if(isset($_POST['status']) && $_POST['status'] == Yii::$app->params['payumoneyPaymentStatus']){
                 // INSERT NEW ORDER
                 $orderModel = new Order();
-                $orderModel->user_id = Yii::$app->user->identity->id;
+                if(Yii::$app->user->isGuest){
+                    $orderModel->name = $_POST['firstname'];
+                    $orderModel->email = $_POST['email'];
+                    $orderModel->user = 'Guest';
+                }else{
+                    $orderModel->user_id = Yii::$app->user->identity->id;
+                    $orderModel->name = Yii::$app->user->identity->firstname.' '.Yii::$app->user->identity->lastname;
+                    $orderModel->email = Yii::$app->user->identity->email;
+                }
+                
                 $orderModel->order_code = 'TAZORD'.date('his');
                 $orderModel->total_amount = $_POST['amount'];
                 $orderModel->payment_status = ($_POST['status'] == 'success') ? 'SUCCESS' : 'NOTSUCCESS';
                 $orderModel->order_status = 'NEW';
                 $orderModel->order_date = Yii::$app->Common->mysqlDateTime();
+                $orderModel->order_data = json_encode($_POST);
 
                 if($orderModel->save()){
                     // INSERT THE ORDER DETAILS
