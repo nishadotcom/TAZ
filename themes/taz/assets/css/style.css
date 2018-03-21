@@ -1117,7 +1117,7 @@ body.bodyColor.container {
 
 @media (min-width: 768px) {
   .nav-V2.navbar-default .navbar-collapse {
-    margin-right: 50px;
+   /* margin-right: 50px;*/
   }
 }
 

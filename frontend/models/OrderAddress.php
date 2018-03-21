@@ -55,8 +55,8 @@ class OrderAddress extends \yii\db\ActiveRecord
             [['address'], 'string', 'max' => 500],
             [['city'], 'string', 'max' => 150],
             [['state', 'country'], 'string', 'max' => 200],
-            [['pin_code'], 'string', 'max' => 10],
-            [['phone'], 'string', 'max' => 15],
+            [['pin_code', 'billingPincode'], 'number'],
+            [['phone', 'billingPhone'], 'number'],
             [['guestEmail'], 'email'],
             [['order_id'], 'exist', 'skipOnError' => true, 'targetClass' => Order::className(), 'targetAttribute' => ['order_id' => 'id']],
         ];

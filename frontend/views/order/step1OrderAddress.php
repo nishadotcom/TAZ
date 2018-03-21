@@ -52,8 +52,8 @@ $prdNoImg = 'noImage.jpg';
                     ]); ?>
                     <!--<form action="" class="row" method="POST" role="form">-->
                         <?php if(Yii::$app->user->isGuest){ ?>
-                            <?= $form->field($model, 'guestEmail')->textInput(['maxlength' => true, 'tabindex'=>'1']) ?>
-                            <?= $form->field($model, 'guestName')->textInput(['maxlength' => true, 'tabindex'=>'2']) ?>
+                            <?= $form->field($model, 'guestEmail')->textInput(['maxlength' => true]) ?>
+                            <?= $form->field($model, 'guestName')->textInput(['maxlength' => true]) ?>
                         <?php } // IF USER IS GUEST ?>
                         
                     
