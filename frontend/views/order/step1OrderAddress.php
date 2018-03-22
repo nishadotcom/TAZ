@@ -127,8 +127,8 @@ $prdNoImg = 'noImage.jpg';
                             <textarea class="form-control"></textarea>
                         </div>-->
                         <div class="col-xs-12 checkboxArea">
-                            <input id="checkbox1" type="checkbox" name="checkbox" value="1" checked="checked">
-                            <label for="checkbox1"><span></span>Same as shipping Information </label>
+                            <input id="sameAsShippingAdress" type="checkbox" name="checkbox" value="1">
+                            <label for="sameAsShippingAdress"><span></span>Same as shipping Information </label>
                         </div>
                         <div class="col-xs-12">
                             <div class="well well-lg clearfix">

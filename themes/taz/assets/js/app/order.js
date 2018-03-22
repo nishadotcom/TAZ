@@ -91,6 +91,20 @@ jQuery(document).ready(function () {
                 }
             });
     });
+
+    $('#sameAsShippingAdress').click(function(){
+        if($(this).prop('checked') == true){ 
+            $('#orderaddress-billingname').val($('#orderaddress-name').val());
+            $('#orderaddress-billingaddress').val($('#orderaddress-address').val());
+            $('#orderaddress-billingcity').val($('#orderaddress-city').val());
+            $('#orderaddress-billingstate').val($('#orderaddress-state').val());
+            $('#orderaddress-billingcountry').val($('#orderaddress-country').val());
+            $('#orderaddress-billingpincode').val($('#orderaddress-pin_code').val());
+            $('#orderaddress-billingphone').val($('#orderaddress-phone').val());
+        }/*else{ 
+            $('#orderaddress-billingname').val('');
+        }*/
+    });
     
 }); // END OF READY FUNCTION
 
