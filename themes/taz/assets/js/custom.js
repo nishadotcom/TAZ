@@ -235,17 +235,19 @@ jQuery(document).ready(function() {
 		  }
 	  });
 
+	  var isMulti = ($('.bannerV3 .slide').length > 1) ? true : false;
+	  //alert($('.bannerV3 .slide').length);
 	var sloder = $('.owl-carousel.bannerV3');
 	  sloder.owlCarousel({
-		  loop:true,
+		  loop:isMulti,
 		  autoplay:true,
-		  autoplayTimeout:2500000,
+		  autoplayTimeout: 25000,
 		  autoplayHoverPause:true,
 		  nav:false,
 		  moveSlides: 1,
 		  dots: false,
 		  //margin: 15,
-		  items: 1,
+		items: 1,
 		  responsive:{
 			  320:{
 				  items:1,

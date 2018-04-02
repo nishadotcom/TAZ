@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-xs-12">
         <div class="innerWrapper">
             <div class="orderBox myAddress">
-                <h4><a class="btn btn-lg btn-success-filled btn-rounded" href="<?php echo Yii::$app->homeUrl.'product/create'; ?>" title="Add New Product">Add New Product</a></h4>
+                <h4><a class="btn btn-md btn-success-filled btn-rounded" href="<?php echo Yii::$app->homeUrl.'product/create'; ?>" title="Add New Product">Add New Product</a></h4>
                 <div class="table-responsive">
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,

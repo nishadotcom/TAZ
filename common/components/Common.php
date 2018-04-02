@@ -8,9 +8,10 @@ use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\helpers\Url;
 use yii\db\Query;
-use common\models\User;
 use yii\web\UploadedFile;
 use yii\web\BadRequestHttpException;
+use common\models\User;
+use backend\models\Slideshow;
 
 class Common extends Component {
 
@@ -231,8 +232,9 @@ class Common extends Component {
         return strtolower(preg_replace("![^a-z0-9]+!i", "-", $str));
     }
 
-    public static function updateLastLogin($userid){
-
+    public static function getBanners(){
+        $banners  = Slideshow::find()->orderBy(['order_by'=>SORT_ASC])->where(['status'=>'Active'])->all();
+        return $banners;
     }
 
 } // End of class

@@ -192,8 +192,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <aside id="sticky-social">
     <ul>
-        <li><a href="#" class="entypo-facebook" target="_blank"><i class="fa fa-shopping-cart"> </i><span>Facebook</span></a></li>
-        <li><a href="#" class="entypo-twitter" target="_blank"><i class="fa fa-shopping-cart"></i><span>Twitter</span></a></li>
-        <li><a href="#" class="entypo-gplus" target="_blank"><i class="fa fa-shopping-cart"></i><span>Google+</span></a></li>
+        <li><a href="#" class="entypo-facebook" target="_blank">Become a Seller<i class="fa fa-shopping-cart"> </i><span>Facebook</span></a></li>
+        <!--<li><a href="#" class="entypo-twitter" target="_blank"><i class="fa fa-shopping-cart"></i><span>Twitter</span></a></li>
+        <li><a href="#" class="entypo-gplus" target="_blank"><i class="fa fa-shopping-cart"></i><span>Google+</span></a></li>-->
     </ul>
 </aside>

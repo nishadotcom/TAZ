@@ -83,6 +83,7 @@ class SlideshowController extends Controller
         $model = new Slideshow();
         $model->scenario = 'create';
         if($model->load(Yii::$app->request->post())) {
+            $model->created_on = Yii::$app->Common->mysqlDateTime();
             $uploadImage = Yii::$app->Common->commonUpload($model,Yii::$app->params['SLIDER_IMAGE_UPLOAD_PATH'],'image_name');
              if($model->save()){
                 Yii::$app->getSession()->setFlash('msg',Yii::t("app","General Add Success"));

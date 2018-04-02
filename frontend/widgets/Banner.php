@@ -15,7 +15,8 @@ class Banner extends Widget {
     }
 
     public function run() {
-        return $this->render('banner');
+    	$banners = Yii::$app->Common->getBanners();
+        return $this->render('banner', ['banners'=>$banners]);
     }
 
 }

@@ -38,7 +38,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
             </div>
         </div>
 
-        <div class="panel panel-default filterNormal">
+        <!--<div class="panel panel-default filterNormal">
             <div class="panel-heading">filter by Size</div>
             <div class="panel-body">
                 <ul class="list-unstyled clearfix">
@@ -48,7 +48,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                     <li><a href="#">Extra Large<span>(12)</span></a></li>
                 </ul>
             </div>
-        </div>
+        </div>-->
     </div>
     <div class="col-md-9 col-sm-8 col-md-pull-3 col-sm-pull-4 col-xs-12">
         <div class="row filterArea">
