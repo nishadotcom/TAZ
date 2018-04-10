@@ -13,7 +13,7 @@ $this->title = 'Home';
 <?= HomeProduct::widget(); ?>
 
 <!-- NEW ARRIVALS / ON SALE SECTION -->
-<?= FeatureProduct::widget(); ?>
+<?php //echo FeatureProduct::widget(); ?>
 
 <!-- FEATURE SELLER -->
 <?= WidgetFeatureSeller::widget(); ?>

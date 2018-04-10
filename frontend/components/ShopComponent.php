@@ -55,6 +55,16 @@ class ShopComponent extends Component {
         return UserFavorite::find()->where(['user_id' => $userId])->asArray()->all();
     }
 
+    public static function getTopFavoritedProdicts(){
+    	$topFavoriteProducts   = Shop::getTopFavoriteProducts();
+    	return $topFavoriteProducts;
+    }
+
+    public static function getProductImageByProductId($productId){
+    	$productImages = Shop::getProductImageByProductId($productId);
+    	return $productImages;
+    }
+
 } // End of class
 ?>
 
