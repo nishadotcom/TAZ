@@ -54,4 +54,9 @@ class Shop extends \yii\db\ActiveRecord
         $productImages = ProductImage::find()->where(['product_id'=>$productId])->all();
         return $productImages;
     }
+
+    public static function getNewAriivalProducts(){
+        $products   = Product::find()->where(['product_status'=>'Active'])->with('productAddresses')->andWhere('created_on >= DATE_SUB(CURDATE(), INTERVAL 10 DAY)')->with('productImages')->with('productCategory')->limit(8)->orderBy(['created_on' => SORT_DESC])->all();
+        return $products;
+    }
 }

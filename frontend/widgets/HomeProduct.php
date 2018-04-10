@@ -15,6 +15,7 @@ class HomeProduct extends Widget {
     }
 
     public function run() {
+        $newArrivals    = Yii::$app->ShopComponent->getNewArrivals();
         $topFavoriteProducts = Yii::$app->ShopComponent->getTopFavoritedProdicts();
     	$psaProducts 	= Yii::$app->ShopComponent->getProductsByCategoryId(1);
     	$slpProducts 	= Yii::$app->ShopComponent->getProductsByCategoryId(2);
@@ -26,6 +27,7 @@ class HomeProduct extends Widget {
         	'otlProducts'=>$otlProducts,
         	'frcProducts'=>$frcProducts,
             'topFavoriteProducts' => $topFavoriteProducts,
+            'newArrivals' => $newArrivals,
         ]);
     }
 

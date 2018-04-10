@@ -65,6 +65,11 @@ class ShopComponent extends Component {
     	return $productImages;
     }
 
+    public static function getNewArrivals(){
+    	$products = Shop::getNewAriivalProducts();
+    	return $products;
+    }
+
 } // End of class
 ?>
 
