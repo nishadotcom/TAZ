@@ -50,7 +50,7 @@ class Shop extends \yii\db\ActiveRecord
         return $products;
     }
 
-    public function getProductImageByProductId($productId){
+    public static function getProductImageByProductId($productId){
         $productImages = ProductImage::find()->where(['product_id'=>$productId])->all();
         return $productImages;
     }
