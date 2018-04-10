@@ -67873,3 +67873,175 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1523391907.247
     'REQUEST_TIME' => 1523391907
 ]
+2018-04-10 20:40:14 [127.0.0.1][-][v641tgkva5dehtl0bd2ofrj620][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "robots.txt". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('robots.txt', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-10 20:40:14 [127.0.0.1][-][v641tgkva5dehtl0bd2ofrj620][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/65.0.3325.181 Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36742'
+    'REDIRECT_URL' => '/robots.txt'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/robots.txt'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523392814.349
+    'REQUEST_TIME' => 1523392814
+]
+2018-04-10 20:40:15 [127.0.0.1][1][4kjihn2kbhmeqhhnoq3fnemcg5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "common/uploads/product_images/PRD130318212557xFiq/CROP_products-11.jpg.png". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('common/uploads/...', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-10 20:40:15 [127.0.0.1][1][4kjihn2kbhmeqhhnoq3fnemcg5][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    'advanced-frontend' => '4kjihn2kbhmeqhhnoq3fnemcg5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/65.0.3325.181 Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; advanced-frontend=4kjihn2kbhmeqhhnoq3fnemcg5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36740'
+    'REDIRECT_URL' => '/common/uploads/product_images/PRD130318212557xFiq/CROP_products-11.jpg.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/common/uploads/product_images/PRD130318212557xFiq/CROP_products-11.jpg.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523392815.184
+    'REQUEST_TIME' => 1523392815
+]
+2018-04-10 20:40:16 [127.0.0.1][1][4kjihn2kbhmeqhhnoq3fnemcg5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('favicon.ico', Array)
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-10 20:40:16 [127.0.0.1][1][4kjihn2kbhmeqhhnoq3fnemcg5][info][application] $_COOKIE = [
+    '_identity-backend' => '8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a:2:{i:0;s:17:\"_identity-backend\";i:1;s:14:\"[1,\"\",2592000]\";}'
+    '_identity-frontend' => 'c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    'advanced-frontend' => '4kjihn2kbhmeqhhnoq3fnemcg5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'dev.talozo.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/65.0.3325.181 Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://dev.talozo.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity-backend=8daf42aa035fd681c74bf02b929e96b2831b73e0d6fc40076b78a267c9881270a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _identity-frontend=c5b5ea339bc938dfca59173e3cfa1dd392471a2d99f78e2f240dacd60737d9c9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; advanced-frontend=4kjihn2kbhmeqhhnoq3fnemcg5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'dev.talozo.local'
+    'SERVER_ADDR' => '127.0.1.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/ANTs/Freelance/Talozo/dev'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/ANTs/Freelance/Talozo/dev/index.php'
+    'REMOTE_PORT' => '36736'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523392816.389
+    'REQUEST_TIME' => 1523392816
+]

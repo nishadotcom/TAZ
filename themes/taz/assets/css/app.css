@@ -28,6 +28,7 @@
 
 .imageBox .productImage img{
     min-height: 283px;
+    height: 200px;
 }
 
 .rating{
