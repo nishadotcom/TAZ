@@ -59,4 +59,9 @@ class Shop extends \yii\db\ActiveRecord
         $products   = Product::find()->where(['product_status'=>'Active'])->with('productAddresses')->andWhere('created_on >= DATE_SUB(CURDATE(), INTERVAL 10 DAY)')->with('productImages')->with('productCategory')->limit(8)->orderBy(['created_on' => SORT_DESC])->all();
         return $products;
     }
+
+    public static function getFeatureSellers(){
+        $sellers = User::find()->where(['user_type'=>'Seller', 'status'=>'Active'])->andWhere('id NOT IN (SELECT seller_id FROM taz_feature_seller)')->orderBy(['created_at'=>SORT_ASC])->limit(2)->with('userDetails')->all();
+        return $sellers;
+    }
 }

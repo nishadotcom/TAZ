@@ -3169,6 +3169,7 @@ body.bodyColor.container {
   padding-top: 10px;
   display: table-cell;
   vertical-align: top;
+  min-width: 645px;
 }
 @media (min-width: 768px) {
   .testimonial-inner .testimonial-content {

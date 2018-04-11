@@ -70,6 +70,11 @@ class ShopComponent extends Component {
     	return $products;
     }
 
+    public static function getFeatureSellers(){
+    	$featureSellers = Shop::getFeatureSellers();
+    	return $featureSellers;
+    }
+
 } // End of class
 ?>
 

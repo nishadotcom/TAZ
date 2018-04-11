@@ -16,8 +16,9 @@ class WidgetFeatureSeller extends Widget {
     }
 
     public function run() {
-    	$feature_sellers = FeatureSeller::find()->where(['status'=>Yii::$app->params['STATUS_ACTIVE']])->all();
-        return $this->render('featureSeller', ['feature_sellers'=>$feature_sellers]);
+    	//$feature_sellers = FeatureSeller::find()->where(['status'=>Yii::$app->params['STATUS_ACTIVE']])->all();
+    	$featureSellers    = Yii::$app->ShopComponent->getFeatureSellers();
+        return $this->render('featureSeller', ['featureSellers'=>$featureSellers]);
     }
 
 }
