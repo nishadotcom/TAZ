@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
-$prdNoImg     = 'noImage.jpg';
+$prdNoImg     = 'noImage.png';
 
 if(!Yii::$app->user->isGuest){
     $userid = Yii::$app->user->id;

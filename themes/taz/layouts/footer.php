@@ -4,14 +4,12 @@
           <div class="row">
             <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
-                <h5>Accessories</h5>
+                <h5>Categories</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Body care </a></li>
-                  <li><a href="#">Chambray </a></li>
-                  <li><a href="#">Floral </a></li>
-                  <li><a href="#">Rejuvination </a></li>
-                  <li><a href="#">Shaving </a></li>
-                  <li><a href="#">Toilette </a></li>
+                  <li><a href="<?php echo Yii::$app->homeUrl . 'shop/products/1'; ?>" title="PSA">PSA </a></li>
+                  <li><a href="<?php echo Yii::$app->homeUrl . 'shop/products/2'; ?>" title="SLP">SLP </a></li>
+                  <li><a href="<?php echo Yii::$app->homeUrl . 'shop/products/3'; ?>" title="OTL">OTL </a></li>
+                  <li><a href="<?php echo Yii::$app->homeUrl . 'shop/products/4'; ?>" title="FRC">FRC </a></li>
                 </ul>
               </div>
             </div>
