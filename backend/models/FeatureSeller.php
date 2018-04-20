@@ -31,7 +31,7 @@ class FeatureSeller extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['seller_id', 'date_from', 'date_to', 'status'], 'required'],
+            [['seller_id', 'status'], 'required'],
             [['seller_id'], 'integer'],
             [['date_from', 'date_to', 'created_on'], 'safe'],
             [['status'], 'string'],

@@ -15,7 +15,7 @@ if($featureSellers){
 	  	<div class="owl-carousel testimonialSlider">
 	  		<?php 
 	  		foreach ($featureSellers as $key => $featureSeller) {
-
+	  			$featureSeller = $featureSeller->sellerDetail; 
                 $profileImg = ($featureSeller->profile_image) ? $pathProfileImg.$featureSeller->profile_image : $pathProfileImg.$profileNoImg;
  
 	  			?>

@@ -9,6 +9,7 @@ use frontend\models\ProductImage;
 use frontend\models\ProductAddress; 
 use backend\models\Category;
 use frontend\models\UserFavorite; 
+use backend\models\FeatureSeller;
 
 class Shop extends \yii\db\ActiveRecord
 {
@@ -61,7 +62,17 @@ class Shop extends \yii\db\ActiveRecord
     }
 
     public static function getFeatureSellers(){
-        $sellers = User::find()->where(['user_type'=>'Seller', 'status'=>'Active'])->andWhere('id NOT IN (SELECT seller_id FROM taz_feature_seller)')->orderBy(['created_at'=>SORT_ASC])->limit(2)->with('userDetails')->all();
+        /*$sellers = User::find()->where(['user_type'=>'Seller', 'status'=>'Active'])->andWhere('id NOT IN (SELECT seller_id FROM taz_feature_seller)')->orderBy(['created_at'=>SORT_ASC])->limit(2)->with('userDetails')->all();
+        return $sellers;*/
+        $featureSellers = FeatureSeller::find()->where(['status'=>'Active'])->with('sellerDetail')->all();
+        return $featureSellers;
+    }
+
+    public static function getSellersForFeatureSeller(){
+        $sql        = 'SELECT id FROM `taz_user` WHERE user_type="Seller" AND status="Active" AND id NOT IN (SELECT seller_id FROM taz_feature_seller) ORDER BY RAND() LIMIT 4';
+        $connection = Yii::$app->getDb();
+        $model      = $connection->createCommand($sql);
+        $sellers    = $model->queryAll();
         return $sellers;
     }
 }
