@@ -9,6 +9,10 @@ if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha')
 	$dbName 	= 'TAZALO';
 	$dbUser		= 'root';
 	$dbPassword	= 'root';
+	/*$host 		= '50.62.177.83';
+	$dbName 	= 'dev_talozo';
+	$dbUser		= 'dev_talozo';
+	$dbPassword	= 'dev@talozo17';*/
 }else{ 
 	$host 		= 'localhost';
 	$dbName 	= 'dev_talozo';

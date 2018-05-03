@@ -61,7 +61,7 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
             <div class="media-body">
                 <ul class="list-inline">
                     <li><a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-reply" aria-hidden="true"></i>Continue Shopping</a></li>
-                    <li><a class="share-single-product" style="cursor: pointer;"><i class="fa fa-plus" aria-hidden="true"></i>Share This</a></li>
+                    <li><a class="share-single-product" style="cursor: pointer;"><i class="fa fa-plus" aria-hidden="true"></i>Share</a></li>
                 </ul>
                 <h4><?= $productData->product_name; ?></h4>
                 <h4>&#x20B9; <?= $productData->product_sale_price; ?></h4>
@@ -89,8 +89,8 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                 </div>
                 <div class="tabArea">
                     <ul class="nav nav-tabs">
+                    	<li><a data-toggle="tab" href="#aboutSeller">About Seller</a></li>
                         <li class="active"><a data-toggle="tab" href="#details">details</a></li>
-                        <!--<li><a data-toggle="tab" href="#about-art">about</a></li>-->
                         <!--<li><a data-toggle="tab" href="#sizing">sizing</a></li>-->
                         <li><a data-toggle="tab" href="#shipping">shipping</a></li>
                     </ul>
@@ -120,15 +120,27 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                               <li>Wash Cold, dry low</li>
                             </ul>-->
                         </div>
-                        <?php /* ?>
-                          <div id="about-art" class="tab-pane fade">
-                          <p><?= $productData->product_long_description; ?></p>
-                          </div><?php */ ?>
+                        <!-- TAB ABOUT SEELER -->
+						<div id="aboutSeller" class="tab-pane fade">
+							<p>Under Construction</p>
+						</div>
                         <!--<div id="sizing" class="tab-pane fade">
                           <p>Praesent dui felis, gravida a auctor at, facilisis commodo ipsum. Cras eu faucibus justo. Nullam varius cursus nisi, sed elementum sem sagittis at. Nulla tellus massa, vestibulum a commodo facilisis, pulvinar convallis nunc.</p>
                         </div>-->
                         <div id="shipping" class="tab-pane fade">
-                            <p>Under Constrction</p>
+                            <p></p>
+                            <div id="newsletter">
+	                            <div class="input-group">
+	                              	<input type="text" class="form-control input-sm" placeholder="Enter Delivery Pincode" style=" min-height: 37px;margin-bottom: 0px;width: 274px;">
+	                              	<span class="input-group-btn">
+	                                  	<button class="btn btn-sm btn-primary-filled " type="button">Check</button>
+	                              	</span>
+                          		</div>
+                          		<small style="color: #797979;">
+                              		Usually delivered in 3-4 days <br>
+                              		Enter pincode for exact delivery dates/charge
+                            	</small>
+                          	</div>
                         </div>
                     </div>
                 </div>
@@ -137,8 +149,256 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
     </div>
 </div>
 
+
+
+
 <div class="row">
-    <div class="col-xs-12">
+	<!-- FEATURE PRODUCT SECTION -->
+	<div class="row featuredProducts version3">
+            <div class="col-xs-12">
+              <div class="tabCommon">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#newArrivals">Similar Color</a></li> 
+                  <li><a data-toggle="tab" href="#topFavorited">Similar Material</a></li>
+                  <li><a data-toggle="tab" href="#menu3">Similar Type</a></li>
+                </ul>
+                <div class="tab-bottom">
+                </div>
+                <div class="tab-content">
+
+                  <!--
+                  NEW ARRIALS
+                  -->
+                  <div id="newArrivals" class="tab-pane fade in active">
+                    <div class="row">
+
+                        <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--
+                  END OF NEW ARRIALS
+                  -->
+
+                  <!--
+                  TOP FAVORITED
+                  -->
+                  <div id="topFavorited" class="tab-pane fade">
+                    <div class="row">
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--
+                  END OF TOP FAVORITED
+                  -->
+                  <div id="menu3" class="tab-pane fade">
+                    <div class="row">
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img3.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img8.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Scarf Ring Corner</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img9.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Sun Buddies</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img10.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img11.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Nike Sportswear</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img6.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imageBox">
+                          <div class="productImage clearfix">
+                            <a href="single-product.html">
+                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img4.jpg" alt="featured-product-img">
+                            </a>
+                            <div class="productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="productCaption clearfix">
+                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
+                            <h3>$199</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- END OF FEATURE PRODUCT SECTION -->
+
+    <!--<div class="col-xs-12">
         <div class="page-header">
             <h4 class="media-heading"><a href="/shop/products/4" title="FRC Products">Similar Products</a></h4>
         </div>
@@ -222,32 +482,30 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                 <h5 class="text-normal">$199</h5>
             </div>
         </div>
-    </div>
-
-
+    </div>-->
 </div>
-
+<!-- END OF SIMILAR PRODUCTIOS .row -->
 
 <div id="modalShareSingleProduct" class="modal fade bd-example-modal-sm" role="dialog">
-            <div class="modal-dialog modal-sm">
-            <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h5 class="modal-title">Share</h5>
-                    </div>
-                    <div class="modal-body">
-                        <?=
-                        	Share::widget([
-                        		'url'=>$url,
-                        		'type' => Share::TYPE_LARGE
-        					//'exclude' => ['network1', 'network2']
-    						]);
-                        ?>
-                    </div>
-                    <!--<div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>-->
-                </div>
+    <div class="modal-dialog modal-sm">
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title">Share</h5>
             </div>
+            <div class="modal-body">
+                <?=
+                	Share::widget([
+                		'url'=>$url,
+                		'type' => Share::TYPE_LARGE
+					//'exclude' => ['network1', 'network2']
+					]);
+                ?>
+            </div>
+            <!--<div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>-->
         </div>
+    </div>
+</div>
