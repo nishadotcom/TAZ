@@ -1,7 +1,8 @@
 //============================== CART =========================
 jQuery(document).ready(function () {
     // Add / Remove User Favorite
-    $('.userFavorite').click(function (event) {
+    //$('.userFavorite').click(function (event) {
+    $(document).on('click', '.userFavorite', function(event){
         //event.preventDefault();
         var productId = $(this).attr('data-product-id');
         var userId = $(this).attr('data-user-id');
@@ -28,7 +29,8 @@ jQuery(document).ready(function () {
     });
 
     // From Home
-    $('.homeUserFavorite').click(function (event) {
+    //$('.homeUserFavorite').click(function (event) {
+    $(document).on('click', '.homeUserFavorite', function(event){
         //event.preventDefault();
         var productId = $(this).attr('data-product-id');
         var userId = $(this).attr('data-user-id');

@@ -1,7 +1,8 @@
 //============================== CART =========================
 jQuery(document).ready(function () {
     // Add to CART button click
-    $('.add_to_cart').click(function (event) {
+    //$('.add_to_cart').click(function (event) {
+    $(document).on('click', '.add_to_cart', function(event){
         //event.preventDefault();
         var productId = $(this).attr('data-product-id');
         var userId = $(this).attr('data-user-id');
