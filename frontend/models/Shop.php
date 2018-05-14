@@ -29,13 +29,24 @@ class Shop extends \yii\db\ActiveRecord
         return [];
     }
 
-    public static function getProductsByCategoryId($categoryId){
-		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
+    public static function getProductsByCategoryId($categoryId, $filters=false){
+        $priceWhere = [];
+        if($filters && isset($filters['price'])){
+            $priceWhere = ['between', 'product_sale_price', ltrim($filters['price']['min'], '₹'), ltrim($filters['price']['max'], '₹')];
+            //$priceWhere = ['between', 'product_sale_price', 600, 700];
+        }
+
+		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->andWhere($priceWhere)->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
 		return $products;
 	}
 
     public static function getProductById($productId){
         $products   = Product::find()->where(['id'=>$productId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->all();
+        return $products;
+    }
+
+    public static function getSimilarColorProducts($categoryId, $color=false){
+        $products = Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
         return $products;
     }
 

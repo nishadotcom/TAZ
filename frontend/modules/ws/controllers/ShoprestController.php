@@ -13,6 +13,7 @@ use frontend\models\Cart;
 use frontend\models\CartSearch;
 use frontend\models\Shop;
 use frontend\models\UserFavorite;
+use backend\models\Category;
 
 class ShoprestController extends ActiveController {
 
@@ -44,6 +45,35 @@ class ShoprestController extends ActiveController {
         unset($actions['index'], $actions['create'], $actions['update'], $actions['delete']);
 
         return $actions;
+    }
+
+    public function actionAjaxCategoryProductsFilter(){
+    	$category = (isset($_POST['categoryId'])) ? $_POST['categoryId'] : '';
+    	$min	= (isset($_POST['min'])) ? $_POST['min'] : 100;
+    	$max 	= (isset($_POST['max'])) ? $_POST['max'] : 500;
+    	if($category){
+    		$filter['price']['min'] = $min;
+    		$filter['price']['max'] = $max;
+    		$products = Shop::getProductsByCategoryId($category, $filter); 
+    		if(!Yii::$app->user->isGuest){
+	            $userid = Yii::$app->user->id;
+	            $getUserFavoriteProducts = Yii::$app->ShopComponent->getUserFavoriteProducts($userid);
+	        }else{
+	            $getUserFavoriteProducts = [];
+	        }
+	        $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavoriteProducts, 'product_id') : [];
+
+	        $content =  $this->renderPartial('ajaxCategoryProducts', [
+	                    'categoryData' => Category::findOne($category),
+	                    'categoryProducts' => $products,
+	                    'cartData' => Cart::getUserCart(),
+	                    'userFavoriteProducts' => $userFavoriteProducts,
+	        ]);
+	        $data['content'] = $content;
+	        return $this->_returnResult($data, 609, 1, 0);
+    	}else{
+    		return $this->_returnResult($data, 600, 0, 1);
+    	}
     }
     
     /**
@@ -254,6 +284,7 @@ class ShoprestController extends ActiveController {
             606 => 'Product has been removed from your favorites',
             607 => 'Product could not be added to your favorites. Please try again',
             608 => 'Product could not be removed from your favorites. Please try again',
+            609 => 'Category Products'
         ];
 
         return (isset($codes[$status])) ? $codes[$status] : '';

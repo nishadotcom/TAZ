@@ -26,14 +26,15 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
             <div class="panel-body clearfix">
                 <div class="price-slider-inner"> 
                     <span class="amount-wrapper">
+                        <input type="hidden" name="categoryId" id="categoryId" value="<?php echo ($categoryData) ? $categoryData->id : 0; ?>">
                         Price:
-                        <input type="text" id="price-amount-1" readonly>
+                        <input type="text" id="priceMin" readonly>
                         <strong>-</strong>
-                        <input type="text" id="price-amount-2" readonly> 
+                        <input type="text" id="priceMax" readonly> 
                     </span>                                            
                     <div id="price-range"></div>  
                 </div>
-                <input class="btn btn-default" type="submit" value="Filter">
+                <input class="btn btn-default" type="submit" value="Filter" id="categoryPriceFilter">
                 <!-- <span class="priceLabel">Price: <strong>$12 - $30</strong></span> -->
             </div>
         </div>

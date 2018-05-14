@@ -69,6 +69,9 @@ class ShopController extends Controller {
         $this->layout = 'categoryProducts';
         $product = Shop::getProductById($id);
 
+        // SIMILAR COLOR
+        //$similarColor = Shop::getSimilarColorProducts($category, $color);
+
         return $this->render('singleProduct', [
                     'product' => $product,
         ]);
