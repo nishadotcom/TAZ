@@ -46,9 +46,9 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>" title="<?= $psaProduct->product_name; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
-                        	<div class="productMasking">
+                        	<div class="home productMasking">
                               <ul class="list-inline btn-group" role="group">
                                 <li>
                                     <a data-product-id="<?= $psaProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
@@ -69,7 +69,7 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                             </div>
                         </div>
                         <div class="productCaption clearfix">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>"><?= $psaProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>" title="<?= $psaProduct->product_name; ?>"><?= $psaProduct->product_name; ?></a></h3>
                           <span class="offer-price">&#x20B9; <?= $psaProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /*?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$psaProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $psaProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
@@ -121,14 +121,35 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>" title="<?= $slpProduct->product_name; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
+                            <!-- MASKING -->
+                          <div class="home productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li>
+                                    <a data-product-id="<?= $slpProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                        <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$slpProduct->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $slpProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                        <i class="fa fa-inr" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>" class="btn btn-default" title="View <?= $slpProduct->product_name; ?>">
+                                        <i class="fa fa-eye" style="margin-right:0"></i>
+                                    </a>  
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- END OF MASKING -->
                         </div>
                         <div class="productCaption clearfix">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>"><?= $slpProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>" title="<?= $slpProduct->product_name; ?>"><?= $slpProduct->product_name; ?></a></h3>
                           <span class="offer-price">&#x20B9; <?= $slpProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
-                          <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$slpProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $slpProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$slpProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $slpProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
                         </div>
                       </div>
                     </div>
@@ -173,14 +194,35 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>" title="<?= $otlProduct->product_name; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
+                          <!-- MASKING -->
+                          <div class="home productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li>
+                                    <a data-product-id="<?= $otlProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                        <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$otlProduct->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $otlProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                        <i class="fa fa-inr" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>" class="btn btn-default" title="View <?= $otlProduct->product_name; ?>">
+                                        <i class="fa fa-eye" style="margin-right:0"></i>
+                                    </a>  
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- END OF MASKING -->
                         </div>
                         <div class="productCaption clearfix">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>"><?= $otlProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>" title="<?= $otlProduct->product_name; ?>"><?= $otlProduct->product_name; ?></a></h3>
                           <span class="offer-price">&#x20B9; <?= $otlProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
-                          <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$otlProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $otlProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$otlProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $otlProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
                         </div>
                       </div>
                     </div>
@@ -225,14 +267,35 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                           </span>
                         </div>
                         <div class="productImage clearfix">
-                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>">
+                          <a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>" title="<?= $frcProduct->product_name; ?>">
                             <img src="<?php echo $prdImage; ?>" alt="Product Image"></a>
+                          <!-- MASKING -->
+                          <div class="home productMasking">
+                              <ul class="list-inline btn-group" role="group">
+                                <li>
+                                    <a data-product-id="<?= $frcProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                        <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$frcProduct->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $frcProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                        <i class="fa fa-inr" style="margin-right:0"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>" class="btn btn-default" title="View <?= $frcProduct->product_name; ?>">
+                                        <i class="fa fa-eye" style="margin-right:0"></i>
+                                    </a>  
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- END OF MASKING -->
                         </div>
                         <div class="productCaption clearfix">
-                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>"><?= $frcProduct->product_name; ?></a></h3>
+                          <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>" title="<?= $frcProduct->product_name; ?>"><?= $frcProduct->product_name; ?></a></h3>
                           <span class="offer-price">&#x20B9; <?= $frcProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
-                          <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$frcProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $frcProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$frcProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $frcProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
                         </div>
                       </div>
                     </div>

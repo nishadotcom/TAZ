@@ -38,3 +38,12 @@
 .homeUserFavorited{
     color: #47bac1 !important;
 }
+
+.imageBox .productImage .home.productMasking ul{
+	height: 100px;
+}
+
+.imageBox .productImage .home.productMasking{
+	height: 26%;
+	top: 74%;
+}
