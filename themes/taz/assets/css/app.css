@@ -43,7 +43,20 @@
 	height: 100px;
 }
 
-.imageBox .productImage .home.productMasking{
+.imageBox .productImage .singleProduct.productMasking ul{
+    height: 50px;
+}
+
+.imageBox .productImage .home.productMasking, .imageBox .productImage .singleProduct.productMasking{
 	height: 26%;
 	top: 74%;
 }
+
+/*.imageBox .productImage .singleProduct.productMasking ul{
+    height: 100px;
+}
+
+.imageBox .productImage .singleProduct.productMasking{
+    height: 26%;
+    top: 74%;
+}*/

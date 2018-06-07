@@ -7,7 +7,7 @@ $this->title = $productData->product_name;//'Product View';
 
 //echo '<pre>'; print_r($productData); echo '</pre>';
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
-$prdNoImg = 'noImage.jpg';
+$prdNoImg = 'noImage.png';
 
 $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 $url = Url::toRoute('shop/product/'.$productData->id, true); 
@@ -158,9 +158,9 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
             <div class="col-xs-12">
               <div class="tabCommon">
                 <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#newArrivals">Similar Color</a></li> 
-                  <li><a data-toggle="tab" href="#topFavorited">Similar Material</a></li>
-                  <li><a data-toggle="tab" href="#menu3">Similar Type</a></li>
+                  <li class=""><a data-toggle="tab" href="#similarColor">Similar Color</a></li> 
+                  <li class="active"><a data-toggle="tab" href="#similarMaterial">Similar Material</a></li>
+                  <li><a data-toggle="tab" href="#similarType">Similar Type</a></li>
                 </ul>
                 <div class="tab-bottom">
                 </div>
@@ -169,7 +169,7 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                   <!--
                   NEW ARRIALS
                   -->
-                  <div id="newArrivals" class="tab-pane fade in active">
+                  <div id="similarColor" class="tab-pane fade in ">
                     <div class="row">
 
                         <div class="col-sm-3 col-xs-12">
@@ -201,13 +201,59 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                   <!--
                   TOP FAVORITED
                   -->
-                  <div id="topFavorited" class="tab-pane fade">
+                  <div id="similarMaterial" class="tab-pane fade in active">
                     <div class="row">
-                      <div class="col-sm-3 col-xs-12">
+                      
+                        <?php 
+                        if($similarMaterialProdicts){
+                          //print_r(count($similarMaterialProdicts));
+                          foreach ($similarMaterialProdicts as $key => $similarMaterialProdict) {
+                            $coverImage = (isset($similarMaterialProdict->productImages[0])) ? $pathPrdImg . $similarMaterialProdict->product_code . '/' . $similarMaterialProdict->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
+                          ?>
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="imageBox">
+                                <div class="productImage clearfix">
+                                  <a href="single-product.html">
+                                    <img src="<?= $coverImage; ?>" alt="PRODUCT IMAGE">
+                                  </a>
+                                  <div class="singleProduct productMasking">
+                                      <ul class="list-inline btn-group" role="group">
+                                        <li>
+                                            <a data-product-id="<?= $similarMaterialProdict->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                                <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$similarMaterialProdict->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $similarMaterialProdict->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                                <i class="fa fa-inr" style="margin-right:0"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$similarMaterialProdict->id; ?>" class="btn btn-default" title="View <?= $similarMaterialProdict->product_name; ?>">
+                                                <i class="fa fa-eye" style="margin-right:0"></i>
+                                            </a>  
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                                <div class="productCaption clearfix">
+                                  <h5><a href="single-product.html"><?= $similarMaterialProdict->product_name; ?></a></h5>
+                                  <h3>&#x20B9; <?= $similarMaterialProdict->product_sale_price; ?></h3>
+                                </div>
+                              </div>
+                              </div>
+                          <?php
+                          }// END LOOP
+                        }else{
+                          echo '<div class="col-sm-3 col-xs-12"><p>No Results Found</p></div>';
+                        }
+                        ?>
+                      
+                      <!--<div class="col-sm-3 col-xs-12">
                         <div class="imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
+                              <img src="<?php //echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
                             </a>
                             <div class="productMasking">
                               <ul class="list-inline btn-group" role="group">
@@ -222,13 +268,13 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                             <h3>$199</h3>
                           </div>
                         </div>
-                      </div>
+                      </div>-->
                     </div>
                   </div>
                   <!--
                   END OF TOP FAVORITED
                   -->
-                  <div id="menu3" class="tab-pane fade">
+                  <div id="similarType" class="tab-pane fade">
                     <div class="row">
                       <div class="col-sm-3 col-xs-12">
                         <div class="imageBox">

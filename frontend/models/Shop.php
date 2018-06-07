@@ -45,10 +45,23 @@ class Shop extends \yii\db\ActiveRecord
         return $products;
     }
 
+    // RECOMMENDATION ENGINE FUNCTIONS
+
     public static function getSimilarColorProducts($categoryId, $color=false){
         $products = Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
         return $products;
     }
+
+    /* 
+        DESCRIPTION     : SIMILAR MATERIAL
+        PARAMETER       : @productid : INT 
+                          @material : STRING 
+    */
+    public static function getSimilarMaterialProducts($productId, $material=false){
+        $products = Product::find()->where(['product_status'=>'Active'])->andWhere(['<>', 'id', $productId])->andWhere(['LIKE', 'product_material', $material])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
+        return $products;
+    }
+    // END RECOMMENDATION ENGINE FUNCTIONS
 
     public static function getTopFavoriteProducts(){
         $sql = "SELECT COUNT(tblUserFavorite.product_id) as favoriteCount, tblUserFavorite.product_id, taz_product.* FROM `taz_user_favorite` as tblUserFavorite \n"
