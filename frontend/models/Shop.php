@@ -47,8 +47,8 @@ class Shop extends \yii\db\ActiveRecord
 
     // RECOMMENDATION ENGINE FUNCTIONS
 
-    public static function getSimilarColorProducts($categoryId, $color=false){
-        $products = Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
+    public static function getSimilarColorProducts($productId, $color=false){
+        $products = Product::find()->where(['product_status'=>'Active'])->andWhere(['<>', 'id', $productId])->andWhere(['LIKE', 'product_color', $color])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
         return $products;
     }
 

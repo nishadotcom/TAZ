@@ -17,6 +17,7 @@ return array(
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
     'kartik\\social\\' => array($vendorDir . '/kartik-v/yii2-social'),
+    'kartik\\color\\' => array($vendorDir . '/kartik-v/yii2-widget-colorinput'),
     'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'bigpaulie\\social\\share\\' => array($vendorDir . '/bigpaulie/yii2-social-share/src'),

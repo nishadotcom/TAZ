@@ -36,6 +36,7 @@ class ComposerStaticInit12f4df112198dcfdb3180f7957e52f9c
         'k' => 
         array (
             'kartik\\social\\' => 14,
+            'kartik\\color\\' => 13,
             'kartik\\base\\' => 12,
         ),
         'c' => 
@@ -134,6 +135,10 @@ class ComposerStaticInit12f4df112198dcfdb3180f7957e52f9c
         'kartik\\social\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-social',
+        ),
+        'kartik\\color\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-colorinput',
         ),
         'kartik\\base\\' => 
         array (

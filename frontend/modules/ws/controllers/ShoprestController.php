@@ -235,6 +235,13 @@ class ShoprestController extends ActiveController {
         echo json_encode($getPayuDetail);
     }
 
+    /**
+    * DESCRIPTION   : THIS METHOD HANDLES TO GET SIMILAR PRODUCTS FOR SINGLE PRODUCT PAGE
+    **/
+    public function actionGetSimilarProducts($productId, $data){
+
+    }
+
     /*
      * Return Display format
      */

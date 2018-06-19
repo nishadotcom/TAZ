@@ -55,7 +55,7 @@ class ProductAddress extends \yii\db\ActiveRecord
             'city' => 'City',
             'state' => 'State',
             'country' => 'Country',
-            'pin_code' => 'Pin Code',
+            'pin_code' => 'Pincode',
         ];
     }
 

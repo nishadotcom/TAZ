@@ -84,4 +84,13 @@ return array (
       '@kartik/social' => $vendorDir . '/kartik-v/yii2-social',
     ),
   ),
+  'kartik-v/yii2-widget-colorinput' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-colorinput',
+    'version' => '1.0.3.0',
+    'alias' => 
+    array (
+      '@kartik/color' => $vendorDir . '/kartik-v/yii2-widget-colorinput',
+    ),
+  ),
 );

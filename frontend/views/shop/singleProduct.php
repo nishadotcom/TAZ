@@ -172,11 +172,56 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                   <div id="similarColor" class="tab-pane fade in ">
                     <div class="row">
 
-                        <div class="col-sm-3 col-xs-12">
+                        <?php 
+                        if($similarColorProducts){
+                          //print_r(count($similarColorProducts));
+                          foreach ($similarColorProducts as $key => $similarColorProduct) {
+                            $coverImage = (isset($similarColorProduct->productImages[0])) ? $pathPrdImg . $similarColorProduct->product_code . '/' . $similarColorProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
+                          ?>
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="imageBox">
+                                <div class="productImage clearfix">
+                                  <a href="single-product.html">
+                                    <img src="<?= $coverImage; ?>" alt="PRODUCT IMAGE">
+                                  </a>
+                                  <div class="singleProduct productMasking">
+                                      <ul class="list-inline btn-group" role="group">
+                                        <li>
+                                            <a data-product-id="<?= $similarColorProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                                <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$similarColorProduct->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $similarColorProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                                <i class="fa fa-inr" style="margin-right:0"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$similarColorProduct->id; ?>" class="btn btn-default" title="View <?= $similarColorProduct->product_name; ?>">
+                                                <i class="fa fa-eye" style="margin-right:0"></i>
+                                            </a>  
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                                <div class="productCaption clearfix">
+                                  <h5><a href="single-product.html"><?= $similarColorProduct->product_name; ?></a></h5>
+                                  <h3>&#x20B9; <?= $similarColorProduct->product_sale_price; ?></h3>
+                                </div>
+                              </div>
+                              </div>
+                          <?php
+                          }// END LOOP
+                        }else{
+                          echo '<div class="col-sm-3 col-xs-12"><p>No Results Found</p></div>';
+                        }
+                        ?>
+
+                        <!--<div class="col-sm-3 col-xs-12">
                         <div class="imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
+                              <img src="<?php //echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
                             </a>
                             <div class="productMasking">
                               <ul class="list-inline btn-group" role="group">
@@ -191,7 +236,7 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                             <h3>$199</h3>
                           </div>
                         </div>
-                      </div>
+                      </div>--> 
                     </div>
                   </div>
                   <!--
@@ -205,10 +250,10 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                     <div class="row">
                       
                         <?php 
-                        if($similarMaterialProdicts){
-                          //print_r(count($similarMaterialProdicts));
-                          foreach ($similarMaterialProdicts as $key => $similarMaterialProdict) {
-                            $coverImage = (isset($similarMaterialProdict->productImages[0])) ? $pathPrdImg . $similarMaterialProdict->product_code . '/' . $similarMaterialProdict->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
+                        if($similarMaterialProducts){
+                          //print_r(count($similarMaterialProducts));
+                          foreach ($similarMaterialProducts as $key => $similarMaterialProduct) {
+                            $coverImage = (isset($similarMaterialProduct->productImages[0])) ? $pathPrdImg . $similarMaterialProduct->product_code . '/' . $similarMaterialProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
                           ?>
                             <div class="col-sm-3 col-xs-12">
                             <div class="imageBox">
@@ -219,17 +264,17 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                                   <div class="singleProduct productMasking">
                                       <ul class="list-inline btn-group" role="group">
                                         <li>
-                                            <a data-product-id="<?= $similarMaterialProdict->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                            <a data-product-id="<?= $similarMaterialProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
                                                 <i class="fa fa-shopping-cart" style="margin-right:0"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$similarMaterialProdict->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $similarMaterialProdict->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$similarMaterialProduct->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $similarMaterialProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
                                                 <i class="fa fa-inr" style="margin-right:0"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$similarMaterialProdict->id; ?>" class="btn btn-default" title="View <?= $similarMaterialProdict->product_name; ?>">
+                                            <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$similarMaterialProduct->id; ?>" class="btn btn-default" title="View <?= $similarMaterialProduct->product_name; ?>">
                                                 <i class="fa fa-eye" style="margin-right:0"></i>
                                             </a>  
                                         </li>
@@ -237,8 +282,8 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                                     </div>
                                 </div>
                                 <div class="productCaption clearfix">
-                                  <h5><a href="single-product.html"><?= $similarMaterialProdict->product_name; ?></a></h5>
-                                  <h3>&#x20B9; <?= $similarMaterialProdict->product_sale_price; ?></h3>
+                                  <h5><a href="single-product.html"><?= $similarMaterialProduct->product_name; ?></a></h5>
+                                  <h3>&#x20B9; <?= $similarMaterialProduct->product_sale_price; ?></h3>
                                 </div>
                               </div>
                               </div>
@@ -555,3 +600,67 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+  // return lighter (+lum) or darker (-lum) color as a hex string
+  // pass original hex string and luminosity factor, e.g. -0.1 = 10% darker
+/*  function ColorLuminance(hex, lum) {
+
+    // validate hex string
+    hex = String(hex).replace(/[^0-9a-f]/gi, '');
+    if (hex.length < 6) {
+      hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+    }
+    lum = lum || 0;
+    
+    // convert to decimal and change luminosity
+    var rgb = "#", c, i;
+    for (i = 0; i < 3; i++) {
+      c = parseInt(hex.substr(i*2,2), 16);
+      c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+      rgb += ("00"+c).substr(c.length);
+    }
+
+    return rgb;
+  }
+  var color = "#1b5853",
+    lum = 0.05,
+    out = document.getElementById("out");
+
+  var i, c, nc;
+  var colors = new Array();
+    
+  for (var i = 0; i < 150; i++) {
+    //var c = out.appendChild(document.createElement("div"));
+    nc = ColorLuminance(color, i*lum);
+    //c.style.backgroundColor = nc;
+    //c.title = nc;
+    colors[i] = nc;
+  }
+  $(document).ready(function(){
+    //console.log(colors);
+    // AJAX
+    var productId = '<?php //echo $id; ?>';
+    var ajaxData = {
+                'productId': productId,
+                'colors' : colors
+            };
+    $.ajax({
+        type: 'POST',
+        url: url,
+        data: ajaxData,
+        //dataType: 'json',
+        success: function (response) {
+            showAlert(response.msg); // Show alert message
+            $(ref).prop('disabled', true); // Disable the CART button for the current
+            return response;
+        },
+        error: function (xhr) {
+            alert('error')
+            return xhr.statusText;
+            //xhr.status = 404
+            //xhr.statusText = error
+        }
+    });
+  });*/
+</script>

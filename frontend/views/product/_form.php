@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use backend\models\Category;
 use backend\models\Country;
+use kartik\color\ColorInput;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Product */
@@ -37,33 +38,63 @@ $form = ActiveForm::begin([
 
         <?= $form->field($model, 'product_category_id')->dropDownList($categoryListData, ['prompt' => 'Select Category']) ?>
 
-        <?= $form->field($model, 'product_name')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'product_name')->textInput(['maxlength' => true, 'placeholder' => 'Product Name']) ?>
 
         <?php //echo $form->field($model, 'product_owner_id')->textInput() ?>
 
-        <?= $form->field($model, 'product_price')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1]) ?>
+        <?= $form->field($model, 'product_price')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1, 'placeholder'=>'Your Price']) ?>
 
         <?php //echo $form->field($model, 'product_sale_price')->textInput(['maxlength' => true]) ?>
 
         <?php //echo $form->field($model, 'product_retail_price')->textInput(['maxlength' => true]) ?>
 
-        <?= $form->field($model, 'product_material')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($model, 'product_material')->textInput(['maxlength' => true, 'placeholder'=>'Material']) ?>
 
-        <?= $form->field($model, 'product_color')->textInput(['maxlength' => true]) ?>
+        <?php // $form->field($model, 'product_color')->textInput(['maxlength' => true]) ?>
+        <?php
+        echo $form->field($model, 'product_color')->widget(ColorInput::classname(), [
+            'name' => 'product_color',
+            'value' => 'red',
+            'showDefaultPalette' => false,
+            'options' => ['placeholder' => 'Choose color', 'class'=>'form-control', 'readonly' => true],
+            'pluginOptions' => [
+                'showInput' => true,
+                'showInitial' => true,
+                'showPalette' => true,
+                'showPaletteOnly' => true,
+                'showSelectionPalette' => true,
+                'showAlpha' => false,
+                'allowEmpty' => false,
+                'preferredFormat' => 'name',
+                'palette' => [
+                    [
+                        "white", "black", "grey", "silver", "gold", "brown", 
+                    ],
+                    [
+                        "red", "orange", "yellow", "indigo", "maroon", "pink"
+                    ],
+                    [
+                        "blue", "green", "violet", "cyan", "magenta", "purple", 
+                    ],
+                ]
+            ]
+            ]);
+
+        ?>
 
         <?php //echo $form->field($model, 'product_dimension_type')->dropDownList(['cm' => 'cm', 'mm' => 'mm', 'm' => 'm',], ['prompt' => 'Select Dimension Type', 'options' => ['cm' => ['selected' => 'selected']]]) ?>
 
-        <?= $form->field($model, 'product_height')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1]) ?>
+        <?= $form->field($model, 'product_height')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1, 'placeholder'=>'Height']) ?>
 
-        <?= $form->field($model, 'product_length')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1]) ?>
+        <?= $form->field($model, 'product_length')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1, 'placeholder'=>'Length']) ?>
 
-        <?= $form->field($model, 'product_breadth')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1]) ?>
+        <?= $form->field($model, 'product_breadth')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1, 'placeholder'=>'Breadth']) ?>
 
-        <?= $form->field($model, 'product_weight')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1]) ?>
+        <?= $form->field($model, 'product_weight')->textInput(['maxlength' => true, 'type' => 'number', 'min' => 1, 'placeholder'=>'Weight']) ?>
 
         <?php //echo $form->field($model, 'product_short_description')->textarea(['rows' => 6]) ?>
 
-        <?= $form->field($model, 'product_long_description')->textarea(['rows' => 6]) ?>
+        <?= $form->field($model, 'product_long_description')->textarea(['rows' => 6, 'placeholder'=>'Description']) ?>
 
         <?php //$form->field($model, 'product_discount_status')->dropDownList(['Yes' => 'Yes', 'No' => 'No',], ['prompt' => 'Select Discount Status', 'options' => ['No' => ['selected' => 'selected']]]) ?>
 
@@ -84,15 +115,15 @@ $form = ActiveForm::begin([
 
         <?= $form->field($imageModel, 'file_name[]')->fileInput(['multiple' => true, 'accept' => 'image/*']) ?>
 
-        <?= $form->field($addressModel, 'street')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($addressModel, 'street')->textInput(['maxlength' => true, 'placeholder'=>'Street']) ?>
 
-        <?= $form->field($addressModel, 'city')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($addressModel, 'city')->textInput(['maxlength' => true, 'placeholder'=>'City']) ?>
 
-        <?= $form->field($addressModel, 'state')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($addressModel, 'state')->textInput(['maxlength' => true, 'placeholder'=>'State']) ?>
 
         <?= $form->field($addressModel, 'country')->dropDownList($countryListData, ['prompt' => 'Select Country']) ?>
 
-        <?= $form->field($addressModel, 'pin_code')->textInput(['maxlength' => true]) ?>
+        <?= $form->field($addressModel, 'pin_code')->textInput(['maxlength' => true, 'placeholder'=>'Pincode']) ?>
         
 
         <?php //echo $form->field($model, 'product_status')->dropDownList([ 'AFA' => 'AFA', 'Active' => 'Active', 'Suspended' => 'Suspended', 'Deleted' => 'Deleted', 'Needs Improvement' => 'Needs Improvement', 'Denied' => 'Denied', ], ['prompt' => '']) ?>
