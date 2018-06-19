@@ -54,28 +54,23 @@ $form = ActiveForm::begin([
         <?php
         echo $form->field($model, 'product_color')->widget(ColorInput::classname(), [
             'name' => 'product_color',
-            'value' => 'red',
+            //'value' => 'white',
             'showDefaultPalette' => false,
             'options' => ['placeholder' => 'Choose color', 'class'=>'form-control', 'readonly' => true],
             'pluginOptions' => [
                 'showInput' => true,
                 'showInitial' => true,
-                'showPalette' => true,
+                'showPalette' => false,
                 'showPaletteOnly' => true,
                 'showSelectionPalette' => true,
                 'showAlpha' => false,
                 'allowEmpty' => false,
                 'preferredFormat' => 'name',
                 'palette' => [
-                    [
-                        "white", "black", "grey", "silver", "gold", "brown", 
-                    ],
-                    [
-                        "red", "orange", "yellow", "indigo", "maroon", "pink"
-                    ],
-                    [
-                        "blue", "green", "violet", "cyan", "magenta", "purple", 
-                    ],
+                    ["White", "Black", "Grey", "Silver", "Gold", "Brown"],
+                    ["red", "orange", "yellow", "indigo", "maroon", "pink"],
+                    ["blue", "green", "violet", "cyan", "magenta", "purple"],
+                    //["AliceBlue", "DarkCyan"],
                 ]
             ]
             ]);
