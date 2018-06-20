@@ -41,8 +41,14 @@ class ProductSearch extends Product
      * @return ActiveDataProvider
      */
     public function search($params)
-    {
-        $query = Product::find()->where(['product_owner_id'=>Yii::$app->user->id]);
+    { 
+        $url = Yii::$app->homeUrl;
+        if(strpos($url, "backend")){
+            $query = Product::find()->orderBy(['id'=>SORT_DESC]);
+        }else{
+            $query = Product::find()->where(['product_owner_id'=>Yii::$app->user->id])->orderBy(['id'=>SORT_DESC]);
+        }
+        
 
         // add conditions that should always apply here
 
