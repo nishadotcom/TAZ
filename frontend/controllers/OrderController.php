@@ -300,9 +300,37 @@ class OrderController extends Controller
     }
 
     public function actionPaymentCancel(){
-        echo 'Payment CANCEL';
-        echo '<pre>';
-        print_r($_POST);
+        if(isset($_POST)){
+            $orderModel = new Order();
+            if(Yii::$app->user->isGuest){
+                $orderModel->name = $_POST['firstname'];
+                $orderModel->email = $_POST['email'];
+                $orderModel->user = 'Guest';
+            }else{
+                $orderModel->user_id = Yii::$app->user->identity->id;
+                $orderModel->name = Yii::$app->user->identity->firstname.' '.Yii::$app->user->identity->lastname;
+                $orderModel->email = Yii::$app->user->identity->email;
+            }
+            
+            $orderModel->order_code = 'TAZORD'.date('his');
+            $orderModel->total_amount = $_POST['amount'];
+            $orderModel->payment_status = 'USER CANCELLED';
+            $orderModel->order_status = 'USER CANCELLED';
+            $orderModel->order_date = Yii::$app->Common->mysqlDateTime();
+            $orderModel->order_data = json_encode($_POST);
+            $orderModel->save();
+        }
+        return $this->render('paymentCancel', [
+                        //'orderId' => $orderModel->order_code,
+                        //'email' => $_POST['email'],
+                        //'phone' => $_POST['phone'],
+                        //'addressData' => OrderAddress::find()->where(['order_id'=>$orderModel->id])->one(),
+                        //'searchModel' => $searchModel,
+                        //'dataProvider' => $dataProvider,
+                    ]);
+        //echo 'Payment CANCEL';
+        //echo '<pre>';
+        //print_r($_POST);
     }
     
     public function actionTest(){
