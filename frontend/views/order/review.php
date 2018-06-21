@@ -174,7 +174,7 @@ $total = 0;
                                   <?php
                                 }else{
                                   $prdImage = (isset($orderProduct->productImages[0])) ? $pathPrdImg . $orderProduct->product_code . '/' . $orderProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
-                                  $total = $total + $orderProduct->product_price;
+                                  $total = $total + $orderProduct->product_sale_price;
                                   ?>
                                   <tr>
                                       <td class="col-xs-2" align="center">
@@ -182,9 +182,9 @@ $total = 0;
                                         <span class="cartImage" style="float: none;"><img src="<?= $prdImage; ?>" alt="image" width="70px"></span>
                                       </td>
                                       <td class="col-xs-4"><?= $orderProduct->product_name; ?></td>
-                                      <td class="col-xs-2"><?= $orderProduct->product_price; ?></td>
+                                      <td class="col-xs-2"><?= $orderProduct->product_sale_price; ?></td>
                                       <td class="col-xs-2">1</td>
-                                      <td class="col-xs-2"><?= $orderProduct->product_price; ?></td>
+                                      <td class="col-xs-2"><?= $orderProduct->product_sale_price; ?></td>
                                     </tr>
                                   <?php
                                 }
