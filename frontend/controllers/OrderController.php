@@ -158,7 +158,7 @@ class OrderController extends Controller
                                 $orderDetailModel->seller_name = 'SellerNAME';
                                 //$valueCartData->valueCartData,
                                 $orderDetailModel->product_price = $productData->product_price;
-                                $orderDetailModel->product_sale_price = $productData->product_sale_price;
+                                //$orderDetailModel->product_sale_price = $productData->product_sale_price;
                                 $orderDetailModel->product_material = $productData->product_material;
                                 $orderDetailModel->product_color = $productData->product_color;
                                 $orderDetailModel->product_height = $productData->product_height;
