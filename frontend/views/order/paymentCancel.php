@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
       <div class="col-xs-12">
         <div class="thanksContent">
-          <h3>Did you face any issue(s) while trying to place an order?</h3>
+          <h3 style="text-align: center;">Did you face any issue(s) while trying to place an order?</h3>
           <?php /* ?>
           <h3>Shipping Details</h3>
           <div class="thanksInner">

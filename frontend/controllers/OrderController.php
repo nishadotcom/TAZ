@@ -300,7 +300,7 @@ class OrderController extends Controller
     }
 
     public function actionPaymentCancel(){
-        if(isset($_POST)){
+        if(isset($_POST) && isset($_POST['status'])){
             $orderModel = new Order();
             if(Yii::$app->user->isGuest){
                 $orderModel->name = $_POST['firstname'];
@@ -318,7 +318,45 @@ class OrderController extends Controller
             $orderModel->order_status = 'USER CANCELLED';
             $orderModel->order_date = Yii::$app->Common->mysqlDateTime();
             $orderModel->order_data = json_encode($_POST);
-            $orderModel->save();
+            if($orderModel->save()){
+                $from = (strpos($_POST['udf1'], 'CART') !== false) ? 'CART' : 'PRODUCT';
+                if($from == 'PRODUCT'){
+                    $expFrom = explode('-', $_POST['udf1']);
+                    $orderProductId = (isset($expFrom[1])) ? $expFrom[1] : '';
+                    $orderProductData = ($orderProductId) ? Shop::getProductById($orderProductId) : [];
+                    $productData = ($orderProductData) ? $orderProductData[0] : [];
+                    if($productData){
+                        $orderDetailModel = new OrderDetail();
+                        
+                            $orderDetailModel->order_id = $orderModel->id;
+                            $orderDetailModel->category_name = $productData->productCategory->category_name;
+                            $orderDetailModel->subcategory_name = NULL;//$productData->product_subcategory_id;
+                            $orderDetailModel->product_id = $productData->id;
+                            $orderDetailModel->product_code = $productData->product_code;
+                            $orderDetailModel->product_name = $productData->product_name;
+                            $orderDetailModel->product_seo = $productData->product_seo;
+                            $orderDetailModel->product_owner_id = $productData->product_owner_id;
+                            $orderDetailModel->seller_name = 'SellerNAME';
+                            //$valueCartData->valueCartData,
+                            $orderDetailModel->product_price = $productData->product_price;
+                            //$orderDetailModel->product_sale_price = $productData->product_sale_price;
+                            $orderDetailModel->product_material = $productData->product_material;
+                            $orderDetailModel->product_color = $productData->product_color;
+                            $orderDetailModel->product_height = $productData->product_height;
+                            $orderDetailModel->product_length = $productData->product_length;
+                            $orderDetailModel->product_breadth = $productData->product_breadth;
+                            $orderDetailModel->product_weight = $productData->product_weight;
+                            $orderDetailModel->product_description = $productData->product_long_description;
+                            $orderDetailModel->created_on = Yii::$app->Common->mysqlDateTime();
+                        if($orderDetailModel->save()){
+                            //echo 'SAVED';
+                        }else{
+                            //echo '<pre>'; print_r($orderDetailModel->getErrors()); echo '</pre>';
+                            //echo 'NOTSAVED';
+                        }
+                    }
+                }
+            }
         }
         return $this->render('paymentCancel', [
                         //'orderId' => $orderModel->order_code,
