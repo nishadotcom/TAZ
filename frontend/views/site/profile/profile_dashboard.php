@@ -33,33 +33,41 @@ $this->title = 'My Account';
                 
                 <?php 
                 if(Yii::$app->user->identity->user_type == 'Buyer'){
+                  if($unPaidOrders){
                 ?>
-                <div class="orderBox" id="orderBox">
-                  <h4>Unpaid Orders</h4>
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Order ID</th>
-                          <th>Date</th>
-                          <th>Items</th>
-                          <th>Total Price</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>#252125</td>
-                          <td>Mar 25, 2016</td>
-                          <td>2</td>
-                          <td>$ 99.00</td>
-                          <td><a href="#" class="btn btn-default">Pay now</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <?php }elseif(Yii::$app->user->identity->user_type == 'Seller'){
+                    <div class="orderBox" id="orderBox">
+                      <h4>Unpaid Orders</h4>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Order ID</th>
+                              <th>Date</th>
+                              <th>Total Price</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <?php 
+                            
+                              foreach ($unPaidOrders as $key => $unPaidOrder) {
+                              ?>
+                                <tr>
+                                <td><?= $unPaidOrder->order_code; ?></td>
+                                <td><?= $unPaidOrder->order_date; ?></td>
+                                <td><?= $unPaidOrder->total_amount; ?></td>
+                                <td><a href="#" class="btn btn-default">Pay now</a></td>
+                                </tr>
+                                <?php
+                              }
+                            
+                            ?>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                <?php }
+                } elseif(Yii::$app->user->identity->user_type == 'Seller'){
                     echo '<ul class="list-inline text-center"><li>Your dashboard is under construction</li></ul>';
                 } ?>
                 <!--<div class="orderBox">

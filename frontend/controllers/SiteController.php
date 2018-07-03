@@ -18,6 +18,7 @@ use frontend\models\ContactForm;
 use frontend\models\UserDetail;
 use frontend\models\UserAddress;
 use kartik\social\Module;
+use frontend\models\Order;
 
 /**
  * Site controller
@@ -135,9 +136,12 @@ class SiteController extends Controller {
 
     public function actionProfileDashboard() {
         $user = User::findOne(['id' => Yii::$app->user->getId()]);
+        if(!Yii::$app->user->isGuest && Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_BUYER']){
+            $unPaidOrders = Order::find()->where(['payment_status'=>'USER CANCELLED'])->orderBy(['id' => SORT_DESC])->all();
+        }
 
         $this->layout = 'profile_page';
-        return $this->render('profile/profile_dashboard', ['user' => $user]);
+        return $this->render('profile/profile_dashboard', ['user' => $user, 'unPaidOrders'=>($unPaidOrders) ? $unPaidOrders : []]);
     }
 
     /* profile update.

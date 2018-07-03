@@ -356,6 +356,29 @@ class OrderController extends Controller
                         }
                     }
                 }
+
+                // STORE ADDRESS
+                $transactionId  = $_POST['txnid'];
+                $addressAttributes = ['order_id', 'name', 'address', 'city', 'state', 'country', 'pin_code', 'phone', 'address_type', 'created_on'];
+                // GET THE STORED TEMP ADDRESS TO STORE IN ORDER ADDRESS TABLE
+                $addressTemp    = OrderAddressTemp::find()->where(['txn_id'=>$transactionId])->all();
+                if($addressTemp){
+                    foreach ($addressTemp as $key => $orderAddress) {
+                        $orderAddressInsertValues[] = [
+                            $orderModel->id,
+                            $orderAddress->name,
+                            $orderAddress->address,
+                            $orderAddress->city,
+                            $orderAddress->state,
+                            $orderAddress->country,
+                            $orderAddress->pin_code,
+                            $orderAddress->phone,
+                            $orderAddress->address_type,
+                            Yii::$app->Common->mysqlDateTime()
+                        ];
+                    } // END OF ADDRESSTEMP FOREACH
+                    Yii::$app->db->createCommand()->batchInsert(OrderAddress::tableName(), $addressAttributes, $orderAddressInsertValues)->execute();
+                } // IF ADDRESS TEMP
             }
         }
         return $this->render('paymentCancel', [
