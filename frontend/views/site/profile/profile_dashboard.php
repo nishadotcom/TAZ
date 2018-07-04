@@ -2,6 +2,7 @@
 use frontend\widgets\ProfileMenu;
 
 $this->title = 'My Account';
+echo Yii::$app->basePath;
 
 ?>
 
