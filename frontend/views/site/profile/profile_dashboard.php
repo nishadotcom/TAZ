@@ -2,8 +2,12 @@
 use frontend\widgets\ProfileMenu;
 
 $this->title = 'My Account';
-echo Yii::$app->basePath;
-
+$baseUrl = Yii::$app->basePath;
+if(strpos($baseUrl, 'ANTs')){
+  echo "ANTs";
+}else{
+  echo "Online";
+}
 ?>
 
 <div class="row">

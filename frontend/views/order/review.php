@@ -12,10 +12,13 @@ $this->title = 'ORDER REVIEW';
 $this->params['breadcrumbs'][] = $this->title;
 $pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg     = 'noImage.jpg';
-/*echo '<pre>';
-print_r($addressData);
-echo '</pre>';*/
 $total = 0;
+$baseUrl = Yii::$app->basePath;
+if(strpos($baseUrl, 'ANTs')){
+  echo "ANTs";
+}else{
+  echo "Online";
+}
 ?>
 
 <section class="mainContent clearfix stepsWrapper">
