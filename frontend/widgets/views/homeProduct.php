@@ -12,7 +12,8 @@ if(!Yii::$app->user->isGuest){
 }
 $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavoriteProducts, 'product_id') : [];
 
-$transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+$transactionId = Yii::$app->Common->generateTransactionID();
+//$transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 //echo '<pre>'; print_r($newArrivals); echo '<pre>';
 ?>
 

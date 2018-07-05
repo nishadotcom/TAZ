@@ -138,7 +138,7 @@ class SiteController extends Controller {
         $unPaidOrders = [];
         $user = User::findOne(['id' => Yii::$app->user->getId()]);
         if(!Yii::$app->user->isGuest && Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_BUYER']){
-            $unPaidOrders = Order::find()->where(['payment_status'=>'USER CANCELLED'])->orderBy(['id' => SORT_DESC])->all();
+            $unPaidOrders = Order::find()->where(['payment_status'=>'USER CANCELLED', 'order_status'=>'USER CANCELLED'])->orderBy(['id' => SORT_DESC])->all();
         }
 
         $this->layout = 'profile_page';

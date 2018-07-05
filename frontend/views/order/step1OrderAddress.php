@@ -12,6 +12,26 @@ $this->title = 'Cart - SHIPPING / BILLING INFORMATION';
 $this->params['breadcrumbs'][] = $this->title;
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg = 'noImage.jpg';
+
+// ASSIGN ADDRESS VALUES
+if($orderCancelAddress && $orderCancelAddress['billingAddress']){
+    $model->billingName = $orderCancelAddress['billingAddress']->name;
+    $model->billingAddress = $orderCancelAddress['billingAddress']->address;
+    $model->billingCity = $orderCancelAddress['billingAddress']->city;
+    $model->billingState = $orderCancelAddress['billingAddress']->state;
+    $model->billingCountry = $orderCancelAddress['billingAddress']->country;
+    $model->billingPincode = $orderCancelAddress['billingAddress']->pin_code;
+    $model->billingPhone = $orderCancelAddress['billingAddress']->phone;
+}
+if($orderCancelAddress && $orderCancelAddress['shippingAddress']){
+    $model->name    = $orderCancelAddress['shippingAddress']->name;
+    $model->address = $orderCancelAddress['shippingAddress']->address;
+    $model->city    = $orderCancelAddress['shippingAddress']->city;
+    $model->state   = $orderCancelAddress['shippingAddress']->state;
+    $model->country = $orderCancelAddress['shippingAddress']->country;
+    $model->pin_code = $orderCancelAddress['shippingAddress']->pin_code;
+    $model->phone   = $orderCancelAddress['shippingAddress']->phone;
+}
 ?>
 
 <section class="mainContent clearfix stepsWrapper">
@@ -19,43 +39,15 @@ $prdNoImg = 'noImage.jpg';
         <div class="row">
             <div class="col-xs-12">
                 <div class="innerWrapper clearfix stepsPage">
-                    <!--<div class="row progress-wizard" style="border-bottom:0;">
-
-                        <div class="col-xs-3 progress-wizard-step complete">
-                            <div class="text-center progress-wizard-stepnum">Billing &amp; Shipping Address</div>
-                            <div class="progress"><div class="progress-bar"></div></div>
-                            <a href="checkout-step-1.html" class="progress-wizard-dot"></a>
-                        </div>
-
-                        <div class="col-xs-3 progress-wizard-step disabled">
-                            <div class="text-center progress-wizard-stepnum">Shipping Method</div>
-                            <div class="progress"><div class="progress-bar"></div></div>
-                            <a href="checkout-step-2.html" class="progress-wizard-dot"></a>
-                        </div>
-
-                        <div class="col-xs-3 progress-wizard-step disabled">
-                            <div class="text-center progress-wizard-stepnum">Payment Method</div>
-                            <div class="progress"><div class="progress-bar"></div></div>
-                            <a href="checkout-step-3.html" class="progress-wizard-dot"></a>
-                        </div>
-
-                        <div class="col-xs-3 progress-wizard-step disabled">
-                            <div class="text-center progress-wizard-stepnum">Review</div>
-                            <div class="progress"><div class="progress-bar"></div></div>
-                            <a href="checkout-step-4.html" class="progress-wizard-dot"></a>
-                        </div>
-                    </div>-->
                     <?php $form = ActiveForm::begin([
                         'fieldConfig' => [
                             'template' => '<div class="form-group col-sm-6 col-xs-12">{label}{input}</div>'
                         ]
                     ]); ?>
-                    <!--<form action="" class="row" method="POST" role="form">-->
                         <?php if(Yii::$app->user->isGuest){ ?>
                             <?= $form->field($model, 'guestEmail')->textInput(['maxlength' => true]) ?>
                             <?= $form->field($model, 'guestName')->textInput(['maxlength' => true]) ?>
                         <?php } // IF USER IS GUEST ?>
-                        
                     
                         <div class="col-xs-6">
                             <div class="page-header">
@@ -92,40 +84,6 @@ $prdNoImg = 'noImage.jpg';
                         <?= $form->field($model, 'phone')->textInput(['maxlength' => true, 'tabindex'=>'7']) ?>
                         <?= $form->field($model, 'billingPhone')->textInput(['maxlength' => true, 'tabindex'=>'14']) ?>
 
-                        
-                        <!--<div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Address</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">City</label>
-                            <input type="email" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">State</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Country</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Zip Code</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Phone</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">Fax</label>
-                            <input type="text" class="form-control" id="">
-                        </div>
-                        <div class="form-group col-sm-6 col-xs-12">
-                            <label for="">First Name</label>
-                            <textarea class="form-control"></textarea>
-                        </div>-->
                         <div class="col-xs-12 checkboxArea">
                             <input id="sameAsShippingAdress" type="checkbox" name="checkbox" value="1">
                             <label for="sameAsShippingAdress"><span></span>Same as shipping Information </label>
@@ -145,35 +103,3 @@ $prdNoImg = 'noImage.jpg';
         </div>
     </div>
 </section>
-
-<?php /* ?>
-
-<?php $form = ActiveForm::begin(); ?>
-
-    <?= $form->field($model, 'order_id')->textInput() ?>
-
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'state')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'pin_code')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'address_type')->dropDownList([ 'Shipping' => 'Shipping', 'Billing' => 'Billing', ], ['prompt' => '']) ?>
-
-    <?= $form->field($model, 'created_on')->textInput() ?>
-
-    <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
-    </div>
-
-    <?php ActiveForm::end(); ?>
-
-<?php */ ?>

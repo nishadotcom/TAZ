@@ -237,6 +237,13 @@ class Common extends Component {
         return $banners;
     }
 
+    /**
+    * THIS METHOD HANDLES TO GENERATE RANDOM STRING FOR TRANSACTION ID
+    **/
+    public static function generateTransactionID(){
+        return substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+    }
+
 } // End of class
 ?>
 

@@ -261,6 +261,8 @@ class Shop extends Component {
         return strtolower(preg_replace("![^a-z0-9]+!i", "-", $str));
     }
 
+    
+
 } // End of class
 ?>
 

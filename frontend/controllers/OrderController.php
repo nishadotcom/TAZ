@@ -45,51 +45,65 @@ class OrderController extends Controller
 
     public function actionStep1($from=FALSE, $transactionId=FALSE, $productId=FALSE){ 
         $this->layout = 'cart';
+        $orderCancelAddress = [];
         //$transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
         $model = new OrderAddress();
         if(Yii::$app->user->isGuest){
             $model->scenario = 'guestOrder';
         }
-        
 
         if ($model->load(Yii::$app->request->post())) {
-            // STORE ADDRESS IN TEMP TABLE 
-            //echo $model->name; exit;
-            $OrderAddressTempModel = new OrderAddressTemp();
-            $OrderAddressTempModel->txn_id = Yii::$app->request->post('transactionId');
-            $OrderAddressTempModel->name = $model->name;
-            $OrderAddressTempModel->address = $model->address;
-            $OrderAddressTempModel->city = $model->city;
-            $OrderAddressTempModel->state = $model->state;
-            $OrderAddressTempModel->country = $model->country;
-            $OrderAddressTempModel->pin_code = $model->pin_code;
-            $OrderAddressTempModel->phone = $model->phone;
-            $OrderAddressTempModel->address_type = 'Shipping';
-            $OrderAddressTempModel->created_on = Yii::$app->Common->mysqlDateTime();
-            $OrderAddressTempModel->save();
-            // BILLING ADDRESS
-            $connection = Yii::$app->getDb();
-            $insert_query 	= 'INSERT INTO taz_order_address_temp(txn_id, name, address, city, state, country, pin_code, phone, address_type, created_on) VALUES("'.$OrderAddressTempModel->txn_id.'", "'.$model->billingName.'", "'.$model->billingAddress.'", "'.$model->billingCity.'", "'.$model->billingState.'", "'.$model->billingCountry.'", "'.$model->billingPincode.'", "'.$model->billingPhone.'", "Billing", "'.Yii::$app->Common->mysqlDateTime().'")';
-            $command = $connection->createCommand($insert_query)->execute();
+            // CHECK IS IT FROM PROFILE PAGE (ORDER_CANCEL)
+            /*if(strpos($_GET['from'], 'CANCELORDER') !== false){
+                $expFrom = explode('-', $_GET['from']);
+                $orderID = $expFrom[1];
+                $orderProducts = OrderDetail::find()->where(['order_id'=>$orderID])->with('productImages')->all();
+                $from  = 'CANCELORDER-'.$orderID;
 
-            // payumoney details
+            }else{*/
+                // STORE ADDRESS IN TEMP TABLE 
+                $OrderAddressTempModel = new OrderAddressTemp();
+                $OrderAddressTempModel->txn_id = Yii::$app->request->post('transactionId');
+                $OrderAddressTempModel->name = $model->name;
+                $OrderAddressTempModel->address = $model->address;
+                $OrderAddressTempModel->city = $model->city;
+                $OrderAddressTempModel->state = $model->state;
+                $OrderAddressTempModel->country = $model->country;
+                $OrderAddressTempModel->pin_code = $model->pin_code;
+                $OrderAddressTempModel->phone = $model->phone;
+                $OrderAddressTempModel->address_type = 'Shipping';
+                $OrderAddressTempModel->created_on = Yii::$app->Common->mysqlDateTime();
+                $OrderAddressTempModel->save();
+                // BILLING ADDRESS
+                $connection = Yii::$app->getDb();
+                $insert_query   = 'INSERT INTO taz_order_address_temp(txn_id, name, address, city, state, country, pin_code, phone, address_type, created_on) VALUES("'.$OrderAddressTempModel->txn_id.'", "'.$model->billingName.'", "'.$model->billingAddress.'", "'.$model->billingCity.'", "'.$model->billingState.'", "'.$model->billingCountry.'", "'.$model->billingPincode.'", "'.$model->billingPhone.'", "Billing", "'.Yii::$app->Common->mysqlDateTime().'")';
+                $command = $connection->createCommand($insert_query)->execute();
+
+                //$from = (strpos($_GET['from'], 'cart') !== false) ? 'CART' : 'PRODUCT';
+                $from = (strpos($_GET['from'], 'cart') !== false) ? 'CART' : ((strpos($_GET['from'], 'CANCELORDER') !== false) ? 'CANCELORDER' : 'PRODUCT');
+                if($from == 'PRODUCT'){
+                    // GET PRODUCT DETAILS FOR REVIEW PAGE
+                    $expFrom = explode('-', $_GET['from']);
+                    $orderProductId = $expFrom[1];
+                    $orderProducts = Product::find()->where(['id'=>$orderProductId])->with('productImages')->all();
+                }elseif($from == 'CART'){
+                    $expFrom = explode('-', $_GET['from']);
+                    $orderCartId = $expFrom[1];
+                    $orderProducts = Cart::find()->where(['cart_user_id'=>$orderCartId])->with('productImages')->all();
+                }elseif($from = 'CANCELORDER'){
+                    $expFrom = explode('-', $_GET['from']);
+                    $orderID = $expFrom[1];
+                    $orderProducts = OrderDetail::find()->where(['order_id'=>$orderID])->with('productImages')->all();
+                    $from  = 'CANCELORDER-'.$orderID;
+                }
+            //}
+            
+            // PAYUMONEY DETAILS
             $payuDetail['key'] = 'gtKFFx';//Yii::$app->params['payumoneyMerchentKey'];
             $payuDetail['txnid'] = Yii::$app->request->post('transactionId');//Common::txnId();
             $payuDetail['email'] = (Yii::$app->user->isGuest) ? $model->guestEmail : Yii::$app->user->identity->email;
             $payuDetail['action'] = 'https://test.payu.in/_payment';
             //$payuDetail['action'] = 'https://secure.payu.in/_payment';
-
-            $from = (strpos($_GET['from'], 'cart') !== false) ? 'CART' : 'PRODUCT';
-            if($from == 'PRODUCT'){
-                // GET PRODUCT DETAILS FOR REVIEW PAGE
-                $expFrom = explode('-', $_GET['from']);
-                $orderProductId = $expFrom[1];
-                $orderProducts = Product::find()->where(['id'=>$orderProductId])->with('productImages')->all();
-            }else{
-                $expFrom = explode('-', $_GET['from']);
-                $orderCartId = $expFrom[1];
-                $orderProducts = Cart::find()->where(['cart_user_id'=>$orderCartId])->with('productImages')->all();
-            }
 
 
             return $this->render('review', [
@@ -100,10 +114,19 @@ class OrderController extends Controller
             ]);
             //return $this->redirect(['review', ['addressData' => $addressData]]);
         }
+        // GET STORED ADDRESS IF IT IS FROM ORDER_CANCEL (PROFILE PAGE)
+        if(strstr($from, 'order-')){
+            $orderIDExp = explode('-', $from);
+            $orderID    = $orderIDExp[1];
+            // GET ADDRESS
+            $orderCancelAddress['billingAddress'] = OrderAddress::find()->where(['order_id'=>$orderID, 'address_type'=>'Billing'])->one();
+            $orderCancelAddress['shippingAddress'] = OrderAddress::find()->where(['order_id'=>$orderID, 'address_type'=>'Shipping'])->one();
+        }
 
         return $this->render('step1OrderAddress', [
-            'model' => $model,
-            'transactionId' => $transactionId
+            'model'=>$model,
+            'transactionId'=>$transactionId,
+            'orderCancelAddress'=>$orderCancelAddress
         ]);
         //return $this->render('step1');
     }
@@ -112,6 +135,7 @@ class OrderController extends Controller
         //echo '<pre>'; print_r($_POST); exit;
         if(isset($_POST)){
             if(isset($_POST['status']) && $_POST['status'] == Yii::$app->params['payumoneyPaymentStatus']){
+
                 // INSERT NEW ORDER
                 $orderModel = new Order();
                 if(Yii::$app->user->isGuest){
@@ -134,7 +158,7 @@ class OrderController extends Controller
                 if($orderModel->save()){
                     // INSERT THE ORDER DETAILS
                     // CHECK FROM WHERE THE ORDER PLACED (FROM CART / FROM DIRECT PRODUCT)
-                    $from = (strpos($_POST['udf1'], 'CART') !== false) ? 'CART' : 'PRODUCT';
+                    $from = (strpos($_POST['udf1'], 'CART') !== false) ? 'CART' : ((strpos($_POST['udf1'], 'CANCELORDER') !== false) ? 'CANCELORDER' : 'PRODUCT');
                     if($from == 'PRODUCT'){
                         // GET THE PRODUCT DETAILS AND INSERT INTO ORDERDETAIL TABLE
                         //echo 'PRODUCTINSIDE';
@@ -157,7 +181,7 @@ class OrderController extends Controller
                                 $orderDetailModel->product_owner_id = $productData->product_owner_id;
                                 $orderDetailModel->seller_name = 'SellerNAME';
                                 //$valueCartData->valueCartData,
-                                $orderDetailModel->product_price = $productData->product_price;
+                                $orderDetailModel->product_price = $productData->product_sale_price;
                                 //$orderDetailModel->product_sale_price = $productData->product_sale_price;
                                 $orderDetailModel->product_material = $productData->product_material;
                                 $orderDetailModel->product_color = $productData->product_color;
@@ -175,12 +199,9 @@ class OrderController extends Controller
                             }
                             //exit;
                         }
-                    }else{
-                        //echo 'CARTINSIDE';
-                        //echo '<br><pre>'; print_r($_POST); echo '</pre><br>';
+                    }elseif($from == 'CART'){
                         // GET THE USER'S CART DETAILS 
                         $cartData = Cart::getUserCartItems();
-                        //echo '<br><pre>'; print_r($cartData); echo '</pre><br>';
                         if($cartData){
                             foreach ($cartData as $key => $valueCartData) {
                                 $orderDetail[] = [
@@ -192,8 +213,7 @@ class OrderController extends Controller
                                     $valueCartData->cart_product_name,
                                     $valueCartData->cart_product_seo,
                                     $valueCartData->cart_product_owner_id,
-                                    'SellerNAME',
-                                    //$valueCartData->valueCartData,
+                                    $valueCartData->cart_product_owner_name,
                                     $valueCartData->cart_product_price,
                                     $valueCartData->cart_product_material,
                                     $valueCartData->cart_product_color,
@@ -204,26 +224,6 @@ class OrderController extends Controller
                                     $valueCartData->cart_product_long_description,
                                     Yii::$app->Common->mysqlDateTime()
                                 ];
-                                /*$orderDetail[] = [
-                                    'order_id' => $orderModel->id,
-                                    'category_name' => $valueCartData->cart_product_category_name,
-                                    'subcategory_name' => $valueCartData->cart_product_subcategory_NAME,
-                                    'product_id' => $valueCartData->cart_product_id,
-                                    'product_code' => $valueCartData->cart_product_code,
-                                    'product_name' => $valueCartData->cart_product_name,
-                                    'product_seo' => $valueCartData->cart_product_seo,
-                                    'product_owner_id' => $valueCartData->cart_product_owner_id,
-                                    'seller_name' => $valueCartData->valueCartData,
-                                    'product_price' => $valueCartData->cart_product_price,
-                                    'product_material' => $valueCartData->cart_product_material,
-                                    'product_color' => $valueCartData->cart_product_color,
-                                    'product_height' => $valueCartData->cart_product_height,
-                                    'product_length' => $valueCartData->cart_product_length,
-                                    'product_breadth' => $valueCartData->cart_product_breadth,
-                                    'product_weight' => $valueCartData->cart_product_weight,
-                                    'product_description' => $valueCartData->cart_product_long_description,
-                                    'created_on' => Yii::$app->Common->mysqlDateTime()
-                                ];*/
                             } // END OF CART DATA LOOP
                             $orderDetailAttributes = ['order_id', 'category_name', 'subcategory_name', 'product_id', 'product_code', 'product_name', 'product_seo', 'product_owner_id', 'seller_name', 'product_price', 'product_material', 'product_color', 'product_height', 'product_length', 'product_breadth', 'product_weight', 'product_description', 'created_on'];
                             $OrderDetailModel = new OrderDetail();
@@ -232,13 +232,58 @@ class OrderController extends Controller
                                 CART::deleteAll('cart_user_id = :userid', [':userid' => Yii::$app->user->id]);
                                 //OrderAddressTemp::deleteAll('txn_id = :txnid', [':txnid' => $_POST['txnid']]);
                             }
-                        } // IF CARTDATA
+                        }
+                    }else{
+                        // FROM CANCEL_ORDER
+                        $expFrom = explode('-', $_POST['udf1']);
+                        $cancelOrderId = (isset($expFrom[1])) ? $expFrom[1] : '';
+                        // GET PRODUCT DETAILS
+                        $cancelOrderProducts = OrderDetail::find()->where(['order_id'=>$cancelOrderId])->all();
+                        if($cancelOrderProducts){
+                            foreach ($cancelOrderProducts as $key => $cancelOrderProduct) {
+                                $orderDetail[] = [
+                                    $orderModel->id,
+                                    $cancelOrderProduct->category_name,
+                                    $cancelOrderProduct->subcategory_name,
+                                    $cancelOrderProduct->product_id,
+                                    $cancelOrderProduct->product_code,
+                                    $cancelOrderProduct->product_name,
+                                    $cancelOrderProduct->product_seo,
+                                    $cancelOrderProduct->product_owner_id,
+                                    $cancelOrderProduct->seller_name,
+                                    $cancelOrderProduct->product_price,
+                                    $cancelOrderProduct->product_material,
+                                    $cancelOrderProduct->product_color,
+                                    $cancelOrderProduct->product_height,
+                                    $cancelOrderProduct->product_length,
+                                    $cancelOrderProduct->product_breadth,
+                                    $cancelOrderProduct->product_weight,
+                                    $cancelOrderProduct->product_description,
+                                    Yii::$app->Common->mysqlDateTime()
+                                ];
+                            } // END OF CART DATA LOOP
+                            $orderDetailAttributes = ['order_id', 'category_name', 'subcategory_name', 'product_id', 'product_code', 'product_name', 'product_seo', 'product_owner_id', 'seller_name', 'product_price', 'product_material', 'product_color', 'product_height', 'product_length', 'product_breadth', 'product_weight', 'product_description', 'created_on'];
+                            $OrderDetailModel = new OrderDetail();
+                            $result = Yii::$app->db->createCommand()->batchInsert(OrderDetail::tableName(), $orderDetailAttributes, $orderDetail)->execute();
+                            
+                        }
+                        // UPDATE PAYMENT STATUS IN order TABLE (THIS IS DONE BECAUSE THE LAST CANCEL ORDER SHOULD NOT DISPLAY IN PROFILE_DASHBOARD PAGE)
+                        Yii::$app->db->createCommand()->update('taz_order', ['payment_status'=>'USERCANCELLEDUPDATED'], 'id='.$cancelOrderId)->execute();
                     }
                     // STORE ADDRESS
                     $transactionId  = $_POST['txnid'];
                     $addressAttributes = ['order_id', 'name', 'address', 'city', 'state', 'country', 'pin_code', 'phone', 'address_type', 'created_on'];
-                    // GET THE STORED TEMP ADDRESS TO STORE IN ORDER ADDRESS TABLE
+                    
+                    /*if(strpos($_POST['udf1'], 'CANCELORDER')){
+                        // GET ORDER ADDRESS IF IT IS FROM ORDER_CANCEL
+                        $addressTemp = OrderAddress::find()->where(['order_id'=>$cancelOrderId])->all();
+                    }else{
+                        // GET THE STORED TEMP ADDRESS TO STORE IN ORDER ADDRESS TABLE
+                        
+                    }*/
+
                     $addressTemp    = OrderAddressTemp::find()->where(['txn_id'=>$transactionId])->all();
+
                     if($addressTemp){
                         foreach ($addressTemp as $key => $orderAddress) {
                             $orderAddressInsertValues[] = [
@@ -253,23 +298,11 @@ class OrderController extends Controller
                                 $orderAddress->address_type,
                                 Yii::$app->Common->mysqlDateTime()
                             ];
-                            /*$rows[] = [
-                                'order_id' => $orderAddress->order_id,
-                                'name' => $orderAddress->title,
-                                'address' => $orderAddress->content,
-                                'city' => $orderAddress->city,
-                                'state' => $orderAddress->state,
-                                'country' => $orderAddress->country,
-                                'pin_code' => $orderAddress->pin_code,
-                                'phone' => $orderAddress->phone,
-                                'address_type' => $orderAddress->address_type,
-                                'created_on' => Yii::$app->Common->mysqlDateTime()
-                            ];*/
                         } // END OF ADDRESSTEMP FOREACH
                         Yii::$app->db->createCommand()->batchInsert(OrderAddress::tableName(), $addressAttributes, $orderAddressInsertValues)->execute();
                     } // IF ADDRESS TEMP
+                    
                     // END OF ADDRESS
-                    //echo 'NISHADONE';
                     return $this->render('paymentSuccess', [
                         'orderId' => $orderModel->order_code,
                         'email' => $_POST['email'],
@@ -338,7 +371,7 @@ class OrderController extends Controller
                             $orderDetailModel->product_owner_id = $productData->product_owner_id;
                             $orderDetailModel->seller_name = 'SellerNAME';
                             //$valueCartData->valueCartData,
-                            $orderDetailModel->product_price = $productData->product_price;
+                            $orderDetailModel->product_price = $productData->product_sale_price;
                             //$orderDetailModel->product_sale_price = $productData->product_sale_price;
                             $orderDetailModel->product_material = $productData->product_material;
                             $orderDetailModel->product_color = $productData->product_color;

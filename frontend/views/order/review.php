@@ -15,9 +15,9 @@ $prdNoImg     = 'noImage.jpg';
 $total = 0;
 $baseUrl = Yii::$app->basePath;
 if(strpos($baseUrl, 'ANTs')){
-  echo "ANTs";
+  $appBaseUrl = "http://dev.talozo.local/";
 }else{
-  echo "Online";
+  $appBaseUrl = "http://talozo.com/dev/";
 }
 ?>
 
@@ -177,7 +177,8 @@ if(strpos($baseUrl, 'ANTs')){
                                   <?php
                                 }else{
                                   $prdImage = (isset($orderProduct->productImages[0])) ? $pathPrdImg . $orderProduct->product_code . '/' . $orderProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
-                                  $total = $total + $orderProduct->product_sale_price;
+                                  $orderProductPrice = (isset($orderProduct->product_sale_price)) ? $orderProduct->product_sale_price : ((isset($orderProduct->product_price)) ? $orderProduct->product_price : 0);
+                                  $total = $total + $orderProductPrice;
                                   ?>
                                   <tr>
                                       <td class="col-xs-2" align="center">
@@ -185,9 +186,9 @@ if(strpos($baseUrl, 'ANTs')){
                                         <span class="cartImage" style="float: none;"><img src="<?= $prdImage; ?>" alt="image" width="70px"></span>
                                       </td>
                                       <td class="col-xs-4"><?= $orderProduct->product_name; ?></td>
-                                      <td class="col-xs-2"><?= $orderProduct->product_sale_price; ?></td>
+                                      <td class="col-xs-2"><?= $orderProductPrice; ?></td>
                                       <td class="col-xs-2">1</td>
-                                      <td class="col-xs-2"><?= $orderProduct->product_sale_price; ?></td>
+                                      <td class="col-xs-2"><?= $orderProductPrice; ?></td>
                                     </tr>
                                   <?php
                                 }
@@ -247,7 +248,7 @@ if(strpos($baseUrl, 'ANTs')){
                       <ul class="pager">
                       <li class="previous"><a href="" onclick="window.history.go(-1); return false;">Back</a></li>
                         <!--<li class="next"><a href="<?= Yii::$app->homeUrl . 'cart/payment-success'; ?>">Confirm</a></li>-->
-                        <li class="next"><input type="submit" name="btnSubmit" value="CONFIRM" id="btnOrderConfirm"></li>
+                        <li class="next"><input type="submit" name="btnSubmit" value="Pay" id="btnOrderConfirm"></li>
                       </ul>
                     </div>
                   </div>
@@ -266,9 +267,9 @@ if(strpos($baseUrl, 'ANTs')){
                   <input type="hidden" name="udf1" value="<?= strtoupper(Yii::$app->getRequest()->getQueryParam('from')); ?>"> <!-- FROM  VALUE -->
                   
                   
-                  <input type="hidden" name="surl" value="http://talozo.com/dev/order/payment-success" size="64" />
-                  <input type="hidden" name="furl" value="http://talozo.com/dev/order/payment-error" size="64" />
-                  <input type="hidden" name="curl" value="http://talozo.com/dev/order/payment-cancel" />
+                  <input type="hidden" name="surl" value="<?= $appBaseUrl; ?>order/payment-success" size="64" />
+                  <input type="hidden" name="furl" value="<?= $appBaseUrl; ?>order/payment-error" size="64" />
+                  <input type="hidden" name="curl" value="<?= $appBaseUrl; ?>order/payment-cancel" />
                   <input type="hidden" name="service_provider" value="" size="64" />
                 </form>
               </div>

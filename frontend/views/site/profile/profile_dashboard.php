@@ -2,12 +2,7 @@
 use frontend\widgets\ProfileMenu;
 
 $this->title = 'My Account';
-$baseUrl = Yii::$app->basePath;
-if(strpos($baseUrl, 'ANTs')){
-  echo "ANTs";
-}else{
-  echo "Online";
-}
+
 ?>
 
 <div class="row">
@@ -22,6 +17,7 @@ if(strpos($baseUrl, 'ANTs')){
                   <strong>Warning!</strong> You have one unpaid order. 
                 </div>-->
                 <h3 id="testTour">Wellcome <span><?php echo $user['firstname'].'&nbsp;'.$user['lastname'];?></span></h3>
+                <hr>
                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
                 <?php /* ?>
@@ -56,12 +52,16 @@ if(strpos($baseUrl, 'ANTs')){
                             <?php 
                             
                               foreach ($unPaidOrders as $key => $unPaidOrder) {
+                                //$orderJsonData  = json_encode($unPaidOrder->order_data);
+                                $orderData      = json_decode($unPaidOrder->order_data, true);
+                                $txnid = (isset($orderData['txnid'])) ? $orderData['txnid'] : '';
+                                $transactionId = Yii::$app->Common->generateTransactionID();
                               ?>
                                 <tr>
                                 <td><?= $unPaidOrder->order_code; ?></td>
                                 <td><?= $unPaidOrder->order_date; ?></td>
-                                <td><?= $unPaidOrder->total_amount; ?></td>
-                                <td><a href="#" class="btn btn-default">Pay now</a></td>
+                                <td>&#x20B9; <?= $unPaidOrder->total_amount; ?></td>
+                                <td><a href="<?= Yii::$app->homeUrl . 'order/step1?from=CANCELORDER-'.$unPaidOrder->id.'&transactionId='.$transactionId; ?>" class="btn btn-default" title="PAY NOW">Pay Now</a></td>
                                 </tr>
                                 <?php
                               }

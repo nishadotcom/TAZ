@@ -49,7 +49,7 @@ class Cart extends \yii\db\ActiveRecord {
                 [['cart_user_id', 'cart_product_id', 'cart_product_owner_id', 'cart_product_quantity'], 'integer'],
                 [['cart_product_code', 'cart_product_name', 'cart_product_seo', 'cart_product_dimension_type', 'cart_product_short_description', 'cart_product_long_description', 'product_available_status'], 'string'],
                 [['cart_product_price', 'cart_product_height', 'cart_product_length', 'cart_product_breadth', 'cart_product_weight'], 'number'],
-                [['cart_added_on', 'cart_product_image'], 'safe'],
+                [['cart_added_on', 'cart_product_image', 'cart_product_owner_name'], 'safe'],
                 [['cart_product_category_name', 'cart_product_subcategory_NAME'], 'string', 'max' => 100],
                 [['cart_product_material'], 'string', 'max' => 600],
                 [['cart_product_color'], 'string', 'max' => 30],
