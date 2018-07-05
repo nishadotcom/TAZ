@@ -115,7 +115,7 @@ class OrderController extends Controller
             //return $this->redirect(['review', ['addressData' => $addressData]]);
         }
         // GET STORED ADDRESS IF IT IS FROM ORDER_CANCEL (PROFILE PAGE)
-        if(strstr($from, 'order-')){
+        if(strstr($from, 'CANCELORDER-')){
             $orderIDExp = explode('-', $from);
             $orderID    = $orderIDExp[1];
             // GET ADDRESS
