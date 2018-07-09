@@ -11,9 +11,9 @@ $this->title = 'Profile';
           <div class="row">
            <div class="col-xs-12">
               <div class="innerWrapper profile">
-                <div class="orderBox">
+                <!--<div class="orderBox">
                   <h4>Profile</h4>
-                </div>
+                </div>-->
                 <div class="row">
                   <div class="col-md-2 col-sm-3 col-xs-12">
                     <div class="thumbnail">

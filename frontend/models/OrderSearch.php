@@ -42,7 +42,13 @@ class OrderSearch extends Order
      */
     public function search($params)
     {
-        $query = Order::find();
+        $url = Yii::$app->homeUrl;
+        if(strpos($url, "backend")){
+            $query = Order::find()->orderBy(['id'=>SORT_DESC]);
+        }else{
+            $query = Order::find()->where(['user_id'=>Yii::$app->user->id])->andWhere('order_status<>"USER CANCELLED"')->andWhere('order_status<>"FAILED-TRANSACTION"')->andWhere('order_status<>"CANCELLED"')->orderBy(['id'=>SORT_DESC]);
+        }
+        
 
         // add conditions that should always apply here
 

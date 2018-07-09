@@ -74,7 +74,7 @@ class Order extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getOrderAddresses()
+    public function getOrderAddress()
     {
         return $this->hasMany(OrderAddress::className(), ['order_id' => 'id']);
     }

@@ -25,7 +25,7 @@ $contact_details = '';
             <div class="col-xs-12">
               <div class="innerWrapper">
                 <div class="orderBox myAddress">
-                  <h4>My Address</h4>
+                  <!--<h4>My Address</h4>-->
                   <div class="table-responsive">
                     <table class="table">
                       <thead>

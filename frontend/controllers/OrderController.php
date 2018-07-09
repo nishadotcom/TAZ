@@ -427,16 +427,13 @@ class OrderController extends Controller
         //print_r($_POST);
     }
     
-    public function actionTest(){
-        $from = (strpos('CART-1', 'PRO') !== false) ? 'CART' : 'PRODUCT';
-        echo $from;
-    }
     /**
      * Lists all Order models.
      * @return mixed
      */
     public function actionIndex()
     {
+        $this->layout = 'profile_page';
         $searchModel = new OrderSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -454,8 +451,11 @@ class OrderController extends Controller
      */
     public function actionView($id)
     {
+        $model = Order::find()->where(['id'=>$id])->with('orderAddress')->with('orderDetails')->one();
+        $this->layout = 'profile_page';
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            //'model' => $this->findModel($id),
+            'model'=>$model,
         ]);
     }
 
@@ -464,7 +464,7 @@ class OrderController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    /*public function actionCreate()
     {
         $model = new Order();
 
@@ -475,7 +475,7 @@ class OrderController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
-    }
+    }*/
 
     /**
      * Updates an existing Order model.
@@ -504,12 +504,12 @@ class OrderController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($id)
+    /*public function actionDelete($id)
     {
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
-    }
+    }*/
 
     /**
      * Finds the Order model based on its primary key value.

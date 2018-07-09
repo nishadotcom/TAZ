@@ -47,13 +47,13 @@ $action = $controller->action->id;
                                 <img src="http://placehold.it/32x32" class="profile-image img-circle">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>">MY ACCOUNT</a></li>
+                                <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>" title="MY ACCOUNT">MY ACCOUNT</a></li>
                                 <?php if(Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_SELLER']){ ?>
-                                    <li><a href="#">MY SALES</a></li>
-                                <?php }else{
+                                    <li><a href="#" title="MY SALES">MY SALES</a></li>
+                                <?php }elseif(Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_BUYER']){
                                     ?>
-                                    <li><a href="<?= Yii::$app->homeUrl.'cart'; ?>">CART (<span id="cartCount"><?= $cartCount; ?></span>)</a></li>
-                                    <li><a href="#">MY ORDERS</a></li>
+                                    <li><a href="<?= Yii::$app->homeUrl.'cart'; ?>" title="CART">CART (<span id="cartCount"><?= $cartCount; ?></span>)</a></li>
+                                    <li><a href="<?= Yii::$app->homeUrl.'order'; ?>" title="MY ORDERS">MY ORDERS</a></li>
                                     <?php
                                 } ?>
                             </ul>

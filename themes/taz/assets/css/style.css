@@ -6343,6 +6343,7 @@ body.bodyColor.container {
 .userProfile .btn-group a {
   float: none;
   height: 45px;
+  width:160px;
   padding: 0 20px;
   line-height: 45px;
   color: #252525;
