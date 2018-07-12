@@ -6650,7 +6650,7 @@ body.bodyColor.container {
 .orderBox.myAddress .table-responsive .table tbody tr td:first-child {
   color: #252525;
 }
-.orderBox.myAddress .table-responsive .table tbody tr td .btn-default {
+.orderBox.myAddress .table-responsive .table tbody tr td .btn-default, .orderBox.myOrders .table-responsive .table tbody tr td .btn-default {
   padding: 10px 14px;
   border: none;
 }

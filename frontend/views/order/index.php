@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
             <div class="col-xs-12">
               <div class="innerWrapper">
-                <div class="orderBox">
+                <div class="orderBox myOrders">
                   <!--<h4>All Orders</h4>-->
                   <div class="table-responsive">
                     <?= GridView::widget([
@@ -43,14 +43,16 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'order_status',
                             [
                                 'attribute'=>'order_status',
+                                'format'=>'html',
                                 'filter' => ['New'=>'New', 'IN-PROGRESS'=>'Processing','SHIPPED'=>'Shipped','DELIVERED'=>'Delivered', 'USER CANCELLED'=>'User Canceled'],
                                 //'NEW','IN-PROGRESS','SHIPPED','DELIVERED','COMPLETED','CANCELLED','FAILED-TRANSACTION','USER CANCELLED'
                                 'value' => function ($model) {
                                     if($model->order_status == 'IN-PROGRESS'){
-                                        //return '<span class="label label-primary">Processing</span>';
-                                        return 'Proccessing';
+                                        return '<span class="label label-primary" style="margin-bottom:0px">Processing</span>';
+                                        //return 'Proccessing';
                                     }else{
-                                        return $model->order_status;
+                                      return '<span class="label label-info" style="margin-bottom:0px">'.$model->order_status.'</span>';
+                                        //return $model->order_status;
                                     }
                                     //return ($model->order_status == 'AFA') ? 'Awaiting for Approval' : $model->product_status;
                                 },
@@ -67,6 +69,21 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'headerOptions' => ['style' => 'width:40px;'],
                                 //'template' => '<a href="#" class="btn btn-default">View</a>',
                                 'template'=>'{view}',
+                                'buttons'=>[
+                                  'view'=>function($url){
+                                    
+                                    return Html::a(
+                                      '<i class="fa fa-pencil" aria-hidden="true"></i>',
+                                      $url, 
+                                      [
+                                          'title' => 'View',
+                                          'data-pjax' => '0',
+                                          'class'=>'btn btn-default',
+                                          'type'=>'button',
+                                      ]
+                                    );
+                                  }
+                                ],
                                 'contentOptions' => ['style'=>'text-align:center']
                             ],
                             //['class' => 'yii\grid\ActionColumn'],
