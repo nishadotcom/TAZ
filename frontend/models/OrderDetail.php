@@ -88,7 +88,7 @@ class OrderDetail extends \yii\db\ActiveRecord
         ];
     }
 
-    public function orderTotalAmountbyOrderId($orderId){
+    public static function orderTotalAmountbyOrderId($orderId){
         $query = OrderDetail::find()->where(['order_id'=>$orderId]);
         $totalAmount = $query->sum('product_price');
         return $totalAmount;
