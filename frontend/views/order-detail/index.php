@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use frontend\widgets\ProfileMenu;
+use frontend\models\OrderDetail;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\OrderDetailSearch */
@@ -10,6 +11,9 @@ use frontend\widgets\ProfileMenu;
 
 $this->title = 'Order Details';
 $this->params['breadcrumbs'][] = $this->title;
+//echo '<pre>';
+//print_r($dataProvider->query->sum('product_price'));
+//exit;
 ?>
 
 <div class="row">
@@ -35,10 +39,14 @@ $this->params['breadcrumbs'][] = $this->title;
                             'attribute'=>'order_code',
                             'value' => 'order.order_code'
                         ],
-                        'product_name:ntext',
+                        //'product_name:ntext',
                         [
                            'attribute'=>'product_price',
-                           'value' => 'product_price',
+                           //'value' => 'product_price',
+                           'value' => function($model) use ($dataProvider){
+                                return OrderDetail::orderTotalAmountbyOrderId($model->order->id);
+                                //return $dataProvider->query->sum('product_price');
+                            },
                            'header'=>'Total Amount',
                            'filter'=>false
                            //'headerOptions' => ['style' => 'width:150px;'],
@@ -98,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
                               'view'=>function($url){
                                 
                                 return Html::a(
-                                  '<i class="fa fa-pencil" aria-hidden="true"></i>',
+                                  '<i class="fa fa-eye" aria-hidden="true"></i>',
                                   $url, 
                                   [
                                       'title' => 'View',
@@ -109,6 +117,12 @@ $this->params['breadcrumbs'][] = $this->title;
                                 );
                               }
                             ],
+                            'urlCreator'=>function($action, $model, $key, $index){
+                                if ($action === 'view') {
+                                    $url ='mysales/view/'.$model->order->id;
+                                    return $url;
+                                }
+                            },
                             'contentOptions' => ['style'=>'text-align:center']
                         ],
                     ],

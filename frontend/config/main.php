@@ -78,14 +78,17 @@ return [
                 'contact-details/add'=> 'user-contact-detail/create',
                 'contact-details/update/<id>'=> 'user-contact-detail/update',
                 'contact-details/delete/<id>'=> 'user-contact-detail/delete',
+
+                // SELLER SALES
+                'mysales'=>'order-detail',
+                'mysales/view/<id>'=>'order-detail/view',
                 // User Address
                 'user-address/update/<userid>/<type>' => 'user-address/update',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
 
-                // SELLER SALES
-                'sales'=>'order',
+
 
                 /*'<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:[\w-]+>' => '<controller>/<action>',

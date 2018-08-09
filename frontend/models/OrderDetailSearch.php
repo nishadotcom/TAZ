@@ -12,6 +12,7 @@ use frontend\models\OrderDetail;
  */
 class OrderDetailSearch extends OrderDetail
 {
+    public $test;
     /**
      * @inheritdoc
      */
@@ -44,13 +45,19 @@ class OrderDetailSearch extends OrderDetail
     {
         $query = OrderDetail::find();
         if(Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_SELLER']){
-            $query = OrderDetail::find()->joinWith('order')->where(['product_owner_id'=>Yii::$app->user->id])->andWhere('taz_order.order_status<>"USER CANCELLED"')->andWhere('taz_order.order_status<>"FAILED-TRANSACTION"')->andWhere('taz_order.order_status<>"CANCELLED"')->orderBy(['id'=>SORT_DESC]);
+            $query = OrderDetail::find()->joinWith('order')->where(['product_owner_id'=>Yii::$app->user->id])->andWhere('taz_order.order_status<>"USER CANCELLED"')->andWhere('taz_order.order_status<>"FAILED-TRANSACTION"')->andWhere('taz_order.order_status<>"CANCELLED"')->orderBy(['taz_order.id'=>SORT_DESC]);
+            //$query->sum('product_price');
+            $query->groupBy(['taz_order.id']);
+            // FIXING MYSQL 1055 ISSUE
+            //set global sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
         }
-
+        //$test = $query->sum('product_price');
+        //echo '<pre>'; print_r($product_price); exit;
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            //'test'=>$test,
         ]);
 
         $this->load($params);
