@@ -241,7 +241,7 @@ if(strpos($baseUrl, 'ANTs')){
                           </ul>
                         </div>
                       </div>
-                    </div>
+                    </div>c
                   </div>
                   <div class="col-xs-12">
                     <div class="well well-lg clearfix">

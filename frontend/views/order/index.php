@@ -74,7 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                   'view'=>function($url){
                                     
                                     return Html::a(
-                                      '<i class="fa fa-pencil" aria-hidden="true"></i>',
+                                      '<i class="fa fa-eye" aria-hidden="true"></i>',
                                       $url, 
                                       [
                                           'title' => 'View',
