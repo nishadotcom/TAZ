@@ -82,8 +82,10 @@ class OrderDetailController extends Controller
      */
     public function actionView($id)
     {
+        $this->layout = 'profile_page';
+        $model = OrderDetail::find()->joinWith('order')->joinWith('orderAddress')->where(['product_owner_id'=>Yii::$app->user->id])->andWhere('taz_order.order_status<>"USER CANCELLED"')->andWhere('taz_order.order_status<>"FAILED-TRANSACTION"')->andWhere('taz_order.order_status<>"CANCELLED"')->andWhere(['taz_order.id'=>$id])->orderBy(['taz_order.id'=>SORT_DESC])->all();
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
         ]);
     }
 

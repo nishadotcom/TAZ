@@ -1,0 +1,296 @@
+a:12:{s:6:"config";s:2830:"a:5:{s:10:"phpVersion";s:23:"7.0.30-0ubuntu0.16.04.1";s:10:"yiiVersion";s:8:"2.0.13.1";s:11:"application";a:8:{s:3:"yii";s:8:"2.0.13.1";s:4:"name";s:6:"TALOZO";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:23:"7.0.30-0ubuntu0.16.04.1";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:11:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:66:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-swiftmailer";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.0.13.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:60:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-debug";}}s:20:"kartik-v/yii2-social";a:3:{s:4:"name";s:20:"kartik-v/yii2-social";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:14:"@kartik/social";s:62:"/var/www/ANTs/Freelance/Talozo/dev/vendor/kartik-v/yii2-social";}}s:31:"kartik-v/yii2-widget-colorinput";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-colorinput";s:7:"version";s:7:"1.0.3.0";s:5:"alias";a:1:{s:13:"@kartik/color";s:73:"/var/www/ANTs/Freelance/Talozo/dev/vendor/kartik-v/yii2-widget-colorinput";}}s:23:"yiisoft/yii2-httpclient";a:3:{s:4:"name";s:23:"yiisoft/yii2-httpclient";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:15:"@yii/httpclient";s:65:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-httpclient";}}s:23:"yiisoft/yii2-authclient";a:3:{s:4:"name";s:23:"yiisoft/yii2-authclient";s:7:"version";s:7:"2.1.4.0";s:5:"alias";a:1:{s:15:"@yii/authclient";s:65:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-authclient";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:64:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-bootstrap";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:58:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:60:"/var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2-faker";}}s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"1.8.9.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:67:"/var/www/ANTs/Freelance/Talozo/dev/vendor/kartik-v/yii2-krajee-base";}}s:18:"kartik-v/yii2-mpdf";a:3:{s:4:"name";s:18:"kartik-v/yii2-mpdf";s:7:"version";s:7:"1.0.2.0";s:5:"alias";a:1:{s:12:"@kartik/mpdf";s:60:"/var/www/ANTs/Freelance/Talozo/dev/vendor/kartik-v/yii2-mpdf";}}}}";s:7:"request";s:4919:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:500;s:14:"requestHeaders";a:10:{s:4:"host";s:16:"dev.talozo.local";s:10:"connection";s:10:"keep-alive";s:13:"cache-control";s:9:"max-age=0";s:25:"upgrade-insecure-requests";s:1:"1";s:10:"user-agent";s:133:"Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/68.0.3440.106 Chrome/68.0.3440.106 Safari/537.36";s:6:"accept";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:7:"referer";s:31:"http://dev.talozo.local/mysales";s:15:"accept-encoding";s:13:"gzip, deflate";s:15:"accept-language";s:26:"en-GB,en-US;q=0.9,en;q=0.8";s:6:"cookie";s:430:"advanced-frontend=aen5l53mvoltra05ib6atqk7n3; _identity-frontend=8f49a1f74e065bed0b631c9a15831efdc485a03d4bfe433c42ae36290adfb92ca%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B3%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=38e7de0929de6c007e7edb1b6029ba8f05d2050c8b5b90c2783eb94cf0a17da6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z2xGJ9M_-IVYl3345Z9xTnhDVPwpSm_8%22%3B%7D";}s:15:"responseHeaders";a:8:{s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";s:11:"X-Debug-Tag";s:13:"5b7b232f8af9a";s:16:"X-Debug-Duration";s:2:"62";s:12:"X-Debug-Link";s:37:"/debug/default/view?tag=5b7b232f8af9a";s:10:"Set-Cookie";s:265:"_identity-frontend=8f49a1f74e065bed0b631c9a15831efdc485a03d4bfe433c42ae36290adfb92ca%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B3%2Cnull%2C2592000%5D%22%3B%7D; expires=Wed, 19-Sep-2018 20:23:11 GMT; Max-Age=2592000; path=/; HttpOnly";}s:5:"route";s:17:"order-detail/view";s:6:"action";s:56:"frontend\controllers\OrderDetailController::actionView()";s:12:"actionParams";a:1:{i:0;s:1:"1";}s:7:"general";a:5:{s:6:"method";s:3:"GET";s:6:"isAjax";b:0;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:0:{}s:6:"SERVER";a:35:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:16:"dev.talozo.local";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:15:"HTTP_USER_AGENT";s:133:"Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/68.0.3440.106 Chrome/68.0.3440.106 Safari/537.36";s:11:"HTTP_ACCEPT";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:12:"HTTP_REFERER";s:31:"http://dev.talozo.local/mysales";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:20:"HTTP_ACCEPT_LANGUAGE";s:26:"en-GB,en-US;q=0.9,en;q=0.8";s:11:"HTTP_COOKIE";s:430:"advanced-frontend=aen5l53mvoltra05ib6atqk7n3; _identity-frontend=8f49a1f74e065bed0b631c9a15831efdc485a03d4bfe433c42ae36290adfb92ca%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B3%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=38e7de0929de6c007e7edb1b6029ba8f05d2050c8b5b90c2783eb94cf0a17da6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z2xGJ9M_-IVYl3345Z9xTnhDVPwpSm_8%22%3B%7D";s:4:"PATH";s:60:"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";s:16:"SERVER_SIGNATURE";s:77:"<address>Apache/2.4.18 (Ubuntu) Server at dev.talozo.local Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:22:"Apache/2.4.18 (Ubuntu)";s:11:"SERVER_NAME";s:16:"dev.talozo.local";s:11:"SERVER_ADDR";s:9:"127.0.1.1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:13:"DOCUMENT_ROOT";s:34:"/var/www/ANTs/Freelance/Talozo/dev";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:34:"/var/www/ANTs/Freelance/Talozo/dev";s:12:"SERVER_ADMIN";s:19:"webmaster@localhost";s:15:"SCRIPT_FILENAME";s:44:"/var/www/ANTs/Freelance/Talozo/dev/index.php";s:11:"REMOTE_PORT";s:5:"43318";s:12:"REDIRECT_URL";s:15:"/mysales/view/1";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:0:"";s:11:"REQUEST_URI";s:15:"/mysales/view/1";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1534796591.5320001;s:12:"REQUEST_TIME";i:1534796591;}s:3:"GET";a:1:{s:2:"id";s:1:"1";}s:4:"POST";a:0:{}s:6:"COOKIE";a:3:{s:17:"advanced-frontend";s:26:"aen5l53mvoltra05ib6atqk7n3";s:18:"_identity-frontend";s:128:"8f49a1f74e065bed0b631c9a15831efdc485a03d4bfe433c42ae36290adfb92ca:2:{i:0;s:18:"_identity-frontend";i:1;s:16:"[3,null,2592000]";}";s:14:"_csrf-frontend";s:140:"38e7de0929de6c007e7edb1b6029ba8f05d2050c8b5b90c2783eb94cf0a17da6a:2:{i:0;s:14:"_csrf-frontend";i:1;s:32:"z2xGJ9M_-IVYl3345Z9xTnhDVPwpSm_8";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:4:{s:7:"__flash";a:0:{}s:10:"FBPH_state";s:32:"639db5644c2102d59f3aeaf961a022a5";s:4:"__id";i:3;s:17:"user.profileImage";s:8:"dddd.jpg";}}";s:3:"log";s:14215:"a:1:{s:8:"messages";a:38:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1534796591.541111;i:4;a:0:{}i:5;i:825408;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1534796591.5411689;i:4;a:0:{}i:5;i:826416;}i:2;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1534796591.5436831;i:4;a:0:{}i:5;i:915976;}i:3;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=TAZALO";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1534796591.545069;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1134992;}i:6;a:6:{i:0;s:63:"SELECT * FROM `taz_user` WHERE (`id`=3) AND (`status`='Active')";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5646369;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1144160;}i:9;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5654581;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1152968;}i:12;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.567121;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1173688;}i:15;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1534796591.5690989;i:4;a:0:{}i:5;i:1195120;}i:16;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1534796591.5704851;i:4;a:0:{}i:5;i:1305056;}i:17;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1534796591.5706151;i:4;a:0:{}i:5;i:1309576;}i:36;a:6:{i:0;s:36:"Route requested: 'order-detail/view'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1534796591.5711579;i:4;a:0:{}i:5;i:1329624;}i:37;a:6:{i:0;s:31:"Route to run: order-detail/view";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1534796591.571389;i:4;a:0:{}i:5;i:1339856;}i:38;a:6:{i:0;s:72:"Running action: frontend\controllers\OrderDetailController::actionView()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1534796591.5716701;i:4;a:0:{}i:5;i:1351496;}i:39;a:6:{i:0;s:448:"SELECT `taz_order_detail`.* FROM `taz_order_detail` LEFT JOIN `taz_order` ON `taz_order_detail`.`order_id` = `taz_order`.`id` LEFT JOIN `taz_order_address` ON `taz_order_detail`.`order_id` = `taz_order_address`.`order_id` WHERE (`product_owner_id`=3) AND (taz_order.order_status<>"USER CANCELLED") AND (taz_order.order_status<>"FAILED-TRANSACTION") AND (taz_order.order_status<>"CANCELLED") AND (`taz_order`.`id`='1') ORDER BY `taz_order`.`id` DESC";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5722561;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1399184;}i:42;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `taz_order_detail`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5733781;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1411248;}i:45;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_detail' AND kcu.table_name = 'taz_order_detail'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.579649;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1428496;}i:48;a:6:{i:0;s:38:"SELECT * FROM `taz_order` WHERE `id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5812449;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1436992;}i:51;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `taz_order`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.582309;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1447240;}i:54;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order' AND kcu.table_name = 'taz_order'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.583647;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1462000;}i:57;a:6:{i:0;s:52:"SELECT * FROM `taz_order_address` WHERE `order_id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.58479;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1463584;}i:60;a:6:{i:0;s:42:"SHOW FULL COLUMNS FROM `taz_order_address`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5855939;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1471712;}i:63;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_address' AND kcu.table_name = 'taz_order_address'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.587081;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1485360;}i:66;a:6:{i:0;s:92:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/frontend/views/order-detail/view.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5883679;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:87;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}i:5;i:1473536;}i:67;a:6:{i:0;s:1679:"Error: Class 'ProfileMenu' not found in /var/www/ANTs/Freelance/Talozo/dev/frontend/views/order-detail/view.php:27
+Stack trace:
+#0 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(332): require()
+#1 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/ANTs/F...', Array)
+#2 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/ANTs/F...', Array, Object(frontend\controllers\OrderDetailController))
+#3 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(frontend\controllers\OrderDetailController))
+#4 /var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php(87): yii\base\Controller->render('view', Array)
+#5 [internal function]: frontend\controllers\OrderDetailController->actionView('1')
+#6 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('order-detail/vi...', Array)
+#10 /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/ANTs/Freelance/Talozo/dev/index.php(17): yii\base\Application->run()
+#12 {main}";i:1;i:1;i:2;s:5:"Error";i:3;d:1534796591.5890131;i:4;a:0:{}i:5;i:1481192;}i:68;a:6:{i:0;s:108:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/exception.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5891471;i:4;a:0:{}i:5;i:1474632;}i:69;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5894871;i:4;a:0:{}i:5;i:1539168;}i:70;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.589839;i:4;a:0:{}i:5;i:1579720;}i:71;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5900979;i:4;a:0:{}i:5;i:1585784;}i:72;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.590425;i:4;a:0:{}i:5;i:1586216;}i:73;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5907359;i:4;a:0:{}i:5;i:1591336;}i:74;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5909779;i:4;a:0:{}i:5;i:1547752;}i:75;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.591151;i:4;a:0:{}i:5;i:1535696;}i:76;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.591306;i:4;a:0:{}i:5;i:1541264;}i:77;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5915461;i:4;a:0:{}i:5;i:1601256;}i:78;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5918591;i:4;a:0:{}i:5;i:1614336;}i:79;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5921061;i:4;a:0:{}i:5;i:1564104;}i:80;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.5923951;i:4;a:0:{}i:5;i:1613864;}i:81;a:6:{i:0;s:112:"Rendering view file: /var/www/ANTs/Freelance/Talozo/dev/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1534796591.592664;i:4;a:0:{}i:5;i:1552552;}}}";s:9:"profiling";s:14873:"a:3:{s:6:"memory";i:1807280;s:4:"time";d:0.07137298583984375;s:8:"messages";a:26:{i:4;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=TAZALO";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1534796591.545156;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1135960;}i:5;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=TAZALO";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1534796591.5645161;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1145752;}i:7;a:6:{i:0;s:63:"SELECT * FROM `taz_user` WHERE (`id`=3) AND (`status`='Active')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5647211;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1144280;}i:8;a:6:{i:0;s:63:"SELECT * FROM `taz_user` WHERE (`id`=3) AND (`status`='Active')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.565238;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1147712;}i:10;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.565536;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1154008;}i:11;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5665269;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1169672;}i:13;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.567256;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1175848;}i:14;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5679259;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1177088;}i:40;a:6:{i:0;s:448:"SELECT `taz_order_detail`.* FROM `taz_order_detail` LEFT JOIN `taz_order` ON `taz_order_detail`.`order_id` = `taz_order`.`id` LEFT JOIN `taz_order_address` ON `taz_order_detail`.`order_id` = `taz_order_address`.`order_id` WHERE (`product_owner_id`=3) AND (taz_order.order_status<>"USER CANCELLED") AND (taz_order.order_status<>"FAILED-TRANSACTION") AND (taz_order.order_status<>"CANCELLED") AND (`taz_order`.`id`='1') ORDER BY `taz_order`.`id` DESC";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5723071;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1401032;}i:41;a:6:{i:0;s:448:"SELECT `taz_order_detail`.* FROM `taz_order_detail` LEFT JOIN `taz_order` ON `taz_order_detail`.`order_id` = `taz_order`.`id` LEFT JOIN `taz_order_address` ON `taz_order_detail`.`order_id` = `taz_order_address`.`order_id` WHERE (`product_owner_id`=3) AND (taz_order.order_status<>"USER CANCELLED") AND (taz_order.order_status<>"FAILED-TRANSACTION") AND (taz_order.order_status<>"CANCELLED") AND (`taz_order`.`id`='1') ORDER BY `taz_order`.`id` DESC";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5732679;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1409064;}i:43;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `taz_order_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5734301;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1412304;}i:44;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `taz_order_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5790949;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1428504;}i:46;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_detail' AND kcu.table_name = 'taz_order_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5797269;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1430592;}i:47;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_detail' AND kcu.table_name = 'taz_order_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.580745;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1432872;}i:49;a:6:{i:0;s:38:"SELECT * FROM `taz_order` WHERE `id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5813279;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1438088;}i:50;a:6:{i:0;s:38:"SELECT * FROM `taz_order` WHERE `id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.582176;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1443728;}i:52;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `taz_order`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5823629;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1448280;}i:53;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `taz_order`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.583282;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1458312;}i:55;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order' AND kcu.table_name = 'taz_order'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.583704;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1464096;}i:56;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order' AND kcu.table_name = 'taz_order'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.584516;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1465336;}i:58;a:6:{i:0;s:52:"SELECT * FROM `taz_order_address` WHERE `order_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5848551;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1464704;}i:59;a:6:{i:0;s:52:"SELECT * FROM `taz_order_address` WHERE `order_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5854349;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1468104;}i:61;a:6:{i:0;s:42:"SHOW FULL COLUMNS FROM `taz_order_address`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5856841;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1472768;}i:62;a:6:{i:0;s:42:"SHOW FULL COLUMNS FROM `taz_order_address`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.586705;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1482640;}i:64;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_address' AND kcu.table_name = 'taz_order_address'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5871639;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1487456;}i:65;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_address' AND kcu.table_name = 'taz_order_address'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.587971;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1491632;}}}";s:2:"db";s:14086:"a:1:{s:8:"messages";a:24:{i:7;a:6:{i:0;s:63:"SELECT * FROM `taz_user` WHERE (`id`=3) AND (`status`='Active')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5647211;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1144280;}i:8;a:6:{i:0;s:63:"SELECT * FROM `taz_user` WHERE (`id`=3) AND (`status`='Active')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.565238;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1147712;}i:10;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.565536;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1154008;}i:11;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `taz_user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5665269;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1169672;}i:13;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.567256;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1175848;}i:14;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_user' AND kcu.table_name = 'taz_user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5679259;i:4;a:1:{i:0;a:5:{s:4:"file";s:57:"/var/www/ANTs/Freelance/Talozo/dev/common/models/User.php";s:4:"line";i:76;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1177088;}i:40;a:6:{i:0;s:448:"SELECT `taz_order_detail`.* FROM `taz_order_detail` LEFT JOIN `taz_order` ON `taz_order_detail`.`order_id` = `taz_order`.`id` LEFT JOIN `taz_order_address` ON `taz_order_detail`.`order_id` = `taz_order_address`.`order_id` WHERE (`product_owner_id`=3) AND (taz_order.order_status<>"USER CANCELLED") AND (taz_order.order_status<>"FAILED-TRANSACTION") AND (taz_order.order_status<>"CANCELLED") AND (`taz_order`.`id`='1') ORDER BY `taz_order`.`id` DESC";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5723071;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1401032;}i:41;a:6:{i:0;s:448:"SELECT `taz_order_detail`.* FROM `taz_order_detail` LEFT JOIN `taz_order` ON `taz_order_detail`.`order_id` = `taz_order`.`id` LEFT JOIN `taz_order_address` ON `taz_order_detail`.`order_id` = `taz_order_address`.`order_id` WHERE (`product_owner_id`=3) AND (taz_order.order_status<>"USER CANCELLED") AND (taz_order.order_status<>"FAILED-TRANSACTION") AND (taz_order.order_status<>"CANCELLED") AND (`taz_order`.`id`='1') ORDER BY `taz_order`.`id` DESC";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5732679;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1409064;}i:43;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `taz_order_detail`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5734301;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1412304;}i:44;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `taz_order_detail`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5790949;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1428504;}i:46;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_detail' AND kcu.table_name = 'taz_order_detail'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5797269;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1430592;}i:47;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_detail' AND kcu.table_name = 'taz_order_detail'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.580745;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1432872;}i:49;a:6:{i:0;s:38:"SELECT * FROM `taz_order` WHERE `id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5813279;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1438088;}i:50;a:6:{i:0;s:38:"SELECT * FROM `taz_order` WHERE `id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.582176;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1443728;}i:52;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `taz_order`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5823629;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1448280;}i:53;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `taz_order`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.583282;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1458312;}i:55;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order' AND kcu.table_name = 'taz_order'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.583704;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1464096;}i:56;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order' AND kcu.table_name = 'taz_order'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.584516;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1465336;}i:58;a:6:{i:0;s:52:"SELECT * FROM `taz_order_address` WHERE `order_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5848551;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1464704;}i:59;a:6:{i:0;s:52:"SELECT * FROM `taz_order_address` WHERE `order_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5854349;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1468104;}i:61;a:6:{i:0;s:42:"SHOW FULL COLUMNS FROM `taz_order_address`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5856841;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1472768;}i:62;a:6:{i:0;s:42:"SHOW FULL COLUMNS FROM `taz_order_address`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.586705;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1482640;}i:64;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_address' AND kcu.table_name = 'taz_order_address'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.5871639;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1487456;}i:65;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'taz_order_address' AND kcu.table_name = 'taz_order_address'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1534796591.587971;i:4;a:1:{i:0;a:5:{s:4:"file";s:81:"/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/OrderDetailController.php";s:4:"line";i:85;s:8:"function";s:3:"all";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1491632;}}}";s:6:"assets";s:6:"a:0:{}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:92:"a:3:{s:5:"start";d:1534796591.533185;s:3:"end";d:1534796591.6047649;s:6:"memory";i:1807280;}";s:4:"user";s:2049:"a:5:{s:2:"id";i:3;s:8:"identity";a:18:{s:2:"id";s:1:"3";s:9:"firstname";s:8:"'Seller'";s:8:"lastname";s:5:"'One'";s:5:"email";s:19:"'seller@talozo.com'";s:6:"mobile";s:12:"'9876543210'";s:8:"password";s:34:"'0cc175b9c0f1b6a831c399e269772661'";s:8:"auth_key";s:4:"null";s:15:"registered_mode";s:5:"'Web'";s:13:"profile_image";s:4:"null";s:14:"profile_status";s:15:"'Not-Completed'";s:13:"product_count";s:1:"0";s:12:"user_loyalty";s:4:"null";s:9:"user_type";s:8:"'Seller'";s:6:"status";s:8:"'Active'";s:15:"registration_ip";s:9:"'0.0.0.0'";s:10:"created_at";s:21:"'2018-07-12 19:16:26'";s:10:"updated_at";s:4:"null";s:10:"login_date";s:21:"'2018-08-20 19:56:08'";}s:10:"attributes";a:18:{i:0;a:2:{s:9:"attribute";s:2:"id";s:5:"label";s:2:"Id";}i:1;a:2:{s:9:"attribute";s:9:"firstname";s:5:"label";s:9:"Firstname";}i:2;a:2:{s:9:"attribute";s:8:"lastname";s:5:"label";s:8:"Lastname";}i:3;a:2:{s:9:"attribute";s:5:"email";s:5:"label";s:5:"Email";}i:4;a:2:{s:9:"attribute";s:6:"mobile";s:5:"label";s:6:"Mobile";}i:5;a:2:{s:9:"attribute";s:8:"password";s:5:"label";s:8:"Password";}i:6;a:2:{s:9:"attribute";s:8:"auth_key";s:5:"label";s:8:"Auth Key";}i:7;a:2:{s:9:"attribute";s:15:"registered_mode";s:5:"label";s:15:"Registered Mode";}i:8;a:2:{s:9:"attribute";s:13:"profile_image";s:5:"label";s:13:"Profile Image";}i:9;a:2:{s:9:"attribute";s:14:"profile_status";s:5:"label";s:14:"Profile Status";}i:10;a:2:{s:9:"attribute";s:13:"product_count";s:5:"label";s:13:"Product Count";}i:11;a:2:{s:9:"attribute";s:12:"user_loyalty";s:5:"label";s:12:"User Loyalty";}i:12;a:2:{s:9:"attribute";s:9:"user_type";s:5:"label";s:9:"User Type";}i:13;a:2:{s:9:"attribute";s:6:"status";s:5:"label";s:6:"Status";}i:14;a:2:{s:9:"attribute";s:15:"registration_ip";s:5:"label";s:15:"Registration Ip";}i:15;a:2:{s:9:"attribute";s:10:"created_at";s:5:"label";s:10:"Created At";}i:16;a:2:{s:9:"attribute";s:10:"updated_at";s:5:"label";s:10:"Updated At";}i:17;a:2:{s:9:"attribute";s:10:"login_date";s:5:"label";s:10:"Login Date";}}s:13:"rolesProvider";N;s:19:"permissionsProvider";N;}";s:6:"router";s:3381:"a:1:{s:8:"messages";a:18:{i:18;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.5708699;i:4;a:0:{}i:5;i:1319320;}i:19;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.570895;i:4;a:0:{}i:5;i:1319896;}i:20;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.5709109;i:4;a:0:{}i:5;i:1320504;}i:21;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.570926;i:4;a:0:{}i:5;i:1321072;}i:22;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.570941;i:4;a:0:{}i:5;i:1321680;}i:23;a:6:{i:0;a:3:{s:4:"rule";s:5:"login";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.570956;i:4;a:0:{}i:5;i:1322248;}i:24;a:6:{i:0;a:3:{s:4:"rule";s:6:"signup";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.570971;i:4;a:0:{}i:5;i:1322816;}i:25;a:6:{i:0;a:3:{s:4:"rule";s:6:"logout";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.5709851;i:4;a:0:{}i:5;i:1323384;}i:26;a:6:{i:0;a:3:{s:4:"rule";s:13:"become-seller";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.5709989;i:4;a:0:{}i:5;i:1323960;}i:27;a:6:{i:0;a:3:{s:4:"rule";s:17:"profile-dashboard";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.571013;i:4;a:0:{}i:5;i:1324544;}i:28;a:6:{i:0;a:3:{s:4:"rule";s:14:"profile-update";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.571027;i:4;a:0:{}i:5;i:1325120;}i:29;a:6:{i:0;a:3:{s:4:"rule";s:15:"contact-details";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.5710411;i:4;a:0:{}i:5;i:1325696;}i:30;a:6:{i:0;a:3:{s:4:"rule";s:19:"contact-details/add";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.5710549;i:4;a:0:{}i:5;i:1326280;}i:31;a:6:{i:0;a:3:{s:4:"rule";s:27:"contact-details/update/<id>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.571075;i:4;a:0:{}i:5;i:1326872;}i:32;a:6:{i:0;a:3:{s:4:"rule";s:27:"contact-details/delete/<id>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.571089;i:4;a:0:{}i:5;i:1327464;}i:33;a:6:{i:0;a:3:{s:4:"rule";s:7:"mysales";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.571104;i:4;a:0:{}i:5;i:1328928;}i:34;a:6:{i:0;s:47:"Request parsed with URL rule: mysales/view/<id>";i:1;i:8;i:2;s:29:"yii\web\UrlRule::parseRequest";i:3;d:1534796591.5711279;i:4;a:0:{}i:5;i:1330336;}i:35;a:6:{i:0;a:3:{s:4:"rule";s:17:"mysales/view/<id>";s:5:"match";b:1;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1534796591.5711429;i:4;a:0:{}i:5;i:1330416;}}}";s:7:"summary";a:9:{s:3:"tag";s:13:"5b7b232f8af9a";s:3:"url";s:38:"http://dev.talozo.local/mysales/view/1";s:4:"ajax";i:0;s:6:"method";s:3:"GET";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1534796591.5320001;s:10:"statusCode";i:500;s:8:"sqlCount";i:12;s:9:"mailCount";i:0;}s:10:"exceptions";a:0:{}}

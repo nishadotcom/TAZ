@@ -114,4 +114,9 @@ class OrderDetail extends \yii\db\ActiveRecord
     {
         return $this->hasMany(ProductImage::className(), ['product_id' => 'product_id']);
     }
+
+    public function getOrderAddress()
+    {
+        return $this->hasMany(OrderAddress::className(), ['order_id' => 'order_id']);
+    }
 }

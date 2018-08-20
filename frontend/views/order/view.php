@@ -24,7 +24,7 @@ $total = 0;
          <?= ProfileMenu::widget(); ?>
 </div>
 
-<div class="row">
+<div class="row" id="printThis">
     <div class="col-xs-12">
       <div class="innerWrapper singleOrder">
         <div class="orderBox">
@@ -164,7 +164,7 @@ $total = 0;
           </div>
           <div class="col-xs-12">
             <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-default printMe">Print</button>
+              <!--<button type="button" class="btn btn-default printMe">Print</button>-->
               <button type="button" class="btn btn-default">Save to pdf</button>
               <!--<button type="button" class="btn btn-default">cancel order</button>-->
             </div>
