@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\components\AccessRule;
 use common\models\User;
+use kartik\mpdf\Pdf;
 
 /**
  * OrderDetailController implements the CRUD actions for OrderDetail model.
@@ -87,6 +88,34 @@ class OrderDetailController extends Controller
         return $this->render('view', [
             'model' => $model,
         ]);
+    }
+
+    public function actionInvoice($id=false){
+        $content = $this->renderPartial('invoice');
+        $pdf = new Pdf([
+            // set to use core fonts only
+            'mode' => Pdf::MODE_CORE, 
+            // A4 paper format
+            'format' => Pdf::FORMAT_A4, 
+            // portrait orientation
+            'orientation' => Pdf::ORIENT_PORTRAIT, 
+            // stream to browser inline
+            'destination' => Pdf::DEST_BROWSER, 
+            // format content from your own css file if needed or use the
+            // enhanced bootstrap css built by Krajee for mPDF formatting 
+            'cssFile' => '@vendor/kartik-v/yii2-mpdf/assets/invoice.css',
+            //html content input
+            'content' => $content, 
+            // set mPDF properties on the fly
+            'options' => ['title' => 'Invoice'],
+            // call mPDF methods on the fly
+            'methods' => [ 
+                //'SetHeader'=>['Report Header'], // Header
+                //'SetFooter'=>['{PAGENO}'],
+            ]
+        ]);
+        
+        return $pdf->render();
     }
 
     /**

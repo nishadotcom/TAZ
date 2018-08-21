@@ -82,6 +82,7 @@ return [
                 // SELLER SALES
                 'mysales'=>'order-detail',
                 'mysales/view/<id>'=>'order-detail/view',
+                'mysales/invoice/<id>'=>'order-detail/invoice',
                 // User Address
                 'user-address/update/<userid>/<type>' => 'user-address/update',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',

@@ -165,7 +165,15 @@ $total = 0;
           <div class="col-xs-12">
             <div class="btn-group" role="group" aria-label="...">
               <!--<button type="button" class="btn btn-default printMe">Print</button>-->
-              <button type="button" class="btn btn-default">Save to pdf</button>
+              <!--<button type="button" class="btn btn-default">Save to pdf</button>-->
+              <?php
+              echo Html::a('Invoice', ['/order/invoice/1'], [
+                  'class'=>'btn btn-default', 
+                  'target'=>'_blank', 
+                  'data-toggle'=>'tooltip', 
+                  'title'=>'Will open the generated PDF file in a new window'
+              ]);
+              ?>
               <!--<button type="button" class="btn btn-default">cancel order</button>-->
             </div>
           </div>
