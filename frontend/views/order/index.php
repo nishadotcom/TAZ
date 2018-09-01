@@ -34,7 +34,10 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'order_code',
                             [
                                'attribute'=>'order_code',
-                               //'headerOptions' => ['style' => 'width:250px;'],
+                               'format'=>'raw',
+                               'value'=>function($model){
+                                  return Html::a($model->order_code, 'order/'.$model->id, ['style'=>'color:inherit']);
+                               },
                             ],
                             [
                                'attribute'=>'total_amount',

@@ -48,7 +48,7 @@ class Shop extends \yii\db\ActiveRecord
     // RECOMMENDATION ENGINE FUNCTIONS
 
     public static function getSimilarColorProducts($productId, $color=false){
-        $products = Product::find()->where(['product_status'=>'Active'])->andWhere(['<>', 'id', $productId])->andWhere(['LIKE', 'product_color', $color])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
+        $products = Product::find()->where(['product_status'=>'Active'])->andWhere(['<>', 'id', $productId])->andWhere(['LIKE', 'product_color', $color])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->limit(4)->all();
         return $products;
     }
 
@@ -58,9 +58,15 @@ class Shop extends \yii\db\ActiveRecord
                           @material : STRING 
     */
     public static function getSimilarMaterialProducts($productId, $material=false){
-        $products = Product::find()->where(['product_status'=>'Active'])->andWhere(['<>', 'id', $productId])->andWhere(['LIKE', 'product_material', $material])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
+        $products = Product::find()->where(['product_status'=>'Active'])->andWhere(['<>', 'id', $productId])->andWhere(['LIKE', 'product_material', $material])->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->limit(4)->all();
         return $products;
     }
+
+    public static function getSimilarTypeProducts($productId, $category){ 
+        $products = Product::find()->where(['product_status'=>'Active'])->andWhere(['<>', 'id', $productId])->andWhere(['=','product_category_id', $category])->with('productImages')->limit(4)->all();
+        return $products;
+    }
+
     // END RECOMMENDATION ENGINE FUNCTIONS
 
     public static function getTopFavoriteProducts(){

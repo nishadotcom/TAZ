@@ -70,14 +70,15 @@ class ShopController extends Controller {
         $product = Shop::getProductById($id);
 
         // SIMILAR COLOR
-        //$similarColor = Shop::getSimilarColorProducts($category, $color);
         $similarMaterial 	= Shop::getSimilarMaterialProducts($product[0]->id, $product[0]->product_material);
         $similarColor 		= Shop::getSimilarColorProducts($product[0]->id, $product[0]->product_color);
+        $similarType        = Shop::getSimilarTypeProducts($product[0]->id, $product[0]->product_category_id);
 
         return $this->render('singleProduct', [
                     'product' => $product,
                     'similarMaterialProducts' => ($similarMaterial) ? $similarMaterial : [],
                     'similarColorProducts' => ($similarColor) ? $similarColor : [],
+                    'similarTypeProducts'=>($similarType) ? $similarType : [],
         ]);
     }
 

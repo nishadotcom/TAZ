@@ -321,7 +321,7 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                   -->
                   <div id="similarType" class="tab-pane fade">
                     <div class="row">
-                      <div class="col-sm-3 col-xs-12">
+                      <!--<div class="col-sm-3 col-xs-12">
                         <div class="imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
@@ -340,8 +340,51 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                             <h3>$199</h3>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
+                      </div>-->
+                      <?php 
+                        if($similarTypeProducts){
+                          foreach ($similarTypeProducts as $key => $similarTypeProduct) {
+                            $coverImage = (isset($similarTypeProduct->productImages[0])) ? $pathPrdImg . $similarTypeProduct->product_code . '/' . $similarTypeProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
+                          ?>
+                            <div class="col-sm-3 col-xs-12">
+                            <div class="imageBox">
+                                <div class="productImage clearfix">
+                                  <a href="<?= Yii::$app->homeUrl.'shop/product/'.$similarTypeProduct->id; ?>">
+                                    <img src="<?= $coverImage; ?>" alt="PRODUCT IMAGE">
+                                  </a>
+                                  <div class="singleProduct productMasking">
+                                      <ul class="list-inline btn-group" role="group">
+                                        <li>
+                                            <a data-product-id="<?= $similarTypeProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                                <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$similarTypeProduct->id.'&transactionId='.$transactionId; ?>" data-product-id="<?= $similarTypeProduct->id; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                                <i class="fa fa-inr" style="margin-right:0"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$similarTypeProduct->id; ?>" class="btn btn-default" title="View <?= $similarTypeProduct->product_name; ?>">
+                                                <i class="fa fa-eye" style="margin-right:0"></i>
+                                            </a>  
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                                <div class="productCaption clearfix">
+                                  <h5><a href="<?= Yii::$app->homeUrl.'shop/product/'.$similarTypeProduct->id; ?>"><?= $similarTypeProduct->product_name; ?></a></h5>
+                                  <h3>&#x20B9; <?= $similarTypeProduct->product_sale_price; ?></h3>
+                                </div>
+                              </div>
+                              </div>
+                          <?php
+                          }// END LOOP
+                        }else{
+                          echo '<div class="col-sm-3 col-xs-12"><p>No Results Found</p></div>';
+                        }
+                        ?>
+                      <!--<div class="col-sm-3 col-xs-12">
                         <div class="imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
@@ -480,7 +523,7 @@ $url = Url::toRoute('shop/product/'.$productData->id, true);
                             <h3>$199</h3>
                           </div>
                         </div>
-                      </div>
+                      </div>-->
                     </div>
                   </div>
                 </div>

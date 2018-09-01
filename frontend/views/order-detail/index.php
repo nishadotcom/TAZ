@@ -9,7 +9,7 @@ use frontend\models\OrderDetail;
 /* @var $searchModel frontend\models\OrderDetailSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Order Details';
+$this->title = 'My Sales';
 $this->params['breadcrumbs'][] = $this->title;
 //echo '<pre>';
 //print_r($dataProvider->query->sum('product_price'));
@@ -37,7 +37,11 @@ $this->params['breadcrumbs'][] = $this->title;
                         
                         [
                             'attribute'=>'order_code',
-                            'value' => 'order.order_code'
+                            //'value' => 'order.order_code',
+                            'format'=>'raw',
+                            'value'=>function($model){
+                                  return Html::a($model->order->order_code, 'mysales/view/'.$model->order->id, ['style'=>'color:inherit']);
+                            },
                         ],
                         //'product_name:ntext',
                         [
