@@ -3,7 +3,6 @@ $this->title = ($categoryData) ? $categoryData->category_name . ' Products' : 'C
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg = 'noImage.jpg';
 $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
-
 ?>
 
 <div class="row">
@@ -91,20 +90,19 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                                     <!--<button type="button" class="btn btn-default userFavorite" data-favorite="1" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                                         <i class="fa fa-heart" aria-hidden="true"></i>
                                     </button>-->
-                                    <?php 
-                                    $favoriteClass = (in_array($categoryProduct->id, $userFavoriteProducts)) ? 'userFavorited' : '';                                    ?>
+                                    <?php $favoriteClass = (in_array($categoryProduct->id, $userFavoriteProducts)) ? 'userFavorited' : ''; ?>
                                     <span class="btn btn-default userFavorite <?= $favoriteClass; ?>" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                                         <i class="fa fa-heart" aria-hidden="true" style="margin-top:  8px;"></i>
                                     </span>
-                                    <?php
-                                    if (in_array($categoryProduct->id, $cartProducts)) {
-                                        $cartDisabled = 'disabled';
-                                        $cartClass = 'cartYes';
-                                    } else {
-                                        $cartDisabled = '';
-                                        $cartClass = '';
-                                    }
-                                    ?>
+        <?php
+        if (in_array($categoryProduct->id, $cartProducts)) {
+            $cartDisabled = 'disabled';
+            $cartClass = 'cartYes';
+        } else {
+            $cartDisabled = '';
+            $cartClass = '';
+        }
+        ?>
                                     <button type="button" class="btn btn-default add_to_cart <?= $cartClass; ?>" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" <?= $cartDisabled; ?>>
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                     </button>
@@ -113,11 +111,11 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                         </div>
                     </div>
 
-                    <?php
-                }
-            } else {
-                // No results found
-                ?>
+        <?php
+    }
+} else {
+    // No results found
+    ?>
                 <div class="col-xs-12">
                     <div class="media">
                         <div class="media-body"><p classs="text-muted">No results found</p>
@@ -125,9 +123,9 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                     </div>
                 </div>
 
-                <?php
-            }
-            ?>
+    <?php
+}
+?>
 
         </div>  
     </div>

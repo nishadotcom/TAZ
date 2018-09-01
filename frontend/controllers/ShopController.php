@@ -46,10 +46,10 @@ class ShopController extends Controller {
     public function actionProducts($id) {
         $this->layout = 'categoryProducts';
         $products = Shop::getProductsByCategoryId($id);
-        if(!Yii::$app->user->isGuest){
+        if (!Yii::$app->user->isGuest) {
             $userid = Yii::$app->user->id;
             $getUserFavoriteProducts = Yii::$app->ShopComponent->getUserFavoriteProducts($userid);
-        }else{
+        } else {
             $getUserFavoriteProducts = [];
         }
         $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavoriteProducts, 'product_id') : [];
@@ -70,15 +70,15 @@ class ShopController extends Controller {
         $product = Shop::getProductById($id);
 
         // SIMILAR COLOR
-        $similarMaterial 	= Shop::getSimilarMaterialProducts($product[0]->id, $product[0]->product_material);
-        $similarColor 		= Shop::getSimilarColorProducts($product[0]->id, $product[0]->product_color);
-        $similarType        = Shop::getSimilarTypeProducts($product[0]->id, $product[0]->product_category_id);
+        $similarMaterial = Shop::getSimilarMaterialProducts($product[0]->id, $product[0]->product_material);
+        $similarColor = Shop::getSimilarColorProducts($product[0]->id, $product[0]->product_color);
+        $similarType = Shop::getSimilarTypeProducts($product[0]->id, $product[0]->product_category_id);
 
         return $this->render('singleProduct', [
                     'product' => $product,
                     'similarMaterialProducts' => ($similarMaterial) ? $similarMaterial : [],
                     'similarColorProducts' => ($similarColor) ? $similarColor : [],
-                    'similarTypeProducts'=>($similarType) ? $similarType : [],
+                    'similarTypeProducts' => ($similarType) ? $similarType : [],
         ]);
     }
 
