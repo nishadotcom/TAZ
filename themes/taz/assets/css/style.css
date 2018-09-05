@@ -8388,35 +8388,6 @@ h4 a:hover{
   margin-bottom: 15px;
 }
 
-
-#sticky-social {
-    right: 0;
-    position: fixed;
-    top: 150px;
-}
-
-#sticky-social a {
-   background: #333;
-   color: #fff;
-   display: block;
-   height: 35px;
-   font: 16px "Open Sans", sans-serif;
-   line-height: 35px;
-   position: relative;
-   text-align: center;
-   width: 35px;
-}
-#sticky-social a span {
-   line-height: 35px;
-   left: -120px;
-   position: absolute;
-   text-align:center;
-   width:120px;
-}
-#sticky-social a:hover span {
-   left: 100%;
-}
-
 .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -8443,3 +8414,25 @@ h4 a:hover{
 .pager .next>input, .pager .next>span {
     float: right;
 }
+
+/**Become a Seller Sidebar **/
+#sidebar_becomeaseller {
+  position: fixed;
+  right: -510px;
+  bottom: auto;
+  top: 19%;
+  z-index: 1;
+  cursor: pointer;
+}
+.sidebar_becomeaseller {
+  margin-right: -1px;
+  bottom: -300px;
+  z-index: 9999 !important;
+}
+.sidebar_right {
+  background: url(../img/becomeaseller.png) no-repeat;
+  height: 200px;
+  width: 65px;
+  display: inline-block;
+}
+/**End of Become a Seller sidebar **/

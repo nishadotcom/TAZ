@@ -34,6 +34,24 @@ jQuery(document).ready(function(){
 		$(window).trigger('scroll');
 	});
 
+	// BECOME A SELLER FIXED RIGHT SIDEBAR
+	var $sidebar   = $("#sidebar_becomeaseller"),
+		$window    = $(window),
+		offset     = $sidebar.offset(),
+		topPadding = 14;
+	 $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            /*$sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });*/
+            $('#sidebar_becomeaseller').show("slide", { direction: "right" }, 0);
+        } else {
+            /*$sidebar.stop().animate({
+                marginTop: 0
+            });*/
+            $('#sidebar_becomeaseller').hide("slide", { direction: "right" }, 1000);
+        }
+    });
 });
 
 
