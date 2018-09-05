@@ -190,7 +190,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <!-- end of signup modal -->
 
 
-<div id="sidebar_becomeaseller" class="sidebar_becomeaseller" style="right: 0px; display: block;">
+<div id="sidebar_becomeaseller" class="sidebar_becomeaseller" style="right: 0px; display: none;">
 	<a href="<?php echo Yii::$app->homeUrl . 'site/become-seller-signup'; ?>" title="Become a Seller">
 		<div class="sidebar_right"></div>
 	</a>

@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
 		$(window).trigger('resize');
 		$(window).trigger('scroll');
 	});
-
+	$('#sidebar_becomeaseller').hide();
 	// BECOME A SELLER FIXED RIGHT SIDEBAR
 	var $sidebar   = $("#sidebar_becomeaseller"),
 		$window    = $(window),
