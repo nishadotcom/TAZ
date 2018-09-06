@@ -7,7 +7,7 @@ use Yii;
  *
  * @property integer $id
  * @property integer $user_id
- * @property string $short_about_me
+ * @property string $my_interest
  * @property string $long_about_me
  *
  * @property User $user
@@ -28,9 +28,9 @@ class UserDetail extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-           [['user_id', 'short_about_me','long_about_me'], 'required'],
+           [['user_id', 'long_about_me'], 'required'],
            [['user_id'], 'integer'],
-           [['short_about_me', 'long_about_me'], 'string'],
+           [['my_interest', 'long_about_me'], 'string'],
            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
@@ -43,8 +43,8 @@ class UserDetail extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'user_id' => 'User ID',
-            'short_about_me' => 'Short About Me',
-            'long_about_me' => 'Long About Me',
+            'my_interest' => 'My Interest',
+            'long_about_me' => 'About Me',
         ];
     }
 

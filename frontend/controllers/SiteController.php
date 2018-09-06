@@ -174,7 +174,7 @@ class SiteController extends Controller {
             }
             $usermodel->profile_image = $image;
 
-            $UserDetailModel->short_about_me = $postData['short_about_me'];
+            $UserDetailModel->my_interest = $postData['my_interest'];
             $UserDetailModel->long_about_me = $postData['long_about_me'];
             $UserDetailModel->user_id = Yii::$app->user->getId();
             if ($usermodel->save() && $UserDetailModel->save()) {

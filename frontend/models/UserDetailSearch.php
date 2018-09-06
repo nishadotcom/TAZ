@@ -17,7 +17,7 @@ class UserDetailSearch extends UserDetail
     {
         return [
             [['id', 'user_id'], 'integer'],
-            [['short_about_me', 'long_about_me'], 'safe'],
+            [['my_interest', 'long_about_me'], 'safe'],
         ];
     }
 
@@ -61,7 +61,7 @@ class UserDetailSearch extends UserDetail
             'user_id' => $this->user_id,
         ]);
 
-        $query->andFilterWhere(['like', 'short_about_me', $this->short_about_me])
+        $query->andFilterWhere(['like', 'my_interest', $this->my_interest])
             ->andFilterWhere(['like', 'long_about_me', $this->long_about_me]);
 
         return $dataProvider;

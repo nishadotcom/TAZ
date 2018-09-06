@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 
-    <?= $form->field($model, 'short_about_me')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'my_interest')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'long_about_me')->textarea(['rows' => 6]) ?>
 
