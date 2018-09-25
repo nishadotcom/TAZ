@@ -42,9 +42,9 @@ $action = $controller->action->id;
                         <a href="javascript:void(0)" class="">Help</a>
                     </li>
                     <?php if (!Yii::$app->user->isGuest) { ?>
-                        <li class="dropdown" style="margin-top: -8px;">
+                        <li class="dropdown" style="margin-top: -8px;"> <!--  style="margin-top: -8px;" -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="http://placehold.it/32x32" class="profile-image img-circle">
+                                <img src="<?= $profileImage; ?>" class="profile-image img-circle" style="max-height: 32px;max-width: 32px;"> <!-- http://placehold.it/32x32 -->
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>" title="MY ACCOUNT">MY ACCOUNT</a></li>

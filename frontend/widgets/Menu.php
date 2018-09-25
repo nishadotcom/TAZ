@@ -17,7 +17,8 @@ class Menu extends Widget {
 
     public function run() {
         $cartCount = (!Yii::$app->user->isGuest) ? ShopComponent::getCartCount(Yii::$app->user->id) : FALSE;
-        return $this->render('menu',['cartCount'=>$cartCount]);
+        $profileImage = ShopComponent::getProfilePicture();
+        return $this->render('menu',['cartCount'=>$cartCount, 'profileImage'=>$profileImage]);
     }
 
 }

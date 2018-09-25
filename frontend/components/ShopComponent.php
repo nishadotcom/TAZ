@@ -74,6 +74,17 @@ class ShopComponent extends Component {
     	$featureSellers = Shop::getFeatureSellers();
     	return $featureSellers;
     }
+    
+    public static function getProfilePicture(){
+        $pathProfileImg = Yii::$app->params['PATH_PROFILE_IMAGE'];
+        $profileUploadPath = Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH_FRONTEND'];
+        $profileNoImg   = $pathProfileImg.'noImage.jpg';
+        $userEmail      = (!Yii::$app->user->isGuest) ? Yii::$app->user->identity->email : '';
+        $userData       = ($userEmail) ? User::findByEmail($userEmail) : '';
+        $profileImg     = ($userData) ? $pathProfileImg.$userData->profile_image : $profileNoImg;
+        $profileImg     = (file_exists($profileUploadPath.$userData->profile_image)) ? $profileImg : $profileNoImg;
+        return $profileImg;
+    }
 
 } // End of class
 ?>
