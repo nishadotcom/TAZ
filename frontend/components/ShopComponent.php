@@ -76,14 +76,18 @@ class ShopComponent extends Component {
     }
     
     public static function getProfilePicture(){
-        $pathProfileImg = Yii::$app->params['PATH_PROFILE_IMAGE'];
-        $profileUploadPath = Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH_FRONTEND'];
-        $profileNoImg   = $pathProfileImg.'noImage.jpg';
-        $userEmail      = (!Yii::$app->user->isGuest) ? Yii::$app->user->identity->email : '';
-        $userData       = ($userEmail) ? User::findByEmail($userEmail) : '';
-        $profileImg     = ($userData) ? $pathProfileImg.$userData->profile_image : $profileNoImg;
-        $profileImg     = (file_exists($profileUploadPath.$userData->profile_image)) ? $profileImg : $profileNoImg;
-        return $profileImg;
+        if(!Yii::$app->user->isGuest){
+            $pathProfileImg = Yii::$app->params['PATH_PROFILE_IMAGE'];
+            $profileUploadPath = Yii::$app->params['PROFILE_IMAGE_UPLOAD_PATH_FRONTEND'];
+            $profileNoImg   = 'noImage.jpg';
+            $userEmail      = Yii::$app->user->identity->email;
+            $userData       = ($userEmail) ? User::findByEmail($userEmail) : '';
+            $profileImg     = ($userData && $userData->profile_image) ? $userData->profile_image : $profileNoImg;
+            $profileImg     = (file_exists($profileUploadPath.$userData->profile_image)) ? $pathProfileImg.$profileImg : $pathProfileImg.$profileNoImg;
+            return $profileImg;
+        }else{
+            return FALSE;
+        }
     }
 
 } // End of class

@@ -243,6 +243,20 @@ class Common extends Component {
     public static function generateTransactionID(){
         return substr(hash('sha256', mt_rand() . microtime()), 0, 20);
     }
+    
+    /**
+     * This method handles mail sending
+     * **/
+    public static function sendMail($to, $subject, $content){
+        $mail = Yii::$app->mailer->compose();
+        $mail->setFrom('nisha.com126@gmail.com');
+        $mail->setTo($to);
+        $mail->setSubject($subject);
+        $mail->setHtmlBody($content);
+        $result = $mail->send();
+        
+        return $result;//() ? 'TRUE' : 'FALSE';
+    }
 
 } // End of class
 ?>
