@@ -121,9 +121,9 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionLogout() {
-        $result = Yii::$app->Common->sendMail('nisha.com126@gmail.com', 'Hello World From Dev.Talozo', '<b>Hello World</b>');
-        echo '<pre>'; print_r($result);
-        exit;
+        //$result = Yii::$app->Common->sendMail('nisha.com126@gmail.com', 'Hello World From Dev.Talozo', '<b>Hello World</b>');
+        //echo '<pre>'; print_r($result);
+        //exit;
         Yii::$app->user->logout();
         //Yii::$app->getSession()->setFlash('msg', '<div class="alert alert-success">' . Yii::t("app", "Logged out Successfully") . '</div>');
         //Yii::$app->session->setFlash('success', Yii::t("app", "Logged out successfully"));
