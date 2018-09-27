@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/widgets/views/menu.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/UserForgotPasswordController.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/config/main.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/views/user-forgot-password/forgotPwdMail.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/common/components/Common.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/components/ShopComponent.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/themes/taz/layouts/main.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/widgets/Menu.php</file>
+            <file>file:/var/www/ANTs/Freelance/Talozo/dev/frontend/controllers/SiteController.php</file>
+        </group>
     </open-files>
 </project-private>

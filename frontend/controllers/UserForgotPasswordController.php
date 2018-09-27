@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\User;
+use yii\helpers\Url;
 
 /**
  * UserForgotPasswordController implements the CRUD actions for UserForgotPassword model.
@@ -36,7 +37,7 @@ class UserForgotPasswordController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {
+    { 
         $model = new UserForgotPassword();
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) { 
@@ -47,9 +48,16 @@ class UserForgotPasswordController extends Controller
             $model->created_on = Yii::$app->Common->mysqlDateTime();
             //echo '<pre>'; print_r(Yii::$app->Common->mysqlDateTime()); exit;
             if($model->save()){
-                // SEND MAIL
+                $baseURL = Url::base('http');
+                $forgotPwdURL = $baseURL;
+                $unsetForgotPwdURL = $baseURL;
+                $user = $userModel->firstname;
+                $mailContent = $this->renderPartial('forgotPwdMail', ['user'=>$user,'forgotPwdURL'=>$forgotPwdURL, 'unsetForgotPwdURL'=>$unsetForgotPwdURL]); 
+                $to = $model->userEmail;
+                $subject = 'Talozo Password Reset';
+                Yii::$app->Common->sendMail($to, $subject, $mailContent);
+                
                 return $this->render('view');
-                //return $this->redirect(['view']);
             }
         }
 

@@ -248,14 +248,18 @@ class Common extends Component {
      * This method handles mail sending
      * **/
     public static function sendMail($to, $subject, $content){
-        $mail = Yii::$app->mailer->compose();
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= 'From: <nisha.com126@gmail.com>' . "\r\n";
+        mail($to,$subject,$content,$headers);
+        /*$mail = Yii::$app->mailer->compose();
         $mail->setFrom('nisha.com126@gmail.com');
         $mail->setTo($to);
         $mail->setSubject($subject);
         $mail->setHtmlBody($content);
         $result = $mail->send();
         
-        return $result;//() ? 'TRUE' : 'FALSE';
+        return $result;//() ? 'TRUE' : 'FALSE';*/
     }
 
 } // End of class
