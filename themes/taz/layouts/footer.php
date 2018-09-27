@@ -15,25 +15,24 @@
             </div>
             <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
-                <h5>BRANDS</h5>
+                <h5>Help</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Barbour </a></li>
-                  <li><a href="#">Brioni </a></li>
-                  <li><a href="#">Oliver Spencer</a></li>
-                  <li><a href="#">Belstaff</a></li>
+                  <li><a href="#">Payments </a></li>
+                  <li><a href="#">Shipping </a></li>
+                  <li><a href="#">Cancellation & Returns</a></li>
+                  <li><a href="#">FAQ</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-sm-2 col-xs-12">
               <div class="footerLink">
-                <h5>Accessories</h5>
+                <h5>Policy</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Body care </a></li>
-                  <li><a href="#">Chambray </a></li>
-                  <li><a href="#">Floral </a></li>
-                  <li><a href="#">Rejuvination </a></li>
-                  <li><a href="#">Shaving </a></li>
-                  <li><a href="#">Toilette </a></li>
+                  <li><a href="#">Return Policy </a></li>
+                  <li><a href="#">Terms Of Use </a></li>
+                  <li><a href="#">Privacy </a></li>
+                  <li><a href="#">Security </a></li>
+                  <li><a href="#">Sitemap </a></li>
                 </ul>
               </div>
             </div>
@@ -41,8 +40,8 @@
               <div class="footerLink">
                 <h5>Get in Touch</h5>
                 <ul class="list-unstyled">
-                  <li>Call us at (555)-555-5555</li>
-                  <li><a href="mailto:support@iamabdus.com">support@iamabdus.com</a></li>
+                  <li>Call us at +91 - 80952 71629</li>
+                  <li><a href="mailto:support@talozo.com">support@talozo.com</a></li>
                 </ul>
                 <ul class="list-inline">
                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -57,7 +56,7 @@
               <div class="newsletter clearfix">
                 <h4>Newsletter</h4>
                 <h3>Sign up now</h3>
-                <p>Enter your email address and get notified about new products. We hate spam!</p>
+                <p>Enter your email address and get notified about new products.</p>
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="your email address" aria-describedby="basic-addon2">
                   <a href="#" class="input-group-addon" id="basic-addon2">go <i class="glyphicon glyphicon-chevron-right"></i></a>
@@ -74,7 +73,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-7 col-xs-12">
-              <p>&copy; 2016 Copyright Bigbag Store Bootstrap Template by <a target="_blank" href="http://www.iamabdus.com/">Abdus</a>.</p>
+              <p>&copy; <?= date('Y'); ?> Copyright <a target="_blank" href="<?= Yii::$app->homeUrl; ?>"><?= Yii::$app->name; ?></a></p>
             </div>
             <div class="col-sm-5 col-xs-12">
               <ul class="list-inline">
