@@ -12,8 +12,25 @@ $this->title = 'Cart - SHIPPING / BILLING INFORMATION';
 $this->params['breadcrumbs'][] = $this->title;
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
 $prdNoImg = 'noImage.jpg';
-
-// ASSIGN ADDRESS VALUES
+// FILL USER STORED ADDRESS -> FROM MY ACCOUNT -> MY ADDRESS
+if($userAddress && $userAddress['billingAddress']){
+    $model->billingName = (!Yii::$app->user->isGuest) ? Yii::$app->user->identity->firstname.' '.Yii::$app->user->identity->lastname  : '';
+    $model->billingAddress = $userAddress['billingAddress']->street;
+    $model->billingCity = $userAddress['billingAddress']->city;
+    $model->billingState = $userAddress['billingAddress']->state;
+    $model->billingCountry = $userAddress['billingAddress']->country;
+    $model->billingPincode = $userAddress['billingAddress']->pin_code;
+    //$model->billingPhone = $userAddress['billingAddress']->phone;
+}
+if($userAddress && $userAddress['shippingAddress']){
+    $model->name    = (!Yii::$app->user->isGuest) ? Yii::$app->user->identity->firstname.' '.Yii::$app->user->identity->lastname  : '';
+    $model->address = $userAddress['shippingAddress']->street;
+    $model->city    = $userAddress['shippingAddress']->city;
+    $model->state   = $userAddress['shippingAddress']->state;
+    $model->country = $userAddress['shippingAddress']->country;
+    $model->pin_code = $userAddress['shippingAddress']->pin_code;
+}
+// ASSIGN ADDRESS VALUES (CANCEL ORDERS -> FROM PROFILE PAGE)
 if($orderCancelAddress && $orderCancelAddress['billingAddress']){
     $model->billingName = $orderCancelAddress['billingAddress']->name;
     $model->billingAddress = $orderCancelAddress['billingAddress']->address;

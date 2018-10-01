@@ -18,6 +18,7 @@ use yii\filters\AccessControl;
 use common\components\AccessRule;
 use common\models\User;
 use kartik\mpdf\Pdf;
+use frontend\models\UserAddress;
 
 /**
  * OrderController implements the CRUD actions for Order model.
@@ -76,10 +77,15 @@ class OrderController extends Controller
     public function actionStep1($from=FALSE, $transactionId=FALSE, $productId=FALSE){ 
         $this->layout = 'cart';
         $orderCancelAddress = [];
-        //$transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+        $userAddress = [];
+        
         $model = new OrderAddress();
         if(Yii::$app->user->isGuest){
             $model->scenario = 'guestOrder';
+        }else{
+            // GET USER ADDRESS
+            $userAddress['billingAddress'] = UserAddress::find()->where(['user_id'=>Yii::$app->user->id, 'address_type'=>'Billing'])->one();
+            $userAddress['shippingAddress'] = UserAddress::find()->where(['user_id'=>Yii::$app->user->id, 'address_type'=>'Shipping'])->one();
         }
 
         if ($model->load(Yii::$app->request->post())) {
@@ -151,12 +157,15 @@ class OrderController extends Controller
             // GET ADDRESS
             $orderCancelAddress['billingAddress'] = OrderAddress::find()->where(['order_id'=>$orderID, 'address_type'=>'Billing'])->one();
             $orderCancelAddress['shippingAddress'] = OrderAddress::find()->where(['order_id'=>$orderID, 'address_type'=>'Shipping'])->one();
+            // USER ADDRESS MAKE NULL IF IT IS FROM PROFILE PAGE
+            $userAddress = [];
         }
 
         return $this->render('step1OrderAddress', [
             'model'=>$model,
             'transactionId'=>$transactionId,
-            'orderCancelAddress'=>$orderCancelAddress
+            'orderCancelAddress'=>$orderCancelAddress,
+            'userAddress'=>$userAddress
         ]);
         //return $this->render('step1');
     }
@@ -209,7 +218,9 @@ class OrderController extends Controller
                                 $orderDetailModel->product_name = $productData->product_name;
                                 $orderDetailModel->product_seo = $productData->product_seo;
                                 $orderDetailModel->product_owner_id = $productData->product_owner_id;
-                                $orderDetailModel->seller_name = 'SellerNAME';
+                                $sellerData = User::find()->where(['id'=>$productData->product_owner_id])->one();
+                                $sellerName = ($sellerData) ? $sellerData->firstname.' '.$sellerData->lastname : 'Dummy';
+                                $orderDetailModel->seller_name = $sellerName;
                                 //$valueCartData->valueCartData,
                                 $orderDetailModel->product_price = $productData->product_sale_price;
                                 //$orderDetailModel->product_sale_price = $productData->product_sale_price;
@@ -331,6 +342,28 @@ class OrderController extends Controller
                         } // END OF ADDRESSTEMP FOREACH
                         Yii::$app->db->createCommand()->batchInsert(OrderAddress::tableName(), $addressAttributes, $orderAddressInsertValues)->execute();
                     } // IF ADDRESS TEMP
+                    
+                    // SEND MAIL
+                    $username = $orderModel->name;
+                    $orderDate = Yii::$app->Common->customDateFormat1();
+                    $orderCode = $orderModel->order_code;
+                    $amountPaid = $orderModel->total_amount;
+                    $deliveryDate = Yii::$app->Common->customDateFormat1();
+                    $shippingAddress = OrderAddress::find()->where(['order_id'=>$orderModel->id,'address_type'=>'Shipping'])->one();
+                    $orderedItems = OrderDetail::find()->where(['order_id'=>$orderModel->id])->all();
+                    $mailContent = $this->renderPartial('mailOrderPlaced', [
+                        'orderStatus'=>'Order Placed',
+                        'orderedItems'=>$orderedItems,
+                        'shippingAddress'=>$shippingAddress,
+                        'deliveryDate'=>$deliveryDate,
+                        'amountPaid'=>$amountPaid,
+                        'orderCode'=>$orderCode,
+                        'orderDate'=>$orderDate,
+                        'username'=>$username
+                        ]);
+                    $to = $orderModel->email;
+                    $subject = 'Talozo - Order Placed';
+                    Yii::$app->Common->sendMail($to, $subject, $mailContent);
                     
                     // END OF ADDRESS
                     return $this->render('paymentSuccess', [

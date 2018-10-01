@@ -77,6 +77,10 @@ class Common extends Component {
             echo '';
         }
     }
+    
+    public static function customDateFormat1($date=false){
+        return ($date) ? date('M d, Y', strtotime($date)) : date('M d, Y');
+    }
 
     /*
      * To unlink the file if exists 
