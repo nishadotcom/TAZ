@@ -3449,7 +3449,7 @@ body.bodyColor.container {
   width: 100%;
   padding: 38px 0;
   background-color: #252525;
-  border-top: 8px solid #47bac1;
+  /*border-top: 8px solid #47bac1;*/
 }
 @media (max-width: 479px) {
   .footer .footerLink {
