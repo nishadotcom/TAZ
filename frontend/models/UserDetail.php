@@ -1,6 +1,6 @@
 <?php
 namespace frontend\models;
-use common\models\User;
+// use common\models\User;
 use Yii;
 /**
  * This is the model class for table "taz_user_detail".

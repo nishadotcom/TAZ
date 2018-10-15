@@ -24,6 +24,8 @@ if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha')
 
 }
 
+echo 'LinuxUser'.$linux_user;
+
 return [
     'components' => [
         'db' => [

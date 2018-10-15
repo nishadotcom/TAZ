@@ -81,7 +81,8 @@ html, * {
 
 body {
   /*font-family: 'Oxygen', sans-serif; */
-  font-family: 'calibri';
+  /*font-family: 'calibri';*/
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   /*font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;*/
   font-size: 12px;
   line-height: 18px;
@@ -105,8 +106,9 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
+    font-family: inherit;
   /*font-family: 'Oxygen', sans-serif;*/
-  font-family: 'calibri';
+  /*font-family: 'calibri';*/
   /*font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;*/
   text-transform: uppercase;
   color: #252525;
@@ -3214,7 +3216,7 @@ body.bodyColor.container {
 .lightSection {
   /*background-color: #f0f0f0;*/
   background-color: #fff;
-  border-bottom: 1px #dbdbdb solid;
+  /*border-bottom: 1px #dbdbdb solid;*/
   height: 125px;
 }
 .lightSection .partnersLogoSlider.version2 .owl-nav {
@@ -4271,7 +4273,7 @@ body.bodyColor.container {
 }
 
 .pageHeader {
-  height: 70px;
+  height: 54px;
 }
 .pageHeader .page-title h2 {
   color: #797979;
