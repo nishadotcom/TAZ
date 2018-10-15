@@ -13,18 +13,18 @@ if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha')
 	$dbName 	= 'dev_talozo';
 	$dbUser		= 'dev_talozo';
 	$dbPassword	= 'dev@talozo17';*/
-}else{ 
+}elseif($linux_user=='LinuxUser'){ 
 	$host 		= 'localhost';
-	/*$dbName 	= 'TAZALO';
-	$dbUser		= 'root';
-	$dbPassword	= '';*/
 	$dbName 	= 'dev_talozo';
 	$dbUser		= 'dev_talozo';
 	$dbPassword	= 'dev@talozo17';
 
+}else{
+    $host       = 'localhost';
+    $dbName     = 'TAZALO';
+    $dbUser     = 'root';
+    $dbPassword = '';
 }
-
-echo 'LinuxUser'.$linux_user;
 
 return [
     'components' => [
