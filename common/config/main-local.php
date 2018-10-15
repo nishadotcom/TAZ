@@ -3,7 +3,7 @@ $linux_user = exec('who');
 $serverName = $_SERVER['SERVER_NAME'];
 
 //if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha') == 0))){ 
-if($serverName=='dev.talozo.local')
+if($serverName=='dev.talozo.local'){
 	/*$host 		= 'sql12.freemysqlhosting.net';
 	$dbName 	= 'sql12184890';
 	$dbUser		= 'sql12184890	';
