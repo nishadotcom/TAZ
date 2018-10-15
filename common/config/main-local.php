@@ -1,6 +1,9 @@
 <?php
 $linux_user = exec('who'); 
-if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha') == 0))){ 
+$serverName = $_SERVER['SERVER_NAME'];
+
+//if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha') == 0))){ 
+if($serverName=='dev.talozo.local')
 	/*$host 		= 'sql12.freemysqlhosting.net';
 	$dbName 	= 'sql12184890';
 	$dbUser		= 'sql12184890	';
@@ -13,7 +16,7 @@ if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha')
 	$dbName 	= 'dev_talozo';
 	$dbUser		= 'dev_talozo';
 	$dbPassword	= 'dev@talozo17';*/
-}elseif($linux_user && (strpos($linux_user, 'LinuxUser') || (strpos($linux_user, 'LinuxUser') == 0))){ 
+}elseif($serverName=='talozo.com'){ 
 	$host 		= 'localhost';
 	$dbName 	= 'dev_talozo';
 	$dbUser		= 'dev_talozo';
