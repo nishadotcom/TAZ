@@ -13,7 +13,7 @@ if($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha')
 	$dbName 	= 'dev_talozo';
 	$dbUser		= 'dev_talozo';
 	$dbPassword	= 'dev@talozo17';*/
-}elseif($linux_user=='LinuxUser'){ 
+}elseif($linux_user && (strpos($linux_user, 'LinuxUser') || (strpos($linux_user, 'LinuxUser') == 0))){ 
 	$host 		= 'localhost';
 	$dbName 	= 'dev_talozo';
 	$dbUser		= 'dev_talozo';
