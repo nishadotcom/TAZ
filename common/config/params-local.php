@@ -1,7 +1,8 @@
 <?php
-
+//echo $serverName;
 $linux_user = exec('who');
-if ($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha') == 0))) {
+//if ($linux_user && (strpos($linux_user, 'nisha') || (strpos($linux_user, 'nisha') == 0))) {
+if($serverName=='dev.talozo.local'){
     return [
         'PROFILE_IMAGE_UPLOAD_PATH' => \Yii::getAlias('@common') . '/uploads/profile_images/',
         'PROFILE_IMAGE_UPLOAD_PATH_FRONTEND' => 'common/uploads/profile_images/',
