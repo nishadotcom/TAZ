@@ -14,13 +14,6 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 $url = Url::toRoute('shop/product/' . $productData->id, true);
 ?>
 
-<?php
-  $title = urlencode('PHP7 Tutorials - ArjunPHP.com');
-  $url = urlencode('http://talozo.com/dev/shop/product/1');
-  $summary = urlencode('Web development tutorials by Arjun');
-  $image = urlencode('http://talozo.com/dev/common/uploads/product_images/PRD190618163300ZR5u/CROP_20180619163300.png');
- ?>
-
 <div class="row singleProduct">
     <div class="col-xs-12">
         <div class="media">
