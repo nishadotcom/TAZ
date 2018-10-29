@@ -2,6 +2,7 @@
 
 use bigpaulie\social\share\Share;
 use yii\helpers\Url;
+use kartik\social\FacebookPlugin;
 
 $productData = ($product) ? $product[0] : [];
 $this->title = $productData->product_name; //'Product View';
@@ -12,6 +13,13 @@ $prdNoImg = 'noImage.png';
 $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 $url = Url::toRoute('shop/product/' . $productData->id, true);
 ?>
+
+<?php
+  $title = urlencode('PHP7 Tutorials - ArjunPHP.com');
+  $url = urlencode('http://talozo.com/dev/shop/product/1');
+  $summary = urlencode('Web development tutorials by Arjun');
+  $image = urlencode('http://talozo.com/dev/common/uploads/product_images/PRD190618163300ZR5u/CROP_20180619163300.png');
+ ?>
 
 <div class="row singleProduct">
     <div class="col-xs-12">
@@ -61,7 +69,8 @@ $url = Url::toRoute('shop/product/' . $productData->id, true);
             <div class="media-body">
                 <ul class="list-inline">
                     <li><a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-reply" aria-hidden="true"></i>Continue Shopping</a></li>
-                    <li><a class="share-single-product" style="cursor: pointer;"><i class="fa fa-plus" aria-hidden="true"></i>Share</a></li>
+                    <!--<li><a class="share-single-product" style="cursor: pointer;"><i class="fa fa-plus" aria-hidden="true"></i>Share</a></li> -->
+                    <li><?php echo FacebookPlugin::widget(['type'=>FacebookPlugin::SHARE, 'settings' => ['href' =>$url,'size'=>'small', 'layout'=>'button', 'mobile_iframe'=>'true']]); ?></li>
                 </ul>
                 <h4><?= $productData->product_name; ?></h4>
                 <h4>&#x20B9; <?= $productData->product_sale_price; ?></h4>
