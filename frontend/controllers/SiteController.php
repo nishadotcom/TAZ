@@ -234,6 +234,15 @@ class SiteController extends Controller {
                 // INSERT User address
                 $userData = User::findByEmail($model->email);
                 UserAddress::insertAddressOnSignup($userData->id);
+
+                //SEND WELCOME EMAIL
+                $username = $model->firstname.' '.$model->lastname;
+                $baseURL = Url::base('http');
+                $to = $model->email;
+                $subject = 'Welcome to '.Yii::$app->name.'!';
+                $mailContent = $this->renderPartial('mailWelcome', ['title'=>$subject, 'username'=>$username,'baseURL'=>$baseURL]);
+                Yii::$app->Common->sendMail($to, $subject, $mailContent);
+
                 //Yii::$app->getSession()->setFlash('msg', Yii::t("app", "Registered Successfully"));
                 //return $this->redirect(['site/signup']);
                 
@@ -241,8 +250,8 @@ class SiteController extends Controller {
                 $loginModel->scenario = 'site_login';
                 $loginModel->email = $model->email;
                 $loginModel->password = $model->password;
-                if ($loginModel->login()) {
-                    $userModel = User::updateLastLogin(Yii::$app->user->id);
+                if ($loginModel->login()) { 
+                   $userModel = User::updateLastLogin(Yii::$app->user->id);
                     Yii::$app->session->setFlash('success', "Welcome to TALOZO");
                     return $this->goHome();
                 }else{
