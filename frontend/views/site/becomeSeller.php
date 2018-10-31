@@ -18,14 +18,13 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 	</div>   
 	<div class="col-md-10 col-sm-9 col-xs-12">
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-			since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-			since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-					since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-					since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<p>
+		    Hey there! Welcome to <strong>Talozo</strong>. Now that you are here, let’s get you started. In this short tutorial, you will find all the information needed to setup and start selling!
+		    <br> But first, a little bit about us. We are on a mission to change this world. Make it more beautiful. Revive our lost tradition in arts. Make the world and the people in it aware of the majesty, serenity and intricacy of art form.
+		    <br> We celebrate our partners, which is you. We want you to be able to reach a million people around the world and tell your story through your art. And we are here to help you in your journey.
+		    <br> How do you get started ? It’s simple!
+		    <br> Click on the <strong style="color: green;">Become Seller</strong> button and sign up with your details. After that one of our associates will help you set up the rest!
+		</p>
 		<p class="pull-right">
 			<!--<button type="button" class="btn btn-lg btn-success-filled btn-rounded" data-toggle="modal" data-target='#signup'>Become a Seller</button>-->
 			<!--<button type="button" class="btn btn-lg btn-success-filled btn-rounded">Become a Seller</button>-->
