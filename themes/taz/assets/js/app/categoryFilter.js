@@ -45,6 +45,33 @@ jQuery(document).ready(function () {
             return false;
         }
     });
+
+    // SORTING FILTER
+    $('#categoryProductsSortBy').change(function(){
+        var soryBy = $(this).val();
+        var url = baseURL + 'ws/shoprest/ajax-category-products-sort';
+        var ajaxData = {
+                'categoryId': $('#categoryId').val(),
+                'soryBy' : soryBy
+            };
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: ajaxData,
+            //dataType: 'json',
+            success: function (response) {
+                if(response.result){
+                    $('.productListSingle').html(response.data.content);
+                }
+            },
+            error: function (xhr) {
+                alert('error')
+                return xhr.statusText;
+                //xhr.status = 404
+                //xhr.statusText = error
+            }
+        });
+    });
 });
 
 

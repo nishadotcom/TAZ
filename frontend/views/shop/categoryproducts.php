@@ -1,7 +1,7 @@
 <?php
 $this->title = ($categoryData) ? $categoryData->category_name . ' Products' : 'Category Products';
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
-$prdNoImg = 'noImage.jpg';
+$prdNoImg = 'noImage.png';
 $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
 ?>
 
@@ -53,12 +53,12 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
     <div class="col-md-9 col-sm-8 col-md-pull-3 col-sm-pull-4 col-xs-12">
         <div class="row filterArea">
             <div class="col-xs-6">
-                <select name="guiest_id1" id="guiest_id1" class="select-drop">
-                    <option value="0">Default sorting</option>
-                    <option value="1">Sort by popularity</option>
-                    <option value="2">Sort by rating</option>
-                    <option value="3">Sort by newness</option>
-                    <option value="3">Sort by price</option>           
+                <select name="categoryProductsSortBy" id="categoryProductsSortBy"><!-- class="select-drop"-->
+                    <option value="">Default sorting</option>
+                    <!--<option value="topFavorite">Top Favorite</option>-->
+                    <option value="priceLow">Price -- Low to High</option>
+                    <option value="priceHigh">Price -- High to Low</option>
+                    <option value="newest">Newest First</option>           
                 </select>
             </div>
             <!--<div class="col-xs-6">

@@ -75,6 +75,36 @@ class ShoprestController extends ActiveController {
     		return $this->_returnResult($data, 600, 0, 1);
     	}
     }
+
+    /**
+    * CATEGORY PRODUCTS SORT
+    **/
+    public function actionAjaxCategoryProductsSort(){
+        $category = (isset($_POST['categoryId'])) ? $_POST['categoryId'] : '';
+        $soryBy    = (isset($_POST['soryBy'])) ? $_POST['soryBy'] : '';
+        if($category){
+            $filter['sortBy'] = $soryBy;
+            $products = Shop::getProductsByCategoryId($category, $filter); 
+            if(!Yii::$app->user->isGuest){
+                $userid = Yii::$app->user->id;
+                $getUserFavoriteProducts = Yii::$app->ShopComponent->getUserFavoriteProducts($userid);
+            }else{
+                $getUserFavoriteProducts = [];
+            }
+            $userFavoriteProducts = ($getUserFavoriteProducts) ? array_column($getUserFavoriteProducts, 'product_id') : [];
+
+            $content =  $this->renderPartial('ajaxCategoryProducts', [
+                        'categoryData' => Category::findOne($category),
+                        'categoryProducts' => $products,
+                        'cartData' => Cart::getUserCart(),
+                        'userFavoriteProducts' => $userFavoriteProducts,
+            ]);
+            $data['content'] = $content;
+            return $this->_returnResult($data, 609, 1, 0);
+        }else{
+            return $this->_returnResult($data, 600, 0, 1);
+        }
+    }
     
     /**
      * This method handles to add an item to cart
