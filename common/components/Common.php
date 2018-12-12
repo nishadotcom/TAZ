@@ -37,11 +37,11 @@ class Common extends Component {
     /**
      * To get Mysql Date Time format
      */
-    public static function customDate($date) {
+    public static function customDate($date=false) {
         if ($date) {
             return date('d-m-Y', strtotime($date));
         } else {
-            return '';
+            return date('d-m-Y');
         }
     }
 

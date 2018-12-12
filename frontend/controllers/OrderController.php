@@ -523,7 +523,8 @@ class OrderController extends Controller
     }
 
     public function actionInvoice($id=false){
-        $content = $this->renderPartial('invoice');
+        $model = Order::find()->where(['id'=>$id])->with('orderAddress')->with('orderDetails')->one();
+        $content = $this->renderPartial('invoice', ['model'=>$model]);
         $pdf = new Pdf([
             // set to use core fonts only
             'mode' => Pdf::MODE_CORE, 
