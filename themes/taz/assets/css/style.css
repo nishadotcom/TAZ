@@ -2063,8 +2063,8 @@ body.bodyColor.container {
 }
 @media (min-width: 1200px) {
   .bannerV3 .slide {
-    /*height: 550px;*/
-    height: 446px;
+    /*height: 550px;446*/
+    height: 300px;
     /*padding: 55px 50px;*/
     padding: 0px 0px;
   }
@@ -2474,8 +2474,10 @@ body.bodyColor.container {
 /*================= 3.1 HOME ==================*/
 /*=== 3.1.1 WHITE SECTION ===*/
 .page-header {
-  margin: 0 0 17px 0;
-  border-bottom: 2px solid #e4e4e4;
+    margin: 0;
+    border-bottom: 0;
+  /*margin: 0 0 17px 0;
+  border-bottom: 2px solid #e4e4e4;*/
 }
 .page-header h4 {
   margin-bottom: 0;

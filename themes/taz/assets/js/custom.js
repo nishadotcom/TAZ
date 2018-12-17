@@ -270,18 +270,18 @@ jQuery(document).ready(function () {
         //margin: 15,
         items: 1,
         responsive: {
-            320: {
+            /*320: {
                 items: 1,
                 //stagePadding: 20
-            },
-            768: {
+            },*/
+            /*768: {
                 items: 1,
                 //stagePadding: 100,
                 //margin: 50
-            },
+            },*/
             992: {
                 items: 1,
-                stagePadding: 250,
+                stagePadding: 293, // 250
                 //margin: 50
             }
         }
