@@ -2268,7 +2268,7 @@ body.bodyColor.container {
   }
 }
 .bannerV3 .owl-item {
-  opacity: 0.3;
+  /*opacity: 0.3;*/
   padding-bottom: 7px;
   margin-bottom: -15px;
 }
