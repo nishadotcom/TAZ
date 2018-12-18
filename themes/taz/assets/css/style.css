@@ -2481,7 +2481,8 @@ body.bodyColor.container {
 }
 .page-header h4 {
   margin-bottom: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: Gadugi;
 }
 
 .masking-hover, .imageBox .productImage .productMasking, .whiteSection .featuredProducts .slide .productImage .productMasking, .mainContent .featuredProducts .slide .productImage .productMasking, .productsContent .productBox .productImage .productMasking, .whiteSection .featuredCollection .thumbnail .imageWrapper .masking, .mainContent .featuredCollection .thumbnail .imageWrapper .masking, .productListSingle .media .media-left .maskingImage {
@@ -2526,9 +2527,10 @@ body.bodyColor.container {
 }
 .imageBox .productImage, .whiteSection .featuredProducts .slide .productImage, .mainContent .featuredProducts .slide .productImage, .productsContent .productBox .productImage {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: block;
   overflow: hidden;
+  border-radius: 4px;
 }
 .imageBox .productImage img, .whiteSection .featuredProducts .slide .productImage img, .mainContent .featuredProducts .slide .productImage img, .productsContent .productBox .productImage img {
   -webkit-transition: all 0.5s ease-in-out;
@@ -2558,7 +2560,7 @@ body.bodyColor.container {
   padding: 0;
   text-align: center;
   border: 3px solid rgba(255, 255, 255, 0.6);
-  border-radius: 0px;
+  border-radius: 26px;
   background-color: transparent;
   line-height: 36px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2577,7 +2579,7 @@ body.bodyColor.container {
   color: #ffffff;
 }
 .imageBox .productImage .productMasking ul li a:hover, .whiteSection .featuredProducts .slide .productImage .productMasking ul li a:hover, .mainContent .featuredProducts .slide .productImage .productMasking ul li a:hover, .productsContent .productBox .productImage .productMasking ul li a:hover {
-  background-color: #ffffff;
+  background-color: #CCCACA;
   border-color: #ffffff;
 }
 .imageBox .productImage .productMasking ul li a:hover i, .whiteSection .featuredProducts .slide .productImage .productMasking ul li a:hover i, .mainContent .featuredProducts .slide .productImage .productMasking ul li a:hover i, .productsContent .productBox .productImage .productMasking ul li a:hover i {
@@ -3020,6 +3022,9 @@ body.bodyColor.container {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.dealSlider .imageBox .productDeal .rating:hover{
+  color: #F50035 !important;
+}
 .dealSlider .productCaption h3 {
   font-size: 16px;/**20px*/
   font-weight: 400;
@@ -3027,7 +3032,7 @@ body.bodyColor.container {
   text-transform: capitalize;
 }
 .dealSlider .productCaption h3 a {
-  color: #252525;
+  color: #756F70;
 }
 .dealSlider .productCaption .btn-border {
   padding-left: 25px;
@@ -3066,6 +3071,7 @@ body.bodyColor.container {
 .featureProductRating:hover{
 	color: #47bac1;
 }
+
 
 /*=== 3.3.2 FEATURE PRODUCT SECTION  ===*/
 .version3.featuredProducts {
@@ -8378,10 +8384,10 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
   float: right;
 }
 h4 a{
-  color: #252525;
+  color: #756F70;
 }
 h4 a:hover{
-  color: #47bac1;
+  color: #756F70;
 }
 
 .text-normal{
