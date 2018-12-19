@@ -72,6 +72,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
             <?php
             if ($categoryProducts) {
                 foreach ($categoryProducts as $key => $categoryProduct) {
+                    $productOwnerName = ($categoryProduct->productOwner) ? $categoryProduct->productOwner->firstname.' '.$categoryProduct->productOwner->lastname : '';
                     $prdImage = (isset($categoryProduct->productImages[0])) ? $pathPrdImg . $categoryProduct->product_code . '/' . $categoryProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
                     ?>
                     <div class="col-xs-12">
@@ -83,6 +84,9 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                             <div class="media-body">
                                 <h4 class="media-heading">
                                     <a href="<?php echo Yii::$app->homeUrl . 'shop/product/' . $categoryProduct->id; ?>" title="<?= $categoryProduct->product_name; ?>"><?= $categoryProduct->product_name; ?></a>
+                                </h4>
+                                <h4 class="seller-name">
+                                    By : <?= $productOwnerName; ?>
                                 </h4>
                                 <p><?= $categoryProduct->product_short_description; ?></p>
                                 <h4>&#x20B9; <?= $categoryProduct->product_sale_price; ?></h4>

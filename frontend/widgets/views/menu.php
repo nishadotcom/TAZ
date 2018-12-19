@@ -9,7 +9,7 @@ $action = $controller->action->id;
 <div class="header clearfix headerV2">
     <!-- NAVBAR -->
     <nav class="navbar navbar-main navbar-default nav-V2" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">

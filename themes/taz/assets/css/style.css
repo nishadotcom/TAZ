@@ -2618,8 +2618,8 @@ body.bodyColor.container {
 }
 .imageBox .productCaption .offer-price, .whiteSection .featuredProducts .slide .productCaption .offer-price, .mainContent .featuredProducts .slide .productCaption .offer-price, .productsContent .productBox .productCaption .offer-price {
   /*font-size: 24px;*/
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
   color: #47bac1;
   display: block;
   margin-bottom: 10px;
@@ -3026,10 +3026,19 @@ body.bodyColor.container {
   color: #F50035 !important;
 }
 .dealSlider .productCaption h3 {
-  font-size: 16px;/**20px*/
-  font-weight: 400;
+  font-size: 14px;/**20px*/
+  font-weight: 700;
   margin-bottom: 10px;
   text-transform: capitalize;
+}
+.dealSlider .productCaption h3.seller-name{
+  font-style: italic;
+  color: #1E4E79;
+}
+.productListSingle h4{
+  font-size: 14px;
+  font-weight: 500;
+  color: #756F70;
 }
 .dealSlider .productCaption h3 a {
   color: #756F70;
@@ -4864,7 +4873,7 @@ body.bodyColor.container {
 }
 .productListSingle .media .media-body .media-heading a {
   /*font-size: 20px;*/
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   margin-bottom: 25px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -4879,6 +4888,7 @@ body.bodyColor.container {
   color: #888888;
   line-height: 22px;
   margin-bottom: 25px;
+  font-weight: 500;
 }
 .productListSingle .media .media-body h3 {
   color: #c5c5c5;

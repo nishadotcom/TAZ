@@ -47,7 +47,7 @@ class Shop extends \yii\db\ActiveRecord
             }
         }
 
-		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->andWhere($priceWhere)->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->orderBy($orderBy)->all();
+		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->andWhere($priceWhere)->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->with('productOwner')->orderBy($orderBy)->all();
 		return $products;
 	}
 
