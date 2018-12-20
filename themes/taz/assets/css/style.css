@@ -2510,6 +2510,9 @@ body.bodyColor.container {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.mainContent{
+  margin-top: 80px;
+}
 
 .thumbnail {
   border: none;
@@ -3028,7 +3031,7 @@ body.bodyColor.container {
 .dealSlider .productCaption h3 {
   font-size: 14px;/**20px*/
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   text-transform: capitalize;
 }
 .dealSlider .productCaption h3.seller-name{
