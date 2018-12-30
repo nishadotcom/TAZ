@@ -26,6 +26,75 @@ use frontend\widgets\Banner;
         <!-- GOOGLE FONT -->
         <!--<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>-->
 
+		<!-- FONTS Circular CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<style>
+		
+@font-face {
+font-family: 'Circular Std Book';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Book'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-Book.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Book Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Book Italic'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-BookItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Medium'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Medium Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Medium Italic'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Bold'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Bold Italic'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Black';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Black'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-Black.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Black Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Black Italic'), url('<?php echo $this->theme->baseUrl; ?>/assets/fonts/CircularStd-BlackItalic.woff') format('woff');
+}
+		</style>
+		
         <!-- CUSTOM CSS -->
         <link href="<?php echo $this->theme->baseUrl; ?>/assets/css/style.css" rel="stylesheet">
         <link href="<?php echo $this->theme->baseUrl; ?>/assets/css/app.css" rel="stylesheet">
