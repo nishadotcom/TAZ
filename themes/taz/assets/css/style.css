@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5 {
   /*font-family: 'Oxygen', sans-serif;*/
   /*font-family: 'calibri';*/
   /*font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;*/
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #252525;
   margin-top: 0;
 }
@@ -291,7 +291,7 @@ body.static .bb-fixed-header {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-align: center;
   font-size: 14px;
   padding: 9px 0;
@@ -761,7 +761,7 @@ a:hover, a:focus {
 .navbar-default .navbar-collapse li a {
   font-size: 14px;
   color: #252525;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -4297,7 +4297,7 @@ body.bodyColor.container {
 }
 .pageHeader .page-title h2 {
   color: #797979;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -5067,7 +5067,7 @@ body.bodyColor.container {
   margin-bottom: 24px;
 }
 .singleProduct .media .media-body .tabArea .nav-tabs li a {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   border: none;
   color: #b4b4b4;
   -webkit-transition: all 0.3s ease-in-out;
@@ -6991,7 +6991,7 @@ body.bodyColor.container {
   font-size: 13px;
   font-weight: 700;
   color: #252525;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   display: inline-block;
   background-color: transparent;
   -webkit-border-radius: 0;

@@ -3,6 +3,7 @@
 use bigpaulie\social\share\Share;
 use yii\helpers\Url;
 use kartik\social\FacebookPlugin;
+use frontend\models\UserDetail;
 
 $productData = ($product) ? $product[0] : [];
 $this->title = $productData->product_name; //'Product View';
@@ -12,6 +13,7 @@ $prdNoImg = 'noImage.png';
 
 $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 $url = Url::toRoute('shop/product/' . $productData->id, true);
+$sellerAbout = UserDetail::find()->where(['user_id'=>$productData->productOwner->id])->one();
 ?>
 
 <div class="row singleProduct">
@@ -63,7 +65,8 @@ $url = Url::toRoute('shop/product/' . $productData->id, true);
                 <ul class="list-inline">
                     <li><a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-reply" aria-hidden="true"></i>Continue Shopping</a></li>
                     <!--<li><a class="share-single-product" style="cursor: pointer;"><i class="fa fa-plus" aria-hidden="true"></i>Share</a></li> -->
-                    <li><?php echo FacebookPlugin::widget(['type'=>FacebookPlugin::SHARE, 'settings' => ['href' =>$url,'size'=>'small', 'layout'=>'button', 'mobile_iframe'=>'true']]); ?></li>
+                    <li><?php 
+                        echo FacebookPlugin::widget(['type'=>FacebookPlugin::SHARE, 'settings' => ['href' =>$url,'size'=>'small', 'layout'=>'button', 'mobile_iframe'=>'true', 'image'=>'http://talozo.com/dev/common/uploads/product_images/PRD151218123133L6Jj/20181215123133.jpg']]); ?></li>
                 </ul>
                 <h4><?= $productData->product_name; ?></h4>
                 <h4>&#x20B9; <?= $productData->product_sale_price; ?></h4>
@@ -86,15 +89,15 @@ $url = Url::toRoute('shop/product/' . $productData->id, true);
                 </span>-->
                 <div class="btn-area">
                     <?php /* ?><a class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Add to cart <i class="fa fa-angle-right" aria-hidden="true"></i></a> <?php */ ?>
-                    <button class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Add to cart">Add to cart <!--<i class="fa fa-angle-right" aria-hidden="true"></i>--></button>
+                    <button class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Add to cart">Add to Cart <!--<i class="fa fa-angle-right" aria-hidden="true"></i>--></button>
                     <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-' . $productData->id . '&transactionId=' . $transactionId; ?>" style="margin-top: 0;padding-top: 12px;" class="btn btn-success btn-block" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Buy Now">Buy Now <!--<i class="fa fa-angle-right" aria-hidden="true"></i>--></a>
                 </div>
                 <div class="tabArea">
                     <ul class="nav nav-tabs">
                         <li><a data-toggle="tab" href="#aboutSeller">About Seller</a></li>
-                        <li class="active"><a data-toggle="tab" href="#details">details</a></li>
+                        <li class="active"><a data-toggle="tab" href="#details">Details</a></li>
                         <!--<li><a data-toggle="tab" href="#sizing">sizing</a></li>-->
-                        <li><a data-toggle="tab" href="#shipping">shipping</a></li>
+                        <li><a data-toggle="tab" href="#shipping">Shipping</a></li>
                     </ul>
                     <div class="tab-content">
                         <div id="details" class="tab-pane fade in active">
@@ -123,8 +126,17 @@ $url = Url::toRoute('shop/product/' . $productData->id, true);
                             </ul>-->
                         </div>
                         <!-- TAB ABOUT SEELER -->
-                        <div id="aboutSeller" class="tab-pane fade">
-                            <p>Under Construction</p>
+                        <div id="aboutSeller" class="tab-pane fade in ">
+                            <table class="table">
+                                <tr>
+                                    <td style="border-top: none;">Name</td>
+                                    <td style="border-top: none;"><?= $productData->productOwner->firstname.' '.$productData->productOwner->lastname ?></td>
+                                </tr>
+                                <tr>
+                                    <td>About</td>
+                                    <td><?php echo ($sellerAbout) ? $sellerAbout->long_about_me : ''; ?></td>
+                                </tr>                            
+                            </table>
                         </div>
                         <!--<div id="sizing" class="tab-pane fade">
                           <p>Praesent dui felis, gravida a auctor at, facilisis commodo ipsum. Cras eu faucibus justo. Nullam varius cursus nisi, sed elementum sem sagittis at. Nulla tellus massa, vestibulum a commodo facilisis, pulvinar convallis nunc.</p>
