@@ -2510,9 +2510,9 @@ body.bodyColor.container {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.mainContent{
+/*.mainContent{
   margin-top: 80px;
-}
+}*/
 
 .thumbnail {
   border: none;
@@ -2962,6 +2962,13 @@ body.bodyColor.container {
 .box span {
   color: #979797;
 }
+.howworks h4{
+  margin: 8px 0;
+}
+.howworks i {
+  font-size: 38px;
+  color: #47bac1;
+}
 
 /*=== 3.2.5 INSTAGRAM SECTION ===*/
 .instagramSection {
@@ -3113,7 +3120,7 @@ body.bodyColor.container {
 .version2 .box {
   background-color: transparent;
   /*border: 5px solid #e4e4e4;*/
-  border: 1px #dbdbdb solid;
+  /*border: 1px #dbdbdb solid;*/
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -3121,7 +3128,7 @@ body.bodyColor.container {
   transition: all 0.3s ease;
 }
 .version2 .box:hover {
-  border: 1px solid #47bac1;
+  /*border: 1px solid #47bac1;*/
 }
 
 /*=== 3.3.4 TESTIMONIAL SECTION ===*/

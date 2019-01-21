@@ -7,7 +7,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
 
 <div class="row">
     <div class="col-md-3 col-sm-4 col-md-push-9 col-sm-push-8 col-xs-12 sideBar">
-        <div class="panel panel-default filterNormal">
+        <?php /* ?><div class="panel panel-default filterNormal">
             <div class="panel-heading">Product Categories</div>
             <div class="panel-body">
                 <ul class="list-unstyled">
@@ -19,7 +19,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                     <li><a href="<?php echo Yii::$app->homeUrl . 'shop/products/4'; ?>">FRC<span>(<?= Yii::$app->shop->getProductsCountByCategory(4); ?>)</span></a></li>
                 </ul>
             </div>
-        </div>
+        </div> <?php */ ?>
         <div class="panel panel-default priceRange">
             <div class="panel-heading">Filter by Price</div>
             <div class="panel-body clearfix">
