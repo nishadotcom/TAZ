@@ -375,6 +375,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                       <?php 
                       if($newArrivals){
                         foreach ($newArrivals as $key => $newArrival) {
+                          $productOwnerName = ($newArrival->productOwner) ? $newArrival->productOwner->firstname.' '.$newArrival->productOwner->lastname : '';
                           if(isset($newArrival->productImages[0])){
                             $coverImage = ($newArrival->productImages[0]->crop_image) ? $newArrival->productImages[0]->crop_image : $newArrival->productImages[0]->cover_photo;
                           }else{
@@ -384,7 +385,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         ?>
 
                         <div class="col-sm-3 col-xs-12">
-                          <div class="imageBox">
+                          <div class="home-image-box imageBox">
                             <div class="productImage clearfix">
                               <a href="single-product.html">
                                 <img src="<?= $prdImage; ?>" alt="featured-product-img">
@@ -416,10 +417,26 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                                 </ul>
                               </div>
                             </div>
-                            <div class="productCaption clearfix">
+                            
+                            <?php /*?><div class="productCaption clearfix">
                               <h5><a href="<?= Yii::$app->homeUrl.'shop/product/'.$newArrival->id; ?>"><?= $newArrival->product_name; ?></a></h5>
                               <h3>&#x20B9; <?= $newArrival->product_sale_price; ?></h3>
+                            </div><?php */ ?>
+
+                            <div class="productCaption clearfix">
+                              <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$newArrival->id; ?>" title="<?= $newArrival->product_name; ?>"><?= $newArrival->product_name; ?></a></h3>
+                              <?php
+                              if($productOwnerName){
+                                ?>
+                                <h3 class="seller-name">
+                                  By : <?= $productOwnerName; ?>
+                                </h3>
+                                <?php
+                              }
+                              ?>
+                              <span class="offer-price">&#x20B9; <?= $frcProduct->product_sale_price; ?></span>
                             </div>
+
                           </div>
                         </div>
 
@@ -442,7 +459,8 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                     <div class="row">
                       <?php 
                       if($topFavoriteProducts){
-                        foreach ($topFavoriteProducts as $key => $topFavoriteProduct) {
+                        foreach ($topFavoriteProducts as $key => $topFavoriteProduct) { //echo '<pre>'; print_r($topFavoriteProduct); exit;
+                          $productOwnerName = ($topFavoriteProduct['productOwner']) ? $topFavoriteProduct['productOwner'] : '';
                           // GET PRODUCT IMAGE
                           $productImages = Yii::$app->ShopComponent->getProductImageByProductId($topFavoriteProduct['product_id']);
                           //echo '<pre>'; print_r($topFavoriteProduct); echo '</pre>'; 
@@ -455,7 +473,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                           ?>
 
                           <div class="col-sm-3 col-xs-12">
-                            <div class="imageBox">
+                            <div class="home-image-box imageBox">
                               <div class="productImage clearfix">
                                 <a href="#">
                                   <img src="<?= $prdImage; ?>" alt="featured-product-img">
@@ -487,10 +505,23 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                                   </ul>
                                 </div>
                               </div>
-                              <div class="productCaption clearfix">
+                              <?php /*?><div class="productCaption clearfix">
                                 <h5><a href="<?= Yii::$app->homeUrl.'shop/product/'.$topFavoriteProduct['product_id']; ?>"><?= $topFavoriteProduct['product_name']; ?></a></h5>
                                 <h3>&#x20B9; <?= $topFavoriteProduct['product_sale_price']; ?></h3>
-                              </div>
+                              </div><?php */ ?>
+                              <div class="productCaption clearfix">
+                                <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$topFavoriteProduct['product_id']; ?>" title="<?= $topFavoriteProduct['product_name']; ?>"><?= $topFavoriteProduct['product_name']; ?></a></h3>
+                                <?php
+                                if($productOwnerName){
+                                  ?>
+                                  <h3 class="seller-name">
+                                    By : <?= $productOwnerName; ?>
+                                  </h3>
+                                  <?php
+                                }
+                                ?>
+                                <span class="offer-price">&#x20B9; <?= $frcProduct->product_sale_price; ?></span>
+                            </div>
                             </div>
                           </div>
 
@@ -508,7 +539,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                   <div id="menu3" class="tab-pane fade">
                     <div class="row">
                       <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
+                        <div class="home-image-box imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
                               <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
@@ -528,7 +559,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         </div>
                       </div>
                       <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
+                        <div class="home-image-box imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
                               <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img3.jpg" alt="featured-product-img">
@@ -548,7 +579,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         </div>
                       </div>
                       <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
+                        <div class="home-image-box imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
                               <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img8.jpg" alt="featured-product-img">
@@ -568,7 +599,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         </div>
                       </div>
                       <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
+                        <div class="home-image-box imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
                               <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img9.jpg" alt="featured-product-img">
@@ -583,86 +614,6 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                           </div>
                           <div class="productCaption clearfix">
                             <h5><a href="single-product.html">Sun Buddies</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img10.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img11.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Nike Sportswear</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img6.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img4.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
                             <h3>$199</h3>
                           </div>
                         </div>

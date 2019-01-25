@@ -2499,6 +2499,10 @@ body.bodyColor.container {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.home-image-box .productImage .productMasking{
+  height: 26%;
+  top: 74%;
+}
 
 .content-center, .imageBox .productImage .productMasking ul, .whiteSection .featuredProducts .slide .productImage .productMasking ul, .mainContent .featuredProducts .slide .productImage .productMasking ul, .productsContent .productBox .productImage .productMasking ul, .masking-btn, .whiteSection .featuredCollection .thumbnail .imageWrapper .masking .viewBtn, .mainContent .featuredCollection .thumbnail .imageWrapper .masking .viewBtn, .productListSingle .media .media-left .maskingImage .viewBtn {
   position: absolute;
@@ -2509,6 +2513,9 @@ body.bodyColor.container {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.home-image-box .productImage .productMasking ul{
+  top: 10% !important;
 }
 /*.mainContent{
   margin-top: 80px;
@@ -3035,13 +3042,16 @@ body.bodyColor.container {
 .dealSlider .imageBox .productDeal .rating:hover{
   color: #F50035 !important;
 }
-.dealSlider .productCaption h3 {
+.dealSlider .productCaption h3, .home-image-box .productCaption h3 {
   font-size: 14px;/**20px*/
   font-weight: 700;
   margin-bottom: 1px;
   text-transform: capitalize;
 }
-.dealSlider .productCaption h3.seller-name{
+.home-image-box .productCaption h3 a{
+  color: #756F70;
+}
+.dealSlider .productCaption h3.seller-name, .home-image-box .productCaption h3.seller-name{
   font-style: italic;
   color: #1E4E79;
 }
@@ -6975,7 +6985,8 @@ body.bodyColor.container {
 
 /*===  TABS ===*/
 .tabCommon .tab-bottom {
-  border-bottom: 5px solid #e4e4e4;
+  /*border-bottom: 5px solid #e4e4e4;*/
+  border-bottom: 1px solid #fff4f4;
   margin-top: -4px;
   margin-bottom: 25px;
 }
