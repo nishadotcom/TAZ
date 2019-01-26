@@ -520,7 +520,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                                   <?php
                                 }
                                 ?>
-                                <span class="offer-price">&#x20B9; <?= $frcProduct->product_sale_price; ?></span>
+                                <span class="offer-price">&#x20B9; <?= $topFavoriteProduct['product_sale_price']; ?></span>
                             </div>
                             </div>
                           </div>
