@@ -60,3 +60,29 @@
     height: 26%;
     top: 74%;
 }*/
+
+.summary{
+    width: 30%;
+    display: inline-block;
+    margin-top: 8px;
+}
+.pagination{
+    float: right;
+    margin-top: 8px !important;
+    margin-bottom: 12px;
+}
+.pagination li a{
+    width: 40px;
+    height: 35px;
+    line-height: 30px;
+}
+.pagination>li>span{
+    float: none;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.glyphicon{
+    color: #000;
+}

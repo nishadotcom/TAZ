@@ -6430,7 +6430,7 @@ body.bodyColor.container {
 .userProfile .innerWrapper {
   width: 100%;
   display: block;
-  border: 5px solid #f0f0f0;
+  /*border: 5px solid #f0f0f0;*/
   padding: 30px 30px 0 30px;
 }
 @media (min-width: 480px) {
@@ -6694,9 +6694,9 @@ body.bodyColor.container {
   padding: 10px 14px;
   border: none;
 }
-.orderBox.myAddress .table-responsive .table tbody tr:last-child td {
+/*.orderBox.myAddress .table-responsive .table tbody tr:last-child td {
   border: none;
-}
+}*/
 @media (max-width: 479px) {
   .orderBox.myAddress.wishList .table-responsive .table thead tr th:first-child {
     display: none;
@@ -7195,20 +7195,20 @@ body.bodyColor.container {
     margin: 0 0 50px 0;
   }
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .pagination {
     margin: 0;
   }
-}
+}*/
 .pagination li a {
   float: none;
   border-radius: 0;
   padding: 0;
-  border: 3px solid #f0f0f0;
+  border: 1px solid #f0f0f0;
   display: inline-block;
-  font-size: 18px;
+  font-size: 12px;
   color: #252525;
-  font-weight: 700;
+  /*font-weight: 700;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;

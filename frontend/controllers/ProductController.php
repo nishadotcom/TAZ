@@ -81,7 +81,7 @@ class ProductController extends Controller
         //$this->layout = 'profile_page';
         $searchModel = new ProductSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $dataProvider->pagination->pageSize=1;
+        //$dataProvider->pagination->pageSize=1;
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
