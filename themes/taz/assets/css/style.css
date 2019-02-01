@@ -4728,14 +4728,14 @@ body.bodyColor.container {
 .priceRange .price-slider-inner .amount-wrapper {
   position: absolute;
   bottom: 25px;
-  right: 20px;
+  right: 0px;
   font-size: 14px;
-  width: 120px;
+  width: 140px;
 }
 .priceRange .price-slider-inner .amount-wrapper input {
   background-color: transparent;
   border: 0;
-  width: 28%;
+  width: 38%;
   font-size: 14px;
   color: #252525;
   font-weight: 700;

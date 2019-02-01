@@ -302,8 +302,8 @@ jQuery(document).ready(function () {
 
 //============================== PRICE SLIDER RANGER =========================
 jQuery(document).ready(function () {
-    var minimum = 100;
-    var maximum = 800;
+    var minimum = 0;
+    var maximum = 25000;
 
     $("#price-range").slider({
         range: true,
