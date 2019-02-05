@@ -1,7 +1,0 @@
-<?php
-
-$this->title = 'Home';
-?>
-
-      
-

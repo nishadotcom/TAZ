@@ -26,7 +26,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                 <div class="price-slider-inner"> 
                     <span class="amount-wrapper">
                         <input type="hidden" name="categoryId" id="categoryId" value="<?php echo ($categoryData) ? $categoryData->id : 0; ?>">
-                        Price:
+                        <!--Price:-->
                         <input type="text" id="priceMin" readonly>
                         <strong>-</strong>
                         <input type="text" id="priceMax" readonly> 

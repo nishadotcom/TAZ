@@ -81,8 +81,9 @@ class Shop extends \yii\db\ActiveRecord
     // END RECOMMENDATION ENGINE FUNCTIONS
 
     public static function getTopFavoriteProducts(){
-        $sql = "SELECT COUNT(tblUserFavorite.product_id) as favoriteCount, tblUserFavorite.product_id, taz_product.* FROM `taz_user_favorite` as tblUserFavorite \n"
+        $sql = "SELECT COUNT(tblUserFavorite.product_id) as favoriteCount, tblUserFavorite.product_id, taz_product.*, CONCAT(taz_user.firstname, ' ',taz_user.lastname) as productOwner FROM `taz_user_favorite` as tblUserFavorite \n"
             . "LEFT JOIN taz_product ON taz_product.id = tblUserFavorite.product_id\n"
+            . "LEFT JOIN taz_user ON taz_user.id = taz_product.product_owner_id\n"
             //. "LEFT JOIN taz_product_image ON taz_product_image.product_id = tblUserFavorite.product_id\n"
             . "GROUP BY tblUserFavorite.product_id ORDER BY favoriteCount DESC LIMIT 0, 8";
         $connection = Yii::$app->getDb();

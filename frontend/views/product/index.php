@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use frontend\widgets\ProfileMenu;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\ProductSearch */
@@ -25,7 +26,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
-                        'layout'=>"{items}{pager}{summary}",
+                        'pager'=>[
+                            'firstPageLabel'=>'First',
+                            'lastPageLabel'=>'Last'
+                            //'maxButtonCount' => 2,
+                            /*'options'=>[
+                                'tag' => 'ul',
+                                'class' => 'Page navigation',
+                            ]*/
+                        ],
+                        'layout'=>"{items}{summary}{pager}",
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
 
@@ -49,86 +59,21 @@ $this->params['breadcrumbs'][] = $this->title;
                             // 'product_long_description:ntext',
                             // 'product_discount_status',
                             // 'product_guarantee_status',
-                            'product_status',
+                            //'product_status',
+                            [
+                                'attribute'=>'product_status',
+                                'filter'=>array('AFA'=>'Awaiting for Approval', 'Active'=>'Active', 'Suspended'=>'Suspended', 'Deleted'=>'Deleted', 'Denied'=>'Denied', 'Needs Improvement'=>'Needs Improvement'),
+                                'value' => function ($model) {
+                                    return ($model->product_status == 'AFA') ? 'Awaiting for Approval' : $model->product_status;
+                                }
+                            ],
                             // 'created_on',
                             // 'updated_on',
-
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
                     ]); ?>
-                    <!--<table class="table">
-                      <thead>
-                        <tr>
-                          <th>Code</th>
-                          <th>Name</th>
-                          <th>Status</th>
-                          <th>Admin Note</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>#252125</td>
-                          <td>Mar 25, 2016</td>
-                          <td>Z - 45263</td>
-                          <td>Lorem ipsum doler</td>
-                            <td>
-                                <a href="#" class="btn btn-default">View</a>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                    <button type="button" class="btn btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                      </tbody>
-                    </table>-->
               </div>
             </div>
         </div>
     </div>
 </div>
-
-<?php /* ?>
-<div class="product-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <p>
-        <?= Html::a('Create Product', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
-            'product_category_id',
-            'product_subcategory_id',
-            'product_code:ntext',
-            'product_name:ntext',
-            // 'product_owner_id',
-            // 'product_price',
-            // 'product_sale_price',
-            // 'product_retail_price',
-            // 'product_material',
-            // 'product_color',
-            // 'product_dimension_type',
-            // 'product_height',
-            // 'product_length',
-            // 'product_breadth',
-            // 'product_weight',
-            // 'product_short_description:ntext',
-            // 'product_long_description:ntext',
-            // 'product_discount_status',
-            // 'product_guarantee_status',
-            // 'product_status',
-            // 'created_on',
-            // 'updated_on',
-
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
-</div>
-<?php */ ?>

@@ -57,7 +57,7 @@ use yii\helpers\Html;
                         </div>
                       </div>
                       <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
+                        <div class="home-image-box imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
                               <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img9.jpg" alt="featured-product-img">
@@ -77,7 +77,7 @@ use yii\helpers\Html;
                         </div>
                       </div>
                       <div class="col-sm-3 col-xs-12">
-                        <div class="imageBox">
+                        <div class="home-image-box imageBox">
                           <div class="productImage clearfix">
                             <a href="single-product.html">
                               <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img10.jpg" alt="featured-product-img">
