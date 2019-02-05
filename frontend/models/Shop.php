@@ -31,12 +31,23 @@ class Shop extends \yii\db\ActiveRecord
 
     public static function getProductsByCategoryId($categoryId, $filters=false){
         $priceWhere = [];
+        $orderBy = [];
         if($filters && isset($filters['price'])){
             $priceWhere = ['between', 'product_sale_price', ltrim($filters['price']['min'], '₹'), ltrim($filters['price']['max'], '₹')];
             //$priceWhere = ['between', 'product_sale_price', 600, 700];
         }
+        // SORT
+        if($filters && isset($filters['sortBy'])){
+            if($filters['sortBy'] == 'newest'){
+                $orderBy = ['id'=>SORT_DESC];
+            }elseif ($filters['sortBy'] == 'priceLow') {
+                $orderBy = ['product_sale_price'=>SORT_ASC];
+            }elseif ($filters['sortBy'] == 'priceHigh') {
+                $orderBy = ['product_sale_price'=>SORT_DESC];
+            }
+        }
 
-		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->andWhere($priceWhere)->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->all();
+		$products 	= Product::find()->where(['product_category_id'=>$categoryId, 'product_status'=>'Active'])->andWhere($priceWhere)->with('productAddresses')->with('productImages')->with('productCategory')->with('userFavorite')->with('productOwner')->orderBy($orderBy)->all();
 		return $products;
 	}
 

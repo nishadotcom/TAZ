@@ -49,12 +49,6 @@ class Modal extends Widget
      */
     public $headerOptions;
     /**
-     * @var array body options
-     * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
-     * @since 2.0.7
-     */
-    public $bodyOptions = ['class' => 'modal-body'];
-    /**
      * @var string the footer content in the modal window.
      */
     public $footer;
@@ -155,7 +149,7 @@ class Modal extends Widget
      */
     protected function renderBodyBegin()
     {
-        return Html::beginTag('div', $this->bodyOptions);
+        return Html::beginTag('div', ['class' => 'modal-body']);
     }
 
     /**

@@ -28,6 +28,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                 <?php 
                 if($psaProducts){
                   foreach ($psaProducts as $key => $psaProduct) { 
+                    $productOwnerName = ($psaProduct->productOwner) ? $psaProduct->productOwner->firstname.' '.$psaProduct->productOwner->lastname : '';
                     if(isset($psaProduct->productImages[0])){
                       $coverImage = ($psaProduct->productImages[0]->crop_image) ? $psaProduct->productImages[0]->crop_image : $psaProduct->productImages[0]->cover_photo;
                     }else{
@@ -71,6 +72,16 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$psaProduct->id; ?>" title="<?= $psaProduct->product_name; ?>"><?= $psaProduct->product_name; ?></a></h3>
+                          <?php
+                          if($productOwnerName){
+                            ?>
+                            <h3 class="seller-name">
+                              By : <?= $productOwnerName; ?>
+                            </h3>
+                            <?php
+                          }
+                          ?>
+                          
                           <span class="offer-price">&#x20B9; <?= $psaProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /*?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$psaProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $psaProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
@@ -102,6 +113,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
               <?php 
                 if($slpProducts){
                   foreach ($slpProducts as $key => $slpProduct) { 
+                    $productOwnerName = ($slpProduct->productOwner) ? $slpProduct->productOwner->firstname.' '.$slpProduct->productOwner->lastname : '';
                     //$prdImage   = (isset($slpProduct->productImages[0])) ? $pathPrdImg.$slpProduct->product_code.'/'.$slpProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
                     if(isset($slpProduct->productImages[0])){
                       $coverImage = ($slpProduct->productImages[0]->crop_image) ? $slpProduct->productImages[0]->crop_image : $slpProduct->productImages[0]->cover_photo;
@@ -148,6 +160,15 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$slpProduct->id; ?>" title="<?= $slpProduct->product_name; ?>"><?= $slpProduct->product_name; ?></a></h3>
+                          <?php
+                          if($productOwnerName){
+                            ?>
+                            <h3 class="seller-name">
+                              By : <?= $productOwnerName; ?>
+                            </h3>
+                            <?php
+                          }
+                          ?>
                           <span class="offer-price">&#x20B9; <?= $slpProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$slpProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $slpProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
@@ -177,6 +198,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
               <?php 
                 if($otlProducts){
                   foreach ($otlProducts as $key => $otlProduct) { 
+                    $productOwnerName = ($otlProduct->productOwner) ? $otlProduct->productOwner->firstname.' '.$otlProduct->productOwner->lastname : '';
                     //$prdImage   = (isset($otlProduct->productImages[0])) ? $pathPrdImg.$otlProduct->product_code.'/'.$otlProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
                     if(isset($otlProduct->productImages[0])){
                       $coverImage = ($otlProduct->productImages[0]->crop_image) ? $otlProduct->productImages[0]->crop_image : $otlProduct->productImages[0]->cover_photo;
@@ -221,6 +243,15 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$otlProduct->id; ?>" title="<?= $otlProduct->product_name; ?>"><?= $otlProduct->product_name; ?></a></h3>
+                          <?php
+                          if($productOwnerName){
+                            ?>
+                            <h3 class="seller-name">
+                              By : <?= $productOwnerName; ?>
+                            </h3>
+                            <?php
+                          }
+                          ?>
                           <span class="offer-price">&#x20B9; <?= $otlProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$otlProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $otlProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
@@ -250,6 +281,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                 <?php 
                 if($frcProducts){
                   foreach ($frcProducts as $key => $frcProduct) { 
+                    $productOwnerName = ($frcProduct->productOwner) ? $frcProduct->productOwner->firstname.' '.$frcProduct->productOwner->lastname : '';
                     //$prdImage   = (isset($frcProduct->productImages[0])) ? $pathPrdImg.$frcProduct->product_code.'/'.$frcProduct->productImages[0]->cover_photo : $pathPrdImg.$prdNoImg;
                     if(isset($frcProduct->productImages[0])){
                       $coverImage = ($frcProduct->productImages[0]->crop_image) ? $frcProduct->productImages[0]->crop_image : $frcProduct->productImages[0]->cover_photo;
@@ -294,6 +326,15 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                         </div>
                         <div class="productCaption clearfix">
                           <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$frcProduct->id; ?>" title="<?= $frcProduct->product_name; ?>"><?= $frcProduct->product_name; ?></a></h3>
+                          <?php
+                          if($productOwnerName){
+                            ?>
+                            <h3 class="seller-name">
+                              By : <?= $productOwnerName; ?>
+                            </h3>
+                            <?php
+                          }
+                          ?>
                           <span class="offer-price">&#x20B9; <?= $frcProduct->product_sale_price; ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$frcProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $frcProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>

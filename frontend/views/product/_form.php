@@ -38,7 +38,7 @@ $form = ActiveForm::begin([
 
         <?= $form->field($model, 'product_category_id')->dropDownList($categoryListData, ['prompt' => 'Select Category']) ?>
 
-        <?= $form->field($model, 'product_name')->textInput(['maxlength' => true, 'placeholder' => 'Product Name']) ?>
+        <?= $form->field($model, 'product_name')->textInput(['maxlength' => true, 'placeholder' => 'Do you have a name for this item?', 'title'=>'Do you have a name for this item? Remember this is your creation and people will identify with a name. So go ahead and provide a unique name to it']) ?>
 
         <?php //echo $form->field($model, 'product_owner_id')->textInput() ?>
 

@@ -1,13 +1,13 @@
 <?php
 $this->title = ($categoryData) ? $categoryData->category_name . ' Products' : 'Category Products';
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
-$prdNoImg = 'noImage.jpg';
+$prdNoImg = 'noImage.png';
 $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
 ?>
 
 <div class="row">
     <div class="col-md-3 col-sm-4 col-md-push-9 col-sm-push-8 col-xs-12 sideBar">
-        <div class="panel panel-default filterNormal">
+        <?php /* ?><div class="panel panel-default filterNormal">
             <div class="panel-heading">Product Categories</div>
             <div class="panel-body">
                 <ul class="list-unstyled">
@@ -19,7 +19,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                     <li><a href="<?php echo Yii::$app->homeUrl . 'shop/products/4'; ?>">FRC<span>(<?= Yii::$app->shop->getProductsCountByCategory(4); ?>)</span></a></li>
                 </ul>
             </div>
-        </div>
+        </div> <?php */ ?>
         <div class="panel panel-default priceRange">
             <div class="panel-heading">Filter by Price</div>
             <div class="panel-body clearfix">
@@ -53,12 +53,12 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
     <div class="col-md-9 col-sm-8 col-md-pull-3 col-sm-pull-4 col-xs-12">
         <div class="row filterArea">
             <div class="col-xs-6">
-                <select name="guiest_id1" id="guiest_id1" class="select-drop">
-                    <option value="0">Default sorting</option>
-                    <option value="1">Sort by popularity</option>
-                    <option value="2">Sort by rating</option>
-                    <option value="3">Sort by newness</option>
-                    <option value="3">Sort by price</option>           
+                <select name="categoryProductsSortBy" id="categoryProductsSortBy"><!-- class="select-drop"-->
+                    <option value="">Default sorting</option>
+                    <!--<option value="topFavorite">Top Favorite</option>-->
+                    <option value="priceLow">Price -- Low to High</option>
+                    <option value="priceHigh">Price -- High to Low</option>
+                    <option value="newest">Newest First</option>           
                 </select>
             </div>
             <!--<div class="col-xs-6">
@@ -72,6 +72,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
             <?php
             if ($categoryProducts) {
                 foreach ($categoryProducts as $key => $categoryProduct) {
+                    $productOwnerName = ($categoryProduct->productOwner) ? $categoryProduct->productOwner->firstname.' '.$categoryProduct->productOwner->lastname : '';
                     $prdImage = (isset($categoryProduct->productImages[0])) ? $pathPrdImg . $categoryProduct->product_code . '/' . $categoryProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
                     ?>
                     <div class="col-xs-12">
@@ -83,6 +84,9 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                             <div class="media-body">
                                 <h4 class="media-heading">
                                     <a href="<?php echo Yii::$app->homeUrl . 'shop/product/' . $categoryProduct->id; ?>" title="<?= $categoryProduct->product_name; ?>"><?= $categoryProduct->product_name; ?></a>
+                                </h4>
+                                <h4 class="seller-name">
+                                    By : <?= $productOwnerName; ?>
                                 </h4>
                                 <p><?= $categoryProduct->product_short_description; ?></p>
                                 <h4>&#x20B9; <?= $categoryProduct->product_sale_price; ?></h4>

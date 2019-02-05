@@ -1,13 +1,12 @@
 <?php
 
-use Codeception\Test\Unit;
 use Codeception\Util\Stub as Stub;
 
 /**
  * Class RestTest
  * @group appveyor
  */
-class RestTest extends Unit
+class RestTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var \Codeception\Module\REST
@@ -426,12 +425,6 @@ class RestTest extends Unit
         $data = base64_decode('/9j/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/yQALCAABAAEBAREA/8wABgAQEAX/2gAIAQEAAD8A0s8g/9k=');
         $this->setStubResponse($data);
         $this->module->dontSeeBinaryResponseEquals('024f615102cdb3c8c7cf75cdc5a83d15');
-    }
-
-    public function testAmDigestAuthenticatedThrowsExceptionWithFunctionalModules()
-    {
-        $this->setExpectedException('\Codeception\Exception\ModuleException', 'Not supported by functional modules');
-        $this->module->amDigestAuthenticated('username', 'password');
     }
 
     protected function shouldFail()

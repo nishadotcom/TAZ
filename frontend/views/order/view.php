@@ -153,7 +153,7 @@ $total = 0;
                                             <ul class="list-unstyled">
                                               <!--<li>Sub Total <span>$ 792.00</span></li>
                                               <li>UK Vat <span>$ 18.00</span></li>-->
-                                                <li>Grand Total <span class="grandTotal">$ <?= $total; ?></span></li>
+                                                <li>Grand Total <span class="grandTotal">&#x20B9; <?= $total; ?></span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -167,7 +167,7 @@ $total = 0;
                         <!--<button type="button" class="btn btn-default printMe">Print</button>-->
                         <!--<button type="button" class="btn btn-default">Save to pdf</button>-->
                         <?php
-                        echo Html::a('Invoice', ['/order/invoice/1'], [
+                        echo Html::a('Invoice', ['/order/invoice/'.$model->id], [
                             'class' => 'btn btn-default',
                             'target' => '_blank',
                             'data-toggle' => 'tooltip',

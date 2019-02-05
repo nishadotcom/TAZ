@@ -1,6 +1,6 @@
 <?php
 $pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
-$prdNoImg = 'noImage.jpg';
+$prdNoImg = 'noImage.png';
 $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
 ?>
 
