@@ -1,0 +1,88 @@
+.grid .box {
+    border-radius: 7px;
+    border: 1px solid #e0e2e3;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.margin-top-30{
+	margin-top: 30px;
+}
+
+.userFavorited{
+    background-color: #47bac1;
+}
+
+.userFavorited i {
+    color: #fff !important;
+}
+
+.cartYes{
+    background-color: #47bac1;
+}
+
+.cartYes i {
+    color: #fff !important;
+}
+
+.imageBox .productImage img{
+    min-height: 283px;
+    height: 200px;
+}
+
+.rating{
+    cursor: pointer;
+}
+
+.homeUserFavorited{
+    color: #F50035 !important;
+}
+
+.imageBox .productImage .home.productMasking ul{
+	height: 100px;
+}
+
+.imageBox .productImage .singleProduct.productMasking ul{
+    height: 50px;
+}
+
+.imageBox .productImage .home.productMasking, .imageBox .productImage .singleProduct.productMasking{
+	height: 26%;
+	top: 74%;
+}
+
+/*.imageBox .productImage .singleProduct.productMasking ul{
+    height: 100px;
+}
+
+.imageBox .productImage .singleProduct.productMasking{
+    height: 26%;
+    top: 74%;
+}*/
+
+.summary{
+    width: 30%;
+    display: inline-block;
+    margin-top: 8px;
+}
+.pagination{
+    float: right;
+    margin-top: 8px !important;
+    margin-bottom: 12px;
+}
+.pagination li a{
+    width: 40px;
+    height: 35px;
+    line-height: 30px;
+}
+.pagination>li>span{
+    float: none;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.glyphicon{
+    color: #000;
+}

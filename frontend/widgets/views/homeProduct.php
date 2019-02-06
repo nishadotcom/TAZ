@@ -538,86 +538,79 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                   -->
                   <div id="menu3" class="tab-pane fade">
                     <div class="row">
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="home-image-box imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img5.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
+                      <?php 
+                      if($onSaleProducts){
+                        foreach ($onSaleProducts as $key => $onSaleProduct) { //echo '<pre>'; print_r($onSaleProduct); exit;
+                          $productOwnerName = ($onSaleProduct['productOwner']) ? $onSaleProduct['productOwner'] : '';
+                          // GET PRODUCT IMAGE
+                          $productImages = Yii::$app->ShopComponent->getProductImageByProductId($onSaleProduct['product_id']);
+                          if($productImages){
+                            $coverImage = ($productImages[0]->crop_image) ? $productImages[0]->crop_image : $productImages[0]->cover_photo;
+                          }else{
+                            $coverImage = '';
+                          }
+                          $prdImage   = (isset($productImages[0])) ? $pathPrdImg.$onSaleProduct['product_code'].'/'.$coverImage : $pathPrdImg.$prdNoImg;
+                          ?>
+
+                          <div class="col-sm-3 col-xs-12">
+                            <div class="home-image-box imageBox">
+                              <div class="productImage clearfix">
+                                <a href="#">
+                                  <img src="<?= $prdImage; ?>" alt="featured-product-img">
+                                </a>
+                                <!--<div class="productMasking">
+                                  <ul class="list-inline btn-group" role="group">
+                                    <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
+                                  </ul>
+                                </div>-->
+                                <div class="productMasking">
+                                  <ul class="list-inline btn-group" role="group">
+                                    <li>
+                                        <a data-product-id="<?= $onSaleProduct['product_id']; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default add_to_cart" title="Add to Cart">
+                                            <i class="fa fa-shopping-cart" style="margin-right:0"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$onSaleProduct['product_id'].'&transactionId='.$transactionId; ?>" data-product-id="<?= $onSaleProduct['product_id']; ?>" data-user-id="<?= (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" class="btn btn-default" title="Buy Now">
+                                            <i class="fa fa-inr" style="margin-right:0"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" href="<?= Yii::$app->homeUrl.'shop/product/'.$onSaleProduct['product_id']; ?>" class="btn btn-default" title="View <?= $onSaleProduct['product_name']; ?>">
+                                            <i class="fa fa-eye" style="margin-right:0"></i>
+                                        </a>  
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="productCaption clearfix">
+                                <h3><a href="<?php echo Yii::$app->homeUrl.'shop/product/'.$onSaleProduct['product_id']; ?>" title="<?= $onSaleProduct['product_name']; ?>"><?= $onSaleProduct['product_name']; ?></a></h3>
+                                <?php
+                                if($productOwnerName){
+                                  ?>
+                                  <h3 class="seller-name">
+                                    By : <?= $productOwnerName; ?>
+                                  </h3>
+                                  <?php
+                                }
+                                ?>
+                                <span class="offer-price">&#x20B9; <?= $onSaleProduct['product_sale_price']; ?></span>
+                            </div>
                             </div>
                           </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="home-image-box imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img3.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Mauris efficitur</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="home-image-box imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img8.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Scarf Ring Corner</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="home-image-box imageBox">
-                          <div class="productImage clearfix">
-                            <a href="single-product.html">
-                              <img src="<?php echo $this->theme->baseUrl; ?>/assets/img/home/featured-product/product-img9.jpg" alt="featured-product-img">
-                            </a>
-                            <div class="productMasking">
-                              <ul class="list-inline btn-group" role="group">
-                                <li><a data-toggle="modal" href=".login-modal" class="btn btn-default"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="cart-page.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a data-toggle="modal" href=".quick-view" class="btn btn-default"><i class="fa fa-search"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="productCaption clearfix">
-                            <h5><a href="single-product.html">Sun Buddies</a></h5>
-                            <h3>$199</h3>
-                          </div>
-                        </div>
-                      </div>
+
+                          <?php
+                        }
+                      }else{
+                        echo '<div class="col-sm-3 col-xs-12"><p>No Results Found</p></div>';
+                      }
+                      ?>
+                      
+                      
+                      
+                      
                     </div>
                   </div>
                 </div>

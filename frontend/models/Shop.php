@@ -10,6 +10,7 @@ use frontend\models\ProductAddress;
 use backend\models\Category;
 use frontend\models\UserFavorite; 
 use backend\models\FeatureSeller;
+use frontend\models\OrderDetail;
 
 class Shop extends \yii\db\ActiveRecord
 {
@@ -100,6 +101,22 @@ class Shop extends \yii\db\ActiveRecord
 
     public static function getNewAriivalProducts(){
         $products   = Product::find()->where(['product_status'=>'Active'])->with('productAddresses')->andWhere('created_on >= DATE_SUB(CURDATE(), INTERVAL 10 DAY)')->with('productImages')->with('productCategory')->limit(8)->orderBy(['created_on' => SORT_DESC])->all();
+        return $products;
+    }
+
+    public static function getOnSaleProducts(){
+        $sql = 'SELECT taz_order_detail.product_id, COUNT(taz_order_detail.product_id) as saleCount, taz_product_image.cover_photo, taz_product_image.crop_image, taz_category.category_name, CONCAT(taz_user.firstname, " ",taz_user.lastname) as productOwner, taz_product.*
+                FROM taz_order_detail
+                LEFT JOIN taz_product ON taz_order_detail.product_id = taz_product.id
+                LEFT JOIN taz_product_image ON taz_order_detail.product_id = taz_product_image.product_id
+                LEFT JOIN taz_category ON taz_product.product_category_id = taz_category.id
+                LEFT JOIN taz_user ON taz_order_detail.product_owner_id = taz_user.id
+                WHERE taz_product.product_status = "Active"
+                GROUP BY taz_order_detail.product_id
+                ORDER BY saleCount DESC';
+        $connection = Yii::$app->getDb();
+        $model = $connection->createCommand($sql);
+        $products = $model->queryAll();
         return $products;
     }
 

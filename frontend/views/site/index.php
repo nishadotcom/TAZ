@@ -1,9 +1,23 @@
 <?php
-
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use yii\authclient\widgets\AuthChoice;
+//use dektrium\user\widgets\Connect;
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
+
 ?>
+
+<?php $form = ActiveForm::begin([
+                    'id' => 'registration-form',
+                ]); ?>
+
+                <?php /*Connect::widget([
+                    'baseAuthUrl' => ['/user/security/auth']
+                ])*/ ?>
+                
+                <?php ActiveForm::end(); ?>
 <div class="site-index">
 
     <div class="jumbotron">
@@ -20,20 +34,28 @@ $this->title = 'My Yii Application';
             <div class="col-lg-4">
                 <h2>Heading</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p><?php $authAuthChoice = AuthChoice::begin([
+    'baseAuthUrl' => ['site/auth']
+]); ?>
+<ul>
+<?php foreach ($authAuthChoice->getClients() as $client): ?>
+    <li><?= $authAuthChoice->clientLink($client); ?></li>
+<?php endforeach; ?>
+</ul>
+<?php AuthChoice::end(); ?></p>
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Headingd</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                    fugiat nulla pariatur.<ul>
+    <li><a class="google auth-link" href="/site/auth?authclient=google" title="Google">GOOgle<span class="auth-icon google">dfdsf</span></a></li>
+    <li><a class="facebook auth-link" href="/site/auth?authclient=facebook" title="Facebook" data-popup-width="860" data-popup-height="480"><span class="auth-icon facebook"></span></a></li>
+</ul></p>
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
             </div>

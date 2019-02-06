@@ -6,10 +6,61 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use kartik\social\Module;
+use yii\helpers\Url;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
+$social = Yii::$app->getModule('social');
+$callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url you want to redirect
+
 ?>
+
+<div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+              <div class="panel panel-default">
+                <!--<div class="panel-heading"><h3>log in</h3></div>-->
+                <div class="panel-body">
+                  <?php // Yii::$app->session->getFlash('msg'); ?>
+                  <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
+                    <div class="form-group">
+                      <label for="">Email</label>
+                      <?= $form->field($model, 'email')->textInput(array('maxlength' => 30, 'placeholder' => 'Email','class'=>'form-control'))->label(false) ?>
+                    </div>
+                    <div class="form-group">
+                      <label for="">Password</label>
+                      <?= $form->field($model, 'password')->passwordInput(array('maxlength' => 30, 'placeholder' => 'Password','class'=>'form-control'))->label(false) ?>
+                    </div>
+     
+                    <button type="submit" class="btn btn-primary btn-block">log in</button>
+                    <?php echo $social->getFbLoginLink($callback, ['class'=>'btn btn-default pull-left']); ?>
+                    <!--<button type="submit" class="btn btn-default pull-left"><i class="fa fa-facebook" aria-hidden="true"></i><span>log in with facebook</span></button>-->
+                     <?php echo kartik\social\GooglePlugin::widget([
+    'type'=>kartik\social\GooglePlugin::SIGNIN, 
+    //'tag'=>'span', 
+    'signinOptions'=>['id'=>'signinButton'],
+    'settings' => [
+        'callback'=>'signinCallback',
+        'cookiepolicy' => 'single_host_origin',
+        'requestvisibleactions' => 'http://schemas.google.com/AddActivity',
+        'scope'=>'https://www.googleapis.com/auth/plus.login'
+    ]
+]); ?>
+                    <!--<button type="submit" class="btn btn-default pull-right">
+                    	<i class="fa fa-google-plus" aria-hidden="true"></i>
+                    	<span style="margin-left: 0;margin-right: 0;">log in with google plus</span>
+                    </button>-->
+                    <!--<button type="button" class="btn btn-link btn-block">Don't You Have an Account?</button>-->
+	                <!--<button type="button" class="btn btn-link btn-block">Forgot Password?</button>-->
+                    <a class="btn btn-link btn-block" href="<?= Yii::$app->homeUrl . 'user-forgot-password'; ?>">Forgot Password?</a>
+                 <?php ActiveForm::end(); ?>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- OLD CODE -->
+<?php /* ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -37,3 +88,4 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+<?php */ ?>
