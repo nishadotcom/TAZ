@@ -95,6 +95,7 @@ $form = ActiveForm::begin([
 
         <?= $form->field($model, 'product_guarantee_status')->dropDownList(['Yes' => 'Yes', 'No' => 'No',], ['prompt' => 'Select Guarantee Status', 'options' => ['No' => ['selected' => 'selected']]]) ?>
 
+        <?php if($model->isNewRecord){ ?>
         <?php echo $form->field($imageModel, 'cover_photo')->fileInput(['maxlength' => true]) ?>
         <?php //echo $form->field($imageModel, 'crop_image')->hiddenInput(['maxlength' => true])->label(false) ?>
         <input type="hidden" id="productimage-crop_image" class="form-control" name="ProductImage[crop_image]" maxlength="">
@@ -118,7 +119,9 @@ $form = ActiveForm::begin([
 
         <?= $form->field($addressModel, 'country')->dropDownList($countryListData, ['prompt' => 'Select Country']) ?>
 
-        <?= $form->field($addressModel, 'pin_code')->textInput(['maxlength' => true, 'placeholder'=>'Pincode']) ?>
+        <?= $form->field($addressModel, 'pin_code')->textInput(['maxlength' => true, 'placeholder'=>'Pincode']) ?> 
+
+        <?php } ?>
         
 
         <?php //echo $form->field($model, 'product_status')->dropDownList([ 'AFA' => 'AFA', 'Active' => 'Active', 'Suspended' => 'Suspended', 'Deleted' => 'Deleted', 'Needs Improvement' => 'Needs Improvement', 'Denied' => 'Denied', ], ['prompt' => '']) ?>
