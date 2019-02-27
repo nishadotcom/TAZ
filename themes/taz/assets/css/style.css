@@ -7017,7 +7017,7 @@ body.bodyColor.container {
   height: 35px;
   font-size: 13px;
   font-weight: 700;
-  color: #252525;
+  color: #756F70;/*#252525*/
   /*text-transform: uppercase;*/
   display: inline-block;
   background-color: transparent;
@@ -7035,7 +7035,7 @@ body.bodyColor.container {
 .tabCommon .nav-tabs > li.active > a:focus,
 .tabCommon .nav-tabs > li.active > a:hover {
   background-color: transparent;
-  color: #252525;
+  color: #756F70;
   border: none;
   border-bottom: 5px solid #47bac1;
 }

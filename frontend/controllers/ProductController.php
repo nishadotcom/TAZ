@@ -7,6 +7,7 @@ use frontend\models\Product;
 use frontend\models\ProductImage;
 use frontend\models\ProductSearch; 
 use frontend\models\ProductAddress; 
+use frontend\models\OnSale; 
 use backend\models\Category;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -79,12 +80,14 @@ class ProductController extends Controller
     public function actionIndex()
     {
         //$this->layout = 'profile_page';
+        $OnSaleModel      = new OnSale();
         $searchModel = new ProductSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         //$dataProvider->pagination->pageSize=1;
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'OnSaleModel'=>$OnSaleModel
         ]);
     }
 
@@ -98,6 +101,17 @@ class ProductController extends Controller
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+    }
+
+    public function actionPromote()
+    {
+        $model = new OnSale();
+
+        if ($model->load(Yii::$app->request->post())) {
+
+            //$model->save();
+            //return $this->redirect(['view', 'id' => $model->id]);
+        }
     }
 
     /**

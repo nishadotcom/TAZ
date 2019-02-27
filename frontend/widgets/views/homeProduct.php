@@ -359,7 +359,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
             <div class="col-xs-12">
               <div class="tabCommon">
                 <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#newArrivals">New Araivals</a></li> 
+                  <li class="active"><a data-toggle="tab" href="#newArrivals">New Arrivals</a></li> 
                   <li><a data-toggle="tab" href="#topFavorited">Top Rated</a></li>
                   <li><a data-toggle="tab" href="#menu3">On Sale</a></li>
                 </ul>
@@ -596,7 +596,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                                   <?php
                                 }
                                 ?>
-                                <span class="offer-price">&#x20B9; <?= $onSaleProduct['product_sale_price']; ?></span>
+                                <span class="offer-price"><strike>&#x20B9; <?= $onSaleProduct['product_sale_price']; ?></strike> &#x20B9; <?= $onSaleProduct['product_sale_price']; ?></span>
                             </div>
                             </div>
                           </div>

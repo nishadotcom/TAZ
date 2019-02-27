@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 use yii\grid\GridView;
 use frontend\widgets\ProfileMenu;
 use yii\helpers\ArrayHelper;
@@ -69,11 +70,81 @@ $this->params['breadcrumbs'][] = $this->title;
                             ],
                             // 'created_on',
                             // 'updated_on',
-                            ['class' => 'yii\grid\ActionColumn'],
+                            [
+                                'class' => 'yii\grid\ActionColumn',
+                                'template'=>'{promote} {view} {update} {delete}',
+                                'buttons'=>[
+                                    'promote' => function($url,$model,$key){
+                                        $btn = Html::button("Promote",[
+                                            'value'=>Yii::$app->urlManager->createUrl('product/promote/'.$key), //<---- here is where you define the action that handles the ajax request
+                                            'class'=>'promote',
+                                            'data-toggle'=>'modal',
+                                            'data-placement'=>'bottom',
+                                            'data-target' => '#promote-modal',
+                                            'title'=>'Promote'
+                                        ]);
+                                        return $btn;
+                                    }
+                                ]
+                            ],
                         ],
                     ]); ?>
               </div>
             </div>
         </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="promote-modal" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Promote Product</h4>
+            </div>
+            <div class="modal-body">
+                <div class="on-sale-form">
+
+                    <?php $form = ActiveForm::begin(['action'=>'/product/promote']); ?>
+
+                    <?php //$form->field($OnSaleModel, 'on_sale_product_id')->textInput() ?>
+
+                    <?= $form->field($OnSaleModel, 'discount')->textInput() ?>
+
+                    <?php //$form->field($OnSaleModel, 'status')->dropDownList([ 'Waiting' => 'Waiting', 'Approved' => 'Approved', 'Supended' => 'Supended', ], ['prompt' => '']) ?>
+
+                    <?php //$form->field($OnSaleModel, 'created_on')->textInput() ?>
+
+                    <div class="form-group">
+                        <?php //echo Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+                        <?php 
+                        echo Html::submitButton('Save', [
+                            'title' => Yii::t('yii', 'Close'),
+                            'onclick'=>"$('#close').dialog('open');//for jui dialog in my page
+                            $.ajax({
+                                type     :'POST',
+                                cache    : false,
+                                url  : 'product/promote',
+                                success  : function(response) {
+                                    //$('#close').html(response);
+                                    alert('Success');
+                                }
+                            });return false;",
+                        ]);
+                        ?>
+                    </div>
+
+                    <?php ActiveForm::end(); ?>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
     </div>
 </div>
