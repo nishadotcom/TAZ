@@ -103,15 +103,22 @@ class ProductController extends Controller
         ]);
     }
 
-    public function actionPromote()
+    public function actionPromote($id)
     {
         $model = new OnSale();
 
         if ($model->load(Yii::$app->request->post())) {
-
-            //$model->save();
-            //return $this->redirect(['view', 'id' => $model->id]);
+            $model->created_on          = Common::mysqlDateTime();
+            if($model->save()){
+                return $this->redirect(['index']);
+            }
+            
         }
+
+        return $this->render('promote', [
+            'model' => $model,
+            'productId'=>$id
+        ]);
     }
 
     /**

@@ -170,14 +170,14 @@ if(strpos($baseUrl, 'ANTs')){
                                         <span class="cartImage"><img src="<?= $prdImage; ?>" alt="image" width="70px"></span>
                                       </td>
                                       <td class="col-xs-4"><?= $orderProduct->cart_product_name; ?></td>
-                                      <td class="col-xs-2"><?= $orderProduct->cart_product_price; ?></td>
+                                      <td class="col-xs-2"><?= Yii::$app->ShopComponent->formatPrice($orderProduct->cart_product_price); ?></td>
                                       <td class="col-xs-2">1</td>
-                                      <td class="col-xs-2"><?= $orderProduct->cart_product_price; ?></td>
+                                      <td class="col-xs-2"><?= Yii::$app->ShopComponent->formatPrice($orderProduct->cart_product_price); ?></td>
                                     </tr>
                                   <?php
                                 }else{
                                   $prdImage = (isset($orderProduct->productImages[0])) ? $pathPrdImg . $orderProduct->product_code . '/' . $orderProduct->productImages[0]->cover_photo : $pathPrdImg . $prdNoImg;
-                                  $orderProductPrice = (isset($orderProduct->product_sale_price)) ? $orderProduct->product_sale_price : ((isset($orderProduct->product_price)) ? $orderProduct->product_price : 0);
+                                  $orderProductPrice = (isset($orderProduct->product_sale_price)) ? Yii::$app->ShopComponent->formatPrice($orderProduct->product_sale_price) : ((isset($orderProduct->product_price)) ? $orderProduct->product_price : 0);
                                   $total = $total + $orderProductPrice;
                                   ?>
                                   <tr>
@@ -186,9 +186,9 @@ if(strpos($baseUrl, 'ANTs')){
                                         <span class="cartImage" style="float: none;"><img src="<?= $prdImage; ?>" alt="image" width="70px"></span>
                                       </td>
                                       <td class="col-xs-4"><?= $orderProduct->product_name; ?></td>
-                                      <td class="col-xs-2"><?= $orderProductPrice; ?></td>
+                                      <td class="col-xs-2"><?= Yii::$app->ShopComponent->formatPrice($orderProductPrice); ?></td>
                                       <td class="col-xs-2">1</td>
-                                      <td class="col-xs-2"><?= $orderProductPrice; ?></td>
+                                      <td class="col-xs-2"><?= Yii::$app->ShopComponent->formatPrice($orderProductPrice); ?></td>
                                     </tr>
                                   <?php
                                 }
@@ -241,7 +241,7 @@ if(strpos($baseUrl, 'ANTs')){
                           </ul>
                         </div>
                       </div>
-                    </div>c
+                    </div>
                   </div>
                   <div class="col-xs-12">
                     <div class="well well-lg clearfix">

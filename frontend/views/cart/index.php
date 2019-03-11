@@ -59,7 +59,13 @@ $transactionId = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
                                     'cart_product_name:ntext',
                                     // 'cart_product_seo:ntext',
                                     // 'cart_product_owner_id',
-                                    'cart_product_price',
+                                    [
+                                      'attribute'=>'cart_product_price',
+                                      'value'=>function($model){
+                                        return Yii::$app->ShopComponent->formatPrice($model->cart_product_price); 
+                                      }
+                                    ],
+                                    //'cart_product_price',
                                     // 'cart_product_material',
                                     // 'cart_product_color',
                                     // 'cart_product_dimension_type',

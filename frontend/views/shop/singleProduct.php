@@ -54,7 +54,7 @@ $sellerAbout = UserDetail::find()->where(['user_id'=>$productData->productOwner-
                         echo FacebookPlugin::widget(['type'=>FacebookPlugin::SHARE, 'settings' => ['href' =>$url,'size'=>'small', 'layout'=>'button', 'mobile_iframe'=>'true', 'image'=>'http://talozo.com/dev/common/uploads/product_images/PRD151218123133L6Jj/20181215123133.jpg']]); ?></li>
                 </ul>
                 <h4><?= $productData->product_name; ?></h4>
-                <h4>&#x20B9; <?= $productData->product_sale_price; ?></h4>
+                <h4>&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($productData->product_sale_price); ?></h4>
                 <p><?= $productData->product_long_description; ?></p>
                 <div class="btn-area">
                     <button class="btn btn-primary btn-block add_to_cart" data-product-id="<?= $productData->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>" title="Add to cart">Add to Cart </button>

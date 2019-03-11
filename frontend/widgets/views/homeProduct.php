@@ -82,7 +82,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                           }
                           ?>
                           
-                          <span class="offer-price">&#x20B9; <?= $psaProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($psaProduct->product_sale_price);  ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /*?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$psaProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $psaProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
                         </div>
@@ -169,7 +169,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                             <?php
                           }
                           ?>
-                          <span class="offer-price">&#x20B9; <?= $slpProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($slpProduct->product_sale_price); ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$slpProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $slpProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
                         </div>
@@ -252,7 +252,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                             <?php
                           }
                           ?>
-                          <span class="offer-price">&#x20B9; <?= $otlProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($otlProduct->product_sale_price); ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$otlProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $otlProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
                         </div>
@@ -335,7 +335,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                             <?php
                           }
                           ?>
-                          <span class="offer-price">&#x20B9; <?= $frcProduct->product_sale_price; ?></span>
+                          <span class="offer-price">&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($frcProduct->product_sale_price); ?></span>
                           <!--<span class="regular-price"><del>$80.00</del></span>-->
                           <?php /* ?><a href="<?= Yii::$app->homeUrl . 'order/step1?from=product-'.$frcProduct->id.'&transactionId='.$transactionId; ?>" class="btn btn-border" data-product-id="<?= $frcProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">Buy Now<i class="fa fa-angle-right" aria-hidden="true"></i></a><?php */ ?>
                         </div>
@@ -434,7 +434,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                                 <?php
                               }
                               ?>
-                              <span class="offer-price">&#x20B9; <?= $newArrival->product_sale_price; ?></span>
+                              <span class="offer-price">&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($newArrival->product_sale_price); ?></span>
                             </div>
 
                           </div>
@@ -520,7 +520,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                                   <?php
                                 }
                                 ?>
-                                <span class="offer-price">&#x20B9; <?= $topFavoriteProduct['product_sale_price']; ?></span>
+                                <span class="offer-price">&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($topFavoriteProduct['product_sale_price']); ?></span>
                             </div>
                             </div>
                           </div>
@@ -596,7 +596,7 @@ $transactionId = Yii::$app->Common->generateTransactionID();
                                   <?php
                                 }
                                 ?>
-                                <span class="offer-price"><strike>&#x20B9; <?= $onSaleProduct['product_sale_price']; ?></strike> &#x20B9; <?= $onSaleProduct['product_sale_price']; ?></span>
+                                <span class="offer-price"><strike>&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($onSaleProduct['product_sale_price']); ?></strike> &#x20B9; <?= $onSaleProduct['product_sale_price']; ?></span>
                             </div>
                             </div>
                           </div>

@@ -21,6 +21,10 @@ use frontend\models\UserFavorite;
 
 class ShopComponent extends Component {
 
+    public static function formatPrice($price){
+        return $price + 0;
+    }
+
     /**
     * Get Products by Category Id 
     **/

@@ -49,6 +49,7 @@ $action = $controller->action->id;
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="<?= Yii::$app->homeUrl.'profile-dashboard'; ?>" title="MY ACCOUNT">MY ACCOUNT</a></li>
                                 <?php if(Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_SELLER']){ ?>
+                                    <li><a href="<?= Yii::$app->homeUrl.'product'; ?>" title="MY PRODUCTS">MY PRODUCTS</a></li>
                                     <li><a href="<?= Yii::$app->homeUrl.'mysales'; ?>" title="MY SALES">MY SALES</a></li>
                                 <?php }elseif(Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_BUYER']){
                                     ?>

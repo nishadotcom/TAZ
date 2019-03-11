@@ -89,7 +89,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
                                     By : <?= $productOwnerName; ?>
                                 </h4>
                                 <p><?= $categoryProduct->product_short_description; ?></p>
-                                <h4>&#x20B9; <?= $categoryProduct->product_sale_price; ?></h4>
+                                <h4>&#x20B9; <?= Yii::$app->ShopComponent->formatPrice($categoryProduct->product_sale_price); ?></h4>
                                 <div class="btn-group" role="group">
                                     <!--<button type="button" class="btn btn-default userFavorite" data-favorite="1" data-product-id="<?= $categoryProduct->id; ?>" data-user-id="<?php echo (!Yii::$app->user->isGuest) ? Yii::$app->user->id : 'guest'; ?>">
                                         <i class="fa fa-heart" aria-hidden="true"></i>

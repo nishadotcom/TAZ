@@ -153,10 +153,10 @@ use frontend\widgets\Banner;
                 <div class="modal-content">
                     <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h5 class="modal-title">Message</h5>
+                    <h5 class="modal-title">Hey there! </h5>
                     </div>
                     <div class="modal-body">
-                        <p>Please <a href="<?= Yii::$app->homeUrl . 'login'; ?>" title="Login" style="color: #337ab7;">login</a> to perform this action.</p>
+                        <p>Please <a href="<?= Yii::$app->homeUrl . 'login'; ?>" title="login" style="color: #337ab7;">login </a>to unlock this feature</p>
                     </div>
                     <!--<div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

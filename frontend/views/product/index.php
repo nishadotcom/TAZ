@@ -75,14 +75,12 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'template'=>'{promote} {view} {update} {delete}',
                                 'buttons'=>[
                                     'promote' => function($url,$model,$key){
-                                        $btn = Html::button("Promote",[
+                                        $btn = Html::a('Promote', ['/product/promote/'.$key], ['class'=>'btn btn-primary btn-sm', 'title'=>'Promote']);
+                                        /*$btn = Html::a("Promote",[
                                             'value'=>Yii::$app->urlManager->createUrl('product/promote/'.$key), //<---- here is where you define the action that handles the ajax request
                                             'class'=>'promote',
-                                            'data-toggle'=>'modal',
-                                            'data-placement'=>'bottom',
-                                            'data-target' => '#promote-modal',
                                             'title'=>'Promote'
-                                        ]);
+                                        ]);*/
                                         return $btn;
                                     }
                                 ]

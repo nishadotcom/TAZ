@@ -1,4 +1,5 @@
-<!-- FOOTER -->
+
+<?php /* ?><!-- FOOTER -->
 <div class="footer clearfix">
         <div class="container">
           <div class="row">
@@ -67,7 +68,7 @@
         </div>
       </div>
 <!-- END FOOTER -->
-
+<?php */?>
 <!-- COPY RIGHT -->
       <div class="copyRight clearfix">
         <div class="container">
