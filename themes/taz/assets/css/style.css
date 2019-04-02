@@ -686,6 +686,9 @@ a:hover, a:focus {
 }
 
 /*=== 2.1.2 NAVBAR ===*/
+.navbar {
+    border-radius: 0px;
+}
 .navbar-brand {
   width: auto;
   height: auto;
@@ -700,9 +703,10 @@ a:hover, a:focus {
 }
 
 .navbar-default {
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  border-bottom:1px solid #e8e8e8 !important;
   background-color: #ffffff;
   margin-bottom: 0;
   border: none;
@@ -776,14 +780,14 @@ a:hover, a:focus {
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-collapse li a {
-    padding: 20px  10px 33px;
+    padding: 10px  10px 33px;
     font-size: 12px;
   }
 }
 @media (min-width: 992px) {
   .navbar-default .navbar-collapse li a {
     /*padding: 20px  15px 33px;*/
-    padding: 20px  15px 20px;
+    padding: 10px  15px 20px;
     font-size: 14px;
   }
 }
@@ -1557,7 +1561,7 @@ body.bodyColor.container {
   top: 4px;
   z-index: -1;
   background: #4dc8cf;
-  background: -webkit-linear-gradient(legacy-direction(135deg), #4dc8cf 0%, #4dc8cf 50%, #47bac1 51%, #47bac1 100%);
+  : -webkit-linear-gradient(legacy-direction(135deg), #4dc8cf 0%, #4dc8cf 50%, #47bac1 51%, #47bac1 100%);
   background: linear-gradient(135deg, #4dc8cf 0%, #4dc8cf 50%, #47bac1 51%, #47bac1 100%);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -2679,11 +2683,11 @@ body.bodyColor.container {
 }
 @media (min-width: 768px) {
   .whiteSection {
-    padding: 90px 0 60px 0;
+    padding: 940px 0 60px 0;
   }
   .mainContent  {
 	/*padding: 50px 0 60px 0;*/
-	padding: 22px 0 15px 0;
+	/* padding: 22px 0 15px 0; */
   }
 }
 .whiteSection .featuredCollection .thumbnail, .mainContent .featuredCollection .thumbnail {
@@ -2776,7 +2780,7 @@ body.bodyColor.container {
 /*=== 3.1.2 LIGHT SECTION ===*/
 .lightSection {
   background-color: #f0f0f0;
-  height: 125px;
+ /* height: 125px; */
 }
 .lightSection .partnersLogoSlider .owl-nav {
   display: none;
@@ -3790,17 +3794,18 @@ body.bodyColor.container {
 /*=== 5.1 FORM COMMON ===*/
 .form-field .form-group .form-control, .form-body .panel .panel-body .form-group .form-control, .signUp .panel .panel-body .form-group .form-control, .lostPassword .panel .panel-body .form-group .form-control, .logIn .panel .panel-body .form-group .form-control, .commentsForm .form-group .form-control, #login .modal-dialog .modal-content .modal-body .form-group .form-control, #signup .modal-dialog .modal-content .modal-body .form-group .form-control, .stepsPage form .form-group .form-control, .profile .form-horizontal .form-group .form-control {
   border-radius: 0;
-  background-color: #f0f0f0;
+  background-color: #fff !important;
   border: none;
   height: 50px;
   box-shadow: none;
+  border: 1px solid #dbdbdb;
 }
 .form-field .form-group .form-control:focus, .form-body .panel .panel-body .form-group .form-control:focus, .signUp .panel .panel-body .form-group .form-control:focus, .lostPassword .panel .panel-body .form-group .form-control:focus, .logIn .panel .panel-body .form-group .form-control:focus, .commentsForm .form-group .form-control:focus, #login .modal-dialog .modal-content .modal-body .form-group .form-control:focus, #signup .modal-dialog .modal-content .modal-body .form-group .form-control:focus, .stepsPage form .form-group .form-control:focus, .profile .form-horizontal .form-group .form-control:focus {
   box-shadow: none;
 }
 
 .form-field, .form-body .panel .panel-body, .signUp .panel .panel-body, .lostPassword .panel .panel-body, .logIn .panel .panel-body, .commentsForm, #login .modal-dialog .modal-content .modal-body, #signup .modal-dialog .modal-content .modal-body {
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 .form-field .form-group, .form-body .panel .panel-body .form-group, .signUp .panel .panel-body .form-group, .lostPassword .panel .panel-body .form-group, .logIn .panel .panel-body .form-group, .commentsForm .form-group, #login .modal-dialog .modal-content .modal-body .form-group, #signup .modal-dialog .modal-content .modal-body .form-group {
   /*margin-bottom: 30px;*/
@@ -3968,9 +3973,49 @@ body.bodyColor.container {
   color: #ffffff;
 }
 @media (min-width: 480px) {
-  .logIn {
-    padding: 26px 0 25px 0;
+.logIn {
+    padding: 20px 0 25px 0;
+
   }
+.logIn-bg {
+   /* padding: 20px 0 25px 0; */
+	background-image:url("../img/login-bckbg.jpg");
+background-position:center;	
+background-repeat:no-repeat;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+.logIn h2{
+font-size:2.2rem;
+}
+.panel-logo-in {
+	margin:10px 0px 15px 0px;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.08);
+        box-shadow: 0 2px 5px rgba(0,0,0,.08);
+    border-radius: 5px !important;
+}
+.left-heading-text {
+background:#9dd0c4;
+padding:30px 40px;
+color:#fff;
+border-radius:5px;
+border:1px solid #fff;
+    position: absolute;
+    left: 0px;
+}
+.left-heading-text h2{
+margin:0px 0px;
+color:#fff;
+font-size:2.5rem;
+} 
 }
 @media (min-width: 768px) {
   /*.logIn {
@@ -4310,8 +4355,8 @@ body.bodyColor.container {
 }
 
 .pageHeader {
-  height: 54px;
-}
+  height: 0px;
+} 
 .pageHeader .page-title h2 {
   color: #797979;
   /*text-transform: uppercase;*/
@@ -8486,3 +8531,33 @@ h4 a:hover{
   display: inline-block;
 }
 /**End of Become a Seller sidebar **/
+
+/* ==== Home Style Changes 31/3/2019  ====*/
+.bannercontainer {
+	margin:10px 0px 0px 0px;
+}
+/* input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+	border:1px solid #dddddd;
+}
+input:-internal-autofill-selected {
+	background-color: rgb(255, 255, 255) !important;
+}*/
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #dddddd;
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: rgb(255, 255, 255) !important;
+} */

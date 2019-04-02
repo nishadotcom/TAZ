@@ -9,26 +9,38 @@ use yii\bootstrap\ActiveForm;
 use kartik\social\Module;
 use yii\helpers\Url;
 
-$this->title = 'Login';
+//$this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 $social = Yii::$app->getModule('social');
 $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url you want to redirect
-
 ?>
 
+                
 <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+<div class="col-md-5 col-sm-5 col-xs-12">
+<div class="left-heading-text">
+<!-- <img src="<?php //echo $this->theme->baseUrl; ?>/assets/img/login-user-icon.png" class="img-responsive left-block"> -->
+<h2>Login</h2>
+</div>
+</div>
+            <div class="col-md-5 col-md-offset-6 col-sm-8 col-sm-offset-2 col-xs-12">
               <div class="panel panel-default">
                 <!--<div class="panel-heading"><h3>log in</h3></div>-->
                 <div class="panel-body">
+				<div class="panel-logo-in"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/login-user-icon.png" class="img-responsive center-block"></div>
+			<h2 class="text-center">Login</h2>
                   <?php // Yii::$app->session->getFlash('msg'); ?>
                   <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
+				 
+				  
                     <div class="form-group">
-                      <label for="">Email</label>
+                     <!-- <label for="">Email</label>-->
                       <?= $form->field($model, 'email')->textInput(array('maxlength' => 30, 'placeholder' => 'Email','class'=>'form-control'))->label(false) ?>
                     </div>
                     <div class="form-group">
-                      <label for="">Password</label>
+					
+					
+                     <!-- <label for="">Password</label> -->
                       <?= $form->field($model, 'password')->passwordInput(array('maxlength' => 30, 'placeholder' => 'Password','class'=>'form-control'))->label(false) ?>
                     </div>
      
@@ -58,6 +70,8 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
               </div>
             </div>
           </div>
+		 
+		  
 
 <!-- OLD CODE -->
 <?php /* ?>

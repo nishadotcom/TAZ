@@ -130,12 +130,12 @@ use frontend\widgets\Banner;
             } elseif ($controller->action->id == 'checkout' || $controller->action->id == 'checkout-step2' || $controller->action->id == 'checkout-step3' || $controller->action->id == 'checkout-step4') {
                 $sectionClass = 'stepsWrapper';
             } else {
-                $sectionClass = 'logIn signUp productsContent';
+                $sectionClass = ' productsContent';
             }
 
             //$sectionClass = ''; = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';
             ?>
-            <section class="mainContent clearfix <?= $sectionClass ?> productsContent">
+            <section class="mainContent clearfix <?= $sectionClass ?> productsContent logIn-bg">
                 <div class="container">
             <?= $content; ?>
                 </div> <!-- .CONTAINER -->
@@ -182,6 +182,10 @@ if (class_exists('yii\debug\Module')) {
     $this->off(\yii\web\View::EVENT_END_BODY, [\yii\debug\Module::getInstance(), 'renderToolbar']);
 }
 ?>
+   
+	
+
+
 <?php $this->endBody(); ?>
     </body>
 </html>
