@@ -2678,7 +2678,7 @@ body.bodyColor.container {
 }
 @media (min-width: 480px) {
   .whiteSection, .mainContent {
-    padding: 90px 0 0 0;
+    padding: 0px 0 0 0;
   }
 }
 @media (min-width: 768px) {
@@ -3978,7 +3978,7 @@ body.bodyColor.container {
 
   }
 .logIn-bg {
-   /* padding: 20px 0 25px 0; */
+    padding: 30px 0px 10px 0px;
 	background-image:url("../img/login-bckbg.jpg");
 background-position:center;	
 background-repeat:no-repeat;
@@ -4003,13 +4003,40 @@ font-size:2.2rem;
     border-radius: 5px !important;
 }
 .left-heading-text {
-background:#9dd0c4;
-padding:30px 40px;
-color:#fff;
-border-radius:5px;
-border:1px solid #fff;
-    position: absolute;
+    background: rgb(157,208,196);
+background: linear-gradient(63deg, rgba(157,208,196,1) 0%, rgba(79,163,143,1) 100%);
+    padding: 20px 15px;
+    color: #fff;
+    border-top-left-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 10px;
+-webkit-box-shadow: 0 5px 6px 0 rgba(158,158,158,.6);
+box-shadow: 0 5px 6px 0 rgba(158,158,158,.6);
+    border: 1px solid #d1e5e1;
+    position: fixed;
     left: 0px;
+    top: 20em;
+	display:inline-block;
+	    width: 22%;
+    /* bottom: 30em; */
+}
+.left-text-in {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+.left-text-in ul{
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+.left-text-in ul li{
+	margin:0px 0px 0px 0px;
+	padding:0px 20px 0px 0px;
+	display:inline-block;
+	list-style:none;
+}
+.left-heading-text img{
+display:inline-block;
 }
 .left-heading-text h2{
 margin:0px 0px;
@@ -7312,7 +7339,7 @@ font-size:2.5rem;
 /*===  BUTTON ===*/
 .btn {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.5px;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -7419,9 +7446,9 @@ font-size:2.5rem;
 
 /* Primary Button */
 .btn-primary, .btn-primary:active, .btn-primary:focus {
-  color: #47bac1;
-  border: 2px solid #47bac1;
-  background: transparent;
+  color: #fff;
+  border: 2px solid #45d3b7;
+  background: #45d3b7;
 }
 
 .btn-primary:hover {
@@ -8536,6 +8563,36 @@ h4 a:hover{
 .bannercontainer {
 	margin:10px 0px 0px 0px;
 }
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e7e7e7 !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow:none !important;
+    box-shadow: none !important;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.panel-body h2{
+	font-size:2.5rem;
+}
+.sub-primary-btn {
+	 height: 50px;
+}
+.btn-fb {
+    color: #fff;
+    border: 2px solid #1f4e79;
+    background: #1f4e79;
+}
 /* input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
     background-color: rgb(255, 255, 255) !important;
     background-image: none !important;
@@ -8544,9 +8601,9 @@ h4 a:hover{
 }
 input:-internal-autofill-selected {
 	background-color: rgb(255, 255, 255) !important;
-}*/
+} */
 
-/* input:-webkit-autofill,
+ /* input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus
 textarea:-webkit-autofill,

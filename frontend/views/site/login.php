@@ -19,8 +19,15 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
 <div class="row">
 <div class="col-md-5 col-sm-5 col-xs-12">
 <div class="left-heading-text">
-<!-- <img src="<?php //echo $this->theme->baseUrl; ?>/assets/img/login-user-icon.png" class="img-responsive left-block"> -->
+<div class="left-text-in">
+<ul>
+<li>
+<img src="<?php echo $this->theme->baseUrl; ?>/assets/img/login-user.png" class="img-responsive center-block"> 
+</li>
+<li>
 <h2>Login</h2>
+</li>
+</div>
 </div>
 </div>
             <div class="col-md-5 col-md-offset-6 col-sm-8 col-sm-offset-2 col-xs-12">
@@ -44,8 +51,9 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
                       <?= $form->field($model, 'password')->passwordInput(array('maxlength' => 30, 'placeholder' => 'Password','class'=>'form-control'))->label(false) ?>
                     </div>
      
-                    <button type="submit" class="btn btn-primary btn-block">log in</button>
-                    <?php echo $social->getFbLoginLink($callback, ['class'=>'btn btn-default pull-left']); ?>
+                    <button type="submit" class="btn btn-primary btn-block sub-primary-btn">log in</button>
+					<br />	<br />
+                    <?php echo $social->getFbLoginLink($callback, ['class'=>'btn btn-default pull-left btn-fb']); ?>
                     <!--<button type="submit" class="btn btn-default pull-left"><i class="fa fa-facebook" aria-hidden="true"></i><span>log in with facebook</span></button>-->
                      <?php echo kartik\social\GooglePlugin::widget([
     'type'=>kartik\social\GooglePlugin::SIGNIN, 
@@ -64,7 +72,8 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
                     </button>-->
                     <!--<button type="button" class="btn btn-link btn-block">Don't You Have an Account?</button>-->
 	                <!--<button type="button" class="btn btn-link btn-block">Forgot Password?</button>-->
-                    <a class="btn btn-link btn-block" href="<?= Yii::$app->homeUrl . 'user-forgot-password'; ?>">Forgot Password?</a>
+					
+                    <a class="btn btn-link btn-block" style="font-size:12px; margin-top:10px;" href="<?= Yii::$app->homeUrl . 'user-forgot-password'; ?>">Forgot Password?</a>
                  <?php ActiveForm::end(); ?>
                 </div>
               </div>
