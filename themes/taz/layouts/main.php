@@ -93,7 +93,7 @@ use frontend\widgets\Banner;
                 <section class="lightSection clearfix pageHeader">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-xs-6">
                                 <div class="page-title">
                                     <h2><?= $this->title ?></h2>
                                 </div>
@@ -134,13 +134,12 @@ use frontend\widgets\Banner;
             }
 
             //$sectionClass = ''; = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';
+			//echo $controller->action->id;
             ?>
-            <section class="mainContent clearfix <?= $sectionClass ?> productsContent">
-			<div class="logIn-bg">
+            <section class="mainContent clearfix <?= $sectionClass ?> productsContent <?php echo ($controller->action->id == 'signup' || $controller->action->id == 'login') ? 'logIn-bg' : ''; ?> ">
                 <div class="container">
             <?= $content; ?>
                 </div> <!-- .CONTAINER -->
-				</div>
             </section>
 
             <!-- FOOTER -->
