@@ -12,23 +12,27 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="row">
-	<div class="col-md-2 col-sm-3 col-xs-12">
-		<div class="thumbnail">
-			<img src="<?php echo $this->theme->baseUrl; ?>/assets/img/products/profile/profile-image.jpg" alt="profile-image">
+
+	<div class="col-md-12 col-sm-12 col-xs-12">
+	
+		<div class="pull-left">
+		
+		<div class="thumbnail pull-left">
+			<img src="<?php echo $this->theme->baseUrl; ?>/assets/img/products/profile/profile-image.jpg" alt="profile-image" class="img-thumbnail" style="margin:0px 15px 0px 0px;">
 		</div>
-	</div>   
-	<div class="col-md-10 col-sm-9 col-xs-12">
-		<p>
+		<p style="margin:10px 0px 10px 0px;">
 		    Hey there! Welcome to <strong>Talozo</strong>. Now that you are here, let’s get you started. In this short tutorial, you will find all the information needed to setup and start selling!
-		    <br> But first, a little bit about us. We are on a mission to change this world. Make it more beautiful. Revive our lost tradition in arts. Make the world and the people in it aware of the majesty, serenity and intricacy of art form.
-		    <br> We celebrate our partners, which is you. We want you to be able to reach a million people around the world and tell your story through your art. And we are here to help you in your journey.
-		    <br> How do you get started ? It’s simple!
-		    <br> Click on the <strong style="color: green;">Become Seller</strong> button and sign up with your details. After that one of our associates will help you set up the rest!
-		</p>
+		     But first, a little bit about us. We are on a mission to change this world. Make it more beautiful. Revive our lost tradition in arts. Make the world and the people in it aware of the majesty, serenity and intricacy of art form.
+		     We celebrate our partners, which is you. We want you to be able to reach a million people around the world and tell your story through your art. And we are here to help you in your journey.
+		     How do you get started ? It’s simple!Click on the <strong style="color: green;">Become Seller</strong> button and sign up with your details. After that one of our associates will help you set up the rest!
+			</p>
+			
+			<a href="<?php echo Yii::$app->homeUrl . 'site/become-seller-signup'; ?>" class="btn btn-md btn-success-filled btn-rounded pull-right">Become a Seller</a>
+		</div>
 		<p class="pull-right">
 			<!--<button type="button" class="btn btn-lg btn-success-filled btn-rounded" data-toggle="modal" data-target='#signup'>Become a Seller</button>-->
 			<!--<button type="button" class="btn btn-lg btn-success-filled btn-rounded">Become a Seller</button>-->
-                        <a href="<?php echo Yii::$app->homeUrl . 'site/become-seller-signup'; ?>" class="btn btn-lg btn-success-filled btn-rounded">Become a Seller</a>
+        
 		</p>
 	</div>
 </div>

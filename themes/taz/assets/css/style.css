@@ -4008,6 +4008,7 @@ font-size:2.2rem;
 background-image: linear-gradient(to right top, #185278, #00759b, #0098aa, #00bba1, #13da83);
     padding: 20px 15px;
     color: #fff;
+	    border-left: 0px !important;
     border-top-left-radius: 0px;
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 0px;
@@ -4032,7 +4033,7 @@ background-image: linear-gradient(to right top, #185278, #00759b, #0098aa, #00bb
 }
 .left-text-in ul li{
 	margin:0px 0px 0px 0px;
-	padding:0px 20px 0px 0px;
+	padding:0px 15px 0px 0px;
 	display:inline-block;
 	list-style:none;
 }
@@ -4042,7 +4043,7 @@ display:inline-block;
 .left-heading-text h2{
 margin:0px 0px;
 color:#fff;
-font-size:2.5rem;
+font-size: 2.2rem;
 } 
 }
 @media (min-width: 768px) {
