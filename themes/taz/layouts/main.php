@@ -135,8 +135,9 @@ use frontend\widgets\Banner;
 
             //$sectionClass = ''; = ($controller->action->id == 'profiledashboard') ? 'userProfile' : 'logIn signUp productsContent';
 			//echo $controller->action->id;
+			$loginBackgroundActions = ['signup', 'login', 'become-seller-signup'];
             ?>
-            <section class="mainContent clearfix <?= $sectionClass ?> productsContent <?php echo ($controller->action->id == 'signup' || $controller->action->id == 'login') ? 'logIn-bg' : ''; ?> ">
+            <section class="mainContent clearfix <?= $sectionClass ?> productsContent <?php echo (in_array($controller->action->id, $loginBackgroundActions)) ? 'logIn-bg' : ''; ?> ">
                 <div class="container">
             <?= $content; ?>
                 </div> <!-- .CONTAINER -->
@@ -184,9 +185,6 @@ if (class_exists('yii\debug\Module')) {
 }
 ?>
    
-	
-
-
 <?php $this->endBody(); ?>
     </body>
 </html>
