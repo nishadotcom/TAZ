@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			<!--<div class="panel-heading"><h3>sing up</h3></div>-->
 			<div class="panel-body">
 						<div class="panel-logo-in"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/login-user-icon.png" class="img-responsive center-block"></div>
-			<h2 class="text-center">Sign Up</h2>
+			<h2 class="text-center">Become a seller</h2>
 				  <?php //Yii::$app->session->getFlash('msg'); ?>
 
 			 <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
