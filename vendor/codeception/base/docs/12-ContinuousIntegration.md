@@ -1,6 +1,6 @@
 # Continuous Integration
 
-Once you get testing suite up and running you are interested in running your tests regularly. If you ensure that tests are running on every code change or at least once a day you can be sure that no regression is introduced. This allows to keep you system stable. But developers are not so passionate about running all tests manually, they also can forget to execute tests before pushing code to production... The solution is simple, test execution should be automated. Instead of running them locally it is better to have dedicated server responsible for running tests for a team. This way we can ensure that everyone's tests executed, which commit made a regression in codebase, and that we can deploy only once tests pass. 
+Once you get testing suite up and running you are interested in running your tests regularly. If you ensure that tests are running on every code change or at least once a day you can be sure that no regression is introduced. This allows to keep you system stable. But developers are not so passionate about running all tests manually, they also can forget to execute tests before pushing code to production... The solution is simple, test execution should be automated. Instead of running them locally it is better to have dedicated server responsible for running tests for a team. This way we can ensure that everyone's tests executed, which commit made a regression in codebase, and that we can deploy only once tests pass.
 
 There are many Continuous Integration Servers out there. We will try to list basic steps to setup Codeception tests with them. If your CI system is not mentioned, you can get the idea by analogy. Please also help us to extend this guide by adding instructions for different CIs.
 
@@ -31,7 +31,7 @@ At first we need to create build project. Depending on your needs you can set up
 We need to define build steps. The most simple setup may look like this:
 
 ```
-php codecept run
+php vendor/bin/codecept run
 ```
 
 ![Jenkins Codeception Build Step](http://codeception.com/images/jenkins/Jenk5.png)
@@ -47,7 +47,7 @@ But we don't want to analyze console output for each failing build. Especially I
 Now let's update our build step to generate xml:
 
 ```
-php codecept run --xml
+php vendor/bin/codecept run --xml
 ```
 
 and ask Jenkins to collect resulted XML. This can be done as part of Post-build actions. Let's add *Publish xUnit test result report* action and configure it to use with PHPUnit reports.
@@ -60,13 +60,12 @@ Now we should specify path to PHPUnit style XML reports. In case of standard Cod
 
 Now for all builds we will see results trend graph that shows us percentage of passing and failing tests. We also will see a **Latest Test Result** link which will lead to to the page where all executed tests and their stats listed in a table.
 
-
 ### HTML Reports
 
-To get more details on steps executed you can generate HTML report and use Jenkins to display them. 
+To get more details on steps executed you can generate HTML report and use Jenkins to display them.
 
 ```
-php codecept run --html
+php vendor/bin/codecept run --html
 ```
 
 Now we need HTML Publisher plugin configured to display generated HTML files. It should be added as post-build action similar way we did it for XML reports.
@@ -86,7 +85,7 @@ TeamCity is a hosted solution from JetBrains. The setup of it can be a bit trick
 
 ```yaml
 reporters:
-  report: PHPUnit_Util_Log_TeamCity  
+  report: PHPUnit_Util_Log_TeamCity
 ```
 
 As an alternative you can use 3rd-party [TeamCity extension](https://github.com/neronmoon/TeamcityCodeception) for better reporting.
@@ -94,7 +93,7 @@ As an alternative you can use 3rd-party [TeamCity extension](https://github.com/
 After you create build project you should define build step with Codeception which is
 
 ```
-php codecept run --report
+php vendor/bin/codecept run --report
 ```
 
 ![build step](http://codeception.com/images/teamcity/build.png)
@@ -110,10 +109,10 @@ Once you execute your first build you should see detailed report inside TeamCity
 Travis CI is popular service CI with good GitHub integration. Codeception is self-tested with Travis CI. There nothing special about configuration. Just add to the bottom line of travis configuration:
 
 ```yaml
-php codecept run 
+php vendor/bin/codecept run
 ```
 
-More details on configuration can be learned from Codeception's [`.travis.yml`](https://github.com/Codeception/Codeception/blob/master/.travis.yml). 
+More details on configuration can be learned from Codeception's [`.travis.yml`](https://github.com/Codeception/Codeception/blob/master/.travis.yml).
 
 Travis doesn't provide visualization for XML or HTML reports so you can't view reports in format any different than console output. However, Codeception produces nice console output with detailed error reports.
 
