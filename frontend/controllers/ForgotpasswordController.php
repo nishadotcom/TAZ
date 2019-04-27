@@ -49,8 +49,8 @@ class ForgotpasswordController extends Controller
             //echo '<pre>'; print_r(Yii::$app->Common->mysqlDateTime()); exit;
             if($model->save()){
                 $baseURL = Url::base('http');
-                $forgotPwdURL = $baseURL.'/update/'.$model->password_key;
-                $unsetForgotPwdURL = $baseURL.'/unsetpassword/'.$model->password_key;
+                $forgotPwdURL = $baseURL.'/forgotpassword/update/'.$model->password_key;
+                $unsetForgotPwdURL = $baseURL.'/forgotpassword/unsetpassword/'.$model->password_key;
                 $user = $userModel->firstname;
                 $mailContent = $this->renderPartial('forgotPwdMail', ['user'=>$user,'forgotPwdURL'=>$forgotPwdURL, 'unsetForgotPwdURL'=>$unsetForgotPwdURL]); 
                 $to = $model->userEmail;
