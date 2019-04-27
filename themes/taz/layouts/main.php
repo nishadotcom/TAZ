@@ -95,7 +95,15 @@ use frontend\widgets\Banner;
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="page-title">
-                                    <h2><?= $this->title ?></h2>
+                                    <?php 
+                                    $excludeTitle = ['login', 'signup'];
+                                    if(!in_array($controller->action->id , $excludeTitle)){
+                                        ?>
+                                        <h2><?= $this->title ?></h2>
+                                        <?php
+                                    }
+                                    ?>
+                                    
                                 </div>
                             </div>
                             <?php /* ?>

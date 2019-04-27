@@ -9,7 +9,7 @@ use yii\bootstrap\ActiveForm;
 use kartik\social\Module;
 use yii\helpers\Url;
 
-//$this->title = 'Login';
+$this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 $social = Yii::$app->getModule('social');
 $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url you want to redirect
@@ -73,7 +73,7 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
                     <!--<button type="button" class="btn btn-link btn-block">Don't You Have an Account?</button>-->
 	                <!--<button type="button" class="btn btn-link btn-block">Forgot Password?</button>-->
 					
-                    <a class="btn btn-link btn-block" style="font-size:12px; margin-top:10px;" href="<?= Yii::$app->homeUrl . 'user-forgot-password'; ?>">Forgot Password?</a>
+                    <a class="btn btn-link btn-block" style="font-size:12px; margin-top:10px;" href="<?= Yii::$app->homeUrl . 'forgotpassword'; ?>">Forgot Password?</a>
                  <?php ActiveForm::end(); ?>
                 </div>
               </div>
