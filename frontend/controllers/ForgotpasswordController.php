@@ -49,8 +49,8 @@ class ForgotpasswordController extends Controller
             //echo '<pre>'; print_r(Yii::$app->Common->mysqlDateTime()); exit;
             if($model->save()){
                 $baseURL = Url::base('http');
-                $forgotPwdURL = $baseURL;
-                $unsetForgotPwdURL = $baseURL.'update/'.$model->password_key;
+                $forgotPwdURL = $baseURL.'update/'.$model->password_key;
+                $unsetForgotPwdURL = $baseURL.'unsetpassword/'.$model->password_key;
                 $user = $userModel->firstname;
                 $mailContent = $this->renderPartial('forgotPwdMail', ['user'=>$user,'forgotPwdURL'=>$forgotPwdURL, 'unsetForgotPwdURL'=>$unsetForgotPwdURL]); 
                 $to = $model->userEmail;
@@ -159,6 +159,26 @@ class ForgotpasswordController extends Controller
                 'model' => $model,
             ]);
         }else{
+            Yii::$app->session->setFlash('error', "Session Key Expired. Please Login");
+            return $this->redirect('/login');
+        }
+        
+    }
+
+    public function actionUnsetpassword($id)
+    {
+        $model = Forgotpassword::findOne(['password_key'=>$id, 'status'=>'Active']);
+        //$model->scenario = 'updateForgorPassword';
+        if($model){
+            $model->status = 'Expired';
+            if($model->save()){  
+                Yii::$app->session->setFlash('success', "Your forgot password session has been unset");
+                return $this->redirect('/login');
+            }else{  
+                Yii::$app->session->setFlash('error', "Session Key Expired. Please Login");
+                return $this->redirect('/login');
+            }            
+        }else{ echo 'OUT'; exit;
             Yii::$app->session->setFlash('error', "Session Key Expired. Please Login");
             return $this->redirect('/login');
         }
