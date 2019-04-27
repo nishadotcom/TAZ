@@ -131,8 +131,9 @@ class ForgotpasswordController extends Controller
     public function actionUpdate($id)
     {
         $model = Forgotpassword::findOne(['password_key'=>$id, 'status'=>'Active']);
-        $model->scenario = 'updateForgorPassword';
+        
         if($model){
+            $model->scenario = 'updateForgorPassword';
             if ($model->load(Yii::$app->request->post())) {
                 $model->status = 'Completed'; 
                 if($model->save()){
