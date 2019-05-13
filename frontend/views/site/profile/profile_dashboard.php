@@ -16,7 +16,7 @@ $this->title = 'My Account';
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   <strong>Warning!</strong> You have one unpaid order. 
                 </div>-->
-                <h3 id="testTour">Wellcome <span><?php echo $user['firstname'].'&nbsp;'.$user['lastname'];?></span></h3>
+                <h3 id="testTour">Hello <span><?php echo $user['firstname'];?> !</span></h3>
                 <hr>
                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->

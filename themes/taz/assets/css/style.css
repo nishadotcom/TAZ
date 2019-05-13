@@ -6819,7 +6819,7 @@ font-size: 2.2rem;
 }
 
 /*=== 15.2 PROFILE ===*/
-.profile .thumbnail .caption .btn-primary, .profile .form-horizontal .form-group .btn-primary {
+.profile .thumbnail .caption .btn-primary, .profile .form-horizontal .form-group .btn-primary, .myAddress .btn-primary {
   height: 45px;
   font-weight: 700;
   color: #ffffff;
