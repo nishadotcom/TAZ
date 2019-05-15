@@ -48,7 +48,7 @@ class OnSale extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'on_sale_product_id' => 'On Sale Product ID',
-            'discount' => 'Discount',
+            'discount' => 'Discount Percentage',
             'status' => 'Status',
             'created_on' => 'Created On',
         ];

@@ -19,7 +19,7 @@ $this->title = 'My Products';
           <div class="on-sale-form">
             <?php $form = ActiveForm::begin(); ?>
             <?= $form->field($model, 'on_sale_product_id')->hiddenInput(['value'=>$productId])->label(FALSE); ?>
-            <?= $form->field($model, 'discount')->textInput() ?>
+            <?= $form->field($model, 'discount')->textInput(['placeholder'=>'Enter the percentage figure you want to discount']) ?>
             <div class="form-group">
               <?= Html::submitButton('Promote', ['class' => 'btn btn-success']) ?>
             </div>
