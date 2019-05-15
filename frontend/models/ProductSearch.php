@@ -46,7 +46,7 @@ class ProductSearch extends Product
         if(strpos($url, "backend")){
             $query = Product::find()->orderBy(['id'=>SORT_DESC]);
         }else{
-            $query = Product::find()->where(['product_owner_id'=>Yii::$app->user->id])->orderBy(['id'=>SORT_DESC]);
+            $query = Product::find()->with('productImages')->where(['product_owner_id'=>Yii::$app->user->id])->orderBy(['id'=>SORT_DESC]);
         }
         
 

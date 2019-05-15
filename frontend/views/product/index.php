@@ -12,6 +12,8 @@ use yii\helpers\ArrayHelper;
 
 $this->title = 'My Products';
 $this->params['breadcrumbs'][] = $this->title;
+$pathPrdImg   = Yii::$app->params['PATH_PRODUCT_IMAGE'];
+$prdNoImg     = 'noImage.png';
 ?>
 
 <div class="row">
@@ -25,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <!--<h4>-->
                     <a class="btn btn-primary" href="<?php echo Yii::$app->homeUrl.'product/create'; ?>" title="Add New Product">Add New Product</a>
                     <!--</h4>-->
-                <div class="table-responsive">
+                <div class="table-responsive"> 
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
@@ -45,6 +47,19 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'id',
                             //'product_category_id',
                             //'product_subcategory_id',
+                            [
+                                'attribute' => 'cover_photo',
+                                'format' => 'raw',
+                                'value' => function($data) use ($pathPrdImg){
+                                    if(isset($data->productImages[0])){
+                                        $coverImage = ($data->productImages[0]->crop_image) ? $data->productImages[0]->crop_image : $data->productImages[0]->cover_photo;
+                                    }else{
+                                        $coverImage = '';
+                                    }
+                                    $prdImage   = (isset($data->productImages[0])) ? $pathPrdImg.$data->product_code.'/'.$coverImage : $pathPrdImg.$prdNoImg;
+                                    return Html::img($prdImage, ['width'=>'60']);
+                                }
+                            ],
                             'product_code:ntext',
                             'product_name:ntext',
                             // 'product_owner_id',
@@ -77,7 +92,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'template'=>'{promote} {view} {update} {delete}',
                                 'buttons'=>[
                                     'promote' => function($url,$model,$key){
-                                        $btn = Html::a('Promote', ['/product/promote/'.$key], ['class'=>'btn btn-primary btn-sm', 'title'=>'Promote']);
+                                        $btn = Html::a('<span class="glyphicon glyphicon-bullhorn"></span>', ['/product/promote/'.$key], ['class'=>'', 'title'=>'Promote']);
                                         /*$btn = Html::a("Promote",[
                                             'value'=>Yii::$app->urlManager->createUrl('product/promote/'.$key), //<---- here is where you define the action that handles the ajax request
                                             'class'=>'promote',
