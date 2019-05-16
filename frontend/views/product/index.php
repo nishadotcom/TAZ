@@ -49,6 +49,7 @@ $prdNoImg     = 'noImage.png';
                             //'product_subcategory_id',
                             [
                                 'attribute' => 'cover_photo',
+                                'label' => 'Image',
                                 'format' => 'raw',
                                 'value' => function($data) use ($pathPrdImg){
                                     if(isset($data->productImages[0])){
@@ -60,7 +61,7 @@ $prdNoImg     = 'noImage.png';
                                     return Html::img($prdImage, ['width'=>'60']);
                                 }
                             ],
-                            'product_code:ntext',
+                            //'product_code:ntext',
                             'product_name:ntext',
                             // 'product_owner_id',
                             'product_price',
