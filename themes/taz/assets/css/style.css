@@ -8322,6 +8322,10 @@ cite {
   vertical-align: top;
 }
 
+#singleProductShipping .input-group-btn {
+  vertical-align: middle;
+}
+
 .btn-newsletter {
   padding: 14px 24px;
   margin-left: 20px !important;

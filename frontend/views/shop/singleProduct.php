@@ -108,7 +108,7 @@ $sellerAbout = UserDetail::find()->where(['user_id'=>$productData->productOwner-
                         </div>
                         <div id="shipping" class="tab-pane fade">
                             <p></p>
-                            <div id="newsletter">
+                            <div id="singleProductShipping">
                                 <div class="input-group">
                                     <input type="text" class="form-control input-sm" placeholder="Enter Delivery Pincode" style=" min-height: 37px;margin-bottom: 0px;width: 274px;">
                                     <span class="input-group-btn">

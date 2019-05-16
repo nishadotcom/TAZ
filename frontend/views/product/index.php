@@ -92,7 +92,7 @@ $prdNoImg     = 'noImage.png';
                                 'template'=>'{promote} {view} {update} {delete}',
                                 'buttons'=>[
                                     'promote' => function($url,$model,$key){
-                                        $btn = Html::a('<span class="glyphicon glyphicon-bullhorn"></span>', ['/product/promote/'.$key], ['class'=>'', 'title'=>'Promote']);
+                                        $btn = Html::a('<span class="glyphicon glyphicon-bullhorn"></span>', ['/product/promote/'.$key], ['class'=>'', 'title'=>'Promote / Depromote']);
                                         /*$btn = Html::a("Promote",[
                                             'value'=>Yii::$app->urlManager->createUrl('product/promote/'.$key), //<---- here is where you define the action that handles the ajax request
                                             'class'=>'promote',

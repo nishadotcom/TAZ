@@ -21,7 +21,8 @@ $this->title = 'My Products';
             <?= $form->field($model, 'on_sale_product_id')->hiddenInput(['value'=>$productId])->label(FALSE); ?>
             <?= $form->field($model, 'discount')->textInput(['placeholder'=>'Enter the percentage figure you want to discount']) ?>
             <div class="form-group">
-              <?= Html::submitButton('Promote', ['class' => 'btn btn-success']) ?>
+              <?= Html::submitButton('Promote', ['class' => 'btn btn-success', 'value'=>'Promote']) ?>
+              <?= Html::submitButton('Depromote', ['class' => 'btn btn-warning', 'value'=>'Depromote']) ?>
             </div>
             <?php ActiveForm::end(); ?>
           </div>
