@@ -17,25 +17,18 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
 
                 
 <div class="row">
-<div class="col-md-5 col-sm-5 col-xs-12">
-<div class="left-heading-text">
-<div class="left-text-in">
-<ul>
-<li>
-<img src="<?php echo $this->theme->baseUrl; ?>/assets/img/login-user.png" class="img-responsive center-block"> 
-</li>
-<li>
-<h2>Login</h2>
-</li>
-</div>
-</div>
-</div>
+
             <div class="col-md-5 col-md-offset-6 col-sm-8 col-sm-offset-2 col-xs-12">
               <div class="panel panel-default">
                 <!--<div class="panel-heading"><h3>log in</h3></div>-->
                 <div class="panel-body">
-				<div class="panel-logo-in"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/login-user-icon.png" class="img-responsive center-block"></div>
+				
+
+			
+						<div class="login-bg-in">		
 			<h2 class="text-center">Login</h2>
+			
+			</div>
                   <?php // Yii::$app->session->getFlash('msg'); ?>
                   <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
 				 

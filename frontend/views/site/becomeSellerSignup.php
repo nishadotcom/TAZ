@@ -10,27 +10,17 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="row">
-<div class="col-md-5 col-sm-5 col-xs-12">
-<div class="left-heading-text">
-<div class="left-text-in">
-<ul>
-<li>
-<img src="<?php echo $this->theme->baseUrl; ?>/assets/img/signup-user-icon.png" class="img-responsive center-block"> 
-</li>
-<li>
-<h2>Become a seller</h2>
-</li>
-</div>
-</div>
-</div>
+
 		<div class="col-md-5 col-md-offset-6 col-sm-8 col-sm-offset-2 col-xs-12">
 		  <div class="panel panel-default">
 			<!--<div class="panel-heading"><h3>sing up</h3></div>-->
 			<div class="panel-body">
-						<div class="panel-logo-in"><img src="<?php echo $this->theme->baseUrl; ?>/assets/img/login-user-icon.png" class="img-responsive center-block"></div>
+			
+			<div class="login-bg-in">		
 			<h2 class="text-center">Become a seller</h2>
-				  <?php //Yii::$app->session->getFlash('msg'); ?>
-
+			<?php //Yii::$app->session->getFlash('msg'); ?>
+			</div>
+			
 			 <?php $form = ActiveForm::begin(['id' => 'signup-form']); ?>
 				<div class="form-group">
 				  <label for="">First Name</label>
