@@ -2519,7 +2519,7 @@ body.bodyColor.container {
   transform: translate(-50%, -50%);
 }
 .home-image-box .productImage .productMasking ul{
-  top: 10% !important;
+ /* top: 10% !important; */
 }
 /*.mainContent{
   margin-top: 80px;
@@ -8684,7 +8684,10 @@ position: absolute;
     left: 1.5em;
 	    top: -25px;
 }
-
+.menu-blue-bg {
+	background:#1e4e79;
+	
+}
 @media (max-width: 767px) { 
 .login-bg-in h2{
 	font-size:1.8rem;

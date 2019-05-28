@@ -6,7 +6,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
 ?>
 
 <div class="row">
-    <div class="col-md-3 col-sm-4 col-md-push-9 col-sm-push-8 col-xs-12 sideBar">
+    <div class="sideBar">
         <?php /* ?><div class="panel panel-default filterNormal">
             <div class="panel-heading">Product Categories</div>
             <div class="panel-body">
@@ -50,8 +50,9 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
             </div>
         </div>-->
     </div>
-    <div class="col-md-9 col-sm-8 col-md-pull-3 col-sm-pull-4 col-xs-12">
-        <div class="row filterArea">
+	
+    <div class="col-md-9 col-sm-8 col-xs-12">
+        <div class="filterArea">
             <div class="col-xs-6">
                 <select name="categoryProductsSortBy" id="categoryProductsSortBy"><!-- class="select-drop"-->
                     <option value="">Default sorting</option>
@@ -68,7 +69,7 @@ $cartProducts = ($cartData) ? array_column($cartData, 'cart_product_id') : [];
               </div>
             </div>-->
         </div>
-        <div class="row productListSingle">
+        <div class="productListSingle">
             <?php
             if ($categoryProducts) {
                 foreach ($categoryProducts as $key => $categoryProduct) {

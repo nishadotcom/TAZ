@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="../TEMPLATE/css/bootstrap.min.css" rel="stylesheet">
+<link href="../TEMPLATE/css/style.css" rel="stylesheet">
+<link href="../TEMPLATE/fonts/css/all.css" rel="stylesheet">
+<script defer src="../TEMPLATE/fonts/js/all.js"></script>
+  <link href="../TEMPLATE/fonts/css/fontawesome.css" rel="stylesheet">
+  <link href="../TEMPLATE/fonts/css/brands.css" rel="stylesheet">
+  <link href="../TEMPLATE/fonts/css/solid.css" rel="stylesheet">
+<!--<link href="../TEMPLATE/css/batch-icons.css" rel="stylesheet"> -->
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="../TEMPLATE/css/batch-icons.css">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding:0;
+      color: #72848c;
+}
+
+/* Style tab links */
+.tablink {
+     background-color: #8296b0;
+    color: #000;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 15px;
+    width: 25%;
+}
+.light-blue-bg h2 {
+color:#fff;
+}
+.tablink img {
+    position: relative;
+    left: -6px;
+}
+.tablink:hover {
+  background-color: #de1c4a;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-bottom: 0px;
+	text-transform: capitalize;
+	color:#111111;
+	margin:0px;
+	font-family: 'Poppins', sans-serif;
+	font-weight:400;
+}
+
+h1,
+#dashboard {background: #fff; color:#565656;}
+#my-bio {background: #fff;}
+#my-address {background: #fff;}
+#my-order {background: #fff;}
+
+@media (max-width: 767px){
+.tablink {
+    background-color: #8296b0;
+    color: #000;
+     float: unset;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 15px;
+    width: 100%;
+	    margin: 0px 0px 5px 0px !important;
+}
+}
+</style>
+</head>
+<body>
+<div class="menu-blue-bg">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 col-md-4 col-sm-4 col-xl-4">
+<div class="d-flex justify-content-start">
+<div class="p-2">
+<img class="" src="../TEMPLATE/img/dashboard-icon-001.png" />
+</div>
+<div class="light-blue-bg p-4">
+<h2>Dashboard
+</h2>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-8 col-md-8 col-sm-8 col-xl-8 ">
+<div class="d-md-flex d-block align-self-center float-right menu-btn-space">
+
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('dashboard', this, '#de1c4a', '#fff')" id="defaultOpen">
+<img class="" src="../TEMPLATE/img/dashboard-icon.png" /> <span>Dashboard</span></button>
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('my-bio', this, '#de1c4a', '#fff')"> 
+<img class="" src="../TEMPLATE/img/user-icon.png" /> <span>My Bio</span></button>
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('my-address', this, '#de1c4a', '#fff')">
+<img class="" src="../TEMPLATE/img/location-map-icon.png" /> <span>My Address</span></button>
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('my-order', this, '#de1c4a', '#fff')" >
+<img class="" src="../TEMPLATE/img/my-order-icon.png" /> <span>My Orders</span></button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="dashboard" class="tabcontent">
+<!-- <div class="container">
+<div class="row">
+<div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12"> -->
+
+
+<main class="container" role="main">
+					<div class="row custon-four-box">
+						<div class="col-md-6 col-lg-6 col-xl-3 mb-5">
+							<div class="card card-tile card-xs bg-primary bg-gradient text-center">
+								<div class="card-body p-2">
+									<!-- Accepts .invisible: Makes the items. Use this only when you want to have an animation called on it later -->
+									<div class="tile-left">
+										<i class="fas fa-user fa-5x"></i>
+									</div>
+									<div class="tile-right">
+										<div class="tile-number">1,359</div>
+										<div class="tile-description">Customers Online</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 col-xl-3 mb-5">
+							<div class="card card-tile card-xs bg-secondary bg-gradient text-center">
+								<div class="card-body p-2">
+									<div class="tile-left">
+										<i class="fas fa-user fa-5x"></i>
+									</div>
+									<div class="tile-right">
+										<div class="tile-number">$7,349.90</div>
+										<div class="tile-description">Today's Sales</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 col-xl-3 mb-5">
+							<div class="card card-tile card-xs bg-primary bg-gradient text-center">
+								<div class="card-body p-2">
+									<div class="tile-left">
+										<i class="fas fa-user fa-5x"></i>
+									</div>
+									<div class="tile-right">
+										<div class="tile-number">26</div>
+										<div class="tile-description">Open Tickets</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 col-xl-3 mb-5">
+							<div class="card card-tile card-xs bg-secondary bg-gradient text-center">
+								<div class="card-body p-2">
+									<div class="tile-left">
+										<i class="fas fa-user fa-5x"></i>
+									</div>
+									<div class="tile-right">
+										<div class="tile-number">476</div>
+										<div class="tile-description">New Orders</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-6 col-xl-8 mb-5">
+							<div class="card">
+								<div class="card-header">
+									Sales Overview
+									
+								</div>
+								<div class="card-body">
+									<div class="card-chart" data-chart-color-1="#07a7e3" data-chart-color-2="#32dac3" data-chart-legend-1="Sales ($)" data-chart-legend-2="Orders" data-chart-height="281"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 col-xl-4 mb-5">
+							<div class="card card-md">
+								<div class="card-header">
+									Traffic Sources
+									
+								</div>
+								<div class="card-body text-center">
+								
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-4 mb-5">
+							<div class="card card-sm bg-info">
+								<div class="card-body">
+									<div class="mb-4 clearfix">
+										<div class="float-left text-warning text-left">
+											<i class="fas fa-user fa-5x"></i>
+										</div>
+										<div class="float-right text-right">
+											<h6 class="m-0">Twitter Followers</h6>
+										</div>
+									</div>
+									<div class="text-right clearfix">
+										<div class="display-4">65,452</div>
+										<div class="m-0">+72 Today</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5">
+							<div class="card card-sm">
+								<div class="card-body">
+									<div class="mb-4 clearfix">
+										<div class="float-left text-warning text-left">
+											<i class="fas fa-user fa-5x"></i>
+										</div>
+										<div class="float-right text-right">
+											<h6 class="m-0">Reviews</h6>
+										</div>
+									</div>
+									<div class="text-right clearfix">
+										<div class="display-4">7,842</div>
+										<div class="m-0">
+											<a href="#">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-4 mb-5">
+							<div class="card card-sm bg-danger">
+								<div class="card-body">
+									<div class="mb-4 clearfix">
+										<div class="float-left text-left">
+											<i class="fas fa-user fa-5x"></i>
+										</div>
+										<div class="float-right text-right">
+											<h6 class="m-0">Products Returned</h6>
+										</div>
+									</div>
+									<div class="text-right clearfix">
+										<div class="display-4">231</div>
+										<div class="m-0">-4% Today</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-5 col-xl-3 mb-5">
+							<div class="card card-md card-team-members">
+								<div class="card-header">
+									Team Members
+								</div>
+								<div class="card-media-list mCustomScrollbar _mCS_1 mCS-autoHide"><div id="mCSB_1" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" style="max-height: 305.004px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+									
+
+
+									<div class="media clickable" data-qp-link="profiles-member-profile.html">
+										<div class="profile-picture bg-gradient bg-primary float-right d-flex mr-3">
+											<img src="../TEMPLATE/img/profile-pic-6.jpg" width="44" height="44" class="mCS_img_loaded">
+										</div>
+										<div class="media-body">
+											<div class="heading mt-1">
+												Jacklin O'neil
+											</div>
+											<div class="subtext">jakjak</div>
+										</div>
+									</div>
+								</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 158px; max-height: 295px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-7 col-xl-6 mb-5">
+							<div class="card card-md card-customer-location">
+								<div class="card-header">
+									Customer Location
+								</div>
+								<div class="card-body">
+									<div class="card-chart" data-chart-color-selected="#07a7e3">
+										
+									<div id="customer-location" style="width: 461.031px; height: 20px; position: relative; overflow: hidden; background-color: rgb(255, 255, 255);"> </div></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-xl-3 mb-5">
+							<div class="row mb-4">
+								<div class="col-sm-12">
+									<div class="card card-sm bg-primary bg-gradient text-center">
+										<div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-bottom: 0px; position: relative;">
+											<i class="fas fa-user fa-5x"></i>
+											<h6 class="mt-1">Database Load</h6>
+											<div class="card-chart" data-chart-color-1="#FFFFFF" data-chart-color-2="#FFFFFF" style="position: absolute; bottom: 0px;"><canvas id="database-load" width="240" height="82" style="width: 240.5px; height: 82px; display: block;"></canvas></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="card card-sm bg-secondary bg-gradient text-center">
+										<div class="card-body" style="padding-left: 0px; padding-right: 0px;">
+											<div class="card-chart" data-chart-color-1="#FFFFFF" data-chart-color-2="#FFFFFF"></div>
+											<h6>Profit/Loss (18 Months)</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-xl-4 mb-5">
+							<div class="card card-task card-md">
+								<div class="card-header">
+									Task List
+								
+								
+								</div>
+								<div class="card-task-list mCustomScrollbar _mCS_4 mCS-autoHide">
+								<div id="" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 263.004px;">
+								<div id="" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+								
+								</div>
+								<div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-dark mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 109px; max-height: 253px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div>
+								<div class="mCSB_draggerRail"></div></div></div></div></div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-xl-3 mb-5">
+							<div class="card card-md bg-primary bg-gradient text-center card-goal-reached">
+								<!-- Accepts qp-animate-type which contains an optional animation type from animate.css -->
+								<div class="card-body">
+									<h6 class="my-5">Goal Reached</h6>
+									<i class="fas fa-user fa-5x"></i>
+									<div class="display-4 mt-3">4,294</div>
+									<p>of 4,000 Target Downloads</p>
+									<p>Congratulations! You surpassed your target goal.</p>
+									<a class="btn btn-secondary waves-effect waves-light">See Details</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-5 mb-5">
+							<div class="card card-activity card-md">
+								<div class="card-header">
+									Activity
+								</div>
+								<div class="card-media-list mCustomScrollbar _mCS_2 mCS-autoHide"><div id="mCSB_2" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 305.004px;"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+									<div class="media clickable" data-qp-link="task-list.html">
+										<div class="profile-picture bg-gradient bg-primary has-message float-right d-flex mr-3">
+											<img src="../TEMPLATE/img/profile-pic.jpg" width="44" height="44" class="mCS_img_loaded">
+										</div>
+										<div class="media-body">
+											<div class="heading mt-1">
+												You were assigned a new task.
+											</div>
+											<div class="subtext">by Johanna Quinn</div>
+										</div>
+									</div>
+
+									<div class="media clickable" data-qp-link="task-list.html">
+										<div class="profile-picture bg-gradient bg-primary has-message float-right d-flex mr-3">
+											<img src="../TEMPLATE/img/profile-pic-3.jpg" width="44" height="44" class="mCS_img_loaded">
+										</div>
+										<div class="media-body">
+											<div class="heading mt-1">
+												Teal'c Jaffa was added to your team members.
+											</div>
+											<div class="subtext">by George Hammond</div>
+										</div>
+									</div>
+
+
+									
+								</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-dark mCSB_scrollTools_vertical mCSB_scrollTools_onDrag_expand" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 152px; max-height: 295px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-5">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									User Management
+								</div>
+								<div class="card-table table-responsive">
+									<table class="table table-hover align-middle">
+										<thead class="thead-light">
+											<tr>
+												<th>Member</th>
+												<th>Email</th>
+												<th class="text-center">Status</th>
+												<th>Created</th>
+												<th class="text-right">Action</th>
+											</tr>
+										</thead>
+										<tbody>
+										
+											<tr>
+												<td>
+													<div class="media">
+														<div class="profile-picture bg-gradient bg-primary has-message float-right d-flex mr-3">
+															<img src="../TEMPLATE/img/profile-pic-3.jpg" width="44" height="44">
+														</div>
+														<div class="media-body">
+															<div class="heading mt-1">
+																Teal'c Jaffa
+															</div>
+															<div class="subtext">tealc</div>
+														</div>
+													</div>
+												</td>
+												<td>
+													<a href="#">tealc.jaffa@kawoosh.com</a>
+												</td>
+												<td class="text-center">
+													<span class="badge badge-success">Reviewing</span>
+												</td>
+												<td>15th Jan 2017</td>
+												<td class="text-right">
+													<a class="btn btn-primary waves-effect waves-light">
+														<i class="fas fa-eye fa-1x"></i>
+													</a>
+													<a class="btn btn-success waves-effect waves-light">
+														<i class="fas fa-eye fa-1x"></i>
+													</a>
+												</td>
+											</tr>
+											
+											
+											<tr>
+												<td>
+													<div class="media">
+														<div class="profile-picture bg-gradient bg-primary float-right d-flex mr-3">
+															<img src="../TEMPLATE/img/profile-pic-5.jpg" width="44" height="44">
+														</div>
+														<div class="media-body">
+															<div class="heading mt-1">
+																Daniella Jackson
+															</div>
+															<div class="subtext">jacksond</div>
+														</div>
+													</div>
+												</td>
+												<td>
+													<a href="#">daniella.jackson@chabaai.com</a>
+												</td>
+												<td class="text-center">
+													<span class="badge badge-default">Banned</span>
+												</td>
+												<td>5th Jan 2017</td>
+												<td class="text-right">
+													<a class="btn btn-primary waves-effect waves-light">
+														<i class="fas fa-eye fa-1x"></i>
+													</a>
+													<a class="btn btn-success waves-effect waves-light">
+														<i class="fas fa-eye fa-1x"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="media">
+														<div class="profile-picture bg-gradient bg-primary float-right d-flex mr-3">
+															<img src="../TEMPLATE/img/profile-pic-6.jpg" width="44" height="44">
+														</div>
+														<div class="media-body">
+															<div class="heading mt-1">
+																Jacklin O'neil
+															</div>
+															<div class="subtext">jakjak</div>
+														</div>
+													</div>
+												</td>
+												<td>
+													<a href="#">jack.oneill@ancientgene.com</a>
+												</td>
+												<td class="text-center">
+													<span class="badge badge-info">Action Required</span>
+												</td>
+												<td>1st Jan 2017</td>
+												<td class="text-right">
+													<a class="btn btn-primary waves-effect waves-light">
+														<i class="fas fa-eye fa-1x"></i>
+													</a>
+													<a class="btn btn-success waves-effect waves-light">
+														<i class="fas fa-eye fa-1x"></i>
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-md-12">
+							
+						</div>
+					</div>
+				</main>
+
+
+
+
+<!--
+  </div>
+  </div>
+</div> -->
+
+</div>
+
+<div id="my-bio" class="tabcontent">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 col-md-4 col-sm-4 col-xl-4">
+  <h3>2</h3>
+  <p>Home is where the heart is..</p>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div id="my-address" class="tabcontent">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 col-md-4 col-sm-4 col-xl-4">
+  <h3>3</h3>
+  <p>Home is where the heart is..</p>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div id="my-order" class="tabcontent">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+
+
+      <div class="modal-content modal-order">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<div>
+          <div class="d-md-flex d-block">
+  <div class="p-2 col-12 col-md-3"><h4>ORDER PLACED</h4>
+ <p class="p-white">30 May 2019</p>
+  </div>
+  <div class="p-2 col-12 col-md-2"><h4>TOTAL</h4>
+  <p class="p-white"> 678.00</p></div>
+  <div class="p-2 col-12 col-md-2"><h4 class="text-left">SHIP TO</h4>
+  <p class="text-left">Dohni</p></div>
+  <div class="p-2 ml-auto col-12 col-md-4"><h4 class="text-right"> ORDER # 404-5569800-29086543</h4>
+		<a href="#" class="text-right">Order Details Invoice</a></div>
+</div>
+        </div>
+		</div>
+        
+        <!-- Modal body -->
+        <div class="modal-body order-info">
+		<div class="row">
+        <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+		<h4 class="text-left">Delivered 27-Apr-2019</h4>
+		<p>Package was handed directly to the customer.</p>
+		<p>Signed by: Vijayakanth.</p>
+		</div>
+		<div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3 align-self-end">
+		<button type="button" class="btn btn-primary btn-sm w-100 track-btn">Track Page</button>
+		</div>
+		</div>
+		<div class="row">
+        <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+		&nbsp;
+		</div>
+		 <div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3">
+		&nbsp;
+		</div>
+        </div>
+		
+			<div class="row">
+        <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+		<div class="d-md-flex">
+		
+		 <div class="p-0 col-12 col-md-2">
+			<img src="../TEMPLATE/img/61ZCAuL5sGL._SL1500_.jpg" class="img-fluid">
+		</div>
+		<div class="p-0 col-12 col-md-10 px-3 product-info">
+			<a href="#" title="Product" class=""><h4>Fortex 80 cm (32 inches) HD Ready IPS LED TV FX32Q01 (Black) </h4></a>
+			<p>Sold by: Cloudtail India</p>
+			<p>Return window closed on 07-July-2019</p>
+			<p class="red-text">25000.00</p>
+			<button type="button" class="btn btn-primary btn-sm product-info-btn ">Buy it again</button>
+		</div>
+		
+		</div>
+		</div>
+		 <div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3 align-self-end">
+		<button type="button" class="btn btn-primary btn-sm w-100 review-btn">Write a product review</button>
+		</div>
+        </div>
+</div>
+
+
+  </div>
+  
+        <div class="modal-content modal-order">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<div>
+          <div class="d-md-flex d-block">
+  <div class="p-2 col-12 col-md-3"><h4>ORDER PLACED</h4>
+ <p class="p-white">30 May 2019</p>
+  </div>
+  <div class="p-2 col-12 col-md-2"><h4>TOTAL</h4>
+  <p class="p-white"> 678.00</p></div>
+  <div class="p-2 col-12 col-md-2"><h4 class="text-left">SHIP TO</h4>
+  <p class="text-left">Dohni</p></div>
+  <div class="p-2 ml-auto col-12 col-md-4"><h4 class="text-right"> ORDER # 404-5569800-29086543</h4>
+		<a href="#" class="text-right">Order Details Invoice</a></div>
+</div>
+        </div>
+		</div>
+        
+        <!-- Modal body -->
+        <div class="modal-body order-info">
+		<div class="row">
+        <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+		<h4 class="text-left">Delivered 27-Apr-2019</h4>
+		<p>Package was handed directly to the customer.</p>
+		<p>Signed by: Vijayakanth.</p>
+		</div>
+		<div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3 align-self-end">
+		<button type="button" class="btn btn-primary btn-sm w-100 track-btn">Track Page</button>
+		</div>
+		</div>
+		<div class="row">
+        <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+		&nbsp;
+		</div>
+		 <div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3">
+		&nbsp;
+		</div>
+        </div>
+		
+			<div class="row">
+        <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+		<div class="d-md-flex">
+		
+		 <div class="p-0 col-12 col-md-2">
+			<img src="../TEMPLATE/img/61GFwPxpzEL._SL1128_.jpg" class="img-fluid">
+		</div>
+		<div class="p-0 col-12 col-md-10 px-3 product-info">
+			<a href="#" title="Product" class=""><h4>Decostyle Multipurpose Portable Folding Table with Inbuilt Mobile Stand - Sappy Embony</h4></a>
+			<p>Sold by: Cloudtail India</p>
+			<p>Return window closed on 07-July-2019</p>
+			<p class="red-text">25000.00</p>
+			<button type="button" class="btn btn-primary btn-sm product-info-btn ">Buy it again</button>
+		</div>
+		
+		</div>
+		</div>
+		 <div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3 align-self-end">
+		<button type="button" class="btn btn-primary btn-sm w-100 review-btn">Write a product review</button>
+		</div>
+        </div>
+</div>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<script src="../TEMPLATE/js/jquery-3.4.1.min.js"></script>
+<script src="../TEMPLATE/js/bootstrap.min.js"></script>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+	
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+	tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = colors;
+  
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
