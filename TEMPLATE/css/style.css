@@ -7144,8 +7144,9 @@ body.bodyColor.container {
 }
 
 .btn span {
-  margin-left: 10px;
-  margin-right: 10px;
+    margin-left: 20px;
+    /* margin-right: 10px; */
+    text-align: right;
 }
 
 .btn:hover {
@@ -8301,7 +8302,7 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
 	border-radius:3px;
 	text-transform: capitalize;
 	    padding: 12px 12px;
-		background:#e5e5e5;
+		background:#8096ae;
 		color:#3b3838;
 }
 .blue-bg-btn.btn{
@@ -8319,8 +8320,13 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
 	background:#de1c4a;
 	 color: #fff !important;
 }
+.blue-bg-btn.active {
+	border:0;
+	background:#de1c4a;
+	 color: #fff !important;
+}
 .menu-btn-space{
-	margin:20px 0px;
+	margin:18px 0px;
 }
 .modal-order {
 	margin:0px 0px 20px 0px;
@@ -8578,4 +8584,15 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
 .custon-four-box .card{
 	    border: 0px solid rgba(0,0,0,.125);
 }
-
+ul.order-in-btns {
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	
+}
+ul.order-in-btns li{
+	display:inline-block;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	list-style:none;
+	
+}

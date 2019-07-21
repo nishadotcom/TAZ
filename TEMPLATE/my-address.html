@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Address</title>
+<link href="../TEMPLATE/css/bootstrap.min.css" rel="stylesheet">
+<link href="../TEMPLATE/css/style.css" rel="stylesheet">
+<link href="../TEMPLATE/fonts/css/all.css" rel="stylesheet">
+<script defer src="../TEMPLATE/fonts/js/all.js"></script>
+  <link href="../TEMPLATE/fonts/css/fontawesome.css" rel="stylesheet">
+  <link href="../TEMPLATE/fonts/css/brands.css" rel="stylesheet">
+  <link href="../TEMPLATE/fonts/css/solid.css" rel="stylesheet">
+<!--<link href="../TEMPLATE/css/batch-icons.css" rel="stylesheet"> -->
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="../TEMPLATE/css/batch-icons.css">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding:0;
+      color: #72848c;
+}
+
+/* Style tab links */
+.tablink {
+     background-color: #8296b0;
+    color: #000;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 15px;
+    width: 25%;
+}
+.light-blue-bg h2 {
+color:#fff;
+}
+.tablink img {
+    position: relative;
+    left: -6px;
+}
+.tablink:hover {
+  background-color: #de1c4a;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-bottom: 0px;
+	text-transform: capitalize;
+	color:#111111;
+	margin:0px;
+	font-family: 'Poppins', sans-serif;
+	font-weight:400;
+}
+
+h1,
+#dashboard {background: #fff; color:#565656;}
+#my-bio {background: #fff;}
+#my-address {background: #fff;}
+#my-order {background: #fff;}
+
+@media (max-width: 767px){
+.tablink {
+    background-color: #8296b0;
+    color: #000;
+     float: unset;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 15px;
+    width: 100%;
+	    margin: 0px 0px 5px 0px !important;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="menu-blue-bg">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-4 col-md-4 col-sm-4 col-xl-4">
+<div class="d-flex justify-content-start">
+<div class="p-2">
+<img class="" src="../TEMPLATE/img/map-icon01.png" />
+</div>
+<div class="light-blue-bg p-4">
+<h2>My Address
+</h2>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-8 col-md-8 col-sm-8 col-xl-8">
+
+<div class="d-md-flex d-block align-self-center float-right menu-btn-space">
+<ul class="order-in-btns">
+<li>
+<a href="../TEMPLATE/dashboard.html" class="btn btn-default blue-bg-btn ">
+<img class="" src="../TEMPLATE/img/dashboard-icon.png" /> <span>Dashboard</span>
+</a>
+</li>
+
+<li>
+<a href="../TEMPLATE/my-bio.html" class="btn btn-default blue-bg-btn ">
+<img class="" src="../TEMPLATE/img/user-icon.png" /><span>My Bio</span>
+</a>
+</li>
+<li>
+<a href="../TEMPLATE/my-address.html" class="btn btn-default blue-bg-btn active">
+<img class="" src="../TEMPLATE/img/location-map-icon.png" /> <span>My Address</span>
+</a>
+</li>
+<li>
+<a href="../TEMPLATE/my-orders.html" class="btn btn-default blue-bg-btn ">
+<img class="" src="../TEMPLATE/img/my-order-icon.png" /> <span>My Orders</span>
+</a>
+</li>
+</ul>
+
+<!--
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('dashboard', this, '#de1c4a', '#fff')" >
+<img class="" src="../TEMPLATE/img/dashboard-icon.png" /> <span>Dashboard</span></button>
+
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('my-bio', this, '#de1c4a', '#fff')"> 
+<img class="" src="../TEMPLATE/img/user-icon.png" /> <span>My Bio</span></button>
+
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('my-address', this, '#de1c4a', '#fff')">
+<img class="" src="../TEMPLATE/img/location-map-icon.png" /> <span>My Address</span></button>
+
+<button type="button" class="btn btn-default blue-bg-btn tablink" onclick="openPage('my-order', this, '#de1c4a', '#fff')" id="defaultOpen">
+<img class="" src="../TEMPLATE/img/my-order-icon.png" /> <span>My Orders</span></button>
+-->
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div id="my-order" >
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+
+<table class="table table-hover" border="1" style="border:1px solid #dddddd; border-collapse:collapse;">
+    <thead>
+      <tr>
+        <th>Address</th>
+        <th>Street</th>
+        <th>City</th>
+		<th>State</th>
+		<th>Country</th>
+		<th>Pincode</th>
+		<th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Forum Kormanagala</td>
+        <td>Kormanagala</td>
+        <td>Bengaluru</td>
+		<td>Karnataka</td>
+		<td>India</td>
+		<td>543 567</td>
+		<td><i class="fa fa-edit"></i></td>
+      </tr>
+      <tr>
+        <td>Forum Kormanagala</td>
+        <td>Kormanagala</td>
+        <td>Bengaluru</td>
+		<td>Karnataka</td>
+		<td>India</td>
+		<td>543 567</td>
+		<td><i class="fa fa-edit"></i></td>
+      </tr>
+      <tr>
+        <td>Forum Kormanagala</td>
+        <td>Kormanagala</td>
+        <td>Bengaluru</td>
+		<td>Karnataka</td>
+		<td>India</td>
+		<td>543 567</td>
+		<td><i class="fa fa-edit"></i></td>
+      </tr>
+	  <tr>
+        <td>Forum Kormanagala</td>
+        <td>Kormanagala</td>
+        <td>Bengaluru</td>
+		<td>Karnataka</td>
+		<td>India</td>
+		<td>543 567</td>
+		<td><i class="fa fa-edit"></i></td>
+      </tr>
+	  <tr>
+        <td>Forum Kormanagala</td>
+        <td>Kormanagala</td>
+        <td>Bengaluru</td>
+		<td>Karnataka</td>
+		<td>India</td>
+		<td>543 567</td>
+		<td><i class="fa fa-edit"></i></td>
+      </tr>
+	  <tr>
+        <td>Forum Kormanagala</td>
+        <td>Kormanagala</td>
+        <td>Bengaluru</td>
+		<td>Karnataka</td>
+		<td>India</td>
+		<td>543 567</td>
+		<td><i class="fa fa-edit"></i></td>
+      </tr>
+	  <tr>
+        <td>Forum Kormanagala</td>
+        <td>Kormanagala</td>
+        <td>Bengaluru</td>
+		<td>Karnataka</td>
+		<td>India</td>
+		<td>543 567</td>
+		<td><i class="fa fa-edit"></i></td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+<script src="../TEMPLATE/js/jquery-3.4.1.min.js"></script>
+<script src="../TEMPLATE/js/bootstrap.min.js"></script>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+	
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+	tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = colors;
+  
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
