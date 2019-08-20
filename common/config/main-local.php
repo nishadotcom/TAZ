@@ -9,9 +9,9 @@ if($serverName=='dev.talozo.local'){
 	$dbUser		= 'sql12184890	';
 	$dbPassword	= '4rxQPFQ2lV';	*/
 	$host 		= 'localhost';
-	$dbName 	= 'taz_db';
+	$dbName 	= 'TAZALO';
 	$dbUser		= 'root';
-	$dbPassword	= '';
+	$dbPassword	= 'root';
 	/*$host 		= '50.62.177.83';
 	$dbName 	= 'dev_talozo';
 	$dbUser		= 'dev_talozo';

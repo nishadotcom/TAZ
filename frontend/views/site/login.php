@@ -50,19 +50,19 @@ $callback = Url::toRoute(['/site/validate-fb'], true); // or any absolute url yo
                     <!--<button type="submit" class="btn btn-default pull-left"><i class="fa fa-facebook" aria-hidden="true"></i><span>log in with facebook</span></button>-->
                      <?php echo kartik\social\GooglePlugin::widget([
     'type'=>kartik\social\GooglePlugin::SIGNIN, 
-    //'tag'=>'span', 
+    'tag'=>'button', 
     'signinOptions'=>['id'=>'signinButton'],
     'settings' => [
-        'callback'=>'signinCallback',
+        //'callback'=>'signinCallback',
         'cookiepolicy' => 'single_host_origin',
         'requestvisibleactions' => 'http://schemas.google.com/AddActivity',
         'scope'=>'https://www.googleapis.com/auth/plus.login'
     ]
 ]); ?>
-                    <!--<button type="submit" class="btn btn-default pull-right">
+                    <button type="submit" class="btn btn-default pull-right">
                     	<i class="fa fa-google-plus" aria-hidden="true"></i>
-                    	<span style="margin-left: 0;margin-right: 0;">log in with google plus</span>
-                    </button>-->
+                    	<span style="margin-left: 0;margin-right: 0;">Login with google plus</span>
+                    </button>
                     <!--<button type="button" class="btn btn-link btn-block">Don't You Have an Account?</button>-->
 	                <!--<button type="button" class="btn btn-link btn-block">Forgot Password?</button>-->
 					

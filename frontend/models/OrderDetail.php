@@ -119,4 +119,6 @@ class OrderDetail extends \yii\db\ActiveRecord
     {
         return $this->hasMany(OrderAddress::className(), ['order_id' => 'order_id']);
     }
+
+    
 }

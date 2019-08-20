@@ -8693,3 +8693,9 @@ position: absolute;
 	font-size:1.8rem;
 }
 }
+
+/** New Design **/
+.menu-blue-bg {
+    background: #1e4e79;
+    margin: 15px 0px;
+}

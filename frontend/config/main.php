@@ -86,9 +86,14 @@ return [
                 'mysales/invoice/<id>'=>'order-detail/invoice',
                 // User Address
                 'user-address/update/<userid>/<type>' => 'user-address/update',
+
+                'ws/shoprest/addto-cart' => 'ws/shoprest/addto-cart',
+                'ws/shoprest/ajax-make-payment' => 'ws/shoprest/ajax-make-payment',
+
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+
 
 
 

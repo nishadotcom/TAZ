@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use Yii;
+use frontend\models\Order;
 use frontend\models\OrderDetail;
 use frontend\models\OrderDetailSearch;
 use yii\web\Controller;
@@ -65,14 +66,44 @@ class OrderDetailController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = 'profile_page';
+        $this->layout = 'template_new';
+        $orderCount = 0;
+        if(Yii::$app->user->identity->user_type == Yii::$app->params['ROLE_SELLER']){
+
+            /*$query = OrderDetail::find()->select('order_id')->joinWith('order')->where(['product_owner_id'=>Yii::$app->user->id])->andWhere('taz_order.order_status<>"USER CANCELLED"')->andWhere('taz_order.order_status<>"FAILED-TRANSACTION"')->andWhere('taz_order.order_status<>"CANCELLED"')->orderBy(['taz_order.id'=>SORT_DESC])->groupBy(['taz_order.id'])->all();
+            echo '<pre>';
+            print_r($query);
+            exit;*/
+            /*$sql = 'SELECT taz_order.*, taz_order_detail.product_code FROM `taz_order` 
+                    LEFT JOIN `taz_order_detail` ON `taz_order`.`id` = `taz_order_detail`.`order_id` 
+                    WHERE `product_owner_id`= 1 AND (order_status<>"USER CANCELLED") AND (order_status<>"FAILED-TRANSACTION") AND (order_status<>"CANCELLED") 
+                    GROUP BY id ORDER BY `id` DESC';
+            $connection = \Yii::$app->db;
+            //$query = new Query;
+            $command = $connection->createCommand($sql);
+            $model = $command->queryAll();//Order::findBySql($sql)->all();
+            echo '<pre>';print_r($model); exit;*/
+            $model = Order::find()->joinWith('orderDetails')->where(['=', 'taz_order_detail.product_owner_id', 1])->andWhere('order_status<>"USER CANCELLED"')->andWhere('order_status<>"FAILED-TRANSACTION"')->andWhere('order_status<>"CANCELLED"')->with('orderAddress')->orderBy(['id'=>SORT_DESC])->all();
+            // FIXING MYSQL 1055 ISSUE
+            //set global sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
+        }else{
+            $model = OrderDetail::find();
+            //$orderCountQuery = OrderDetail::find()->count();
+        }
+        //$model = $query->all();
+
+        return $this->render('index', [
+            'model' => $model,
+            //'orderCount' => $orderCountQuery
+        ]);
+        /*$this->layout = 'profile_page';
         $searchModel = new OrderDetailSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-        ]);
+        ]);*/
     }
 
     /**

@@ -81,13 +81,13 @@ if($orderCancelAddress && $orderCancelAddress['shippingAddress']){
                         <input type="hidden" name="transactionId" value="<?= $transactionId; ?>">
                         
                         <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'tabindex'=>'1']) ?>
-                        <?= $form->field($model, 'billingName')->textInput(['maxlength' => true, 'tabindex'=>'8']) ?>
+                        <?= $form->field($model, 'billingName')->textInput(['maxlength' => true, 'tabindex'=>'8']); ?>
                     
-                        <?= $form->field($model, 'address')->textInput(['maxlength' => true, 'tabindex'=>'2']) ?>
+                        <?= $form->field($model, 'address')->textInput(['maxlength' => true, 'tabindex'=>'2', 'placeholder'=>'Address'])->label(false); ?>
                         <?= $form->field($model, 'billingAddress')->textInput(['maxlength' => true, 'tabindex'=>'9']) ?>
                     
-                        <?= $form->field($model, 'city')->textInput(['maxlength' => true, 'tabindex'=>'3']) ?>
-                        <?= $form->field($model, 'billingCity')->textInput(['maxlength' => true, 'tabindex'=>'10']) ?>
+                        <?= $form->field($model, 'city')->textInput(['maxlength' => true, 'tabindex'=>'3', 'placeholder'=>'City'])->label(false) ?>
+                        <?= $form->field($model, 'billingCity')->textInput(['maxlength' => true, 'tabindex'=>'10'])->label(false) ?>
 
                         <?= $form->field($model, 'state')->textInput(['maxlength' => true, 'tabindex'=>'4']) ?>
                         <?= $form->field($model, 'billingState')->textInput(['maxlength' => true, 'tabindex'=>'11']) ?>

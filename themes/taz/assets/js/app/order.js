@@ -37,7 +37,7 @@ jQuery(document).ready(function () {
             type: 'POST',
             url: baseURL + 'ws/shoprest/ajax-make-payment',
             data: $('#orderForm').serialize(),
-            //dataType: 'json',
+            dataType: 'json',
             success: function (response) { 
                 console.log(response);
                 $('#hash').val(response.hash);
@@ -53,9 +53,10 @@ jQuery(document).ready(function () {
                 //$(ref).prop('disabled', true); // Disable the CART button for the current
                 //return response;
             },
-            error: function (xhr) {
+            error: function (xhr, status, error) {
                 alert('Could not add to cart. Please try again');
-                console.log(xhr.statusText);
+                //var err = eval("(" + + ")");
+                console.log(error);
                 //return xhr.statusText;
                 //xhr.status = 404
                 //xhr.statusText = error

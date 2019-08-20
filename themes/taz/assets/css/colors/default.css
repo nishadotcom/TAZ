@@ -123,8 +123,7 @@
 .accordionCommon .panel-heading,
 .dropGeneral.colorBg .sbHolder,
 .bannerV2 .fullscreenbanner-container .fullscreenbanner-bg {
-  background-color: #45d3b7;
-  color: #fff;
+  background-color: #47bac1;
 }
 
 .navbar-default .navbar-collapse li a:hover,
@@ -202,7 +201,7 @@
 .tp-caption.rs-caption-4 .btn i,
 .bannerV2 .btn i, .bannerV3 .btn i,
 .dealSlider .productCaption .btn-border i {
-  color: #756F70;
+  color: #47bac1;
 }
 
 .step-drop .sbOptions a:hover,
@@ -221,8 +220,7 @@
 .whiteSection .featuredCollection .thumbnail .imageWrapper .masking,
 .mainContent .featuredCollection .thumbnail .imageWrapper .masking,
 .productListSingle .media .pull-left .maskingImage {
-  /*background-color: rgba(71, 186, 193, 0.9);*/
-  background-color: rgba(50, 63, 79, 0.9);
+  background-color: rgba(71, 186, 193, 0.9);
 }
 
 .fullscreenbanner-container .tp-bullets.preview4 {

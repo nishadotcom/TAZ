@@ -144,7 +144,8 @@ class SiteController extends Controller {
             $unPaidOrders = Order::find()->where(['payment_status'=>'USER CANCELLED', 'order_status'=>'USER CANCELLED'])->orderBy(['id' => SORT_DESC])->all();
         }
 
-        $this->layout = 'profile_page';
+        //$this->layout = 'profile_page';
+        $this->layout = 'profile_new';
         return $this->render('profile/profile_dashboard', ['user' => $user, 'unPaidOrders'=>$unPaidOrders]);
     }
 
@@ -153,7 +154,8 @@ class SiteController extends Controller {
      */
 
     public function actionProfileUpdate() {
-        $this->layout = 'profile_page';
+        //$this->layout = 'profile_page';
+        $this->layout = 'profile_new';
         $usermodel = User::findOne(['id' => Yii::$app->user->getId()]);
         $UserDetail = UserDetail::findOne(['user_id' => Yii::$app->user->getId()]);
         if (!empty($UserDetail)) {

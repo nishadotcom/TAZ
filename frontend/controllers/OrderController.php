@@ -496,14 +496,19 @@ class OrderController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = 'profile_page';
+        $this->layout = 'template_new';
+        $model = Order::find()->where(['user_id'=>Yii::$app->user->id])->andWhere('order_status<>"USER CANCELLED"')->andWhere('order_status<>"FAILED-TRANSACTION"')->andWhere('order_status<>"CANCELLED"')->with('orderAddress')->with('orderDetails')->orderBy(['id'=>SORT_DESC])->all();
+        return $this->render('index', [
+            'model' => $model,
+        ]);
+        /*$this->layout = 'profile_page';
         $searchModel = new OrderSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-        ]);
+        ]);*/
     }
 
     /**

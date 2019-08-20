@@ -79,8 +79,18 @@ class ProductController extends Controller
      */
     public function actionIndex()
     {
-        //$this->layout = 'profile_page';
+        // Modification Date    : 12-06-2018
+        //Description           : Updating new Design
+        $this->layout = 'template_new';
         $OnSaleModel      = new OnSale();
+        $model = Product::find()->with('productImages')->where(['product_owner_id'=>Yii::$app->user->id])->orderBy(['id'=>SORT_DESC])->all();
+        return $this->render('index', [
+            'model' => $model,
+            'OnSaleModel'=>$OnSaleModel
+        ]);
+
+        //$this->layout = 'profile_page';
+        /*$OnSaleModel      = new OnSale();
         $searchModel = new ProductSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         //$dataProvider->pagination->pageSize=1;
@@ -88,7 +98,7 @@ class ProductController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'OnSaleModel'=>$OnSaleModel
-        ]);
+        ]);*/
     }
 
     /**

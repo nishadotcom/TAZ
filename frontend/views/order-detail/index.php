@@ -11,11 +11,123 @@ use frontend\models\OrderDetail;
 
 $this->title = 'My Sales';
 $this->params['breadcrumbs'][] = $this->title;
+$pathPrdImg = Yii::$app->params['PATH_PRODUCT_IMAGE'];
+$prdNoImg = 'noImage.jpg';
 //echo '<pre>';
 //print_r($dataProvider->query->sum('product_price'));
 //exit;
 ?>
+<?php 
+    //echo '<pre>';
+    //echo $orderCount;
 
+    //echo count($model);
+    //print_r($model);
+    //echo '</pre>';
+?>
+
+
+<?php 
+if($model){
+  foreach ($model as $key => $order) {
+    $orderProucts = $order->orderDetails;
+    $shippingAddress = $order->orderAddress[0];
+    ?>
+      <div class="modal-content modal-order">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <div>
+                <div class="d-md-flex d-block">
+                    <div class="p-2 col-12 col-md-3"><h4>Ordered On</h4>
+                        <p class="p-white"><?php echo date('d M Y', strtotime($order->order_date)); ?></p>
+                    </div>
+                    <div class="p-2 col-12 col-md-2">
+                        <h4>Amount</h4>
+                        <p class="p-white"> <?php echo $order->total_amount; ?> </p>
+                    </div>
+                    <div class="p-2 col-12 col-md-2">
+                        <h4 class="text-left">SHIP TO</h4>
+                        <p class="text-left"><?php echo $shippingAddress->name; ?></p>
+                    </div>
+                    <div class="p-2 ml-auto col-12 col-md-4">
+                        <h4 class="text-right"> Order # <?php echo $order->order_code; ?></h4>
+                        <!--<a href="#" class="text-right">Order Details Invoice</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body order-info">
+            <div class="row">
+                <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">&nbsp;
+                    <!--<h4 class="text-left">Delivered 27-Apr-2019</h4>
+                    <p>Package was handed directly to the customer.</p>
+                    <p>Signed by: Vijayakanth.</p>-->
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3 align-self-end">
+                    <button type="button" class="btn btn-primary btn-sm w-100 track-btn">Track Package</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">&nbsp;</div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3">&nbsp;</div>
+            </div>
+
+            
+              <?php 
+              if($orderProucts)
+              {
+                foreach ($orderProucts as $key => $orderProuct) {
+                  ?>
+                  <div class="row">
+                  <div class="col-12 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+                    <div class="d-md-flex">
+                        <div class="p-0 col-12 col-md-2">
+                            <?php 
+                            if(isset($orderProuct->productImages[0])){
+                                $coverImage = ($orderProuct->productImages[0]->crop_image) ? $orderProuct->productImages[0]->crop_image : $orderProuct->productImages[0]->cover_photo;
+                            }else{
+                                $coverImage = '';
+                            }
+                            $prdImage   = (isset($orderProuct->productImages[0])) ? $pathPrdImg.$orderProuct->product_code.'/'.$coverImage : $pathPrdImg.$prdNoImg;
+                            ?>
+                            <img src="<?php echo $prdImage; ?>" class="img-fluid">
+                        </div>
+                        <div class="p-0 col-12 col-md-10 px-3 product-info">
+                            <a href="#" title="Product" class="">
+                                <h4><?php echo $orderProuct->product_name; ?> </h4>
+                            </a>
+                            <!--<p>Sold by: Cloudtail India</p>-->
+                            <p><?php echo $orderProuct->product_description; ?> </p>
+                            <p class="red-text"><?php echo $orderProuct->product_price; ?></p>
+                            <!--<button type="button" class="btn btn-primary btn-sm product-info-btn ">Update</button>-->
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-3 col-sm-3 col-xl-3 align-self-end">
+                      <a href="#" class="btn btn-primary btn-sm w-100 review-btn" style="color: #fff;">
+                          Write a Product Review
+                      </a>
+                  </div>
+                  </div>
+                  <hr>
+                  <?php
+                }
+              }
+              ?>            
+        </div>
+    </div>
+
+    <?php
+  } //foreach
+} //if
+?>
+
+
+
+
+<?php /* ?>
 <div class="row">
     <?= ProfileMenu::widget(); ?>
 </div>
@@ -71,10 +183,10 @@ $this->params['breadcrumbs'][] = $this->title;
                                     }
                                     //return ($model->order_status == 'AFA') ? 'Awaiting for Approval' : $model->product_status;
                                 },
-                            /* 'filter' => ArrayHelper::map(Category::find()->asArray()->all(), 'id', 'category_name'),
-                              'value' => function($model){
-                              return $model->productCategory->category_name;
-                              } */
+                             //'filter' => ArrayHelper::map(Category::find()->asArray()->all(), 'id', 'category_name'),
+                              //'value' => function($model){
+                              //return $model->productCategory->category_name;
+                              //} 
                             ],
                             //'id',
                             //'order_id',    
@@ -130,7 +242,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
-
+<?php */ ?>
 <?php /* ?>
   <div class="order-detail-index">
 

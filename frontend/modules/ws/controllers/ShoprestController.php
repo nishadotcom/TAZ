@@ -264,6 +264,7 @@ class ShoprestController extends ActiveController {
         $getPayuDetail['action'] = 'https://test.payu.in/_payment';
         $hash = $getPayuDetail['hash'];
         echo json_encode($getPayuDetail);
+        exit;
     }
 
     /**
